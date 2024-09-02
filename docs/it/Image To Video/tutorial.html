@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida alla Funzione Immagine in Video</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guida all'Uso della Funzione Immagine in Video</h2>
+    <p>La funzione Immagine in Video di AiCasso ti permette di trasformare una singola immagine in un video dinamico. Basta descrivere cosa vuoi vedere nel tuo video e AiCasso lo realizzerà!</p>
+
+    <h3>Come Funziona:</h3>
+    
+    <div class="example">
+        <strong>Immagine di Input:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>Prompt 1:</strong>
+        <p>"Un cucciolo carino nel parco"</p>
+        <strong>Risultato 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>Prompt 2:</strong>
+        <p>"Un cucciolo carino nel parco, usa FPS massimo, massimo numero di fotogrammi e massimo movimento"</p>
+        <strong>Risultato 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Parametri Opzionali</h3>
+    <p>Se vuoi essere più specifico con il tuo video, ecco alcune impostazioni che puoi regolare:</p>
+
+    <ul>
+        <li><strong>Prompt Negativo:</strong> Descrivi cosa *non* vuoi nel video. Se lasciato vuoto, AiCasso si concentrerà solo sul prompt positivo.</li>
+        <li><strong>Numero di Fotogrammi:</strong> Scegli quanti fotogrammi (immagini individuali) avrà il tuo video. Puoi selezionare fino a 25 fotogrammi, con 16 come predefinito.</li>
+        <li><strong>Passi di Denoising:</strong> Questo controlla quanto sarà fluido il tuo video. Più passi significano un video più pulito. Puoi impostare fino a 50 passi, con 20 come predefinito.</li>
+        <li><strong>Scala di Guida:</strong> Questo aiuta il video a seguire da vicino la tua descrizione. L'intervallo è da 1.0 a 8.0, e puoi regolare i valori di inizio e fine per guidare l'evoluzione del video.</li>
+        <li><strong>Movimento:</strong> Regola quanto movimento c'è nel tuo video. Un valore più alto significa più azione. L'intervallo è da 0 a 127, con 60 come predefinito.</li>
+        <li><strong>Forza di Aumento del Rumore:</strong> Aggiungi un po' di rumore al tuo video per dargli un aspetto più strutturato. L'intervallo è da 0 a 1, con 0 come predefinito.</li>
+        <li><strong>Fotogrammi al Secondo (FPS):</strong> Imposta la velocità di riproduzione del tuo video. Il predefinito è 16 FPS, ma puoi arrivare fino a 16 per una riproduzione più veloce.</li>
+        <li><strong>Metodo di Interpolazione:</strong> Scegli come vengono mescolati i fotogrammi. Il predefinito è "lerp" (interpolazione lineare), ma puoi anche usare "slerp" (interpolazione lineare sferica) per effetti diversi.</li>
+        <li><strong>Salto Clip:</strong> Salta determinati livelli per uno stile video diverso. Puoi saltare fino a 2 livelli, o lasciarlo nullo per il comportamento predefinito.</li>
+    </ul>
+
+    <p>Ricorda, AiCasso è piuttosto intelligente! Non devi essere perfetto in ogni dettaglio o usare una grammatica corretta. Basta descrivere cosa vuoi e AiCasso farà il resto. Divertiti a creare i tuoi video!</p>
+
+</body>
+</html>

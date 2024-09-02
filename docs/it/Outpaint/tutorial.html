@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consigli per la Funzione Outpaint</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Consigli per l'Uso della Funzione Outpaint</h2>
+    <p>La funzione Outpaint in AiCasso ti permette di espandere un'immagine aggiungendo nuovi elementi intorno ad essa o estendendo ciò che è già presente. Basta descrivere ciò che desideri e AiCasso si occuperà del resto.</p>
+
+    <h3>Come Funziona:</h3>
+    
+    <div class="example">
+        <strong>Immagine Iniziale:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Descrivi la Tua Modifica:</strong>
+        <p>Basta digitare ciò che vuoi aggiungere o espandere e AiCasso applicherà quelle modifiche. Puoi specificare direzioni come sinistra, destra, su o giù, e anche dettagli come lo zoom indietro o il panning.</p>
+    </div>
+
+    <h3>Esempi di Modifiche:</h3>
+
+    <div class="example">
+        <strong>Esempio 1:</strong> "Aggiungi un iceberg a destra utilizzando un fattore di traduzione di 0.4."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+        </div>
+        <p><em>Risultato:</em> AiCasso espande l'immagine a destra e aggiunge un iceberg, mantenendolo coerente con lo scenario esistente.</p>
+    </div>
+
+    <div class="example">
+        <strong>Esempio 2:</strong> "Zoom indietro, mantenere la coerenza del mare scuro di notte."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+        </div>
+        <p><em>Risultato:</em> L'immagine si allontana, rivelando più del mare scuro, mantenendo l'atmosfera della scena notturna.</p>
+    </div>
+
+    <h3>Opzioni Aggiuntive</h3>
+    <p>Ecco alcune impostazioni opzionali che puoi utilizzare per perfezionare le tue modifiche:</p>
+
+    <ul>
+        <li><strong>Prompt Negativo:</strong> Se c'è qualcosa di specifico che non vuoi nell'immagine, puoi dirlo ad AiCasso qui. Ad esempio, potresti voler evitare di aggiungere certi colori o oggetti.</li>
+        <li><strong>Tipo di Camminata:</strong> Questo decide la direzione in cui l'immagine si espande. Puoi scegliere tra sinistra, destra, su, giù o indietro (che fa lo zoom indietro). Ad esempio, per spostarti a destra, selezioneresti 'destra'.</li>
+        <li><strong>Fattore di Traduzione:</strong> Questo controlla quanto l'immagine si muove con ogni passo durante l'espansione. Un valore più alto sposta di più l'immagine, rivelando più del nuovo contenuto. Il valore predefinito è 0.05, ma puoi regolarlo da 0 a 1.</li>
+        <li><strong>Traduzione Larghezza/Altezza per Passo:</strong> Questi controllano quanto l'immagine si muove orizzontalmente (larghezza) o verticalmente (altezza) con ogni passo. Il valore predefinito è 32 pixel per passo, ma puoi regolarlo in base a quanto vuoi che l'immagine si sposti.</li>
+        <li><strong>Numero di Passi di Inferenza o Denoising:</strong> Questo determina quanti aggiustamenti AiCasso fa per ottenere l'immagine finale. Più passi portano a un risultato più fluido, con un valore predefinito di 20 passi, ma puoi arrivare fino a 50.</li>
+        <li><strong>Numero di Passi di Interpolazione:</strong> Questo controlla quanto fluidamente avviene la transizione tra due direzioni in una singola espansione. Il valore predefinito è 60, ma puoi aumentarlo fino a 120 per transizioni più fluide.</li>
+    </ul>
+
+    <p>Ricorda, queste impostazioni sono opzionali. AiCasso è progettato per funzionare bene solo con la tua descrizione in linguaggio naturale. Sentiti libero di sperimentare e vedere cosa funziona meglio per la tua immagine!</p>
+
+</body>
+</html>

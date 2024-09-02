@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida alla Funzione di Sostituzione dello Sfondo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guida all'Uso della Funzione di Sostituzione dello Sfondo</h2>
+    <p>La funzione di Sostituzione dello Sfondo in AiCasso è perfetta quando vuoi cambiare lo sfondo della tua immagine. Che tu voglia semplicemente rimuovere lo sfondo o sostituirlo con qualcos'altro, AiCasso lo rende super facile. Non devi preoccuparti di cose tecniche—basta descrivere ciò che vuoi, e AiCasso farà il resto.</p>
+
+    <h3>Come Funziona:</h3>
+    
+    <div class="example">
+        <strong>Immagine di Input:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+        </div>
+        <strong>Prompt 1:</strong>
+        <p>"Rimuovi lo sfondo"</p>
+        <strong>Risultato 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+        </div>
+        <strong>Prompt 2:</strong>
+        <p>"Sostituisci lo sfondo con una foresta, non solo rimuoverlo, con il matting alfa disabilitato. Usa una soglia di primo piano di 240, una soglia di sfondo di 20 e una dimensione di erosione di 5 per il matting alfa."</p>
+        <strong>Risultato 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Parametri Opzionali</h3>
+    <p>Se vuoi aggiungere un tocco personale o perfezionare i risultati, ecco alcune opzioni con cui puoi giocare:</p>
+
+    <ul>
+        <li><strong>Solo Rimozione:</strong> Se vuoi solo rimuovere lo sfondo senza sostituirlo con nulla, questa è l'opzione giusta per te. È come premere un pulsante di ripristino.</li>
+        <li><strong>Matting Alfa:</strong> Questo è un modo elegante per dire "sfuma i bordi". Quando lo attivi, aiuta a rendere i bordi del tuo soggetto più lisci e meno ritagliati. Di default, è disattivato.</li>
+        <li><strong>Soglia di Primo Piano per Matting Alfa:</strong> Questo controlla quanto del soggetto principale (come una persona) rimane visibile quando si usa il matting alfa. Il valore predefinito è 240, e puoi regolarlo per rendere i bordi più morbidi o più nitidi.</li>
+        <li><strong>Soglia di Sfondo per Matting Alfa:</strong> Fa lo stesso della soglia di primo piano ma per lo sfondo. Il valore predefinito è 20, ed è tutto per ottenere la fusione perfetta con il nuovo sfondo.</li>
+        <li><strong>Dimensione di Erosione per Matting Alfa:</strong> Aiuta a restringere un po' i bordi per rendere il ritaglio più pulito. La dimensione predefinita è 5, ma puoi modificarla per ottenere l'aspetto esatto che desideri.</li>
+    </ul>
+
+    <p>Ricorda, non devi preoccuparti di ottenere tutto perfetto. AiCasso è abbastanza bravo a capire cosa intendi, quindi sentiti libero di essere casuale o dettagliato quanto vuoi. Buona creazione!</p>
+
+</body>
+</html>

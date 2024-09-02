@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Background Feature Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guide to Using the Replace Background Feature</h2>
+    <p>The Replace Background feature in AiCasso is perfect for when you want to swap out the background in your image. Whether you just want to remove the background or replace it with something else, AiCasso makes it super easy. You don't need to worry about technical stuff—just describe what you want, and AiCasso will do the rest.</p>
+
+    <h3>How It Works:</h3>
+    
+    <div class="example">
+        <strong>Input Image:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+        </div>
+        <strong>Prompt 1:</strong>
+        <p>"Remove the background"</p>
+        <strong>Result 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+        </div>
+        <strong>Prompt 2:</strong>
+        <p>"Replace the background with a forest, not just remove it, with alpha matting disabled. Use a foreground threshold of 240, a background threshold of 20, and an erode size of 5 for alpha matting."</p>
+        <strong>Result 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Optional Parameters</h3>
+    <p>If you want to add a personal touch or fine-tune the results, here are a few options you can play around with:</p>
+
+    <ul>
+        <li><strong>Remove Only:</strong> If you just want to remove the background and not replace it with anything, this is your go-to option. It's like hitting a clean slate button.</li>
+        <li><strong>Alpha Matting:</strong> This is a fancy way of saying "blend the edges." When you turn this on, it helps make the edges of your subject look smoother and less cut-out. By default, it's turned off.</li>
+        <li><strong>Alpha Matting Foreground Threshold:</strong> This controls how much of the main subject (like a person) stays visible when using alpha matting. The default is 240, and you can adjust it to make the edges softer or sharper.</li>
+        <li><strong>Alpha Matting Background Threshold:</strong> This does the same as the foreground threshold but for the background. The default is 20, and it's all about getting the perfect blend with the new background.</li>
+        <li><strong>Alpha Matting Erode Size:</strong> This helps shrink the edges a bit to make the cutout look cleaner. The default size is 5, but you can tweak it to get the exact look you want.</li>
+    </ul>
+
+    <p>Remember, you don’t need to stress about getting everything perfect. AiCasso is pretty good at figuring out what you mean, so feel free to be as casual or detailed as you like. Happy creating!</p>
+
+</body>
+</html>

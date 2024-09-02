@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Recursos de Reiluminação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guia para Usar o Recurso de Reiluminação</h2>
+    <p>O recurso de Reiluminação no AiCasso é super legal! Ele permite que você altere a iluminação em suas imagens com apenas algumas palavras. Quer o sol ao fundo ou uma luz suave do lado? Sem problemas! Basta descrever, e o AiCasso cuidará do resto.</p>
+
+    <h3>Como Funciona:</h3>
+    
+    <div class="example">
+        <strong>Imagem de Entrada:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+        </div>
+        <strong>Prompt Usado:</strong>
+        <p>"Faça com que o sol esteja ao fundo"</p>
+        <strong>Resultado:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Ajustes Opcionais</h3>
+    <p>Se você estiver se sentindo aventureiro e quiser adicionar um pouco mais de estilo à sua reiluminação, aqui estão algumas coisas que você pode ajustar:</p>
+
+    <ul>
+        <li><strong>Prompt Negativo:</strong> Quer evitar algo? Você pode dizer ao AiCasso o que <em>não</em> incluir. Mas não se preocupe, se deixar em branco, o AiCasso se concentrará apenas no que você deseja.</li>
+        <li><strong>Direção da Luz:</strong> Você pode especificar de onde a luz deve vir—esquerda, direita, cima, baixo ou até mesmo nenhuma. Por padrão, a luz vem da esquerda.</li>
+        <li><strong>Escala de Orientação:</strong> Isso ajuda o AiCasso a seguir sua descrição. A escala vai de 1 a 20, sendo 7 o padrão. Quanto maior o número, mais o AiCasso segue seu prompt.</li>
+        <li><strong>Escala de Alta Resolução:</strong> Quer que sua imagem se destaque? Isso controla a clareza. O padrão é 1.5, mas você pode definir de 1.0 a 2.0 para uma imagem mais nítida.</li>
+        <li><strong>Níveis de Denoise:</strong> Existem dois níveis—baixa resolução e alta resolução. Eles controlam quão suave ou detalhada a imagem final parece. Você pode definir o nível de denoise de baixa resolução entre 0.0 e 1.0 (padrão é 0.9) e o de alta resolução entre 0.0 e 1.0 (padrão é 0.5).</li>
+        <li><strong>Número de Passos:</strong> Este é o número de passos que o AiCasso dá para polir sua imagem. O padrão é 50, mas você pode ir de 20 a 50 passos.</li>
+    </ul>
+
+    <p>Lembre-se, esses ajustes são totalmente opcionais! O AiCasso é muito bom em entender o que você quer, então apenas descreva sua visão com suas próprias palavras, e ele fará a mágica. Não precisa ser perfeito com gramática ou detalhes—apenas divirta-se e veja o que você pode criar!</p>
+
+</body>
+</html>

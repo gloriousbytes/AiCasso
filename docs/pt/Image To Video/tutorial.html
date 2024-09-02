@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Recursos de Imagem para Vídeo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guia para Usar o Recurso de Imagem para Vídeo</h2>
+    <p>O recurso de Imagem para Vídeo no AiCasso permite transformar uma única imagem em um vídeo dinâmico. Basta descrever o que você quer ver no seu vídeo, e o AiCasso fará acontecer!</p>
+
+    <h3>Como Funciona:</h3>
+    
+    <div class="example">
+        <strong>Imagem de Entrada:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>Prompt 1:</strong>
+        <p>"Um filhote fofo no parque"</p>
+        <strong>Resultado 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>Prompt 2:</strong>
+        <p>"Um filhote fofo no parque, use FPS máximo, quadros máximos e movimento máximo"</p>
+        <strong>Resultado 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Parâmetros Opcionais</h3>
+    <p>Se você quiser ser mais específico com seu vídeo, aqui estão algumas configurações que você pode ajustar:</p>
+
+    <ul>
+        <li><strong>Prompt Negativo:</strong> Descreva o que você *não* quer no vídeo. Se deixado em branco, o AiCasso se concentrará apenas no prompt positivo.</li>
+        <li><strong>Número de Quadros:</strong> Escolha quantos quadros (imagens individuais) seu vídeo terá. Você pode selecionar até 25 quadros, com 16 sendo o padrão.</li>
+        <li><strong>Passos de Desnoiser:</strong> Isso controla quão suave seu vídeo parecerá. Mais passos significam um vídeo mais limpo. Você pode definir até 50 passos, com 20 como padrão.</li>
+        <li><strong>Escala de Orientação:</strong> Isso ajuda o vídeo a seguir de perto sua descrição. O intervalo é de 1.0 a 8.0, e você pode ajustar os valores de início e fim para guiar como o vídeo evolui.</li>
+        <li><strong>Movimento:</strong> Ajuste o quanto de movimento há no seu vídeo. Um valor mais alto significa mais ação. O intervalo é de 0 a 127, com 60 como padrão.</li>
+        <li><strong>Força de Aumento de Ruído:</strong> Adicione um pouco de ruído ao seu vídeo para dar uma aparência mais texturizada. O intervalo é de 0 a 1, com 0 sendo o padrão.</li>
+        <li><strong>Quadros por Segundo (FPS):</strong> Defina a velocidade de reprodução do seu vídeo. O padrão é 16 FPS, mas você pode ir até 16 para uma reprodução mais rápida.</li>
+        <li><strong>Método de Interpolação:</strong> Escolha como os quadros são mesclados. O padrão é "lerp" (interpolação linear), mas você também pode usar "slerp" (interpolação linear esférica) para efeitos diferentes.</li>
+        <li><strong>Pular Camadas:</strong> Pule certas camadas para um estilo de vídeo diferente. Você pode pular até 2 camadas, ou deixar nulo para o comportamento padrão.</li>
+    </ul>
+
+    <p>Lembre-se, o AiCasso é bastante inteligente! Você não precisa acertar todos os detalhes ou usar gramática correta. Basta descrever o que você quer, e o AiCasso fará o resto. Divirta-se criando seus vídeos!</p>
+
+</body>
+</html>

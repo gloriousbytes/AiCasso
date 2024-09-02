@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicas para Edição Guiada por Imagem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Dicas para Edição Guiada por Imagem</h2>
+    <p>A funcionalidade de Edição Guiada por Imagem no AiCasso permite que você faça alterações em uma imagem apenas descrevendo o que deseja. Seja para mudar o estilo, ajustar o clima ou modificar certas partes, o AiCasso fará isso por você sem a necessidade de selecionar ou pintar manualmente qualquer coisa.</p>
+
+    <h3>Como Funciona:</h3>
+
+    <div class="example">
+        <strong>Imagem Inicial:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CpnI7HqIAzcrMjmQb5_25yJilhxraZ80/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Descreva Sua Alteração:</strong>
+        <p>Basta digitar o que você deseja mudar, e o AiCasso aplicará essas alterações na imagem.</p>
+    </div>
+
+    <h3>Exemplos de Edições:</h3>
+
+    <div class="example">
+        <strong>Exemplo 1:</strong> "Deixe-a loira."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1cI2vE6dOcFxInjqzq1_mVru_nLCGFTaS/preview"></iframe>
+        </div>
+        <p><em>Resultado:</em> O AiCasso mudará a cor do cabelo da pessoa para loiro.</p>
+    </div>
+
+    <div class="example">
+        <strong>Exemplo 2:</strong> "Faça parecer noite, use 50 passos, uma escala de orientação de 1 e uma escala de orientação de imagem de 1."
+        <div class="example">
+            <strong>Imagem de Entrada:</strong>
+            <div class="result">
+                <iframe src="https://drive.google.com/file/d/1PlJNkwIWrK3Uu_bq38te_dtqp2XBkW_e/preview"></iframe>
+            </div>
+        </div>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11mjTtcBdI8T0cMcfQz6HEJ79xOhw81VG/preview"></iframe>
+        </div>
+        <p><em>Resultado:</em> A imagem será transformada em uma cena noturna com ajustes específicos baseados nos detalhes fornecidos.</p>
+    </div>
+
+    <h3>Opções Adicionais</h3>
+    <p>Você pode ajustar suas edições usando estas configurações opcionais:</p>
+
+    <ul>
+        <li><strong>Escala de Orientação de Imagem:</strong> Controla quão fiel a nova imagem será à original. Um valor mais baixo significa que as mudanças são mais sutis, enquanto um valor mais alto as destaca mais. Você pode definir isso entre 1 e 8.</li>
+        <li><strong>Passos:</strong> Define quantos refinamentos a ferramenta fará. Mais passos resultam em uma imagem final mais suave e detalhada. Você pode escolher entre 1 e 50 passos, com 20 como padrão.</li>
+        <li><strong>Escala de Orientação:</strong> Afeta quão fielmente a IA segue sua descrição. Uma escala mais baixa dá mais liberdade criativa à IA, enquanto uma escala mais alta a faz seguir de perto o que você disse. Você pode ajustar isso entre 1 e 20.</li>
+    </ul>
+
+</body>
+</html>

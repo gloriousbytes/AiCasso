@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Recursos para Gerar Vídeo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guia para Usar o Recurso de Gerar Vídeo</h2>
+    <p>O recurso de Gerar Vídeo no AiCasso permite que você crie vídeos simplesmente descrevendo o que deseja ver. Basta digitar sua ideia, e o AiCasso a transformará em um vídeo!</p>
+
+    <h3>Como Funciona:</h3>
+    
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Um galo animado em 3D em um campo sozinho, comendo e sendo feliz. Faça um vídeo em retrato com 50 passos de redução de ruído."</p>
+        <strong>Resultado:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Um desenho animado de um galo em um campo em dimensões de paisagem."</p>
+        <strong>Resultado:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Um galo em um campo."</p>
+        <strong>Resultado:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Um galo que está no campo sozinho. Dê-lhe uma sensação natural."</p>
+        <strong>Resultado:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Opções Adicionais</h3>
+    <p>Quer ajustar seu vídeo? Aqui estão algumas configurações que você pode experimentar:</p>
+
+    <ul>
+        <li><strong>Número de Quadros:</strong> Escolha quantos quadros (imagens individuais) seu vídeo terá. Você pode ir até 25 quadros, com 16 como padrão.</li>
+        <li><strong>Número de Passos de Redução de Ruído:</strong> Isso controla a suavidade do seu vídeo. Mais passos significam vídeos mais suaves. Você pode definir até 50 passos, com 20 como padrão.</li>
+        <li><strong>Escala de Orientação:</strong> Isso ajuda o vídeo a seguir de perto sua descrição. Quanto maior o número, mais ele segue seu prompt. O intervalo é de 0 a 8, com 8 como padrão.</li>
+        <li><strong>Pular Camadas:</strong> Pule certas camadas para um estilo de vídeo diferente. Por padrão, nenhuma camada é pulada, mas você pode pular até 2.</li>
+        <li><strong>Ampliar Largura e Altura:</strong> Você pode aumentar o tamanho do seu vídeo ajustando a resolução. O padrão é 1024x1024 pixels, mas você pode ajustar conforme suas necessidades.</li>
+        <li><strong>Força de Ampliação:</strong> Isso muda o quanto seu vídeo se ajusta quando ampliado. O padrão é 1, mas você pode ajustá-lo para ver mais diferenças.</li>
+        <li><strong>Escala de Orientação de Ampliação:</strong> Isso orienta o processo de ampliação, com um intervalo de 0 a 8, e um padrão de 8.</li>
+        <li><strong>Passos de Inferência de Ampliação:</strong> O número de passos tomados para ampliar o vídeo. Mais passos resultam em uma ampliação mais suave, com um máximo de 50 e um padrão de 20.</li>
+        <li><strong>Amostragem Aprimorada:</strong> Quer um vídeo mais refinado? Ative esta opção. Está desativada por padrão.</li>
+        <li><strong>Semente de Amostragem Aprimorada:</strong> Use isso para gerar o mesmo vídeo sempre com amostragem aprimorada. É opcional e está desativado por padrão.</li>
+        <li><strong>Quadros por Segundo (FPS):</strong> Defina a velocidade do seu vídeo. O padrão é 16 FPS, mas você pode ajustá-lo até 16.</li>
+        <li><strong>Modelo de Vídeo:</strong> Escolha o estilo do seu vídeo. As opções incluem:
+            <ul>
+                <li><strong>Padrão:</strong> Um modelo de vídeo padrão.</li>
+                <li><strong>Desenho Animado:</strong> Um estilo de vídeo cartoon.</li>
+                <li><strong>Natural:</strong> Um estilo de vídeo realista e natural.</li>
+                <li><strong>Animado 3D:</strong> Um estilo de vídeo animado em 3D.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Lembre-se, essas configurações são opcionais. O recurso de Gerar Vídeo funciona muito bem com apenas uma descrição simples, então sinta-se à vontade para experimentar e ver o que você pode criar!</p>
+
+</body>
+</html>

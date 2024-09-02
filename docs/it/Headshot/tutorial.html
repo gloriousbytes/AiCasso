@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida alla Funzione Headshot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guida all'Uso della Funzione Headshot</h2>
+    <p>Con la funzione Headshot di AiCasso, puoi creare ritratti straordinari e unici semplicemente descrivendo ciò che desideri. È perfetta per realizzare immagini mozzafiato, sia che tu voglia una scena serena, un guerriero epico o qualsiasi altra cosa la tua immaginazione possa evocare!</p>
+
+    <h3>Come Funziona:</h3>
+    
+    <div class="example">
+        <strong>Immagine di Input:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+        </div>
+        <strong>Prompt 1:</strong>
+        <p>"Un uomo nella neve"</p>
+        <strong>Risultato 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+        </div>
+        <strong>Prompt 2:</strong>
+        <p>"Un guerriero nella foresta, usa una scala media alta come il 78% di questo"</p>
+        <strong>Risultato 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Parametri Opzionali</h3>
+    <p>Vuoi aggiungere un po' più di stile o controllo ai tuoi headshot generati? Ecco alcune opzioni interessanti che puoi modificare:</p>
+
+    <ul>
+        <li><strong>Prompt Negativo:</strong> Qui puoi dire ad AiCasso cosa <em>non</em> vuoi vedere nell'immagine. Ad esempio, se non vuoi elementi di sfondo, puoi menzionarlo qui. Se lasci questo campo vuoto, AiCasso si concentrerà solo su ciò che desideri.</li>
+        <li><strong>Numero di Passaggi di Denoising:</strong> Questo controlla quanto liscia e raffinata appare la faccia. Puoi scegliere tra 21, 31 o 41 passaggi, con 41 come predefinito. Più passaggi di solito significano un risultato più pulito e rifinito.</li>
+        <li><strong>Scala di Guida:</strong> È come dare ad AiCasso una spinta in più per rimanere fedele alla tua descrizione. La scala varia da 1 a 20, con 10 come predefinito. Numeri più alti significano che AiCasso si atterrà più fedelmente a ciò che descrivi.</li>
+        <li><strong>Scala S:</strong> Questo regola la struttura del viso. È un po' tecnico, ma essenzialmente modifica quanto forti o morbidi sono i tratti del viso. Il valore predefinito è 1.0, e puoi andare da 0.0 a 2.0 a seconda dell'aspetto che desideri ottenere.</li>
+    </ul>
+
+    <p>Ricorda, questi parametri sono totalmente opzionali. AiCasso è piuttosto indulgente, quindi non devi essere super preciso o grammaticalmente corretto. Basta descrivere ciò che vuoi con le tue parole, e AiCasso farà la magia. Divertiti a creare i tuoi headshot!</p>
+
+</body>
+</html>
