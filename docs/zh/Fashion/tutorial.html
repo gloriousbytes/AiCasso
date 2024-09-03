@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时尚生成功能指南</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>使用时尚生成功能指南</h2>
+    <p>AiCasso 的时尚生成功能可以让您为某人穿上特定的服装，如衬衫、连衣裙或裤子。只需描述您想要的效果，AiCasso 就会将服装应用到图像中的人物身上。</p>
+
+    <h3>工作原理：</h3>
+    
+    <div class="example">
+        <strong>输入 1 - 人物图像：</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+        </div>
+        <strong>输入 2 - 服装项目：</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+        </div>
+        <strong>提示：</strong>
+        <p>"穿衬衫的男士"</p>
+        <strong>结果：</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>可选参数</h3>
+    <p>如果您想添加自己的风格或确保结果符合您的期望，可以调整以下设置：</p>
+
+    <ul>
+        <li><strong>负面提示：</strong> 如果有您<em>不</em>想在图像中出现的内容，可以在此处提及。如果您对 AiCasso 的结果没有特别要求，可以留空。</li>
+        <li><strong>服装类型：</strong> 告诉 AiCasso 您关注的是<em>上半身</em>、<em>下半身</em>还是<em>连衣裙</em>。如果不确定，默认是上半身。</li>
+        <li><strong>去噪步骤数量：</strong> 这决定了图像的平滑和精致程度。您可以选择 21、31 或 41 步，默认是 21 步。更多的步骤通常意味着更精致的外观。</li>
+        <li><strong>指导尺度：</strong> 这有助于图像紧密贴合您的描述。您可以将其设置为 1 到 20，默认是 7。较高的数字意味着 AiCasso 会更紧密地遵循您的提示。</li>
+    </ul>
+
+    <p>请记住，这些设置是可选的！AiCasso 非常智能，即使您没有每个细节都做到完美，它也能理解您的意思。尽情发挥您的创造力吧！</p>
+
+</body>
+</html>

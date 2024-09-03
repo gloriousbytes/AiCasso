@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Ciri Relighting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Panduan Menggunakan Ciri Relighting</h2>
+    <p>Ciri Relighting dalam AiCasso sangat hebat! Ia membolehkan anda menukar pencahayaan dalam imej anda dengan hanya beberapa perkataan. Mahu matahari di belakang atau cahaya lembut dari sisi? Tiada masalah! Hanya gambarkan, dan AiCasso akan menguruskan selebihnya.</p>
+
+    <h3>Bagaimana Ia Berfungsi:</h3>
+    
+    <div class="example">
+        <strong>Imej Input:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+        </div>
+        <strong>Prompt Digunakan:</strong>
+        <p>"Jadikan supaya matahari berada di belakang"</p>
+        <strong>Hasil:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Pelarasan Pilihan</h3>
+    <p>Jika anda berasa berani dan ingin menambah sedikit gaya pada relighting anda, berikut adalah beberapa perkara yang boleh anda laraskan:</p>
+
+    <ul>
+        <li><strong>Prompt Negatif:</strong> Mahu mengelakkan sesuatu? Anda boleh memberitahu AiCasso apa yang <em>tidak</em> perlu disertakan. Tetapi jangan risau, jika anda biarkan kosong, AiCasso hanya akan fokus pada apa yang anda mahukan.</li>
+        <li><strong>Arah Pencahayaan:</strong> Anda boleh menentukan dari mana cahaya harus datang—kiri, kanan, atas, bawah, atau tiada langsung. Secara lalai, cahaya datang dari kiri.</li>
+        <li><strong>Skala Panduan:</strong> Ini membantu AiCasso berpegang pada penerangan anda. Skala ini dari 1 hingga 20, dengan 7 sebagai lalai. Semakin tinggi nombor, semakin AiCasso berpegang pada prompt anda.</li>
+        <li><strong>Skala Resolusi Tinggi:</strong> Mahu imej anda menonjol? Ini mengawal kejelasan. Lalai adalah 1.5, tetapi anda boleh menetapkannya dari 1.0 hingga 2.0 untuk imej yang lebih jelas.</li>
+        <li><strong>Tahap Denoise:</strong> Terdapat dua tahap—resolusi rendah dan resolusi tinggi. Ini mengawal betapa licin atau terperinci imej akhir kelihatan. Anda boleh menetapkan tahap denoise rendah antara 0.0 dan 1.0 (lalai adalah 0.9) dan resolusi tinggi antara 0.0 dan 1.0 (lalai adalah 0.5).</li>
+        <li><strong>Bilangan Langkah:</strong> Ini adalah berapa banyak langkah yang diambil AiCasso untuk menggilap imej anda. Lalai adalah 50, tetapi anda boleh pergi dari 20 hingga 50 langkah.</li>
+    </ul>
+
+    <p>Ingat, pelarasan ini adalah pilihan sepenuhnya! AiCasso cukup baik dalam memahami apa yang anda mahukan, jadi hanya gambarkan visi anda dengan kata-kata anda sendiri, dan ia akan melakukan keajaiban. Tidak perlu sempurna dengan tatabahasa atau butiran—hanya berseronok dan lihat apa yang anda boleh cipta!</p>
+
+</body>
+</html>

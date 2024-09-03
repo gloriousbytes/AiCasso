@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>头像功能指南</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>使用头像功能指南</h2>
+    <p>通过AiCasso的头像功能，您可以通过简单描述来创建惊人且独特的肖像。无论您想要宁静的场景、史诗般的战士，还是其他任何您想象中的画面，它都非常适合制作令人惊叹的图像！</p>
+
+    <h3>工作原理：</h3>
+    
+    <div class="example">
+        <strong>输入图像：</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+        </div>
+        <strong>提示 1：</strong>
+        <p>"雪中的男人"</p>
+        <strong>结果 1：</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+        </div>
+        <strong>提示 2：</strong>
+        <p>"森林中的战士，使用中高比例，如78%"</p>
+        <strong>结果 2：</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>可选参数</h3>
+    <p>想为生成的头像增添一些风格或控制？以下是一些您可以调整的酷选项：</p>
+
+    <ul>
+        <li><strong>负面提示：</strong> 这里您可以告诉AiCasso您<em>不</em>想在图像中看到的内容。例如，如果您不想要任何背景元素，可以在此处提及。如果您将其留空，AiCasso将专注于您想要的内容。</li>
+        <li><strong>去噪步骤数：</strong> 这控制面部的平滑和精致程度。您可以选择21、31或41步，默认是41步。更多的步骤通常意味着更干净、更精致的结果。</li>
+        <li><strong>指导比例：</strong> 这就像给AiCasso一点额外的推动力，以保持对您描述的忠实度。比例范围为1到20，默认是10。较高的数字意味着AiCasso会更贴近您的描述。</li>
+        <li><strong>S比例：</strong> 这调整面部的结构。这有点技术性，但本质上是调整面部特征的强度或柔和度。默认是1.0，您可以根据想要的外观在0.0到2.0之间选择。</li>
+    </ul>
+
+    <p>请记住，这些参数是完全可选的。AiCasso非常宽容，因此您不必非常精确或语法正确。只需用自己的话描述您想要的内容，AiCasso就会施展魔法。享受创建您的头像的乐趣吧！</p>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비디오 생성 기능 가이드</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>비디오 생성 기능 사용 가이드</h2>
+    <p>AiCasso의 비디오 생성 기능을 사용하면 보고 싶은 내용을 설명하기만 하면 비디오를 만들 수 있습니다. 아이디어를 입력하면 AiCasso가 이를 비디오로 구현합니다!</p>
+
+    <h3>작동 방식:</h3>
+    
+    <div class="example">
+        <strong>프롬프트:</strong>
+        <p>"3D 애니메이션으로 된 수탉이 들판에서 혼자 먹고 행복해하는 모습. 50개의 노이즈 제거 단계를 사용하여 세로 비디오로 만들어 주세요."</p>
+        <strong>결과:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>프롬프트:</strong>
+        <p>"들판에 있는 수탉의 만화, 가로 비율."</p>
+        <strong>결과:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>프롬프트:</strong>
+        <p>"들판에 있는 수탉."</p>
+        <strong>결과:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>프롬프트:</strong>
+        <p>"들판에 혼자 있는 수탉. 자연스러운 느낌을 주세요."</p>
+        <strong>결과:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>추가 옵션</h3>
+    <p>비디오를 세부 조정하고 싶으신가요? 다음은 조정할 수 있는 설정입니다:</p>
+
+    <ul>
+        <li><strong>프레임 수:</strong> 비디오에 포함될 프레임(개별 이미지)의 수를 선택하세요. 최대 25프레임까지 가능하며, 기본값은 16입니다.</li>
+        <li><strong>노이즈 제거 단계 수:</strong> 비디오의 부드러움을 조절합니다. 단계가 많을수록 비디오가 부드러워집니다. 최대 50단계까지 설정할 수 있으며, 기본값은 20입니다.</li>
+        <li><strong>가이드 스케일:</strong> 비디오가 설명에 얼마나 잘 맞추어지는지를 조절합니다. 숫자가 높을수록 프롬프트를 더 잘 따릅니다. 범위는 0에서 8까지이며, 기본값은 8입니다.</li>
+        <li><strong>클립 스킵:</strong> 다른 비디오 스타일을 위해 특정 레이어를 건너뜁니다. 기본적으로 레이어는 건너뛰지 않지만 최대 2개까지 건너뛸 수 있습니다.</li>
+        <li><strong>업스케일 너비 및 높이:</strong> 해상도를 조정하여 비디오를 더 크게 만들 수 있습니다. 기본값은 1024x1024 픽셀이며, 필요에 따라 조정할 수 있습니다.</li>
+        <li><strong>업스케일 강도:</strong> 업스케일 시 비디오가 얼마나 조정되는지를 변경합니다. 기본값은 1이며, 더 많은 차이를 보려면 조정할 수 있습니다.</li>
+        <li><strong>업스케일 가이드 스케일:</strong> 업스케일링 과정을 안내하며, 범위는 0에서 8까지이고 기본값은 8입니다.</li>
+        <li><strong>업스케일 추론 단계:</strong> 비디오를 업스케일하는 데 걸리는 단계 수입니다. 단계가 많을수록 업스케일링이 부드러워지며, 최대 50단계, 기본값은 20입니다.</li>
+        <li><strong>개선된 샘플링:</strong> 더 정교한 비디오를 원하신다면 이 옵션을 켜세요. 기본적으로 꺼져 있습니다.</li>
+        <li><strong>개선된 샘플링 시드:</strong> 개선된 샘플링으로 매번 동일한 비디오를 생성할 수 있습니다. 선택사항이며 기본적으로 꺼져 있습니다.</li>
+        <li><strong>초당 프레임 수 (FPS):</strong> 비디오의 속도를 설정합니다. 기본값은 16 FPS이며, 최대 16까지 조정할 수 있습니다.</li>
+        <li><strong>비디오 모델:</strong> 비디오의 스타일을 선택하세요. 옵션은 다음과 같습니다:
+            <ul>
+                <li><strong>기본:</strong> 표준 비디오 모델.</li>
+                <li><strong>만화:</strong> 만화 스타일의 비디오.</li>
+                <li><strong>자연:</strong> 현실적이고 자연스러운 비디오 스타일.</li>
+                <li><strong>애니메이션 3D:</strong> 3D 애니메이션 비디오 스타일.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>이 설정들은 선택사항입니다. 비디오 생성 기능은 간단한 설명만으로도 잘 작동하므로, 자유롭게 실험해보고 어떤 것을 만들 수 있는지 확인해보세요!</p>
+
+</body>
+</html>

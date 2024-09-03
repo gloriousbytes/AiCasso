@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mẹo Sử Dụng Tính Năng Outpaint</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Mẹo Sử Dụng Tính Năng Outpaint</h2>
+    <p>Tính năng Outpaint trong AiCasso cho phép bạn mở rộng hình ảnh bằng cách thêm các yếu tố mới xung quanh hoặc mở rộng những gì đã có. Chỉ cần mô tả những gì bạn muốn, và AiCasso sẽ lo phần còn lại.</p>
+
+    <h3>Cách Hoạt Động:</h3>
+    
+    <div class="example">
+        <strong>Hình Ảnh Bắt Đầu:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Mô Tả Thay Đổi Của Bạn:</strong>
+        <p>Chỉ cần nhập những gì bạn muốn thêm hoặc mở rộng, và AiCasso sẽ áp dụng những thay đổi đó. Bạn có thể chỉ định hướng như trái, phải, lên hoặc xuống, và thậm chí là chi tiết như thu nhỏ hoặc di chuyển.</p>
+    </div>
+
+    <h3>Ví Dụ Chỉnh Sửa:</h3>
+
+    <div class="example">
+        <strong>Ví Dụ 1:</strong> "Thêm một tảng băng trôi ở bên phải với hệ số dịch chuyển là 0.4."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+        </div>
+        <p><em>Kết Quả:</em> AiCasso mở rộng hình ảnh sang bên phải và thêm một tảng băng trôi, giữ cho nó phù hợp với cảnh quan hiện có.</p>
+    </div>
+
+    <div class="example">
+        <strong>Ví Dụ 2:</strong> "Thu nhỏ, giữ sự nhất quán của biển tối vào ban đêm."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+        </div>
+        <p><em>Kết Quả:</em> Hình ảnh thu nhỏ, tiết lộ thêm về biển tối, trong khi vẫn duy trì bầu không khí của cảnh đêm.</p>
+    </div>
+
+    <h3>Tùy Chọn Bổ Sung</h3>
+    <p>Dưới đây là một số cài đặt tùy chọn bạn có thể sử dụng để tinh chỉnh chỉnh sửa của mình:</p>
+
+    <ul>
+        <li><strong>Lời Nhắc Tiêu Cực:</strong> Nếu có điều gì cụ thể bạn không muốn trong hình ảnh, bạn có thể nói với AiCasso ở đây. Ví dụ, bạn có thể muốn tránh thêm một số màu sắc hoặc đối tượng nhất định.</li>
+        <li><strong>Loại Di Chuyển:</strong> Điều này quyết định hướng mà hình ảnh mở rộng. Bạn có thể chọn từ trái, phải, lên, xuống, hoặc lùi lại (thu nhỏ). Ví dụ, để di chuyển sang phải, bạn sẽ chọn 'phải'.</li>
+        <li><strong>Hệ Số Dịch Chuyển:</strong> Điều này kiểm soát mức độ hình ảnh di chuyển với mỗi bước khi mở rộng. Giá trị cao hơn di chuyển hình ảnh nhiều hơn, tiết lộ nhiều nội dung mới hơn. Mặc định là 0.05, nhưng bạn có thể điều chỉnh từ 0 đến 1.</li>
+        <li><strong>Dịch Chuyển Chiều Rộng/Chiều Cao Mỗi Bước:</strong> Những điều này kiểm soát mức độ hình ảnh di chuyển theo chiều ngang (chiều rộng) hoặc chiều dọc (chiều cao) với mỗi bước. Mặc định là 32 pixel mỗi bước, nhưng bạn có thể điều chỉnh dựa trên mức độ bạn muốn hình ảnh di chuyển.</li>
+        <li><strong>Số Bước Suy Luận hoặc Khử Nhiễu:</strong> Điều này xác định số lượng điều chỉnh mà AiCasso thực hiện để có được hình ảnh cuối cùng. Nhiều bước dẫn đến kết quả mượt mà hơn, với mặc định là 20 bước, nhưng bạn có thể lên đến 50.</li>
+        <li><strong>Số Bước Nội Suy:</strong> Điều này kiểm soát mức độ mượt mà của chuyển tiếp giữa hai hướng trong một lần mở rộng. Mặc định là 60, nhưng bạn có thể tăng lên đến 120 để có chuyển tiếp mượt mà hơn.</li>
+    </ul>
+
+    <p>Hãy nhớ rằng, những cài đặt này là tùy chọn. AiCasso được thiết kế để hoạt động tốt chỉ với mô tả ngôn ngữ tự nhiên của bạn. Hãy thoải mái thử nghiệm và xem điều gì hoạt động tốt nhất cho hình ảnh của bạn!</p>
+
+</body>
+</html>

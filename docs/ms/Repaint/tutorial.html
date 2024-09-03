@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petua Ciri Repaint</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Petua Ciri Repaint</h2>
+    <p>Menggunakan ciri Inpaint dalam AiCasso membolehkan anda mengubah kawasan tertentu dalam imej dengan mengisi atau menggantikannya. Sama ada anda ingin meningkatkan imej sedia ada atau mengubah sepenuhnya bahagian tertentu, AiCasso memudahkan proses tersebut. Hanya pilih kawasan yang anda ingin ubah, berikan arahan, dan biarkan AiCasso melakukan keajaibannya.</p>
+
+   <h3>Pilihan:</h3>
+
+    <div class="example">
+        <strong>Kekuatan:</strong>
+        <p>Pilihan kekuatan mengawal sejauh mana imej asal diubah oleh arahan. Ia berkisar dari 0 hingga 1. Nilai 0 bermaksud imej asal hampir tidak diubah, manakala nilai 1 bermaksud imej asal hampir sepenuhnya digantikan oleh butiran baru yang anda nyatakan. Anggap ia sebagai seberapa 'kuat' perubahan anda.</p>
+    </div>
+
+    <div class="example">
+        <strong>Gaya Peningkatan:</strong>
+        <p>Pilihan gaya peningkatan membolehkan anda menambah gaya artistik atau tematik tertentu kepada kawasan yang diubah. Anda boleh memilih daripada pelbagai gaya seperti:</p>
+    </div>
+
+    <h3>Bagaimana Ia Berfungsi:</h3>
+
+    <div class="example">
+        <strong>Imej Input:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1OzuoAKoYvwEW30ScvOjgX9lfe6VpbdNq/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Lukis Kawasan yang Akan Diisi atau Diganti:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1-PaOaaDEvMogYhFjiMjUztvsxhllTsQ3/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Contoh:</h3>
+
+    <div class="example">
+        <strong>Arahan 1:</strong> "Imej hiper-realistis kucing di taman."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1BpTJPP7s5CJ-6Yk03s281K6ay6DQ-sFa/preview"></iframe>
+        </div>
+        <p><em>Hasil:</em> AiCasso akan menghasilkan kucing hiper-realistis di taman, mengisi kawasan yang dilukis dengan tekstur dan pencahayaan yang realistik.</p>
+    </div>
+
+    <div class="example">
+        <strong>Arahan 2:</strong> "Kucing di taman dengan gaya hiper-realistis dan kekuatan 0.7."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1USCGxNAf0iteIGn8Klp97HI-spTTiREW/preview"></iframe>
+        </div>
+        <p><em>Hasil:</em> Ini akan mencipta kucing hiper-realistis di taman, dengan kekuatan pengubahsuaian ditetapkan kepada 0.7, menggabungkan elemen baru dengan lancar ke dalam imej asal.</p>
+    </div>
+
+  <h3>Gaya Peningkatan</h3>
+<p>Tidak pasti gaya mana yang hendak dipilih? Jangan risau! Hanya sebutkan mana-mana gaya yang terlintas di fikiran, walaupun ia tidak betul secara tatabahasa, dan AiCasso akan mengetahuinya daripada senarai Gaya Peningkatan yang tersedia.</p>
+
+    <ul>
+        <li><strong>Lalai:</strong> Gaya seimbang dan neutral tanpa pengaruh artistik tertentu.</li>
+        <li><strong>Peningkatan:</strong> Sedikit meningkatkan butiran dan estetika keseluruhan.</li>
+        <li><strong>Cinematic Diva:</strong> Menambah kesan dramatik seperti filem dengan kontras pencahayaan yang kuat.</li>
+        <li><strong>Ekspresionisme Abstrak:</strong> Menekankan bentuk abstrak dan percikan warna yang bersemangat.</li>
+        <li><strong>Akademia:</strong> Menambah sentuhan ilmiah dan klasik kepada imej.</li>
+        <li><strong>Action Figure:</strong> Menghasilkan imej dengan gaya berlebihan dan dinamik seperti figura aksi.</li>
+        <li><strong>Karakter 3D Adorable:</strong> Menghasilkan karakter 3D yang comel dan kartun.</li>
+        <li><strong>Kawaii Adorable:</strong> Menekankan gaya comel dan menawan yang tipikal dalam budaya Kawaii.</li>
+        <li><strong>Art Deco:</strong> Menggunakan gaya geometrik dan dekoratif dari zaman Art Deco.</li>
+        <li><strong>Art Nouveau:</strong> Menambah garis mengalir dan elemen yang diilhamkan oleh alam semula jadi, tipikal Art Nouveau.</li>
+        <li><strong>Aura Astral:</strong> Mencipta suasana mistik dan dunia lain.</li>
+        <li><strong>Avant Garde:</strong> Menumpukan pada ekspresi artistik yang inovatif dan eksperimental.</li>
+        <li><strong>Baroque:</strong> Menggunakan gaya dramatik, terperinci, dan rumit dari era Baroque.</li>
+        <li><strong>Poster Gaya Bauhaus:</strong> Mencerminkan prinsip reka bentuk minimalis dan fungsional Bauhaus.</li>
+        <li><strong>Lukisan Skematik Pelan:</strong> Menghasilkan imej yang menyerupai pelan teknikal.</li>
+        <li><strong>Karikatur:</strong> Menghasilkan potret yang berlebihan dan kartun.</li>
+        <li><strong>Seni Cel-Shaded:</strong> Menggunakan warna rata dan berani yang tipikal dalam animasi cel-shaded.</li>
+        <li><strong>Lembaran Reka Bentuk Karakter:</strong> Menumpukan pada reka bentuk karakter yang bersih dan jelas sesuai untuk animasi.</li>
+        <li><strong>Seni Klasikisme:</strong> Meniru gaya seni yang halus dan ideal dari Zaman Klasik.</li>
+        <li><strong>Lukisan Medan Warna:</strong> Menampilkan kawasan besar dengan satu warna untuk mencipta bidang warna rata.</li>
+        <li><strong>Seni Pensel Berwarna:</strong> Meniru tekstur dan penampilan lukisan pensel berwarna.</li>
+        <li><strong>Seni Konseptual:</strong> Mengutamakan idea dan konsep berbanding estetika atau kebimbangan material.</li>
+        <li><strong>Konstruktivisme:</strong> Mencerminkan gaya industri dan geometrik dari gerakan Konstruktivis.</li>
+        <li><strong>Kubisme:</strong> Memecahkan objek kepada bentuk geometrik dan menyajikannya dalam bentuk abstrak.</li>
+        <li><strong>Dadaisme:</strong> Menekankan absurditi, ketidakrasionalan, dan estetika anti-seni.</li>
+        <li><strong>Fantasi Gelap:</strong> Mencipta suasana suram dan gotik dengan elemen gelap dan menakutkan.</li>
+        <li><strong>Suasana Gelap dan Suram:</strong> Menggunakan pencahayaan rendah dan bayang-bayang untuk mencipta suasana suram.</li>
+        <li><strong>Seni DMT:</strong> Menampilkan visual bersemangat dan psychedelic yang diilhamkan oleh pengalaman DMT.</li>
+        <li><strong>Seni Doodle:</strong> Menekankan gaya lukisan yang aneh dan bermain-main, sering kali rumit dan terperinci.</li>
+        <li><strong>Pendedahan Berganda:</strong> Menggabungkan dua imej menjadi satu, mencipta kesan berlapis dan surreal.</li>
+        <li><strong>Cat Titisan dan Percikan:</strong> Menggunakan cat yang dititis dan percikan untuk mencipta komposisi yang dinamik dan kacau.</li>
+        <li><strong>Ekspresionisme:</strong> Mengutamakan ekspresi emosi berbanding representasi realistik, sering menggunakan warna berani dan bentuk dramatik.</li>
+        <li><strong>Foto Polaroid Pudar:</strong> Meniru penampilan yang pudar dan nostalgia dari foto Polaroid yang pudar.</li>
+        <li><strong>Fauvisme:</strong> Menggunakan warna bersemangat dan tidak semulajadi serta kerja berus yang berani, diilhamkan oleh gerakan Fauvisme.</li>
+        <li><strong>2D Rata:</strong> Menekankan reka bentuk yang ringkas dan rata dengan bayangan atau kedalaman yang minimum, sering dalam gaya kartun.</li>
+        <li><strong>Gaya Fortnite:</strong> Mencerminkan gaya seni yang bersemangat dan kartun yang tipikal dalam permainan video Fortnite.</li>
+        <li><strong>Futurisme:</strong> Menumpukan pada pergerakan dinamik, tenaga, dan penggambaran teknologi masa depan.</li>
+        <li><strong>Glitchcore:</strong> Menekankan kesilapan digital dan gangguan sebagai gaya seni, sering dengan visual yang terdistorsi.</li>
+        <li><strong>Glo-Fi:</strong> Menggunakan pencahayaan lembut dan bercahaya untuk mencipta suasana yang berangan dan etereal.</li>
+        <li><strong>Gaya Googie:</strong> Mencerminkan trend reka bentuk futuristik dan Zaman Angkasa dari pertengahan abad ke-20.</li>
+        <li><strong>Seni Grafiti:</strong> Menggunakan estetika gaya jalanan yang bersemangat dan tipikal dalam grafiti dan mural bandar.</li>
+        <li><strong>Seni Renaissance Harlem:</strong> Mencerminkan ekspresi budaya dan seni yang kaya dari Renaissance Harlem.</li>
+        <li><strong>Fesyen Tinggi:</strong> Menekankan estetika yang licin, canggih, dan avant-garde dari fesyen tinggi.</li>
+        <li><strong>Idyllic:</strong> Mencipta suasana yang damai, tenang, dan sering pastoral.</li>
+        <li><strong>Impresionisme:</strong> Menggunakan kerja berus yang longgar dan warna bersemangat untuk menangkap kesan cahaya dan suasana.</li>
+        <li><strong>Lukisan Infografik:</strong> Menekankan susun atur yang jelas dan menarik secara visual untuk menyampaikan maklumat secara grafik.</li>
+        <li><strong>Lukisan Titisan Dakwat:</strong> Menggunakan dakwat untuk mencipta kesan titisan dan mengalir dalam lukisan.</li>
+        <li><strong>Lukisan Dakwat Jepun:</strong> Meniru teknik sapuan berus tradisional dan estetika seni dakwat Jepun.</li>
+        <li><strong>Fotografi Knolling:</strong> Menekankan susunan objek yang kemas dan teratur, sering difoto dari atas.</li>
+        <li><strong>Suasana Ceria dan Cerah:</strong> Menggunakan warna terang dan pencahayaan untuk mencipta suasana yang ceria dan mengangkat semangat.</li>
+        <li><strong>Reka Bentuk Logo:</strong> Menumpukan pada mencipta logo dan elemen penjenamaan yang bersih dan dikenali.</li>
+        <li><strong>Kemewahan Elegan:</strong> Menekankan kecanggihan dan kemewahan, sering dengan tekstur dan bahan yang kaya.</li>
+        <li><strong>Fotografi Makro:</strong> Menumpukan pada close-up yang melampau, sering mendedahkan butiran yang tidak kelihatan kepada mata kasar.</li>
+        <li><strong>Seni Mandala:</strong> Mencipta corak simetri yang rumit, diilhamkan oleh reka bentuk mandala tradisional.</li>
+        <li><strong>Lukisan Penanda:</strong> Meniru garis dan warna yang berani dan bersemangat yang tipikal dalam lukisan penanda.</li>
+        <li><strong>Medievalisme:</strong> Mencerminkan estetika seni dan reka bentuk dari Zaman Pertengahan.</li>
+        <li><strong>Minimalisme:</strong> Menekankan kesederhanaan dan pengurangan bentuk kepada elemen penting mereka.</li>
+        <li><strong>Neo-Baroque:</strong> Menghidupkan semula gaya mewah dan dramatik dari zaman Baroque, dengan pengaruh moden.</li>
+        <li><strong>Neo-Byzantine:</strong> Menggabungkan gaya seni agama yang mewah dari Empayar Byzantine dengan elemen kontemporari.</li>
+        <li><strong>Neo-Futurisme:</strong> Menumpukan pada reka bentuk futuristik, sering dengan estetika berteknologi tinggi yang licin.</li>
+        <li><strong>Neo-Impresionisme:</strong> Menggunakan titik warna yang kecil dan berbeza untuk mencipta imej, diilhamkan oleh gerakan Neo-Impresionis.</li>
+        <li><strong>Neo-Rococo:</strong> Menghidupkan semula gaya hiasan yang rumit dari zaman Rococo, dengan sentuhan moden.</li>
+        <li><strong>Neoklasikisme:</strong> Meniru estetika seni dan reka bentuk dari Zaman Klasik, menekankan keharmonian dan kesederhanaan.</li>
+        <li><strong>Seni Op:</strong> Mencipta ilusi optik dan kesan melalui penggunaan corak geometrik dan kontras.</li>
+        <li><strong>Rumit dan Terperinci:</strong> Menumpukan pada reka bentuk yang sangat terperinci dan rumit dengan fokus pada hiasan.</li>
+        <li><strong>Lukisan Sketsa Pensel:</strong> Meniru tekstur dan penampilan sketsa pensel.</li>
+        <li><strong>Seni Pop:</strong> Menggunakan warna berani dan imej yang diilhamkan oleh budaya popular dan media massa.</li>
+        <li><strong>Rococo:</strong> Mencerminkan gaya seni hiasan yang rumit dari zaman Rococo, dengan penekanan pada ringan dan keanggunan.</li>
+        <li><strong>Seni Siluet:</strong> Menggunakan kontras yang kuat antara cahaya dan bayang-bayang untuk mencipta imej berasaskan siluet yang berani.</li>
+        <li><strong>Seni Vektor Ringkas:</strong> Menekankan bentuk geometrik yang bersih dan warna rata, tipikal seni vektor.</li>
+        <li><strong>SketchUp:</strong> Meniru rupa dan rasa model 3D yang dicipta menggunakan perisian SketchUp.</li>
+        <li><strong>Steampunk:</strong> Menggabungkan estetika era Victoria dengan teknologi berkuasa wap, mencipta gaya retro-futuristik.</li>
+        <li><strong>Surealisme:</strong> Menggabungkan realiti dan imej seperti mimpi untuk mencipta pemandangan yang surreal dan fantastik.</li>
+        <li><strong>Suprematisme:</strong> Menumpukan pada bentuk geometrik asas dan palet warna terhad, diilhamkan oleh gerakan Suprematisme.</li>
+        <li><strong>Terragen:</strong> Meniru landskap realistik yang dihasilkan komputer yang dicipta menggunakan perisian Terragen.</li>
+        <li><strong>Suasana Tenang dan Santai:</strong> Menggunakan warna lembut dan imej yang menenangkan untuk mencipta persekitaran yang damai dan tenang.</li>
+        <li><strong>Reka Bentuk Pelekat:</strong> Menumpukan pada mencipta imej yang bermain-main dan kartun yang sesuai untuk pelekat.</li>
+        <li><strong>Pencahayaan Rim Bersemangat:</strong> Menekankan pencahayaan rim yang terang di sekitar subjek untuk mencipta kesan yang menarik dan bersemangat.</li>
+        <li><strong>Pencahayaan Volumetrik:</strong> Menggunakan pancaran cahaya dan kesan atmosfera untuk mencipta kedalaman dan dimensi.</li>
+        <li><strong>Akvarel:</strong> Meniru tekstur lembut dan mengalir dari lukisan akvarel.</li>
+        <li><strong>Imaginatif dan Bermain-main:</strong> Menumpukan pada imej yang ringan, imaginatif, dan sering kali aneh.</li>
+        <li><strong>Tajam:</strong> Meningkatkan kejelasan dan definisi tepi untuk penampilan yang lebih tajam.</li>
+        <li><strong>Karya Agung:</strong> Menekankan output seni yang berkualiti tinggi, terperinci, dan digilap.</li>
+        <li><strong>Fotografi:</strong> Bertujuan untuk kualiti fotografi yang realistik dan hidup.</li>
+        <li><strong>Negatif:</strong> Membalikkan warna untuk mencipta kesan negatif fotografi.</li>
+        <li><strong>Iklan - Pengiklanan:</strong> Menumpukan pada visual yang bersih dan profesional yang sesuai untuk pengiklanan.</li>
+        <li><strong>Iklan - Automotif:</strong> Menyesuaikan gaya visual untuk pengiklanan automotif yang dinamik dan digilap.</li>
+        <li><strong>Iklan - Korporat:</strong> Menekankan reka bentuk yang licin dan profesional yang sesuai untuk persekitaran korporat.</li>
+        <li><strong>Iklan - Editorial Fesyen:</strong> Menonjolkan penampilan fesyen tinggi yang bergaya yang digunakan dalam editorial fesyen.</li>
+        <li><strong>Iklan - Fotografi Makanan:</strong> Mengoptimumkan imej untuk penampilan yang bersemangat dan menggugah selera yang tipikal dalam fotografi makanan.</li>
+        <li><strong>Iklan - Fotografi Makanan Gourmet:</strong> Menekankan estetika yang kaya dan terperinci dari fotografi makanan gourmet.</li>
+        <li><strong>Iklan - Kemewahan:</strong> Menumpukan pada gaya mewah dan tinggi yang sesuai untuk jenama mewah.</li>
+        <li><strong>Iklan - Hartanah:</strong> Menonjolkan visual yang bersih dan menarik yang tipikal dalam pengiklanan hartanah.</li>
+        <li><strong>Iklan - Runcit:</strong> Menekankan gaya yang menarik dan berfokus pada pengguna yang sesuai untuk pengiklanan runcit.</li>
+        <li><strong>Hiperrealisme:</strong> Berusaha untuk gaya visual yang sangat terperinci dan hidup.</li>
+        <li><strong>Puntillisme:</strong> Menggunakan titik warna yang kecil dan berbeza untuk mencipta imej, diilhamkan oleh gerakan Puntillisme.</li>
+        <li><strong>Psychedelic:</strong> Menekankan warna bersemangat dan visual surreal yang diilhamkan oleh seni psychedelic.</li>
+        <li><strong>Renaissance:</strong> Mencerminkan gaya harmonis dan klasik dari seni Renaissance.</li>
+        <li><strong>Tipografi:</strong> Menumpukan pada penggunaan teks dan fon yang kreatif dan artistik.</li>
+        <li><strong>Biomekanikal Futuristik:</strong> Menggabungkan elemen futuristik dan biomekanikal untuk mencipta gaya organik yang berteknologi tinggi.</li>
+        <li><strong>Biomekanikal Cyberpunk Futuristik:</strong> Menggabungkan estetika biomekanikal dan cyberpunk untuk penampilan yang kasar dan futuristik.</li>
+        <li><strong>Cybernetic Futuristik:</strong> Menumpukan pada visual berteknologi tinggi dan cybernetic.</li>
+        <li><strong>Robot Cybernetic Futuristik:</strong> Menekankan reka bentuk robotik dan cybernetic dengan tepi futuristik.</li>
+        <li><strong>Pemandangan Bandar Cyberpunk Futuristik:</strong> Mencerminkan pemandangan bandar yang kasar dan bercahaya neon yang tipikal dalam seni cyberpunk.</li>
+        <li><strong>Sci-Fi Futuristik:</strong> Menumpukan pada estetika yang diilhamkan oleh masa depan dan fiksyen sains.</li>
+        <li><strong>Cyberpunk Retro Futuristik:</strong> Menggabungkan elemen retro dan cyberpunk untuk gaya yang nostalgik tetapi futuristik.</li>
+        <li><strong>Retro Futuristik:</strong> Menggabungkan visual futuristik dengan elemen reka bentuk retro.</li>
+        <li><strong>Vaporwave Futuristik:</strong> Menekankan visual nostalgik dan surreal yang tipikal dalam seni Vaporwave.</li>
+        <li><strong>Gelembung Permainan:</strong> Menumpukan pada estetika yang bermain-main dan berbuih yang sering dilihat dalam permainan kasual.</li>
+        <li><strong>Cyberpunk Permainan:</strong> Menggabungkan elemen reka bentuk permainan dengan estetika cyberpunk.</li>
+        <li><strong>Pertarungan Permainan:</strong> Mencerminkan gaya dinamik dan intens yang tipikal dalam permainan pertarungan.</li>
+        <li><strong>GTA Permainan:</strong> Meniru gaya bandar yang kasar dan urban yang tipikal dalam permainan Grand Theft Auto.</li>
+        <li><strong>Mario Permainan:</strong> Menumpukan pada gaya kartun yang bersemangat dan tipikal dalam permainan Mario.</li>
+        <li><strong>Minecraft Permainan:</strong> Meniru gaya blok dan piksel yang tipikal dalam Minecraft.</li>
+        <li><strong>Pokemon Permainan:</strong> Mencerminkan gaya anime yang bersemangat dan tipikal dalam permainan Pokémon.</li>
+        <li><strong>Permainan Arked Retro:</strong> Menekankan gaya piksel yang nostalgik dan tipikal dalam permainan arked retro.</li>
+        <li><strong>Permainan RPG Fantasi:</strong> Mencerminkan estetika yang terperinci dan diilhamkan oleh fantasi yang tipikal dalam permainan RPG.</li>
+        <li><strong>Strategi Permainan:</strong> Menumpukan pada reka bentuk yang bersih dan fungsional yang tipikal dalam permainan strategi.</li>
+        <li><strong>Streetfighter Permainan:</strong> Meniru gaya berani dan dinamik yang tipikal dalam permainan Street Fighter.</li>
+        <li><strong>Zelda Permainan:</strong> Mencerminkan gaya yang diilhamkan oleh fantasi yang tipikal dalam permainan Zelda.</li>
+        <li><strong>Arkitek Pelbagai:</strong> Menumpukan pada rendering seni bina yang bersih dan tepat.</li>
+        <li><strong>Disco Pelbagai:</strong> Menekankan estetika bercahaya neon yang bersemangat dan tipikal dalam budaya disco.</li>
+        <li><strong>Dreamscape Pelbagai:</strong> Mencipta persekitaran yang surreal dan seperti mimpi.</li>
+        <li><strong>Dystopian Pelbagai:</strong> Mencerminkan visual yang kasar dan suram yang tipikal dalam tetapan dystopian.</li>
+        <li><strong>Fairy Tale Pelbagai:</strong> Menekankan elemen yang aneh dan ajaib yang tipikal dalam cerita dongeng.</li>
+        <li><strong>Gothic Pelbagai:</strong> Mencerminkan gaya yang gelap dan hiasan yang tipikal dalam seni dan seni bina Gothic.</li>
+        <li><strong>Grunge Pelbagai:</strong> Menekankan estetika yang kasar dan mentah yang tipikal dalam budaya grunge.</li>
+        <li><strong>Horror Pelbagai:</strong> Menumpukan pada visual yang gelap, menakutkan, dan tidak menyenangkan yang tipikal dalam horror.</li>
+        <li><strong>Kawaii Pelbagai:</strong> Mencerminkan gaya yang comel dan menawan yang tipikal dalam budaya Kawaii.</li>
+        <li><strong>Lovecraftian Pelbagai:</strong> Menekankan horror kosmik dan menakutkan yang tipikal dalam fiksyen Lovecraftian.</li>
+        <li><strong>Macabre Pelbagai:</strong> Menumpukan pada tema yang gelap, morbid, dan tidak menyenangkan.</li>
+        <li><strong>Manga Pelbagai:</strong> Meniru gaya yang berani dan dinamik yang tipikal dalam manga.</li>
+        <li><strong>Metropolis Pelbagai:</strong> Mencerminkan estetika bandar yang licin dan moden yang tipikal dalam metropolis moden.</li>
+        <li><strong>Minimalis Pelbagai:</strong> Menekankan kesederhanaan dan pengurangan bentuk kepada elemen penting mereka.</li>
+        <li><strong>Monokrom Pelbagai:</strong> Menumpukan pada imej yang dicipta dalam pelbagai warna dari satu warna.</li>
+        <li><strong>Nautikal Pelbagai:</strong> Mencerminkan estetika yang diilhamkan oleh maritim yang tipikal dalam tema nautikal.</li>
+        <li><strong>Angkasa Pelbagai:</strong> Menekankan visual yang luas dan dunia lain yang tipikal dalam tetapan angkasa.</li>
+        <li><strong>Kaca Berwarna Pelbagai:</strong> Meniru reka bentuk yang rumit dan berwarna-warni yang tipikal dalam seni kaca berwarna.</li>
+        <li><strong>Fesyen Techwear Pelbagai:</strong> Menumpukan pada estetika futuristik dan fungsional yang tipikal dalam fesyen techwear.</li>
+        <li><strong>Suku Pelbagai:</strong> Mencerminkan estetika budaya yang berani dan tipikal dalam seni suku.</li>
+        <li><strong>Zentangle Pelbagai:</strong> Menekankan corak yang rumit dan berulang yang tipikal dalam seni Zentangle.</li>
+        <li><strong>Kolaj Kertas:</strong> Menggunakan kertas potong untuk mencipta kolaj yang berlapis dan bertekstur.</li>
+        <li><strong>Potongan Kertas Rata:</strong> Menekankan reka bentuk kertas potong yang rata.</li>
+        <li><strong>Kirigami Kertas:</strong> Menumpukan pada reka bentuk lipatan yang rumit yang tipikal dalam Kirigami.</li>
+        <li><strong>Kertas Mache:</strong> Menggunakan kertas mache untuk mencipta bentuk tiga dimensi yang bertekstur.</li>
+        <li><strong>Gulung Kertas:</strong> Menekankan reka bentuk kertas yang digulung dan halus yang tipikal dalam seni gulung kertas.</li>
+        <li><strong>Kolaj Potongan Kertas:</strong> Menggabungkan elemen kertas potong untuk mencipta kolaj yang berlapis.</li>
+        <li><strong>Kotak Bayangan Potongan Kertas:</strong> Menggunakan potongan kertas berlapis untuk mencipta kotak bayangan tiga dimensi.</li>
+        <li><strong>Potongan Kertas Bertingkat:</strong> Menumpukan pada reka bentuk kertas yang berlapis dan bertingkat.</li>
+        <li><strong>Potongan Kertas Tebal:</strong> Menekankan penampilan berlapis dan dimensi yang tipikal dalam reka bentuk potongan kertas tebal.</li>
+        <li><strong>Foto Alien:</strong> Menumpukan pada visual yang surreal dan extraterrestrial.</li>
+        <li><strong>Filem Noir Foto:</strong> Menekankan estetika yang gelap dan suram yang tipikal dalam filem noir.</li>
+        <li><strong>Glamour Foto:</strong> Menonjolkan penampilan yang digilap dan bergaya yang tipikal dalam fotografi glamour.</li>
+        <li><strong>HDR Foto:</strong> Menggunakan julat dinamik tinggi (HDR) untuk mencipta imej dengan julat cahaya dan warna yang luas.</li>
+        <li><strong>Fotografi iPhone:</strong> Meniru gaya yang bersih dan moden yang tipikal dalam fotografi iPhone.</li>
+        <li><strong>Pendedahan Panjang Foto:</strong> Menggunakan pendedahan panjang untuk mencipta kesan yang dinamik dan kabur gerakan.</li>
+        <li><strong>Neon Noir Foto:</strong> Menggabungkan pencahayaan neon dengan estetika yang gelap dan suram dari noir.</li>
+        <li><strong>Siluet Foto:</strong> Menumpukan pada kontras yang kuat antara cahaya dan bayang-bayang untuk mencipta imej berasaskan siluet.</li>
+        <li><strong>Tilt Shift Foto:</strong> Menggunakan kesan tilt-shift untuk mencipta penampilan yang miniatur dan seperti mainan.</li>
+        <li><strong>Model 3D:</strong> Menumpukan pada penampilan yang bersih dan terperinci yang tipikal dalam model 3D.</li>
+        <li><strong>Filem Analog:</strong> Meniru penampilan yang berbutir dan bertekstur yang tipikal dalam fotografi filem analog.</li>
+        <li><strong>Anime:</strong> Menekankan gaya yang bersemangat dan dinamik yang tipikal dalam anime.</li>
+        <li><strong>Cinematic:</strong> Mencipta kesan dramatik seperti filem dengan pencahayaan dan komposisi yang kuat.</li>
+        <li><strong>Buku Komik:</strong> Menggunakan garis berani dan warna bersemangat yang tipikal dalam seni buku komik.</li>
+        <li><strong>Tanah Liat Kraf:</strong> Meniru penampilan yang bertekstur dan buatan tangan dari model tanah liat.</li>
+        <li><strong>Seni Digital:</strong> Menumpukan pada karya seni digital yang bersih dan digilap.</li>
+        <li><strong>Seni Fantasi:</strong> Menekankan visual yang terperinci dan imaginatif yang tipikal dalam seni fantasi.</li>
+        <li><strong>Isometrik:</strong> Menggunakan perspektif isometrik untuk mencipta penampilan tiga dimensi.</li>
+        <li><strong>Seni Garis:</strong> Menumpukan pada garis yang bersih dan tajam untuk mencipta lukisan yang terperinci.</li>
+        <li><strong>Poli Rendah:</strong> Menggunakan model 3D berpoligon rendah untuk mencipta penampilan yang minimalis dan geometrik.</li>
+        <li><strong>Neonpunk:</strong> Menggabungkan pencahayaan neon dengan estetika kasar dari cyberpunk.</li>
+        <li><strong>Origami:</strong> Menumpukan pada reka bentuk lipatan yang rumit yang tipikal dalam origami.</li>
+        <li><strong>Fotografi:</strong> Bertujuan untuk visual yang realistik dan hidup.</li>
+        <li><strong>Seni Piksel:</strong> Menggunakan reka bentuk piksel untuk mencipta penampilan retro yang diilhamkan oleh permainan video.</li>
+        <li><strong>Tekstur:</strong> Menumpukan pada tekstur yang kaya dan terperinci untuk meningkatkan kedalaman visual.</li>
+    </ul>
+
+</body>
+</html>

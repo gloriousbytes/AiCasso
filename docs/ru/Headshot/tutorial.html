@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Руководство по использованию функции Headshot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Руководство по использованию функции Headshot</h2>
+    <p>С функцией Headshot в AiCasso вы можете создавать удивительные и уникальные портреты, просто описывая, что вы хотите. Это идеально подходит для создания потрясающих изображений, будь то спокойная сцена, эпический воин или что-то еще, что придумывает ваше воображение!</p>
+
+    <h3>Как это работает:</h3>
+    
+    <div class="example">
+        <strong>Исходное изображение:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+        </div>
+        <strong>Подсказка 1:</strong>
+        <p>"Человек в снегу"</p>
+        <strong>Результат 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+        </div>
+        <strong>Подсказка 2:</strong>
+        <p>"Воин в лесу, используйте средний высокий масштаб, например, 78% от этого"</p>
+        <strong>Результат 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Дополнительные параметры</h3>
+    <p>Хотите добавить немного больше стиля или контроля к вашим созданным портретам? Вот несколько интересных опций, которые вы можете настроить:</p>
+
+    <ul>
+        <li><strong>Отрицательная подсказка:</strong> Здесь вы можете указать AiCasso, что вы <em>не</em> хотите видеть на изображении. Например, если вы не хотите никаких фоновых элементов, вы можете упомянуть это здесь. Если оставить это поле пустым, AiCasso сосредоточится только на том, что вы хотите.</li>
+        <li><strong>Количество шагов удаления шума:</strong> Это контролирует, насколько гладким и изысканным выглядит лицо. Вы можете выбрать между 21, 31 или 41 шагом, при этом 41 является значением по умолчанию. Больше шагов обычно означает более чистый и отполированный результат.</li>
+        <li><strong>Масштаб руководства:</strong> Это как дать AiCasso немного дополнительного толчка, чтобы он оставался верным вашему описанию. Масштаб варьируется от 1 до 20, при этом 10 является значением по умолчанию. Более высокие числа означают, что AiCasso будет ближе следовать вашему описанию.</li>
+        <li><strong>S Scale:</strong> Это регулирует структуру лица. Это немного технически, но в основном это регулирует, насколько сильными или мягкими являются черты лица. Значение по умолчанию - 1.0, и вы можете выбрать значение от 0.0 до 2.0 в зависимости от желаемого вида.</li>
+    </ul>
+
+    <p>Помните, что эти параметры полностью необязательны. AiCasso довольно снисходителен, поэтому вам не нужно быть суперточным или грамматически правильным. Просто опишите, что вы хотите, своими словами, и AiCasso сделает магию. Наслаждайтесь созданием ваших портретов!</p>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图像转视频功能指南</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>使用图像转视频功能指南</h2>
+    <p>AiCasso 的图像转视频功能可以将单张图片转换为动态视频。只需描述您想在视频中看到的内容，AiCasso 就会为您实现！</p>
+
+    <h3>工作原理：</h3>
+    
+    <div class="example">
+        <strong>输入图像：</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>提示 1：</strong>
+        <p>"公园里的可爱小狗"</p>
+        <strong>结果 1：</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>提示 2：</strong>
+        <p>"公园里的可爱小狗，使用最大 FPS、最大帧数和最大运动"</p>
+        <strong>结果 2：</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>可选参数</h3>
+    <p>如果您希望对视频进行更具体的设置，可以调整以下参数：</p>
+
+    <ul>
+        <li><strong>负面提示：</strong>描述您*不想*在视频中看到的内容。如果留空，AiCasso 将只关注正面提示。</li>
+        <li><strong>帧数：</strong>选择视频将包含多少帧（单独的图像）。您可以选择最多 25 帧，默认值为 16 帧。</li>
+        <li><strong>去噪步骤：</strong>这控制视频的平滑度。更多步骤意味着更清晰的视频。您可以设置最多 50 步，默认值为 20 步。</li>
+        <li><strong>指导尺度：</strong>这有助于视频紧密贴合您的描述。范围是 1.0 到 8.0，您可以调整开始和结束值以指导视频的演变。</li>
+        <li><strong>运动：</strong>调整视频中的运动量。较高的值意味着更多的动作。范围是 0 到 127，默认值为 60。</li>
+        <li><strong>噪声增强强度：</strong>为视频添加一些噪声以赋予其更具纹理的外观。范围是 0 到 1，默认值为 0。</li>
+        <li><strong>每秒帧数 (FPS)：</strong>设置视频播放速度。默认值为 16 FPS，但您可以设置为最多 16 以实现更快的播放。</li>
+        <li><strong>插值方法：</strong>选择帧的混合方式。默认是 "lerp"（线性插值），但您也可以使用 "slerp"（球形线性插值）以获得不同效果。</li>
+        <li><strong>剪辑跳过：</strong>跳过某些层以获得不同的视频风格。您可以跳过最多 2 层，或将其留空以使用默认行为。</li>
+    </ul>
+
+    <p>记住，AiCasso 非常智能！您不必每个细节都完美或使用正确的语法。只需描述您想要的内容，AiCasso 就会完成其余工作。享受创建视频的乐趣吧！</p>
+
+</body>
+</html>

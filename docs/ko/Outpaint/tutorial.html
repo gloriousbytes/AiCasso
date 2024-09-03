@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아웃페인트 기능 팁</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>아웃페인트 기능 사용 팁</h2>
+    <p>AiCasso의 아웃페인트 기능을 사용하면 이미지 주위에 새로운 요소를 추가하거나 기존의 것을 확장하여 이미지를 확장할 수 있습니다. 원하는 것을 설명하기만 하면 AiCasso가 나머지를 처리합니다.</p>
+
+    <h3>작동 방식:</h3>
+    
+    <div class="example">
+        <strong>시작 이미지:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>변경 사항 설명:</strong>
+        <p>추가하거나 확장하고 싶은 내용을 입력하기만 하면 AiCasso가 해당 변경 사항을 적용합니다. 왼쪽, 오른쪽, 위 또는 아래와 같은 방향을 지정하고, 확대 또는 팬과 같은 세부 사항도 지정할 수 있습니다.</p>
+    </div>
+
+    <h3>예제 편집:</h3>
+
+    <div class="example">
+        <strong>예제 1:</strong> "오른쪽에 빙산을 추가하고 번역 계수를 0.4로 설정합니다."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+        </div>
+        <p><em>결과:</em> AiCasso는 이미지를 오른쪽으로 확장하고 빙산을 추가하여 기존 풍경과 일관성을 유지합니다.</p>
+    </div>
+
+    <div class="example">
+        <strong>예제 2:</strong> "줌 아웃하고, 밤의 어두운 바다의 일관성을 유지합니다."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+        </div>
+        <p><em>결과:</em> 이미지가 줌 아웃되어 더 많은 어두운 바다가 드러나며, 밤 장면의 분위기를 유지합니다.</p>
+    </div>
+
+    <h3>추가 옵션</h3>
+    <p>편집을 세부 조정할 수 있는 몇 가지 선택적 설정이 있습니다:</p>
+
+    <ul>
+        <li><strong>부정 프롬프트:</strong> 이미지에 특정한 것을 원하지 않는 경우 AiCasso에 이를 알릴 수 있습니다. 예를 들어, 특정 색상이나 객체를 추가하지 않도록 할 수 있습니다.</li>
+        <li><strong>워크 타입:</strong> 이미지가 확장되는 방향을 결정합니다. 왼쪽, 오른쪽, 위, 아래 또는 뒤로(줌 아웃) 중에서 선택할 수 있습니다. 예를 들어, 오른쪽으로 팬하려면 '오른쪽'을 선택합니다.</li>
+        <li><strong>번역 계수:</strong> 확장할 때 이미지가 각 단계에서 얼마나 이동하는지를 제어합니다. 값이 높을수록 이미지가 더 많이 이동하여 새로운 콘텐츠가 더 많이 드러납니다. 기본값은 0.05이며, 0에서 1까지 조정할 수 있습니다.</li>
+        <li><strong>단계당 너비/높이 번역:</strong> 각 단계에서 이미지가 수평(너비) 또는 수직(높이)으로 얼마나 이동하는지를 제어합니다. 기본값은 단계당 32픽셀이며, 이미지가 얼마나 이동하길 원하는지에 따라 조정할 수 있습니다.</li>
+        <li><strong>추론 또는 디노이징 단계 수:</strong> 최종 이미지를 얻기 위해 AiCasso가 얼마나 많은 조정을 하는지를 결정합니다. 단계가 많을수록 결과가 부드러워지며, 기본값은 20단계이지만 최대 50단계까지 가능합니다.</li>
+        <li><strong>보간 단계 수:</strong> 단일 확장에서 두 방향 간의 전환이 얼마나 부드럽게 이루어지는지를 제어합니다. 기본값은 60이며, 더 부드러운 전환을 위해 최대 120까지 증가시킬 수 있습니다.</li>
+    </ul>
+
+    <p>이 설정들은 선택 사항임을 기억하세요. AiCasso는 자연어 설명만으로도 잘 작동하도록 설계되었습니다. 실험해보고 이미지에 가장 잘 맞는 것을 찾아보세요!</p>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画像ガイド付き編集のヒント</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>画像ガイド付き編集のヒント</h2>
+    <p>AiCassoの画像ガイド付き編集機能を使えば、変更したい内容を説明するだけで画像を編集できます。スタイルを変えたり、ムードを調整したり、特定の部分を微調整したりする場合でも、手動で選択したりペイントしたりすることなく、AiCassoが対応します。</p>
+
+    <h3>仕組み:</h3>
+
+    <div class="example">
+        <strong>開始画像:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CpnI7HqIAzcrMjmQb5_25yJilhxraZ80/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>変更内容を説明:</strong>
+        <p>変更したい内容を入力するだけで、AiCassoがその変更を画像に適用します。</p>
+    </div>
+
+    <h3>編集例:</h3>
+
+    <div class="example">
+        <strong>例1:</strong> "彼女をブロンドにする。"
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1cI2vE6dOcFxInjqzq1_mVru_nLCGFTaS/preview"></iframe>
+        </div>
+        <p><em>結果:</em> AiCassoは人物の髪の色をブロンドに変更します。</p>
+    </div>
+
+    <div class="example">
+        <strong>例2:</strong> "夜にする、50ステップを使用し、ガイダンススケールを1、画像ガイダンススケールを1に設定する。"
+        <div class="example">
+            <strong>入力画像:</strong>
+            <div class="result">
+                <iframe src="https://drive.google.com/file/d/1PlJNkwIWrK3Uu_bq38te_dtqp2XBkW_e/preview"></iframe>
+            </div>
+        </div>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11mjTtcBdI8T0cMcfQz6HEJ79xOhw81VG/preview"></iframe>
+        </div>
+        <p><em>結果:</em> 画像は指定された詳細に基づいて夜のシーンに変換されます。</p>
+    </div>
+
+    <h3>追加オプション</h3>
+    <p>これらのオプション設定を使用して編集を微調整できます:</p>
+
+    <ul>
+        <li><strong>画像ガイダンススケール:</strong> 新しい画像が元の画像にどれだけ忠実であるかを制御します。値が低いほど変更は控えめになり、値が高いほど変更が目立ちます。1から8の間で設定できます。</li>
+        <li><strong>ステップ:</strong> ツールが行う改善の数を設定します。ステップが多いほど、最終画像は滑らかで詳細になります。1から50ステップの間で選択でき、デフォルトは20です。</li>
+        <li><strong>ガイダンススケール:</strong> AIがあなたの説明にどれだけ従うかに影響します。スケールが低いとAIにより多くの創造的自由が与えられ、スケールが高いと説明に忠実になります。1から20の間で調整できます。</li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顔生成機能ガイド</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>顔生成機能の使い方ガイド</h2>
+    <p>AiCassoの顔生成機能は非常に多用途です！特定の顔をさまざまなキャラクターやスタイルに組み込むことで、素晴らしい画像を作成できます。騎士や侍、その他のキャラクターを想像している場合でも、AiCassoは入力された顔を使用して、要求されたデザインにその顔を統合した画像を生成します。</p>
+
+    <h3>動作の仕組み:</h3>
+    
+    <div class="example">
+        <strong>入力画像:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
+        </div>
+        <strong>プロンプト 1:</strong>
+        <p>"リアルな騎士、最大スケールを使用"</p>
+        <strong>結果 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
+        </div>
+        <strong>プロンプト 2:</strong>
+        <p>"ちびスタイルを使用して侍を作成、デフォルト値を使用"</p>
+        <strong>結果 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
+        </div>
+        <strong>プロンプト 3:</strong>
+        <p>"侍、31のノイズ除去ステップを使用し、アニメスタイル"</p>
+        <strong>結果 3:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>オプションパラメータ</h3>
+    <p>生成された画像にもう少し個性やコントロールを加えたい場合は、以下のオプションを調整できます:</p>
+
+    <ul>
+        <li><strong>ネガティブプロンプト:</strong> これは、画像に<em>表示したくない</em>ものをAiCassoに伝える場所です。これを空白のままにすると、AiCassoはポジティブプロンプトに集中します。</li>
+        <li><strong>ノイズ除去ステップ数:</strong> これは画像の滑らかさや洗練度を制御します。21、31、41ステップから選択でき、41がデフォルトです。ステップが多いほど、よりクリーンで洗練された画像になります。</li>
+        <li><strong>ガイダンススケール:</strong> これは画像が説明に忠実であることを助けます。スケールは1から20まであり、10がデフォルトです。数値が高いほど、AiCassoはプロンプトに忠実になります。</li>
+        <li><strong>Sスケール:</strong> これは顔の構造に関するものです。少し技術的ですが、基本的には顔の構造の重みを調整します。デフォルトは1.0で、0.0から2.0までの範囲で設定できます。</li>
+        <li><strong>スタイル:</strong> 画像に特定の雰囲気を与えたいですか？コミック、ちび、3D、アニメ、リアルなどのスタイルを選択できます。デフォルトはリアルですが、自由に創造性を発揮してください！</li>
+    </ul>
+
+    <p>そして、AiCassoは非常に寛容です。文法の達人である必要はなく、すべての詳細を完璧にする必要もありません。自分の言葉で欲しいものを説明するだけで、AiCassoが残りを処理します。創造を楽しんでください！</p>
+
+</body>
+</html>

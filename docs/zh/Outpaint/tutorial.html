@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outpaint 功能提示</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>使用 Outpaint 功能的提示</h2>
+    <p>AiCasso 的 Outpaint 功能可以通过在图像周围添加新元素或扩展现有元素来扩展图像。只需描述您想要的内容，AiCasso 就会处理其余的工作。</p>
+
+    <h3>工作原理：</h3>
+    
+    <div class="example">
+        <strong>起始图像：</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>描述您的更改：</strong>
+        <p>只需输入您想要添加或扩展的内容，AiCasso 就会应用这些更改。您可以指定方向，如左、右、上或下，甚至可以指定缩小或平移等细节。</p>
+    </div>
+
+    <h3>编辑示例：</h3>
+
+    <div class="example">
+        <strong>示例 1：</strong> "使用翻译因子 0.4 在右侧添加一个冰山。"
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+        </div>
+        <p><em>结果：</em> AiCasso 将图像向右扩展并添加一个冰山，使其与现有风景保持一致。</p>
+    </div>
+
+    <div class="example">
+        <strong>示例 2：</strong> "缩小，保持夜晚黑暗海洋的一致性。"
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+        </div>
+        <p><em>结果：</em> 图像缩小，揭示更多的黑暗海洋，同时保持夜景的氛围。</p>
+    </div>
+
+    <h3>附加选项</h3>
+    <p>以下是一些可选设置，您可以用来微调您的编辑：</p>
+
+    <ul>
+        <li><strong>负面提示：</strong> 如果有特定的内容您不希望出现在图像中，可以在这里告诉 AiCasso。例如，您可能希望避免添加某些颜色或物体。</li>
+        <li><strong>步行类型：</strong> 这决定了图像扩展的方向。您可以选择左、右、上、下或向后（缩小）。例如，要向右平移，您可以选择“右”。</li>
+        <li><strong>翻译因子：</strong> 这控制图像在每次扩展时移动的量。较高的值会使图像移动更多，揭示更多的新内容。默认值为 0.05，但您可以将其调整为 0 到 1。</li>
+        <li><strong>每步宽度/高度翻译：</strong> 这些控制图像在每步中水平（宽度）或垂直（高度）移动的距离。默认值为每步 32 像素，但您可以根据希望图像移动的量进行调整。</li>
+        <li><strong>推理或去噪步骤数：</strong> 这决定了 AiCasso 为获得最终图像所做的调整次数。更多的步骤会导致更平滑的结果，默认值为 20 步，但您可以增加到 50。</li>
+        <li><strong>插值步骤数：</strong> 这控制单次扩展中两个方向之间的过渡平滑度。默认值为 60，但您可以增加到 120 以获得更平滑的过渡。</li>
+    </ul>
+
+    <p>请记住，这些设置是可选的。AiCasso 设计为仅通过您的自然语言描述即可很好地工作。请随意尝试，看看什么最适合您的图像！</p>
+
+</body>
+</html>

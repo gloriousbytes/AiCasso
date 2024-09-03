@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Oluşturma Özelliği Kılavuzu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Video Oluşturma Özelliği Kullanım Kılavuzu</h2>
+    <p>AiCasso'daki Video Oluşturma özelliği, görmek istediğiniz şeyi basitçe tanımlayarak video oluşturmanıza olanak tanır. Fikrinizi yazın ve AiCasso onu bir videoda hayata geçirsin!</p>
+
+    <h3>Nasıl Çalışır:</h3>
+    
+    <div class="example">
+        <strong>Komut:</strong>
+        <p>"Bir tarlada tek başına olan, yiyip mutlu olan 3D animasyonlu bir horoz. 50 gürültü giderme adımı ile portre video yapın."</p>
+        <strong>Sonuç:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Komut:</strong>
+        <p>"Manzara boyutlarında bir tarlada horoz karikatürü."</p>
+        <strong>Sonuç:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Komut:</strong>
+        <p>"Bir tarlada horoz."</p>
+        <strong>Sonuç:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Komut:</strong>
+        <p>"Tarlada tek başına olan bir horoz. Doğal bir his verin."</p>
+        <strong>Sonuç:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Ek Seçenekler</h3>
+    <p>Videonuzu ince ayarlamak mı istiyorsunuz? İşte oynayabileceğiniz bazı ayarlar:</p>
+
+    <ul>
+        <li><strong>Kare Sayısı:</strong> Videonuzun kaç kare (bireysel görüntü) içereceğini seçin. 16 varsayılan olmak üzere 25 kareye kadar çıkabilirsiniz.</li>
+        <li><strong>Gürültü Giderme Adım Sayısı:</strong> Videonuzun ne kadar pürüzsüz görüneceğini kontrol eder. Daha fazla adım, daha pürüzsüz videolar demektir. 20 varsayılan olmak üzere 50 adıma kadar ayarlayabilirsiniz.</li>
+        <li><strong>Rehberlik Ölçeği:</strong> Videonun açıklamanıza ne kadar sadık kalacağını belirler. Sayı ne kadar yüksekse, komutunuza o kadar çok uyar. Aralık 0 ile 8 arasındadır ve varsayılan 8'dir.</li>
+        <li><strong>Klip Atla:</strong> Farklı bir video stili için belirli katmanları atlayın. Varsayılan olarak hiçbir katman atlanmaz, ancak 2'ye kadar atlayabilirsiniz.</li>
+        <li><strong>Genişlik ve Yükseklik Yükseltme:</strong> Çözünürlüğü ayarlayarak videonuzu daha büyük yapabilirsiniz. Varsayılan 1024x1024 pikseldir, ancak ihtiyaçlarınıza göre bunu ayarlayabilirsiniz.</li>
+        <li><strong>Yükseltme Gücü:</strong> Yükseltildiğinde videonuzun ne kadar ayarlandığını değiştirir. Varsayılan 1'dir, ancak daha fazla fark görmek için ayarlayabilirsiniz.</li>
+        <li><strong>Yükseltme Rehberlik Ölçeği:</strong> Yükseltme sürecini yönlendirir, 0 ile 8 arasında bir aralık ve varsayılan 8'dir.</li>
+        <li><strong>Yükseltme Çıkarım Adımları:</strong> Videoyu yükseltmek için atılan adım sayısı. Daha fazla adım, daha pürüzsüz yükseltme sağlar, maksimum 50 ve varsayılan 20'dir.</li>
+        <li><strong>Geliştirilmiş Örnekleme:</strong> Daha rafine bir video mu istiyorsunuz? Bunu açın. Varsayılan olarak kapalıdır.</li>
+        <li><strong>Geliştirilmiş Örnekleme Tohumu:</strong> Geliştirilmiş örnekleme ile her seferinde aynı videoyu oluşturmak için kullanın. İsteğe bağlıdır ve varsayılan olarak kapalıdır.</li>
+        <li><strong>Saniyedeki Kare Sayısı (FPS):</strong> Videonuzun hızını ayarlayın. Varsayılan 16 FPS'dir, ancak 16'ya kadar ayarlayabilirsiniz.</li>
+        <li><strong>Video Modeli:</strong> Videonuzun stilini seçin. Seçenekler şunları içerir:
+            <ul>
+                <li><strong>Varsayılan:</strong> Standart bir video modeli.</li>
+                <li><strong>Karikatür:</strong> Karikatür tarzında bir video.</li>
+                <li><strong>Doğal:</strong> Gerçekçi, doğal görünümlü bir video stili.</li>
+                <li><strong>Animasyonlu 3D:</strong> 3D animasyonlu bir video stili.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Unutmayın, bu ayarlar isteğe bağlıdır. Video Oluşturma özelliği sadece basit bir açıklama ile harika çalışır, bu yüzden denemekten çekinmeyin ve neler yaratabileceğinizi görün!</p>
+
+</body>
+</html>

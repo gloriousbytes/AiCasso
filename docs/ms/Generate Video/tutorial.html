@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Ciri Menjana Video</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Panduan Menggunakan Ciri Menjana Video</h2>
+    <p>Ciri Menjana Video dalam AiCasso membolehkan anda mencipta video dengan hanya menerangkan apa yang anda ingin lihat. Hanya taipkan idea anda, dan AiCasso akan menghidupkannya dalam bentuk video!</p>
+
+    <h3>Bagaimana Ia Berfungsi:</h3>
+    
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Seekor ayam jantan animasi 3D di padang sendirian, makan dan gembira. Jadikan ia video potret dengan 50 langkah pengurangan bunyi."</p>
+        <strong>Hasil:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Kartun ayam jantan di padang dalam dimensi landskap."</p>
+        <strong>Hasil:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Seekor ayam jantan di padang."</p>
+        <strong>Hasil:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Seekor ayam jantan yang berada di padang sendirian. Berikan ia rasa semula jadi."</p>
+        <strong>Hasil:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Pilihan Tambahan</h3>
+    <p>Ingin menyesuaikan video anda? Berikut adalah beberapa tetapan yang boleh anda cuba:</p>
+
+    <ul>
+        <li><strong>Bilangan Bingkai:</strong> Pilih berapa banyak bingkai (imej individu) video anda akan ada. Anda boleh memilih sehingga 25 bingkai, dengan 16 sebagai lalai.</li>
+        <li><strong>Bilangan Langkah Pengurangan Bunyi:</strong> Ini mengawal betapa lancarnya video anda. Lebih banyak langkah bermakna video lebih lancar. Anda boleh menetapkan sehingga 50 langkah, dengan 20 sebagai lalai.</li>
+        <li><strong>Skala Panduan:</strong> Ini membantu video mengikuti deskripsi anda dengan rapat. Lebih tinggi nombor, lebih ia mengikuti prompt anda. Julatnya adalah 0 hingga 8, dengan 8 sebagai lalai.</li>
+        <li><strong>Lompatan Klip:</strong> Langkau lapisan tertentu untuk gaya video yang berbeza. Secara lalai, tiada lapisan yang dilangkau, tetapi anda boleh melangkau sehingga 2.</li>
+        <li><strong>Lebar dan Tinggi Upscale:</strong> Anda boleh membuat video anda lebih besar dengan menyesuaikan resolusi. Lalai adalah 1024x1024 piksel, tetapi anda boleh mengubahnya mengikut keperluan anda.</li>
+        <li><strong>Kekuatan Upscale:</strong> Ini mengubah berapa banyak video anda menyesuaikan apabila di-upscale. Lalai adalah 1, tetapi anda boleh menyesuaikannya untuk melihat lebih banyak perbezaan.</li>
+        <li><strong>Skala Panduan Upscale:</strong> Ini membimbing proses upscale, dengan julat dari 0 hingga 8, dan lalai 8.</li>
+        <li><strong>Langkah Inferensi Upscale:</strong> Bilangan langkah yang diambil untuk meng-upscale video. Lebih banyak langkah membuat upscale lebih lancar, dengan maksimum 50 dan lalai 20.</li>
+        <li><strong>Persampelan Diperbaiki:</strong> Mahukan video yang lebih halus? Hidupkan ini. Ia dimatikan secara lalai.</li>
+        <li><strong>Benih Persampelan Diperbaiki:</strong> Gunakan ini untuk menjana video yang sama setiap kali dengan persampelan diperbaiki. Ia adalah pilihan dan dimatikan secara lalai.</li>
+        <li><strong>Bingkai per Saat (FPS):</strong> Tetapkan kelajuan video anda. Lalai adalah 16 FPS, tetapi anda boleh menyesuaikannya sehingga 16.</li>
+        <li><strong>Model Video:</strong> Pilih gaya video anda. Pilihan termasuk:
+            <ul>
+                <li><strong>Lalai:</strong> Model video standard.</li>
+                <li><strong>Kartun:</strong> Gaya video kartun.</li>
+                <li><strong>Semula Jadi:</strong> Gaya video yang realistik dan semula jadi.</li>
+                <li><strong>Animasi 3D:</strong> Gaya video animasi 3D.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Ingat, tetapan ini adalah pilihan. Ciri Menjana Video berfungsi dengan baik hanya dengan deskripsi ringkas, jadi jangan ragu untuk bereksperimen dan lihat apa yang anda boleh cipta!</p>
+
+</body>
+</html>

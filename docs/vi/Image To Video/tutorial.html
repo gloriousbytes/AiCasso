@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn Tính Năng Chuyển Đổi Hình Ảnh Thành Video</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Hướng Dẫn Sử Dụng Tính Năng Chuyển Đổi Hình Ảnh Thành Video</h2>
+    <p>Tính năng chuyển đổi hình ảnh thành video trong AiCasso cho phép bạn biến một hình ảnh thành một video động. Chỉ cần mô tả những gì bạn muốn thấy trong video của mình, và AiCasso sẽ thực hiện điều đó!</p>
+
+    <h3>Cách Hoạt Động:</h3>
+    
+    <div class="example">
+        <strong>Hình Ảnh Đầu Vào:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>Lời Nhắc 1:</strong>
+        <p>"Một chú cún dễ thương trong công viên"</p>
+        <strong>Kết Quả 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>Lời Nhắc 2:</strong>
+        <p>"Một chú cún dễ thương trong công viên, sử dụng FPS tối đa, khung hình tối đa, và chuyển động tối đa"</p>
+        <strong>Kết Quả 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Tham Số Tùy Chọn</h3>
+    <p>Nếu bạn muốn cụ thể hơn với video của mình, đây là một số cài đặt bạn có thể điều chỉnh:</p>
+
+    <ul>
+        <li><strong>Lời Nhắc Tiêu Cực:</strong> Mô tả những gì bạn *không* muốn trong video. Nếu để trống, AiCasso sẽ chỉ tập trung vào lời nhắc tích cực.</li>
+        <li><strong>Số Lượng Khung Hình:</strong> Chọn số lượng khung hình (hình ảnh riêng lẻ) mà video của bạn sẽ có. Bạn có thể chọn tối đa 25 khung hình, với 16 là mặc định.</li>
+        <li><strong>Các Bước Khử Nhiễu:</strong> Điều này kiểm soát độ mượt mà của video. Nhiều bước hơn có nghĩa là video sạch hơn. Bạn có thể đặt tối đa 50 bước, với 20 là mặc định.</li>
+        <li><strong>Thang Hướng Dẫn:</strong> Điều này giúp video bám sát mô tả của bạn. Phạm vi từ 1.0 đến 8.0, và bạn có thể điều chỉnh giá trị bắt đầu và kết thúc để hướng dẫn cách video phát triển.</li>
+        <li><strong>Chuyển Động:</strong> Điều chỉnh mức độ chuyển động trong video của bạn. Giá trị cao hơn có nghĩa là nhiều hành động hơn. Phạm vi từ 0 đến 127, với 60 là mặc định.</li>
+        <li><strong>Độ Mạnh Tăng Cường Nhiễu:</strong> Thêm một số nhiễu vào video của bạn để tạo ra một cái nhìn có kết cấu hơn. Phạm vi từ 0 đến 1, với 0 là mặc định.</li>
+        <li><strong>Khung Hình Trên Giây (FPS):</strong> Đặt tốc độ phát video của bạn. Mặc định là 16 FPS, nhưng bạn có thể tăng lên 16 để phát nhanh hơn.</li>
+        <li><strong>Phương Pháp Nội Suy:</strong> Chọn cách các khung hình được pha trộn với nhau. Mặc định là "lerp" (nội suy tuyến tính), nhưng bạn cũng có thể sử dụng "slerp" (nội suy tuyến tính cầu) cho các hiệu ứng khác nhau.</li>
+        <li><strong>Bỏ Qua Clip:</strong> Bỏ qua một số lớp để có phong cách video khác. Bạn có thể bỏ qua tối đa 2 lớp, hoặc để trống để có hành vi mặc định.</li>
+    </ul>
+
+    <p>Hãy nhớ rằng, AiCasso khá thông minh! Bạn không cần phải hoàn hảo mọi chi tiết hoặc sử dụng ngữ pháp chính xác. Chỉ cần mô tả những gì bạn muốn, và AiCasso sẽ làm phần còn lại. Chúc bạn vui vẻ khi tạo video của mình!</p>
+
+</body>
+</html>

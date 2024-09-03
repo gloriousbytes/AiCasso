@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Fitur Relighting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Panduan Menggunakan Fitur Relighting</h2>
+    <p>Fitur Relighting di AiCasso sangat keren! Ini memungkinkan Anda mengubah pencahayaan dalam gambar Anda hanya dengan beberapa kata. Ingin matahari di belakang atau cahaya lembut dari samping? Tidak masalah! Cukup deskripsikan, dan AiCasso akan mengurus sisanya.</p>
+
+    <h3>Cara Kerjanya:</h3>
+    
+    <div class="example">
+        <strong>Gambar Input:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+        </div>
+        <strong>Prompt yang Digunakan:</strong>
+        <p>"Buat agar matahari berada di belakang"</p>
+        <strong>Hasil:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Penyesuaian Opsional</h3>
+    <p>Jika Anda merasa berani dan ingin menambahkan sedikit lebih banyak gaya pada relighting Anda, berikut beberapa hal yang dapat Anda sesuaikan:</p>
+
+    <ul>
+        <li><strong>Prompt Negatif:</strong> Ingin menghindari sesuatu? Anda dapat memberi tahu AiCasso apa yang <em>tidak</em> ingin disertakan. Tapi jangan khawatir, jika Anda membiarkannya kosong, AiCasso akan fokus pada apa yang Anda inginkan.</li>
+        <li><strong>Arah Pencahayaan:</strong> Anda dapat menentukan dari mana cahaya harus datang—kiri, kanan, atas, bawah, atau bahkan tidak ada sama sekali. Secara default, cahaya datang dari kiri.</li>
+        <li><strong>Skala Panduan:</strong> Ini membantu AiCasso tetap berpegang pada deskripsi Anda. Skala berkisar dari 1 hingga 20, dengan 7 sebagai default. Semakin tinggi angkanya, semakin AiCasso berpegang pada prompt Anda.</li>
+        <li><strong>Skala Resolusi Tinggi:</strong> Ingin gambar Anda menonjol? Ini mengontrol kejelasan. Defaultnya adalah 1.5, tetapi Anda dapat mengaturnya dari 1.0 hingga 2.0 untuk gambar yang lebih tajam.</li>
+        <li><strong>Tingkat Denoise:</strong> Ada dua tingkat—resolusi rendah dan resolusi tinggi. Ini mengontrol seberapa halus atau detail tampilan akhir gambar. Anda dapat mengatur tingkat denoise resolusi rendah antara 0.0 dan 1.0 (default adalah 0.9) dan resolusi tinggi antara 0.0 dan 1.0 (default adalah 0.5).</li>
+        <li><strong>Jumlah Langkah:</strong> Ini adalah berapa banyak langkah yang diambil AiCasso untuk memoles gambar Anda. Defaultnya adalah 50, tetapi Anda dapat memilih dari 20 hingga 50 langkah.</li>
+    </ul>
+
+    <p>Ingat, penyesuaian ini sepenuhnya opsional! AiCasso cukup baik dalam memahami apa yang Anda inginkan, jadi cukup deskripsikan visi Anda dengan kata-kata Anda sendiri, dan itu akan melakukan keajaiban. Tidak perlu sempurna dengan tata bahasa atau detail—cukup bersenang-senang dan lihat apa yang dapat Anda ciptakan!</p>
+
+</body>
+</html>

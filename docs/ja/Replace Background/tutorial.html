@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景置換機能ガイド</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>背景置換機能の使い方ガイド</h2>
+    <p>AiCassoの背景置換機能は、画像の背景を変更したいときに最適です。背景を削除したり、別のものに置き換えたりする場合でも、AiCassoはとても簡単に行えます。技術的なことを心配する必要はありません。あなたが望むことを説明するだけで、AiCassoが残りを行います。</p>
+
+    <h3>動作の仕組み:</h3>
+    
+    <div class="example">
+        <strong>入力画像:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+        </div>
+        <strong>プロンプト 1:</strong>
+        <p>"背景を削除"</p>
+        <strong>結果 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+        </div>
+        <strong>プロンプト 2:</strong>
+        <p>"背景を削除するだけでなく、森に置き換えてください。アルファマットを無効にして、前景のしきい値を240、背景のしきい値を20、アルファマットの侵食サイズを5に設定してください。"</p>
+        <strong>結果 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>オプションパラメータ</h3>
+    <p>個人的なタッチを加えたり、結果を微調整したい場合は、以下のオプションを試してみてください:</p>
+
+    <ul>
+        <li><strong>削除のみ:</strong> 背景を削除するだけで、何も置き換えたくない場合は、このオプションが最適です。まるでクリーンスレートボタンを押すようなものです。</li>
+        <li><strong>アルファマット:</strong> これは「エッジをブレンドする」という意味の専門用語です。これをオンにすると、被写体のエッジがより滑らかで切り取られていないように見えるのに役立ちます。デフォルトではオフになっています。</li>
+        <li><strong>アルファマット前景しきい値:</strong> アルファマットを使用する際に、メインの被写体（例えば人）がどれだけ見えるかを制御します。デフォルトは240で、エッジを柔らかくしたり鋭くしたりするために調整できます。</li>
+        <li><strong>アルファマット背景しきい値:</strong> これは前景しきい値と同じことを背景に対して行います。デフォルトは20で、新しい背景との完璧なブレンドを得るためのものです。</li>
+        <li><strong>アルファマット侵食サイズ:</strong> 切り抜きをよりクリーンに見せるためにエッジを少し縮小するのに役立ちます。デフォルトサイズは5ですが、望む外観を得るために調整できます。</li>
+    </ul>
+
+    <p>すべてを完璧にすることを心配する必要はありません。AiCassoはあなたの意図を理解するのが得意なので、カジュアルでも詳細でも自由に表現してください。楽しいクリエイティングを！</p>
+
+</body>
+</html>

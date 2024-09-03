@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Fitur Generate Video</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Panduan Menggunakan Fitur Generate Video</h2>
+    <p>Fitur Generate Video di AiCasso memungkinkan Anda membuat video hanya dengan mendeskripsikan apa yang ingin Anda lihat. Cukup ketikkan ide Anda, dan AiCasso akan mewujudkannya dalam bentuk video!</p>
+
+    <h3>Cara Kerjanya:</h3>
+    
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Seekor ayam jantan animasi 3D di lapangan sendirian, makan dan bahagia. Buat video potret dengan 50 langkah denoising."</p>
+        <strong>Hasil:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Kartun ayam jantan di lapangan dengan dimensi lanskap."</p>
+        <strong>Hasil:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Seekor ayam jantan di lapangan."</p>
+        <strong>Hasil:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Seekor ayam jantan yang berada di lapangan sendirian. Berikan nuansa alami."</p>
+        <strong>Hasil:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Opsi Tambahan</h3>
+    <p>Ingin menyempurnakan video Anda? Berikut beberapa pengaturan yang bisa Anda coba:</p>
+
+    <ul>
+        <li><strong>Jumlah Frame:</strong> Pilih berapa banyak frame (gambar individu) yang akan dimiliki video Anda. Anda bisa memilih hingga 25 frame, dengan 16 sebagai default.</li>
+        <li><strong>Jumlah Langkah Denoising:</strong> Ini mengontrol seberapa halus tampilan video Anda. Semakin banyak langkah, semakin halus videonya. Anda bisa mengatur hingga 50 langkah, dengan 20 sebagai default.</li>
+        <li><strong>Skala Panduan:</strong> Ini membantu video tetap sesuai dengan deskripsi Anda. Semakin tinggi angkanya, semakin sesuai dengan prompt Anda. Rentangnya adalah 0 hingga 8, dengan 8 sebagai default.</li>
+        <li><strong>Clip Skip:</strong> Lewati lapisan tertentu untuk gaya video yang berbeda. Secara default, tidak ada lapisan yang dilewati, tetapi Anda bisa melewati hingga 2.</li>
+        <li><strong>Lebar dan Tinggi Upscale:</strong> Anda bisa membuat video lebih besar dengan menyesuaikan resolusi. Defaultnya adalah 1024x1024 piksel, tetapi Anda bisa menyesuaikannya sesuai kebutuhan.</li>
+        <li><strong>Kekuatan Upscale:</strong> Ini mengubah seberapa banyak video Anda menyesuaikan saat di-upscale. Defaultnya adalah 1, tetapi Anda bisa menyesuaikannya untuk melihat lebih banyak perbedaan.</li>
+        <li><strong>Skala Panduan Upscale:</strong> Ini membimbing proses upscaling, dengan rentang dari 0 hingga 8, dan defaultnya adalah 8.</li>
+        <li><strong>Langkah Inferensi Upscale:</strong> Jumlah langkah yang diambil untuk meng-upscale video. Semakin banyak langkah, semakin halus upscaling-nya, dengan maksimum 50 dan default 20.</li>
+        <li><strong>Peningkatan Sampling:</strong> Ingin video yang lebih halus? Aktifkan ini. Secara default, ini tidak aktif.</li>
+        <li><strong>Bibit Peningkatan Sampling:</strong> Gunakan ini untuk menghasilkan video yang sama setiap kali dengan peningkatan sampling. Ini opsional dan tidak aktif secara default.</li>
+        <li><strong>Frame per Detik (FPS):</strong> Atur kecepatan video Anda. Defaultnya adalah 16 FPS, tetapi Anda bisa menyesuaikannya hingga 16.</li>
+        <li><strong>Model Video:</strong> Pilih gaya video Anda. Opsi termasuk:
+            <ul>
+                <li><strong>Default:</strong> Model video standar.</li>
+                <li><strong>Kartun:</strong> Gaya video kartun.</li>
+                <li><strong>Alami:</strong> Gaya video yang realistis dan alami.</li>
+                <li><strong>Animasi 3D:</strong> Gaya video animasi 3D.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Ingat, pengaturan ini bersifat opsional. Fitur Generate Video bekerja dengan baik hanya dengan deskripsi sederhana, jadi jangan ragu untuk bereksperimen dan lihat apa yang bisa Anda ciptakan!</p>
+
+</body>
+</html>

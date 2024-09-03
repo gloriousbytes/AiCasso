@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ヘッドショット機能ガイド</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>ヘッドショット機能の使い方ガイド</h2>
+    <p>AiCassoのヘッドショット機能を使用すると、望むものを説明するだけで素晴らしくユニークなポートレートを作成できます。静かなシーンや壮大な戦士、その他あなたの想像力が生み出すものを作成するのに最適です！</p>
+
+    <h3>使用方法:</h3>
+    
+    <div class="example">
+        <strong>入力画像:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+        </div>
+        <strong>プロンプト 1:</strong>
+        <p>"雪の中の男"</p>
+        <strong>結果 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+        </div>
+        <strong>プロンプト 2:</strong>
+        <p>"森の中の戦士、78%の中高スケールを使用"</p>
+        <strong>結果 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>オプションパラメータ</h3>
+    <p>生成されたヘッドショットに少しのフレアやコントロールを追加したいですか？ここに調整できるクールなオプションがあります：</p>
+
+    <ul>
+        <li><strong>ネガティブプロンプト:</strong> ここでは、画像に<em>表示したくない</em>ものをAiCassoに伝えることができます。例えば、背景要素を表示したくない場合はここに記載できます。これを空白のままにすると、AiCassoはあなたが望むものに集中します。</li>
+        <li><strong>デノイズステップ数:</strong> これは顔がどれだけ滑らかで洗練されて見えるかを制御します。21、31、41ステップから選べ、41がデフォルトです。ステップが多いほど、通常はよりクリーンで洗練された結果になります。</li>
+        <li><strong>ガイダンススケール:</strong> これはAiCassoにあなたの説明に忠実であるように少し追加のプッシュを与えるようなものです。スケールは1から20までで、10がデフォルトです。数値が高いほど、AiCassoはあなたの説明により忠実になります。</li>
+        <li><strong>Sスケール:</strong> これは顔の構造を調整します。少し技術的ですが、基本的には顔の特徴がどれだけ強いかまたは柔らかいかを調整します。デフォルトは1.0で、0.0から2.0までの範囲で調整できます。</li>
+    </ul>
+
+    <p>これらのパラメータは完全にオプションであることを覚えておいてください。AiCassoは非常に寛容なので、非常に正確または文法的に正しくある必要はありません。あなたの言葉で望むものを説明するだけで、AiCassoが魔法をかけてくれます。ヘッドショットの作成を楽しんでください！</p>
+
+</body>
+</html>

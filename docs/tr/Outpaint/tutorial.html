@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outpaint Özelliği İpuçları</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Outpaint Özelliğini Kullanma İpuçları</h2>
+    <p>AiCasso'daki Outpaint özelliği, bir görüntüyü etrafına yeni öğeler ekleyerek veya mevcut olanı genişleterek genişletmenizi sağlar. Ne istediğinizi tarif edin, gerisini AiCasso halleder.</p>
+
+    <h3>Nasıl Çalışır:</h3>
+    
+    <div class="example">
+        <strong>Başlangıç Görüntüsü:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Değişikliğinizi Tanımlayın:</strong>
+        <p>Eklemek veya genişletmek istediğiniz şeyi yazın ve AiCasso bu değişiklikleri uygulasın. Sol, sağ, yukarı veya aşağı gibi yönleri ve hatta uzaklaştırma veya kaydırma gibi detayları belirtebilirsiniz.</p>
+    </div>
+
+    <h3>Örnek Düzenlemeler:</h3>
+
+    <div class="example">
+        <strong>Örnek 1:</strong> "Sağa bir buzdağı ekleyin, çeviri faktörü 0.4 kullanarak."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+        </div>
+        <p><em>Sonuç:</em> AiCasso görüntüyü sağa genişletir ve mevcut manzarayla uyumlu bir şekilde bir buzdağı ekler.</p>
+    </div>
+
+    <div class="example">
+        <strong>Örnek 2:</strong> "Uzaklaştırın, gece karanlık denizin tutarlılığını koruyun."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+        </div>
+        <p><em>Sonuç:</em> Görüntü uzaklaştırılır, daha fazla karanlık deniz ortaya çıkarılırken gece sahnesinin atmosferi korunur.</p>
+    </div>
+
+    <h3>Ek Seçenekler</h3>
+    <p>Düzenlemelerinizi ince ayar yapmak için kullanabileceğiniz bazı isteğe bağlı ayarlar:</p>
+
+    <ul>
+        <li><strong>Negatif İstem:</strong> Görüntüde özellikle istemediğiniz bir şey varsa, bunu AiCasso'ya burada söyleyebilirsiniz. Örneğin, belirli renkler veya nesneler eklemekten kaçınmak isteyebilirsiniz.</li>
+        <li><strong>Yürüyüş Türü:</strong> Görüntünün hangi yönde genişleyeceğini belirler. Sol, sağ, yukarı, aşağı veya geri (uzaklaştırma) seçeneklerinden birini seçebilirsiniz. Örneğin, sağa kaydırmak için 'sağ' seçeneğini seçersiniz.</li>
+        <li><strong>Çeviri Faktörü:</strong> Görüntünün genişlerken her adımda ne kadar hareket edeceğini kontrol eder. Daha yüksek bir değer, görüntüyü daha fazla hareket ettirir ve yeni içeriğin daha fazlasını ortaya çıkarır. Varsayılan 0.05'tir, ancak 0 ile 1 arasında ayarlayabilirsiniz.</li>
+        <li><strong>Adım Başına Genişlik/Yükseklik Çevirisi:</strong> Görüntünün her adımda yatay (genişlik) veya dikey (yükseklik) olarak ne kadar hareket edeceğini kontrol eder. Varsayılan olarak adım başına 32 pikseldir, ancak görüntünün ne kadar kaymasını istediğinize bağlı olarak bunu ayarlayabilirsiniz.</li>
+        <li><strong>Çıkarım veya Gürültü Giderme Adım Sayısı:</strong> AiCasso'nun nihai görüntüyü elde etmek için yaptığı ayarlamaların sayısını belirler. Daha fazla adım, daha pürüzsüz bir sonuç verir, varsayılan 20 adımdır, ancak 50'ye kadar çıkabilirsiniz.</li>
+        <li><strong>Enterpolasyon Adım Sayısı:</strong> Tek bir genişlemede iki yön arasında geçişin ne kadar pürüzsüz gerçekleşeceğini kontrol eder. Varsayılan 60'tır, ancak daha pürüzsüz geçişler için 120'ye kadar artırabilirsiniz.</li>
+    </ul>
+
+    <p>Unutmayın, bu ayarlar isteğe bağlıdır. AiCasso, sadece doğal dil açıklamanızla iyi çalışacak şekilde tasarlanmıştır. Deney yapmaktan çekinmeyin ve görüntünüz için en iyi olanı görün!</p>
+
+</body>
+</html>

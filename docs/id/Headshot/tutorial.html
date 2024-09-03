@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Fitur Headshot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Panduan Menggunakan Fitur Headshot</h2>
+    <p>Dengan fitur Headshot di AiCasso, Anda dapat membuat potret yang menakjubkan dan unik hanya dengan mendeskripsikan apa yang Anda inginkan. Ini sempurna untuk membuat gambar yang menakjubkan apakah Anda menginginkan pemandangan yang tenang, seorang pejuang epik, atau apa pun yang dibayangkan oleh imajinasi Anda!</p>
+
+    <h3>Cara Kerjanya:</h3>
+    
+    <div class="example">
+        <strong>Gambar Input:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+        </div>
+        <strong>Prompt 1:</strong>
+        <p>"Seorang pria di salju"</p>
+        <strong>Hasil 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+        </div>
+        <strong>Prompt 2:</strong>
+        <p>"Seorang pejuang di hutan, gunakan skala menengah tinggi seperti 78% dari ini"</p>
+        <strong>Hasil 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Parameter Opsional</h3>
+    <p>Ingin menambahkan sedikit lebih banyak gaya atau kontrol pada headshot yang dihasilkan? Berikut beberapa opsi keren yang dapat Anda sesuaikan:</p>
+
+    <ul>
+        <li><strong>Prompt Negatif:</strong> Di sini Anda dapat memberi tahu AiCasso apa yang <em>tidak</em> ingin Anda lihat dalam gambar. Misalnya, jika Anda tidak ingin elemen latar belakang, Anda dapat menyebutkannya di sini. Jika Anda membiarkan ini kosong, AiCasso hanya akan fokus pada apa yang Anda inginkan.</li>
+        <li><strong>Jumlah Langkah Denoising:</strong> Ini mengontrol seberapa halus dan halus tampilan wajah. Anda dapat memilih antara 21, 31, atau 41 langkah, dengan 41 sebagai default. Lebih banyak langkah biasanya berarti hasil yang lebih bersih dan lebih halus.</li>
+        <li><strong>Skala Panduan:</strong> Ini seperti memberi AiCasso dorongan ekstra untuk tetap setia pada deskripsi Anda. Skala berkisar dari 1 hingga 20, dengan 10 sebagai default. Angka yang lebih tinggi berarti AiCasso akan lebih dekat dengan apa yang Anda gambarkan.</li>
+        <li><strong>Skala S:</strong> Ini menyesuaikan struktur wajah. Ini agak teknis, tetapi pada dasarnya ini mengubah seberapa kuat atau lembut fitur wajahnya. Defaultnya adalah 1.0, dan Anda dapat pergi ke mana saja dari 0.0 hingga 2.0 tergantung pada tampilan yang Anda inginkan.</li>
+    </ul>
+
+    <p>Ingat, parameter ini sepenuhnya opsional. AiCasso cukup pemaaf, jadi Anda tidak perlu terlalu tepat atau benar secara tata bahasa. Cukup deskripsikan apa yang Anda inginkan dengan kata-kata Anda sendiri, dan AiCasso akan melakukan keajaiban. Selamat bersenang-senang membuat headshot Anda!</p>
+
+</body>
+</html>

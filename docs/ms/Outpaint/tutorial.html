@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petua Ciri Outpaint</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Petua untuk Menggunakan Ciri Outpaint</h2>
+    <p>Ciri Outpaint dalam AiCasso membolehkan anda mengembangkan imej dengan menambah elemen baru di sekelilingnya atau melanjutkan apa yang sudah ada. Hanya terangkan apa yang anda mahu, dan AiCasso akan menguruskan selebihnya.</p>
+
+    <h3>Bagaimana Ia Berfungsi:</h3>
+    
+    <div class="example">
+        <strong>Imej Permulaan:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Terangkan Perubahan Anda:</strong>
+        <p>Cuma taip apa yang anda mahu tambah atau kembangkan, dan AiCasso akan melaksanakan perubahan tersebut. Anda boleh menentukan arah seperti kiri, kanan, atas, atau bawah, dan juga butiran seperti zum keluar atau pan.</p>
+    </div>
+
+    <h3>Contoh Suntingan:</h3>
+
+    <div class="example">
+        <strong>Contoh 1:</strong> "Tambah gunung ais di sebelah kanan menggunakan faktor terjemahan 0.4."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+        </div>
+        <p><em>Hasil:</em> AiCasso mengembangkan imej ke kanan dan menambah gunung ais, mengekalkan konsistensi dengan pemandangan sedia ada.</p>
+    </div>
+
+    <div class="example">
+        <strong>Contoh 2:</strong> "Zum keluar, kekalkan konsistensi laut gelap pada waktu malam."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+        </div>
+        <p><em>Hasil:</em> Imej zum keluar, mendedahkan lebih banyak laut gelap, sambil mengekalkan suasana pemandangan malam.</p>
+    </div>
+
+    <h3>Pilihan Tambahan</h3>
+    <p>Berikut adalah beberapa tetapan pilihan yang boleh anda gunakan untuk menyesuaikan suntingan anda:</p>
+
+    <ul>
+        <li><strong>Prompt Negatif:</strong> Jika ada sesuatu yang khusus yang anda tidak mahu dalam imej, anda boleh memberitahu AiCasso di sini. Sebagai contoh, anda mungkin mahu mengelakkan menambah warna atau objek tertentu.</li>
+        <li><strong>Jenis Pergerakan:</strong> Ini menentukan arah di mana imej berkembang. Anda boleh memilih dari kiri, kanan, atas, bawah, atau ke belakang (yang zum keluar). Sebagai contoh, untuk pan ke kanan, anda akan memilih 'kanan'.</li>
+        <li><strong>Faktor Terjemahan:</strong> Ini mengawal sejauh mana imej bergerak dengan setiap langkah apabila berkembang. Nilai yang lebih tinggi menggerakkan imej lebih jauh, mendedahkan lebih banyak kandungan baru. Lalai adalah 0.05, tetapi anda boleh menyesuaikannya dari 0 hingga 1.</li>
+        <li><strong>Lebar/Ketinggian Terjemahan per Langkah:</strong> Ini mengawal sejauh mana imej bergerak secara mendatar (lebar) atau menegak (ketinggian) dengan setiap langkah. Lalai adalah 32 piksel per langkah, tetapi anda boleh menyesuaikannya berdasarkan sejauh mana anda mahu imej beralih.</li>
+        <li><strong>Bilangan Langkah Inferens atau Denoising:</strong> Ini menentukan berapa banyak penyesuaian yang dilakukan AiCasso untuk mendapatkan imej akhir. Lebih banyak langkah membawa kepada hasil yang lebih lancar, dengan lalai 20 langkah, tetapi anda boleh meningkatkannya hingga 50.</li>
+        <li><strong>Bilangan Langkah Interpolasi:</strong> Ini mengawal sejauh mana peralihan berlaku antara dua arah dalam satu pengembangan. Lalai adalah 60, tetapi anda boleh meningkatkannya hingga 120 untuk peralihan yang lebih lancar.</li>
+    </ul>
+
+    <p>Ingat, tetapan ini adalah pilihan. AiCasso direka untuk berfungsi dengan baik hanya dengan penerangan bahasa semula jadi anda. Jangan ragu untuk bereksperimen dan lihat apa yang terbaik untuk imej anda!</p>
+
+</body>
+</html>

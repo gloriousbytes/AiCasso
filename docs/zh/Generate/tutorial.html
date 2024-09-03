@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图像生成技巧</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>图像生成技巧</h2>
+    <p>使用AiCasso创建图像既简单又有趣！您不需要担心精确或确保语法完美。只需描述您脑海中的想法，AiCasso会完成其余的工作。无论您是在寻找特定风格，想要风景、肖像或方形图像，AiCasso都足够智能，能够理解您的需求，即使您犯了语法错误或没有完全按照指示操作。</p>
+
+    <h3>示例：</h3>
+
+    <div class="example">
+        <strong>提示：</strong> "制作一个宁静的湖泊，夕阳下的山脉，像那些华丽的旧画，方形图片，没有动物或船只。"
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1JqC5wYmyEAEfuC8d2V1wvPg2OGitUvX7/preview"></iframe>
+        </div>
+        <p><em>结果：</em> AiCasso将生成一个美丽的山湖，灵感来自巴洛克风格，没有动物或船只，并且是方形格式。</p>
+    </div>
+
+    <div class="example">
+        <strong>提示：</strong> "疯狂的亮色飞溅，像抽象艺术，肖像尺寸，没有形状或物体。"
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1jcxt3KD0WefqEA3I5wlyNuLCShgY3vlV/preview"></iframe>
+        </div>
+        <p><em>结果：</em> AI将创建一个没有任何可识别形状的抽象色彩飞溅，遵循抽象表现主义风格，并且是肖像布局。</p>
+    </div>
+
+    <div class="example">
+        <strong>提示：</strong> "有趣的卡通猫作为超级英雄，3D风格，横向，确保它可爱而不吓人。"
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1ff-Ut-3puLCcu0uueIO1d_0F4usrhaVS/preview"></iframe>
+        </div>
+        <p><em>结果：</em> 这将创建一个可爱的3D卡通猫，打扮成超级英雄，具有俏皮和不吓人的氛围，以横向格式显示。</p>
+    </div>
+
+    <h3>增强风格</h3>
+    <p>不确定选择哪种风格？别担心！只需提到任何您想到的风格，即使语法不正确，AiCasso也会从可用的增强风格列表中找出。</p>
+
+    <ul>
+        <li><strong>默认：</strong> 平衡和中性的风格，没有特定的艺术影响。</li>
+        <li><strong>增强：</strong> 略微改善细节和整体美感。</li>
+        <li><strong>电影女神：</strong> 添加戏剧性的电影效果，具有强烈的光影对比。</li>
+        <li><strong>抽象表现主义：</strong> 强调抽象形式和鲜艳的色彩飞溅。</li>
+        <li><strong>学术：</strong> 为图像添加学术和古典的触感。</li>
+        <li><strong>动作人物：</strong> 生成具有动作人物夸张和动态风格的图像。</li>
+        <li><strong>可爱的3D角色：</strong> 生成可爱、卡通风格的3D角色。</li>
+        <li><strong>可爱卡哇伊：</strong> 强调卡哇伊文化典型的可爱和迷人风格。</li>
+        <li><strong>装饰艺术：</strong> 使用装饰艺术时期的几何和装饰风格。</li>
+        <li><strong>新艺术风格：</strong> 添加流动的线条和自然灵感的元素，典型的新艺术风格。</li>
+        <li><strong>星际光环：</strong> 创造神秘和超凡的氛围。</li>
+        <li><strong>先锋派：</strong> 专注于创新和实验性的艺术表达。</li>
+        <li><strong>巴洛克：</strong> 使用巴洛克时代戏剧性、细致和复杂的风格。</li>
+        <li><strong>包豪斯风格海报：</strong> 反映包豪斯的极简和功能设计原则。</li>
+        <li><strong>蓝图示意图：</strong> 生成类似技术蓝图的图像。</li>
+        <li><strong>漫画：</strong> 生成夸张的卡通肖像。</li>
+        <li><strong>赛璐珞艺术：</strong> 使用赛璐珞动画典型的平面、鲜明色彩。</li>
+        <li><strong>角色设计表：</strong> 专注于适合动画的干净清晰的角色设计。</li>
+        <li><strong>古典主义艺术：</strong> 模仿古典古代的精致和理想化的艺术风格。</li>
+        <li><strong>色域绘画：</strong> 以大面积单色创造平面色彩。</li>
+        <li><strong>彩色铅笔艺术：</strong> 模仿彩色铅笔画的质感和外观。</li>
+        <li><strong>概念艺术：</strong> 优先考虑想法和概念，而非美学或材料。</li>
+        <li><strong>构成主义：</strong> 反映构成主义运动的工业、几何风格。</li>
+        <li><strong>立体主义：</strong> 将物体分解为几何形状并以抽象形式呈现。</li>
+        <li><strong>达达主义：</strong> 强调荒谬、非理性和反艺术美学。</li>
+        <li><strong>黑暗幻想：</strong> 创造阴郁、哥特式氛围，带有黑暗和怪异元素。</li>
+        <li><strong>黑暗阴郁氛围：</strong> 使用低光和阴影创造阴郁的氛围。</li>
+        <li><strong>DMT艺术：</strong> 具有受DMT体验启发的鲜艳、迷幻视觉效果。</li>
+        <li><strong>涂鸦艺术：</strong> 强调异想天开的绘画风格，通常复杂而细致。</li>
+        <li><strong>双重曝光：</strong> 将两个图像合并为一个，创造超现实的分层效果。</li>
+        <li><strong>滴漆飞溅：</strong> 使用飞溅和滴落的油漆创造动态和混乱的构图。</li>
+        <li><strong>表现主义：</strong> 优先考虑情感表达而非现实表现，通常使用大胆的色彩和戏剧性的形式。</li>
+        <li><strong>褪色的宝丽来照片：</strong> 模仿褪色宝丽来照片的陈旧和怀旧外观。</li>
+        <li><strong>野兽派：</strong> 使用鲜艳、不自然的色彩和大胆的笔触，受野兽派运动启发。</li>
+        <li><strong>平面2D：</strong> 强调简单、平面的设计，最小的阴影或深度，通常是卡通风格。</li>
+        <li><strong>堡垒之夜风格：</strong> 反映堡垒之夜游戏典型的鲜艳、卡通艺术风格。</li>
+        <li><strong>未来主义：</strong> 专注于动态运动、能量和未来技术的描绘。</li>
+        <li><strong>故障核心：</strong> 强调数字错误和故障作为一种艺术风格，通常具有扭曲的视觉效果。</li>
+        <li><strong>光辉流行：</strong> 使用柔和、发光的照明创造梦幻、超凡的氛围。</li>
+        <li><strong>古奇风格：</strong> 反映20世纪中期的未来主义和太空时代设计趋势。</li>
+        <li><strong>涂鸦艺术：</strong> 使用涂鸦和城市壁画典型的鲜艳、街头风格美学。</li>
+        <li><strong>哈莱姆文艺复兴艺术：</strong> 反映哈莱姆文艺复兴的丰富文化和艺术表达。</li>
+        <li><strong>高级时尚：</strong> 强调高级时尚的光滑、复杂和前卫美学。</li>
+        <li><strong>田园诗意：</strong> 创造宁静、平和且通常是田园风光的氛围。</li>
+        <li><strong>印象派：</strong> 使用松散的笔触和鲜艳的色彩捕捉光线和氛围的效果。</li>
+        <li><strong>信息图表绘图：</strong> 强调清晰、视觉上吸引人的布局，以图形方式呈现信息。</li>
+        <li><strong>墨水滴画：</strong> 使用墨水在画中创造流动、滴落的效果。</li>
+        <li><strong>日本墨画：</strong> 模仿日本墨画的传统笔触技术和美学。</li>
+        <li><strong>整齐摄影：</strong> 强调物体的整齐和有序排列，通常从上方拍摄。</li>
+        <li><strong>轻松愉快的氛围：</strong> 使用明亮的色彩和照明创造愉快和振奋的氛围。</li>
+        <li><strong>标志设计：</strong> 专注于创建干净、可识别的标志和品牌元素。</li>
+        <li><strong>奢华优雅：</strong> 强调复杂和奢华，通常具有丰富的纹理和材料。</li>
+        <li><strong>微距摄影：</strong> 专注于极端特写，通常揭示肉眼看不到的细节。</li>
+        <li><strong>曼陀罗艺术：</strong> 创造受传统曼陀罗设计启发的复杂、对称图案。</li>
+        <li><strong>马克笔绘画：</strong> 模仿马克笔绘画典型的大胆、鲜艳的线条和色彩。</li>
+        <li><strong>中世纪主义：</strong> 反映中世纪时期的艺术和设计美学。</li>
+        <li><strong>极简主义：</strong> 强调简单性和形式的基本元素。</li>
+        <li><strong>新巴洛克：</strong> 复兴巴洛克时期的华丽、戏剧风格，具有现代影响。</li>
+        <li><strong>新拜占庭：</strong> 将拜占庭帝国的华丽、宗教艺术风格与现代元素结合。</li>
+        <li><strong>新未来主义：</strong> 专注于未来主义设计，通常具有光滑、高科技美学。</li>
+        <li><strong>新印象派：</strong> 使用小而明显的色点创造图像，受新印象派运动启发。</li>
+        <li><strong>新洛可可：</strong> 复兴洛可可时期的复杂、装饰风格，具有现代扭曲。</li>
+        <li><strong>新古典主义：</strong> 模仿古典古代的艺术和设计美学，强调和谐和简单。</li>
+        <li><strong>光学艺术：</strong> 通过使用几何图案和对比创造视觉错觉和效果。</li>
+        <li><strong>华丽和复杂：</strong> 专注于高度详细、复杂的设计，注重装饰。</li>
+        <li><strong>铅笔素描绘图：</strong> 模仿铅笔素描的质感和外观。</li>
+        <li><strong>波普艺术：</strong> 使用受流行文化和大众媒体启发的大胆色彩和图像。</li>
+        <li><strong>洛可可：</strong> 反映洛可可时期的复杂、装饰艺术风格，强调轻盈和优雅。</li>
+        <li><strong>剪影艺术：</strong> 使用光影之间的强烈对比创造大胆的剪影图像。</li>
+        <li><strong>简单矢量艺术：</strong> 强调干净、几何形状和平面色彩，典型的矢量艺术。</li>
+        <li><strong>SketchUp：</strong> 模仿使用SketchUp软件创建的3D模型的外观和感觉。</li>
+        <li><strong>蒸汽朋克：</strong> 将维多利亚时代的美学与蒸汽动力技术结合，创造复古未来主义风格。</li>
+        <li><strong>超现实主义：</strong> 将现实与梦幻般的图像融合，创造超现实的幻想场景。</li>
+        <li><strong>至上主义：</strong> 专注于基本几何形状和有限的色彩调色板，受至上主义运动启发。</li>
+        <li><strong>Terragen：</strong> 模仿使用Terragen软件创建的逼真计算机生成的景观。</li>
+        <li><strong>宁静放松的氛围：</strong> 使用柔和的色彩和宁静的图像创造平和和宁静的环境。</li>
+        <li><strong>贴纸设计：</strong> 专注于创建适合贴纸的俏皮、卡通图像。</li>
+        <li><strong>鲜艳的边缘光：</strong> 强调围绕主体的明亮边缘光，创造引人注目的鲜艳效果。</li>
+        <li><strong>体积照明：</strong> 使用光束和大气效果创造深度和维度。</li>
+        <li><strong>水彩画：</strong> 模仿水彩画的柔和、流动的质感。</li>
+        <li><strong>异想天开和俏皮：</strong> 专注于轻松、富有想象力且通常是古怪的图像。</li>
+        <li><strong>锐利：</strong> 增强清晰度和边缘定义，以获得更清晰的外观。</li>
+        <li><strong>杰作：</strong> 强调高质量、详细和精致的艺术输出。</li>
+        <li><strong>照片：</strong> 旨在实现逼真和栩栩如生的摄影质量。</li>
+        <li><strong>负片：</strong> 反转颜色以创建摄影负片效果。</li>
+        <li><strong>广告 - 广告：</strong> 专注于适合广告的干净、专业视觉效果。</li>
+        <li><strong>广告 - 汽车：</strong> 为动态和精致的汽车广告定制视觉风格。</li>
+        <li><strong>广告 - 企业：</strong> 强调适合企业环境的光滑、专业设计。</li>
+        <li><strong>广告 - 时尚编辑：</strong> 突出时尚编辑中使用的时尚、高级时尚外观。</li>
+        <li><strong>广告 - 食品摄影：</strong> 优化图像以获得典型食品摄影的鲜艳和开胃外观。</li>
+        <li><strong>广告 - 美食摄影：</strong> 强调美食摄影的丰富、细致美学。</li>
+        <li><strong>广告 - 奢侈品：</strong> 专注于适合奢侈品牌的华丽、高端风格。</li>
+        <li><strong>广告 - 房地产：</strong> 突出房地产广告典型的干净和吸引人的视觉效果。</li>
+        <li><strong>广告 - 零售：</strong> 强调适合零售广告的吸引人、消费者导向风格。</li>
+        <li><strong>超现实主义：</strong> 力求实现极其详细、逼真的视觉风格。</li>
+        <li><strong>点彩画：</strong> 使用小而明显的色点创造图像，受点彩画运动启发。</li>
+        <li><strong>迷幻：</strong> 强调受迷幻艺术启发的鲜艳色彩和超现实视觉效果。</li>
+        <li><strong>文艺复兴：</strong> 反映文艺复兴艺术的和谐、古典风格。</li>
+        <li><strong>排版：</strong> 专注于创造性和艺术性地使用文本和字体。</li>
+        <li><strong>未来生物机械：</strong> 将未来和生物机械元素结合，创造高科技、有机风格。</li>
+        <li><strong>未来生物机械赛博朋克：</strong> 将生物机械和赛博朋克美学融合，创造粗糙的未来风格。</li>
+        <li><strong>未来赛博：</strong> 专注于高科技、赛博视觉效果。</li>
+        <li><strong>未来赛博机器人：</strong> 强调具有未来感的机器人和赛博设计。</li>
+        <li><strong>未来赛博朋克城市景观：</strong> 反映赛博朋克艺术典型的粗糙、霓虹灯城市景观。</li>
+        <li><strong>未来科幻：</strong> 专注于未来和科幻启发的美学。</li>
+        <li><strong>未来复古赛博朋克：</strong> 将复古和赛博朋克元素结合，创造怀旧而未来的风格。</li>
+        <li><strong>未来复古：</strong> 将未来视觉与复古设计元素结合。</li>
+        <li><strong>未来蒸汽波：</strong> 强调蒸汽波艺术典型的怀旧、超现实视觉效果。</li>
+        <li><strong>游戏气泡：</strong> 专注于休闲游戏中常见的俏皮、泡泡美学。</li>
+        <li><strong>游戏赛博朋克：</strong> 将游戏设计元素与赛博朋克美学结合。</li>
+        <li><strong>游戏格斗：</strong> 反映格斗游戏典型的动态、激烈风格。</li>
+        <li><strong>游戏GTA：</strong> 模仿侠盗猎车手游戏典型的粗糙、城市风格。</li>
+        <li><strong>游戏马里奥：</strong> 专注于马里奥游戏典型的鲜艳、卡通风格。</li>
+        <li><strong>游戏Minecraft：</strong> 模仿Minecraft典型的方块、像素风格。</li>
+        <li><strong>游戏Pokemon：</strong> 反映Pokemon游戏典型的鲜艳、动漫风格。</li>
+        <li><strong>游戏复古街机：</strong> 强调复古街机游戏典型的怀旧、像素风格。</li>
+        <li><strong>游戏RPG幻想：</strong> 反映RPG游戏典型的细致、幻想启发的美学。</li>
+        <li><strong>游戏策略：</strong> 专注于策略游戏典型的干净、功能设计。</li>
+        <li><strong>游戏街头霸王：</strong> 模仿街头霸王游戏典型的大胆、动态风格。</li>
+        <li><strong>游戏塞尔达：</strong> 反映塞尔达游戏典型的幻想启发风格。</li>
+        <li><strong>杂项建筑：</strong> 专注于干净、精确的建筑渲染。</li>
+        <li><strong>杂项迪斯科：</strong> 强调迪斯科文化典型的鲜艳、霓虹灯美学。</li>
+        <li><strong>杂项梦境：</strong> 创造超现实、梦幻般的环境。</li>
+        <li><strong>杂项反乌托邦：</strong> 反映反乌托邦环境典型的粗糙、阴暗视觉效果。</li>
+        <li><strong>杂项童话：</strong> 强调童话典型的异想天开、魔法元素。</li>
+        <li><strong>杂项哥特式：</strong> 反映哥特式艺术和建筑典型的黑暗、华丽风格。</li>
+        <li><strong>杂项垃圾摇滚：</strong> 强调垃圾摇滚文化典型的粗糙、原始美学。</li>
+        <li><strong>杂项恐怖：</strong> 专注于恐怖典型的黑暗、怪异和令人不安的视觉效果。</li>
+        <li><strong>杂项卡哇伊：</strong> 反映卡哇伊文化典型的可爱、迷人风格。</li>
+        <li><strong>杂项洛夫克拉夫特式：</strong> 强调洛夫克拉夫特小说典型的怪异、宇宙恐怖。</li>
+        <li><strong>杂项阴森：</strong> 专注于黑暗、病态和令人不安的主题。</li>
+        <li><strong>杂项漫画：</strong> 模仿漫画典型的大胆、动态风格。</li>
+        <li><strong>杂项大都会：</strong> 反映现代大都会典型的光滑、城市美学。</li>
+        <li><strong>杂项极简主义：</strong> 强调简单性和形式的基本元素。</li>
+        <li><strong>杂项单色：</strong> 专注于使用单一颜色的不同色调创建图像。</li>
+        <li><strong>杂项航海：</strong> 反映航海主题典型的海洋启发美学。</li>
+        <li><strong>杂项太空：</strong> 强调太空环境典型的广阔、超凡视觉效果。</li>
+        <li><strong>杂项彩色玻璃：</strong> 模仿彩色玻璃艺术典型的复杂、色彩丰富的设计。</li>
+        <li><strong>杂项科技服装：</strong> 专注于科技服装典型的未来主义、功能美学。</li>
+        <li><strong>杂项部落：</strong> 反映部落艺术典型的大胆、文化美学。</li>
+        <li><strong>杂项禅绕画：</strong> 强调禅绕画典型的复杂、重复图案。</li>
+        <li><strong>纸艺拼贴画：</strong> 使用剪纸创建分层、纹理拼贴画。</li>
+        <li><strong>纸艺平面剪纸：</strong> 强调平面剪纸设计。</li>
+        <li><strong>纸艺切纸工艺：</strong> 专注于切纸工艺典型的复杂、折叠设计。</li>
+        <li><strong>纸艺纸浆工艺：</strong> 使用纸浆创建纹理、三维形式。</li>
+        <li><strong>纸艺卷纸工艺：</strong> 强调卷纸工艺典型的精致、卷纸设计。</li>
+        <li><strong>纸艺剪纸拼贴画：</strong> 结合剪纸元素创建分层拼贴画。</li>
+        <li><strong>纸艺剪纸影箱：</strong> 使用分层剪纸创建三维影箱。</li>
+        <li><strong>纸艺堆叠剪纸：</strong> 专注于分层、堆叠纸张设计。</li>
+        <li><strong>纸艺厚层剪纸：</strong> 强调厚剪纸设计典型的立体、分层外观。</li>
+        <li><strong>照片外星人：</strong> 专注于超现实、外星视觉效果。</li>
+        <li><strong>照片黑色电影：</strong> 强调黑色电影典型的黑暗、阴郁美学。</li>
+        <li><strong>照片魅力：</strong> 突出魅力摄影典型的光滑、时尚外观。</li>
+        <li><strong>照片HDR：</strong> 使用高动态范围（HDR）创建具有广泛光线和色彩的图像。</li>
+        <li><strong>照片iPhone摄影：</strong> 模仿iPhone摄影典型的干净、现代风格。</li>
+        <li><strong>照片长曝光：</strong> 使用长曝光创建动态、运动模糊效果。</li>
+        <li><strong>照片霓虹黑色：</strong> 将霓虹灯照明与黑色电影的黑暗、阴郁美学结合。</li>
+        <li><strong>照片剪影：</strong> 专注于光影之间的强烈对比，创建基于剪影的图像。</li>
+        <li><strong>照片移轴：</strong> 使用移轴效果创建微缩、玩具般的外观。</li>
+        <li><strong>3D模型：</strong> 专注于3D模型典型的干净、详细外观。</li>
+        <li><strong>模拟胶片：</strong> 模仿模拟胶片摄影典型的颗粒感、纹理外观。</li>
+        <li><strong>动漫：</strong> 强调动漫典型的鲜艳、动态风格。</li>
+        <li><strong>电影：</strong> 创造戏剧性的电影效果，具有强烈的光影和构图。</li>
+        <li><strong>漫画书：</strong> 使用漫画书艺术典型的粗线条和鲜艳色彩。</li>
+        <li><strong>工艺粘土：</strong> 模仿粘土模型的纹理、手工外观。</li>
+        <li><strong>数字艺术：</strong> 专注于干净、精致的数字艺术作品。</li>
+        <li><strong>幻想艺术：</strong> 强调幻想艺术典型的细致、富有想象力的视觉效果。</li>
+        <li><strong>等距：</strong> 使用等距视角创建三维外观。</li>
+        <li><strong>线条艺术：</strong> 专注于干净、清晰的线条创建详细的绘图。</li>
+        <li><strong>低多边形：</strong> 使用低多边形3D模型创建极简、几何外观。</li>
+        <li><strong>霓虹朋克：</strong> 将霓虹灯照明与赛博朋克的粗糙美学结合。</li>
+        <li><strong>折纸：</strong> 专注于折纸典型的复杂、折叠设计。</li>
+        <li><strong>摄影：</strong> 旨在实现逼真、栩栩如生的视觉效果。</li>
+        <li><strong>像素艺术：</strong> 使用像素化设计创建复古、电子游戏启发的外观。</li>
+        <li><strong>纹理：</strong> 专注于丰富、详细的纹理以增强视觉深度。</li>
+    </ul>
+</body>
+</html>

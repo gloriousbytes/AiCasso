@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हेडशॉट फीचर गाइड</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>हेडशॉट फीचर का उपयोग करने की गाइड</h2>
+    <p>AiCasso में हेडशॉट फीचर के साथ, आप केवल यह वर्णन करके अद्भुत और अनोखे पोर्ट्रेट बना सकते हैं कि आप क्या चाहते हैं। यह शानदार छवियाँ बनाने के लिए एकदम सही है, चाहे आप एक शांत दृश्य चाहते हों, एक महाकाव्य योद्धा, या आपकी कल्पना में कुछ और!</p>
+
+    <h3>यह कैसे काम करता है:</h3>
+    
+    <div class="example">
+        <strong>इनपुट छवि:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+        </div>
+        <strong>प्रॉम्प्ट 1:</strong>
+        <p>"बर्फ में एक आदमी"</p>
+        <strong>परिणाम 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+        </div>
+        <strong>प्रॉम्प्ट 2:</strong>
+        <p>"जंगल में एक योद्धा, इस का 78% मध्यम उच्च पैमाना उपयोग करें"</p>
+        <strong>परिणाम 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>वैकल्पिक पैरामीटर</h3>
+    <p>क्या आप अपने जनरेट किए गए हेडशॉट्स में थोड़ा और आकर्षण या नियंत्रण जोड़ना चाहते हैं? यहाँ कुछ शानदार विकल्प हैं जिन्हें आप समायोजित कर सकते हैं:</p>
+
+    <ul>
+        <li><strong>नकारात्मक प्रॉम्प्ट:</strong> यहाँ आप AiCasso को बता सकते हैं कि आप छवि में क्या <em>नहीं</em> देखना चाहते हैं। उदाहरण के लिए, यदि आप कोई पृष्ठभूमि तत्व नहीं चाहते हैं, तो आप इसे यहाँ उल्लेख कर सकते हैं। यदि आप इसे खाली छोड़ देते हैं, तो AiCasso केवल उस पर ध्यान केंद्रित करेगा जो आप चाहते हैं।</li>
+        <li><strong>डिनॉइज़िंग स्टेप्स की संख्या:</strong> यह नियंत्रित करता है कि चेहरा कितना चिकना और परिष्कृत दिखता है। आप 21, 31, या 41 चरणों के बीच चुन सकते हैं, जिसमें 41 डिफ़ॉल्ट है। अधिक चरण आमतौर पर एक साफ, अधिक पॉलिश परिणाम का मतलब है।</li>
+        <li><strong>गाइडेंस स्केल:</strong> यह AiCasso को आपके विवरण के प्रति सच्चे रहने के लिए थोड़ा अतिरिक्त धक्का देने जैसा है। पैमाना 1 से 20 तक होता है, जिसमें 10 डिफ़ॉल्ट है। उच्च संख्या का मतलब है कि AiCasso आपके वर्णन के करीब रहेगा।</li>
+        <li><strong>S स्केल:</strong> यह चेहरे की संरचना को समायोजित करता है। यह थोड़ा तकनीकी है, लेकिन मूल रूप से यह चेहरे की विशेषताओं को कितना मजबूत या नरम बनाता है, इसे समायोजित करता है। डिफ़ॉल्ट 1.0 है, और आप उस लुक के आधार पर 0.0 से 2.0 तक जा सकते हैं जो आप चाहते हैं।</li>
+    </ul>
+
+    <p>याद रखें, ये पैरामीटर पूरी तरह से वैकल्पिक हैं। AiCasso काफी क्षमाशील है, इसलिए आपको बहुत सटीक या व्याकरणिक रूप से सही होने की आवश्यकता नहीं है। बस अपने शब्दों में जो आप चाहते हैं उसका वर्णन करें, और AiCasso जादू करेगा। अपने हेडशॉट्स बनाने का आनंद लें!</p>
+
+</body>
+</html>

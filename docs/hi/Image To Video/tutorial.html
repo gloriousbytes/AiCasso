@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>छवि से वीडियो फीचर गाइड</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>छवि से वीडियो फीचर का उपयोग करने की गाइड</h2>
+    <p>AiCasso में छवि से वीडियो फीचर आपको एकल छवि को गतिशील वीडियो में बदलने की अनुमति देता है। बस अपने वीडियो में जो देखना चाहते हैं उसका वर्णन करें, और AiCasso इसे संभव बना देगा!</p>
+
+    <h3>यह कैसे काम करता है:</h3>
+    
+    <div class="example">
+        <strong>इनपुट छवि:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>प्रॉम्प्ट 1:</strong>
+        <p>"पार्क में एक प्यारा पिल्ला"</p>
+        <strong>परिणाम 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>प्रॉम्प्ट 2:</strong>
+        <p>"पार्क में एक प्यारा पिल्ला, अधिकतम FPS, अधिकतम फ्रेम, और अधिकतम गति का उपयोग करें"</p>
+        <strong>परिणाम 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>वैकल्पिक पैरामीटर</h3>
+    <p>यदि आप अपने वीडियो के साथ अधिक विशिष्ट होना चाहते हैं, तो यहां कुछ सेटिंग्स हैं जिन्हें आप समायोजित कर सकते हैं:</p>
+
+    <ul>
+        <li><strong>नकारात्मक प्रॉम्प्ट:</strong> वर्णन करें कि आप वीडियो में क्या नहीं चाहते हैं। यदि खाली छोड़ दिया जाता है, तो AiCasso केवल सकारात्मक प्रॉम्प्ट पर ध्यान केंद्रित करेगा।</li>
+        <li><strong>फ्रेम की संख्या:</strong> चुनें कि आपके वीडियो में कितने फ्रेम (व्यक्तिगत छवियां) होंगे। आप 25 फ्रेम तक चुन सकते हैं, जिसमें 16 डिफ़ॉल्ट है।</li>
+        <li><strong>डेनॉइज़िंग स्टेप्स:</strong> यह नियंत्रित करता है कि आपका वीडियो कितना चिकना दिखता है। अधिक कदम का मतलब एक साफ वीडियो है। आप 50 कदम तक सेट कर सकते हैं, जिसमें 20 डिफ़ॉल्ट है।</li>
+        <li><strong>गाइडेंस स्केल:</strong> यह वीडियो को आपके विवरण के करीब रखने में मदद करता है। रेंज 1.0 से 8.0 तक है, और आप वीडियो के विकास को मार्गदर्शित करने के लिए प्रारंभ और अंत मानों को समायोजित कर सकते हैं।</li>
+        <li><strong>गति:</strong> अपने वीडियो में कितनी गति है, इसे समायोजित करें। उच्च मान का मतलब अधिक क्रिया है। रेंज 0 से 127 तक है, जिसमें 60 डिफ़ॉल्ट है।</li>
+        <li><strong>शोर वृद्धि शक्ति:</strong> अपने वीडियो में कुछ शोर जोड़ें ताकि इसे अधिक बनावट वाला रूप मिल सके। रेंज 0 से 1 तक है, जिसमें 0 डिफ़ॉल्ट है।</li>
+        <li><strong>फ्रेम प्रति सेकंड (FPS):</strong> सेट करें कि आपका वीडियो कितनी तेजी से चलता है। डिफ़ॉल्ट 16 FPS है, लेकिन आप तेज प्लेबैक के लिए 16 तक जा सकते हैं।</li>
+        <li><strong>इंटरपोलेशन विधि:</strong> चुनें कि फ्रेम को कैसे मिलाया जाता है। डिफ़ॉल्ट "lerp" (रेखीय इंटरपोलेशन) है, लेकिन आप विभिन्न प्रभावों के लिए "slerp" (गोलाकार रेखीय इंटरपोलेशन) का भी उपयोग कर सकते हैं।</li>
+        <li><strong>क्लिप स्किप:</strong> एक अलग वीडियो शैली के लिए कुछ परतों को छोड़ें। आप 2 परतों तक छोड़ सकते हैं, या डिफ़ॉल्ट व्यवहार के लिए इसे शून्य छोड़ सकते हैं।</li>
+    </ul>
+
+    <p>याद रखें, AiCasso काफी स्मार्ट है! आपको हर विवरण को सही करने या सही व्याकरण का उपयोग करने की आवश्यकता नहीं है। बस जो आप चाहते हैं उसका वर्णन करें, और AiCasso बाकी काम करेगा। अपने वीडियो बनाने का आनंद लें!</p>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ビデオ生成機能ガイド</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>ビデオ生成機能の使用ガイド</h2>
+    <p>AiCassoのビデオ生成機能を使用すると、見たいものを説明するだけでビデオを作成できます。アイデアを入力するだけで、AiCassoがそれをビデオで実現します！</p>
+
+    <h3>使用方法:</h3>
+    
+    <div class="example">
+        <strong>プロンプト:</strong>
+        <p>"3Dアニメーションの雄鶏が一人でフィールドにいて、食べて幸せになっている。50のノイズ除去ステップでポートレートビデオにしてください。"</p>
+        <strong>結果:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>プロンプト:</strong>
+        <p>"フィールドにいる雄鶏のカートゥーンを横長の寸法で。"</p>
+        <strong>結果:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>プロンプト:</strong>
+        <p>"フィールドにいる雄鶏。"</p>
+        <strong>結果:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>プロンプト:</strong>
+        <p>"フィールドに一人でいる雄鶏。自然な感じを与えてください。"</p>
+        <strong>結果:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>追加オプション</h3>
+    <p>ビデオを微調整したいですか？以下の設定を試してみてください：</p>
+
+    <ul>
+        <li><strong>フレーム数:</strong> ビデオに含まれるフレーム（個々の画像）の数を選択します。最大25フレームまで可能で、デフォルトは16です。</li>
+        <li><strong>ノイズ除去ステップ数:</strong> ビデオの滑らかさを制御します。ステップが多いほど滑らかなビデオになります。最大50ステップまで設定可能で、デフォルトは20です。</li>
+        <li><strong>ガイダンススケール:</strong> ビデオが説明にどれだけ忠実であるかを助けます。数値が高いほどプロンプトに従います。範囲は0から8で、デフォルトは8です。</li>
+        <li><strong>クリップスキップ:</strong> 異なるビデオスタイルのために特定のレイヤーをスキップします。デフォルトではレイヤーはスキップされませんが、最大2つまでスキップできます。</li>
+        <li><strong>アップスケール幅と高さ:</strong> 解像度を調整してビデオを大きくできます。デフォルトは1024x1024ピクセルですが、ニーズに合わせて調整できます。</li>
+        <li><strong>アップスケール強度:</strong> アップスケール時のビデオの調整度合いを変更します。デフォルトは1ですが、調整して違いを確認できます。</li>
+        <li><strong>アップスケールガイダンススケール:</strong> アップスケールプロセスをガイドし、範囲は0から8で、デフォルトは8です。</li>
+        <li><strong>アップスケール推論ステップ:</strong> ビデオをアップスケールするために行われるステップ数。ステップが多いほど滑らかなアップスケールになります。最大50ステップで、デフォルトは20です。</li>
+        <li><strong>改良サンプリング:</strong> より洗練されたビデオを望む場合はこれをオンにします。デフォルトではオフです。</li>
+        <li><strong>改良サンプリングシード:</strong> 改良サンプリングで毎回同じビデオを生成するために使用します。オプションでデフォルトではオフです。</li>
+        <li><strong>フレーム毎秒 (FPS):</strong> ビデオの速度を設定します。デフォルトは16 FPSですが、最大16まで調整可能です。</li>
+        <li><strong>ビデオモデル:</strong> ビデオのスタイルを選択します。オプションには以下が含まれます：
+            <ul>
+                <li><strong>デフォルト:</strong> 標準のビデオモデル。</li>
+                <li><strong>カートゥーン:</strong> カートゥーン風のビデオスタイル。</li>
+                <li><strong>ナチュラル:</strong> リアルで自然な見た目のビデオスタイル。</li>
+                <li><strong>アニメーション3D:</strong> 3Dアニメーションのビデオスタイル。</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>これらの設定はオプションです。ビデオ生成機能はシンプルな説明だけでも素晴らしい結果を出しますので、ぜひ実験して何が作れるか試してみてください！</p>
+
+</body>
+</html>

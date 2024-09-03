@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Görüntüden Videoya Özellik Kılavuzu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Görüntüden Videoya Özelliğini Kullanma Kılavuzu</h2>
+    <p>AiCasso'daki Görüntüden Videoya özelliği, tek bir görüntüyü dinamik bir videoya dönüştürmenizi sağlar. Videonuzda ne görmek istediğinizi tarif edin, AiCasso bunu gerçekleştirsin!</p>
+
+    <h3>Nasıl Çalışır:</h3>
+    
+    <div class="example">
+        <strong>Girdi Görüntüsü:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>İpucu 1:</strong>
+        <p>"Parkta sevimli bir köpek yavrusu"</p>
+        <strong>Sonuç 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>İpucu 2:</strong>
+        <p>"Parkta sevimli bir köpek yavrusu, maksimum FPS, maksimum kare ve maksimum hareket kullan"</p>
+        <strong>Sonuç 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Opsiyonel Parametreler</h3>
+    <p>Videonuzu daha spesifik hale getirmek isterseniz, ayarlayabileceğiniz bazı ayarlar şunlardır:</p>
+
+    <ul>
+        <li><strong>Negatif İpucu:</strong> Videoda *istemediğiniz* şeyleri tarif edin. Boş bırakılırsa, AiCasso sadece olumlu ipucuya odaklanacaktır.</li>
+        <li><strong>Kare Sayısı:</strong> Videonuzun kaç kare (bireysel görüntü) içereceğini seçin. 25 kareye kadar seçebilirsiniz, varsayılan 16'dır.</li>
+        <li><strong>Gürültü Azaltma Adımları:</strong> Videonuzun ne kadar pürüzsüz görüneceğini kontrol eder. Daha fazla adım daha temiz bir video demektir. 50 adıma kadar ayarlayabilirsiniz, varsayılan 20'dir.</li>
+        <li><strong>Rehberlik Ölçeği:</strong> Videonun tarifinize ne kadar sadık kalacağını belirler. Aralık 1.0 ile 8.0 arasındadır ve videonun nasıl gelişeceğini yönlendirmek için başlangıç ve bitiş değerlerini ayarlayabilirsiniz.</li>
+        <li><strong>Hareket:</strong> Videonuzdaki hareket miktarını ayarlayın. Daha yüksek bir değer daha fazla aksiyon demektir. Aralık 0 ile 127 arasındadır, varsayılan 60'tır.</li>
+        <li><strong>Gürültü Artırma Gücü:</strong> Videonuza daha dokulu bir görünüm vermek için biraz gürültü ekleyin. Aralık 0 ile 1 arasındadır, varsayılan 0'dır.</li>
+        <li><strong>Saniyedeki Kare Sayısı (FPS):</strong> Videonuzun ne kadar hızlı oynatılacağını ayarlayın. Varsayılan 16 FPS'dir, ancak daha hızlı oynatma için 16'ya kadar çıkabilirsiniz.</li>
+        <li><strong>Enterpolasyon Yöntemi:</strong> Karelerin nasıl birleştirileceğini seçin. Varsayılan "lerp" (doğrusal enterpolasyon) iken, farklı efektler için "slerp" (küresel doğrusal enterpolasyon) da kullanabilirsiniz.</li>
+        <li><strong>Klip Atla:</strong> Farklı bir video stili için belirli katmanları atlayın. 2 katmana kadar atlayabilirsiniz veya varsayılan davranış için boş bırakabilirsiniz.</li>
+    </ul>
+
+    <p>Unutmayın, AiCasso oldukça akıllı! Her detayı mükemmel yapmanız veya doğru dilbilgisi kullanmanız gerekmez. Sadece ne istediğinizi tarif edin, AiCasso gerisini halleder. Videolarınızı oluştururken eğlenin!</p>
+
+</body>
+</html>

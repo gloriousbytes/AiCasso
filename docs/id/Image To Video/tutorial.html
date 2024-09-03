@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Fitur Gambar ke Video</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Panduan Menggunakan Fitur Gambar ke Video</h2>
+    <p>Fitur Gambar ke Video di AiCasso memungkinkan Anda mengubah satu gambar menjadi video dinamis. Cukup deskripsikan apa yang ingin Anda lihat dalam video Anda, dan AiCasso akan mewujudkannya!</p>
+
+    <h3>Cara Kerjanya:</h3>
+    
+    <div class="example">
+        <strong>Gambar Masukan:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>Prompt 1:</strong>
+        <p>"Anak anjing lucu di taman"</p>
+        <strong>Hasil 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>Prompt 2:</strong>
+        <p>"Anak anjing lucu di taman, gunakan FPS maksimum, frame maksimum, dan gerakan maksimum"</p>
+        <strong>Hasil 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Parameter Opsional</h3>
+    <p>Jika Anda ingin lebih spesifik dengan video Anda, berikut adalah beberapa pengaturan yang dapat Anda sesuaikan:</p>
+
+    <ul>
+        <li><strong>Prompt Negatif:</strong> Deskripsikan apa yang *tidak* Anda inginkan dalam video. Jika dibiarkan kosong, AiCasso hanya akan fokus pada prompt positif.</li>
+        <li><strong>Jumlah Frame:</strong> Pilih berapa banyak frame (gambar individu) yang akan dimiliki video Anda. Anda dapat memilih hingga 25 frame, dengan 16 sebagai default.</li>
+        <li><strong>Langkah Denoising:</strong> Ini mengontrol seberapa halus tampilan video Anda. Langkah lebih banyak berarti video yang lebih bersih. Anda dapat mengatur hingga 50 langkah, dengan 20 sebagai default.</li>
+        <li><strong>Skala Panduan:</strong> Ini membantu video tetap sesuai dengan deskripsi Anda. Rentangnya dari 1.0 hingga 8.0, dan Anda dapat menyesuaikan nilai awal dan akhir untuk membimbing bagaimana video berkembang.</li>
+        <li><strong>Gerakan:</strong> Sesuaikan seberapa banyak gerakan dalam video Anda. Nilai yang lebih tinggi berarti lebih banyak aksi. Rentangnya dari 0 hingga 127, dengan 60 sebagai default.</li>
+        <li><strong>Kekuatan Augmentasi Noise:</strong> Tambahkan sedikit noise ke video Anda untuk memberikan tampilan yang lebih bertekstur. Rentangnya dari 0 hingga 1, dengan 0 sebagai default.</li>
+        <li><strong>Frame per Detik (FPS):</strong> Atur seberapa cepat video Anda diputar. Defaultnya adalah 16 FPS, tetapi Anda dapat meningkatkannya hingga 16 untuk pemutaran yang lebih cepat.</li>
+        <li><strong>Metode Interpolasi:</strong> Pilih bagaimana frame dibaurkan bersama. Defaultnya adalah "lerp" (interpolasi linear), tetapi Anda juga dapat menggunakan "slerp" (interpolasi linear sferis) untuk efek yang berbeda.</li>
+        <li><strong>Lompatan Klip:</strong> Lewati lapisan tertentu untuk gaya video yang berbeda. Anda dapat melewati hingga 2 lapisan, atau biarkan kosong untuk perilaku default.</li>
+    </ul>
+
+    <p>Ingat, AiCasso cukup pintar! Anda tidak perlu mendapatkan setiap detail dengan sempurna atau menggunakan tata bahasa yang benar. Cukup deskripsikan apa yang Anda inginkan, dan AiCasso akan melakukan sisanya. Selamat bersenang-senang membuat video Anda!</p>
+
+</body>
+</html>

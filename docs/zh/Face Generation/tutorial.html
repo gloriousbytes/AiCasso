@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>面部生成功能指南</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>使用面部生成功能指南</h2>
+    <p>AiCasso 的面部生成功能非常多样化！它允许您通过将特定面孔融入各种角色或风格中来创建惊人的图像。无论您想象的是骑士、武士还是其他角色，AiCasso 都会使用输入的面孔生成一张将该面孔整合到所请求设计中的图像。</p>
+
+    <h3>工作原理：</h3>
+    
+    <div class="example">
+        <strong>输入图像：</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
+        </div>
+        <strong>提示 1：</strong>
+        <p>“一个真实的骑士，使用最大比例”</p>
+        <strong>结果 1：</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
+        </div>
+        <strong>提示 2：</strong>
+        <p>“使用 chibi 风格制作武士，使用默认值”</p>
+        <strong>结果 2：</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
+        </div>
+        <strong>提示 3：</strong>
+        <p>“一个武士，使用 31 步降噪，采用动漫风格”</p>
+        <strong>结果 3：</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>可选参数</h3>
+    <p>如果您想为生成的图像添加更多个性或控制，这里有一些您可以调整的选项：</p>
+
+    <ul>
+        <li><strong>负面提示：</strong> 这是您可以告诉 AiCasso 在图像中不想看到的内容。如果您将其留空，AiCasso 将只关注正面提示。</li>
+        <li><strong>降噪步骤数：</strong> 这控制图像的平滑度和精细度。您可以选择 21、31 或 41 步，默认是 41 步。更多步骤意味着更干净、更精致的图像。</li>
+        <li><strong>指导比例：</strong> 这有助于图像忠实于您的描述。比例范围从 1 到 20，默认是 10。数字越高，AiCasso 越会紧贴您的提示。</li>
+        <li><strong>S 比例：</strong> 这与面部结构有关。它有点技术性，但本质上是调整面部结构的权重。默认是 1.0，您可以选择从 0.0 到 2.0。</li>
+        <li><strong>风格：</strong> 想给您的图像一个特定的氛围吗？您可以选择漫画、chibi、3D、动漫或真实风格。默认是现实风格，但请随意发挥创意！</li>
+    </ul>
+
+    <p>请记住，AiCasso 非常宽容。您不必是语法大师或每个细节都完美无缺。只需用自己的话描述您想要的内容，AiCasso 将负责其余的工作。享受创作的乐趣吧！</p>
+
+</body>
+</html>

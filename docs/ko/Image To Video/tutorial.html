@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지를 비디오로 변환하는 기능 가이드</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>이미지를 비디오로 변환하는 기능 가이드</h2>
+    <p>AiCasso의 이미지에서 비디오로 변환 기능을 사용하면 단일 이미지를 동적인 비디오로 변환할 수 있습니다. 비디오에서 보고 싶은 내용을 설명하면 AiCasso가 이를 구현해 줍니다!</p>
+
+    <h3>작동 방식:</h3>
+    
+    <div class="example">
+        <strong>입력 이미지:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>프롬프트 1:</strong>
+        <p>"공원에 있는 귀여운 강아지"</p>
+        <strong>결과 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>프롬프트 2:</strong>
+        <p>"공원에 있는 귀여운 강아지, 최대 FPS, 최대 프레임, 최대 모션 사용"</p>
+        <strong>결과 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>선택적 매개변수</h3>
+    <p>비디오를 더 구체적으로 만들고 싶다면 다음 설정을 조정할 수 있습니다:</p>
+
+    <ul>
+        <li><strong>부정 프롬프트:</strong> 비디오에 *원하지 않는* 내용을 설명하세요. 비워두면 AiCasso는 긍정 프롬프트에만 집중합니다.</li>
+        <li><strong>프레임 수:</strong> 비디오에 포함될 프레임(개별 이미지) 수를 선택하세요. 최대 25프레임까지 선택할 수 있으며, 기본값은 16입니다.</li>
+        <li><strong>디노이징 단계:</strong> 비디오의 매끄러움을 조절합니다. 단계가 많을수록 더 깨끗한 비디오가 됩니다. 최대 50단계까지 설정할 수 있으며, 기본값은 20입니다.</li>
+        <li><strong>가이드 스케일:</strong> 비디오가 설명에 얼마나 충실한지를 조절합니다. 범위는 1.0에서 8.0까지이며, 시작 및 종료 값을 조정하여 비디오의 발전을 안내할 수 있습니다.</li>
+        <li><strong>모션:</strong> 비디오의 움직임 정도를 조절합니다. 값이 높을수록 더 많은 액션이 포함됩니다. 범위는 0에서 127까지이며, 기본값은 60입니다.</li>
+        <li><strong>노이즈 증강 강도:</strong> 비디오에 약간의 노이즈를 추가하여 더 텍스처 있는 모습을 만듭니다. 범위는 0에서 1까지이며, 기본값은 0입니다.</li>
+        <li><strong>초당 프레임 수 (FPS):</strong> 비디오 재생 속도를 설정합니다. 기본값은 16 FPS이지만, 더 빠른 재생을 위해 최대 16까지 설정할 수 있습니다.</li>
+        <li><strong>보간 방법:</strong> 프레임이 어떻게 혼합되는지를 선택합니다. 기본값은 "lerp" (선형 보간)이지만, 다른 효과를 위해 "slerp" (구면 선형 보간)도 사용할 수 있습니다.</li>
+        <li><strong>클립 스킵:</strong> 다른 비디오 스타일을 위해 특정 레이어를 건너뜁니다. 최대 2개의 레이어를 건너뛸 수 있으며, 기본 동작을 위해서는 null로 남겨둘 수 있습니다.</li>
+    </ul>
+
+    <p>기억하세요, AiCasso는 매우 스마트합니다! 모든 세부 사항을 완벽하게 맞추거나 올바른 문법을 사용할 필요는 없습니다. 원하는 것을 설명하기만 하면 AiCasso가 나머지를 처리합니다. 비디오 제작을 즐기세요!</p>
+
+</body>
+</html>

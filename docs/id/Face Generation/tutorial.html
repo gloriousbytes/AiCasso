@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Fitur Pembuatan Wajah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Panduan Menggunakan Fitur Pembuatan Wajah</h2>
+    <p>Fitur Pembuatan Wajah di AiCasso sangat serbaguna! Ini memungkinkan Anda untuk membuat gambar menakjubkan dengan menggabungkan wajah tertentu ke dalam berbagai karakter atau gaya. Apakah Anda membayangkan seorang ksatria, samurai, atau karakter lainnya, AiCasso menggunakan wajah input untuk menghasilkan gambar dengan wajah tersebut terintegrasi ke dalam desain yang diminta.</p>
+
+    <h3>Cara Kerjanya:</h3>
+    
+    <div class="example">
+        <strong>Gambar Input:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
+        </div>
+        <strong>Prompt 1:</strong>
+        <p>"Seorang ksatria realistis, gunakan Skala maksimum"</p>
+        <strong>Hasil 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
+        </div>
+        <strong>Prompt 2:</strong>
+        <p>"Gunakan gaya chibi dan buat seorang samurai, gunakan nilai default"</p>
+        <strong>Hasil 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
+        </div>
+        <strong>Prompt 3:</strong>
+        <p>"Seorang samurai, gunakan 31 langkah denoising, dan gaya anime"</p>
+        <strong>Hasil 3:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Parameter Opsional</h3>
+    <p>Jika Anda ingin menambahkan sedikit lebih banyak kepribadian atau kontrol pada gambar yang dihasilkan, berikut beberapa opsi yang dapat Anda sesuaikan:</p>
+
+    <ul>
+        <li><strong>Prompt Negatif:</strong> Di sini Anda dapat memberi tahu AiCasso apa yang <em>tidak</em> ingin Anda lihat dalam gambar. Jika Anda membiarkannya kosong, AiCasso hanya akan fokus pada prompt positif.</li>
+        <li><strong>Jumlah Langkah Denoising:</strong> Ini mengontrol seberapa halus dan halus gambar terlihat. Anda dapat memilih antara 21, 31, atau 41 langkah, dengan 41 sebagai default. Langkah lebih banyak berarti gambar yang lebih bersih dan lebih halus.</li>
+        <li><strong>Skala Panduan:</strong> Ini membantu gambar tetap sesuai dengan deskripsi Anda. Skala berkisar dari 1 hingga 20, dengan 10 sebagai default. Angka yang lebih tinggi berarti AiCasso akan lebih dekat dengan prompt Anda.</li>
+        <li><strong>Skala S:</strong> Ini semua tentang struktur wajah. Ini sedikit teknis, tetapi pada dasarnya menyesuaikan bobot struktur wajah. Defaultnya adalah 1.0, dan Anda dapat memilih dari 0.0 hingga 2.0.</li>
+        <li><strong>Gaya:</strong> Ingin memberikan gambar Anda suasana tertentu? Anda dapat memilih gaya seperti komik, chibi, 3D, anime, atau realistis. Realistis adalah default, tetapi jangan ragu untuk berkreasi!</li>
+    </ul>
+
+    <p>Dan ingat, AiCasso cukup toleran. Anda tidak perlu menjadi ahli tata bahasa atau mendapatkan setiap detail dengan sempurna. Cukup deskripsikan apa yang Anda inginkan dengan kata-kata Anda sendiri, dan AiCasso akan mengurus sisanya. Selamat berkreasi!</p>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アウトペイント機能のヒント</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>アウトペイント機能の使用ヒント</h2>
+    <p>AiCassoのアウトペイント機能を使用すると、画像の周りに新しい要素を追加したり、既存のものを拡張したりして画像を拡大できます。欲しいものを説明するだけで、AiCassoが残りを処理します。</p>
+
+    <h3>仕組み:</h3>
+    
+    <div class="example">
+        <strong>開始画像:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>変更を説明:</strong>
+        <p>追加または拡張したいものを入力するだけで、AiCassoがそれらの変更を適用します。左、右、上、下などの方向や、ズームアウトやパンなどの詳細を指定できます。</p>
+    </div>
+
+    <h3>編集例:</h3>
+
+    <div class="example">
+        <strong>例1:</strong> "右に氷山を追加し、翻訳係数を0.4に設定します。"
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+        </div>
+        <p><em>結果:</em> AiCassoは画像を右に拡張し、既存の風景と一貫性を保ちながら氷山を追加します。</p>
+    </div>
+
+    <div class="example">
+        <strong>例2:</strong> "ズームアウトし、夜の暗い海の一貫性を保ちます。"
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+        </div>
+        <p><em>結果:</em> 画像がズームアウトし、夜のシーンの雰囲気を保ちながら、暗い海がより多く見えるようになります。</p>
+    </div>
+
+    <h3>追加オプション</h3>
+    <p>編集を微調整するために使用できるオプション設定をいくつか紹介します:</p>
+
+    <ul>
+        <li><strong>ネガティブプロンプト:</strong> 画像に特定のものを含めたくない場合、ここでAiCassoに伝えることができます。たとえば、特定の色やオブジェクトを追加しないようにしたい場合などです。</li>
+        <li><strong>ウォークタイプ:</strong> 画像が拡張される方向を決定します。左、右、上、下、または後方（ズームアウト）から選択できます。たとえば、右にパンするには「右」を選択します。</li>
+        <li><strong>翻訳係数:</strong> 拡張時に画像が各ステップでどれだけ移動するかを制御します。値が高いほど画像が多く移動し、新しいコンテンツがより多く表示されます。デフォルトは0.05ですが、0から1まで調整できます。</li>
+        <li><strong>ステップごとの幅/高さの翻訳:</strong> 各ステップで画像が水平方向（幅）または垂直方向（高さ）にどれだけ移動するかを制御します。デフォルトは1ステップあたり32ピクセルですが、画像をどれだけシフトさせたいかに応じて調整できます。</li>
+        <li><strong>推論またはノイズ除去ステップの数:</strong> AiCassoが最終画像を得るために行う調整の数を決定します。ステップが多いほど滑らかな結果が得られ、デフォルトは20ステップですが、最大50まで増やすことができます。</li>
+        <li><strong>補間ステップの数:</strong> 単一の拡張で2つの方向間の移行がどれだけ滑らかに行われるかを制御します。デフォルトは60ですが、より滑らかな移行のために最大120まで増やすことができます。</li>
+    </ul>
+
+    <p>これらの設定はオプションであることを忘れないでください。AiCassoは、自然言語の説明だけでうまく機能するように設計されています。実験して、画像に最適なものを見つけてください！</p>
+
+</body>
+</html>

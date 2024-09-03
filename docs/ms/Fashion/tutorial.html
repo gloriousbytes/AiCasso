@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Ciri Generasi Fesyen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Panduan Menggunakan Ciri Generasi Fesyen</h2>
+    <p>Ciri Generasi Fesyen dalam AiCasso membolehkan anda memakaikan seseorang dengan pakaian tertentu, seperti baju, gaun, atau seluar. Hanya nyatakan apa yang anda mahu, dan lihat AiCasso memakaikan pakaian tersebut kepada orang dalam imej.</p>
+
+    <h3>Bagaimana Ia Berfungsi:</h3>
+    
+    <div class="example">
+        <strong>Input 1 - Imej Orang:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+        </div>
+        <strong>Input 2 - Item Pakaian:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+        </div>
+        <strong>Prompt:</strong>
+        <p>"Lelaki memakai baju"</p>
+        <strong>Hasil:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Parameter Pilihan</h3>
+    <p>Jika anda ingin menambah gaya anda sendiri atau memastikan hasilnya tepat, anda boleh mengubah suai tetapan ini:</p>
+
+    <ul>
+        <li><strong>Prompt Negatif:</strong> Jika ada sesuatu yang anda <em>tidak</em> mahu dalam imej, nyatakannya di sini. Biarkan kosong jika anda okey dengan apa sahaja yang AiCasso hasilkan.</li>
+        <li><strong>Jenis Pakaian:</strong> Beritahu AiCasso sama ada anda memberi tumpuan kepada <em>badan atas</em>, <em>badan bawah</em>, atau <em>gaun</em>. Jika anda tidak pasti, ia akan lalai kepada badan atas.</li>
+        <li><strong>Bilangan Langkah Denoising:</strong> Ini menentukan betapa licin dan halus imej kelihatan. Anda boleh memilih antara 21, 31, atau 41 langkah, dengan 21 sebagai lalai. Lebih banyak langkah biasanya bermaksud rupa yang lebih halus.</li>
+        <li><strong>Skala Panduan:</strong> Ini membantu imej kekal rapat dengan penerangan anda. Anda boleh menetapkannya dari 1 hingga 20, dengan 7 sebagai lalai. Nombor yang lebih tinggi bermaksud AiCasso akan mengikuti prompt anda dengan lebih rapat.</li>
+    </ul>
+
+    <p>Ingat, tetapan ini adalah pilihan! AiCasso cukup pintar dan boleh memahami apa yang anda maksudkan walaupun anda tidak mendapatkan setiap butiran dengan sempurna. Hanya berseronok dan biarkan kreativiti anda mengalir!</p>
+
+</body>
+</html>

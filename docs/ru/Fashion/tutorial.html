@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Руководство по использованию функции Fashion Generation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Руководство по использованию функции Fashion Generation</h2>
+    <p>Функция Fashion Generation в AiCasso позволяет одеть человека в определенный наряд, например, рубашку, платье или брюки. Просто опишите, что вы хотите, и наблюдайте, как AiCasso применяет элемент одежды к человеку на изображении.</p>
+
+    <h3>Как это работает:</h3>
+    
+    <div class="example">
+        <strong>Вход 1 - Изображение человека:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+        </div>
+        <strong>Вход 2 - Элемент одежды:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+        </div>
+        <strong>Подсказка:</strong>
+        <p>"Парень в рубашке"</p>
+        <strong>Результат:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Дополнительные параметры</h3>
+    <p>Если вы хотите добавить свой стиль или убедиться, что результат именно такой, как нужно, вы можете настроить следующие параметры:</p>
+
+    <ul>
+        <li><strong>Отрицательная подсказка:</strong> Если есть что-то, чего вы <em>не</em> хотите видеть на изображении, просто укажите это здесь. Оставьте пустым, если вас устраивает любой результат, который предложит AiCasso.</li>
+        <li><strong>Тип одежды:</strong> Укажите AiCasso, на чем вы сосредоточены: <em>верхняя часть тела</em>, <em>нижняя часть тела</em> или <em>платья</em>. Если вы не уверены, по умолчанию выбирается верхняя часть тела.</li>
+        <li><strong>Количество шагов денойзинга:</strong> Это определяет, насколько гладким и отполированным будет изображение. Вы можете выбрать между 21, 31 или 41 шагом, при этом 21 является значением по умолчанию. Больше шагов обычно означает более утонченный вид.</li>
+        <li><strong>Масштаб руководства:</strong> Это помогает изображению точно соответствовать вашему описанию. Вы можете установить его от 1 до 20, при этом 7 является значением по умолчанию. Более высокие числа означают, что AiCasso будет более точно следовать вашей подсказке.</li>
+    </ul>
+
+    <p>Помните, что эти настройки являются необязательными! AiCasso достаточно умен, чтобы понять, что вы имеете в виду, даже если вы не укажете каждую деталь. Просто получайте удовольствие и дайте волю своему творчеству!</p>
+
+</body>
+</html>
