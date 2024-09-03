@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ফ্যাশন জেনারেশন ফিচার গাইড</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>ফ্যাশন জেনারেশন ফিচার ব্যবহারের গাইড</h2>
+    <p>AiCasso এর ফ্যাশন জেনারেশন ফিচার আপনাকে একটি নির্দিষ্ট পোশাক, যেমন শার্ট, ড্রেস বা প্যান্ট পরিধান করতে দেয়। আপনি যা চান তা বর্ণনা করুন এবং দেখুন AiCasso ছবিতে ব্যক্তির উপর পোশাকটি প্রয়োগ করে।</p>
+
+    <h3>কিভাবে কাজ করে:</h3>
+    
+    <div class="example">
+        <strong>ইনপুট ১ - ব্যক্তির ছবি:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+        </div>
+        <strong>ইনপুট ২ - পোশাকের আইটেম:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+        </div>
+        <strong>প্রম্পট:</strong>
+        <p>"ছেলেটি শার্ট পরেছে"</p>
+        <strong>ফলাফল:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>ঐচ্ছিক প্যারামিটার</h3>
+    <p>যদি আপনি আপনার নিজস্ব স্টাইল যোগ করতে চান বা নিশ্চিত করতে চান যে ফলাফলটি সঠিক, আপনি এই সেটিংসগুলি পরিবর্তন করতে পারেন:</p>
+
+    <ul>
+        <li><strong>নেগেটিভ প্রম্পট:</strong> যদি এমন কিছু থাকে যা আপনি ছবিতে <em>চান না</em>, তাহলে এখানে উল্লেখ করুন। যদি আপনি AiCasso যা নিয়ে আসে তাতে সন্তুষ্ট হন তবে এটি ফাঁকা রাখুন।</li>
+        <li><strong>পোশাকের ধরন:</strong> AiCasso কে বলুন আপনি <em>উপরের অংশ</em>, <em>নিচের অংশ</em>, বা <em>ড্রেস</em> এর উপর ফোকাস করছেন কিনা। আপনি যদি নিশ্চিত না হন তবে এটি ডিফল্টভাবে উপরের অংশে থাকে।</li>
+        <li><strong>ডিনোইজিং স্টেপের সংখ্যা:</strong> এটি নির্ধারণ করে ছবিটি কতটা মসৃণ এবং পালিশ দেখাবে। আপনি ২১, ৩১, বা ৪১ স্টেপের মধ্যে বেছে নিতে পারেন, যেখানে ২১ ডিফল্ট। আরও স্টেপ সাধারণত আরও পরিশীলিত চেহারা দেয়।</li>
+        <li><strong>গাইডেন্স স্কেল:</strong> এটি ছবিটিকে আপনার বর্ণনার সাথে ঘনিষ্ঠভাবে লেগে থাকতে সাহায্য করে। আপনি এটি ১ থেকে ২০ এর মধ্যে সেট করতে পারেন, যেখানে ৭ ডিফল্ট। উচ্চতর সংখ্যা মানে AiCasso আপনার প্রম্পট আরও ঘনিষ্ঠভাবে অনুসরণ করবে।</li>
+    </ul>
+
+    <p>মনে রাখবেন, এই সেটিংসগুলি ঐচ্ছিক! AiCasso বেশ স্মার্ট এবং আপনি প্রতিটি বিবরণ নিখুঁত না করলেও বুঝতে পারে আপনি কী বোঝাতে চান। শুধু মজা করুন এবং আপনার সৃজনশীলতাকে প্রবাহিত হতে দিন!</p>
+
+</body>
+</html>

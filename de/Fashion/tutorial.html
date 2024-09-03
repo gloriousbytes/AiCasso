@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitfaden zur Nutzung der Fashion Generation Funktion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Leitfaden zur Nutzung der Fashion Generation Funktion</h2>
+    <p>Mit der Fashion Generation Funktion in AiCasso können Sie jemanden in ein bestimmtes Outfit kleiden, wie z.B. ein Hemd, ein Kleid oder eine Hose. Beschreiben Sie einfach, was Sie möchten, und sehen Sie zu, wie AiCasso das Kleidungsstück auf die Person im Bild anwendet.</p>
+
+    <h3>Wie es funktioniert:</h3>
+    
+    <div class="example">
+        <strong>Eingabe 1 - Personenbild:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+        </div>
+        <strong>Eingabe 2 - Kleidungsstück:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+        </div>
+        <strong>Eingabeaufforderung:</strong>
+        <p>"Mann trägt ein Hemd"</p>
+        <strong>Ergebnis:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Optionale Parameter</h3>
+    <p>Wenn Sie Ihren eigenen Stil hinzufügen oder sicherstellen möchten, dass das Ergebnis genau richtig ist, können Sie diese Einstellungen anpassen:</p>
+
+    <ul>
+        <li><strong>Negativer Prompt:</strong> Wenn es etwas gibt, das Sie <em>nicht</em> im Bild haben möchten, erwähnen Sie es einfach hier. Lassen Sie es leer, wenn Sie mit allem einverstanden sind, was AiCasso erstellt.</li>
+        <li><strong>Kleidungsart:</strong> Sagen Sie AiCasso, ob Sie sich auf den <em>Oberkörper</em>, den <em>Unterkörper</em> oder <em>Kleider</em> konzentrieren. Wenn Sie sich nicht sicher sind, wird standardmäßig der Oberkörper gewählt.</li>
+        <li><strong>Anzahl der Denoising-Schritte:</strong> Dies entscheidet, wie glatt und poliert das Bild aussieht. Sie können zwischen 21, 31 oder 41 Schritten wählen, wobei 21 der Standard ist. Mehr Schritte bedeuten in der Regel ein verfeinertes Aussehen.</li>
+        <li><strong>Guidance Scale:</strong> Dies hilft dem Bild, Ihrer Beschreibung genau zu folgen. Sie können es von 1 bis 20 einstellen, wobei 7 der Standard ist. Höhere Zahlen bedeuten, dass AiCasso Ihrer Eingabeaufforderung genauer folgt.</li>
+    </ul>
+
+    <p>Denken Sie daran, diese Einstellungen sind optional! AiCasso ist ziemlich schlau und kann verstehen, was Sie meinen, auch wenn Sie nicht jedes Detail perfekt machen. Haben Sie einfach Spaß und lassen Sie Ihrer Kreativität freien Lauf!</p>
+
+</body>
+</html>

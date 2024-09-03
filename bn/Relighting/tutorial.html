@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>রিলাইটিং ফিচার গাইড</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>রিলাইটিং ফিচার ব্যবহারের গাইড</h2>
+    <p>AiCasso-তে রিলাইটিং ফিচারটি অসাধারণ! এটি আপনাকে কয়েকটি শব্দের মাধ্যমে আপনার ছবির আলো পরিবর্তন করতে দেয়। পেছনে সূর্য চান বা পাশে নরম আলো চান? কোনো সমস্যা নেই! শুধু এটি বর্ণনা করুন, এবং AiCasso বাকিটা সামলাবে।</p>
+
+    <h3>কিভাবে এটি কাজ করে:</h3>
+    
+    <div class="example">
+        <strong>ইনপুট ইমেজ:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+        </div>
+        <strong>ব্যবহৃত প্রম্পট:</strong>
+        <p>"এটি এমনভাবে করুন যেন সূর্য পেছনে থাকে"</p>
+        <strong>ফলাফল:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>ঐচ্ছিক পরিবর্তন</h3>
+    <p>আপনি যদি একটু বেশি সৃজনশীল হতে চান এবং আপনার রিলাইটিংয়ে কিছুটা ফ্লেয়ার যোগ করতে চান, তাহলে এখানে কিছু জিনিস রয়েছে যা আপনি পরিবর্তন করতে পারেন:</p>
+
+    <ul>
+        <li><strong>নেগেটিভ প্রম্পট:</strong> কিছু এড়াতে চান? আপনি AiCasso-কে বলতে পারেন কী <em>না</em> অন্তর্ভুক্ত করতে হবে। তবে চিন্তা করবেন না, যদি আপনি এটি ফাঁকা রাখেন, AiCasso শুধু আপনার যা চাই তা নিয়ে কাজ করবে।</li>
+        <li><strong>আলোর দিক:</strong> আপনি নির্দিষ্ট করতে পারেন আলো কোথা থেকে আসবে—বাম, ডান, উপরে, নিচে, বা একেবারেই নয়। ডিফল্টভাবে, আলো বাম দিক থেকে আসে।</li>
+        <li><strong>গাইডেন্স স্কেল:</strong> এটি AiCasso-কে আপনার বর্ণনার সাথে লেগে থাকতে সাহায্য করে। স্কেলটি ১ থেকে ২০ পর্যন্ত যায়, যেখানে ৭ ডিফল্ট। সংখ্যা যত বেশি হবে, AiCasso তত বেশি আপনার প্রম্পটের সাথে লেগে থাকবে।</li>
+        <li><strong>উচ্চ-রেজোলিউশন স্কেল:</strong> আপনার ছবি আরও স্পষ্ট করতে চান? এটি স্পষ্টতা নিয়ন্ত্রণ করে। ডিফল্ট ১.৫, তবে আপনি এটি ১.০ থেকে ২.০ পর্যন্ত সেট করতে পারেন একটি স্পষ্ট ছবি পেতে।</li>
+        <li><strong>ডিনোইজ লেভেল:</strong> দুটি স্তর রয়েছে—লো-রেজোলিউশন এবং উচ্চ-রেজোলিউশন। এগুলি চূড়ান্ত ছবিটি কতটা মসৃণ বা বিস্তারিত হবে তা নিয়ন্ত্রণ করে। আপনি লো-রেজ ডিনোইজ স্তর ০.০ থেকে ১.০ (ডিফল্ট ০.৯) এবং উচ্চ-রেজ ০.০ থেকে ১.০ (ডিফল্ট ০.৫) এর মধ্যে সেট করতে পারেন।</li>
+        <li><strong>ধাপের সংখ্যা:</strong> এটি AiCasso আপনার ছবিটি পালিশ করতে কত ধাপ নেয় তা নির্ধারণ করে। ডিফল্ট ৫০, তবে আপনি ২০ থেকে ৫০ ধাপ পর্যন্ত যেতে পারেন।</li>
+    </ul>
+
+    <p>মনে রাখবেন, এই পরিবর্তনগুলি সম্পূর্ণ ঐচ্ছিক! AiCasso আপনার যা চাই তা বুঝতে বেশ ভালো, তাই শুধু আপনার নিজের ভাষায় আপনার দৃষ্টিভঙ্গি বর্ণনা করুন, এবং এটি জাদু করবে। ব্যাকরণ বা বিশদে নিখুঁত হওয়ার দরকার নেই—শুধু মজা করুন এবং দেখুন আপনি কী তৈরি করতে পারেন!</p>
+
+</body>
+</html>

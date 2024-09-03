@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide des Fonctionnalités de Génération de Mode</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guide d'Utilisation de la Fonctionnalité de Génération de Mode</h2>
+    <p>La fonctionnalité de Génération de Mode dans AiCasso vous permet d'habiller quelqu'un avec une tenue spécifique, comme une chemise, une robe ou un pantalon. Décrivez simplement ce que vous voulez, et regardez AiCasso appliquer le vêtement à la personne dans l'image.</p>
+
+    <h3>Comment ça marche :</h3>
+    
+    <div class="example">
+        <strong>Entrée 1 - Image de la Personne :</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+        </div>
+        <strong>Entrée 2 - Vêtement :</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+        </div>
+        <strong>Prompt :</strong>
+        <p>"Homme portant une chemise"</p>
+        <strong>Résultat :</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Paramètres Optionnels</h3>
+    <p>Si vous souhaitez ajouter votre propre style ou vous assurer que le résultat est parfait, vous pouvez ajuster ces paramètres :</p>
+
+    <ul>
+        <li><strong>Prompt Négatif :</strong> Si vous ne voulez <em>pas</em> quelque chose dans l'image, mentionnez-le ici. Laissez-le vide si tout ce que AiCasso propose vous convient.</li>
+        <li><strong>Type de Vêtement :</strong> Indiquez à AiCasso si vous vous concentrez sur le <em>haut du corps</em>, le <em>bas du corps</em>, ou les <em>robes</em>. Si vous n'êtes pas sûr, le réglage par défaut est le haut du corps.</li>
+        <li><strong>Nombre d'Étapes de Dénoyage :</strong> Cela détermine à quel point l'image est lisse et polie. Vous pouvez choisir entre 21, 31, ou 41 étapes, avec 21 comme valeur par défaut. Plus d'étapes signifient généralement un aspect plus raffiné.</li>
+        <li><strong>Échelle de Guidance :</strong> Cela aide l'image à coller de près à votre description. Vous pouvez la régler de 1 à 20, avec 7 comme valeur par défaut. Des chiffres plus élevés signifient que AiCasso suivra votre prompt de plus près.</li>
+    </ul>
+
+    <p>Rappelez-vous, ces paramètres sont optionnels ! AiCasso est assez intelligent et peut comprendre ce que vous voulez dire même si vous ne donnez pas tous les détails parfaitement. Amusez-vous et laissez libre cours à votre créativité !</p>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মুখ তৈরি বৈশিষ্ট্য গাইড</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>মুখ তৈরি বৈশিষ্ট্য ব্যবহারের গাইড</h2>
+    <p>AiCasso-র মুখ তৈরি বৈশিষ্ট্য অত্যন্ত বহুমুখী! এটি আপনাকে একটি নির্দিষ্ট মুখ বিভিন্ন চরিত্র বা শৈলীতে অন্তর্ভুক্ত করে চমৎকার ছবি তৈরি করতে দেয়। আপনি একজন নাইট, সামুরাই বা অন্য কোনো চরিত্র কল্পনা করছেন কিনা, AiCasso ইনপুট মুখ ব্যবহার করে অনুরোধকৃত ডিজাইনে সেই মুখ সংযুক্ত করে একটি ছবি তৈরি করে।</p>
+
+    <h3>কিভাবে কাজ করে:</h3>
+    
+    <div class="example">
+        <strong>ইনপুট ছবি:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
+        </div>
+        <strong>প্রম্পট ১:</strong>
+        <p>"একটি বাস্তবসম্মত নাইট, সর্বাধিক স্কেল ব্যবহার করুন"</p>
+        <strong>ফলাফল ১:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
+        </div>
+        <strong>প্রম্পট ২:</strong>
+        <p>"চিবি শৈলী ব্যবহার করুন এবং একটি সামুরাই তৈরি করুন, ডিফল্ট মান ব্যবহার করুন"</p>
+        <strong>ফলাফল ২:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
+        </div>
+        <strong>প্রম্পট ৩:</strong>
+        <p>"একটি সামুরাই, ৩১ ডিনোইজিং ধাপ ব্যবহার করুন, এবং এনিমে শৈলী"</p>
+        <strong>ফলাফল ৩:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>ঐচ্ছিক প্যারামিটার</h3>
+    <p>আপনার তৈরি করা ছবিতে একটু বেশি ব্যক্তিত্ব বা নিয়ন্ত্রণ যোগ করতে চাইলে, এখানে কিছু বিকল্প রয়েছে যা আপনি পরিবর্তন করতে পারেন:</p>
+
+    <ul>
+        <li><strong>নেগেটিভ প্রম্পট:</strong> এখানে আপনি AiCasso-কে বলতে পারেন আপনি ছবিতে কি দেখতে চান <em>না</em>। আপনি যদি এটি ফাঁকা রাখেন, AiCasso শুধু পজিটিভ প্রম্পটের উপর ফোকাস করবে।</li>
+        <li><strong>ডিনোইজিং ধাপের সংখ্যা:</strong> এটি নিয়ন্ত্রণ করে ছবিটি কতটা মসৃণ এবং পরিশীলিত দেখায়। আপনি ২১, ৩১, বা ৪১ ধাপের মধ্যে বেছে নিতে পারেন, যেখানে ৪১ ডিফল্ট। আরও ধাপ মানে একটি পরিষ্কার, আরও পালিশ করা ছবি।</li>
+        <li><strong>গাইডেন্স স্কেল:</strong> এটি ছবিটিকে আপনার বর্ণনার সাথে সত্য থাকতে সাহায্য করে। স্কেল ১ থেকে ২০ পর্যন্ত, যেখানে ১০ ডিফল্ট। উচ্চতর সংখ্যা মানে AiCasso আপনার প্রম্পটের কাছাকাছি থাকবে।</li>
+        <li><strong>S স্কেল:</strong> এটি মুখের গঠনের সাথে সম্পর্কিত। এটি একটু প্রযুক্তিগত, কিন্তু মূলত এটি মুখের গঠনের ওজন সামঞ্জস্য করে। ডিফল্ট হল ১.০, এবং আপনি ০.০ থেকে ২.০ পর্যন্ত যেতে পারেন।</li>
+        <li><strong>শৈলী:</strong> আপনার ছবিতে একটি নির্দিষ্ট অনুভূতি দিতে চান? আপনি কমিক, চিবি, ৩ডি, এনিমে, বা বাস্তবসম্মত শৈলী বেছে নিতে পারেন। বাস্তবসম্মত ডিফল্ট, কিন্তু সৃজনশীল হতে দ্বিধা করবেন না!</li>
+    </ul>
+
+    <p>এবং মনে রাখবেন, AiCasso বেশ ক্ষমাশীল। আপনাকে ব্যাকরণ বিশেষজ্ঞ হতে হবে না বা প্রতিটি বিবরণ নিখুঁত করতে হবে না। শুধু আপনার নিজের ভাষায় আপনি যা চান তা বর্ণনা করুন, এবং AiCasso বাকিটা দেখবে। সৃজনশীলতা উপভোগ করুন!</p>
+
+</body>
+</html>

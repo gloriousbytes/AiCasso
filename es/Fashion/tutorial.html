@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Funciones de Generación de Moda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guía para Usar la Función de Generación de Moda</h2>
+    <p>La función de Generación de Moda en AiCasso te permite vestir a alguien con un atuendo específico, como una camisa, vestido o pantalones. Simplemente describe lo que quieres y observa cómo AiCasso aplica la prenda a la persona en la imagen.</p>
+
+    <h3>Cómo Funciona:</h3>
+    
+    <div class="example">
+        <strong>Entrada 1 - Imagen de la Persona:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+        </div>
+        <strong>Entrada 2 - Prenda de Ropa:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+        </div>
+        <strong>Indicación:</strong>
+        <p>"Chico vistiendo una camisa"</p>
+        <strong>Resultado:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Parámetros Opcionales</h3>
+    <p>Si deseas agregar tu propio estilo o asegurarte de que el resultado sea perfecto, puedes ajustar estas configuraciones:</p>
+
+    <ul>
+        <li><strong>Indicación Negativa:</strong> Si hay algo que <em>no</em> quieres en la imagen, menciónalo aquí. Déjalo en blanco si estás de acuerdo con lo que AiCasso proponga.</li>
+        <li><strong>Tipo de Prenda:</strong> Indica a AiCasso si te estás enfocando en el <em>cuerpo superior</em>, <em>cuerpo inferior</em> o <em>vestidos</em>. Si no estás seguro, por defecto se enfoca en el cuerpo superior.</li>
+        <li><strong>Número de Pasos de Desenfoque:</strong> Esto decide cuán suave y pulida se verá la imagen. Puedes elegir entre 21, 31 o 41 pasos, siendo 21 el valor predeterminado. Más pasos generalmente significan un aspecto más refinado.</li>
+        <li><strong>Escala de Guía:</strong> Esto ayuda a que la imagen se adhiera de cerca a tu descripción. Puedes configurarlo de 1 a 20, siendo 7 el valor predeterminado. Números más altos significan que AiCasso seguirá tu indicación más de cerca.</li>
+    </ul>
+
+    <p>¡Recuerda, estos ajustes son opcionales! AiCasso es bastante inteligente y puede entender lo que quieres decir incluso si no das todos los detalles perfectos. ¡Diviértete y deja fluir tu creatividad!</p>
+
+</body>
+</html>

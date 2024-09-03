@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitfaden zur Bild-zu-Video-Funktion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Leitfaden zur Nutzung der Bild-zu-Video-Funktion</h2>
+    <p>Mit der Bild-zu-Video-Funktion in AiCasso können Sie ein einzelnes Bild in ein dynamisches Video verwandeln. Beschreiben Sie einfach, was Sie in Ihrem Video sehen möchten, und AiCasso wird es umsetzen!</p>
+
+    <h3>So funktioniert es:</h3>
+    
+    <div class="example">
+        <strong>Eingabebild:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>Eingabeaufforderung 1:</strong>
+        <p>"Ein süßer Welpe im Park"</p>
+        <strong>Ergebnis 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>Eingabeaufforderung 2:</strong>
+        <p>"Ein süßer Welpe im Park, verwende maximale FPS, maximale Frames und maximale Bewegung"</p>
+        <strong>Ergebnis 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Optionale Parameter</h3>
+    <p>Wenn Sie Ihr Video genauer anpassen möchten, können Sie die folgenden Einstellungen ändern:</p>
+
+    <ul>
+        <li><strong>Negativer Prompt:</strong> Beschreiben Sie, was Sie *nicht* im Video haben möchten. Wenn Sie es leer lassen, konzentriert sich AiCasso nur auf den positiven Prompt.</li>
+        <li><strong>Anzahl der Frames:</strong> Wählen Sie, wie viele Frames (Einzelbilder) Ihr Video haben soll. Sie können bis zu 25 Frames auswählen, wobei 16 der Standardwert ist.</li>
+        <li><strong>Denoising-Schritte:</strong> Dies steuert, wie glatt Ihr Video aussieht. Mehr Schritte bedeuten ein saubereres Video. Sie können bis zu 50 Schritte einstellen, wobei 20 der Standardwert ist.</li>
+        <li><strong>Guidance Scale:</strong> Dies hilft dem Video, sich genau an Ihre Beschreibung zu halten. Der Bereich reicht von 1,0 bis 8,0, und Sie können die Start- und Endwerte anpassen, um zu steuern, wie sich das Video entwickelt.</li>
+        <li><strong>Bewegung:</strong> Passen Sie an, wie viel Bewegung in Ihrem Video ist. Ein höherer Wert bedeutet mehr Action. Der Bereich reicht von 0 bis 127, wobei 60 der Standardwert ist.</li>
+        <li><strong>Rauschverstärkungsstärke:</strong> Fügen Sie Ihrem Video etwas Rauschen hinzu, um ihm ein strukturierteres Aussehen zu verleihen. Der Bereich reicht von 0 bis 1, wobei 0 der Standardwert ist.</li>
+        <li><strong>Frames pro Sekunde (FPS):</strong> Legen Sie fest, wie schnell Ihr Video abgespielt wird. Der Standardwert ist 16 FPS, aber Sie können bis zu 16 für eine schnellere Wiedergabe gehen.</li>
+        <li><strong>Interpolationsmethode:</strong> Wählen Sie, wie die Frames miteinander vermischt werden. Der Standard ist "lerp" (lineare Interpolation), aber Sie können auch "slerp" (sphärische lineare Interpolation) für unterschiedliche Effekte verwenden.</li>
+        <li><strong>Clip Skip:</strong> Überspringen Sie bestimmte Ebenen für einen anderen Videostil. Sie können bis zu 2 Ebenen überspringen oder es für das Standardverhalten leer lassen.</li>
+    </ul>
+
+    <p>Denken Sie daran, AiCasso ist ziemlich schlau! Sie müssen nicht jedes Detail perfekt machen oder korrekte Grammatik verwenden. Beschreiben Sie einfach, was Sie wollen, und AiCasso erledigt den Rest. Viel Spaß beim Erstellen Ihrer Videos!</p>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ইমেজ টু ভিডিও ফিচার গাইড</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>ইমেজ টু ভিডিও ফিচার ব্যবহারের গাইড</h2>
+    <p>AiCasso এর ইমেজ টু ভিডিও ফিচার আপনাকে একটি একক ইমেজকে একটি গতিশীল ভিডিওতে রূপান্তর করতে দেয়। শুধু আপনার ভিডিওতে যা দেখতে চান তা বর্ণনা করুন, এবং AiCasso তা বাস্তবায়ন করবে!</p>
+
+    <h3>কিভাবে কাজ করে:</h3>
+    
+    <div class="example">
+        <strong>ইনপুট ইমেজ:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>প্রম্পট ১:</strong>
+        <p>"পার্কে একটি সুন্দর কুকুরছানা"</p>
+        <strong>ফলাফল ১:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>প্রম্পট ২:</strong>
+        <p>"পার্কে একটি সুন্দর কুকুরছানা, সর্বাধিক FPS, সর্বাধিক ফ্রেম এবং সর্বাধিক গতি ব্যবহার করুন"</p>
+        <strong>ফলাফল ২:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>ঐচ্ছিক প্যারামিটার</h3>
+    <p>আপনার ভিডিওতে আরও নির্দিষ্ট হতে চাইলে, এখানে কিছু সেটিংস রয়েছে যা আপনি সামঞ্জস্য করতে পারেন:</p>
+
+    <ul>
+        <li><strong>নেগেটিভ প্রম্পট:</strong> ভিডিওতে আপনি যা *চান না* তা বর্ণনা করুন। যদি খালি থাকে, AiCasso শুধু পজিটিভ প্রম্পটের উপর ফোকাস করবে।</li>
+        <li><strong>ফ্রেমের সংখ্যা:</strong> আপনার ভিডিওতে কত ফ্রেম (স্বতন্ত্র ইমেজ) থাকবে তা নির্বাচন করুন। আপনি সর্বাধিক ২৫ ফ্রেম নির্বাচন করতে পারেন, ডিফল্ট ১৬।</li>
+        <li><strong>ডিনোইজিং স্টেপস:</strong> এটি আপনার ভিডিও কতটা মসৃণ দেখাবে তা নিয়ন্ত্রণ করে। আরও স্টেপ মানে একটি পরিষ্কার ভিডিও। আপনি সর্বাধিক ৫০ স্টেপ সেট করতে পারেন, ডিফল্ট ২০।</li>
+        <li><strong>গাইডেন্স স্কেল:</strong> এটি ভিডিওকে আপনার বর্ণনার সাথে ঘনিষ্ঠভাবে লেগে থাকতে সাহায্য করে। পরিসীমা ১.০ থেকে ৮.০, এবং আপনি ভিডিও কিভাবে বিকশিত হয় তা গাইড করতে শুরু এবং শেষ মান সামঞ্জস্য করতে পারেন।</li>
+        <li><strong>মোশন:</strong> আপনার ভিডিওতে কতটা গতি থাকবে তা সামঞ্জস্য করুন। একটি উচ্চতর মান মানে আরও অ্যাকশন। পরিসীমা ০ থেকে ১২৭, ডিফল্ট ৬০।</li>
+        <li><strong>নয়েজ অগমেন্টেশন স্ট্রেংথ:</strong> আপনার ভিডিওতে কিছু নয়েজ যোগ করুন যাতে এটি আরও টেক্সচার্ড দেখায়। পরিসীমা ০ থেকে ১, ডিফল্ট ০।</li>
+        <li><strong>ফ্রেম প্রতি সেকেন্ড (FPS):</strong> আপনার ভিডিও কত দ্রুত চলবে তা সেট করুন। ডিফল্ট ১৬ FPS, কিন্তু আপনি দ্রুত প্লেব্যাকের জন্য ১৬ পর্যন্ত যেতে পারেন।</li>
+        <li><strong>ইন্টারপোলেশন মেথড:</strong> ফ্রেমগুলি কিভাবে একত্রিত হয় তা নির্বাচন করুন। ডিফল্ট "lerp" (লিনিয়ার ইন্টারপোলেশন), কিন্তু আপনি বিভিন্ন প্রভাবের জন্য "slerp" (স্ফেরিক্যাল লিনিয়ার ইন্টারপোলেশন) ব্যবহার করতে পারেন।</li>
+        <li><strong>ক্লিপ স্কিপ:</strong> একটি ভিন্ন ভিডিও স্টাইলের জন্য নির্দিষ্ট লেয়ারগুলি এড়িয়ে যান। আপনি সর্বাধিক ২ লেয়ার এড়িয়ে যেতে পারেন, অথবা ডিফল্ট আচরণের জন্য এটি নাল রাখুন।</li>
+    </ul>
+
+    <p>মনে রাখবেন, AiCasso বেশ স্মার্ট! আপনাকে প্রতিটি বিবরণ নিখুঁত করতে হবে না বা সঠিক ব্যাকরণ ব্যবহার করতে হবে না। শুধু আপনি যা চান তা বর্ণনা করুন, এবং AiCasso বাকিটা করবে। আপনার ভিডিও তৈরি করে মজা করুন!</p>
+
+</body>
+</html>

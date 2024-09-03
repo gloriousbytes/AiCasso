@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipps zur Verwendung der Outpaint-Funktion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Tipps zur Verwendung der Outpaint-Funktion</h2>
+    <p>Die Outpaint-Funktion in AiCasso ermöglicht es Ihnen, ein Bild zu erweitern, indem Sie neue Elemente hinzufügen oder das bereits Vorhandene erweitern. Beschreiben Sie einfach, was Sie möchten, und AiCasso kümmert sich um den Rest.</p>
+
+    <h3>Wie es funktioniert:</h3>
+    
+    <div class="example">
+        <strong>Ausgangsbild:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Beschreiben Sie Ihre Änderung:</strong>
+        <p>Geben Sie einfach ein, was Sie hinzufügen oder erweitern möchten, und AiCasso wird diese Änderungen anwenden. Sie können Richtungen wie links, rechts, oben oder unten angeben und sogar Details wie Herauszoomen oder Schwenken.</p>
+    </div>
+
+    <h3>Beispielbearbeitungen:</h3>
+
+    <div class="example">
+        <strong>Beispiel 1:</strong> "Fügen Sie rechts einen Eisberg hinzu, indem Sie einen Übersetzungsfaktor von 0,4 verwenden."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+        </div>
+        <p><em>Ergebnis:</em> AiCasso erweitert das Bild nach rechts und fügt einen Eisberg hinzu, der mit der bestehenden Landschaft konsistent bleibt.</p>
+    </div>
+
+    <div class="example">
+        <strong>Beispiel 2:</strong> "Herauszoomen, die Konsistenz des dunklen Meeres bei Nacht beibehalten."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+        </div>
+        <p><em>Ergebnis:</em> Das Bild zoomt heraus und zeigt mehr vom dunklen Meer, während die Atmosphäre der Nachtszene erhalten bleibt.</p>
+    </div>
+
+    <h3>Zusätzliche Optionen</h3>
+    <p>Hier sind einige optionale Einstellungen, die Sie verwenden können, um Ihre Bearbeitungen zu verfeinern:</p>
+
+    <ul>
+        <li><strong>Negatives Prompt:</strong> Wenn es etwas gibt, das Sie nicht im Bild haben möchten, können Sie es AiCasso hier mitteilen. Zum Beispiel könnten Sie vermeiden wollen, bestimmte Farben oder Objekte hinzuzufügen.</li>
+        <li><strong>Geh-Typ:</strong> Dies entscheidet die Richtung, in die sich das Bild erweitert. Sie können aus links, rechts, oben, unten oder rückwärts (was herauszoomt) wählen. Zum Beispiel, um nach rechts zu schwenken, würden Sie 'rechts' auswählen.</li>
+        <li><strong>Übersetzungsfaktor:</strong> Dies steuert, wie stark sich das Bild bei jedem Schritt beim Erweitern bewegt. Ein höherer Wert bewegt das Bild mehr und zeigt mehr vom neuen Inhalt. Der Standardwert ist 0,05, aber Sie können ihn von 0 bis 1 anpassen.</li>
+        <li><strong>Breiten-/Höhenübersetzung pro Schritt:</strong> Diese steuern, wie weit sich das Bild horizontal (Breite) oder vertikal (Höhe) bei jedem Schritt bewegt. Der Standardwert beträgt 32 Pixel pro Schritt, aber Sie können dies basierend darauf anpassen, wie stark sich das Bild verschieben soll.</li>
+        <li><strong>Anzahl der Inferenz- oder Rauschunterdrückungsschritte:</strong> Dies bestimmt, wie viele Anpassungen AiCasso vornimmt, um das endgültige Bild zu erhalten. Mehr Schritte führen zu einem glatteren Ergebnis, mit einem Standardwert von 20 Schritten, aber Sie können bis zu 50 gehen.</li>
+        <li><strong>Anzahl der Interpolationsschritte:</strong> Dies steuert, wie reibungslos der Übergang zwischen zwei Richtungen in einer einzigen Erweiterung erfolgt. Der Standardwert ist 60, aber Sie können ihn auf bis zu 120 erhöhen, um reibungslosere Übergänge zu erzielen.</li>
+    </ul>
+
+    <p>Denken Sie daran, dass diese Einstellungen optional sind. AiCasso ist so konzipiert, dass es gut mit Ihrer natürlichen Sprachbeschreibung funktioniert. Fühlen Sie sich frei zu experimentieren und herauszufinden, was für Ihr Bild am besten funktioniert!</p>
+
+</body>
+</html>

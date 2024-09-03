@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل ميزة تحويل الصورة إلى فيديو</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>دليل استخدام ميزة تحويل الصورة إلى فيديو</h2>
+    <p>تتيح لك ميزة تحويل الصورة إلى فيديو في AiCasso تحويل صورة واحدة إلى فيديو ديناميكي. فقط قم بوصف ما تريد رؤيته في الفيديو الخاص بك، وAiCasso سيجعل ذلك يحدث!</p>
+
+    <h3>كيف تعمل:</h3>
+    
+    <div class="example">
+        <strong>الصورة المدخلة:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>الوصف 1:</strong>
+        <p>"جرو لطيف في الحديقة"</p>
+        <strong>النتيجة 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>الوصف 2:</strong>
+        <p>"جرو لطيف في الحديقة، استخدم الحد الأقصى من الإطارات في الثانية، الحد الأقصى من الإطارات، والحد الأقصى من الحركة"</p>
+        <strong>النتيجة 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>الخيارات الإضافية</h3>
+    <p>إذا كنت ترغب في تخصيص الفيديو الخاص بك بشكل أكبر، إليك بعض الإعدادات التي يمكنك تعديلها:</p>
+
+    <ul>
+        <li><strong>الوصف السلبي:</strong> صف ما لا تريده في الفيديو. إذا ترك فارغًا، سيركز AiCasso فقط على الوصف الإيجابي.</li>
+        <li><strong>عدد الإطارات:</strong> اختر عدد الإطارات (الصور الفردية) التي سيحتوي عليها الفيديو الخاص بك. يمكنك اختيار ما يصل إلى 25 إطارًا، مع 16 كإعداد افتراضي.</li>
+        <li><strong>خطوات إزالة الضوضاء:</strong> يتحكم هذا في مدى سلاسة الفيديو الخاص بك. المزيد من الخطوات يعني فيديو أنظف. يمكنك ضبط ما يصل إلى 50 خطوة، مع 20 كإعداد افتراضي.</li>
+        <li><strong>مقياس التوجيه:</strong> يساعد هذا الفيديو على الالتزام بوصفك. النطاق من 1.0 إلى 8.0، ويمكنك ضبط القيم الابتدائية والنهائية لتوجيه كيفية تطور الفيديو.</li>
+        <li><strong>الحركة:</strong> ضبط مقدار الحركة في الفيديو الخاص بك. قيمة أعلى تعني المزيد من الحركة. النطاق من 0 إلى 127، مع 60 كإعداد افتراضي.</li>
+        <li><strong>قوة تعزيز الضوضاء:</strong> أضف بعض الضوضاء إلى الفيديو الخاص بك لمنحه مظهرًا أكثر نسيجًا. النطاق من 0 إلى 1، مع 0 كإعداد افتراضي.</li>
+        <li><strong>الإطارات في الثانية (FPS):</strong> ضبط سرعة تشغيل الفيديو الخاص بك. الإعداد الافتراضي هو 16 FPS، ولكن يمكنك الوصول إلى 16 لتشغيل أسرع.</li>
+        <li><strong>طريقة التداخل:</strong> اختر كيفية دمج الإطارات معًا. الإعداد الافتراضي هو "lerp" (التداخل الخطي)، ولكن يمكنك أيضًا استخدام "slerp" (التداخل الخطي الكروي) لتأثيرات مختلفة.</li>
+        <li><strong>تخطي الطبقات:</strong> تخطي طبقات معينة للحصول على نمط فيديو مختلف. يمكنك تخطي ما يصل إلى طبقتين، أو تركها فارغة للسلوك الافتراضي.</li>
+    </ul>
+
+    <p>تذكر، AiCasso ذكي جدًا! لا تحتاج إلى الحصول على كل التفاصيل بشكل مثالي أو استخدام القواعد الصحيحة. فقط صف ما تريد، وAiCasso سيتولى الباقي. استمتع بإنشاء الفيديوهات الخاصة بك!</p>
+
+</body>
+</html>

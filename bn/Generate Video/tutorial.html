@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ভিডিও তৈরি ফিচার গাইড</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>ভিডিও তৈরি ফিচার ব্যবহারের গাইড</h2>
+    <p>AiCasso এর ভিডিও তৈরি ফিচার আপনাকে শুধু যা দেখতে চান তা বর্ণনা করে ভিডিও তৈরি করতে দেয়। আপনার ধারণাটি টাইপ করুন, এবং AiCasso এটি একটি ভিডিওতে জীবন্ত করে তুলবে!</p>
+
+    <h3>কিভাবে কাজ করে:</h3>
+    
+    <div class="example">
+        <strong>প্রম্পট:</strong>
+        <p>"একটি 3D অ্যানিমেটেড মোরগ একটি মাঠে একা, খাচ্ছে এবং খুশি। এটি একটি পোর্ট্রেট ভিডিও করুন ৫০ ডিনোইজিং স্টেপ সহ।"</p>
+        <strong>ফলাফল:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>প্রম্পট:</strong>
+        <p>"একটি কার্টুন মোরগ একটি মাঠে ল্যান্ডস্কেপ ডাইমেনশন সহ।"</p>
+        <strong>ফলাফল:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>প্রম্পট:</strong>
+        <p>"একটি মাঠে একটি মোরগ।"</p>
+        <strong>ফলাফল:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>প্রম্পট:</strong>
+        <p>"একটি মোরগ যা একা মাঠে আছে। এটিকে একটি প্রাকৃতিক অনুভূতি দিন।"</p>
+        <strong>ফলাফল:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>অতিরিক্ত বিকল্প</h3>
+    <p>আপনার ভিডিওটি সূক্ষ্মভাবে টিউন করতে চান? এখানে কিছু সেটিংস রয়েছে যা আপনি পরীক্ষা করতে পারেন:</p>
+
+    <ul>
+        <li><strong>ফ্রেমের সংখ্যা:</strong> আপনার ভিডিওতে কত ফ্রেম (স্বতন্ত্র ছবি) থাকবে তা নির্বাচন করুন। আপনি ২৫ ফ্রেম পর্যন্ত যেতে পারেন, ডিফল্ট হিসাবে ১৬।</li>
+        <li><strong>ডিনোইজিং স্টেপের সংখ্যা:</strong> এটি আপনার ভিডিওটি কতটা মসৃণ দেখায় তা নিয়ন্ত্রণ করে। আরও স্টেপ মানে মসৃণ ভিডিও। আপনি ৫০ স্টেপ পর্যন্ত সেট করতে পারেন, ডিফল্ট হিসাবে ২০।</li>
+        <li><strong>গাইডেন্স স্কেল:</strong> এটি ভিডিওটিকে আপনার বর্ণনার সাথে ঘনিষ্ঠভাবে লেগে থাকতে সাহায্য করে। সংখ্যা যত বেশি, তত বেশি এটি আপনার প্রম্পট অনুসরণ করে। পরিসীমা ০ থেকে ৮, ডিফল্ট হিসাবে ৮।</li>
+        <li><strong>ক্লিপ স্কিপ:</strong> একটি ভিন্ন ভিডিও স্টাইলের জন্য নির্দিষ্ট স্তরগুলি এড়িয়ে যান। ডিফল্ট হিসাবে, কোন স্তর এড়ানো হয় না, তবে আপনি ২ পর্যন্ত এড়াতে পারেন।</li>
+        <li><strong>আপস্কেল প্রস্থ এবং উচ্চতা:</strong> আপনি রেজোলিউশন সামঞ্জস্য করে আপনার ভিডিওটিকে বড় করতে পারেন। ডিফল্ট হল ১০২৪x১০২৪ পিক্সেল, তবে আপনি এটি আপনার প্রয়োজন অনুযায়ী পরিবর্তন করতে পারেন।</li>
+        <li><strong>আপস্কেল স্ট্রেংথ:</strong> এটি আপনার ভিডিওটি আপস্কেল করার সময় কতটা সামঞ্জস্য করে তা পরিবর্তন করে। ডিফল্ট হল ১, তবে আপনি আরও পার্থক্য দেখতে এটি সামঞ্জস্য করতে পারেন।</li>
+        <li><strong>আপস্কেল গাইডেন্স স্কেল:</strong> এটি আপস্কেলিং প্রক্রিয়াটিকে গাইড করে, ০ থেকে ৮ পর্যন্ত একটি পরিসীমা সহ, এবং ডিফল্ট হিসাবে ৮।</li>
+        <li><strong>আপস্কেল ইনফারেন্স স্টেপ:</strong> ভিডিওটি আপস্কেল করতে নেওয়া স্টেপের সংখ্যা। আরও স্টেপ মসৃণ আপস্কেলিং তৈরি করে, সর্বাধিক ৫০ এবং ডিফল্ট হিসাবে ২০।</li>
+        <li><strong>উন্নত স্যাম্পলিং:</strong> একটি আরও পরিশীলিত ভিডিও চান? এটি চালু করুন। এটি ডিফল্টরূপে বন্ধ।</li>
+        <li><strong>উন্নত স্যাম্পলিং সিড:</strong> উন্নত স্যাম্পলিং সহ প্রতিবার একই ভিডিও তৈরি করতে এটি ব্যবহার করুন। এটি ঐচ্ছিক এবং ডিফল্টরূপে বন্ধ।</li>
+        <li><strong>ফ্রেম প্রতি সেকেন্ড (FPS):</strong> আপনার ভিডিওর গতি সেট করুন। ডিফল্ট হল ১৬ FPS, তবে আপনি এটি ১৬ পর্যন্ত সামঞ্জস্য করতে পারেন।</li>
+        <li><strong>ভিডিও মডেল:</strong> আপনার ভিডিওর স্টাইল নির্বাচন করুন। বিকল্পগুলির মধ্যে রয়েছে:
+            <ul>
+                <li><strong>ডিফল্ট:</strong> একটি স্ট্যান্ডার্ড ভিডিও মডেল।</li>
+                <li><strong>কার্টুন:</strong> একটি কার্টুনিশ ভিডিও স্টাইল।</li>
+                <li><strong>প্রাকৃতিক:</strong> একটি বাস্তবসম্মত, প্রাকৃতিক-দেখানো ভিডিও স্টাইল।</li>
+                <li><strong>অ্যানিমেটেড 3D:</strong> একটি 3D অ্যানিমেটেড ভিডিও স্টাইল।</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>মনে রাখবেন, এই সেটিংসগুলি ঐচ্ছিক। ভিডিও তৈরি ফিচারটি শুধুমাত্র একটি সাধারণ বর্ণনা দিয়েই দুর্দান্ত কাজ করে, তাই পরীক্ষা করতে এবং আপনি কী তৈরি করতে পারেন তা দেখতে দ্বিধা করবেন না!</p>
+
+</body>
+</html>

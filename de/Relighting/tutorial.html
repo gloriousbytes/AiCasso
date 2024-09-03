@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anleitung zur Verwendung der Relighting-Funktion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Anleitung zur Verwendung der Relighting-Funktion</h2>
+    <p>Die Relighting-Funktion in AiCasso ist super cool! Sie ermöglicht es Ihnen, die Beleuchtung in Ihren Bildern mit nur wenigen Worten zu ändern. Möchten Sie die Sonne im Hintergrund oder ein weiches Licht von der Seite? Kein Problem! Beschreiben Sie es einfach, und AiCasso kümmert sich um den Rest.</p>
+
+    <h3>Wie es funktioniert:</h3>
+    
+    <div class="example">
+        <strong>Eingabebild:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+        </div>
+        <strong>Verwendeter Prompt:</strong>
+        <p>"Mach es so, dass die Sonne im Hintergrund ist"</p>
+        <strong>Ergebnis:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Optionale Anpassungen</h3>
+    <p>Wenn Sie abenteuerlustig sind und Ihrer Relighting ein wenig mehr Flair verleihen möchten, hier sind einige Dinge, die Sie anpassen können:</p>
+
+    <ul>
+        <li><strong>Negativer Prompt:</strong> Möchten Sie etwas vermeiden? Sie können AiCasso sagen, was <em>nicht</em> enthalten sein soll. Aber keine Sorge, wenn Sie dieses Feld leer lassen, konzentriert sich AiCasso einfach auf das, was Sie möchten.</li>
+        <li><strong>Beleuchtungsrichtung:</strong> Sie können angeben, woher das Licht kommen soll – links, rechts, oben, unten oder gar nicht. Standardmäßig kommt das Licht von links.</li>
+        <li><strong>Guidance Scale:</strong> Dies hilft AiCasso, sich an Ihre Beschreibung zu halten. Die Skala reicht von 1 bis 20, wobei 7 der Standard ist. Je höher die Zahl, desto mehr hält sich AiCasso an Ihren Prompt.</li>
+        <li><strong>High-Resolution Scale:</strong> Möchten Sie, dass Ihr Bild hervorsticht? Dies steuert die Klarheit. Der Standard ist 1,5, aber Sie können es von 1,0 bis 2,0 für ein schärferes Bild einstellen.</li>
+        <li><strong>Denoise Levels:</strong> Es gibt zwei Stufen – niedrigauflösend und hochauflösend. Diese steuern, wie glatt oder detailliert das endgültige Bild aussieht. Sie können das Low-Res-Denoise-Level zwischen 0,0 und 1,0 (Standard ist 0,9) und das High-Res zwischen 0,0 und 1,0 (Standard ist 0,5) einstellen.</li>
+        <li><strong>Anzahl der Schritte:</strong> Dies ist die Anzahl der Schritte, die AiCasso unternimmt, um Ihr Bild zu verfeinern. Der Standard ist 50, aber Sie können von 20 bis 50 Schritte gehen.</li>
+    </ul>
+
+    <p>Denken Sie daran, dass diese Anpassungen völlig optional sind! AiCasso ist ziemlich gut darin, herauszufinden, was Sie wollen, also beschreiben Sie einfach Ihre Vision in Ihren eigenen Worten, und es wird die Magie geschehen lassen. Sie müssen nicht perfekt in Grammatik oder Details sein – haben Sie einfach Spaß und sehen Sie, was Sie erschaffen können!</p>
+
+</body>
+</html>

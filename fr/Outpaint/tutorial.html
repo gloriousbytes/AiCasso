@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conseils pour la Fonctionnalité Outpaint</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Conseils pour Utiliser la Fonctionnalité Outpaint</h2>
+    <p>La fonctionnalité Outpaint dans AiCasso vous permet d'étendre une image en ajoutant de nouveaux éléments autour d'elle ou en prolongeant ce qui est déjà là. Il vous suffit de décrire ce que vous voulez, et AiCasso s'occupera du reste.</p>
+
+    <h3>Comment ça Marche :</h3>
+    
+    <div class="example">
+        <strong>Image de Départ :</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Décrivez Votre Changement :</strong>
+        <p>Il suffit de taper ce que vous voulez ajouter ou étendre, et AiCasso appliquera ces changements. Vous pouvez spécifier des directions comme gauche, droite, haut ou bas, et même des détails comme dézoomer ou déplacer.</p>
+    </div>
+
+    <h3>Exemples de Modifications :</h3>
+
+    <div class="example">
+        <strong>Exemple 1 :</strong> "Ajouter un iceberg à droite en utilisant un facteur de translation de 0,4."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+        </div>
+        <p><em>Résultat :</em> AiCasso étend l'image vers la droite et ajoute un iceberg, en le gardant cohérent avec le paysage existant.</p>
+    </div>
+
+    <div class="example">
+        <strong>Exemple 2 :</strong> "Dézoomer, garder la cohérence de la mer sombre la nuit."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+        </div>
+        <p><em>Résultat :</em> L'image dézoome, révélant plus de la mer sombre, tout en maintenant l'atmosphère de la scène nocturne.</p>
+    </div>
+
+    <h3>Options Supplémentaires</h3>
+    <p>Voici quelques paramètres optionnels que vous pouvez utiliser pour affiner vos modifications :</p>
+
+    <ul>
+        <li><strong>Invite Négative :</strong> Si vous ne voulez pas quelque chose de spécifique dans l'image, vous pouvez le dire à AiCasso ici. Par exemple, vous pourriez vouloir éviter d'ajouter certaines couleurs ou objets.</li>
+        <li><strong>Type de Déplacement :</strong> Cela détermine la direction dans laquelle l'image s'étend. Vous pouvez choisir parmi gauche, droite, haut, bas, ou arrière (qui dézoome). Par exemple, pour déplacer vers la droite, vous choisiriez 'droite'.</li>
+        <li><strong>Facteur de Translation :</strong> Cela contrôle combien l'image se déplace à chaque étape lors de l'extension. Une valeur plus élevée déplace l'image davantage, révélant plus de nouveau contenu. La valeur par défaut est 0,05, mais vous pouvez l'ajuster de 0 à 1.</li>
+        <li><strong>Translation Largeur/Hauteur par Étape :</strong> Cela contrôle à quelle distance l'image se déplace horizontalement (largeur) ou verticalement (hauteur) à chaque étape. La valeur par défaut est de 32 pixels par étape, mais vous pouvez l'ajuster en fonction de la distance à laquelle vous souhaitez que l'image se déplace.</li>
+        <li><strong>Nombre d'Étapes d'Inférence ou de Dénoyage :</strong> Cela détermine combien d'ajustements AiCasso fait pour obtenir l'image finale. Plus d'étapes conduisent à un résultat plus lisse, avec une valeur par défaut de 20 étapes, mais vous pouvez aller jusqu'à 50.</li>
+        <li><strong>Nombre d'Étapes d'Interpolation :</strong> Cela contrôle la fluidité de la transition entre deux directions dans une seule extension. La valeur par défaut est de 60, mais vous pouvez l'augmenter jusqu'à 120 pour des transitions plus fluides.</li>
+    </ul>
+
+    <p>Rappelez-vous, ces paramètres sont optionnels. AiCasso est conçu pour bien fonctionner avec juste votre description en langage naturel. N'hésitez pas à expérimenter et à voir ce qui fonctionne le mieux pour votre image !</p>
+
+</body>
+</html>
