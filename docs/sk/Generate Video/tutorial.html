@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Príručka k funkcii Generovať video</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Príručka k používaniu funkcie Generovať video</h2>
+    <p>Funkcia Generovať video v AiCasso vám umožňuje vytvárať videá jednoducho popisovaním toho, čo chcete vidieť. Stačí napísať svoj nápad a AiCasso ho oživí vo videu!</p>
+
+    <h3>Ako to funguje:</h3>
+    
+    <div class="example">
+        <strong>Podnet:</strong>
+        <p>"3D animovaný kohút na poli sám, ktorý sa stravuje a je šťastný. Urobte z toho portrétové video s 50 krokmi denoisingu."</p>
+        <strong>Výsledok:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Podnet:</strong>
+        <p>"Kreslený kohút na poli v krajinných rozmeroch."</p>
+        <strong>Výsledok:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Podnet:</strong>
+        <p>"Kohút na poli."</p>
+        <strong>Výsledok:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Podnet:</strong>
+        <p>"Kohút, ktorý je na poli sám. Dajte mu prirodzený pocit."</p>
+        <strong>Výsledok:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Ďalšie možnosti</h3>
+    <p>Chcete doladiť svoje video? Tu sú niektoré nastavenia, s ktorými môžete experimentovať:</p>
+
+    <ul>
+        <li><strong>Počet snímok:</strong> Vyberte, koľko snímok (jednotlivých obrázkov) bude mať vaše video. Môžete ísť až do 25 snímok, pričom 16 je predvolené.</li>
+        <li><strong>Počet krokov denoisingu:</strong> Toto ovláda, ako hladko vaše video vyzerá. Viac krokov znamená hladšie videá. Môžete nastaviť až 50 krokov, pričom 20 je predvolené.</li>
+        <li><strong>Guidance Scale:</strong> Toto pomáha videu držať sa blízko vášho popisu. Čím vyššie číslo, tým viac sa riadi vaším podnetom. Rozsah je od 0 do 8, pričom 8 je predvolené.</li>
+        <li><strong>Clip Skip:</strong> Preskočte určité vrstvy pre iný štýl videa. Predvolene sa žiadne vrstvy nepreskakujú, ale môžete preskočiť až 2.</li>
+        <li><strong>Upscale Width and Height:</strong> Môžete zväčšiť svoje video úpravou rozlíšenia. Predvolené je 1024x1024 pixelov, ale môžete to prispôsobiť svojim potrebám.</li>
+        <li><strong>Upscale Strength:</strong> Toto mení, ako veľmi sa vaše video prispôsobí pri zväčšení. Predvolené je 1, ale môžete to upraviť, aby ste videli viac rozdielov.</li>
+        <li><strong>Upscale Guidance Scale:</strong> Toto riadi proces zväčšovania, s rozsahom od 0 do 8 a predvolenou hodnotou 8.</li>
+        <li><strong>Upscale Inference Steps:</strong> Počet krokov vykonaných na zväčšenie videa. Viac krokov znamená hladšie zväčšovanie, s maximom 50 a predvolenou hodnotou 20.</li>
+        <li><strong>Improved Sampling:</strong> Chcete rafinovanejšie video? Zapnite to. Predvolene je to vypnuté.</li>
+        <li><strong>Improved Sampling Seed:</strong> Použite to na generovanie rovnakého videa zakaždým s vylepšeným vzorkovaním. Je to voliteľné a predvolene vypnuté.</li>
+        <li><strong>Frames per Second (FPS):</strong> Nastavte rýchlosť svojho videa. Predvolené je 16 FPS, ale môžete to upraviť až na 16.</li>
+        <li><strong>Video Model:</strong> Vyberte štýl svojho videa. Možnosti zahŕňajú:
+            <ul>
+                <li><strong>Predvolené:</strong> Štandardný video model.</li>
+                <li><strong>Kreslený:</strong> Kreslený štýl videa.</li>
+                <li><strong>Prírodný:</strong> Realistický, prirodzene vyzerajúci štýl videa.</li>
+                <li><strong>Animovaný 3D:</strong> 3D animovaný štýl videa.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Nezabudnite, že tieto nastavenia sú voliteľné. Funkcia Generovať video funguje skvele aj s jednoduchým popisom, takže sa nebojte experimentovať a zistiť, čo môžete vytvoriť!</p>
+
+</body>
+</html>

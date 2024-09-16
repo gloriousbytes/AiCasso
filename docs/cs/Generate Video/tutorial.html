@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Průvodce funkcí Generování videa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Průvodce používáním funkce Generování videa</h2>
+    <p>Funkce Generování videa v AiCasso vám umožňuje vytvářet videa jednoduše tím, že popíšete, co chcete vidět. Stačí napsat svůj nápad a AiCasso ho oživí ve videu!</p>
+
+    <h3>Jak to funguje:</h3>
+    
+    <div class="example">
+        <strong>Výzva:</strong>
+        <p>"3D animovaný kohout na poli sám, jak jí a je šťastný. Udělejte z toho portrétní video s 50 kroky odhlučnění."</p>
+        <strong>Výsledek:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Výzva:</strong>
+        <p>"Kreslený kohout na poli v krajině."</p>
+        <strong>Výsledek:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Výzva:</strong>
+        <p>"Kohout na poli."</p>
+        <strong>Výsledek:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Výzva:</strong>
+        <p>"Kohout, který je na poli sám. Dejte mu přirozený pocit."</p>
+        <strong>Výsledek:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Další možnosti</h3>
+    <p>Chcete jemně doladit své video? Zde jsou některá nastavení, se kterými si můžete hrát:</p>
+
+    <ul>
+        <li><strong>Počet snímků:</strong> Vyberte, kolik snímků (jednotlivých obrázků) vaše video bude mít. Můžete mít až 25 snímků, přičemž 16 je výchozí.</li>
+        <li><strong>Počet kroků odhlučnění:</strong> Toto ovlivňuje, jak hladké vaše video vypadá. Více kroků znamená hladší videa. Můžete nastavit až 50 kroků, přičemž 20 je výchozí.</li>
+        <li><strong>Škála vedení:</strong> Toto pomáhá videu držet se blízko vašeho popisu. Čím vyšší číslo, tím více se řídí vaší výzvou. Rozsah je od 0 do 8, přičemž 8 je výchozí.</li>
+        <li><strong>Přeskočit klipy:</strong> Přeskočte určité vrstvy pro jiný styl videa. Ve výchozím nastavení se žádné vrstvy nepřeskakují, ale můžete přeskočit až 2.</li>
+        <li><strong>Šířka a výška zvětšení:</strong> Můžete své video zvětšit úpravou rozlišení. Výchozí je 1024x1024 pixelů, ale můžete to upravit podle svých potřeb.</li>
+        <li><strong>Síla zvětšení:</strong> Toto mění, jak moc se vaše video upraví při zvětšení. Výchozí je 1, ale můžete to upravit, abyste viděli více rozdílů.</li>
+        <li><strong>Škála vedení zvětšení:</strong> Toto řídí proces zvětšení, s rozsahem od 0 do 8 a výchozí hodnotou 8.</li>
+        <li><strong>Kroky inference zvětšení:</strong> Počet kroků provedených pro zvětšení videa. Více kroků znamená hladší zvětšení, s maximem 50 a výchozí hodnotou 20.</li>
+        <li><strong>Vylepšené vzorkování:</strong> Chcete více rafinované video? Zapněte to. Ve výchozím nastavení je to vypnuto.</li>
+        <li><strong>Semeno vylepšeného vzorkování:</strong> Použijte to k vygenerování stejného videa pokaždé s vylepšeným vzorkováním. Je to volitelné a ve výchozím nastavení je to vypnuto.</li>
+        <li><strong>Snímky za sekundu (FPS):</strong> Nastavte rychlost svého videa. Výchozí je 16 FPS, ale můžete to upravit až na 16.</li>
+        <li><strong>Model videa:</strong> Vyberte styl svého videa. Možnosti zahrnují:
+            <ul>
+                <li><strong>Výchozí:</strong> Standardní model videa.</li>
+                <li><strong>Kreslený:</strong> Kreslený styl videa.</li>
+                <li><strong>Přirozený:</strong> Realistický, přirozeně vypadající styl videa.</li>
+                <li><strong>Animovaný 3D:</strong> 3D animovaný styl videa.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Pamatujte, že tato nastavení jsou volitelná. Funkce Generování videa funguje skvěle i s jednoduchým popisem, takže se nebojte experimentovat a zjistit, co můžete vytvořit!</p>
+
+</body>
+</html>

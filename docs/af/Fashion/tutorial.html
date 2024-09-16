@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mode Generasie Kenmerke Gids</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Gids vir die Gebruik van die Mode Generasie Kenmerk</h2>
+    <p>Die Mode Generasie kenmerk in AiCasso laat jou toe om iemand in 'n spesifieke uitrusting aan te trek, soos 'n hemp, rok of broek. Beskryf eenvoudig wat jy wil hê, en kyk hoe AiCasso die kledingstuk op die persoon in die beeld toepas.</p>
+
+    <h3>Hoe Dit Werk:</h3>
+    
+    <div class="example">
+        <strong>Invoer 1 - Persoon Beeld:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+        </div>
+        <strong>Invoer 2 - Kledingstuk:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+        </div>
+        <strong>Prompt:</strong>
+        <p>"Seun wat 'n hemp dra"</p>
+        <strong>Resultaat:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Opsionele Parameters</h3>
+    <p>As jy jou eie styl wil byvoeg of seker wil maak dat die resultaat net reg is, kan jy hierdie instellings aanpas:</p>
+
+    <ul>
+        <li><strong>Negatiewe Prompt:</strong> As daar iets is wat jy <em>nie</em> in die beeld wil hê nie, noem dit hier. Laat dit leeg as jy gemaklik is met wat AiCasso ook al opkom.</li>
+        <li><strong>Kledingsoort:</strong> Sê vir AiCasso of jy fokus op die <em>bo-op die liggaam</em>, <em>onderste liggaam</em>, of <em>rokke</em>. As jy nie seker is nie, is dit standaard op bo-op die liggaam.</li>
+        <li><strong>Aantal Denoising Stappe:</strong> Dit bepaal hoe glad en gepoleerde die beeld lyk. Jy kan kies tussen 21, 31, of 41 stappe, met 21 as die standaard. Meer stappe beteken gewoonlik 'n meer verfynde voorkoms.</li>
+        <li><strong>Rigting Skaal:</strong> Dit help die beeld om naby jou beskrywing te bly. Jy kan dit stel van 1 tot 20, met 7 as die standaard. Hoër getalle beteken dat AiCasso jou prompt meer noukeurig sal volg.</li>
+    </ul>
+
+    <p>Onthou, hierdie instellings is opsioneel! AiCasso is redelik slim en kan uitvind wat jy bedoel, selfs al kry jy nie elke detail perfek nie. Geniet dit net en laat jou kreatiwiteit vloei!</p>
+
+</body>
+</html>

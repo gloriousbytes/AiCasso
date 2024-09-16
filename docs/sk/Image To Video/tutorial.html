@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Príručka k funkcii Prevod obrázkov na video</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Príručka k používaniu funkcie Prevod obrázkov na video</h2>
+    <p>Funkcia Prevod obrázkov na video v AiCasso vám umožňuje premeniť jeden obrázok na dynamické video. Stačí opísať, čo chcete vidieť vo svojom videu, a AiCasso to uskutoční!</p>
+
+    <h3>Ako to funguje:</h3>
+    
+    <div class="example">
+        <strong>Vstupný obrázok:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>Výzva 1:</strong>
+        <p>"Roztomilý šteniatko v parku"</p>
+        <strong>Výsledok 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>Výzva 2:</strong>
+        <p>"Roztomilý šteniatko v parku, použite maximálne FPS, maximálne snímky a maximálny pohyb"</p>
+        <strong>Výsledok 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Voliteľné parametre</h3>
+    <p>Ak chcete byť vo svojom videu konkrétnejší, tu sú niektoré nastavenia, ktoré môžete upraviť:</p>
+
+    <ul>
+        <li><strong>Negatívna výzva:</strong> Opíšte, čo *nechcete* vo videu. Ak je ponechané prázdne, AiCasso sa zameria len na pozitívnu výzvu.</li>
+        <li><strong>Počet snímok:</strong> Vyberte, koľko snímok (jednotlivých obrázkov) bude mať vaše video. Môžete si vybrať až 25 snímok, pričom 16 je predvolené.</li>
+        <li><strong>Kroky denoisingu:</strong> Toto ovláda, ako hladké vaše video vyzerá. Viac krokov znamená čistejšie video. Môžete nastaviť až 50 krokov, pričom 20 je predvolené.</li>
+        <li><strong>Škála usmernenia:</strong> Toto pomáha videu držať sa blízko vášho opisu. Rozsah je od 1.0 do 8.0 a môžete upraviť počiatočné a konečné hodnoty, aby ste usmernili, ako sa video vyvíja.</li>
+        <li><strong>Pohyb:</strong> Upravte, koľko pohybu je vo vašom videu. Vyššia hodnota znamená viac akcie. Rozsah je od 0 do 127, pričom 60 je predvolené.</li>
+        <li><strong>Intenzita augmentácie šumu:</strong> Pridajte do svojho videa trochu šumu, aby ste mu dodali textúrovanejší vzhľad. Rozsah je od 0 do 1, pričom 0 je predvolené.</li>
+        <li><strong>Snímky za sekundu (FPS):</strong> Nastavte, ako rýchlo sa vaše video prehráva. Predvolené je 16 FPS, ale môžete ísť až na 16 pre rýchlejšie prehrávanie.</li>
+        <li><strong>Metóda interpolácie:</strong> Vyberte, ako sa snímky kombinujú. Predvolené je "lerp" (lineárna interpolácia), ale môžete tiež použiť "slerp" (sférická lineárna interpolácia) pre rôzne efekty.</li>
+        <li><strong>Preskočiť klip:</strong> Preskočte určité vrstvy pre iný štýl videa. Môžete preskočiť až 2 vrstvy alebo to nechať prázdne pre predvolené správanie.</li>
+    </ul>
+
+    <p>Nezabudnite, AiCasso je dosť inteligentný! Nemusíte mať každý detail dokonalý alebo používať správnu gramatiku. Stačí opísať, čo chcete, a AiCasso urobí zvyšok. Bavte sa pri vytváraní svojich videí!</p>
+
+</body>
+</html>

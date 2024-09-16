@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide til Headshot-funktionen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guide til at bruge Headshot-funktionen</h2>
+    <p>Med Headshot-funktionen i AiCasso kan du skabe fantastiske og unikke portrætter ved blot at beskrive, hvad du ønsker. Det er perfekt til at lave imponerende billeder, uanset om du ønsker en fredfyldt scene, en episk kriger eller noget andet, din fantasi kan finde på!</p>
+
+    <h3>Sådan fungerer det:</h3>
+    
+    <div class="example">
+        <strong>Inputbillede:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+        </div>
+        <strong>Prompt 1:</strong>
+        <p>"En mand i sneen"</p>
+        <strong>Resultat 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+        </div>
+        <strong>Prompt 2:</strong>
+        <p>"En kriger i skoven, brug medium høj skala som 78% af dette"</p>
+        <strong>Resultat 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Valgfri parametre</h3>
+    <p>Vil du tilføje lidt mere flair eller kontrol til dine genererede headshots? Her er nogle fede muligheder, du kan justere:</p>
+
+    <ul>
+        <li><strong>Negativ prompt:</strong> Her kan du fortælle AiCasso, hvad du <em>ikke</em> ønsker at se i billedet. For eksempel, hvis du ikke ønsker nogen baggrundselementer, kan du nævne det her. Hvis du lader dette stå tomt, vil AiCasso bare fokusere på, hvad du ønsker.</li>
+        <li><strong>Antal af denoising-trin:</strong> Dette styrer, hvor glat og raffineret ansigtet ser ud. Du kan vælge mellem 21, 31 eller 41 trin, hvor 41 er standard. Flere trin betyder normalt et renere, mere poleret resultat.</li>
+        <li><strong>Guidance Scale:</strong> Dette er som at give AiCasso et lille ekstra skub for at forblive tro mod din beskrivelse. Skalaen spænder fra 1 til 20, med 10 som standard. Højere tal betyder, at AiCasso vil holde sig tættere på, hvad du beskriver.</li>
+        <li><strong>S Scale:</strong> Dette justerer strukturen af ansigtet. Det er lidt teknisk, men grundlæggende justerer det, hvor stærke eller bløde ansigtstræk er. Standard er 1.0, og du kan gå fra 0.0 til 2.0 afhængigt af det udseende, du går efter.</li>
+    </ul>
+
+    <p>Husk, disse parametre er helt valgfri. AiCasso er ret tilgivende, så du behøver ikke at være super præcis eller grammatisk korrekt. Bare beskriv, hvad du ønsker med dine egne ord, og AiCasso vil gøre magien. Hav det sjovt med at skabe dine headshots!</p>
+
+</body>
+</html>

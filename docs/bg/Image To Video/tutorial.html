@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ръководство за функцията "Снимка в видео"</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Ръководство за използване на функцията "Снимка в видео"</h2>
+    <p>Функцията "Снимка в видео" в AiCasso ви позволява да превърнете една снимка в динамично видео. Просто опишете какво искате да видите във вашето видео и AiCasso ще го направи!</p>
+
+    <h3>Как работи:</h3>
+    
+    <div class="example">
+        <strong>Входна снимка:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>Подсказка 1:</strong>
+        <p>"Сладко кученце в парка"</p>
+        <strong>Резултат 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>Подсказка 2:</strong>
+        <p>"Сладко кученце в парка, използвайте максимални FPS, максимален брой кадри и максимално движение"</p>
+        <strong>Резултат 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Допълнителни параметри</h3>
+    <p>Ако искате да бъдете по-конкретни с вашето видео, ето някои настройки, които можете да коригирате:</p>
+
+    <ul>
+        <li><strong>Отрицателна подсказка:</strong> Опишете какво *не* искате във видеото. Ако оставите празно, AiCasso ще се фокусира само върху положителната подсказка.</li>
+        <li><strong>Брой кадри:</strong> Изберете колко кадри (индивидуални снимки) да има вашето видео. Можете да изберете до 25 кадра, като 16 е по подразбиране.</li>
+        <li><strong>Степени на шумопотискане:</strong> Това контролира колко гладко изглежда вашето видео. Повече стъпки означават по-чисто видео. Можете да зададете до 50 стъпки, като 20 е по подразбиране.</li>
+        <li><strong>Мащаб на насочване:</strong> Това помага на видеото да се придържа близо до вашето описание. Диапазонът е от 1.0 до 8.0, и можете да коригирате началните и крайни стойности, за да насочите как видеото се развива.</li>
+        <li><strong>Движение:</strong> Настройте колко движение да има във вашето видео. По-висока стойност означава повече действие. Диапазонът е от 0 до 127, като 60 е по подразбиране.</li>
+        <li><strong>Сила на увеличаване на шума:</strong> Добавете малко шум към вашето видео, за да му придадете по-текстуриран вид. Диапазонът е от 0 до 1, като 0 е по подразбиране.</li>
+        <li><strong>Кадри в секунда (FPS):</strong> Задайте колко бързо да се възпроизвежда вашето видео. По подразбиране е 16 FPS, но можете да увеличите до 16 за по-бързо възпроизвеждане.</li>
+        <li><strong>Метод на интерполация:</strong> Изберете как кадрите да се смесват заедно. По подразбиране е "lerp" (линейна интерполация), но можете да използвате и "slerp" (сферична линейна интерполация) за различни ефекти.</li>
+        <li><strong>Пропускане на клипове:</strong> Пропуснете определени слоеве за различен стил на видео. Можете да пропуснете до 2 слоя или да оставите нула за поведение по подразбиране.</li>
+    </ul>
+
+    <p>Запомнете, AiCasso е доста умен! Не е нужно да получавате всеки детайл перфектно или да използвате правилна граматика. Просто опишете какво искате и AiCasso ще свърши останалото. Забавлявайте се, създавайки вашите видеа!</p>
+
+</body>
+</html>

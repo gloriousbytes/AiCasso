@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คู่มือฟีเจอร์เปลี่ยนภาพเป็นวิดีโอ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>คู่มือการใช้ฟีเจอร์เปลี่ยนภาพเป็นวิดีโอ</h2>
+    <p>ฟีเจอร์เปลี่ยนภาพเป็นวิดีโอใน AiCasso ช่วยให้คุณสามารถเปลี่ยนภาพเดียวให้เป็นวิดีโอที่มีชีวิตชีวา เพียงแค่บอกสิ่งที่คุณต้องการเห็นในวิดีโอของคุณ และ AiCasso จะทำให้มันเกิดขึ้น!</p>
+
+    <h3>วิธีการทำงาน:</h3>
+    
+    <div class="example">
+        <strong>ภาพนำเข้า:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>คำสั่ง 1:</strong>
+        <p>"ลูกสุนัขน่ารักในสวน"</p>
+        <strong>ผลลัพธ์ 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>คำสั่ง 2:</strong>
+        <p>"ลูกสุนัขน่ารักในสวน ใช้ FPS สูงสุด เฟรมสูงสุด และการเคลื่อนไหวสูงสุด"</p>
+        <strong>ผลลัพธ์ 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>พารามิเตอร์เพิ่มเติม</h3>
+    <p>หากคุณต้องการให้วิดีโอของคุณมีความเฉพาะเจาะจงมากขึ้น นี่คือการตั้งค่าที่คุณสามารถปรับได้:</p>
+
+    <ul>
+        <li><strong>คำสั่งเชิงลบ:</strong> อธิบายสิ่งที่คุณ *ไม่* ต้องการในวิดีโอ หากปล่อยว่างไว้ AiCasso จะมุ่งเน้นไปที่คำสั่งเชิงบวกเท่านั้น</li>
+        <li><strong>จำนวนเฟรม:</strong> เลือกจำนวนเฟรม (ภาพแต่ละภาพ) ที่วิดีโอของคุณจะมี คุณสามารถเลือกได้สูงสุด 25 เฟรม โดยมี 16 เป็นค่าเริ่มต้น</li>
+        <li><strong>ขั้นตอนการลดเสียงรบกวน:</strong> ควบคุมว่าวิดีโอของคุณจะดูเรียบเนียนเพียงใด ยิ่งมีขั้นตอนมากเท่าไหร่ วิดีโอก็จะยิ่งสะอาดมากขึ้น คุณสามารถตั้งค่าได้สูงสุด 50 ขั้นตอน โดยมี 20 เป็นค่าเริ่มต้น</li>
+        <li><strong>ระดับการแนะนำ:</strong> ช่วยให้วิดีโอติดตามคำบรรยายของคุณอย่างใกล้ชิด ช่วงคือจาก 1.0 ถึง 8.0 และคุณสามารถปรับค่าเริ่มต้นและค่าจบเพื่อกำหนดวิธีที่วิดีโอพัฒนา</li>
+        <li><strong>การเคลื่อนไหว:</strong> ปรับระดับการเคลื่อนไหวในวิดีโอของคุณ ค่าที่สูงขึ้นหมายถึงการเคลื่อนไหวมากขึ้น ช่วงคือจาก 0 ถึง 127 โดยมี 60 เป็นค่าเริ่มต้น</li>
+        <li><strong>ความเข้มของเสียงรบกวน:</strong> เพิ่มเสียงรบกวนให้กับวิดีโอของคุณเพื่อให้มีลักษณะที่มีเนื้อสัมผัสมากขึ้น ช่วงคือจาก 0 ถึง 1 โดยมี 0 เป็นค่าเริ่มต้น</li>
+        <li><strong>เฟรมต่อวินาที (FPS):</strong> ตั้งค่าความเร็วในการเล่นวิดีโอของคุณ ค่าเริ่มต้นคือ 16 FPS แต่คุณสามารถตั้งค่าได้สูงสุด 16 สำหรับการเล่นที่เร็วขึ้น</li>
+        <li><strong>วิธีการสร้างเฟรม:</strong> เลือกวิธีที่เฟรมจะถูกผสมเข้าด้วยกัน ค่าเริ่มต้นคือ "lerp" (การสร้างเฟรมเชิงเส้น) แต่คุณยังสามารถใช้ "slerp" (การสร้างเฟรมเชิงทรงกลม) เพื่อเอฟเฟกต์ที่แตกต่างกัน</li>
+        <li><strong>ข้ามคลิป:</strong> ข้ามบางเลเยอร์เพื่อสไตล์วิดีโอที่แตกต่าง คุณสามารถข้ามได้สูงสุด 2 เลเยอร์ หรือปล่อยให้เป็นค่าเริ่มต้น</li>
+    </ul>
+
+    <p>จำไว้ว่า AiCasso ค่อนข้างฉลาด! คุณไม่จำเป็นต้องทำให้ทุกอย่างสมบูรณ์แบบหรือใช้ไวยากรณ์ที่ถูกต้อง เพียงแค่บอกสิ่งที่คุณต้องการ และ AiCasso จะทำที่เหลือให้เอง ขอให้สนุกกับการสร้างวิดีโอของคุณ!</p>
+
+</body>
+</html>

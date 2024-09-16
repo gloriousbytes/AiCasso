@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide til Genlysning Funktion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guide til at Bruge Genlysning Funktion</h2>
+    <p>Genlysning funktionen i AiCasso er super cool! Den lader dig ændre belysningen i dine billeder med blot et par ord. Vil du have solen i baggrunden eller et blødt lys fra siden? Intet problem! Bare beskriv det, og AiCasso klarer resten.</p>
+
+    <h3>Sådan Fungerer Det:</h3>
+    
+    <div class="example">
+        <strong>Input Billede:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+        </div>
+        <strong>Brugte Prompt:</strong>
+        <p>"Gør det sådan, at solen er i baggrunden"</p>
+        <strong>Resultat:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Valgfri Justeringer</h3>
+    <p>Hvis du føler dig eventyrlysten og vil tilføje lidt mere flair til din genlysning, er her nogle ting, du kan justere:</p>
+
+    <ul>
+        <li><strong>Negativ Prompt:</strong> Vil du undgå noget? Du kan fortælle AiCasso, hvad <em>ikke</em> at inkludere. Men bare rolig, hvis du lader dette være tomt, vil AiCasso bare fokusere på, hvad du ønsker.</li>
+        <li><strong>Belysningsretning:</strong> Du kan specificere, hvor lyset skal komme fra—venstre, højre, top, bund, eller endda slet ikke. Som standard kommer lyset fra venstre.</li>
+        <li><strong>Guidance Scale:</strong> Dette hjælper AiCasso med at holde sig til din beskrivelse. Skalaen går fra 1 til 20, hvor 7 er standard. Jo højere tallet er, jo mere holder AiCasso sig til din prompt.</li>
+        <li><strong>Højopløsningsskala:</strong> Vil du have dit billede til at poppe? Dette kontrollerer klarheden. Standard er 1.5, men du kan indstille det fra 1.0 til 2.0 for et skarpere billede.</li>
+        <li><strong>Denoise Niveaus:</strong> Der er to niveauer—lav opløsning og høj opløsning. Disse kontrollerer, hvor glat eller detaljeret det endelige billede ser ud. Du kan indstille lav-opløsning denoise niveauet mellem 0.0 og 1.0 (standard er 0.9) og høj-opløsning mellem 0.0 og 1.0 (standard er 0.5).</li>
+        <li><strong>Antal Trin:</strong> Dette er, hvor mange trin AiCasso tager for at polere dit billede. Standard er 50, men du kan gå fra 20 til 50 trin.</li>
+    </ul>
+
+    <p>Husk, disse justeringer er helt valgfrie! AiCasso er ret god til at finde ud af, hvad du ønsker, så bare beskriv din vision med dine egne ord, og det vil gøre magien. Der er ikke behov for at være perfekt med grammatik eller detaljer—bare hav det sjovt og se, hvad du kan skabe!</p>
+
+</body>
+</html>

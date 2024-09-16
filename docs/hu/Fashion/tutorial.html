@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divat Generációs Funkció Útmutató</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>A Divat Generációs Funkció Használati Útmutatója</h2>
+    <p>A Divat Generációs funkció az AiCasso-ban lehetővé teszi, hogy valakit egy konkrét öltözékbe öltöztessünk, például ingbe, ruhába vagy nadrágba. Egyszerűen írd le, mit szeretnél, és nézd, ahogy az AiCasso alkalmazza a ruhadarabot a képen látható személyre.</p>
+
+    <h3>Hogyan Működik:</h3>
+    
+    <div class="example">
+        <strong>Bemenet 1 - Személy Képe:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+        </div>
+        <strong>Bemenet 2 - Ruhadarab:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+        </div>
+        <strong>Prompt:</strong>
+        <p>"Férfi ingben"</p>
+        <strong>Eredmény:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Opcionális Paraméterek</h3>
+    <p>Ha szeretnéd hozzáadni a saját stílusodat, vagy biztosítani szeretnéd, hogy az eredmény pontosan olyan legyen, amilyet szeretnél, módosíthatod ezeket a beállításokat:</p>
+
+    <ul>
+        <li><strong>Negatív Prompt:</strong> Ha van valami, amit <em>nem</em> szeretnél a képen, csak említsd meg itt. Hagyd üresen, ha elégedett vagy azzal, amit az AiCasso kitalál.</li>
+        <li><strong>Ruhatípus:</strong> Mondd el az AiCasso-nak, hogy az <em>felsőtestre</em>, <em>alsótestre</em> vagy <em>ruhákkal</em> foglalkozol. Ha nem vagy biztos benne, alapértelmezés szerint a felsőtestre állítja.</li>
+        <li><strong>Denoising Lépések Száma:</strong> Ez határozza meg, hogy mennyire sima és kifinomult a kép. Választhatsz 21, 31 vagy 41 lépés között, ahol a 21 az alapértelmezett. Több lépés általában finomabb megjelenést jelent.</li>
+        <li><strong>Irányítási Skála:</strong> Ez segít, hogy a kép szorosan kövesse a leírásodat. 1-től 20-ig állíthatod, ahol a 7 az alapértelmezett. A magasabb számok azt jelentik, hogy az AiCasso jobban követi a promptodat.</li>
+    </ul>
+
+    <p>Ne feledd, ezek a beállítások opcionálisak! Az AiCasso elég okos, és képes kitalálni, mit értesz, még akkor is, ha nem minden részletet tökéletesen adsz meg. Csak szórakozz, és engedd szabadjára a kreativitásodat!</p>
+
+</body>
+</html>

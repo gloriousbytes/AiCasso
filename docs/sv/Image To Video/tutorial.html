@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide för Bild till Video-funktionen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guide för att använda Bild till Video-funktionen</h2>
+    <p>Bild till Video-funktionen i AiCasso låter dig förvandla en enda bild till en dynamisk video. Beskriv bara vad du vill se i din video, så kommer AiCasso att göra det möjligt!</p>
+
+    <h3>Så här fungerar det:</h3>
+    
+    <div class="example">
+        <strong>Inmatningsbild:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>Prompt 1:</strong>
+        <p>"En söt valp i parken"</p>
+        <strong>Resultat 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>Prompt 2:</strong>
+        <p>"En söt valp i parken, använd maximalt FPS, maximala bilder och maximal rörelse"</p>
+        <strong>Resultat 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Valfria parametrar</h3>
+    <p>Om du vill bli mer specifik med din video, här är några inställningar du kan justera:</p>
+
+    <ul>
+        <li><strong>Negativ prompt:</strong> Beskriv vad du *inte* vill ha i videon. Om den lämnas tom, kommer AiCasso bara att fokusera på den positiva prompten.</li>
+        <li><strong>Antal bilder:</strong> Välj hur många bilder (individuella bilder) din video ska ha. Du kan välja upp till 25 bilder, med 16 som standard.</li>
+        <li><strong>Denoising-steg:</strong> Detta kontrollerar hur mjuk din video ser ut. Fler steg betyder en renare video. Du kan ställa in upp till 50 steg, med 20 som standard.</li>
+        <li><strong>Guidance Scale:</strong> Detta hjälper videon att hålla sig nära din beskrivning. Området är från 1.0 till 8.0, och du kan justera start- och slutvärdena för att styra hur videon utvecklas.</li>
+        <li><strong>Rörelse:</strong> Justera hur mycket rörelse som finns i din video. Ett högre värde betyder mer action. Området är från 0 till 127, med 60 som standard.</li>
+        <li><strong>Brusförstärkningsstyrka:</strong> Lägg till lite brus i din video för att ge den ett mer texturerat utseende. Området är från 0 till 1, med 0 som standard.</li>
+        <li><strong>Bilder per sekund (FPS):</strong> Ställ in hur snabbt din video spelas upp. Standarden är 16 FPS, men du kan gå upp till 16 för en snabbare uppspelning.</li>
+        <li><strong>Interpolationsmetod:</strong> Välj hur bilderna blandas ihop. Standarden är "lerp" (linjär interpolation), men du kan också använda "slerp" (sferisk linjär interpolation) för olika effekter.</li>
+        <li><strong>Klipp Hoppa:</strong> Hoppa över vissa lager för en annan videostil. Du kan hoppa över upp till 2 lager, eller lämna det tomt för standardbeteendet.</li>
+    </ul>
+
+    <p>Kom ihåg, AiCasso är ganska smart! Du behöver inte få varje detalj perfekt eller använda korrekt grammatik. Beskriv bara vad du vill ha, så gör AiCasso resten. Ha kul med att skapa dina videor!</p>
+
+</body>
+</html>

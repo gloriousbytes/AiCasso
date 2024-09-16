@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Průvodce funkcí Headshot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Průvodce používáním funkce Headshot</h2>
+    <p>Se funkcí Headshot v AiCasso můžete vytvářet úžasné a jedinečné portréty jednoduše tím, že popíšete, co chcete. Je to ideální pro vytváření ohromujících obrázků, ať už chcete klidnou scénu, epického válečníka nebo cokoliv jiného, co si vaše představivost vymyslí!</p>
+
+    <h3>Jak to funguje:</h3>
+    
+    <div class="example">
+        <strong>Vstupní obrázek:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+        </div>
+        <strong>Výzva 1:</strong>
+        <p>"Muž ve sněhu"</p>
+        <strong>Výsledek 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+        </div>
+        <strong>Výzva 2:</strong>
+        <p>"Válečník v lese, použijte střední vysokou škálu jako 78% z tohoto"</p>
+        <strong>Výsledek 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Volitelné parametry</h3>
+    <p>Chcete přidat trochu více stylu nebo kontroly nad vašimi generovanými headshoty? Zde jsou některé skvělé možnosti, které můžete upravit:</p>
+
+    <ul>
+        <li><strong>Negativní výzva:</strong> Zde můžete říct AiCasso, co <em>nechcete</em> vidět na obrázku. Například, pokud nechcete žádné pozadí, můžete to zde zmínit. Pokud to necháte prázdné, AiCasso se zaměří pouze na to, co chcete.</li>
+        <li><strong>Počet kroků denoisingu:</strong> To ovlivňuje, jak hladký a jemný obličej vypadá. Můžete si vybrat mezi 21, 31 nebo 41 kroky, přičemž 41 je výchozí. Více kroků obvykle znamená čistší a vylepšený výsledek.</li>
+        <li><strong>Škála vedení:</strong> To je jako dát AiCasso malý dodatečný impuls, aby zůstalo věrné vašemu popisu. Škála se pohybuje od 1 do 20, přičemž 10 je výchozí. Vyšší čísla znamenají, že AiCasso se bude více držet toho, co popisujete.</li>
+        <li><strong>S škála:</strong> To upravuje strukturu obličeje. Je to trochu technické, ale v podstatě to mění, jak silné nebo jemné jsou rysy obličeje. Výchozí hodnota je 1.0 a můžete jít kdekoli od 0.0 do 2.0 v závislosti na vzhledu, který hledáte.</li>
+    </ul>
+
+    <p>Pamatujte, že tyto parametry jsou zcela volitelné. AiCasso je docela shovívavé, takže nemusíte být super přesní nebo gramaticky správní. Jen popište, co chcete, svými vlastními slovy, a AiCasso udělá kouzlo. Bavte se při vytváření svých headshotů!</p>
+
+</body>
+</html>

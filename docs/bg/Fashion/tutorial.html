@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ръководство за функцията Fashion Generation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Ръководство за използване на функцията Fashion Generation</h2>
+    <p>Функцията Fashion Generation в AiCasso ви позволява да облечете някого в конкретен тоалет, като риза, рокля или панталони. Просто опишете какво искате и наблюдавайте как AiCasso прилага облеклото на човека на изображението.</p>
+
+    <h3>Как работи:</h3>
+    
+    <div class="example">
+        <strong>Вход 1 - Изображение на човек:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+        </div>
+        <strong>Вход 2 - Облекло:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+        </div>
+        <strong>Подсказка:</strong>
+        <p>"Мъж, носещ риза"</p>
+        <strong>Резултат:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Допълнителни параметри</h3>
+    <p>Ако искате да добавите собствен стил или да се уверите, че резултатът е точно такъв, какъвто искате, можете да настроите тези параметри:</p>
+
+    <ul>
+        <li><strong>Негативна подсказка:</strong> Ако има нещо, което <em>не</em> искате в изображението, просто го споменете тук. Оставете го празно, ако нямате нищо против каквото AiCasso предложи.</li>
+        <li><strong>Тип плат:</strong> Кажете на AiCasso дали се фокусирате върху <em>горната част на тялото</em>, <em>долната част на тялото</em> или <em>рокли</em>. Ако не сте сигурни, по подразбиране е горната част на тялото.</li>
+        <li><strong>Брой стъпки за намаляване на шума:</strong> Това определя колко гладко и полиран изглежда изображението. Можете да изберете между 21, 31 или 41 стъпки, като 21 е по подразбиране. Повече стъпки обикновено означават по-изтънчен вид.</li>
+        <li><strong>Мащаб на насочване:</strong> Това помага на изображението да се придържа близо до вашето описание. Можете да го зададете от 1 до 20, като 7 е по подразбиране. По-високите числа означават, че AiCasso ще следва вашата подсказка по-близо.</li>
+    </ul>
+
+    <p>Запомнете, тези настройки са по избор! AiCasso е доста умен и може да разбере какво имате предвид, дори ако не получите всеки детайл перфектно. Просто се забавлявайте и оставете креативността си да тече!</p>
+
+</body>
+</html>

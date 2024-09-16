@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ഫാഷൻ ജനറേഷൻ ഫീച്ചർ ഗൈഡ്</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>ഫാഷൻ ജനറേഷൻ ഫീച്ചർ ഉപയോഗിക്കുന്നതിന്റെ ഗൈഡ്</h2>
+    <p>AiCasso-യിലെ ഫാഷൻ ജനറേഷൻ ഫീച്ചർ നിങ്ങളെ ഒരു വ്യക്തിയെ ഒരു പ്രത്യേക വസ്ത്രത്തിൽ, ഉദാഹരണത്തിന്, ഷർട്ട്, വസ്ത്രം, അല്ലെങ്കിൽ പാന്റ്സ് ധരിക്കാൻ അനുവദിക്കുന്നു. നിങ്ങൾക്ക് എന്ത് വേണമെന്ന് വിവരണം നൽകുക, AiCasso ചിത്രത്തിലെ വ്യക്തിക്ക് വസ്ത്രം എങ്ങനെ പ്രയോഗിക്കുന്നുവെന്ന് കാണുക.</p>
+
+    <h3>ഇത് എങ്ങനെ പ്രവർത്തിക്കുന്നു:</h3>
+    
+    <div class="example">
+        <strong>ഇൻപുട്ട് 1 - വ്യക്തിയുടെ ചിത്രം:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+        </div>
+        <strong>ഇൻപുട്ട് 2 - വസ്ത്രത്തിന്റെ ഇനം:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+        </div>
+        <strong>പ്രോംപ്റ്റ്:</strong>
+        <p>"ഷർട്ട് ധരിച്ച ആളു"</p>
+        <strong>ഫലനം:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>ഐച്ഛിക പാരാമീറ്ററുകൾ</h3>
+    <p>നിങ്ങളുടെ സ്വന്തം ശൈലി ചേർക്കാൻ അല്ലെങ്കിൽ ഫലനം ശരിയായ രീതിയിൽ ഉണ്ടാക്കാൻ നിങ്ങൾക്ക് ഈ ക്രമീകരണങ്ങൾ മാറ്റാൻ കഴിയും:</p>
+
+    <ul>
+        <li><strong>നെഗറ്റീവ് പ്രോംപ്റ്റ്:</strong> ചിത്രത്തിൽ നിങ്ങൾ <em>ഇല്ലാത്ത</em> എന്തെങ്കിലും ഉണ്ടെങ്കിൽ, ഇത് ഇവിടെ പരാമർശിക്കുക. AiCasso എന്തെങ്കിലും വരുത്തുന്നതിൽ നിങ്ങൾക്ക് എളുപ്പമാണ് എങ്കിൽ ഇത് ശൂന്യമായി വിടുക.</li>
+        <li><strong>വസ്ത്രത്തിന്റെ ഇനം:</strong> AiCasso-യെ <em>മുകളിൽ</em>, <em>കീഴിൽ</em>, അല്ലെങ്കിൽ <em>വസ്ത്രങ്ങൾ</em> എന്നതിൽ നിങ്ങൾ ശ്രദ്ധിക്കുന്നുവെന്ന് പറയുക. നിങ്ങൾക്ക് ഉറപ്പില്ലെങ്കിൽ, ഇത് മുകളിൽ默认为。</li>
+        <li><strong>ഡിനോയിസിംഗ് ഘട്ടങ്ങളുടെ എണ്ണം:</strong> ചിത്രം എത്രത്തോളം മൃദുവായും നന്നായും കാണപ്പെടുന്നുവെന്ന് ഇത് തീരുമാനിക്കുന്നു. 21, 31, അല്ലെങ്കിൽ 41 ഘട്ടങ്ങൾക്കിടയിൽ തിരഞ്ഞെടുക്കാം, 21默认为。</li>
+        <li><strong>ഗൈഡൻസ് സ്കെയിൽ:</strong> നിങ്ങളുടെ വിവരണത്തിന് ചിത്രം അടുത്ത് നിലനിര്‍ത്താൻ ഇത് സഹായിക്കുന്നു. 1 മുതൽ 20 വരെ ഇത് ക്രമീകരിക്കാം, 7默认为。 ഉയർന്ന നമ്പറുകൾ AiCasso നിങ്ങളുടെ പ്രോംപ്റ്റ് കൂടുതൽ അടുത്ത് പിന്തുടരാൻ അർത്ഥമാക്കുന്നു。</li>
+    </ul>
+
+    <p>ഈ ക്രമീകരണങ്ങൾ ഐച്ഛികമാണ് എന്ന് ഓർക്കുക! AiCasso വളരെ ബുദ്ധിമുട്ടാണ്, നിങ്ങൾ എല്ലാ വിശദാംശങ്ങളും ശരിയായി നൽകുന്നില്ലെങ്കിൽ പോലും അത് നിങ്ങൾ എന്ത് അർത്ഥമാക്കുന്നു എന്ന് കണ്ടെത്താൻ കഴിയും. വെറും രസിക്കുക, നിങ്ങളുടെ സൃഷ്ടിപ്രവാഹം അനുവദിക്കുക!</p>
+
+</body>
+</html>

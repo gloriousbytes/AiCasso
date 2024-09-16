@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videó Generálás Funkció Útmutató</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>A Videó Generálás Funkció Használati Útmutatója</h2>
+    <p>A Videó Generálás funkció az AiCasso-ban lehetővé teszi, hogy videókat készítsen egyszerűen azzal, hogy leírja, mit szeretne látni. Csak írja le az ötletét, és az AiCasso életre kelti azt egy videóban!</p>
+
+    <h3>Hogyan Működik:</h3>
+    
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Egy 3D animált kakas egy mezőn, teljesen egyedül, eszik és boldog. Készítsen belőle egy portré videót 50 zajcsökkentési lépéssel."</p>
+        <strong>Eredmény:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Egy kakas karikatúra egy mezőn tájképi méretekben."</p>
+        <strong>Eredmény:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Egy kakas egy mezőn."</p>
+        <strong>Eredmény:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Egy kakas, aki teljesen egyedül van a mezőn. Adj neki természetes érzést."</p>
+        <strong>Eredmény:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>További Opciók</h3>
+    <p>Szeretné finomhangolni a videóját? Íme néhány beállítás, amivel játszhat:</p>
+
+    <ul>
+        <li><strong>Képkockák Száma:</strong> Válassza ki, hány képkocka (egyedi kép) legyen a videójában. Maximum 25 képkockát választhat, az alapértelmezett 16.</li>
+        <li><strong>Zajcsökkentési Lépések Száma:</strong> Ez határozza meg, mennyire sima lesz a videója. Minél több lépés, annál simább a videó. Maximum 50 lépést állíthat be, az alapértelmezett 20.</li>
+        <li><strong>Irányítási Skála:</strong> Ez segít, hogy a videó szorosan kövesse a leírását. Minél magasabb a szám, annál inkább követi a promptját. A tartomány 0-tól 8-ig terjed, az alapértelmezett 8.</li>
+        <li><strong>Réteg Kihagyás:</strong> Kihagyhat bizonyos rétegeket egy másik videóstílus érdekében. Alapértelmezés szerint nincs kihagyott réteg, de maximum 2-t kihagyhat.</li>
+        <li><strong>Felbontás Növelése Szélesség és Magasság:</strong> A felbontás módosításával nagyobbá teheti a videóját. Az alapértelmezett 1024x1024 pixel, de ezt az igényei szerint módosíthatja.</li>
+        <li><strong>Felbontás Növelés Erőssége:</strong> Ez változtatja meg, mennyire állítja be a videóját a felbontás növelésekor. Az alapértelmezett 1, de módosíthatja, hogy több különbséget lásson.</li>
+        <li><strong>Felbontás Növelés Irányítási Skála:</strong> Ez irányítja a felbontás növelési folyamatot, a tartomány 0-tól 8-ig terjed, és az alapértelmezett 8.</li>
+        <li><strong>Felbontás Növelés Lépések Száma:</strong> A videó felbontásának növeléséhez szükséges lépések száma. Minél több lépés, annál simább a felbontás növelése, maximum 50 és alapértelmezett 20.</li>
+        <li><strong>Fejlettebb Mintavételezés:</strong> Szeretne egy finomabb videót? Kapcsolja be ezt. Alapértelmezés szerint ki van kapcsolva.</li>
+        <li><strong>Fejlettebb Mintavételezés Mag:</strong> Ezt használhatja, hogy minden alkalommal ugyanazt a videót generálja a fejlettebb mintavételezéssel. Opcionális és alapértelmezés szerint ki van kapcsolva.</li>
+        <li><strong>Képkockák másodpercenként (FPS):</strong> Állítsa be a videó sebességét. Az alapértelmezett 16 FPS, de ezt 16-ra módosíthatja.</li>
+        <li><strong>Videó Modell:</strong> Válassza ki a videó stílusát. Opciók közé tartozik:
+            <ul>
+                <li><strong>Alapértelmezett:</strong> Egy standard videó modell.</li>
+                <li><strong>Karikatúra:</strong> Egy karikatúrás videóstílus.</li>
+                <li><strong>Természetes:</strong> Egy valósághű, természetes megjelenésű videóstílus.</li>
+                <li><strong>Animált 3D:</strong> Egy 3D animált videóstílus.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Ne feledje, ezek a beállítások opcionálisak. A Videó Generálás funkció remekül működik egy egyszerű leírással is, így bátran kísérletezzen, és nézze meg, mit tud létrehozni!</p>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przewodnik po funkcji przekształcania obrazu w wideo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Przewodnik po korzystaniu z funkcji przekształcania obrazu w wideo</h2>
+    <p>Funkcja przekształcania obrazu w wideo w AiCasso pozwala na zamianę pojedynczego obrazu w dynamiczne wideo. Po prostu opisz, co chcesz zobaczyć w swoim wideo, a AiCasso to zrealizuje!</p>
+
+    <h3>Jak to działa:</h3>
+    
+    <div class="example">
+        <strong>Obraz wejściowy:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>Podpowiedź 1:</strong>
+        <p>"Słodki szczeniak w parku"</p>
+        <strong>Wynik 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>Podpowiedź 2:</strong>
+        <p>"Słodki szczeniak w parku, użyj maksymalnej liczby klatek na sekundę, maksymalnych klatek i maksymalnego ruchu"</p>
+        <strong>Wynik 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Opcjonalne parametry</h3>
+    <p>Jeśli chcesz być bardziej szczegółowy w swoim wideo, oto kilka ustawień, które możesz dostosować:</p>
+
+    <ul>
+        <li><strong>Negatywna podpowiedź:</strong> Opisz, czego *nie* chcesz w wideo. Jeśli pozostawisz puste, AiCasso skupi się tylko na pozytywnej podpowiedzi.</li>
+        <li><strong>Liczba klatek:</strong> Wybierz, ile klatek (pojedynczych obrazów) ma mieć twoje wideo. Możesz wybrać do 25 klatek, przy domyślnej wartości 16.</li>
+        <li><strong>Kroki odszumiania:</strong> To kontroluje, jak gładkie będzie twoje wideo. Więcej kroków oznacza czystsze wideo. Możesz ustawić do 50 kroków, przy domyślnej wartości 20.</li>
+        <li><strong>Skala przewodnia:</strong> To pomaga wideo ściśle trzymać się twojego opisu. Zakres wynosi od 1.0 do 8.0, a ty możesz dostosować wartości początkowe i końcowe, aby kierować ewolucją wideo.</li>
+        <li><strong>Ruch:</strong> Dostosuj, ile ruchu ma być w twoim wideo. Wyższa wartość oznacza więcej akcji. Zakres wynosi od 0 do 127, przy domyślnej wartości 60.</li>
+        <li><strong>Siła augmentacji szumów:</strong> Dodaj trochę szumu do swojego wideo, aby nadać mu bardziej teksturowany wygląd. Zakres wynosi od 0 do 1, przy domyślnej wartości 0.</li>
+        <li><strong>Klatki na sekundę (FPS):</strong> Ustaw, jak szybko ma odtwarzać się twoje wideo. Domyślnie to 16 FPS, ale możesz ustawić do 16 dla szybszego odtwarzania.</li>
+        <li><strong>Metoda interpolacji:</strong> Wybierz, jak klatki są łączone. Domyślnie to "lerp" (interpolacja liniowa), ale możesz również użyć "slerp" (sferyczna interpolacja liniowa) dla różnych efektów.</li>
+        <li><strong>Pomijanie klipów:</strong> Pomijaj niektóre warstwy dla innego stylu wideo. Możesz pominąć do 2 warstw lub pozostawić puste dla domyślnego zachowania.</li>
+    </ul>
+
+    <p>Pamiętaj, AiCasso jest dość inteligentny! Nie musisz idealnie opisywać każdego szczegółu ani używać poprawnej gramatyki. Po prostu opisz, co chcesz, a AiCasso zrobi resztę. Baw się dobrze, tworząc swoje wideo!</p>
+
+</body>
+</html>

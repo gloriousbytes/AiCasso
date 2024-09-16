@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuvasta Videoksi -ominaisuuden opas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Opas Kuvasta Videoksi -ominaisuuden käyttöön</h2>
+    <p>Kuvasta Videoksi -ominaisuus AiCasso:ssa antaa sinun muuttaa yhden kuvan dynaamiseksi videoksi. Kuvaile vain, mitä haluat nähdä videossasi, ja AiCasso toteuttaa sen!</p>
+
+    <h3>Kuinka se toimii:</h3>
+    
+    <div class="example">
+        <strong>Syötekuva:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>Kehoitus 1:</strong>
+        <p>"Söpö pentu puistossa"</p>
+        <strong>Tulos 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>Kehoitus 2:</strong>
+        <p>"Söpö pentu puistossa, käytä maksimaalista FPS:ää, maksimaalista kehystä ja maksimaalista liikettä"</p>
+        <strong>Tulos 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Valinnaiset Parametrit</h3>
+    <p>Jos haluat tarkentaa videotasi, tässä on joitakin asetuksia, joita voit säätää:</p>
+
+    <ul>
+        <li><strong>Negatiivinen kehoitus:</strong> Kuvaile, mitä et *halua* videossa. Jos jätät sen tyhjäksi, AiCasso keskittyy vain positiiviseen kehotukseen.</li>
+        <li><strong>Kehysten määrä:</strong> Valitse, kuinka monta kehystä (yksittäistä kuvaa) videollasi on. Voit valita jopa 25 kehystä, oletusarvo on 16.</li>
+        <li><strong>Melunpoistovaiheet:</strong> Tämä säätelee, kuinka sujuvalta videosi näyttää. Enemmän vaiheita tarkoittaa puhtaampaa videota. Voit asettaa jopa 50 vaihetta, oletusarvo on 20.</li>
+        <li><strong>Ohjausasteikko:</strong> Tämä auttaa videota pysymään tiiviisti kuvauksessasi. Vaihtoehto on 1.0 - 8.0, ja voit säätää alku- ja loppuarvoja ohjataksesi, miten video kehittyy.</li>
+        <li><strong>Liike:</strong> Säädä, kuinka paljon liikettä videossasi on. Korkeampi arvo tarkoittaa enemmän toimintaa. Vaihtoehto on 0 - 127, oletusarvo on 60.</li>
+        <li><strong>Melun lisäyksen voimakkuus:</strong> Lisää hieman melua videoosi antaaksesi sille tekstuurimaisemman ilmeen. Vaihtoehto on 0 - 1, oletusarvo on 0.</li>
+        <li><strong>Kehykset sekunnissa (FPS):</strong> Aseta, kuinka nopeasti videosi toistuu. Oletusarvo on 16 FPS, mutta voit nostaa sen 16:een nopeampaa toistoa varten.</li>
+        <li><strong>Interpolaatio menetelmä:</strong> Valitse, miten kehykset sekoitetaan yhteen. Oletusarvo on "lerp" (lineaarinen interpolaatio), mutta voit myös käyttää "slerp" (pallomainen lineaarinen interpolaatio) erilaisiin vaikutuksiin.</li>
+        <li><strong>Leikkausohitus:</strong> Ohita tietyt kerrokset erilaisen videotyylin saavuttamiseksi. Voit ohittaa jopa 2 kerrosta tai jättää sen tyhjäksi oletuskäyttäytymistä varten.</li>
+    </ul>
+
+    <p>Muista, että AiCasso on melko älykäs! Sinun ei tarvitse saada jokaista yksityiskohtaa täydelliseksi tai käyttää oikeaa kielioppia. Kuvaile vain, mitä haluat, ja AiCasso hoitaa loput. Hauskaa videon luomista!</p>
+
+</body>
+</html>

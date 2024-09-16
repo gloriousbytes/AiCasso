@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Újra világítási funkció útmutató</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Útmutató az újra világítási funkció használatához</h2>
+    <p>Az AiCasso újra világítási funkciója szuper menő! Csak néhány szóval megváltoztathatod a képeid világítását. Szeretnéd, hogy a nap hátul legyen, vagy lágy fény oldalról? Semmi probléma! Csak írd le, és az AiCasso elintézi a többit.</p>
+
+    <h3>Hogyan működik:</h3>
+    
+    <div class="example">
+        <strong>Bemeneti kép:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+        </div>
+        <strong>Használt prompt:</strong>
+        <p>"Úgy csináld, hogy a nap hátul legyen"</p>
+        <strong>Eredmény:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Opcionális finomítások</h3>
+    <p>Ha kalandos kedvedben vagy, és szeretnél egy kicsit több stílust adni az újra világításnak, itt van néhány dolog, amit módosíthatsz:</p>
+
+    <ul>
+        <li><strong>Negatív prompt:</strong> El szeretnél kerülni valamit? Megmondhatod az AiCasso-nak, hogy mit <em>ne</em> tartalmazzon. De ne aggódj, ha ezt üresen hagyod, az AiCasso csak arra fog összpontosítani, amit szeretnél.</li>
+        <li><strong>Világítás iránya:</strong> Megadhatod, hogy honnan jöjjön a fény—balról, jobbról, felül, alul, vagy akár egyáltalán ne is legyen. Alapértelmezés szerint a fény balról jön.</li>
+        <li><strong>Útmutatási skála:</strong> Ez segít az AiCasso-nak, hogy ragaszkodjon a leírásodhoz. A skála 1-től 20-ig terjed, a 7 az alapértelmezett. Minél magasabb a szám, annál inkább ragaszkodik az AiCasso a promptodhoz.</li>
+        <li><strong>Magas felbontású skála:</strong> Szeretnéd, ha a képed kiemelkedne? Ez szabályozza a tisztaságot. Az alapértelmezett 1.5, de beállíthatod 1.0-tól 2.0-ig, hogy élesebb képet kapj.</li>
+        <li><strong>Zajcsökkentési szintek:</strong> Két szint van—alacsony felbontású és magas felbontású. Ezek szabályozzák, hogy a végső kép mennyire sima vagy részletes legyen. Az alacsony felbontású zajcsökkentési szintet 0.0 és 1.0 között állíthatod be (alapértelmezett: 0.9), a magas felbontásút pedig 0.0 és 1.0 között (alapértelmezett: 0.5).</li>
+        <li><strong>Lépések száma:</strong> Ez az a lépések száma, amelyet az AiCasso tesz a képed csiszolásához. Az alapértelmezett 50, de 20-tól 50 lépésig mehetsz.</li>
+    </ul>
+
+    <p>Ne feledd, ezek a finomítások teljesen opcionálisak! Az AiCasso elég jó abban, hogy kitalálja, mit szeretnél, szóval csak írd le a víziódat a saját szavaiddal, és ő megcsinálja a varázslatot. Nincs szükség tökéletes nyelvtanra vagy részletekre—csak szórakozz, és nézd meg, mit tudsz létrehozni!</p>
+
+</body>
+</html>

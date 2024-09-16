@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ویڈیو بنانے کی خصوصیت کی رہنمائی</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>ویڈیو بنانے کی خصوصیت کے استعمال کی رہنمائی</h2>
+    <p>AiCasso میں ویڈیو بنانے کی خصوصیت آپ کو صرف یہ بیان کرکے ویڈیوز بنانے دیتی ہے کہ آپ کیا دیکھنا چاہتے ہیں۔ بس اپنے خیال کو ٹائپ کریں، اور AiCasso اسے ایک ویڈیو میں زندہ کرے گا!</p>
+
+    <h3>یہ کیسے کام کرتا ہے:</h3>
+    
+    <div class="example">
+        <strong>پرومپٹ:</strong>
+        <p>"ایک 3D متحرک مرغی ایک کھیت میں اکیلی، کھا رہی ہے اور خوش ہے۔ اسے 50 ڈی نوائزنگ مراحل کے ساتھ ایک پورٹریٹ ویڈیو بنائیں۔"</p>
+        <strong>نتیجہ:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>پرومپٹ:</strong>
+        <p>"ایک کارٹون مرغی ایک کھیت میں لینڈ اسکیپ کے ابعاد میں۔"</p>
+        <strong>نتیجہ:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>پرومپٹ:</strong>
+        <p>"ایک کھیت میں ایک مرغی۔"</p>
+        <strong>نتیجہ:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>پرومپٹ:</strong>
+        <p>"ایک مرغی جو کھیت میں اکیلی ہے۔ اسے قدرتی احساس دیں۔"</p>
+        <strong>نتیجہ:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>اضافی اختیارات</h3>
+    <p>کیا آپ اپنی ویڈیو کو بہتر بنانا چاہتے ہیں؟ یہاں کچھ سیٹنگز ہیں جن کے ساتھ آپ کھیل سکتے ہیں:</p>
+
+    <ul>
+        <li><strong>فریم کی تعداد:</strong> منتخب کریں کہ آپ کی ویڈیو میں کتنے فریم (انفرادی تصاویر) ہوں گے۔ آپ 25 فریم تک جا سکتے ہیں، جبکہ 16 ڈیفالٹ ہے۔</li>
+        <li><strong>ڈی نوائزنگ مراحل کی تعداد:</strong> یہ کنٹرول کرتا ہے کہ آپ کی ویڈیو کتنی ہموار نظر آتی ہے۔ زیادہ مراحل کا مطلب ہے ہموار ویڈیوز۔ آپ 50 مراحل تک سیٹ کر سکتے ہیں، جبکہ 20 ڈیفالٹ ہے۔</li>
+        <li><strong>رہنمائی کا پیمانہ:</strong> یہ ویڈیو کو آپ کی وضاحت کے قریب رکھنے میں مدد کرتا ہے۔ جتنا زیادہ نمبر ہوگا، اتنا ہی یہ آپ کے پرومپٹ کی پیروی کرے گا۔ رینج 0 سے 8 ہے، جبکہ 8 ڈیفالٹ ہے۔</li>
+        <li><strong>کلپ چھوڑیں:</strong> مختلف ویڈیو طرز کے لیے کچھ تہوں کو چھوڑ دیں۔ ڈیفالٹ کے طور پر، کوئی تہیں نہیں چھوڑیں جاتی ہیں، لیکن آپ 2 تک چھوڑ سکتے ہیں۔</li>
+        <li><strong>چوڑائی اور اونچائی کو بڑھانا:</strong> آپ اپنی ویڈیو کو ریزولوشن کو ایڈجسٹ کرکے بڑا کر سکتے ہیں۔ ڈیفالٹ 1024x1024 پکسلز ہے، لیکن آپ اسے اپنی ضروریات کے مطابق ایڈجسٹ کر سکتے ہیں۔</li>
+        <li><strong>بڑھانے کی طاقت:</strong> یہ تبدیل کرتا ہے کہ آپ کی ویڈیو کو بڑھانے پر کتنی تبدیلیاں آتی ہیں۔ ڈیفالٹ 1 ہے، لیکن آپ اسے مزید فرق دیکھنے کے لیے ایڈجسٹ کر سکتے ہیں۔</li>
+        <li><strong>بڑھانے کی رہنمائی کا پیمانہ:</strong> یہ بڑھانے کے عمل کی رہنمائی کرتا ہے، رینج 0 سے 8 ہے، اور ڈیفالٹ 8 ہے۔</li>
+        <li><strong>بڑھانے کے استدلال کے مراحل:</strong> ویڈیو کو بڑھانے کے لیے اٹھائے گئے مراحل کی تعداد۔ زیادہ مراحل ہموار بڑھانے کے لیے ہوتے ہیں، زیادہ سے زیادہ 50 اور ڈیفالٹ 20 ہے۔</li>
+        <li><strong>بہتر نمونہ سازی:</strong> کیا آپ ایک زیادہ بہتر ویڈیو چاہتے ہیں؟ اسے آن کریں۔ یہ ڈیفالٹ کے طور پر بند ہے۔</li>
+        <li><strong>بہتر نمونہ سازی کا بیج:</strong> اس کا استعمال کریں تاکہ ہر بار بہتر نمونہ سازی کے ساتھ ایک ہی ویڈیو تیار کی جا سکے۔ یہ اختیاری ہے اور ڈیفالٹ کے طور پر بند ہے۔</li>
+        <li><strong>فی سیکنڈ فریم (FPS):</strong> اپنی ویڈیو کی رفتار طے کریں۔ ڈیفالٹ 16 FPS ہے، لیکن آپ اسے 16 تک ایڈجسٹ کر سکتے ہیں۔</li>
+        <li><strong>ویڈیو ماڈل:</strong> اپنی ویڈیو کا طرز منتخب کریں۔ اختیارات میں شامل ہیں:
+            <ul>
+                <li><strong>ڈیفالٹ:</strong> ایک معیاری ویڈیو ماڈل۔</li>
+                <li><strong>کارٹون:</strong> ایک کارٹون طرز کی ویڈیو۔</li>
+                <li><strong>قدرتی:</strong> ایک حقیقت پسندانہ، قدرتی نظر آنے والی ویڈیو طرز۔</li>
+                <li><strong>متحرک 3D:</strong> ایک 3D متحرک ویڈیو طرز۔</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>یاد رکھیں، یہ سیٹنگز اختیاری ہیں۔ ویڈیو بنانے کی خصوصیت صرف ایک سادہ وضاحت کے ساتھ بہترین کام کرتی ہے، لہذا تجربہ کرنے میں ہچکچاہٹ محسوس نہ کریں اور دیکھیں کہ آپ کیا تخلیق کر سکتے ہیں!</p>
+
+</body>
+</html>

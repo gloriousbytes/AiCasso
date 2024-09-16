@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handleiding voor de Video Genereren Functie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Handleiding voor het Gebruik van de Video Genereren Functie</h2>
+    <p>Met de Video Genereren functie in AiCasso kun je video's maken door simpelweg te beschrijven wat je wilt zien. Typ je idee uit en AiCasso brengt het tot leven in een video!</p>
+
+    <h3>Hoe het Werkt:</h3>
+    
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Een 3D-geanimeerde haan in een veld helemaal alleen, etend en gelukkig. Maak er een portretvideo van met 50 denoising stappen."</p>
+        <strong>Resultaat:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Een cartoon van een haan op een veld in landschapsdimensies."</p>
+        <strong>Resultaat:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Een haan op een veld."</p>
+        <strong>Resultaat:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Een haan die helemaal alleen in het veld is. Geef het een natuurlijke uitstraling."</p>
+        <strong>Resultaat:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Extra Opties</h3>
+    <p>Wil je je video verfijnen? Hier zijn enkele instellingen waarmee je kunt spelen:</p>
+
+    <ul>
+        <li><strong>Aantal Frames:</strong> Kies hoeveel frames (individuele beelden) je video zal hebben. Je kunt tot 25 frames gaan, met 16 als standaard.</li>
+        <li><strong>Aantal Denoising Stappen:</strong> Dit bepaalt hoe soepel je video eruitziet. Meer stappen betekenen soepelere video's. Je kunt tot 50 stappen instellen, met 20 als standaard.</li>
+        <li><strong>Guidance Scale:</strong> Dit helpt de video nauwkeurig aan je beschrijving te houden. Hoe hoger het getal, hoe meer het je prompt volgt. Het bereik is 0 tot 8, met 8 als standaard.</li>
+        <li><strong>Clip Skip:</strong> Sla bepaalde lagen over voor een andere videostijl. Standaard worden er geen lagen overgeslagen, maar je kunt tot 2 lagen overslaan.</li>
+        <li><strong>Upscale Breedte en Hoogte:</strong> Je kunt je video groter maken door de resolutie aan te passen. De standaard is 1024x1024 pixels, maar je kunt dit aanpassen aan je behoeften.</li>
+        <li><strong>Upscale Sterkte:</strong> Dit verandert hoeveel je video aanpast bij het opschalen. De standaard is 1, maar je kunt het aanpassen om meer verschillen te zien.</li>
+        <li><strong>Upscale Guidance Scale:</strong> Dit begeleidt het opschalingsproces, met een bereik van 0 tot 8, en een standaard van 8.</li>
+        <li><strong>Upscale Inference Stappen:</strong> Het aantal stappen dat wordt genomen om de video op te schalen. Meer stappen zorgen voor soepelere opschaling, met een maximum van 50 en een standaard van 20.</li>
+        <li><strong>Verbeterde Sampling:</strong> Wil je een verfijndere video? Zet dit aan. Het is standaard uitgeschakeld.</li>
+        <li><strong>Verbeterde Sampling Seed:</strong> Gebruik dit om elke keer dezelfde video te genereren met verbeterde sampling. Het is optioneel en standaard uitgeschakeld.</li>
+        <li><strong>Frames per Seconde (FPS):</strong> Stel de snelheid van je video in. De standaard is 16 FPS, maar je kunt het aanpassen tot 16.</li>
+        <li><strong>Videomodel:</strong> Kies de stijl van je video. Opties zijn onder andere:
+            <ul>
+                <li><strong>Standaard:</strong> Een standaard videomodel.</li>
+                <li><strong>Cartoon:</strong> Een cartoonachtige videostijl.</li>
+                <li><strong>Natuurlijk:</strong> Een realistische, natuurlijk uitziende videostijl.</li>
+                <li><strong>Geanimeerd 3D:</strong> Een 3D-geanimeerde videostijl.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Vergeet niet, deze instellingen zijn optioneel. De Video Genereren functie werkt prima met alleen een eenvoudige beschrijving, dus voel je vrij om te experimenteren en te zien wat je kunt creëren!</p>
+
+</body>
+</html>

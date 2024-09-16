@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fejképfunkció Útmutató</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>A Fejképfunkció Használati Útmutatója</h2>
+    <p>Az AiCasso fejképfunkciójával lenyűgöző és egyedi portrékat készíthet, csupán azzal, hogy leírja, mit szeretne. Tökéletes lenyűgöző képek készítésére, legyen szó egy nyugodt tájról, egy epikus harcosról, vagy bármi másról, amit a képzelete megálmodik!</p>
+
+    <h3>Hogyan Működik:</h3>
+    
+    <div class="example">
+        <strong>Bemeneti Kép:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+        </div>
+        <strong>Prompt 1:</strong>
+        <p>"Egy férfi a hóban"</p>
+        <strong>Eredmény 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+        </div>
+        <strong>Prompt 2:</strong>
+        <p>"Egy harcos az erdőben, használj közepes magas skálát, mint 78% ebből"</p>
+        <strong>Eredmény 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Opcionális Paraméterek</h3>
+    <p>Szeretnél egy kis extra stílust vagy kontrollt adni a generált fejképekhez? Itt van néhány menő opció, amit módosíthatsz:</p>
+
+    <ul>
+        <li><strong>Negatív Prompt:</strong> Itt mondhatod el az AiCasso-nak, hogy mit <em>nem</em> szeretnél látni a képen. Például, ha nem szeretnél háttérelemeket, azt itt megemlítheted. Ha ezt üresen hagyod, az AiCasso csak arra fog összpontosítani, amit szeretnél.</li>
+        <li><strong>A Denoising Lépések Száma:</strong> Ez szabályozza, hogy mennyire sima és finom legyen az arc. Választhatsz 21, 31 vagy 41 lépés között, a 41 a default. Több lépés általában tisztább, polírozottabb eredményt jelent.</li>
+        <li><strong>Útmutatási Skála:</strong> Ez olyan, mintha egy kis extra lökést adnál az AiCasso-nak, hogy hű maradjon a leírásodhoz. A skála 1-től 20-ig terjed, a 10 a default. A magasabb számok azt jelentik, hogy az AiCasso közelebb marad ahhoz, amit leírsz.</li>
+        <li><strong>S Skála:</strong> Ez az arc struktúráját állítja be. Kicsit technikai, de lényegében azt állítja be, hogy mennyire erősek vagy lágyak az arcvonások. Az alapérték 1.0, és bárhova elmehetsz 0.0-tól 2.0-ig, attól függően, hogy milyen megjelenést szeretnél.</li>
+    </ul>
+
+    <p>Ne feledd, ezek a paraméterek teljesen opcionálisak. Az AiCasso elég elnéző, így nem kell szuper pontosnak vagy grammatikailag helyesnek lenned. Csak írd le, mit szeretnél a saját szavaiddal, és az AiCasso megcsinálja a varázslatot. Jó szórakozást a fejképek készítéséhez!</p>
+
+</body>
+</html>

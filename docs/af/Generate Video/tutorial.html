@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generering van Video Kenmerkgids</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Gids vir die Gebruik van die Generering van Video Kenmerk</h2>
+    <p>Die Generering van Video kenmerk in AiCasso laat jou toe om video's te skep deur eenvoudig te beskryf wat jy wil sien. Tik net jou idee uit, en AiCasso sal dit tot lewe bring in 'n video!</p>
+
+    <h3>Hoe Dit Werk:</h3>
+    
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"‘n 3D geanimeerde volstruis in 'n veld heeltemal alleen, eet en gelukkig wees. Maak dit 'n portretvideo met 50 denoising stappe."</p>
+        <strong>Resultaat:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"‘n Karikatuur van 'n volstruis in 'n veld in landskap dimensies."</p>
+        <strong>Resultaat:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"‘n Volstruis in 'n veld."</p>
+        <strong>Resultaat:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"‘n Volstruis wat heeltemal alleen in die veld is. Gee dit 'n natuurlike gevoel."</p>
+        <strong>Resultaat:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Bykomende Opsies</h3>
+    <p>Wil jy jou video fynstel? Hier is 'n paar instellings waarmee jy kan speel:</p>
+
+    <ul>
+        <li><strong>Aantal Raamwerke:</strong> Kies hoeveel raamwerke (individuele beelde) jou video sal hê. Jy kan tot 25 raamwerke hê, met 16 as die verstek.</li>
+        <li><strong>Aantal Denoising Stappe:</strong> Dit beheer hoe glad jou video lyk. Meer stappe beteken gladder video's. Jy kan tot 50 stappe instel, met 20 as die verstek.</li>
+        <li><strong>Rigting Skaal:</strong> Dit help die video om naby aan jou beskrywing te bly. Hoe hoër die nommer, hoe meer volg dit jou prompt. Die reeks is 0 tot 8, met 8 as die verstek.</li>
+        <li><strong>Clip Skip:</strong> Slaan sekere lae oor vir 'n ander video styl. Standaard word geen lae oorgeslaan nie, maar jy kan tot 2 oorslaan.</li>
+        <li><strong>Upscale Breedte en Hoogte:</strong> Jy kan jou video groter maak deur die resolusie aan te pas. Die verstek is 1024x1024 pixels, maar jy kan dit aanpas om aan jou behoeftes te voldoen.</li>
+        <li><strong>Upscale Krag:</strong> Dit verander hoeveel jou video aanpas wanneer dit opgeskaal word. Die verstek is 1, maar jy kan dit aanpas om meer verskille te sien.</li>
+        <li><strong>Upscale Rigting Skaal:</strong> Dit lei die opskalingsproses, met 'n reeks van 0 tot 8, en 'n verstek van 8.</li>
+        <li><strong>Upscale Inferensie Stappe:</strong> Die aantal stappe wat geneem word om die video op te skaal. Meer stappe maak vir gladder opskaling, met 'n maksimum van 50 en 'n verstek van 20.</li>
+        <li><strong>Verbeterde Monsters:</strong> Wil jy 'n meer verfynde video? Skakel dit aan. Dit is standaard afgeskakel.</li>
+        <li><strong>Verbeterde Monsters Saad:</strong> Gebruik dit om elke keer dieselfde video te genereer met verbeterde monsters. Dit is opsioneel en standaard afgeskakel.</li>
+        <li><strong>Raamwerke per Sekonde (FPS):</strong> Stel die spoed van jou video in. Die verstek is 16 FPS, maar jy kan dit tot 16 aanpas.</li>
+        <li><strong>Video Model:</strong> Kies die styl van jou video. Opsies sluit in:
+            <ul>
+                <li><strong>Standaard:</strong> 'n Standaard video model.</li>
+                <li><strong>Karikatuur:</strong> 'n Karikaturistiese video styl.</li>
+                <li><strong>Natuurlik:</strong> 'n Realistiese, natuurlike video styl.</li>
+                <li><strong>Geanimeerde 3D:</strong> 'n 3D geanimeerde video styl.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Onthou, hierdie instellings is opsioneel. Die Generering van Video kenmerk werk uitstekend met net 'n eenvoudige beskrywing, so voel vry om te eksperimenteer en te sien wat jy kan skep!</p>
+
+</body>
+</html>

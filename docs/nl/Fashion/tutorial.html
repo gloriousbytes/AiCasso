@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gids voor de Fashion Generation-functie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Gids voor het gebruik van de Fashion Generation-functie</h2>
+    <p>Met de Fashion Generation-functie in AiCasso kun je iemand in een specifieke outfit kleden, zoals een shirt, jurk of broek. Beschrijf gewoon wat je wilt, en zie hoe AiCasso het kledingstuk op de persoon in de afbeelding toepast.</p>
+
+    <h3>Hoe het werkt:</h3>
+    
+    <div class="example">
+        <strong>Input 1 - Persoon Afbeelding:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+        </div>
+        <strong>Input 2 - Kledingstuk:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+        </div>
+        <strong>Prompt:</strong>
+        <p>"Man die een shirt draagt"</p>
+        <strong>Resultaat:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Optionele Parameters</h3>
+    <p>Als je je eigen stijl wilt toevoegen of ervoor wilt zorgen dat het resultaat precies goed is, kun je deze instellingen aanpassen:</p>
+
+    <ul>
+        <li><strong>Negatieve Prompt:</strong> Als er iets is dat je <em>niet</em> in de afbeelding wilt, vermeld het dan hier. Laat het leeg als je tevreden bent met wat AiCasso bedenkt.</li>
+        <li><strong>Type Kleding:</strong> Vertel AiCasso of je je richt op het <em>bovenlichaam</em>, <em>onderlichaam</em> of <em>jurken</em>. Als je het niet zeker weet, is de standaardinstelling bovenlichaam.</li>
+        <li><strong>Aantal Denoising Stappen:</strong> Dit bepaalt hoe glad en gepolijst de afbeelding eruitziet. Je kunt kiezen tussen 21, 31 of 41 stappen, waarbij 21 de standaard is. Meer stappen betekenen meestal een verfijnder uiterlijk.</li>
+        <li><strong>Begeleidingsschaal:</strong> Dit helpt de afbeelding nauwkeurig aan je beschrijving te voldoen. Je kunt het instellen van 1 tot 20, waarbij 7 de standaard is. Hogere getallen betekenen dat AiCasso je prompt nauwkeuriger volgt.</li>
+    </ul>
+
+    <p>Vergeet niet, deze instellingen zijn optioneel! AiCasso is behoorlijk slim en kan begrijpen wat je bedoelt, zelfs als je niet elk detail perfect hebt. Heb gewoon plezier en laat je creativiteit de vrije loop!</p>
+
+</body>
+</html>

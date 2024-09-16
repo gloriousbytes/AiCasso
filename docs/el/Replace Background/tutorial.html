@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Οδηγός Χρήσης της Λειτουργίας Αντικατάστασης Φόντου</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Οδηγός Χρήσης της Λειτουργίας Αντικατάστασης Φόντου</h2>
+    <p>Η λειτουργία Αντικατάστασης Φόντου στο AiCasso είναι ιδανική όταν θέλετε να αλλάξετε το φόντο στην εικόνα σας. Είτε θέλετε απλώς να αφαιρέσετε το φόντο είτε να το αντικαταστήσετε με κάτι άλλο, το AiCasso το καθιστά πολύ εύκολο. Δεν χρειάζεται να ανησυχείτε για τεχνικά ζητήματα—απλώς περιγράψτε τι θέλετε και το AiCasso θα κάνει τα υπόλοιπα.</p>
+
+    <h3>Πώς Λειτουργεί:</h3>
+    
+    <div class="example">
+        <strong>Εικόνα Εισόδου:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+        </div>
+        <strong>Ερώτημα 1:</strong>
+        <p>"Αφαίρεσε το φόντο"</p>
+        <strong>Αποτέλεσμα 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+        </div>
+        <strong>Ερώτημα 2:</strong>
+        <p>"Αντικατάστησε το φόντο με ένα δάσος, όχι απλώς αφαίρεσέ το, με απενεργοποιημένο το alpha matting. Χρησιμοποίησε ένα όριο foreground 240, ένα όριο background 20 και ένα μέγεθος erode 5 για το alpha matting."</p>
+        <strong>Αποτέλεσμα 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Προαιρετικές Παράμετροι</h3>
+    <p>Αν θέλετε να προσθέσετε μια προσωπική πινελιά ή να ρυθμίσετε τα αποτελέσματα, εδώ είναι μερικές επιλογές που μπορείτε να πειραματιστείτε:</p>
+
+    <ul>
+        <li><strong>Μόνο Αφαίρεση:</strong> Αν θέλετε απλώς να αφαιρέσετε το φόντο και όχι να το αντικαταστήσετε με τίποτα, αυτή είναι η επιλογή σας. Είναι σαν να πατάτε ένα κουμπί καθαρού πίνακα.</li>
+        <li><strong>Alpha Matting:</strong> Αυτή είναι μια κομψή έκφραση που σημαίνει "ανάμειξη των άκρων." Όταν το ενεργοποιείτε, βοηθά να φαίνονται τα άκρα του θέματος σας πιο ομαλά και λιγότερο κομμένα. Από προεπιλογή, είναι απενεργοποιημένο.</li>
+        <li><strong>Όριο Foreground για Alpha Matting:</strong> Αυτό ελέγχει πόσο από το κύριο θέμα (όπως ένα άτομο) παραμένει ορατό κατά τη χρήση του alpha matting. Η προεπιλογή είναι 240, και μπορείτε να το ρυθμίσετε για να κάνετε τα άκρα πιο μαλακά ή πιο κοφτερά.</li>
+        <li><strong>Όριο Background για Alpha Matting:</strong> Αυτό κάνει το ίδιο με το όριο foreground αλλά για το φόντο. Η προεπιλογή είναι 20, και είναι όλα σχετικά με την επίτευξη της τέλειας ανάμειξης με το νέο φόντο.</li>
+        <li><strong>Μέγεθος Erode για Alpha Matting:</strong> Αυτό βοηθά να συρρικνωθούν λίγο τα άκρα για να φαίνεται το κομμένο πιο καθαρό. Το προεπιλεγμένο μέγεθος είναι 5, αλλά μπορείτε να το ρυθμίσετε για να πετύχετε την ακριβή εμφάνιση που θέλετε.</li>
+    </ul>
+
+    <p>Θυμηθείτε, δεν χρειάζεται να αγχώνεστε για να πετύχετε τα πάντα τέλεια. Το AiCasso είναι αρκετά καλό στο να καταλαβαίνει τι εννοείτε, οπότε μη διστάσετε να είστε όσο χαλαροί ή λεπτομερείς θέλετε. Καλή δημιουργία!</p>
+
+</body>
+</html>

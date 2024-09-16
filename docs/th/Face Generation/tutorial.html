@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คู่มือฟีเจอร์การสร้างใบหน้า</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>คู่มือการใช้ฟีเจอร์การสร้างใบหน้า</h2>
+    <p>ฟีเจอร์การสร้างใบหน้าใน AiCasso มีความหลากหลายอย่างมาก! มันช่วยให้คุณสร้างภาพที่น่าทึ่งโดยการรวมใบหน้าที่เฉพาะเจาะจงเข้าไปในตัวละครหรือสไตล์ต่างๆ ไม่ว่าคุณจะจินตนาการถึงอัศวิน ซามูไร หรือ ตัวละครอื่นๆ AiCasso จะใช้ใบหน้าที่ป้อนเข้าไปเพื่อสร้างภาพที่มีใบหน้านั้นรวมอยู่ในดีไซน์ที่ร้องขอ</p>
+
+    <h3>มันทำงานอย่างไร:</h3>
+    
+    <div class="example">
+        <strong>ภาพที่ป้อนเข้า:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
+        </div>
+        <strong>คำสั่ง 1:</strong>
+        <p>"อัศวินที่สมจริง ใช้ขนาดสูงสุด"</p>
+        <strong>ผลลัพธ์ 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
+        </div>
+        <strong>คำสั่ง 2:</strong>
+        <p>"ใช้สไตล์ชิบิและสร้างซามูไร ใช้ค่าดีฟอลต์"</p>
+        <strong>ผลลัพธ์ 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
+        </div>
+        <strong>คำสั่ง 3:</strong>
+        <p>"ซามูไร ใช้ 31 ขั้นตอนการลดเสียงรบกวน และสไตล์อนิเมะ"</p>
+        <strong>ผลลัพธ์ 3:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>พารามิเตอร์เพิ่มเติม</h3>
+    <p>หากคุณต้องการเพิ่มบุคลิกภาพหรือการควบคุมให้กับภาพที่สร้างขึ้น นี่คือบางตัวเลือกที่คุณสามารถปรับแต่งได้:</p>
+
+    <ul>
+        <li><strong>คำสั่งเชิงลบ:</strong> นี่คือที่ที่คุณสามารถบอก AiCasso ว่าคุณ <em>ไม่</em> ต้องการเห็นอะไรในภาพ หากคุณปล่อยให้ว่าง AiCasso จะมุ่งเน้นไปที่คำสั่งเชิงบวกเท่านั้น</li>
+        <li><strong>จำนวนขั้นตอนการลดเสียงรบกวน:</strong> นี่คือการควบคุมว่าภาพจะดูเรียบเนียนและละเอียดเพียงใด คุณสามารถเลือกได้ระหว่าง 21, 31 หรือ 41 ขั้นตอน โดยที่ 41 เป็นค่าเริ่มต้น ยิ่งจำนวนขั้นตอนมาก ภาพก็จะยิ่งสะอาดและมีความละเอียดมากขึ้น</li>
+        <li><strong>ระดับการแนะนำ:</strong> นี่ช่วยให้ภาพยังคงตรงตามคำบรรยายของคุณ ระดับอยู่ระหว่าง 1 ถึง 20 โดยที่ 10 เป็นค่าเริ่มต้น ตัวเลขที่สูงขึ้นหมายความว่า AiCasso จะยึดติดกับคำสั่งของคุณมากขึ้น</li>
+        <li><strong>S Scale:</strong> นี่เกี่ยวกับโครงสร้างของใบหน้า มันค่อนข้างเทคนิค แต่โดยพื้นฐานแล้วมันปรับน้ำหนักของโครงสร้างใบหน้า ค่าเริ่มต้นคือ 1.0 และคุณสามารถปรับได้ตั้งแต่ 0.0 ถึง 2.0</li>
+        <li><strong>สไตล์:</strong> ต้องการให้ภาพของคุณมีบรรยากาศเฉพาะหรือไม่? คุณสามารถเลือกสไตล์เช่น การ์ตูน ชิบิ 3D อนิเมะ หรือสมจริง สมจริงเป็นค่าเริ่มต้น แต่คุณสามารถใช้ความคิดสร้างสรรค์ได้!</li>
+    </ul>
+
+    <p>และจำไว้ว่าฟีเจอร์ AiCasso ค่อนข้างให้อภัย คุณไม่จำเป็นต้องเป็นนักไวยากรณ์ที่เก่งหรือทำให้ทุกอย่างสมบูรณ์แบบ เพียงแค่บรรยายสิ่งที่คุณต้องการในคำพูดของคุณเอง และ AiCasso จะดูแลส่วนที่เหลือ สนุกกับการสร้างสรรค์!</p>
+
+</body>
+</html>

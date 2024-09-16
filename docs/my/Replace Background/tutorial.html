@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>နောက်ခံအစားထိုးခြင်း လမ်းညွှန်</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>နောက်ခံအစားထိုးခြင်း လမ်းညွှန်</h2>
+    <p>AiCasso တွင် နောက်ခံအစားထိုးခြင်း လုပ်ဆောင်ချက်သည် သင်၏ပုံတွင် နောက်ခံကို အစားထိုးလိုသောအခါ အထူးသင့်လျော်သည်။ သင်သည် နောက်ခံကို ဖျက်လိုပါက သို့မဟုတ် အခြားအရာတစ်ခုဖြင့် အစားထိုးလိုပါက AiCasso သည် အလွန်လွယ်ကူစေသည်။ နည်းပညာဆိုင်ရာအရာများကို စိုးရိမ်စရာမလိုပါ—သင်လိုချင်သောအရာကို ဖေါ်ပြပါ၊ AiCasso သည် အခြားအရာများကို လုပ်ဆောင်ပါလိမ့်မည်။</p>
+
+    <h3>ဒါက ဘယ်လိုလုပ်ဆောင်သလဲ:</h3>
+    
+    <div class="example">
+        <strong>ပုံထည့်ခြင်း:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+        </div>
+        <strong>အကြံပြုချက် ၁:</strong>
+        <p>"နောက်ခံကို ဖျက်ပါ"</p>
+        <strong>ရလဒ် ၁:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+        </div>
+        <strong>အကြံပြုချက် ၂:</strong>
+        <p>"နောက်ခံကို သစ်တောဖြင့် အစားထိုးပါ၊ ဖျက်ခြင်းသာမဟုတ်ဘဲ၊ alpha matting ကို ပိတ်ထားပါ။ Foreground threshold ကို 240၊ background threshold ကို 20 နှင့် alpha matting အတွက် erode size ကို 5 သတ်မှတ်ပါ။"</p>
+        <strong>ရလဒ် ၂:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>ရွေးချယ်စရာ အချက်အလက်များ</h3>
+    <p>သင်သည် ကိုယ်ပိုင်ထိပ်ထားမှုတစ်ခု ထည့်သွင်းလိုပါက သို့မဟုတ် ရလဒ်များကို လိုက်လျောညီထွေစေရန် အချို့သောရွေးချယ်စရာများကို စမ်းသပ်နိုင်ပါသည်။</p>
+
+    <ul>
+        <li><strong>ဖျက်ခြင်းသာ:</strong> သင်သည် နောက်ခံကို ဖျက်လိုသာဖြစ်ပြီး အခြားအရာဖြင့် အစားထိုးလိုမဟုတ်ပါက၊ ဤသည် သင်၏ ရွေးချယ်စရာဖြစ်သည်။ ၎င်းသည် သန့်ရှင်းသော စာမျက်နှာကို နှိပ်ခြင်းနှင့် တူသည်။</li>
+        <li><strong>Alpha Matting:</strong> ၎င်းသည် "အရိပ်များကို ပေါင်းစပ်ပါ" ဟု ဆိုသော စကားလုံးဖြစ်သည်။ သင်သည် ဤကို ဖွင့်ပါက သင်၏အကြောင်းအရာ၏ အရိပ်များကို ပိုမိုချောမွေ့စေပြီး ကွဲပြားမှုကို လျှော့ချနိုင်သည်။ အခြေခံအားဖြင့် ၎င်းသည် ပိတ်ထားသည်။</li>
+        <li><strong>Alpha Matting Foreground Threshold:</strong> ဤသည်သည် alpha matting ကို အသုံးပြုသောအခါ အဓိပ္ပါယ်ရှိသော အကြောင်းအရာ (လူတစ်ယောက်ကဲ့သို့) မည်မျှမြင်ရမည်ကို ထိန်းချုပ်သည်။ အခြေခံအားဖြင့် 240 ဖြစ်ပြီး သင်သည် အရိပ်များကို ပိုမိုချောမွေ့စေသို့မဟုတ် ပိုမိုရှင်းလင်းစေရန် ပြင်ဆင်နိုင်သည်။</li>
+        <li><strong>Alpha Matting Background Threshold:</strong> ဤသည်သည် foreground threshold နှင့် တူညီသည်၊ သို့သော် နောက်ခံအတွက်ဖြစ်သည်။ အခြေခံအားဖြင့် 20 ဖြစ်ပြီး သစ်တောအသစ်နှင့် အထူးပေါင်းစပ်မှုကို ရရှိရန် အရေးကြီးသည်။</li>
+        <li><strong>Alpha Matting Erode Size:</strong> ဤသည်သည် အရိပ်များကို အနည်းငယ် လျှော့ချရန် ကူညီသည်။ အခြေခံအားဖြင့် 5 ဖြစ်ပြီး သင်လိုချင်သော ပုံစံကို ရရှိရန် ပြင်ဆင်နိုင်သည်။</li>
+    </ul>
+
+    <p>သင်သည် အရာအားလုံးကို အထူးပြုရန် စိုးရိမ်စရာမလိုပါ။ AiCasso သည် သင်၏ အဓိပ္ပါယ်ကို နားလည်ရန် အထူးကောင်းမွန်သည်၊ ထို့ကြောင့် သင်သည် အဆင်ပြေစွာ သို့မဟုတ် အသေးစိတ်ဖြင့် ဖျော်ဖြေရန် လွတ်လပ်ပါ။ ဖန်တီးမှုကို ပျော်ပါစေ!</p>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מדריך לתכונת תמונה לסרטון</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>מדריך לשימוש בתכונת תמונה לסרטון</h2>
+    <p>תכונת תמונה לסרטון ב-AiCasso מאפשרת לך להפוך תמונה אחת לסרטון דינמי. פשוט תאר מה אתה רוצה לראות בסרטון שלך, ו-AiCasso יגרום לזה לקרות!</p>
+
+    <h3>איך זה עובד:</h3>
+    
+    <div class="example">
+        <strong>תמונת קלט:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>הנחיה 1:</strong>
+        <p>"גורי כלבים חמודים בפארק"</p>
+        <strong>תוצאה 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>הנחיה 2:</strong>
+        <p>"גורי כלבים חמודים בפארק, השתמש במקסימום FPS, מקסימום פריימים, ומקסימום תנועה"</p>
+        <strong>תוצאה 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>פרמטרים אופציונליים</h3>
+    <p>אם אתה רוצה להיות יותר ספציפי עם הסרטון שלך, הנה כמה הגדרות שאתה יכול להתאים:</p>
+
+    <ul>
+        <li><strong>הנחיה שלילית:</strong> תאר מה אתה *לא* רוצה בסרטון. אם תשאיר את זה ריק, AiCasso יתמקד רק בהנחיה החיובית.</li>
+        <li><strong>מספר פריימים:</strong> בחר כמה פריימים (תמונות בודדות) יהיו בסרטון שלך. אתה יכול לבחור עד 25 פריימים, כאשר 16 הם ברירת המחדל.</li>
+        <li><strong>צעדי דנואיזינג:</strong> זה שולט כמה חלק הסרטון שלך ייראה. יותר צעדים פירושם סרטון נקי יותר. אתה יכול לקבוע עד 50 צעדים, כאשר 20 הם ברירת המחדל.</li>
+        <li><strong>סקאלת הנחיה:</strong> זה עוזר לסרטון להיצמד לתיאור שלך. הטווח הוא מ-1.0 עד 8.0, ואתה יכול להתאים את הערכים ההתחלתיים והסופיים כדי להנחות איך הסרטון יתפתח.</li>
+        <li><strong>תנועה:</strong> התאם כמה תנועה יש בסרטון שלך. ערך גבוה יותר פירושו יותר פעולה. הטווח הוא מ-0 עד 127, כאשר 60 הם ברירת המחדל.</li>
+        <li><strong>עוצמת הגברת רעש:</strong> הוסף קצת רעש לסרטון שלך כדי לתת לו מראה יותר מרקם. הטווח הוא מ-0 עד 1, כאשר 0 הוא ברירת המחדל.</li>
+        <li><strong>פריימים לשנייה (FPS):</strong> קבע כמה מהר הסרטון שלך מתנגן. ברירת המחדל היא 16 FPS, אבל אתה יכול להגיע עד 16 להנפשה מהירה יותר.</li>
+        <li><strong>שיטת אינטרפולציה:</strong> בחר איך הפריימים מתמזגים יחד. ברירת המחדל היא "lerp" (אינטרפולציה ליניארית), אבל אתה יכול גם להשתמש ב-"slerp" (אינטרפולציה ליניארית כדורית) עבור אפקטים שונים.</li>
+        <li><strong>דלג על שכבות:</strong> דלג על שכבות מסוימות עבור סגנון סרטון שונה. אתה יכול לדלג על עד 2 שכבות, או להשאיר את זה ריק עבור ההתנהגות ברירת המחדל.</li>
+    </ul>
+
+    <p>זכור, AiCasso די חכם! אתה לא צריך לדייק בכל פרט או להשתמש בדקדוק נכון. פשוט תאר מה אתה רוצה, ו-AiCasso יעשה את השאר. תהנה ליצור את הסרטונים שלך!</p>
+
+</body>
+</html>

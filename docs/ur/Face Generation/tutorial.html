@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>چہرہ تخلیق کرنے کی خصوصیت کی رہنمائی</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>چہرہ تخلیق کرنے کی خصوصیت کا استعمال کرنے کی رہنمائی</h2>
+    <p>AiCasso میں چہرہ تخلیق کرنے کی خصوصیت انتہائی ورسٹائل ہے! یہ آپ کو مختلف کرداروں یا طرزوں میں مخصوص چہرے کو شامل کرکے شاندار تصاویر تخلیق کرنے کی اجازت دیتی ہے۔ چاہے آپ ایک سپاہی، سامورائی، یا کوئی اور کردار تصور کر رہے ہوں، AiCasso ان پٹ چہرے کا استعمال کرکے اس چہرے کو درخواست کردہ ڈیزائن میں شامل کرکے ایک تصویر تخلیق کرتا ہے۔</p>
+
+    <h3>یہ کیسے کام کرتا ہے:</h3>
+    
+    <div class="example">
+        <strong>ان پٹ تصویر:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
+        </div>
+        <strong>پرومپٹ 1:</strong>
+        <p>"ایک حقیقی سپاہی، زیادہ سے زیادہ اسکیل استعمال کریں"</p>
+        <strong>نتیجہ 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
+        </div>
+        <strong>پرومپٹ 2:</strong>
+        <p>"چبی طرز استعمال کریں اور ایک سامورائی بنائیں، ڈیفالٹ ویلیوز استعمال کریں"</p>
+        <strong>نتیجہ 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
+        </div>
+        <strong>پرومپٹ 3:</strong>
+        <p>"ایک سامورائی، 31 ڈینائیزنگ مراحل استعمال کریں، اور اینیمی طرز"</p>
+        <strong>نتیجہ 3:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>اختیاری پیرامیٹرز</h3>
+    <p>اگر آپ اپنی تخلیق کردہ تصاویر میں مزید شخصیت یا کنٹرول شامل کرنا چاہتے ہیں، تو یہاں کچھ اختیارات ہیں جن میں آپ تبدیلی کر سکتے ہیں:</p>
+
+    <ul>
+        <li><strong>منفی پرومپٹ:</strong> یہ وہ جگہ ہے جہاں آپ AiCasso کو بتا سکتے ہیں کہ آپ تصویر میں کیا <em>نہیں</em> دیکھنا چاہتے۔ اگر آپ اسے خالی چھوڑ دیتے ہیں، تو AiCasso صرف مثبت پرومپٹ پر توجہ دے گا۔</li>
+        <li><strong>ڈینائیزنگ مراحل کی تعداد:</strong> یہ کنٹرول کرتا ہے کہ تصویر کتنی ہموار اور صاف نظر آتی ہے۔ آپ 21، 31، یا 41 مراحل میں سے انتخاب کر سکتے ہیں، جس میں 41 ڈیفالٹ ہے۔ زیادہ مراحل کا مطلب ہے کہ تصویر زیادہ صاف اور چمکدار ہوگی۔</li>
+        <li><strong>رہنمائی کا اسکیل:</strong> یہ تصویر کو آپ کی وضاحت کے مطابق رکھنے میں مدد کرتا ہے۔ اسکیل 1 سے 20 تک ہوتا ہے، جس میں 10 ڈیفالٹ ہے۔ زیادہ نمبر کا مطلب ہے کہ AiCasso آپ کے پرومپٹ کے قریب تر رہے گا۔</li>
+        <li><strong>S اسکیل:</strong> یہ چہرے کی ساخت کے بارے میں ہے۔ یہ تھوڑا تکنیکی ہے، لیکن بنیادی طور پر یہ چہرے کی ساخت کے وزن کو ایڈجسٹ کرتا ہے۔ ڈیفالٹ 1.0 ہے، اور آپ 0.0 سے 2.0 تک جا سکتے ہیں۔</li>
+        <li><strong>طرز:</strong> کیا آپ اپنی تصویر کو ایک مخصوص احساس دینا چاہتے ہیں؟ آپ کامک، چبی، 3D، اینیمی، یا حقیقی طرز میں سے انتخاب کر سکتے ہیں۔ حقیقی طرز ڈیفالٹ ہے، لیکن تخلیقی ہونے میں ہچکچائیں نہیں!</li>
+    </ul>
+
+    <p>اور یاد رکھیں، AiCasso کافی معاف کرنے والا ہے۔ آپ کو گرامر کا ماہر ہونے یا ہر تفصیل کو درست کرنے کی ضرورت نہیں ہے۔ بس اپنی الفاظ میں وہ بیان کریں جو آپ چاہتے ہیں، اور AiCasso باقی کا خیال رکھے گا۔ تخلیق کرنے کا لطف اٹھائیں!</p>
+
+</body>
+</html>

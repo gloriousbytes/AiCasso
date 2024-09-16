@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Príručka k funkcii opätovného osvetlenia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Príručka k používaniu funkcie opätovného osvetlenia</h2>
+    <p>Funkcia opätovného osvetlenia v AiCasso je naozaj skvelá! Umožňuje vám zmeniť osvetlenie vo vašich obrázkoch len pomocou niekoľkých slov. Chcete slnko vzadu alebo jemné svetlo z boku? Žiadny problém! Stačí to opísať a AiCasso sa postará o zvyšok.</p>
+
+    <h3>Ako to funguje:</h3>
+    
+    <div class="example">
+        <strong>Vstupný obrázok:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+        </div>
+        <strong>Použitý prompt:</strong>
+        <p>"Urobte to tak, aby slnko bolo vzadu"</p>
+        <strong>Výsledok:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Voliteľné úpravy</h3>
+    <p>Ak sa cítite odvážne a chcete pridať trochu viac štýlu k vášmu opätovnému osvetleniu, tu sú niektoré veci, ktoré môžete upraviť:</p>
+
+    <ul>
+        <li><strong>Negatívny prompt:</strong> Chcete sa niečomu vyhnúť? Môžete povedať AiCasso, čo <em>ne</em> zahrnúť. Ale nebojte sa, ak to necháte prázdne, AiCasso sa jednoducho zameria na to, čo chcete.</li>
+        <li><strong>Směr osvetlenia:</strong> Môžete špecifikovať, odkiaľ by malo svetlo prichádzať—zľava, sprava, zhora, zdola alebo dokonca žiadne. Predvolene svetlo prichádza zľava.</li>
+        <li><strong>Úroveň vedenia:</strong> Toto pomáha AiCasso dodržiavať váš popis. Úroveň sa pohybuje od 1 do 20, pričom 7 je predvolené. Čím vyššie číslo, tým viac sa AiCasso drží vášho promptu.</li>
+        <li><strong>Úroveň vysokého rozlíšenia:</strong> Chcete, aby váš obrázok vynikol? Toto ovláda jasnosť. Predvolené je 1.5, ale môžete nastaviť od 1.0 do 2.0 pre ostrejší obrázok.</li>
+        <li><strong>Úrovne denoisingu:</strong> Existujú dve úrovne—nízke rozlíšenie a vysoké rozlíšenie. Tieto ovládajú, ako hladký alebo detailný konečný obrázok vyzerá. Môžete nastaviť úroveň denoisingu pre nízke rozlíšenie medzi 0.0 a 1.0 (predvolené je 0.9) a pre vysoké rozlíšenie medzi 0.0 a 1.0 (predvolené je 0.5).</li>
+        <li><strong>Počet krokov:</strong> Toto je počet krokov, ktoré AiCasso vykonáva na vylepšenie vášho obrázka. Predvolené je 50, ale môžete ísť od 20 do 50 krokov.</li>
+    </ul>
+
+    <p>Nezabudnite, tieto úpravy sú úplne voliteľné! AiCasso je celkom dobré v zistení toho, čo chcete, takže jednoducho opíšte svoju víziu vlastnými slovami a ono vykúzli mágiu. Nie je potrebné byť dokonalý v gramatike alebo detailoch—len sa bavte a pozrite sa, čo môžete vytvoriť!</p>
+
+</body>
+</html>

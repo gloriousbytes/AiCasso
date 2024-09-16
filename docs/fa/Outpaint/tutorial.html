@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نکات ویژگی Outpaint</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>نکات استفاده از ویژگی Outpaint</h2>
+    <p>ویژگی Outpaint در AiCasso به شما اجازه می‌دهد تا با افزودن عناصر جدید در اطراف یک تصویر یا گسترش آنچه که در حال حاضر وجود دارد، تصویر را گسترش دهید. فقط آنچه را که می‌خواهید توصیف کنید و AiCasso بقیه کار را انجام می‌دهد.</p>
+
+    <h3>چگونه کار می‌کند:</h3>
+    
+    <div class="example">
+        <strong>تصویر اولیه:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>تغییر خود را توصیف کنید:</strong>
+        <p>فقط آنچه را که می‌خواهید اضافه یا گسترش دهید تایپ کنید و AiCasso آن تغییرات را اعمال خواهد کرد. می‌توانید جهت‌هایی مانند چپ، راست، بالا یا پایین و حتی جزئیاتی مانند زوم کردن یا پان کردن را مشخص کنید.</p>
+    </div>
+
+    <h3>ویرایش‌های نمونه:</h3>
+
+    <div class="example">
+        <strong>نمونه ۱:</strong> "یک کوه یخ به سمت راست اضافه کنید با استفاده از عامل ترجمه ۰.۴."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+        </div>
+        <p><em>نتیجه:</em> AiCasso تصویر را به سمت راست گسترش می‌دهد و یک کوه یخ اضافه می‌کند و آن را با مناظر موجود سازگار نگه می‌دارد.</p>
+    </div>
+
+    <div class="example">
+        <strong>نمونه ۲:</strong> "زوم کنید، ثبات دریا تاریک در شب را حفظ کنید."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+        </div>
+        <p><em>نتیجه:</em> تصویر زوم می‌کند و بخش بیشتری از دریا تاریک را نشان می‌دهد، در حالی که جو صحنه شب را حفظ می‌کند.</p>
+    </div>
+
+    <h3>گزینه‌های اضافی</h3>
+    <p>در اینجا برخی از تنظیمات اختیاری وجود دارد که می‌توانید برای تنظیم دقیق ویرایش‌های خود استفاده کنید:</p>
+
+    <ul>
+        <li><strong>پیشنهاد منفی:</strong> اگر چیزی خاص وجود دارد که نمی‌خواهید در تصویر باشد، می‌توانید به AiCasso بگویید. به عنوان مثال، ممکن است بخواهید از افزودن رنگ‌ها یا اشیاء خاصی خودداری کنید.</li>
+        <li><strong>نوع حرکت:</strong> این تصمیم می‌گیرد که تصویر در کدام جهت گسترش یابد. می‌توانید از چپ، راست، بالا، پایین یا به عقب (که زوم می‌کند) انتخاب کنید. به عنوان مثال، برای پان کردن به سمت راست، 'راست' را انتخاب می‌کنید.</li>
+        <li><strong>عامل ترجمه:</strong> این کنترل می‌کند که تصویر با هر قدم چقدر حرکت می‌کند. یک مقدار بالاتر تصویر را بیشتر حرکت می‌دهد و محتوای جدید بیشتری را نشان می‌دهد. مقدار پیش‌فرض ۰.۰۵ است، اما می‌توانید آن را از ۰ تا ۱ تنظیم کنید.</li>
+        <li><strong>عرض/ارتفاع ترجمه در هر قدم:</strong> این‌ها کنترل می‌کنند که تصویر با هر قدم چقدر به صورت افقی (عرض) یا عمودی (ارتفاع) حرکت می‌کند. مقدار پیش‌فرض ۳۲ پیکسل در هر قدم است، اما می‌توانید این را بر اساس میزان جابجایی تصویر تنظیم کنید.</li>
+        <li><strong>تعداد مراحل استنتاج یا کاهش نویز:</strong> این تعیین می‌کند که AiCasso چند تغییر برای به دست آوردن تصویر نهایی انجام می‌دهد. مراحل بیشتر به نتیجه‌ای صاف‌تر منجر می‌شود، با پیش‌فرض ۲۰ مرحله، اما می‌توانید تا ۵۰ مرحله بروید.</li>
+        <li><strong>تعداد مراحل درون‌یابی:</strong> این کنترل می‌کند که انتقال بین دو جهت در یک گسترش واحد چقدر نرم انجام می‌شود. مقدار پیش‌فرض ۶۰ است، اما می‌توانید آن را تا ۱۲۰ برای انتقال‌های نرم‌تر افزایش دهید.</li>
+    </ul>
+
+    <p>به یاد داشته باشید، این تنظیمات اختیاری هستند. AiCasso به گونه‌ای طراحی شده است که با توصیف طبیعی زبان شما به خوبی کار کند. احساس راحتی کنید و آزمایش کنید تا ببینید چه چیزی برای تصویر شما بهترین است!</p>
+
+</body>
+</html>

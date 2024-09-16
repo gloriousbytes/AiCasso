@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przewodnik po funkcji Headshot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Przewodnik po korzystaniu z funkcji Headshot</h2>
+    <p>Dzięki funkcji Headshot w AiCasso możesz tworzyć niesamowite i unikalne portrety, po prostu opisując, co chcesz. To idealne rozwiązanie do tworzenia oszałamiających obrazów, niezależnie od tego, czy chcesz spokojnej sceny, epickiego wojownika, czy czegokolwiek innego, co wyobraźnia podpowiada!</p>
+
+    <h3>Jak to działa:</h3>
+    
+    <div class="example">
+        <strong>Obraz wejściowy:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+        </div>
+        <strong>Podpowiedź 1:</strong>
+        <p>"Mężczyzna w śniegu"</p>
+        <strong>Wynik 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+        </div>
+        <strong>Podpowiedź 2:</strong>
+        <p>"Wojownik w lesie, użyj średniej skali wysokiej, jak 78% z tego"</p>
+        <strong>Wynik 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Opcjonalne parametry</h3>
+    <p>Chcesz dodać trochę więcej stylu lub kontroli do swoich wygenerowanych portretów? Oto kilka fajnych opcji, które możesz dostosować:</p>
+
+    <ul>
+        <li><strong>Negatywna podpowiedź:</strong> Tutaj możesz powiedzieć AiCasso, czego <em>nie</em> chcesz widzieć na obrazie. Na przykład, jeśli nie chcesz żadnych elementów tła, możesz to tutaj wspomnieć. Jeśli to zostawisz puste, AiCasso skupi się tylko na tym, co chcesz.</li>
+        <li><strong>Liczba kroków denoisingu:</strong> To kontroluje, jak gładka i dopracowana wygląda twarz. Możesz wybrać między 21, 31 lub 41 krokami, przy czym 41 to domyślna wartość. Więcej kroków zazwyczaj oznacza czystszy, bardziej dopracowany wynik.</li>
+        <li><strong>Skala prowadzenia:</strong> To jakby dawanie AiCasso dodatkowego impulsu, aby pozostał wierny twojemu opisowi. Skala waha się od 1 do 20, przy czym 10 to wartość domyślna. Wyższe liczby oznaczają, że AiCasso będzie bliżej tego, co opisujesz.</li>
+        <li><strong>Skala S:</strong> To dostosowuje strukturę twarzy. Jest to trochę techniczne, ale zasadniczo reguluje, jak mocne lub delikatne są cechy twarzy. Domyślna wartość to 1.0, a możesz ustawić od 0.0 do 2.0 w zależności od wyglądu, który chcesz osiągnąć.</li>
+    </ul>
+
+    <p>Pamiętaj, że te parametry są całkowicie opcjonalne. AiCasso jest dość wyrozumiałe, więc nie musisz być super precyzyjny ani gramatycznie poprawny. Po prostu opisz, co chcesz swoimi słowami, a AiCasso zrobi resztę. Baw się dobrze, tworząc swoje portrety!</p>
+
+</body>
+</html>

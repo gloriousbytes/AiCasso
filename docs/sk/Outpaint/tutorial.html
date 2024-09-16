@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipy na používanie funkcie Outpaint</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Tipy na používanie funkcie Outpaint</h2>
+    <p>Funkcia Outpaint v AiCasso vám umožňuje rozšíriť obrázok pridaním nových prvkov okolo neho alebo predĺžením toho, čo už existuje. Stačí opísať, čo chcete, a AiCasso sa postará o zvyšok.</p>
+
+    <h3>Ako to funguje:</h3>
+    
+    <div class="example">
+        <strong>Počiatočný obrázok:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Popíšte svoju zmenu:</strong>
+        <p>Jednoducho napíšte, čo chcete pridať alebo rozšíriť, a AiCasso tieto zmeny aplikuje. Môžete špecifikovať smer ako vľavo, vpravo, hore alebo dole, a dokonca aj detaily ako priblíženie alebo posun.</p>
+    </div>
+
+    <h3>Príklady úprav:</h3>
+
+    <div class="example">
+        <strong>Príklad 1:</strong> "Pridajte ľadovec vpravo s faktorom prekladu 0.4."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+        </div>
+        <p><em>Výsledok:</em> AiCasso rozširuje obrázok doprava a pridáva ľadovec, pričom zachováva konzistenciu s existujúcou scenériou.</p>
+    </div>
+
+    <div class="example">
+        <strong>Príklad 2:</strong> "Priblížte, zachovajte konzistenciu tmavého mora v noci."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+        </div>
+        <p><em>Výsledok:</em> Obrázok sa priblíži, odhalí viac tmavého mora, pričom zachováva atmosféru nočnej scény.</p>
+    </div>
+
+    <h3>Ďalšie možnosti</h3>
+    <p>Tu sú niektoré voliteľné nastavenia, ktoré môžete použiť na doladenie svojich úprav:</p>
+
+    <ul>
+        <li><strong>Negatívny prompt:</strong> Ak je niečo konkrétne, čo nechcete mať na obrázku, môžete to povedať AiCasso tu. Napríklad, môžete sa chcieť vyhnúť pridávaniu určitých farieb alebo objektov.</li>
+        <li><strong>Typ chôdze:</strong> Toto určuje smer, ktorým sa obrázok rozširuje. Môžete si vybrať zľava, sprava, hore, dole alebo dozadu (čo priblíži). Napríklad, ak chcete posunúť doprava, vyberiete 'vpravo'.</li>
+        <li><strong>Faktor prekladu:</strong> Toto ovláda, ako veľmi sa obrázok posúva s každým krokom pri rozširovaní. Vyššia hodnota posúva obrázok viac, odhaľujúc viac nového obsahu. Predvolené je 0.05, ale môžete to nastaviť od 0 do 1.</li>
+        <li><strong>Šírka/Výška preklad na krok:</strong> Tieto ovládajú, ako ďaleko sa obrázok posúva horizontálne (šírka) alebo vertikálne (výška) s každým krokom. Predvolené je 32 pixelov na krok, ale môžete to nastaviť podľa toho, ako veľmi chcete, aby sa obrázok posunul.</li>
+        <li><strong>Počet inferenčných alebo denoisingových krokov:</strong> Toto určuje, koľko úprav AiCasso vykoná, aby získal konečný obrázok. Viac krokov vedie k hladšiemu výsledku, s predvoleným počtom 20 krokov, ale môžete ísť až na 50.</li>
+        <li><strong>Počet interpolácií:</strong> Toto ovláda, ako hladko prebieha prechod medzi dvoma smermi v jednom rozšírení. Predvolené je 60, ale môžete to zvýšiť až na 120 pre hladšie prechody.</li>
+    </ul>
+
+    <p>Nezabudnite, že tieto nastavenia sú voliteľné. AiCasso je navrhnuté tak, aby dobre fungovalo len s vaším prirodzeným jazykovým popisom. Nebojte sa experimentovať a zistiť, čo najlepšie funguje pre váš obrázok!</p>
+
+</body>
+</html>

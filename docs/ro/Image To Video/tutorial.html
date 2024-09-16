@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghid pentru Funcția Imagine în Video</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Ghid pentru Utilizarea Funcției Imagine în Video</h2>
+    <p>Funcția Imagine în Video din AiCasso îți permite să transformi o singură imagine într-un video dinamic. Pur și simplu descrie ce vrei să vezi în video-ul tău, iar AiCasso va face să se întâmple!</p>
+
+    <h3>Cum Funcționează:</h3>
+    
+    <div class="example">
+        <strong>Imagine de Intrare:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>Prompt 1:</strong>
+        <p>"Un cățel drăguț în parc"</p>
+        <strong>Rezultatul 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>Prompt 2:</strong>
+        <p>"Un cățel drăguț în parc, folosește FPS maxim, cadre maxime și mișcare maximă"</p>
+        <strong>Rezultatul 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Parametrii Opționali</h3>
+    <p>Dacă vrei să fii mai specific cu video-ul tău, iată câteva setări pe care le poți ajusta:</p>
+
+    <ul>
+        <li><strong>Prompt Negativ:</strong> Descrie ce nu vrei în video. Dacă este lăsat gol, AiCasso se va concentra doar pe promptul pozitiv.</li>
+        <li><strong>Numărul de Cadre:</strong> Alege câte cadre (imagini individuale) va avea video-ul tău. Poți selecta până la 25 de cadre, cu 16 fiind valoarea implicită.</li>
+        <li><strong>Pași de Denoising:</strong> Acesta controlează cât de neted arată video-ul tău. Mai mulți pași înseamnă un video mai curat. Poți seta până la 50 de pași, cu 20 ca valoare implicită.</li>
+        <li><strong>Scara de Ghidare:</strong> Aceasta ajută video-ul să se mențină aproape de descrierea ta. Intervalul este de la 1.0 la 8.0, iar tu poți ajusta valorile de început și de sfârșit pentru a ghida cum evoluează video-ul.</li>
+        <li><strong>Mișcare:</strong> Ajustează cât de multă mișcare este în video-ul tău. O valoare mai mare înseamnă mai multă acțiune. Intervalul este de la 0 la 127, cu 60 ca valoare implicită.</li>
+        <li><strong>Forța de Augmentare a Zgomotului:</strong> Adaugă puțin zgomot video-ului tău pentru a-i oferi un aspect mai texturat. Intervalul este de la 0 la 1, cu 0 fiind valoarea implicită.</li>
+        <li><strong>Cadre pe Secundă (FPS):</strong> Setează cât de repede se redă video-ul tău. Valoarea implicită este 16 FPS, dar poți merge până la 16 pentru o redare mai rapidă.</li>
+        <li><strong>Metoda de Interpolare:</strong> Alege cum sunt amestecate cadrele. Valoarea implicită este "lerp" (interpolare liniară), dar poți folosi și "slerp" (interpolare liniară sferică) pentru efecte diferite.</li>
+        <li><strong>Clip Skip:</strong> Sari peste anumite straturi pentru un stil de video diferit. Poți sări peste până la 2 straturi sau să-l lași nul pentru comportamentul implicit.</li>
+    </ul>
+
+    <p>Îți amintești, AiCasso este destul de inteligent! Nu trebuie să obții fiecare detaliu perfect sau să folosești gramatică corectă. Pur și simplu descrie ce vrei, iar AiCasso va face restul. Distracție plăcută la crearea video-urilor tale!</p>
+
+</body>
+</html>

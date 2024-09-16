@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghid pentru Funcția de Generare Video</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Ghid pentru Utilizarea Funcției de Generare Video</h2>
+    <p>Funcția de Generare Video din AiCasso îți permite să creezi videoclipuri doar descriind ceea ce vrei să vezi. Pur și simplu scrie-ți ideea, iar AiCasso o va aduce la viață într-un videoclip!</p>
+
+    <h3>Cum Funcționează:</h3>
+    
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Un cocoș animat 3D într-un câmp, singur, mâncând și fiind fericit. Fă-l un videoclip portret cu 50 de pași de denoising."</p>
+        <strong>Rezultatul:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Un desen animat cu un cocoș pe un câmp în dimensiuni peisaj."</p>
+        <strong>Rezultatul:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Un cocoș pe un câmp."</p>
+        <strong>Rezultatul:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"Un cocoș care este singur pe câmp. Dă-i o senzație naturală."</p>
+        <strong>Rezultatul:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Opțiuni Suplimentare</h3>
+    <p>Vrei să ajustezi videoclipul tău? Iată câteva setări cu care poți experimenta:</p>
+
+    <ul>
+        <li><strong>Numărul de Cadre:</strong> Alege câte cadre (imagini individuale) va avea videoclipul tău. Poți merge până la 25 de cadre, cu 16 ca valoare implicită.</li>
+        <li><strong>Numărul de Pași de Denoising:</strong> Acesta controlează cât de neted arată videoclipul tău. Mai mulți pași înseamnă videoclipuri mai netede. Poți seta până la 50 de pași, cu 20 ca valoare implicită.</li>
+        <li><strong>Scara de Ghidare:</strong> Aceasta ajută videoclipul să se alinieze strâns la descrierea ta. Cu cât numărul este mai mare, cu atât mai mult urmează promptul tău. Intervalul este de la 0 la 8, cu 8 fiind valoarea implicită.</li>
+        <li><strong>Clip Skip:</strong> Sari peste anumite straturi pentru un stil diferit de videoclip. Implicit, nu se sar straturi, dar poți sări până la 2.</li>
+        <li><strong>Dimensiunea de Upscale Lățime și Înălțime:</strong> Poți face videoclipul mai mare ajustând rezoluția. Valoarea implicită este 1024x1024 pixeli, dar poți ajusta aceasta pentru a se potrivi nevoilor tale.</li>
+        <li><strong>Forța de Upscale:</strong> Aceasta schimbă cât de mult se ajustează videoclipul tău atunci când este upscalat. Valoarea implicită este 1, dar poți ajusta pentru a vedea mai multe diferențe.</li>
+        <li><strong>Scara de Ghidare pentru Upscale:</strong> Aceasta ghidează procesul de upscaling, cu un interval de la 0 la 8, și o valoare implicită de 8.</li>
+        <li><strong>Pași de Inference pentru Upscale:</strong> Numărul de pași efectuați pentru a upscala videoclipul. Mai mulți pași fac upscalingul mai neted, cu un maxim de 50 și o valoare implicită de 20.</li>
+        <li><strong>Sampling Îmbunătățit:</strong> Vrei un videoclip mai rafinat? Activează aceasta. Este dezactivată implicit.</li>
+        <li><strong>Seed pentru Sampling Îmbunătățit:</strong> Folosește aceasta pentru a genera același videoclip de fiecare dată cu sampling îmbunătățit. Este opțională și dezactivată implicit.</li>
+        <li><strong>Cadre pe secundă (FPS):</strong> Setează viteza videoclipului tău. Valoarea implicită este 16 FPS, dar poți ajusta până la 16.</li>
+        <li><strong>Model Video:</strong> Alege stilul videoclipului tău. Opțiunile includ:
+            <ul>
+                <li><strong>Implicit:</strong> Un model video standard.</li>
+                <li><strong>Desen Animat:</strong> Un stil video de tip desen animat.</li>
+                <li><strong>Natural:</strong> Un stil video realist, cu aspect natural.</li>
+                <li><strong>Animat 3D:</strong> Un stil video animat 3D.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Ține minte, aceste setări sunt opționale. Funcția de Generare Video funcționează excelent doar cu o descriere simplă, așa că nu ezita să experimentezi și să vezi ce poți crea!</p>
+
+</body>
+</html>

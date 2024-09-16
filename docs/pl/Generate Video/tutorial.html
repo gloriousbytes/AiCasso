@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przewodnik po funkcji Generowania Wideo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Przewodnik po korzystaniu z funkcji Generowania Wideo</h2>
+    <p>Funkcja Generowania Wideo w AiCasso pozwala na tworzenie wideo poprzez proste opisanie, co chcesz zobaczyć. Po prostu wpisz swój pomysł, a AiCasso ożywi go w wideo!</p>
+
+    <h3>Jak to działa:</h3>
+    
+    <div class="example">
+        <strong>Podpowiedź:</strong>
+        <p>"3D animowany kogut na polu sam, jedzący i szczęśliwy. Zrób to wideo portretowe z 50 krokami odszumiania."</p>
+        <strong>Wynik:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Podpowiedź:</strong>
+        <p>"Kreskówka koguta na polu w wymiarach krajobrazu."</p>
+        <strong>Wynik:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Podpowiedź:</strong>
+        <p>"Kogut na polu."</p>
+        <strong>Wynik:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Podpowiedź:</strong>
+        <p>"Kogut, który jest na polu sam. Nadaj mu naturalny wygląd."</p>
+        <strong>Wynik:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Dodatkowe opcje</h3>
+    <p>Chcesz dostosować swoje wideo? Oto kilka ustawień, z którymi możesz eksperymentować:</p>
+
+    <ul>
+        <li><strong>Liczba klatek:</strong> Wybierz, ile klatek (pojedynczych obrazów) będzie miało twoje wideo. Możesz wybrać do 25 klatek, z domyślną wartością 16.</li>
+        <li><strong>Liczba kroków odszumiania:</strong> To kontroluje, jak gładkie będzie twoje wideo. Więcej kroków oznacza gładsze wideo. Możesz ustawić do 50 kroków, z domyślną wartością 20.</li>
+        <li><strong>Skala prowadzenia:</strong> To pomaga wideo ściśle trzymać się twojego opisu. Im wyższa liczba, tym bardziej podąża za twoją podpowiedzią. Zakres wynosi od 0 do 8, z domyślną wartością 8.</li>
+        <li><strong>Pomijanie klipów:</strong> Pomijaj niektóre warstwy dla innego stylu wideo. Domyślnie żadna warstwa nie jest pomijana, ale możesz pominąć do 2.</li>
+        <li><strong>Powiększenie szerokości i wysokości:</strong> Możesz powiększyć swoje wideo, dostosowując rozdzielczość. Domyślnie to 1024x1024 pikseli, ale możesz to dostosować do swoich potrzeb.</li>
+        <li><strong>Siła powiększenia:</strong> To zmienia, jak bardzo twoje wideo dostosowuje się podczas powiększania. Domyślnie to 1, ale możesz to dostosować, aby zobaczyć większe różnice.</li>
+        <li><strong>Skala prowadzenia powiększenia:</strong> To kieruje procesem powiększania, z zakresem od 0 do 8, i domyślną wartością 8.</li>
+        <li><strong>Kroki wnioskowania powiększenia:</strong> Liczba kroków podejmowanych w celu powiększenia wideo. Więcej kroków oznacza gładsze powiększenie, z maksymalną wartością 50 i domyślną wartością 20.</li>
+        <li><strong>Ulepszone próbkowanie:</strong> Chcesz bardziej dopracowanego wideo? Włącz to. Domyślnie jest wyłączone.</li>
+        <li><strong>Ulepszony nasion próbkowania:</strong> Użyj tego, aby generować to samo wideo za każdym razem z ulepszonym próbkowaniem. Jest opcjonalne i domyślnie wyłączone.</li>
+        <li><strong>Klatki na sekundę (FPS):</strong> Ustaw prędkość swojego wideo. Domyślnie to 16 FPS, ale możesz to dostosować do 16.</li>
+        <li><strong>Model wideo:</strong> Wybierz styl swojego wideo. Opcje obejmują:
+            <ul>
+                <li><strong>Domyślny:</strong> Standardowy model wideo.</li>
+                <li><strong>Kreskówka:</strong> Styl wideo w stylu kreskówkowym.</li>
+                <li><strong>Naturalny:</strong> Realistyczny, naturalnie wyglądający styl wideo.</li>
+                <li><strong>Animowany 3D:</strong> Styl wideo animowanego w 3D.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Pamiętaj, że te ustawienia są opcjonalne. Funkcja Generowania Wideo działa świetnie z prostym opisem, więc śmiało eksperymentuj i zobacz, co możesz stworzyć!</p>
+
+</body>
+</html>

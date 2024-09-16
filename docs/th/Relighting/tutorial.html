@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คู่มือฟีเจอร์การปรับแสงใหม่</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>คู่มือการใช้ฟีเจอร์การปรับแสงใหม่</h2>
+    <p>ฟีเจอร์การปรับแสงใหม่ใน AiCasso นั้นเจ๋งมาก! มันให้คุณเปลี่ยนแสงในภาพของคุณด้วยคำไม่กี่คำ ต้องการให้มีแสงอาทิตย์อยู่ด้านหลังหรือแสงนุ่มจากด้านข้าง? ไม่มีปัญหา! แค่บรรยายมัน และ AiCasso จะจัดการที่เหลือให้เอง</p>
+
+    <h3>วิธีการทำงาน:</h3>
+    
+    <div class="example">
+        <strong>ภาพต้นฉบับ:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+        </div>
+        <strong>คำสั่งที่ใช้:</strong>
+        <p>"ทำให้มีแสงอาทิตย์อยู่ด้านหลัง"</p>
+        <strong>ผลลัพธ์:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>การปรับแต่งเพิ่มเติม</h3>
+    <p>ถ้าคุณรู้สึกผจญภัยและต้องการเพิ่มความน่าสนใจให้กับการปรับแสงใหม่ นี่คือสิ่งที่คุณสามารถปรับแต่งได้:</p>
+
+    <ul>
+        <li><strong>คำสั่งเชิงลบ:</strong> ต้องการหลีกเลี่ยงบางอย่าง? คุณสามารถบอก AiCasso ว่า <em>ไม่</em> ให้รวมอะไร แต่ไม่ต้องกังวล ถ้าคุณปล่อยให้ว่าง AiCasso จะมุ่งเน้นไปที่สิ่งที่คุณต้องการ</li>
+        <li><strong>ทิศทางของแสง:</strong> คุณสามารถระบุได้ว่าแสงควรมาจากที่ไหน—ซ้าย ขวา บน ล่าง หรือไม่มีก็ได้ โดยค่าเริ่มต้น แสงจะมาจากด้านซ้าย</li>
+        <li><strong>ระดับการแนะนำ:</strong> นี่ช่วยให้ AiCasso ยึดตามคำบรรยายของคุณ ระดับจะอยู่ระหว่าง 1 ถึง 20 โดย 7 เป็นค่าเริ่มต้น ยิ่งตัวเลขสูงขึ้น AiCasso จะยึดตามคำสั่งของคุณมากขึ้น</li>
+        <li><strong>ระดับความละเอียดสูง:</strong> ต้องการให้ภาพของคุณดูเด่น? นี่ควบคุมความชัดเจน ค่าเริ่มต้นคือ 1.5 แต่คุณสามารถตั้งค่าได้ตั้งแต่ 1.0 ถึง 2.0 เพื่อให้ภาพดูคมชัดยิ่งขึ้น</li>
+        <li><strong>ระดับการลดเสียงรบกวน:</strong> มีสองระดับ—ความละเอียดต่ำและความละเอียดสูง ซึ่งควบคุมว่าภาพสุดท้ายจะเรียบหรือมีรายละเอียดมากเพียงใด คุณสามารถตั้งค่าระดับการลดเสียงรบกวนความละเอียดต่ำระหว่าง 0.0 ถึง 1.0 (ค่าเริ่มต้นคือ 0.9) และความละเอียดสูงระหว่าง 0.0 ถึง 1.0 (ค่าเริ่มต้นคือ 0.5)</li>
+        <li><strong>จำนวนขั้นตอน:</strong> นี่คือจำนวนขั้นตอนที่ AiCasso ใช้ในการปรับแต่งภาพของคุณ ค่าเริ่มต้นคือ 50 แต่คุณสามารถตั้งค่าได้ตั้งแต่ 20 ถึง 50 ขั้นตอน</li>
+    </ul>
+
+    <p>จำไว้ว่าการปรับแต่งเหล่านี้เป็นทางเลือกทั้งหมด! AiCasso ค่อนข้างเก่งในการเข้าใจสิ่งที่คุณต้องการ ดังนั้นแค่บรรยายวิสัยทัศน์ของคุณด้วยคำของคุณเอง และมันจะทำให้เกิดเวทมนตร์ ไม่จำเป็นต้องสมบูรณ์แบบในเรื่องไวยากรณ์หรือรายละเอียด—แค่สนุกและดูว่าคุณสามารถสร้างอะไรได้บ้าง!</p>
+
+</body>
+</html>

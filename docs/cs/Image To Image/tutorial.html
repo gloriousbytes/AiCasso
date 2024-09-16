@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Průvodce funkcí Obraz na obraz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Průvodce používáním funkce Obraz na obraz</h2>
+    <p>Funkce Obraz na obraz v AiCasso je skvělý způsob, jak vzít obrázek, který již máte, a přetvořit ho na něco nového. Je to jako dát vaší fotografii proměnu na základě vašeho vlastního popisu!</p>
+
+    <h3>Jak to funguje:</h3>
+    
+    <div class="example">
+        <strong>Vstupní obrázek:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/14N7B-yT-d7Z4HGSlogD859D-JitVcq2_/preview"></iframe>
+        </div>
+        <strong>Podnět 1:</strong>
+        <p>"Roztomilý pes, použijte polovinu síly"</p>
+        <strong>Výsledek 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1g8GQ6cHuB2ntmBwafGgPWiJ3VHU2r7S5/preview"></iframe>
+        </div>
+        <strong>Podnět 2:</strong>
+        <p>"Roztomilá 3D CGI kočka s velkýma očima, použijte 90% síly a použijte 3D kreslený styl"</p>
+        <strong>Výsledek 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1IeR0SRrPwZi6nfAF9-1SdM6mj4EtyyfM/preview"></iframe>
+        </div>
+        <strong>Podnět 3:</strong>
+        <p>"Černá kočka, udělejte ji realistickou"</p>
+        <strong>Výsledek 3:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1Ocmsoi89Pn5Un_iNg349FMdQZRQaCUBr/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Volitelné parametry</h3>
+    <p>Pokud chcete přidat svůj vlastní nádech k transformaci obrázku, zde jsou některá volitelná nastavení, se kterými si můžete hrát. Ale nebojte se—pokud jen chcete popsat, co chcete, AiCasso to zvládne bez potřeby těchto extra!</p>
+
+    <ul>
+        <li><strong>Negativní podnět:</strong> Pokud je něco konkrétního, co <em>nechcete</em> ve svém novém obrázku, můžete to zde zmínit. Ale pokud to necháte prázdné, to je také v pořádku!</li>
+        <li><strong>Síla:</strong> Toto ovládá, kolik z původního obrázku je použito. Můžete se pohybovat od 0.1 do 1.0. Čím nižší číslo, tím více váš obrázek zachová svůj původní vzhled. Výchozí hodnota je 0.5, což je pěkná rovnováha.</li>
+        <li><strong>Vylepšit styl:</strong> Chcete dát svému obrázku specifickou atmosféru? Vyberte styl jako komiks, chibi, 3D, anime nebo realistický. Výchozí je realistický, ale neváhejte prozkoumat!</li>
+    </ul>
+
+    <p>A pamatujte, nemusíte se obávat, že všechno bude dokonalé. Jen popište, co chcete svými vlastními slovy, a AiCasso udělá zbytek. Bavte se při vytváření!</p>
+<h3>Vylepšit styly</h3>
+<p>Nejste si jisti, který styl zvolit? Nebojte se! Stačí zmínit jakýkoli styl, který vás napadne, i když není gramaticky správný, a AiCasso to vyřeší z dostupného seznamu Vylepšených stylů.</p>
+
+    <ul>
+        <li><strong>Výchozí:</strong> Vyvážený a neutrální styl bez specifického uměleckého vlivu.</li>
+        <li><strong>Vylepšit:</strong> Mírně zlepšuje detaily a celkovou estetiku.</li>
+        <li><strong>Cinematická diva:</strong> Přidává dramatický, filmový efekt s výraznými kontrasty osvětlení.</li>
+        <li><strong>Abstraktní expresionismus:</strong> Zdůrazňuje abstraktní formy a živé barevné skvrny.</li>
+        <li><strong>Akademie:</strong> Přidává učený a klasický nádech k obrázku.</li>
+        <li><strong>Akční figurka:</strong> Generuje obrázky s přehnaným a dynamickým stylem akčních figurek.</li>
+        <li><strong>Roztomilá 3D postava:</strong> Produkuje roztomilé, kreslené 3D postavy.</li>
+        <li><strong>Roztomilý Kawaii:</strong> Zdůrazňuje roztomilý a okouzlující styl typický pro Kawaii kulturu.</li>
+        <li><strong>Art Deco:</strong> Používá geometrický a dekorativní styl období Art Deco.</li>
+        <li><strong>Secese:</strong> Přidává plynulé linie a přírodní prvky, typické pro secesi.</li>
+        <li><strong>Astrální aura:</strong> Vytváří mystickou a nadpozemskou atmosféru.</li>
+        <li><strong>Avantgarda:</strong> Zaměřuje se na inovativní a experimentální umělecké výrazy.</li>
+        <li><strong>Baroko:</strong> Používá dramatický, detailní a propracovaný styl barokního období.</li>
+        <li><strong>Bauhaus styl plakátu:</strong> Odráží minimalistické a funkční designové principy Bauhausu.</li>
+        <li><strong>Plánkový schématický výkres:</strong> Produkuje obrázky připomínající technické plány.</li>
+        <li><strong>Karikatura:</strong> Generuje přehnané, kreslené portréty.</li>
+        <li><strong>Cel-stínovaná umění:</strong> Používá ploché, výrazné barvy typické pro cel-stínovanou animaci.</li>
+        <li><strong>Design postavy:</strong> Zaměřuje se na čisté a jasné návrhy postav vhodné pro animaci.</li>
+        <li><strong>Klasické umění:</strong> Napodobuje rafinovaný a idealizovaný umělecký styl klasické antiky.</li>
+        <li><strong>Malba barevného pole:</strong> Obsahuje velké plochy jedné barvy k vytvoření plochy barvy.</li>
+        <li><strong>Umění barevných tužek:</strong> Napodobuje texturu a vzhled kreseb barevnými tužkami.</li>
+        <li><strong>Konceptuální umění:</strong> Upřednostňuje myšlenky a koncepty před estetickými nebo materiálními záležitostmi.</li>
+        <li><strong>Konstructivismus:</strong> Odráží průmyslový, geometrický styl konstruktivistického hnutí.</li>
+        <li><strong>Kubismus:</strong> Rozkládá objekty na geometrické tvary a prezentuje je v abstraktních formách.</li>
+        <li><strong>Dadaismus:</strong> Zdůrazňuje absurditu, iracionalitu a anti-uměleckou estetiku.</li>
+        <li><strong>Temná fantazie:</strong> Vytváří náladovou, gotickou atmosféru s temnými a podivnými prvky.</li>
+        <li><strong>Temná náladová atmosféra:</strong> Používá nízké osvětlení a stíny k vytvoření náladového prostředí.</li>
+        <li><strong>DMT umění:</strong> Obsahuje živé, psychedelické vizuály inspirované DMT zážitky.</li>
+        <li><strong>Doodle umění:</strong> Zdůrazňuje hravé a hravé styly kreslení, často složité a detailní.</li>
+        <li><strong>Dvojitá expozice:</strong> Kombinuje dva obrázky do jednoho, vytváří surrealistický, vrstvený efekt.</li>
+        <li><strong>Kapající barva:</strong> Používá rozlitou a kapající barvu k vytvoření dynamických a chaotických kompozic.</li>
+        <li><strong>Expresionismus:</strong> Upřednostňuje emocionální vyjádření před realistickou reprezentací, často používající výrazné barvy a dramatické formy.</li>
+        <li><strong>Vybledlá Polaroidová fotografie:</strong> Napodobuje zastaralý a nostalgický vzhled vybledlé Polaroidové fotografie.</li>
+        <li><strong>Fauvismus:</strong> Používá živé, nenormální barvy a výrazné štětce, inspirované fauvistickým hnutím.</li>
+        <li><strong>Ploché 2D:</strong> Zdůrazňuje jednoduché, ploché návrhy s minimálním stínováním nebo hloubkou, často v kresleném stylu.</li>
+        <li><strong>Styl Fortnite:</strong> Odráží živý, kreslený umělecký styl typický pro videohru Fortnite.</li>
+        <li><strong>Futurismus:</strong> Zaměřuje se na dynamický pohyb, energii a zobrazení budoucích technologií.</li>
+        <li><strong>Glitchcore:</strong> Zdůrazňuje digitální chyby a glitch jako umělecký styl, často s deformovanými vizuály.</li>
+        <li><strong>Glo-Fi:</strong> Používá měkké, zářící osvětlení k vytvoření snové, éterické atmosféry.</li>
+        <li><strong>Googie styl:</strong> Odráží futuristické a vesmírné designové trendy poloviny 20. století.</li>
+        <li><strong>Graffiti umění:</strong> Používá živé, street-style estetiky typické pro graffiti a městské nástěnné malby.</li>
+        <li><strong>Umění harlemské renesance:</strong> Odráží bohaté kulturní a umělecké výrazy harlemské renesance.</li>
+        <li><strong>Vysoká móda:</strong> Zdůrazňuje elegantní, sofistikovaný a avantgardní estetiku vysoké módy.</li>
+        <li><strong>Idylické:</strong> Vytváří klidnou, poklidnou a často pastorační atmosféru.</li>
+        <li><strong>Impresionismus:</strong> Používá volné štětce a živé barvy k zachycení účinků světla a atmosféry.</li>
+        <li><strong>Infografické kreslení:</strong> Zdůrazňuje jasné, vizuálně přitažlivé rozvržení pro prezentaci informací graficky.</li>
+        <li><strong>Kresba kapajícího inkoustu:</strong> Používá inkoust k vytvoření tekutých, kapajících efektů v kresbě.</li>
+        <li><strong>Japonské inkoustové kreslení:</strong> Napodobuje tradiční techniky štětcového malování a estetiky japonského inkoustového umění.</li>
+        <li><strong>Fotografie Knolling:</strong> Zdůrazňuje úhledné a organizované uspořádání objektů, často fotografovaných z výšky.</li>
+        <li><strong>Světlá veselá atmosféra:</strong> Používá jasné barvy a osvětlení k vytvoření veselého a povzbudivého prostředí.</li>
+        <li><strong>Design loga:</strong> Zaměřuje se na vytváření čistých, rozpoznatelných log a brandingových prvků.</li>
+        <li><strong>Luxusní elegance:</strong> Zdůrazňuje sofistikovanost a luxus, často s bohatými texturami a materiály.</li>
+        <li><strong>Makro fotografie:</strong> Zaměřuje se na extrémní detailní záběry, často odhalující složité detaily, které nejsou viditelné pouhým okem.</li>
+        <li><strong>Mandala umění:</strong> Vytváří složité, symetrické vzory inspirované tradičními mandala návrhy.</li>
+        <li><strong>Kresba fixem:</strong> Napodobuje výrazné, živé linie a barvy typické pro kresby fixem.</li>
+        <li><strong>Středověkost:</strong> Odráží umění a designovou estetiku středověkého období.</li>
+        <li><strong>Minimalismus:</strong> Zdůrazňuje jednoduchost a redukci forem na jejich základní prvky.</li>
+        <li><strong>Neo-baroko:</strong> Oživuje opulentní, dramatický styl barokního období s moderními vlivy.</li>
+        <li><strong>Neo-byzantské:</strong> Kombinuje zdobný, náboženský umělecký styl byzantské říše s moderními prvky.</li>
+        <li><strong>Neo-futurismus:</strong> Zaměřuje se na futuristické návrhy, často s elegantními, vysoce technologickými estetikami.</li>
+        <li><strong>Neo-impresionismus:</strong> Používá malé, výrazné tečky barvy k vytvoření obrázků, inspirované neo-impresionistickým hnutím.</li>
+        <li><strong>Neo-rokoko:</strong> Oživuje propracovaný, dekorativní styl rokoka s moderními prvky.</li>
+        <li><strong>Neoklasicismus:</strong> Napodobuje umění a designovou estetiku klasické antiky, zdůrazňující harmonii a jednoduchost.</li>
+        <li><strong>Op Art:</strong> Vytváří optické iluze a efekty pomocí geometrických vzorů a kontrastů.</li>
+        <li><strong>Ornamentální a složité:</strong> Zaměřuje se na vysoce detailní, propracované návrhy s důrazem na dekoraci.</li>
+        <li><strong>Kresba tužkou:</strong> Napodobuje texturu a vzhled skic tužkou.</li>
+        <li><strong>Pop Art:</strong> Používá výrazné barvy a obrazy inspirované populární kulturou a masovými médii.</li>
+        <li><strong>Rokoko:</strong> Odráží propracovaný, dekorativní umělecký styl rokoka, s důrazem na lehkost a eleganci.</li>
+        <li><strong>Silhouette Art:</strong> Používá silné kontrasty mezi světlem a stínem k vytvoření výrazných, siluetových obrázků.</li>
+        <li><strong>Jednoduché vektorové umění:</strong> Zdůrazňuje čisté, geometrické tvary a ploché barvy, typické pro vektorové umění.</li>
+        <li><strong>SketchUp:</strong> Napodobuje vzhled a pocit 3D modelů vytvořených pomocí softwaru SketchUp.</li>
+        <li><strong>Steampunk:</strong> Kombinuje estetiku viktoriánské éry s technologií poháněnou párou, vytvářející retro-futuristický styl.</li>
+        <li><strong>Surrealismus:</strong> Mísí realitu a snové obrazy k vytvoření surrealistických, fantastických scén.</li>
+        <li><strong>Suprematismus:</strong> Zaměřuje se na základní geometrické formy a omezené barevné palety, inspirované suprematistickým hnutím.</li>
+        <li><strong>Terragen:</strong> Napodobuje realistické, počítačem generované krajiny vytvořené pomocí softwaru Terragen.</li>
+        <li><strong>Pokojná relaxační atmosféra:</strong> Používá jemné barvy a uklidňující obrazy k vytvoření klidného a poklidného prostředí.</li>
+        <li><strong>Design samolepek:</strong> Zaměřuje se na vytváření hravých, kreslených obrázků vhodných pro samolepky.</li>
+        <li><strong>Živý okrajový světlo:</strong> Zdůrazňuje jasné, okrajové osvětlení kolem subjektů k vytvoření výrazného, živého efektu.</li>
+        <li><strong>Objemové osvětlení:</strong> Používá světelné paprsky a atmosférické efekty k vytvoření hloubky a rozměru.</li>
+        <li><strong>Akvarelové:</strong> Napodobuje jemné, plynulé textury akvarelových maleb.</li>
+        <li><strong>Hravé a hravé:</strong> Zaměřuje se na bezstarostné, imaginativní a často podivné obrazy.</li>
+        <li><strong>Ostré:</strong> Zvyšuje jasnost a definici okrajů pro ostřejší vzhled.</li>
+        <li><strong>Majstrovské dílo:</strong> Zdůrazňuje vysoce kvalitní, detailní a vyleštěný umělecký výstup.</li>
+        <li><strong>Fotografie:</strong> Usiluje o realistickou a životní fotografickou kvalitu.</li>
+        <li><strong>Negativní:</strong> Inverzuje barvy k vytvoření fotografického negativního efektu.</li>
+        <li><strong>Reklama - Reklamní:</strong> Zaměřuje se na čisté, profesionální vizuály vhodné pro reklamu.</li>
+        <li><strong>Reklama - Automobilová:</strong> Přizpůsobuje vizuální styl pro dynamickou a vyleštěnou automobilovou reklamu.</li>
+        <li><strong>Reklama - Korporátní:</strong> Zdůrazňuje elegantní, profesionální design vhodný pro korporátní prostředí.</li>
+        <li><strong>Reklama - Módní editorial:</strong> Zvýrazňuje stylový, vysokomódní vzhled používaný v módních editoriálech.</li>
+        <li><strong>Reklama - Fotografie jídla:</strong> Optimalizuje obrázky pro živý a lákavý vzhled typický pro fotografii jídla.</li>
+        <li><strong>Reklama - Fotografie gurmánského jídla:</strong> Zdůrazňuje bohatou, detailní estetiku gurmánské fotografie jídla.</li>
+        <li><strong>Reklama - Luxus:</strong> Zaměřuje se na opulentní, vysoce kvalitní styl vhodný pro luxusní značky.</li>
+        <li><strong>Reklama - Nemovitosti:</strong> Zvýrazňuje čisté a lákavé vizuály typické pro reklamu na nemovitosti.</li>
+        <li><strong>Reklama - Maloobchod:</strong> Zdůrazňuje přitažlivý, spotřebitelsky orientovaný styl vhodný pro maloobchodní reklamu.</li>
+        <li><strong>Hyperrealismus:</strong> Usiluje o extrémně detailní, životní vizuální styl.</li>
+        <li><strong>Pointilismus:</strong> Používá malé, výrazné tečky barvy k vytvoření obrázku, inspirované pointilistickým hnutím.</li>
+        <li><strong>Psychedelické:</strong> Zdůrazňuje živé barvy a surrealistické vizuály inspirované psychedelickým uměním.</li>
+        <li><strong>Renesance:</strong> Odráží harmonický, klasický styl renesančního umění.</li>
+        <li><strong>Typografie:</strong> Zaměřuje se na kreativní a umělecké použití textu a písem.</li>
+        <li><strong>Futuristické biomechanické:</strong> Kombinuje futuristické a biomechanické prvky k vytvoření vysoce technologického, organického stylu.</li>
+        <li><strong>Futuristické biomechanické kyberpunk:</strong> Mísí biomechanické a kyberpunkové estetiky pro drsný, futuristický vzhled.</li>
+        <li><strong>Futuristické kybernetické:</strong> Zaměřuje se na vysoce technologické, kybernetické vizuály.</li>
+        <li><strong>Futuristický kybernetický robot:</strong> Zdůrazňuje robotické a kybernetické návrhy s futuristickým nádechem.</li>
+        <li><strong>Futuristické kyberpunkové město:</strong> Odráží drsné, neonově osvětlené městské krajiny typické pro kyberpunkové umění.</li>
+        <li><strong>Futuristické sci-fi:</strong> Zaměřuje se na futuristické a sci-fi inspirované estetiky.</li>
+        <li><strong>Futuristické retro kyberpunk:</strong> Kombinuje retro a kyberpunkové prvky pro nostalgický, ale futuristický styl.</li>
+        <li><strong>Futuristické retro:</strong> Mísí futuristické vizuály s retro designovými prvky.</li>
+        <li><strong>Futuristické vaporwave:</strong> Zdůrazňuje nostalgické, surrealistické vizuály typické pro vaporwave umění.</li>
+        <li><strong>Herní bublina:</strong> Zaměřuje se na hravou, bublinkovou estetiku často viděnou v casual hrách.</li>
+        <li><strong>Herní kyberpunk:</strong> Mísí herní designové prvky s kyberpunkovými estetikami.</li>
+        <li><strong>Herní boj:</strong> Odráží dynamický, intenzivní styl typický pro bojové hry.</li>
+        <li><strong>Herní GTA:</strong> Napodobuje drsný, městský styl typický pro hry Grand Theft Auto.</li>
+        <li><strong>Herní Mario:</strong> Zaměřuje se na živý, kreslený styl typický pro Mario hry.</li>
+        <li><strong>Herní Minecraft:</strong> Napodobuje blokový, pixelovaný styl typický pro Minecraft.</li>
+        <li><strong>Herní Pokémon:</strong> Odráží živý, anime-inspirovaný styl typický pro Pokémon hry.</li>
+        <li><strong>Herní retro arkáda:</strong> Zdůrazňuje nostalgický, pixelovaný styl typický pro retro arkádové hry.</li>
+        <li><strong>Herní RPG fantazie:</strong> Odráží detailní, fantazii inspirované estetiky typické pro RPG hry.</li>
+        <li><strong>Herní strategie:</strong> Zaměřuje se na čistý, funkční design typický pro strategické hry.</li>
+        <li><strong>Herní Streetfighter:</strong> Napodobuje odvážný, dynamický styl typický pro hry Street Fighter.</li>
+        <li><strong>Herní Zelda:</strong> Odráží fantazii inspirovaný styl typický pro hry Zelda.</li>
+        <li><strong>Různé architektonické:</strong> Zaměřuje se na čisté, přesné architektonické renderování.</li>
+        <li><strong>Různé disco:</strong> Zdůrazňuje živé, neonově osvětlené estetiky typické pro disco kulturu.</li>
+        <li><strong>Různé snové krajiny:</strong> Vytváří surrealistické, snové prostředí.</li>
+        <li><strong>Různé dystopické:</strong> Odráží drsné, ponuré vizuály typické pro dystopická prostředí.</li>
+        <li><strong>Různé pohádky:</strong> Zdůrazňuje hravé, magické prvky typické pro pohádky.</li>
+        <li><strong>Různé gotické:</strong> Odráží temný, zdobný styl typický pro gotické umění a architekturu.</li>
+        <li><strong>Různé grunge:</strong> Zdůrazňuje drsné, surové estetiky typické pro grunge kulturu.</li>
+        <li><strong>Různé horor:</strong> Zaměřuje se na temné, podivné a znepokojivé vizuály typické pro horor.</li>
+        <li><strong>Různé Kawaii:</strong> Odráží roztomilý, okouzlující styl typický pro Kawaii kulturu.</li>
+        <li><strong>Různé Lovecraftovské:</strong> Zdůrazňuje podivné, kosmické hrůzy typické pro Lovecraftovskou fikci.</li>
+        <li><strong>Různé makabrózní:</strong> Zaměřuje se na temné, morbidní a znepokojivé témata.</li>
+        <li><strong>Různé manga:</strong> Napodobuje odvážný, dynamický styl typický pro mangu.</li>
+        <li><strong>Různé metropole:</strong> Odráží elegantní, městské estetiky typické pro moderní metropole.</li>
+        <li><strong>Různé minimalistické:</strong> Zdůrazňuje jednoduchost a redukci forem na jejich esenci.</li>
+        <li><strong>Různé monochromatické:</strong> Zaměřuje se na obrázky vytvořené v různých odstínech jedné barvy.</li>
+        <li><strong>Různé námořní:</strong> Odráží námořní inspirované estetiky typické pro námořní témata.</li>
+        <li><strong>Různé vesmírné:</strong> Zdůrazňuje rozsáhlé, nadpozemské vizuály typické pro vesmírná prostředí.</li>
+        <li><strong>Různé vitráže:</strong> Napodobuje složité, barevné návrhy typické pro vitrážové umění.</li>
+        <li><strong>Různé techwear móda:</strong> Zaměřuje se na futuristické, funkční estetiky typické pro techwear módu.</li>
+        <li><strong>Různé kmenové:</strong> Odráží odvážné, kulturní estetiky typické pro kmenové umění.</li>
+        <li><strong>Různé zentangle:</strong> Zdůrazňuje složité, opakující se vzory typické pro zentangle umění.</li>
+        <li><strong>Papercraft koláž:</strong> Používá vystřižený papír k vytvoření vrstvených, texturovaných koláží.</li>
+        <li><strong>Papercraft plochý papírový řez:</strong> Zdůrazňuje ploché, vystřižené návrhy.</li>
+        <li><strong>Papercraft Kirigami:</strong> Zaměřuje se na složité, skládací návrhy typické pro Kirigami.</li>
+        <li><strong>Papercraft papírové mašé:</strong> Používá papírové mašé k vytvoření texturovaných, trojrozměrných tvarů.</li>
+        <li><strong>Papercraft papírové quilling:</strong> Zdůrazňuje jemné, rolované papírové návrhy typické pro papírové quilling.</li>
+        <li><strong>Papercraft koláž papírového řezu:</strong> Kombinuje prvky vystřiženého papíru k vytvoření vrstvených koláží.</li>
+        <li><strong>Papercraft papírový řez stínové krabice:</strong> Používá vrstvené papírové řezy k vytvoření trojrozměrných stínových krabic.</li>
+        <li><strong>Papercraft vrstvený papírový řez:</strong> Zaměřuje se na vrstvené, stohované papírové návrhy.</li>
+        <li><strong>Papercraft silný vrstvený papírový řez:</strong> Zdůrazňuje dimenzionální, vrstvený vzhled typický pro silné papírové řezy.</li>
+        <li><strong>Foto mimozemšťan:</strong> Zaměřuje se na surrealistické, mimozemské vizuály.</li>
+        <li><strong>Foto film noir:</strong> Zdůrazňuje temné, náladové estetiky typické pro film noir.</li>
+        <li><strong>Foto glamour:</strong> Zvýrazňuje vyleštěný, stylový vzhled typický pro glamour fotografii.</li>
+        <li><strong>Foto HDR:</strong> Používá vysoký dynamický rozsah (HDR) k vytvoření obrázků s širokým rozsahem světla a barvy.</li>
+        <li><strong>Foto iPhone fotografické:</strong> Napodobuje čistý, moderní styl typický pro fotografii iPhone.</li>
+        <li><strong>Foto dlouhá expozice:</strong> Používá dlouhou expozici k vytvoření dynamických, pohybem rozmazaných efektů.</li>
+        <li><strong>Foto neon noir:</strong> Kombinuje neonové osvětlení s temnými, náladovými estetikami noir.</li>
+        <li><strong>Foto silueta:</strong> Zaměřuje se na silné kontrasty mezi světlem a stínem k vytvoření siluetových obrázků.</li>
+        <li><strong>Foto tilt shift:</strong> Používá tilt-shift efekty k vytvoření miniaturizovaného, hračkového vzhledu.</li>
+        <li><strong>3D model:</strong> Zaměřuje se na čistý, detailní vzhled typický pro 3D modely.</li>
+        <li><strong>Analogový film:</strong> Napodobuje zrnitý, texturovaný vzhled typický pro analogovou filmovou fotografii.</li>
+        <li><strong>Anime:</strong> Zdůrazňuje živý, dynamický styl typický pro anime.</li>
+        <li><strong>Cinematický:</strong> Vytváří dramatický, filmový efekt s výrazným osvětlením a kompozicemi.</li>
+        <li><strong>Komiks:</strong> Používá výrazné linie a živé barvy typické pro komiksové umění.</li>
+        <li><strong>Řemeslná hlína:</strong> Napodobuje texturovaný, ručně vyrobený vzhled hlíněných modelů.</li>
+        <li><strong>Digitální umění:</strong> Zaměřuje se na čisté, vyleštěné digitální umění.</li>
+        <li><strong>Fantazijní umění:</strong> Zdůrazňuje detailní, imaginativní vizuály typické pro fantazijní umění.</li>
+        <li><strong>Izometrické:</strong> Používá izometrickou perspektivu k vytvoření trojrozměrného vzhledu.</li>
+        <li><strong>Lineární umění:</strong> Zaměřuje se na čisté, ostré linie k vytvoření detailních kreseb.</li>
+        <li><strong>Nízký polygon:</strong> Používá nízkopolygónové 3D modely k vytvoření minimalistického, geometrického vzhledu.</li>
+        <li><strong>Neonpunk:</strong> Kombinuje neonové osvětlení s drsnými estetikami kyberpunku.</li>
+        <li><strong>Origami:</strong> Zaměřuje se na složité, skládací návrhy typické pro origami.</li>
+        <li><strong>Fotografické:</strong> Usiluje o realistické, životní vizuály.</li>
+        <li><strong>Pixel Art:</strong> Používá pixelované návrhy k vytvoření retro, videoherního vzhledu.</li>
+        <li><strong>Textura:</strong> Zaměřuje se na bohaté, detailní textury pro zvýšení vizuální hloubky.</li>
+    </ul>
+</body>
+</html>

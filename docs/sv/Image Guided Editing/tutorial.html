@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips för bildstyrd redigering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Tips för bildstyrd redigering</h2>
+    <p>Funktionen för bildstyrd redigering i AiCasso låter dig göra ändringar i en bild bara genom att beskriva vad du vill ha. Oavsett om du vill ändra stil, justera stämningen eller finjustera vissa delar, kommer AiCasso att hantera det åt dig utan att du behöver välja eller måla något manuellt.</p>
+
+    <h3>Så här fungerar det:</h3>
+
+    <div class="example">
+        <strong>Startbild:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CpnI7HqIAzcrMjmQb5_25yJilhxraZ80/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Beskriv din ändring:</strong>
+        <p>Du skriver bara vad du vill ändra, så kommer AiCasso att tillämpa dessa ändringar på bilden.</p>
+    </div>
+
+    <h3>Exempel på redigeringar:</h3>
+
+    <div class="example">
+        <strong>Exempel 1:</strong> "Gör henne blond."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1cI2vE6dOcFxInjqzq1_mVru_nLCGFTaS/preview"></iframe>
+        </div>
+        <p><em>Resultat:</em> AiCasso kommer att ändra personens hårfärg till blond.</p>
+    </div>
+
+    <div class="example">
+        <strong>Exempel 2:</strong> "Gör det natt, använd 50 steg, en vägledningsskala på 1 och en bildstyrd skala på 1."
+        <div class="example">
+            <strong>Inmatningsbild:</strong>
+            <div class="result">
+                <iframe src="https://drive.google.com/file/d/1PlJNkwIWrK3Uu_bq38te_dtqp2XBkW_e/preview"></iframe>
+            </div>
+        </div>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11mjTtcBdI8T0cMcfQz6HEJ79xOhw81VG/preview"></iframe>
+        </div>
+        <p><em>Resultat:</em> Bilden kommer att omvandlas till en nattscen med specifika justeringar baserat på de detaljer du angav.</p>
+    </div>
+
+    <h3>Ytterligare alternativ</h3>
+    <p>Du kan finjustera dina redigeringar med hjälp av dessa valfria inställningar:</p>
+
+    <ul>
+        <li><strong>Bildstyrd skala:</strong> Detta kontrollerar hur nära den nya bilden håller sig till originalet. Ett lägre värde innebär att ändringarna är mer subtila, medan ett högre värde gör dem mer framträdande. Du kan ställa in detta mellan 1 och 8.</li>
+        <li><strong>Steg:</strong> Detta ställer in hur många förfiningar verktyget kommer att göra. Fler steg innebär en mjukare och mer detaljerad slutbild. Du kan välja mellan 1 och 50 steg, med 20 som standard.</li>
+        <li><strong>Vägledningsskala:</strong> Detta påverkar hur nära AI:n följer din beskrivning. En lägre skala ger AI:n mer kreativ frihet, medan en högre skala gör att den håller sig nära vad du sa. Du kan justera detta mellan 1 och 20.</li>
+    </ul>
+
+</body>
+</html>

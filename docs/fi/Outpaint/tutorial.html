@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outpaint-ominaisuuden vinkit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Vinkkejä Outpaint-ominaisuuden käyttöön</h2>
+    <p>Outpaint-ominaisuus AiCasso:ssa antaa sinun laajentaa kuvaa lisäämällä uusia elementtejä sen ympärille tai laajentamalla jo olemassa olevaa. Kuvaile vain, mitä haluat, ja AiCasso hoitaa loput.</p>
+
+    <h3>Kuinka se toimii:</h3>
+    
+    <div class="example">
+        <strong>Aloituskuva:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Kuvaile muutoksesi:</strong>
+        <p>Kirjoita vain, mitä haluat lisätä tai laajentaa, ja AiCasso soveltaa näitä muutoksia. Voit määrittää suuntia, kuten vasen, oikea, ylös tai alas, ja jopa yksityiskohtia, kuten zoomaaminen ulos tai panorointi.</p>
+    </div>
+
+    <h3 esimerkki muokkauksista:</h3>
+
+    <div class="example">
+        <strong>Esimerkki 1:</strong> "Lisää jäävuori oikealle käyttämällä käännöstekijää 0.4."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+        </div>
+        <p><em>Tulos:</em> AiCasso laajentaa kuvaa oikealle ja lisää jäävuoren, pitäen sen johdonmukaisena olemassa olevan maiseman kanssa.</p>
+    </div>
+
+    <div class="example">
+        <strong>Esimerkki 2:</strong> "Zoomaa ulos, säilytä yön tumman meren johdonmukaisuus."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+        </div>
+        <p><em>Tulos:</em> Kuva zoomaa ulos, paljastaen enemmän tummasta merestä, samalla kun se säilyttää yön tunnelman.</p>
+    </div>
+
+    <h3>Lisävaihtoehdot</h3>
+    <p>Tässä on joitakin valinnaisia asetuksia, joita voit käyttää muokkauksesi hienosäätämiseen:</p>
+
+    <ul>
+        <li><strong>Negatiivinen kehotus:</strong> Jos on jotain erityistä, mitä et halua kuvaan, voit kertoa sen AiCasso:lle täällä. Esimerkiksi saatat haluta välttää tiettyjen värien tai esineiden lisäämistä.</li>
+        <li><strong>Kävelytyyppi:</strong> Tämä päättää, mihin suuntaan kuva laajenee. Voit valita vasemman, oikean, ylös, alas tai taaksepäin (joka zoomaa ulos). Esimerkiksi, jos haluat panoroinnin oikealle, valitset 'oikea'.</li>
+        <li><strong>Käännöstekijä:</strong> Tämä ohjaa, kuinka paljon kuva liikkuu jokaisella askeleella laajentuessa. Korkeampi arvo liikuttaa kuvaa enemmän, paljastaen enemmän uutta sisältöä. Oletusarvo on 0.05, mutta voit säätää sen 0:sta 1:een.</li>
+        <li><strong>Leveys/Korkeus käännökselle per askel:</strong> Nämä ohjaavat, kuinka pitkälle kuva liikkuu vaakasuunnassa (leveys) tai pystysuunnassa (korkeus) jokaisella askeleella. Oletusarvo on 32 pikseliä per askel, mutta voit säätää tätä sen mukaan, kuinka paljon haluat kuvan siirtyvän.</li>
+        <li><strong>Informaation tai denoising-askeleiden määrä:</strong> Tämä määrittää, kuinka monta säätöä AiCasso tekee saadakseen lopullisen kuvan. Enemmän askeleita johtaa sujuvampaan tulokseen, oletusarvo on 20 askelta, mutta voit nostaa sen jopa 50:een.</li>
+        <li><strong>Interpolaatioaskeleiden määrä:</strong> Tämä ohjaa, kuinka sujuvasti siirtyminen tapahtuu kahden suunnan välillä yhdessä laajennuksessa. Oletusarvo on 60, mutta voit nostaa sen jopa 120:een sujuvampia siirtymiä varten.</li>
+    </ul>
+
+    <p>Muista, että nämä asetukset ovat valinnaisia. AiCasso on suunniteltu toimimaan hyvin vain luonnollisen kielen kuvauksesi kanssa. Kokeile rohkeasti ja katso, mikä toimii parhaiten kuvasi kanssa!</p>
+
+</body>
+</html>

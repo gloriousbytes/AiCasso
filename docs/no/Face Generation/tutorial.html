@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veiledning for ansiktsgenereringsfunksjonen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Veiledning for bruk av ansiktsgenereringsfunksjonen</h2>
+    <p>Ansiktsgenereringsfunksjonen i AiCasso er utrolig allsidig! Den lar deg lage fantastiske bilder ved å inkorporere et spesifikt ansikt i ulike karakterer eller stiler. Enten du forestiller deg en ridder, samurai eller en annen karakter, bruker AiCasso det inndataansiktet til å generere et bilde med det ansiktet integrert i det forespurte designet.</p>
+
+    <h3>Slik fungerer det:</h3>
+    
+    <div class="example">
+        <strong>Inndata bilde:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
+        </div>
+        <strong>Prompt 1:</strong>
+        <p>"En realistisk ridder, bruk maksimal skala"</p>
+        <strong>Resultat 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
+        </div>
+        <strong>Prompt 2:</strong>
+        <p>"Bruk chibi-stilen og lag en samurai, bruk standardverdier"</p>
+        <strong>Resultat 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
+        </div>
+        <strong>Prompt 3:</strong>
+        <p>"En samurai, bruk 31 avstøtningssteg, og anime-stil"</p>
+        <strong>Resultat 3:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Valgfrie parametere</h3>
+    <p>Hvis du vil legge til litt mer personlighet eller kontroll til bildene dine, her er noen alternativer du kan justere:</p>
+
+    <ul>
+        <li><strong>Negativ prompt:</strong> Dette er hvor du kan fortelle AiCasso hva du <em>ikke</em> vil se i bildet. Hvis du lar dette stå tomt, vil AiCasso bare fokusere på den positive prompten.</li>
+        <li><strong>Antall avstøtningssteg:</strong> Dette kontrollerer hvor glatt og raffinert bildet ser ut. Du kan velge mellom 21, 31 eller 41 steg, med 41 som standard. Flere steg betyr et renere, mer polert bilde.</li>
+        <li><strong>Veiledningsskala:</strong> Dette hjelper bildet å holde seg tro mot beskrivelsen din. Skalaen går fra 1 til 20, med 10 som standard. Høyere tall betyr at AiCasso vil holde seg nærmere prompten din.</li>
+        <li><strong>S-skala:</strong> Dette handler om strukturen til ansiktet. Det er litt teknisk, men i hovedsak justerer det vekten av ansiktsstrukturen. Standard er 1.0, og du kan gå fra 0.0 til 2.0.</li>
+        <li><strong>Stil:</strong> Vil du gi bildet ditt en spesifikk stemning? Du kan velge en stil som tegneserie, chibi, 3D, anime eller realistisk. Realistisk er standard, men vær så snill å være kreativ!</li>
+    </ul>
+
+    <p>Og husk, AiCasso er ganske tilgivende. Du trenger ikke å være en grammatikkekspert eller få hver detalj perfekt. Bare beskriv hva du vil ha med dine egne ord, så tar AiCasso seg av resten. Nyt å lage!</p>
+
+</body>
+</html>

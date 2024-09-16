@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video-ominaisuuden oppaan luominen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Opas Video-ominaisuuden käyttöön</h2>
+    <p>Video-ominaisuus AiCasso:ssa antaa sinun luoda videoita yksinkertaisesti kuvaamalla, mitä haluat nähdä. Kirjoita vain ideasi, ja AiCasso herättää sen henkiin videossa!</p>
+
+    <h3>Kuinka se toimii:</h3>
+    
+    <div class="example">
+        <strong>Kehoitus:</strong>
+        <p>"3D-animoitu kukko kentällä yksin, syömässä ja onnellisena. Tee siitä muotokuvavideo 50 kohinanpoistovaiheella."</p>
+        <strong>Tulos:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Kehoitus:</strong>
+        <p>"Kukon sarjakuva kentällä maisemamitoissa."</p>
+        <strong>Tulos:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Kehoitus:</strong>
+        <p>"Kukko kentällä."</p>
+        <strong>Tulos:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Kehoitus:</strong>
+        <p>"Kukko, joka on kentällä yksin. Anna sille luonnollinen tunne."</p>
+        <strong>Tulos:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Lisäasetukset</h3>
+    <p>Haluaako hienosäätää videota? Tässä on joitakin asetuksia, joilla voit leikkiä:</p>
+
+    <ul>
+        <li><strong>Kehysten määrä:</strong> Valitse, kuinka monta kehystä (yksittäistä kuvaa) videollasi on. Voit valita jopa 25 kehystä, oletusarvo on 16.</li>
+        <li><strong>Kohinanpoistovaiheiden määrä:</strong> Tämä säätelee, kuinka sujuvalta videosi näyttää. Enemmän vaiheita tarkoittaa sujuvampia videoita. Voit asettaa jopa 50 vaihetta, oletusarvo on 20.</li>
+        <li><strong>Ohjausaste:</strong> Tämä auttaa videota pysymään tiiviisti kuvauksessasi. Mitä korkeampi luku, sitä enemmän se seuraa kehoitustasi. Vaihtoehto on 0-8, jossa 8 on oletusarvo.</li>
+        <li><strong>Kerrosohitus:</strong> Ohita tietyt kerrokset erilaisen videotyylin saavuttamiseksi. Oletusarvoisesti kerroksia ei ohiteta, mutta voit ohittaa jopa 2.</li>
+        <li><strong>Suurenna leveys ja korkeus:</strong> Voit tehdä videostasi suuremman säätämällä resoluutiota. Oletusarvo on 1024x1024 pikseliä, mutta voit säätää tätä tarpeidesi mukaan.</li>
+        <li><strong>Suurenna vahvuus:</strong> Tämä muuttaa, kuinka paljon videosi säätää suurennettaessa. Oletusarvo on 1, mutta voit säätää sitä nähdäksesi enemmän eroja.</li>
+        <li><strong>Suurenna ohjausaste:</strong> Tämä ohjaa suurennusprosessia, vaihtelee 0-8, ja oletusarvo on 8.</li>
+        <li><strong>Suurenna päätösvaiheet:</strong> Suurennusprosessissa käytettävien vaiheiden määrä. Enemmän vaiheita tekee sujuvammasta suurennuksesta, maksimissaan 50 ja oletusarvo 20.</li>
+        <li><strong>Parannettu näytteenotto:</strong> Haluatko hienostuneemman videon? Kytke tämä päälle. Se on oletuksena pois päältä.</li>
+        <li><strong>Parannettu näytteenottosiemen:</strong> Käytä tätä luodaksesi saman videon joka kerta parannetulla näytteenotolla. Se on valinnainen ja oletuksena pois päältä.</li>
+        <li><strong>Kehyksiä sekunnissa (FPS):</strong> Aseta videosi nopeus. Oletusarvo on 16 FPS, mutta voit säätää sitä jopa 16:een.</li>
+        <li><strong>Videomalli:</strong> Valitse videosi tyyli. Vaihtoehtoja ovat:
+            <ul>
+                <li><strong>Oletus:</strong> Vakio videomalli.</li>
+                <li><strong>Sarjakuva:</strong> Sarjakuvamainen videotyyl.</li>
+                <li><strong>Luonnollinen:</strong> Realistinen, luonnollisen näköinen videotyyl.</li>
+                <li><strong>Animoitu 3D:</strong> 3D-animoitu videotyyl.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Muista, että nämä asetukset ovat valinnaisia. Video-ominaisuus toimii hienosti pelkällä yksinkertaisella kuvauksella, joten voit kokeilla ja nähdä, mitä voit luoda!</p>
+
+</body>
+</html>

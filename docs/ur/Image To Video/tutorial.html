@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تصویر سے ویڈیو کی خصوصیت کی رہنمائی</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>تصویر سے ویڈیو کی خصوصیت کے استعمال کی رہنمائی</h2>
+    <p>AiCasso میں تصویر سے ویڈیو کی خصوصیت آپ کو ایک واحد تصویر کو متحرک ویڈیو میں تبدیل کرنے دیتی ہے۔ بس بیان کریں کہ آپ اپنی ویڈیو میں کیا دیکھنا چاہتے ہیں، اور AiCasso یہ کر دے گا!</p>
+
+    <h3>یہ کیسے کام کرتا ہے:</h3>
+    
+    <div class="example">
+        <strong>ان پٹ تصویر:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>پرومپٹ 1:</strong>
+        <p>"پارک میں ایک پیارا کتا"</p>
+        <strong>نتیجہ 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>پرومپٹ 2:</strong>
+        <p>"پارک میں ایک پیارا کتا، زیادہ سے زیادہ FPS، زیادہ سے زیادہ فریم، اور زیادہ سے زیادہ حرکت کا استعمال کریں"</p>
+        <strong>نتیجہ 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>اختیاری پیرامیٹرز</h3>
+    <p>اگر آپ اپنی ویڈیو کے بارے میں مزید مخصوص ہونا چاہتے ہیں، تو یہاں کچھ سیٹنگز ہیں جنہیں آپ ایڈجسٹ کر سکتے ہیں:</p>
+
+    <ul>
+        <li><strong>منفی پرومپٹ:</strong> بیان کریں کہ آپ ویڈیو میں کیا *نہیں* چاہتے۔ اگر خالی چھوڑ دیا جائے تو، AiCasso صرف مثبت پرومپٹ پر توجہ دے گا۔</li>
+        <li><strong>فریم کی تعداد:</strong> منتخب کریں کہ آپ کی ویڈیو میں کتنے فریم (انفرادی تصاویر) ہوں گے۔ آپ 25 فریم تک منتخب کر سکتے ہیں، جبکہ 16 ڈیفالٹ ہے۔</li>
+        <li><strong>ڈی نوائزنگ کے مراحل:</strong> یہ کنٹرول کرتا ہے کہ آپ کی ویڈیو کتنی ہموار نظر آتی ہے۔ زیادہ مراحل کا مطلب ہے کہ ویڈیو زیادہ صاف ہے۔ آپ 50 مراحل تک سیٹ کر سکتے ہیں، جبکہ 20 ڈیفالٹ ہے۔</li>
+        <li><strong>گائیڈنس اسکیل:</strong> یہ ویڈیو کو آپ کی وضاحت کے قریب رکھنے میں مدد کرتا ہے۔ یہ 1.0 سے 8.0 کے درمیان ہے، اور آپ ویڈیو کی ترقی کی رہنمائی کے لیے شروع اور اختتامی اقدار کو ایڈجسٹ کر سکتے ہیں۔</li>
+        <li><strong>حرکت:</strong> اپنی ویڈیو میں حرکت کی مقدار کو ایڈجسٹ کریں۔ زیادہ قیمت کا مطلب ہے زیادہ عمل۔ یہ 0 سے 127 کے درمیان ہے، جبکہ 60 ڈیفالٹ ہے۔</li>
+        <li><strong>شور کی بڑھتی ہوئی طاقت:</strong> اپنی ویڈیو میں کچھ شور شامل کریں تاکہ اسے زیادہ ساختی نظر آئے۔ یہ 0 سے 1 کے درمیان ہے، جبکہ 0 ڈیفالٹ ہے۔</li>
+        <li><strong>فریم فی سیکنڈ (FPS):</strong> طے کریں کہ آپ کی ویڈیو کتنی تیزی سے چلتی ہے۔ ڈیفالٹ 16 FPS ہے، لیکن آپ تیز پلے بیک کے لیے 16 تک جا سکتے ہیں۔</li>
+        <li><strong>انٹرپولیشن کا طریقہ:</strong> منتخب کریں کہ فریمز کو کس طرح ملایا جائے۔ ڈیفالٹ "لرپ" (لکیری انٹرپولیشن) ہے، لیکن آپ مختلف اثرات کے لیے "سلرپ" (سفیری لکیری انٹرپولیشن) بھی استعمال کر سکتے ہیں۔</li>
+        <li><strong>کلپ اسکیپ:</strong> مختلف ویڈیو طرز کے لیے کچھ تہوں کو چھوڑ دیں۔ آپ 2 تہوں تک چھوڑ سکتے ہیں، یا ڈیفالٹ رویے کے لیے اسے خالی چھوڑ سکتے ہیں۔</li>
+    </ul>
+
+    <p>یاد رکھیں، AiCasso کافی ذہین ہے! آپ کو ہر تفصیل کو درست کرنے یا صحیح گرامر استعمال کرنے کی ضرورت نہیں ہے۔ بس بیان کریں کہ آپ کیا چاہتے ہیں، اور AiCasso باقی کرے گا۔ اپنی ویڈیوز بنانے میں مزہ کریں!</p>
+
+</body>
+</html>

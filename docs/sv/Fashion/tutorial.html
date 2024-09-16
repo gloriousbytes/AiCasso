@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide till Fashion Generation-funktionen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guide till att använda Fashion Generation-funktionen</h2>
+    <p>Fashion Generation-funktionen i AiCasso låter dig klä någon i ett specifikt plagg, såsom en skjorta, klänning eller byxor. Beskriv helt enkelt vad du vill ha, och se hur AiCasso applicerar klädesplagget på personen i bilden.</p>
+
+    <h3>Så här fungerar det:</h3>
+    
+    <div class="example">
+        <strong>Inmatning 1 - Personbild:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+        </div>
+        <strong>Inmatning 2 - Klädesplagg:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+        </div>
+        <strong>Prompt:</strong>
+        <p>"Kille som bär en skjorta"</p>
+        <strong>Resultat:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Valfria parametrar</h3>
+    <p>Om du vill lägga till din egen stil eller se till att resultatet blir precis rätt, kan du justera dessa inställningar:</p>
+
+    <ul>
+        <li><strong>Negativ prompt:</strong> Om det finns något du <em>inte</em> vill ha i bilden, nämn det här. Lämna det tomt om du är okej med vad AiCasso kommer på.</li>
+        <li><strong>Typ av tyg:</strong> Berätta för AiCasso om du fokuserar på <em>övre kroppen</em>, <em>nedre kroppen</em> eller <em>klänningar</em>. Om du är osäker, är standardinställningen övre kroppen.</li>
+        <li><strong>Antal avbrutna steg:</strong> Detta avgör hur slät och polerad bilden ser ut. Du kan välja mellan 21, 31 eller 41 steg, där 21 är standard. Fler steg innebär vanligtvis ett mer raffinerat utseende.</li>
+        <li><strong>Vägledningsskala:</strong> Detta hjälper bilden att hålla sig nära din beskrivning. Du kan ställa in den från 1 till 20, där 7 är standard. Högre siffror innebär att AiCasso kommer att följa din prompt mer noggrant.</li>
+    </ul>
+
+    <p>Kom ihåg, dessa inställningar är valfria! AiCasso är ganska smart och kan lista ut vad du menar även om du inte får varje detalj perfekt. Ha bara kul och låt din kreativitet flöda!</p>
+
+</body>
+</html>

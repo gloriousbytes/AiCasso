@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sfaturi pentru Funcția Repaint</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Sfaturi pentru Funcția Repaint</h2>
+    <p>Utilizarea funcției Inpaint în AiCasso îți permite să modifici zone specifice ale unei imagini prin umplerea sau înlocuirea acestora. Indiferent dacă dorești să îmbunătățești o imagine existentă sau să alterezi complet anumite secțiuni, AiCasso face procesul simplu. Tot ce trebuie să faci este să selectezi zonele pe care vrei să le schimbi, să oferi un prompt și să lași AiCasso să-și facă magia.</p>
+
+   <h3>Opțiuni:</h3>
+
+    <div class="example">
+        <strong>Forță:</strong>
+        <p>Opțiunea de forță controlează cât de mult din imaginea originală este schimbată de prompt. Aceasta variază de la 0 la 1. O valoare de 0 înseamnă că imaginea originală este barely altered, în timp ce o valoare de 1 înseamnă că imaginea originală este aproape complet înlocuită de noile detalii pe care le descrii. Gândește-te la asta ca la cât de 'puternice' vor fi modificările tale.</p>
+    </div>
+
+    <div class="example">
+        <strong>Îmbunătățire Stil:</strong>
+        <p>Opțiunea de îmbunătățire a stilului îți permite să adaugi un stil artistic sau tematic specific zonelor modificate. Poți alege dintr-o varietate de stiluri, cum ar fi:</p>
+    </div>
+
+    <h3>Cum Funcționează:</h3>
+
+    <div class="example">
+        <strong>Imagine de Intrare:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1OzuoAKoYvwEW30ScvOjgX9lfe6VpbdNq/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Pictați Zonele care Trebuie Umplute sau Înlocuite:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1-PaOaaDEvMogYhFjiMjUztvsxhllTsQ3/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Exemple:</h3>
+
+    <div class="example">
+        <strong>Prompt 1:</strong> "O imagine hiper-realistă cu o pisică în parc."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1BpTJPP7s5CJ-6Yk03s281K6ay6DQ-sFa/preview"></iframe>
+        </div>
+        <p><em>Rezultatul:</em> AiCasso va genera o pisică hiper-realistă în parc, umplând zonele pictate fără cusur cu texturi și iluminare realiste.</p>
+    </div>
+
+    <div class="example">
+        <strong>Prompt 2:</strong> "O pisică în parc cu un stil hiper-realist și o forță de 0.7."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1USCGxNAf0iteIGn8Klp97HI-spTTiREW/preview"></iframe>
+        </div>
+        <p><em>Rezultatul:</em> Aceasta va crea o pisică hiper-realistă în parc, cu forța de modificare setată la 0.7, integrând noile elemente în mod armonios în imaginea originală.</p>
+    </div>
+
+  <h3>Îmbunătățiri Stiluri</h3>
+<p>Nu ești sigur ce stil să alegi? Nu-ți face griji! Menționează orice stil care îți vine în minte, chiar dacă nu este gramatical corect, iar AiCasso va înțelege din lista de Stiluri de Îmbunătățire disponibile.</p>
+
+    <ul>
+        <li><strong>Implicit:</strong> Un stil echilibrat și neutru fără influențe artistice specifice.</li>
+        <li><strong>Îmbunătățire:</strong> Îmbunătățește ușor detaliile și estetica generală.</li>
+        <li><strong>Diva Cinematică:</strong> Adaugă un efect dramatic, asemănător filmelor, cu contraste puternice de iluminare.</li>
+        <li><strong>Expresionism Abstract:</strong> Pune accent pe forme abstracte și stropi de culoare vibrante.</li>
+        <li><strong>Academia:</strong> Adaugă o notă academică și clasică imaginii.</li>
+        <li><strong>Figură de Acțiune:</strong> Generează imagini cu stilul exagerat și dinamic al figurilor de acțiune.</li>
+        <li><strong>Personaj 3D Adorabil:</strong> Produce personaje 3D drăguțe, în stil cartoon.</li>
+        <li><strong>Kawaii Adorabil:</strong> Pune accent pe stilul drăguț și fermecător specific culturii Kawaii.</li>
+        <li><strong>Art Deco:</strong> Folosește stilul geometric și decorativ al perioadei Art Deco.</li>
+        <li><strong>Art Nouveau:</strong> Adaugă linii curgătoare și elemente inspirate din natură, tipice Art Nouveau.</li>
+        <li><strong>Aura Astrală:</strong> Creează o atmosferă mistică și din alte lumi.</li>
+        <li><strong>Avant-Garde:</strong> Pune accent pe expresii artistice inovatoare și experimentale.</li>
+        <li><strong>Baroc:</strong> Folosește stilul dramatic, detaliat și elaborat al epocii Baroc.</li>
+        <li><strong>Poster Stil Bauhaus:</strong> Reflectă principiile de design minimalist și funcțional ale Bauhaus.</li>
+        <li><strong>Desen Schematic Blueprint:</strong> Produce imagini asemănătoare cu planurile tehnice.</li>
+        <li><strong>Caricatură:</strong> Generează portrete exagerate, în stil cartoon.</li>
+        <li><strong>Artă Cel-Shaded:</strong> Folosește culori plate și îndrăznețe, tipice animației cel-shaded.</li>
+        <li><strong>Foaie de Design pentru Personaje:</strong> Pune accent pe designuri clare și curate de personaje, potrivite pentru animație.</li>
+        <li><strong>Artă Clasică:</strong> Emulează stilul artistic rafinat și idealizat al Antichității Clasice.</li>
+        <li><strong>Pictură pe Câmp de Culoare:</strong> Prezintă mari zone de o singură culoare pentru a crea un plan plat de culoare.</li>
+        <li><strong>Artă cu Creion Colorat:</strong> Imite textura și aspectul desenelor cu creion colorat.</li>
+        <li><strong>Artă Conceptuală:</strong> Prioritizează ideile și conceptele în detrimentul preocupărilor estetice sau materiale.</li>
+        <li><strong>Constructivism:</strong> Reflectă stilul industrial și geometric al mișcării Constructiviste.</li>
+        <li><strong>Cubism:</strong> Descompune obiectele în forme geometrice și le prezintă în forme abstracte.</li>
+        <li><strong>Dadaism:</strong> Pune accent pe absurditate, iraționalitate și estetica anti-artă.</li>
+        <li><strong>Fantezie Întunecată:</strong> Creează o atmosferă moody, gotică, cu elemente întunecate și înfricoșătoare.</li>
+        <li><strong>Atmosferă Întunecată și Melancolică:</strong> Folosește iluminare slabă și umbre pentru a crea o ambianță melancolică.</li>
+        <li><strong>Artă DMT:</strong> Prezintă vizualuri vibrante, psihedelice inspirate de experiențele DMT.</li>
+        <li><strong>Artă Doodle:</strong> Pune accent pe stiluri de desen jucăușe și jucăușe, adesea intricate și detaliate.</li>
+        <li><strong>Expunere Dublă:</strong> Combină două imagini într-una, creând un efect supranatural, stratificat.</li>
+        <li><strong>Stropire cu Vopsea Picurată:</strong> Folosește vopsea stropită și picurată pentru a crea compoziții dinamice și haotice.</li>
+        <li><strong>Expresionism:</strong> Prioritizează expresia emoțională în detrimentul reprezentării realiste, folosind adesea culori îndrăznețe și forme dramatice.</li>
+        <li><strong>Fotografie Polaroid Estompată:</strong> Imite aspectul îmbătrânit și nostalgic al unei fotografii Polaroid estompate.</li>
+        <li><strong>Fauvism:</strong> Folosește culori vibrante, nenaturale și pensulări îndrăznețe, inspirate de mișcarea Fauvistă.</li>
+        <li><strong>2D Plat:</strong> Pune accent pe designuri simple, plate, cu umbrire sau adâncime minimă, adesea într-un stil cartoon.</li>
+        <li><strong>Stil Fortnite:</strong> Reflectă stilul artistic vibrant și cartoonish tipic jocului video Fortnite.</li>
+        <li><strong>Futurism:</strong> Pune accent pe mișcare dinamică, energie și reprezentarea tehnologiilor viitoare.</li>
+        <li><strong>Glitchcore:</strong> Pune accent pe erori digitale și glitch-uri ca stil artistic, adesea cu vizualuri distorsionate.</li>
+        <li><strong>Glo-Fi:</strong> Folosește iluminare moale și strălucitoare pentru a crea o atmosferă visătoare și etereală.</li>
+        <li><strong>Stil Googie:</strong> Reflectă tendințele de design futurist și din Era Spațială din mijlocul secolului XX.</li>
+        <li><strong>Artă Graffiti:</strong> Folosește estetica vibrantă, de stil stradal, tipică graffiti-ului și muralelor urbane.</li>
+        <li><strong>Artă Harlem Renaissance:</strong> Reflectă expresiile culturale și artistice bogate ale Renașterii Harlem.</li>
+        <li><strong>Modă Înaltă:</strong> Pune accent pe estetica elegantă, sofisticată și avant-garde a modei înalte.</li>
+        <li><strong>Idilic:</strong> Creează o atmosferă pașnică, serenă și adesea pastorală.</li>
+        <li><strong>Impresionism:</strong> Folosește pensulări libere și culori vibrante pentru a surprinde efectele luminii și atmosferei.</li>
+        <li><strong>Desen Infografic:</strong> Pune accent pe layout-uri clare și vizual atrăgătoare pentru prezentarea informațiilor grafic.</li>
+        <li><strong>Desen cu Cerneală Picurată:</strong> Folosește cerneală pentru a crea efecte fluide și picurate într-un desen.</li>
+        <li><strong>Desen cu Cerneală Japoneză:</strong> Emulează tehnicile tradiționale de pensulare și estetica artei cu cerneală japoneză.</li>
+        <li><strong>Fotografie Knolling:</strong> Pune accent pe aranjamentul neat și organizat al obiectelor, adesea fotografiate dintr-o parte.</li>
+        <li><strong>Atmosferă Luminoasă și Vesele:</strong> Folosește culori și iluminare strălucitoare pentru a crea o atmosferă veselă și optimistă.</li>
+        <li><strong>Design Logo:</strong> Pune accent pe crearea de logo-uri și elemente de branding clare și recognoscibile.</li>
+        <li><strong>Eleganță Luxoasă:</strong> Pune accent pe sofisticare și lux, adesea cu texturi și materiale bogate.</li>
+        <li><strong>Fotografie Macro:</strong> Pune accent pe prim-planuri extreme, adesea dezvăluind detalii intricate care nu sunt vizibile cu ochiul liber.</li>
+        <li><strong>Artă Mandala:</strong> Creează modele intricate, simetrice inspirate de designurile tradiționale de mandala.</li>
+        <li><strong>Desen cu Marker:</strong> Emulează liniile și culorile îndrăznețe și vibrante tipice desenelor cu marker.</li>
+        <li><strong>Medievalism:</strong> Reflectă estetica artei și designului din perioada medievală.</li>
+        <li><strong>Minimalism:</strong> Pune accent pe simplitate și reducerea formelor la elementele lor esențiale.</li>
+        <li><strong>Neo-Baroc:</strong> Revivează stilul opulent și dramatic al epocii Baroc, cu influențe moderne.</li>
+        <li><strong>Neo-Bizantin:</strong> Combină stilul artistic ornate și religios al Imperiului Bizantin cu elemente contemporane.</li>
+        <li><strong>Neo-Futurism:</strong> Pune accent pe designuri futuriste, adesea cu estetica elegantă și de înaltă tehnologie.</li>
+        <li><strong>Neo-Impresionism:</strong> Folosește puncte mici și distincte de culoare pentru a crea imagini, inspirate de mișcarea Neo-Impresionistă.</li>
+        <li><strong>Neo-Rococo:</strong> Revivează stilul elaborat și decorativ al epocii Rococo, cu întorsături moderne.</li>
+        <li><strong>Neoclasicism:</strong> Emulează estetica artei și designului din Antichitatea clasică, punând accent pe armonie și simplitate.</li>
+        <li><strong>Artă Op:</strong> Creează iluzii optice și efecte prin utilizarea de modele geometrice și contraste.</li>
+        <li><strong>Ornate și Intricate:</strong> Pune accent pe designuri foarte detaliate și elaborate, cu un accent pe decorare.</li>
+        <li><strong>Desen cu Creion:</strong> Emulează textura și aspectul schițelor cu creion.</li>
+        <li><strong>Artă Pop:</strong> Folosește culori îndrăznețe și imagini inspirate de cultura populară și mass-media.</li>
+        <li><strong>Rococo:</strong> Reflectă stilul elaborat și decorativ al epocii Rococo, cu un accent pe ușurință și eleganță.</li>
+        <li><strong>Artă Siluetă:</strong> Folosește contraste puternice între lumină și umbră pentru a crea imagini bazate pe siluete.</li>
+        <li><strong>Artă Vectorială Simplă:</strong> Pune accent pe forme geometrice clare și culori plate, tipice artei vectoriale.</li>
+        <li><strong>SketchUp:</strong> Emulează aspectul și senzația modelelor 3D create folosind software-ul SketchUp.</li>
+        <li><strong>Steampunk:</strong> Combină estetica epocii victoriene cu tehnologia alimentată cu aburi, creând un stil retro-futurist.</li>
+        <li><strong>Surrealism:</strong> Îmbină realitatea și imagini de vis pentru a crea scene supranaturale și fantastice.</li>
+        <li><strong>Suprematism:</strong> Pune accent pe forme geometrice de bază și palete de culori limitate, inspirate de mișcarea Suprematistă.</li>
+        <li><strong>Terragen:</strong> Emulează peisajele realiste generate de computer create folosind software-ul Terragen.</li>
+        <li><strong>Atmosferă Relaxantă și Tranquilă:</strong> Folosește culori moi și imagini liniștitoare pentru a crea un mediu pașnic și seren.</li>
+        <li><strong>Designuri de Stickere:</strong> Pune accent pe crearea de imagini jucăușe, în stil cartoon, potrivite pentru stickere.</li>
+        <li><strong>Iluminare Vibrantă de Contur:</strong> Pune accent pe iluminarea strălucitoare în jurul subiecților pentru a crea un efect vibrant și izbitor.</li>
+        <li><strong>Iluminare Volumetrică:</strong> Folosește raze de lumină și efecte atmosferice pentru a crea adâncime și dimensiune.</li>
+        <li><strong>Acuarelă:</strong> Emulează texturile moi și curgătoare ale picturilor cu acuarelă.</li>
+        <li><strong>Jucăuș și Distractiv:</strong> Pune accent pe imagini ușoare, imaginative și adesea ciudate.</li>
+        <li><strong>Clar:</strong> Îmbunătățește claritatea și definiția marginilor pentru un aspect mai clar.</li>
+        <li><strong>Capodoperă:</strong> Pune accent pe output artistic de înaltă calitate, detaliat și rafinat.</li>
+        <li><strong>Fotografie:</strong> Vizează o calitate fotografică realistă și vie.</li>
+        <li><strong>Negativ:</strong> Inversează culorile pentru a crea un efect de negativ fotografic.</li>
+        <li><strong>Ads - Publicitate:</strong> Pune accent pe vizualuri curate și profesionale potrivite pentru publicitate.</li>
+        <li><strong>Ads - Automotive:</strong> Ajustează stilul vizual pentru publicitate dinamică și rafinată în domeniul auto.</li>
+        <li><strong>Ads - Corporate:</strong> Pune accent pe designul elegant și profesional, potrivit pentru medii corporative.</li>
+        <li><strong>Ads - Editorial de Modă:</strong> Subliniază aspectul stilat și de modă înaltă folosit în editoriale de modă.</li>
+        <li><strong>Ads - Fotografie de Mâncare:</strong> Optimizează imaginile pentru aspectul vibrant și apetisant tipic fotografiei de mâncare.</li>
+        <li><strong>Ads - Fotografie de Mâncare Gourmet:</strong> Pune accent pe estetica bogată și detaliată a fotografiei de mâncare gourmet.</li>
+        <li><strong>Ads - Lux:</strong> Pune accent pe stilul opulent și de înaltă clasă, potrivit pentru branduri de lux.</li>
+        <li><strong>Ads - Imobiliare:</strong> Subliniază vizualurile curate și primitoare tipice publicității imobiliare.</li>
+        <li><strong>Ads - Retail:</strong> Pune accent pe stilul atrăgător, orientat spre consumatori, potrivit pentru publicitatea de retail.</li>
+        <li><strong>Hyperrealism:</strong> Se străduiește pentru un stil vizual extrem de detaliat și realist.</li>
+        <li><strong>Pointillism:</strong> Folosește puncte mici și distincte de culoare pentru a crea o imagine, inspirată de mișcarea Pointillistă.</li>
+        <li><strong>Psychedelic:</strong> Pune accent pe culori vii și vizualuri supranaturale inspirate de arta psihedelică.</li>
+        <li><strong>Renaștere:</strong> Reflectă stilul armonios și clasic al artei Renașterii.</li>
+        <li><strong>Tipografie:</strong> Pune accent pe utilizarea creativă și artistică a textului și fonturilor.</li>
+        <li><strong>Biomecanic Futurist:</strong> Combină elemente futuriste și biomecanice pentru a crea un stil organic de înaltă tehnologie.</li>
+        <li><strong>Cyberpunk Biomecanic Futurist:</strong> Îmbină estetica biomecanică și cyberpunk pentru un aspect gritty și futurist.</li>
+        <li><strong>Cybernetic Futurist:</strong> Pune accent pe vizualuri de înaltă tehnologie și cibernetice.</li>
+        <li><strong>Robot Cybernetic Futurist:</strong> Pune accent pe designuri robotice și cibernetice cu un aspect futurist.</li>
+        <li><strong>Peisaj Urban Cyberpunk Futurist:</strong> Reflectă peisajele urbane gritty, iluminate cu neon, tipice artei cyberpunk.</li>
+        <li><strong>Futurism Sci-Fi:</strong> Pune accent pe estetica inspirată de futurism și science fiction.</li>
+        <li><strong>Cyberpunk Retro Futurist:</strong> Combină elemente retro și cyberpunk pentru un stil nostalgic, dar futurist.</li>
+        <li><strong>Retro Futurist:</strong> Combină vizualuri futuriste cu elemente de design retro.</li>
+        <li><strong>Vaporwave Futurist:</strong> Pune accent pe vizualurile nostalgice și supranaturale tipice artei Vaporwave.</li>
+        <li><strong>Bubble Game:</strong> Pune accent pe o estetică jucăușă și plină de bule, adesea întâlnită în jocurile casual.</li>
+        <li><strong>Cyberpunk Game:</strong> Îmbină elemente de design de joc cu estetica cyberpunk.</li>
+        <li><strong>Fighting Game:</strong> Reflectă stilul dinamic și intens tipic jocurilor de luptă.</li>
+        <li><strong>GTA Game:</strong> Emulează stilul gritty și urban tipic jocurilor Grand Theft Auto.</li>
+        <li><strong>Mario Game:</strong> Pune accent pe stilul vibrant și cartoonish tipic jocurilor Mario.</li>
+        <li><strong>Minecraft Game:</strong> Emulează stilul blocat și pixelat tipic jocului Minecraft.</li>
+        <li><strong>Pokemon Game:</strong> Reflectă stilul vibrant, inspirat de anime, tipic jocurilor Pokémon.</li>
+        <li><strong>Retro Arcade Game:</strong> Pune accent pe stilul nostalgic și pixelat tipic jocurilor arcade retro.</li>
+        <li><strong>RPG Fantasy Game:</strong> Reflectă estetica detaliată, inspirată de fantezie, tipică jocurilor RPG.</li>
+        <li><strong>Strategy Game:</strong> Pune accent pe designul curat și funcțional tipic jocurilor de strategie.</li>
+        <li><strong>Streetfighter Game:</strong> Emulează stilul îndrăzneț și dinamic tipic jocurilor Street Fighter.</li>
+        <li><strong>Zelda Game:</strong> Reflectă stilul inspirat de fantezie tipic jocurilor Zelda.</li>
+        <li><strong>Misc Architectural:</strong> Pune accent pe redările arhitecturale clare și precise.</li>
+        <li><strong>Misc Disco:</strong> Pune accent pe estetica vibrantă, iluminată cu neon, tipică culturii disco.</li>
+        <li><strong>Misc Dreamscape:</strong> Creează medii supranaturale, de vis.</li>
+        <li><strong>Misc Dystopian:</strong> Reflectă vizualurile gritty și sumbre tipice setărilor distopice.</li>
+        <li><strong>Misc Fairy Tale:</strong> Pune accent pe elementele jucăușe și magice tipice basmelor.</li>
+        <li><strong>Misc Gothic:</strong> Reflectă stilul întunecat și ornate tipic artei și arhitecturii gotice.</li>
+        <li><strong>Misc Grunge:</strong> Pune accent pe estetica gritty și raw tipică culturii grunge.</li>
+        <li><strong>Misc Horror:</strong> Pune accent pe vizualuri întunecate, înfricoșătoare și neliniștitoare tipice horror-ului.</li>
+        <li><strong>Misc Kawaii:</strong> Reflectă stilul drăguț și fermecător tipic culturii Kawaii.</li>
+        <li><strong>Misc Lovecraftian:</strong> Pune accent pe groaza cosmică și ciudată tipică ficțiunii lovecraftiene.</li>
+        <li><strong>Misc Macabre:</strong> Pune accent pe teme întunecate, morbide și neliniștitoare.</li>
+        <li><strong>Misc Manga:</strong> Emulează stilul îndrăzneț și dinamic tipic manga.</li>
+        <li><strong>Misc Metropolis:</strong> Reflectă estetica elegantă și urbană tipică metropolelor moderne.</li>
+        <li><strong>Misc Minimalist:</strong> Pune accent pe simplitate și reducerea formelor la esențial.</li>
+        <li><strong>Misc Monochrome:</strong> Pune accent pe imagini create în nuanțe variate ale unei singure culori.</li>
+        <li><strong>Misc Nautical:</strong> Reflectă estetica inspirată de maritime tipică temelor nautice.</li>
+        <li><strong>Misc Space:</strong> Pune accent pe vizualurile vaste și din alte lumi tipice setărilor spațiale.</li>
+        <li><strong>Misc Stained Glass:</strong> Emulează designurile intricate și colorate tipice artei din sticlă colorată.</li>
+        <li><strong>Misc Techwear Fashion:</strong> Pune accent pe estetica futuristă și funcțională tipică modei techwear.</li>
+        <li><strong>Misc Tribal:</strong> Reflectă estetica culturală îndrăzneață tipică artei tribale.</li>
+        <li><strong>Misc Zentangle:</strong> Pune accent pe modelele intricate și repetitive tipice artei Zentangle.</li>
+        <li><strong>Colaj Papercraft:</strong> Folosește hârtie tăiată pentru a crea colaje stratificate și texturate.</li>
+        <li><strong>Papercraft Flat Papercut:</strong> Pune accent pe designurile plate din hârtie tăiată.</li>
+        <li><strong>Papercraft Kirigami:</strong> Pune accent pe designurile intricate și pliate tipice Kirigami.</li>
+        <li><strong>Papercraft Paper Mache:</strong> Folosește hârtie mache pentru a crea forme texturate și tridimensionale.</li>
+        <li><strong>Papercraft Paper Quilling:</strong> Pune accent pe designurile delicate și rulate din hârtie tipice quilling-ului.</li>
+        <li><strong>Colaj Papercraft Papercut:</strong> Combină elemente din hârtie tăiată pentru a crea colaje stratificate.</li>
+        <li><strong>Papercraft Papercut Shadow Box:</strong> Folosește papercut-uri stratificate pentru a crea cutii de umbră tridimensionale.</li>
+        <li><strong>Papercraft Stacked Papercut:</strong> Pune accent pe designurile stratificate și stivuite din hârtie.</li>
+        <li><strong>Papercraft Thick Layered Papercut:</strong> Pune accent pe aspectul dimensional și stratificat tipic designurilor groase din hârtie tăiată.</li>
+        <li><strong>Foto Alien:</strong> Pune accent pe vizualuri supranaturale și extraterestre.</li>
+        <li><strong>Foto Film Noir:</strong> Pune accent pe estetica întunecată și melancolică tipică filmelor noir.</li>
+        <li><strong>Foto Glamour:</strong> Subliniază aspectul rafinat și stilat tipic fotografiei glamour.</li>
+        <li><strong>Foto HDR:</strong> Folosește gama dinamică înaltă (HDR) pentru a crea imagini cu o gamă largă de lumină și culoare.</li>
+        <li><strong>Foto iPhone Fotografic:</strong> Emulează stilul curat și modern tipic fotografiei cu iPhone.</li>
+        <li><strong>Foto Expunere Lungă:</strong> Folosește expunerea lungă pentru a crea efecte dinamice, cu mișcare estompată.</li>
+        <li><strong>Foto Neon Noir:</strong> Combină iluminarea neon cu estetica întunecată și melancolică a noir-ului.</li>
+        <li><strong>Foto Siluetă:</strong> Pune accent pe contraste puternice între lumină și umbră pentru a crea imagini bazate pe siluete.</li>
+        <li><strong>Foto Tilt Shift:</strong> Folosește efecte tilt-shift pentru a crea un aspect miniaturizat, asemănător jucăriilor.</li>
+        <li><strong>Model 3D:</strong> Pune accent pe aspectul curat și detaliat tipic modelelor 3D.</li>
+        <li><strong>Film Analog:</strong> Emulează aspectul granulat și texturat tipic fotografiei pe film analog.</li>
+        <li><strong>Anime:</strong> Pune accent pe stilul vibrant și dinamic tipic anime-ului.</li>
+        <li><strong>Cinematic:</strong> Creează un efect dramatic, asemănător filmelor, cu iluminare și compoziții puternice.</li>
+        <li><strong>Comic Book:</strong> Folosește linii îndrăznețe și culori vibrante tipice artei din benzi desenate.</li>
+        <li><strong>Craft Clay:</strong> Emulează aspectul texturat și realizat manual al modelelor din lut.</li>
+        <li><strong>Artă Digitală:</strong> Pune accent pe lucrări de artă digitală curate și rafinate.</li>
+        <li><strong>Artă Fantasy:</strong> Pune accent pe vizualurile detaliate și imaginative tipice artei fantasy.</li>
+        <li><strong>Izometric:</strong> Folosește o perspectivă izometrică pentru a crea un aspect tridimensional.</li>
+        <li><strong>Artă de Linie:</strong> Pune accent pe linii clare și precise pentru a crea desene detaliate.</li>
+        <li><strong>Low Poly:</strong> Folosește modele 3D cu poligoane reduse pentru a crea un aspect minimalist și geometric.</li>
+        <li><strong>Neonpunk:</strong> Combină iluminarea neon cu estetica gritty a cyberpunk-ului.</li>
+        <li><strong>Origami:</strong> Pune accent pe designurile intricate și pliate tipice origami-ului.</li>
+        <li><strong>Fotografic:</strong> Vizează vizualuri realiste și vii.</li>
+        <li><strong>Pixel Art:</strong> Folosește designuri pixelate pentru a crea un aspect retro, inspirat de jocuri video.</li>
+        <li><strong>Textură:</strong> Pune accent pe texturi bogate și detaliate pentru a îmbunătăți adâncimea vizuală.</li>
+    </ul>
+
+</body>
+</html>

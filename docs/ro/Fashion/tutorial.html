@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghid pentru Funcția Fashion Generation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Ghid pentru Utilizarea Funcției Fashion Generation</h2>
+    <p>Funcția Fashion Generation din AiCasso îți permite să îmbraci pe cineva într-o ținută specifică, cum ar fi o cămașă, o rochie sau o pereche de pantaloni. Pur și simplu descrie ce dorești și urmărește cum AiCasso aplică articolul de îmbrăcăminte persoanei din imagine.</p>
+
+    <h3>Cum Funcționează:</h3>
+    
+    <div class="example">
+        <strong>Input 1 - Imaginea Persoanei:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+        </div>
+        <strong>Input 2 - Articolul de Îmbrăcăminte:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+        </div>
+        <strong>Prompt:</strong>
+        <p>"Băiat îmbrăcat într-o cămașă"</p>
+        <strong>Rezultatul:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Parametrii Opționali</h3>
+    <p>Dacă dorești să adaugi propriul stil sau să te asiguri că rezultatul este exact așa cum vrei, poți ajusta aceste setări:</p>
+
+    <ul>
+        <li><strong>Prompt Negativ:</strong> Dacă există ceva ce <em>nu</em> vrei în imagine, menționează-l aici. Lasă-l gol dacă ești de acord cu orice propune AiCasso.</li>
+        <li><strong>Tipul de Material:</strong> Spune-i lui AiCasso dacă te concentrezi pe <em>partea superioară</em>, <em>partea inferioară</em> sau <em>rochii</em>. Dacă nu ești sigur, se va seta implicit pe partea superioară.</li>
+        <li><strong>Numărul de Pași de Denoising:</strong> Acesta decide cât de neted și rafinat arată imaginea. Poți alege între 21, 31 sau 41 de pași, cu 21 fiind setarea implicită. Mai mulți pași înseamnă de obicei un aspect mai rafinat.</li>
+        <li><strong>Scara de Ghidare:</strong> Aceasta ajută imaginea să se alinieze strâns cu descrierea ta. Poți seta între 1 și 20, cu 7 fiind setarea implicită. Numerele mai mari înseamnă că AiCasso va urma mai îndeaproape promptul tău.</li>
+    </ul>
+
+    <p>Ține minte, aceste setări sunt opționale! AiCasso este destul de inteligent și poate înțelege ce vrei chiar dacă nu obții fiecare detaliu perfect. Distracție plăcută și lasă-ți creativitatea să curgă!</p>
+
+</body>
+</html>

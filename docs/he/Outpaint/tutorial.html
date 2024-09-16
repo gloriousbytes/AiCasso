@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>טיפים לתכונת Outpaint</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>טיפים לשימוש בתכונת Outpaint</h2>
+    <p>תכונת Outpaint ב-AiCasso מאפשרת לך להרחיב תמונה על ידי הוספת אלמנטים חדשים סביבה או הארכת מה שכבר קיים. פשוט תאר מה אתה רוצה, ו-AiCasso ידאג לשאר.</p>
+
+    <h3>איך זה עובד:</h3>
+    
+    <div class="example">
+        <strong>תמונה התחלתית:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>תאר את השינוי שלך:</strong>
+        <p>פשוט הקלד מה אתה רוצה להוסיף או להרחיב, ו-AiCasso יישם את השינויים הללו. אתה יכול לציין כיוונים כמו שמאלה, ימינה, למעלה או למטה, ואפילו פרטים כמו זום החוצה או פאן.</p>
+    </div>
+
+    <h3>דוגמאות לעריכות:</h3>
+
+    <div class="example">
+        <strong>דוגמה 1:</strong> "הוסף קרחון לימין תוך שימוש בגורם תרגום של 0.4."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+        </div>
+        <p><em>תוצאה:</em> AiCasso מרחיב את התמונה לימין ומוסיף קרחון, תוך שמירה על עקביות עם הנוף הקיים.</p>
+    </div>
+
+    <div class="example">
+        <strong>דוגמה 2:</strong> "זום החוצה, שמור על עקביות של הים האפל בלילה."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+        </div>
+        <p><em>תוצאה:</em> התמונה מזמינה החוצה, חושפת יותר מהים האפל, תוך שמירה על האווירה של סצנת הלילה.</p>
+    </div>
+
+    <h3>אפשרויות נוספות</h3>
+    <p>הנה כמה הגדרות אופציונליות שאתה יכול להשתמש בהן כדי לדייק את העריכות שלך:</p>
+
+    <ul>
+        <li><strong>הנחיה שלילית:</strong> אם יש משהו ספציפי שאתה לא רוצה בתמונה, אתה יכול לומר ל-AiCasso כאן. לדוגמה, ייתכן שתרצה להימנע מהוספת צבעים או אובייקטים מסוימים.</li>
+        <li><strong>סוג הליכה:</strong> זה קובע את הכיוון שבו התמונה מתרחבת. אתה יכול לבחור משמאל, מימין, למעלה, למטה או אחורה (שזה זום החוצה). לדוגמה, כדי לפאן ימינה, תבחר 'ימינה'.</li>
+        <li><strong>גורם תרגום:</strong> זה שולט בכמה התמונה זזה בכל צעד כאשר היא מתרחבת. ערך גבוה יותר מזיז את התמונה יותר, חושף יותר מהתוכן החדש. ברירת המחדל היא 0.05, אבל אתה יכול להתאים את זה מ-0 ל-1.</li>
+        <li><strong>רוחב/גובה תרגום לכל צעד:</strong> אלה שולטים כמה רחוק התמונה זזה אופקית (רוחב) או אנכית (גובה) בכל צעד. ברירת המחדל היא 32 פיקסלים לכל צעד, אבל אתה יכול להתאים את זה לפי כמה אתה רוצה שהתמונה תזוז.</li>
+        <li><strong>מספר צעדי אינפרנציה או דנויזינג:</strong> זה קובע כמה התאמות AiCasso עושה כדי לקבל את התמונה הסופית. יותר צעדים מובילים לתוצאה חלקה יותר, עם ברירת מחדל של 20 צעדים, אבל אתה יכול להגיע עד 50.</li>
+        <li><strong>מספר צעדי אינטרפולציה:</strong> זה שולט כמה חלקה המעבר מתרחש בין שני כיוונים בהתרחבות אחת. ברירת המחדל היא 60, אבל אתה יכול להגדיל את זה עד 120 עבור מעברים חלקים יותר.</li>
+    </ul>
+
+    <p>זכור, ההגדרות הללו הן אופציונליות. AiCasso מיועד לעבוד היטב רק עם תיאור בשפה הטבעית שלך. אל תהסס לנסות ולראות מה עובד הכי טוב עבור התמונה שלך!</p>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>फेस जनरेशन फीचर मार्गदर्शक</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>फेस जनरेशन फीचर वापरण्याचा मार्गदर्शक</h2>
+    <p>AiCasso मधील फेस जनरेशन फीचर अत्यंत बहुपरकारी आहे! हे तुम्हाला विविध पात्रे किंवा शैलींमध्ये विशिष्ट चेहरा समाविष्ट करून आकर्षक चित्रे तयार करण्याची परवानगी देते. तुम्ही एक नाईट, समुराई किंवा कोणतेही अन्य पात्र कल्पना करत असाल, AiCasso इनपुट चेहरा वापरून त्या चेहऱ्यासह मागणी केलेल्या डिझाइनमध्ये एक चित्र तयार करते.</p>
+
+    <h3>हे कसे कार्य करते:</h3>
+    
+    <div class="example">
+        <strong>इनपुट चित्र:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
+        </div>
+        <strong>प्रॉम्प्ट 1:</strong>
+        <p>"एक वास्तविक नाईट, अधिकतम स्केल वापरा"</p>
+        <strong>परिणाम 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
+        </div>
+        <strong>प्रॉम्प्ट 2:</strong>
+        <p>"चिबी शैली वापरा आणि एक समुराई तयार करा, डिफॉल्ट मूल्ये वापरा"</p>
+        <strong>परिणाम 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
+        </div>
+        <strong>प्रॉम्प्ट 3:</strong>
+        <p>"एक समुराई, 31 डिनॉइजिंग स्टेप्स वापरा, आणि अॅनिमे शैली"</p>
+        <strong>परिणाम 3:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>ऐच्छिक पॅरामीटर्स</h3>
+    <p>तुम्हाला तुमच्या तयार केलेल्या चित्रांमध्ये थोडी अधिक व्यक्तिमत्व किंवा नियंत्रण जोडायचे असल्यास, येथे काही पर्याय आहेत ज्यात तुम्ही बदल करू शकता:</p>
+
+    <ul>
+        <li><strong>नकारात्मक प्रॉम्प्ट:</strong> येथे तुम्ही AiCasso ला काय <em>दिसू नये</em> हे सांगू शकता. तुम्ही हे रिकामे ठेवले तर, AiCasso फक्त सकारात्मक प्रॉम्प्टवर लक्ष केंद्रित करेल.</li>
+        <li><strong>डिनॉइजिंग स्टेप्सची संख्या:</strong> हे चित्र किती गुळगुळीत आणि परिष्कृत दिसते हे नियंत्रित करते. तुम्ही 21, 31, किंवा 41 स्टेप्समध्ये निवडू शकता, 41 हे डिफॉल्ट आहे. अधिक स्टेप्स म्हणजे एक स्वच्छ, अधिक पॉलिश केलेले चित्र.</li>
+        <li><strong>गाइडन्स स्केल:</strong> हे चित्राला तुमच्या वर्णनाशी खरे राहण्यास मदत करते. स्केल 1 ते 20 पर्यंत असते, 10 हे डिफॉल्ट आहे. उच्च संख्या म्हणजे AiCasso तुमच्या प्रॉम्प्टच्या जवळ राहील.</li>
+        <li><strong>S स्केल:</strong> हे चेहऱ्याच्या संरचनेबद्दल आहे. हे थोडे तांत्रिक आहे, परंतु मूलतः हे चेहऱ्याच्या संरचनेचा वजन समायोजित करते. डिफॉल्ट 1.0 आहे, आणि तुम्ही 0.0 ते 2.0 पर्यंत जाऊ शकता.</li>
+        <li><strong>शैली:</strong> तुमच्या चित्राला विशिष्ट वायब देऊ इच्छिता का? तुम्ही कॉमिक, चिबी, 3D, अॅनिमे, किंवा वास्तविकता यांसारखी शैली निवडू शकता. वास्तविकता हे डिफॉल्ट आहे, पण तुम्ही सर्जनशील होऊ शकता!</li>
+    </ul>
+
+    <p>आणि लक्षात ठेवा, AiCasso खूप सहनशील आहे. तुम्हाला व्याकरण तज्ञ असण्याची किंवा प्रत्येक तपशील परिपूर्ण असण्याची आवश्यकता नाही. तुम्ही तुमच्या स्वतःच्या शब्दांत काय हवे आहे ते वर्णन करा, आणि AiCasso उर्वरित काळजी घेईल. तयार करण्याचा आनंद घ्या!</p>
+
+</body>
+</html>

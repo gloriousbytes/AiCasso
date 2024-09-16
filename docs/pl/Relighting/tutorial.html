@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przewodnik po funkcji ponownego oświetlenia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Przewodnik po korzystaniu z funkcji ponownego oświetlenia</h2>
+    <p>Funkcja ponownego oświetlenia w AiCasso jest super fajna! Pozwala na zmianę oświetlenia w Twoich obrazach za pomocą zaledwie kilku słów. Chcesz słońce z tyłu lub miękkie światło z boku? Żaden problem! Po prostu opisz to, a AiCasso zajmie się resztą.</p>
+
+    <h3>Jak to działa:</h3>
+    
+    <div class="example">
+        <strong>Obraz wejściowy:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+        </div>
+        <strong>Użyty prompt:</strong>
+        <p>"Spraw, aby słońce było z tyłu"</p>
+        <strong>Wynik:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Opcjonalne dostosowania</h3>
+    <p>Jeśli czujesz się odważnie i chcesz dodać trochę więcej stylu do swojego ponownego oświetlenia, oto kilka rzeczy, które możesz dostosować:</p>
+
+    <ul>
+        <li><strong>Negatywny prompt:</strong> Chcesz czegoś uniknąć? Możesz powiedzieć AiCasso, co <em>nie</em> powinno być uwzględnione. Ale nie martw się, jeśli zostawisz to puste, AiCasso skupi się tylko na tym, co chcesz.</li>
+        <li><strong>Kierunek światła:</strong> Możesz określić, skąd powinno pochodzić światło—z lewej, prawej, z góry, z dołu, a nawet wcale. Domyślnie światło pochodzi z lewej.</li>
+        <li><strong>Skala prowadzenia:</strong> To pomaga AiCasso trzymać się Twojego opisu. Skala wynosi od 1 do 20, przy czym 7 jest domyślną wartością. Im wyższa liczba, tym bardziej AiCasso trzyma się Twojego promptu.</li>
+        <li><strong>Skala wysokiej rozdzielczości:</strong> Chcesz, aby Twój obraz był wyraźniejszy? To kontroluje klarowność. Domyślnie wynosi 1.5, ale możesz ustawić ją od 1.0 do 2.0, aby uzyskać ostrzejszy obraz.</li>
+        <li><strong>Poziomy odszumiania:</strong> Są dwa poziomy—niska rozdzielczość i wysoka rozdzielczość. Te poziomy kontrolują, jak gładki lub szczegółowy wygląda końcowy obraz. Możesz ustawić niski poziom odszumiania między 0.0 a 1.0 (domyślnie 0.9) oraz wysoki poziom między 0.0 a 1.0 (domyślnie 0.5).</li>
+        <li><strong>Liczba kroków:</strong> To liczba kroków, które AiCasso wykonuje, aby dopracować Twój obraz. Domyślnie wynosi 50, ale możesz ustawić od 20 do 50 kroków.</li>
+    </ul>
+
+    <p>Pamiętaj, że te dostosowania są całkowicie opcjonalne! AiCasso jest całkiem dobry w rozumieniu, czego chcesz, więc po prostu opisz swoją wizję własnymi słowami, a on zrobi magię. Nie musisz być perfekcyjny w gramatyce czy szczegółach—po prostu baw się dobrze i zobacz, co możesz stworzyć!</p>
+
+</body>
+</html>

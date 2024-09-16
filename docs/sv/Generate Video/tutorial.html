@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide för att Generera Videofunktion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guide för att Använda Generera Videofunktion</h2>
+    <p>Generera Videofunktionen i AiCasso låter dig skapa videor genom att helt enkelt beskriva vad du vill se. Skriv bara ner din idé, så kommer AiCasso att förverkliga den i en video!</p>
+
+    <h3>Så här fungerar det:</h3>
+    
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"En 3D-animerad tupp på en äng helt ensam, som äter och är glad. Gör det till en porträttvideo med 50 avbrusningssteg."</p>
+        <strong>Resultat:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"En tecknad film av en tupp på en äng i landskapsdimensioner."</p>
+        <strong>Resultat:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"En tupp på en äng."</p>
+        <strong>Resultat:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Prompt:</strong>
+        <p>"En tupp som är på ängen helt ensam. Ge den en naturlig känsla."</p>
+        <strong>Resultat:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Ytterligare Alternativ</h3>
+    <p>Vill du finjustera din video? Här är några inställningar du kan leka med:</p>
+
+    <ul>
+        <li><strong>Antal Bilder:</strong> Välj hur många bilder (individuella bilder) din video ska ha. Du kan ha upp till 25 bilder, med 16 som standard.</li>
+        <li><strong>Antal Avbrusningssteg:</strong> Detta styr hur mjuk din video ser ut. Fler steg betyder mjukare videor. Du kan ställa in upp till 50 steg, med 20 som standard.</li>
+        <li><strong>Vägledningsskala:</strong> Detta hjälper videon att hålla sig nära din beskrivning. Ju högre nummer, desto mer följer den din prompt. Området är 0 till 8, med 8 som standard.</li>
+        <li><strong>Klipp Hoppa Över:</strong> Hoppa över vissa lager för en annan videostil. Som standard hoppar inga lager över, men du kan hoppa över upp till 2.</li>
+        <li><strong>Upscale Bredd och Höjd:</strong> Du kan göra din video större genom att justera upplösningen. Standard är 1024x1024 pixlar, men du kan justera detta för att passa dina behov.</li>
+        <li><strong>Upscale Styrka:</strong> Detta ändrar hur mycket din video justeras när den uppskalas. Standard är 1, men du kan justera det för att se fler skillnader.</li>
+        <li><strong>Upscale Vägledningsskala:</strong> Detta vägleder uppskalningsprocessen, med ett intervall från 0 till 8, och en standard på 8.</li>
+        <li><strong>Upscale Inference Steg:</strong> Antalet steg som tas för att uppskala videon. Fler steg ger en mjukare uppskalning, med ett maximum på 50 och en standard på 20.</li>
+        <li><strong>Förbättrad Sampling:</strong> Vill du ha en mer raffinerad video? Slå på detta. Det är avstängt som standard.</li>
+        <li><strong>Förbättrad Sampling Frö:</strong> Använd detta för att generera samma video varje gång med förbättrad sampling. Det är valfritt och avstängt som standard.</li>
+        <li><strong>Bilder per Sekund (FPS):</strong> Ställ in hastigheten på din video. Standard är 16 FPS, men du kan justera det upp till 16.</li>
+        <li><strong>Videomodell:</strong> Välj stilen på din video. Alternativen inkluderar:
+            <ul>
+                <li><strong>Standard:</strong> En standard videomodell.</li>
+                <li><strong>Tecknad:</strong> En tecknad videostil.</li>
+                <li><strong>Naturlig:</strong> En realistisk, naturligt utseende videostil.</li>
+                <li><strong>Animerad 3D:</strong> En 3D-animerad videostil.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Kom ihåg, dessa inställningar är valfria. Generera Videofunktionen fungerar utmärkt med bara en enkel beskrivning, så känn dig fri att experimentera och se vad du kan skapa!</p>
+
+</body>
+</html>

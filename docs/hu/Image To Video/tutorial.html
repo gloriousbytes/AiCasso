@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kép a Videó Funkció Útmutató</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>A Kép a Videó Funkció Használatának Útmutatója</h2>
+    <p>A Kép a Videó funkció az AiCasso-ban lehetővé teszi, hogy egyetlen képet dinamikus videóvá alakíts. Csak írd le, mit szeretnél látni a videódban, és az AiCasso megvalósítja!</p>
+
+    <h3>Hogyan Működik:</h3>
+    
+    <div class="example">
+        <strong>Bemeneti Kép:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+        </div>
+        <strong>Prompt 1:</strong>
+        <p>"Egy aranyos kiskutya a parkban"</p>
+        <strong>Eredmény 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+        </div>
+        <strong>Prompt 2:</strong>
+        <p>"Egy aranyos kiskutya a parkban, használj maximális FPS-t, maximális képkockákat és maximális mozgást"</p>
+        <strong>Eredmény 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Opcionális Paraméterek</h3>
+    <p>Ha pontosabb videót szeretnél, itt van néhány beállítás, amit módosíthatsz:</p>
+
+    <ul>
+        <li><strong>Negatív Prompt:</strong> Írd le, mit *nem* szeretnél a videóban. Ha üresen hagyod, az AiCasso csak a pozitív prompt-ra fog összpontosítani.</li>
+        <li><strong>Képkockák Száma:</strong> Válaszd ki, hány képkockát (egyedi képet) szeretnél a videódban. Maximum 25 képkockát választhatsz, az alapértelmezett 16.</li>
+        <li><strong>Zajcsökkentési Lépések:</strong> Ez határozza meg, mennyire sima a videód. Minél több lépés, annál tisztább a videó. Maximum 50 lépést állíthatsz be, az alapértelmezett 20.</li>
+        <li><strong>Irányítási Skála:</strong> Ez segít, hogy a videó szorosan kövesse a leírásodat. A tartomány 1.0-tól 8.0-ig terjed, és beállíthatod a kezdő és végértékeket, hogy irányítsd, hogyan fejlődik a videó.</li>
+        <li><strong>Mozi:</strong> Állítsd be, mennyi mozgás legyen a videódban. A magasabb érték több akciót jelent. A tartomány 0-tól 127-ig terjed, az alapértelmezett 60.</li>
+        <li><strong>Zaj Növelési Erősség:</strong> Adj hozzá egy kis zajt a videódhoz, hogy textúrázottabb megjelenést kapjon. A tartomány 0-tól 1-ig terjed, az alapértelmezett 0.</li>
+        <li><strong>Képkockák másodpercenként (FPS):</strong> Állítsd be, milyen gyorsan játszódjon le a videód. Az alapértelmezett 16 FPS, de akár 16-ig is mehetsz a gyorsabb lejátszáshoz.</li>
+        <li><strong>Interpolációs Módszer:</strong> Válaszd ki, hogyan keverednek össze a képkockák. Az alapértelmezett a "lerp" (lineáris interpoláció), de használhatsz "slerp"-et (gömbi lineáris interpoláció) is különböző hatásokhoz.</li>
+        <li><strong>Réteg Kihagyás:</strong> Hagyj ki bizonyos rétegeket a különböző videóstílushoz. Maximum 2 réteget hagyhatsz ki, vagy hagyhatod üresen az alapértelmezett viselkedéshez.</li>
+    </ul>
+
+    <p>Ne feledd, az AiCasso elég okos! Nem kell minden részletet tökéletesen megadnod, vagy helyes nyelvtant használnod. Csak írd le, mit szeretnél, és az AiCasso megcsinálja a többit. Jó szórakozást a videóid készítéséhez!</p>
+
+</body>
+</html>

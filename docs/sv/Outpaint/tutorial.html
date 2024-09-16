@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips för Outpaint-funktionen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Tips för att använda Outpaint-funktionen</h2>
+    <p>Outpaint-funktionen i AiCasso låter dig utöka en bild genom att lägga till nya element runt den eller förlänga det som redan finns. Beskriv bara vad du vill ha, så tar AiCasso hand om resten.</p>
+
+    <h3>Så här fungerar det:</h3>
+    
+    <div class="example">
+        <strong>Startbild:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Beskriv din förändring:</strong>
+        <p>Du skriver bara vad du vill lägga till eller utöka, och AiCasso kommer att tillämpa dessa ändringar. Du kan specificera riktningar som vänster, höger, upp eller ner, och till och med detaljer som att zooma ut eller panorera.</p>
+    </div>
+
+    <h3>Exempel på redigeringar:</h3>
+
+    <div class="example">
+        <strong>Exempel 1:</strong> "Lägg till ett isberg till höger med en översättningsfaktor på 0.4."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+        </div>
+        <p><em>Resultat:</em> AiCasso utökar bilden till höger och lägger till ett isberg, vilket håller det konsekvent med den befintliga scenen.</p>
+    </div>
+
+    <div class="example">
+        <strong>Exempel 2:</strong> "Zooma ut, behåll konsistensen av det mörka havet på natten."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+        </div>
+        <p><em>Resultat:</em> Bilden zoomar ut och avslöjar mer av det mörka havet, samtidigt som den behåller atmosfären av nattscenen.</p>
+    </div>
+
+    <h3>Ytterligare alternativ</h3>
+    <p>Här är några valfria inställningar som du kan använda för att finjustera dina redigeringar:</p>
+
+    <ul>
+        <li><strong>Negativ prompt:</strong> Om det finns något specifikt du inte vill ha i bilden kan du berätta för AiCasso här. Till exempel kan du vilja undvika att lägga till vissa färger eller objekt.</li>
+        <li><strong>Gångtyp:</strong> Detta avgör riktningen i vilken bilden expanderar. Du kan välja mellan vänster, höger, upp, ner eller bakåt (vilket zoomar ut). Till exempel, för att panorera till höger, skulle du välja 'höger'.</li>
+        <li><strong>Översättningsfaktor:</strong> Detta kontrollerar hur mycket bilden rör sig med varje steg när den expanderar. Ett högre värde flyttar bilden mer och avslöjar mer av det nya innehållet. Standard är 0.05, men du kan justera det från 0 till 1.</li>
+        <li><strong>Bredd/Höjd översättning per steg:</strong> Dessa kontrollerar hur långt bilden rör sig horisontellt (bredd) eller vertikalt (höjd) med varje steg. Standard är 32 pixlar per steg, men du kan justera detta baserat på hur mycket du vill att bilden ska flytta sig.</li>
+        <li><strong>Antal inferens- eller avbrusningssteg:</strong> Detta avgör hur många justeringar AiCasso gör för att få den slutliga bilden. Fler steg leder till ett jämnare resultat, med en standard på 20 steg, men du kan gå upp till 50.</li>
+        <li><strong>Antal interpolationssteg:</strong> Detta kontrollerar hur smidigt övergången sker mellan två riktningar i en enda expansion. Standard är 60, men du kan öka det upp till 120 för smidigare övergångar.</li>
+    </ul>
+
+    <p>Kom ihåg, dessa inställningar är valfria. AiCasso är utformat för att fungera bra med bara din naturliga språkbeskrivning. Känn dig fri att experimentera och se vad som fungerar bäst för din bild!</p>
+
+</body>
+</html>

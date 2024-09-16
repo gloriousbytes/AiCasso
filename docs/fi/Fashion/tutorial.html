@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muotigeneraatio Ominaisuuden Opas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Opas Muotigeneraatio Ominaisuuden Käyttämiseen</h2>
+    <p>Muotigeneraatio-ominaisuus AiCasso:ssa antaa sinun pukea jonkun tiettyyn asuun, kuten paitaan, mekkoon tai housuihin. Kuvaile vain, mitä haluat, ja katso, kuinka AiCasso sovittaa vaatekappaleen kuvan henkilöön.</p>
+
+    <h3>Kuinka se toimii:</h3>
+    
+    <div class="example">
+        <strong>Syöte 1 - Henkilökuva:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+        </div>
+        <strong>Syöte 2 - Vaatetus:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+        </div>
+        <strong>Kehoitus:</strong>
+        <p>"Mies, jolla on paita päällä"</p>
+        <strong>Tulos:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Valinnaiset Parametrit</h3>
+    <p>Jos haluat lisätä oman tyylisi tai varmistaa, että tulos on juuri oikea, voit säätää näitä asetuksia:</p>
+
+    <ul>
+        <li><strong>Negatiivinen Kehoitus:</strong> Jos on jotain, mitä <em>et</em> halua kuvassa, mainitse se täällä. Jätä tyhjäksi, jos olet tyytyväinen siihen, mitä AiCasso keksii.</li>
+        <li><strong>Kangastyypi:</strong> Kerro AiCasso:lle, keskitytkö <em>ylävartaloon</em>, <em>alavartaloon</em> vai <em>mekkoihin</em>. Jos et ole varma, se oletusarvoisesti keskittyy ylävartaloon.</li>
+        <li><strong>Denoinnin Askeleiden Määrä:</strong> Tämä päättää, kuinka sileä ja hiottu kuva näyttää. Voit valita 21, 31 tai 41 askeleen välillä, 21 on oletusarvo. Enemmän askeleita tarkoittaa yleensä hienostuneempaa ilmettä.</li>
+        <li><strong>Ohjausaste:</strong> Tämä auttaa kuvaa pysymään tiiviisti kuvauksessasi. Voit asettaa sen 1:stä 20:een, 7 on oletusarvo. Korkeammat numerot tarkoittavat, että AiCasso seuraa kehoitustasi tarkemmin.</li>
+    </ul>
+
+    <p>Muista, että nämä asetukset ovat valinnaisia! AiCasso on melko älykäs ja voi ymmärtää, mitä tarkoitat, vaikka et saisikaan jokaista yksityiskohtaa täydellisesti. Nauti vain ja anna luovuutesi virrata!</p>
+
+</body>
+</html>

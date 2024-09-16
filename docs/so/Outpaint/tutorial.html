@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talooyin ku saabsan Astaanta Outpaint</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Talooyin ku saabsan Isticmaalka Astaanta Outpaint</h2>
+    <p>Astaanta Outpaint ee AiCasso waxay kuu ogolaaneysaa inaad ballaariso sawir adigoo ku daraya waxyaabo cusub agagaarkiisa ama kordhinaya waxa horey u jiray. Kaliya sharax waxa aad rabto, AiCasso-na waxay ka shaqeyn doontaa inta kale.</p>
+
+    <h3>Sida Ay U Shaqeyso:</h3>
+    
+    <div class="example">
+        <strong>Sawirka Bilowga:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+        </div>
+    </div>
+
+    <div class="example">
+        <strong>Sharax Isbedelkaaga:</strong>
+        <p>Kaliya qor waxa aad rabto inaad ku darto ama aad ballaariso, AiCasso-na waxay codsigaas ku dabaqi doontaa. Waxaad tilmaami kartaa jihada sida bidix, midig, kor, ama hoos, iyo xitaa faahfaahinta sida in la soo dhigo ama la wareego.</p>
+    </div>
+
+    <h3>Tusaalooyinka Tafatirka:</h3>
+
+    <div class="example">
+        <strong>Tusaale 1:</strong> "Ku dar baraf aan midig ahayn adigoo isticmaalaya qiyaasta turjumaadda ee 0.4."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+        </div>
+        <p><em>Natiijada:</em> AiCasso waxay sawirka u ballaarisaa dhinaca midig waxayna ku darsataa baraf, iyadoo la ilaalinayo iswaafajinta muuqaalka jira.</p>
+    </div>
+
+    <div class="example">
+        <strong>Tusaale 2:</strong> "Soo dhigo, ilaali iswaafajinta badda madow habeenkii."
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+        </div>
+        <p><em>Natiijada:</em> Sawirku wuxuu soo dhigayaa, isagoo muujinaya badda madow, halkaas oo ay ku sii jirto jawiga muuqaalka habeenka.</p>
+    </div>
+
+    <h3>Ikhtiyaar Dheeraad ah</h3>
+    <p>Halkan waxaa ku yaal qaar ka mid ah dejinta ikhtiyaariga ah ee aad isticmaali karto si aad u hagaajiso tafatirkaaga:</p>
+
+    <ul>
+        <li><strong>Qoraal Taban:</strong> Haddii ay jiraan wax gaar ah oo aadan rabin in sawirka ku jiro, waxaad halkan u sheegi kartaa AiCasso. Tusaale ahaan, waxaad dooneysaa inaad ka fogaato ku darista midabyo ama walxo gaar ah.</li>
+        <li><strong>Nooca Socdaalka:</strong> Tani waxay go'aamisaa jihada uu sawirku u ballaarinayo. Waxaad ka dooran kartaa bidix, midig, kor, hoos, ama gadaal (taas oo soo dhigtay). Tusaale ahaan, si aad u wareegto midig, waxaad dooran doontaa 'midig'.</li>
+        <li><strong>Qiyaasta Turjumaadda:</strong> Tani waxay xakameysaa inta sawirku u dhaqaaqayo talaabo kasta marka la ballaarinayo. Qiimaha sare wuxuu sawirka ka dhaqaaqaa wax badan, isagoo muujinaya waxyaabo cusub. Qiyaasta caadiga ah waa 0.05, laakiin waxaad ka hagaajin kartaa 0 ilaa 1.</li>
+        <li><strong>Ballaca/Dhererka Turjumaadda Talaabo kasta:</strong> Kuwani waxay xakameeyaan sida fog sawirku u dhaqaaqayo si toos ah (ballaca) ama si toos ah (dhererka) talaabo kasta. Qiyaasta caadiga ah waa 32 pixels talaabo kasta, laakiin waxaad ka hagaajin kartaa tan iyadoo ku xiran inta aad rabto in sawirku u dhaqaaqo.</li>
+        <li><strong>Tirada Tallaabooyinka Falanqaynta ama Denoising:</strong> Tani waxay go'aamisaa inta hagaajinta AiCasso ay sameyneyso si ay u hesho sawirka ugu dambeeya. Tallaabooyin badan waxay keeni doonaan natiijo siman, iyadoo qiyaasta caadiga ah ay tahay 20 tallaabo, laakiin waxaad u socon kartaa ilaa 50.</li>
+        <li><strong>Tirada Tallaabooyinka Isku-dhafka:</strong> Tani waxay xakameysaa sida si siman loogu kala guurayo laba jihada hal ballaarin. Qiyaasta caadiga ah waa 60, laakiin waxaad kordhin kartaa ilaa 120 si loogu kala guuro si siman.</li>
+    </ul>
+
+    <p>Xusuusnow, dejintan waa ikhtiyaari. AiCasso waxaa loo qaabeeyey inay si wanaagsan u shaqeyso iyadoo kaliya lagu saleynayo sharaxaadaada luqadda dabiiciga ah. Si xor ah u tijaabi oo arag waxa ugu fiican sawirkaaga!</p>
+
+</body>
+</html>

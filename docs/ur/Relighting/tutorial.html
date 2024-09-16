@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ری لائٹنگ فیچر گائیڈ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>ری لائٹنگ فیچر کے استعمال کی گائیڈ</h2>
+    <p>AiCasso میں ری لائٹنگ فیچر واقعی زبردست ہے! یہ آپ کو صرف چند الفاظ کے ساتھ اپنی تصاویر میں روشنی تبدیل کرنے کی اجازت دیتا ہے۔ کیا آپ چاہتے ہیں کہ سورج پیچھے ہو یا سائیڈ سے نرم روشنی؟ کوئی مسئلہ نہیں! بس اسے بیان کریں، اور AiCasso باقی کا خیال رکھے گا۔</p>
+
+    <h3>یہ کیسے کام کرتا ہے:</h3>
+    
+    <div class="example">
+        <strong>ان پٹ امیج:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+        </div>
+        <strong>استعمال کردہ پرامپٹ:</strong>
+        <p>"ایسا بنائیں کہ سورج پیچھے ہو"</p>
+        <strong>نتیجہ:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>اختیاری تبدیلیاں</h3>
+    <p>اگر آپ مہم جوئی محسوس کر رہے ہیں اور اپنی ری لائٹنگ میں تھوڑی مزید چمک شامل کرنا چاہتے ہیں، تو یہاں کچھ چیزیں ہیں جنہیں آپ تبدیل کر سکتے ہیں:</p>
+
+    <ul>
+        <li><strong>منفی پرامپٹ:</strong> کیا آپ کچھ سے بچنا چاہتے ہیں؟ آپ AiCasso کو بتا سکتے ہیں کہ <em>کیا</em> شامل نہ کریں۔ لیکن فکر نہ کریں، اگر آپ اسے خالی چھوڑ دیتے ہیں تو AiCasso صرف اس پر توجہ دے گا جو آپ چاہتے ہیں۔</li>
+        <li><strong>روشنی کی سمت:</strong> آپ یہ بتا سکتے ہیں کہ روشنی کہاں سے آنی چاہیے—بائیں، دائیں، اوپر، نیچے، یا بالکل بھی نہیں۔ ڈیفالٹ کے طور پر، روشنی بائیں سے آتی ہے۔</li>
+        <li><strong>گائیڈنس اسکیل:</strong> یہ AiCasso کو آپ کی وضاحت پر قائم رہنے میں مدد کرتا ہے۔ اسکیل 1 سے 20 تک ہے، جس میں 7 ڈیفالٹ ہے۔ جتنا زیادہ نمبر ہوگا، اتنا ہی AiCasso آپ کے پرامپٹ پر قائم رہے گا۔</li>
+        <li><strong>ہائی-ریزولوشن اسکیل:</strong> کیا آپ چاہتے ہیں کہ آپ کی تصویر واضح ہو؟ یہ وضاحت کو کنٹرول کرتا ہے۔ ڈیفالٹ 1.5 ہے، لیکن آپ اسے 1.0 سے 2.0 تک سیٹ کر سکتے ہیں تاکہ تصویر زیادہ واضح ہو۔</li>
+        <li><strong>ڈی نوائز لیولز:</strong> دو سطحیں ہیں—کم ریزولوشن اور ہائی ریزولوشن۔ یہ کنٹرول کرتے ہیں کہ آخری تصویر کتنی ہموار یا تفصیلی نظر آتی ہے۔ آپ کم ریزولوشن ڈی نوائز لیول کو 0.0 اور 1.0 کے درمیان سیٹ کر سکتے ہیں (ڈیفالٹ 0.9 ہے) اور ہائی ریزولوشن کو 0.0 اور 1.0 کے درمیان (ڈیفالٹ 0.5 ہے)۔</li>
+        <li><strong>قدموں کی تعداد:</strong> یہ وہ تعداد ہے جس میں AiCasso آپ کی تصویر کو بہتر بناتا ہے۔ ڈیفالٹ 50 ہے، لیکن آپ 20 سے 50 قدموں تک جا سکتے ہیں۔</li>
+    </ul>
+
+    <p>یاد رکھیں، یہ تبدیلیاں بالکل اختیاری ہیں! AiCasso آپ کی خواہشات کو سمجھنے میں کافی اچھا ہے، لہذا بس اپنے الفاظ میں اپنی بصیرت بیان کریں، اور یہ جادو کرے گا۔ گرامر یا تفصیلات کے ساتھ مکمل ہونے کی ضرورت نہیں—بس مزے کریں اور دیکھیں کہ آپ کیا تخلیق کر سکتے ہیں!</p>
+
+</body>
+</html>

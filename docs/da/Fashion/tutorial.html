@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Generation Funktion Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guide til Brug af Fashion Generation Funktion</h2>
+    <p>Fashion Generation-funktionen i AiCasso lader dig klæde nogen i et specifikt outfit, såsom en skjorte, kjole eller bukser. Beskriv blot hvad du ønsker, og se AiCasso anvende beklædningsgenstanden på personen i billedet.</p>
+
+    <h3>Sådan Fungerer Det:</h3>
+    
+    <div class="example">
+        <strong>Input 1 - Personbillede:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+        </div>
+        <strong>Input 2 - Beklædningsgenstand:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+        </div>
+        <strong>Prompt:</strong>
+        <p>"Mand iført en skjorte"</p>
+        <strong>Resultat:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Valgfri Parametre</h3>
+    <p>Hvis du vil tilføje din egen stil eller sikre dig, at resultatet er helt rigtigt, kan du justere disse indstillinger:</p>
+
+    <ul>
+        <li><strong>Negativ Prompt:</strong> Hvis der er noget, du <em>ikke</em> ønsker i billedet, så nævn det her. Lad det stå tomt, hvis du er tilfreds med hvad AiCasso finder på.</li>
+        <li><strong>Stoftype:</strong> Fortæl AiCasso, om du fokuserer på <em>overkroppen</em>, <em>underkroppen</em> eller <em>kjoler</em>. Hvis du er usikker, er standarden overkroppen.</li>
+        <li><strong>Antal Denoising Trin:</strong> Dette bestemmer, hvor glat og poleret billedet ser ud. Du kan vælge mellem 21, 31 eller 41 trin, hvor 21 er standard. Flere trin betyder som regel et mere raffineret udseende.</li>
+        <li><strong>Guidance Scale:</strong> Dette hjælper billedet med at holde sig tæt på din beskrivelse. Du kan indstille det fra 1 til 20, hvor 7 er standard. Højere tal betyder, at AiCasso vil følge din prompt tættere.</li>
+    </ul>
+
+    <p>Husk, disse indstillinger er valgfri! AiCasso er ret smart og kan finde ud af, hvad du mener, selvom du ikke får hver detalje perfekt. Hav det sjovt og lad din kreativitet flyde!</p>
+
+</body>
+</html>

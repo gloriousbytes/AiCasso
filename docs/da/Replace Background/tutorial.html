@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide til Erstat Baggrund Funktion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .result iframe {
+            width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guide til at Bruge Erstat Baggrund Funktion</h2>
+    <p>Erstat Baggrund-funktionen i AiCasso er perfekt, når du ønsker at skifte baggrunden i dit billede. Uanset om du bare vil fjerne baggrunden eller erstatte den med noget andet, gør AiCasso det super nemt. Du behøver ikke at bekymre dig om tekniske detaljer—bare beskriv hvad du ønsker, og AiCasso vil klare resten.</p>
+
+    <h3>Sådan Fungerer Det:</h3>
+    
+    <div class="example">
+        <strong>Input Billede:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+        </div>
+        <strong>Prompt 1:</strong>
+        <p>"Fjern baggrunden"</p>
+        <strong>Resultat 1:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+        </div>
+        <strong>Prompt 2:</strong>
+        <p>"Erstat baggrunden med en skov, ikke bare fjern den, med alpha matting deaktiveret. Brug en forgrunds tærskel på 240, en baggrunds tærskel på 20, og en erode størrelse på 5 til alpha matting."</p>
+        <strong>Resultat 2:</strong>
+        <div class="result">
+            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+        </div>
+    </div>
+
+    <h3>Valgfri Parametre</h3>
+    <p>Hvis du ønsker at tilføje et personligt præg eller finjustere resultaterne, er her nogle muligheder, du kan lege med:</p>
+
+    <ul>
+        <li><strong>Kun Fjern:</strong> Hvis du bare vil fjerne baggrunden og ikke erstatte den med noget, er dette din go-to mulighed. Det er som at trykke på en ren tavle knap.</li>
+        <li><strong>Alpha Matting:</strong> Dette er en fancy måde at sige "blande kanterne." Når du tænder for dette, hjælper det med at gøre kanterne af dit emne glattere og mindre udskåret. Som standard er det slået fra.</li>
+        <li><strong>Alpha Matting Forgrunds Tærskel:</strong> Dette styrer, hvor meget af hovedemnet (som en person) forbliver synligt, når du bruger alpha matting. Standard er 240, og du kan justere det for at gøre kanterne blødere eller skarpere.</li>
+        <li><strong>Alpha Matting Baggrunds Tærskel:</strong> Dette gør det samme som forgrunds tærsklen, men for baggrunden. Standard er 20, og det handler om at få den perfekte blanding med den nye baggrund.</li>
+        <li><strong>Alpha Matting Erode Størrelse:</strong> Dette hjælper med at reducere kanterne lidt for at gøre udskæringen renere. Standardstørrelsen er 5, men du kan justere det for at få det præcise udseende, du ønsker.</li>
+    </ul>
+
+    <p>Husk, du behøver ikke at stresse over at få alt perfekt. AiCasso er ret god til at finde ud af, hvad du mener, så føl dig fri til at være så afslappet eller detaljeret, som du vil. God fornøjelse med at skabe!</p>
+
+</body>
+</html>
