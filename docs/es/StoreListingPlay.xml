@@ -1,26 +1,28 @@
+<?xml version="1.0" encoding="utf-16"?>
 <AiCasso>
-    <AppName>AiCasso: Artista AI</AppName>
-    <ShortDescription>Crea, edita y anima visuales con solo unas palabras.</ShortDescription>
-    <FullDescription>
-Bienvenido a AiCasso: Desata tu Magia de Imágenes y Videos con IA, una app que transforma tus ideas en impresionantes imágenes y videos sin esfuerzo. Ya seas un explorador casual o un profesional creativo, AiCasso hace que tu viaje artístico sea emocionante y sencillo.
+  <ShortDescription>Crea, edita y anima visuales con solo unas palabras.</ShortDescription>
+  <FullDescription>  
+Bienvenido a AiCasso: Desata la Magia de Imágenes y Videos con IA, una app que transforma tus ideas en impresionantes imágenes y videos sin esfuerzo. Ya seas un explorador casual o un profesional creativo, AiCasso hace que tu viaje artístico sea emocionante y sencillo.
 
-AiCasso te permite convertir simples indicaciones de texto en visuales impresionantes en segundos. Experimenta la libertad creativa con funciones como:
+AiCasso te permite convertir simples descripciones de texto en visuales impresionantes en segundos. Experimenta la libertad creativa con funciones como:
 
-- Edición en Lenguaje Natural: Describe lo que deseas y AiCasso lo hace realidad. Modifica imágenes, cambia estilos y crea animaciones usando simples indicaciones de texto.
+- Edición en Lenguaje Natural: Describe lo que deseas y AiCasso lo hace realidad. Modifica imágenes, cambia estilos y crea animaciones usando simples descripciones de texto.
 - Transformación de Avatares: Convierte rostros en caricaturas 3D, personajes de anime o retratos realistas describiendo el estilo que deseas.
 - Vista Previa de Moda: Ve cómo se ven los atuendos en ti o en tu avatar en fotos reales escribiendo los estilos o prendas que te interesan.
-- Retratos Instantáneos: Genera retratos profesionales o casuales rápidamente describiendo el look que deseas, sin necesidad de una sesión de fotos.
-- Edición de Imágenes mediante Indicaciones: Cambia atuendos, peinados, fondos y estilos artísticos simplemente diciendo a AiCasso los ajustes que deseas hacer.
+- Fotos de Perfil Instantáneas: Genera fotos de perfil profesionales o casuales rápidamente describiendo el look que deseas, sin necesidad de sesión de fotos.
+- Edición de Imágenes mediante Descripciones: Cambia atuendos, peinados, fondos y estilos artísticos simplemente diciendo a AiCasso los ajustes que deseas hacer.
 - Creación de Videos: Anima imágenes o produce videos a partir de texto para redes sociales o presentaciones, todo mediante instrucciones en lenguaje natural.
-- Edición Selectiva con Indicaciones: Aplica efectos y texturas precisamente donde los deseas especificando áreas y efectos en tus descripciones de texto.
+- Edición Selectiva con Descripciones: Aplica efectos y texturas exactamente donde los quieres especificando áreas y efectos en tus descripciones de texto.
 - Eliminación y Reemplazo de Fondos: Elimina o reemplaza fondos describiendo el nuevo escenario que imaginas.
 - Escalado de Imágenes: Amplía imágenes hasta cuatro veces sin perder calidad, usando un simple comando de texto.
-- Controles Avanzados: Personaliza dimensiones, proporciones y más incluyendo tus preferencias en tus indicaciones.
+- Controles Avanzados: Personaliza dimensiones, proporciones y más incluyendo tus preferencias en tus descripciones.
 
-AiCasso es tu kit de herramientas visual todo en uno, diseñado para hacer que la creatividad sea divertida y accesible a través del poder del lenguaje natural. Ya sea que tengas una historia que contar o contenido que crear, AiCasso convierte tus palabras en visuales increíbles que cautivan a tu audiencia.
+AiCasso es tu kit de herramientas visual todo en uno, diseñado para hacer la creatividad divertida y accesible a través del poder del lenguaje natural. Ya sea que tengas una historia que contar o contenido que crear, AiCasso convierte tus palabras en visuales increíbles que cautivan a tu audiencia.
 
 Únete a nuestra comunidad en Discord para conectarte con otros creadores, compartir tu trabajo, colaborar y mantenerte al día con las nuevas funciones.
 
 Comienza tu viaje creativo con AiCasso y observa cómo tus ideas cobran vida sin esfuerzo.
-    </FullDescription>
+   </FullDescription>
+  <AppName>AiCasso: Artista AI</AppName>
+  <AppNameShort>AiCasso: Artista AI</AppNameShort>
 </AiCasso>
