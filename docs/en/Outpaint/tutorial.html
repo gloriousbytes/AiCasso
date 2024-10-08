@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
         .iframe-container {
@@ -55,7 +55,7 @@
     <div class="example">
         <strong>Starting Image:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/input.jpg" alt="Starting Image" loading="lazy">
         </div>
     </div>
 
@@ -69,7 +69,7 @@
     <div class="example">
         <strong>Example 1:</strong> "Add an iceberg to the right using a translation factor of 0.4."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/iceberg.jpg" alt="Example 1 - Iceberg" loading="lazy">
         </div>
         <p><em>Result:</em> AiCasso expands the image to the right and adds an iceberg, keeping it consistent with the existing scenery.</p>
     </div>
@@ -77,7 +77,7 @@
     <div class="example">
         <strong>Example 2:</strong> "Zoom out, keep the consistency of the dark sea at night."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/zoomout.jpg" alt="Example 2 - Zoom Out" loading="lazy">
         </div>
         <p><em>Result:</em> The image zooms out, revealing more of the dark sea, while maintaining the atmosphere of the night scene.</p>
     </div>
