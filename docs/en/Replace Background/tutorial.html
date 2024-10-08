@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -48,19 +48,19 @@
     <div class="example">
         <strong>Input Image:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Input Image" loading="lazy">
         </div>
         <strong>Prompt 1:</strong>
         <p>"Remove the background"</p>
         <strong>Result 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Background Removed Result" loading="lazy">
         </div>
         <strong>Prompt 2:</strong>
         <p>"Replace the background with a forest, not just remove it, with alpha matting disabled. Use a foreground threshold of 240, a background threshold of 20, and an erode size of 5 for alpha matting."</p>
         <strong>Result 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Replaced Background with Forest" loading="lazy">
         </div>
     </div>
 
