@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            max-width: 100%;
             height: auto;
+            object-fit: contain;
         }
         .iframe-container {
             display: flex;
@@ -55,19 +56,19 @@
     <div class="example">
         <strong>Input Image:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/input.jpg" alt="Input Image" loading="lazy">
         </div>
         <strong>Prompt 1:</strong>
         <p>"A cute puppy in the park"</p>
         <strong>Result 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppy.gif" alt="Cute Puppy in Park" loading="lazy">
         </div>
         <strong>Prompt 2:</strong>
         <p>"A cute puppy in the park, use maximum FPS, maximum frames, and maximum motion"</p>
         <strong>Result 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppymaxframes.gif" alt="Maximum FPS Puppy in Park" loading="lazy">
         </div>
     </div>
 
