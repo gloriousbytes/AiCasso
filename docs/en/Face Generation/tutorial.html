@@ -6,42 +6,43 @@
     <title>Face Generation Feature Guide</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Ensures the image doesn't overflow the container */
+    height: auto;     /* Keeps the aspect ratio */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
@@ -55,28 +56,27 @@
 <div class="example">
     <strong>Input Image:</strong>
     <div class="result">
-        <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview" allow="autoplay" allowfullscreen="false"></iframe>
+        <img src="../../images/tutorials/facegen/input.jpg" alt="Input Image">
     </div>
     <strong>Prompt 1:</strong>
     <p>"A realistic knight, use max Scale"</p>
     <strong>Result 1:</strong>
     <div class="result">
-        <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview" allow="autoplay" allowfullscreen="false"></iframe>
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="Realistic Knight">
     </div>
     <strong>Prompt 2:</strong>
     <p>"Use the chibi style and make a samurai, use default values"</p>
     <strong>Result 2:</strong>
     <div class="result">
-        <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview" allow="autoplay" allowfullscreen="false"></iframe>
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="Chibi Samurai">
     </div>
     <strong>Prompt 3:</strong>
     <p>"A samurai, use 31 denoising steps, and anime style"</p>
     <strong>Result 3:</strong>
     <div class="result">
-        <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview" allow="autoplay" allowfullscreen="false"></iframe>
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="Anime Samurai">
     </div>
 </div>
-
 
     <h3>Optional Parameters</h3>
     <p>If you want to add a bit more personality or control to your generated images, here are some options you can tweak:</p>
