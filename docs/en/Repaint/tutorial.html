@@ -6,42 +6,43 @@
     <title>Repaint Feature Tips</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+         body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Ensures the image doesn't overflow the container */
+    height: auto;     /* Keeps the aspect ratio */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
@@ -64,37 +65,38 @@
 
     <h3>How It Works:</h3>
 
-    <div class="example">
-        <strong>Input Image:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OzuoAKoYvwEW30ScvOjgX9lfe6VpbdNq/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Input Image:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/inpain/input.jpg" alt="Input Image">
     </div>
+</div>
 
-    <div class="example">
-        <strong>Paint the Areas to be Filled or Replaced:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1-PaOaaDEvMogYhFjiMjUztvsxhllTsQ3/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Paint the Areas to be Filled or Replaced:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/inpain/paintareas.jpg" alt="Paint the Areas">
     </div>
+</div>
 
-    <h3>Examples:</h3>
+<h3>Examples:</h3>
 
-    <div class="example">
-        <strong>Prompt 1:</strong> "A hyper-realistic image of a cat in the park."
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1BpTJPP7s5CJ-6Yk03s281K6ay6DQ-sFa/preview"></iframe>
-        </div>
-        <p><em>Result:</em> AiCasso will generate a hyper-realistic cat in the park, filling in the painted areas seamlessly with realistic textures and lighting.</p>
+<div class="example">
+    <strong>Prompt 1:</strong> "A hyper-realistic image of a cat in the park."
+    <div class="result">
+        <img src="../../images/tutorials/inpain/catinthepark.jpg" alt="Hyper-realistic cat in the park">
     </div>
+    <p><em>Result:</em> AiCasso will generate a hyper-realistic cat in the park, filling in the painted areas seamlessly with realistic textures and lighting.</p>
+</div>
 
-    <div class="example">
-        <strong>Prompt 2:</strong> "A cat in the park with a hyper-realistic style and a strength of 0.7."
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1USCGxNAf0iteIGn8Klp97HI-spTTiREW/preview"></iframe>
-        </div>
-        <p><em>Result:</em> This will create a hyper-realistic cat in the park, with the modification strength set to 0.7, blending the new elements smoothly into the original image.</p>
+<div class="example">
+    <strong>Prompt 2:</strong> "A cat in the park with a hyper-realistic style and a strength of 0.7."
+    <div class="result">
+        <img src="../../images/tutorials/inpain/catintheparkstrength0.7.jpg" alt="Cat in the park strength 0.7">
     </div>
+    <p><em>Result:</em> This will create a hyper-realistic cat in the park, with the modification strength set to 0.7, blending the new elements smoothly into the original image.</p>
+</div>
+
 
   <h3>Enhance Styles</h3>
 <p>Not sure which style to choose? Don’t worry! Just mention any style that comes to mind, even if it’s not grammatically correct, and AiCasso will figure it out from the list of available Enhance Styles.</p>
