@@ -31,16 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img {
+            width: 100%;
+            max-width: 400px;
             height: auto;
         }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        @media (max-width: 768px) {
+            .result img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -48,72 +48,76 @@
 <body>
 
     <h2>Umhlahlandlela Wokusebenzisa Isici Sokwakha Ividiyo</h2>
-    <p>Isici Sokwakha Ividiyo ku-AiCasso sikuvumela ukuthi udale ama-vidiyo ngokuchaza nje lokho ofuna ukukubona. Bhala umqondo wakho, futhi i-AiCasso izokwenza kube impilo kuvidiyo!</p>
+    <p>Isici Sokwakha Ividiyo ku-AiCasso sikuvumela ukuthi udale ama-vidiyo ngokuchaza nje lokho ofuna ukukubona. Bhala umqondo wakho, bese i-AiCasso izowuphila kwi-vidiyo!</p>
 
     <h3>Ukusebenza Kwayo:</h3>
     
     <div class="example">
-        <strong>Ukukhuthaza:</strong>
-        <p>"I-rooster ye-3D ehlakaniphile emathafeni yodwa, idla futhi ijabule. Yenza kube ividiyo ye-portrait enezinyathelo zokunciphisa ezingu-50."</p>
+        <strong>Isikhumbuzo:</strong>
+        <p>"I-rooster ye-3D ehlakaniphile emasimini yodwa, idla futhi ijabule. Yenza kube ividiyo ye-portrait enezinyathelo eziyi-50 zokunciphisa umsindo."</p>
         <strong>Umphumela:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/animated3d.gif" alt="I-Rooster ye-3D Ehlakaniphile">
+            <noscript><img src="../../images/tutorials/texttovideo/animated3d.gif" alt="I-Rooster ye-3D Ehlakaniphile"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Ukukhuthaza:</strong>
-        <p>"I-cartoon ye-rooster emathafeni ngezilinganiso ze-landscape."</p>
+        <strong>Isikhumbuzo:</strong>
+        <p>"I-cartoon ye-rooster emasimini ngezilinganiso ze-landscape."</p>
         <strong>Umphumela:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/cartoon.gif" alt="I-Cartoon Rooster">
+            <noscript><img src="../../images/tutorials/texttovideo/cartoon.gif" alt="I-Cartoon Rooster"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Ukukhuthaza:</strong>
-        <p>"I-rooster emathafeni."</p>
+        <strong>Isikhumbuzo:</strong>
+        <p>"I-rooster emasimini."</p>
         <strong>Umphumela:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/default.gif" alt="I-Rooster Ejwayelekile">
+            <noscript><img src="../../images/tutorials/texttovideo/default.gif" alt="I-Rooster Ejwayelekile"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Ukukhuthaza:</strong>
-        <p>"I-rooster ekhona emathafeni yodwa. Nika umuzwa wemvelo."</p>
+        <strong>Isikhumbuzo:</strong>
+        <p>"I-rooster ekhuluma emasimini yodwa. Nikeza umuzwa wemvelo."</p>
         <strong>Umphumela:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/natural.gif" alt="I-Rooster Yemvelo">
+            <noscript><img src="../../images/tutorials/texttovideo/natural.gif" alt="I-Rooster Yemvelo"></noscript>
         </div>
     </div>
 
     <h3>Izinketho Ezengeziwe</h3>
-    <p>Ufuna ukulungisa ividiyo yakho? Nansi eminye imingcele ongayidlala ngayo:</p>
+    <p>Ufuna ukuhlela ividiyo yakho? Nansi eminye imingcele ongayidlala ngayo:</p>
 
     <ul>
-        <li><strong>Inani Lezithombe:</strong> Khetha ukuthi zingaki izithombe (izithombe ezihlukile) ividiyo yakho izoba nazo. Ungaya ku-25 izithombe, kanti u-16 ungowokungena.</li>
-        <li><strong>Inani Lezinyathelo Zokunciphisa:</strong> Lokhu kulawula ukuthi ividiyo yakho ibukeka kanjani. Izinyathelo eziningi zisho ama-vidiyo ahlanzekile. Ungasetha kuze kube yizinyathelo eziyi-50, kanti u-20 ungowokungena.</li>
-        <li><strong>Isikali Sokuhola:</strong> Lokhu kusiza ividiyo ukuthi ihlale ibambelela encazelweni yakho. Njengoba inani liphakeme, kakhulukazi ilandela ukukhuthaza kwakho. Ibanga lingu-0 kuya ku-8, kanti u-8 ungowokungena.</li>
-        <li><strong>Ukweqa Iziqeshana:</strong> Ukweqa ezinye izingqimba ukuze uthole isitayela sevidiyo esihlukile. Ngokujwayelekile, akukho zingqimba ezikweqwayo, kodwa ungakweqa kuze kube yizimbili.</li>
-        <li><strong>Ukukhulisa Ububanzi Nobude:</strong> Ungenza ividiyo yakho ibe nkulu ngokulungisa isixazululo. Okungokujwayelekile ngu-1024x1024 pixels, kodwa ungakwenza lokhu ukuze kuhambisane nezidingo zakho.</li>
-        <li><strong>Ukuqinisa Ukukhulisa:</strong> Lokhu kushintsha ukuthi ividiyo yakho ilungiswe kangakanani uma ikhuliswe. Okungokujwayelekile ngu-1, kodwa ungakwenza ukuze ubone umehluko omningi.</li>
-        <li><strong>Isikali Sokuhola Sokukhulisa:</strong> Lokhu kuhola inqubo yokukhulisa, ibanga lingu-0 kuya ku-8, futhi okungokujwayelekile ngu-8.</li>
-        <li><strong>Izinyathelo Zokuhlola Ukukhulisa:</strong> Inani lezinyathelo ezithathwayo ukuze kukhuliswe ividiyo. Izinyathelo eziningi zenza ukukhulisa kube smoother, kanti inani eliphezulu ngu-50 kanti okungokujwayelekile ngu-20.</li>
+        <li><strong>Inani Lezithombe:</strong> Khetha ukuthi zingaki izithombe (izithombe ezihlukile) ividiyo yakho izoba nazo. Ungaya ku-25 izithombe, kanti u-16 ungumjikelezo ojwayelekile.</li>
+        <li><strong>Inani Lezinyathelo Zokunciphisa Umsindo:</strong> Lokhu kulawula ukuthi ividiyo yakho ibukeka kanjani. Izinyathelo eziningi zisho ama-vidiyo ahlanzekile. Ungasetha kuze kube yizinyathelo eziyi-50, kanti u-20 ungumjikelezo ojwayelekile.</li>
+        <li><strong>Isikali Sokuhola:</strong> Lokhu kusiza ividiyo ukuba ihlale ikhuluma kahle nencazelo yakho. Njengoba inani liphakeme, kunjalo futhi ilandela isikhumbuzo sakho. Umkhawulo ungama-0 kuya ku-8, kanti u-8 ungumjikelezo ojwayelekile.</li>
+        <li><strong>Ukweqa I-Clip:</strong> Phonsa ezinye izingqimba ukuze uthole isitayela sevidiyo esihlukile. Ngokuvamile, akukho zingqimba ezishiywe, kodwa ungashiya kuze kube yizimbili.</li>
+        <li><strong>Ububanzi Nobude Bokwandisa:</strong> Ungenza ividiyo yakho ibe nkulu ngokulungisa isixazululo. Umjikelezo ojwayelekile ungama-1024x1024 pixels, kodwa ungakwenza lokhu ukuze kuhlangabezane nezidingo zakho.</li>
+        <li><strong>Ubukhulu Bokwandisa:</strong> Lokhu kushintsha ukuthi ividiyo yakho ilungiswe kangakanani uma ikhuliswa. Umjikelezo ojwayelekile ungama-1, kodwa ungakwenza kube nokuhluka okuningi.</li>
+        <li><strong>Isikali Sokuhola Sokwandisa:</strong> Lokhu kuhola inqubo yokwandisa, enomkhawulo ovela ku-0 kuya ku-8, futhi umjikelezo ojwayelekile ungama-8.</li>
+        <li><strong>Izinyathelo Zokuhlola Ukukhulisa:</strong> Inani lezinyathelo ezithathwayo ukuze kukhuliswe ividiyo. Izinyathelo eziningi zenza ukukhulisa kube lula, kanti umkhawulo ungama-50 no-20 ungumjikelezo ojwayelekile.</li>
         <li><strong>Ukuthola Okuthuthukisiwe:</strong> Ufuna ividiyo ethuthukisiwe? Vula lokhu. Kuvalwe ngokujwayelekile.</li>
-        <li><strong>Imbewu Yokuthola Okuthuthukisiwe:</strong> Sebenzisa lokhu ukuze udale ividiyo efanayo njalo ngenkathi uthola okuthuthukisiwe. Kukhethwa futhi kuvalwe ngokujwayelekile.</li>
-        <li><strong>Izithombe Ngomzuzu (FPS):</strong> Setha ispeeds yevidiyo yakho. Okungokujwayelekile ngu-16 FPS, kodwa ungakwenza kube phezulu ku-16.</li>
+        <li><strong>Isikhumbuzo Sokuthola Okuthuthukisiwe:</strong> Sebenzisa lokhu ukuze udale ividiyo efanayo njalo ngokuqhubekayo. Kukhethwa futhi kuvalwe ngokujwayelekile.</li>
+        <li><strong>Izithombe Ngomzuzu (FPS):</strong> Setha ijubane levidiyo yakho. Umjikelezo ojwayelekile ungama-16 FPS, kodwa ungakwenza kube phezulu ku-16.</li>
         <li><strong>Imodeli Yevidiyo:</strong> Khetha isitayela sevidiyo yakho. Izinketho zifaka:
             <ul>
-                <li><strong>Okungokujwayelekile:</strong> Imodeli yevidiyo ejwayelekile.</li>
+                <li><strong>Ejwayelekile:</strong> Imodeli yevidiyo ejwayelekile.</li>
                 <li><strong>I-Cartoon:</strong> Isitayela sevidiyo esifana ne-cartoon.</li>
-                <li><strong>Imvelo:</strong> Isitayela sevidiyo esibukeka sengokoqobo, semvelo.</li>
-                <li><strong>3D Ehlakaniphile:</strong> Isitayela sevidiyo esihlanganisa i-3D.</li>
+                <li><strong>Yemvelo:</strong> Isitayela sevidiyo esibukeka sengathi semvelo.</li>
+                <li><strong>I-Animated 3D:</strong> Isitayela sevidiyo esihlanganisa i-3D.</li>
             </ul>
         </li>
     </ul>
 
-    <p>Khumbula, lezi zinketho zikhethwa. Isici Sokwakha Ividiyo sisebenza kahle ngokuchaza okulula, ngakho uzizwe ukhululekile ukujola futhi ubone lokho ongakwenza!</p>
+    <p>Khumbula, lezi zinketho zikhethwa. Isici Sokwakha Ividiyo sisebenza kahle ngokuchaza okulula, ngakho uzizwe ukhululekile ukuzama futhi ubone lokho ongakwenza!</p>
 
 </body>
 </html>

@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            max-width: 100%;
             height: auto;
+            object-fit: contain;
         }
         .iframe-container {
             display: flex;
@@ -47,7 +48,7 @@
 
 <body>
 
-    <h2>Gids vir die Gebruik van die Beeld na Video Kenmerk</h2>
+    <h2>Begeleiding om die Beeld na Video Kenmerk te Gebruik</h2>
     <p>Die Beeld na Video kenmerk in AiCasso laat jou toe om 'n enkele beeld in 'n dinamiese video te omskep. Beskryf net wat jy in jou video wil sien, en AiCasso sal dit laat gebeur!</p>
 
     <h3>Hoe Dit Werk:</h3>
@@ -55,19 +56,19 @@
     <div class="example">
         <strong>Invoer Beeld:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/input.jpg" alt="Invoer Beeld" loading="lazy">
         </div>
         <strong>Prompt 1:</strong>
         <p>"‘n Schattige hondjie in die park"</p>
         <strong>Resultaat 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppy.gif" alt="Schattige Hondjie in Park" loading="lazy">
         </div>
         <strong>Prompt 2:</strong>
         <p>"‘n Schattige hondjie in die park, gebruik maksimum FPS, maksimum rame, en maksimum beweging"</p>
         <strong>Resultaat 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppymaxframes.gif" alt="Maksimum FPS Hondjie in Park" loading="lazy">
         </div>
     </div>
 
@@ -78,12 +79,12 @@
         <li><strong>Negatiewe Prompt:</strong> Beskryf wat jy *nie* in die video wil hê nie. As dit leeg gelaat word, sal AiCasso net op die positiewe prompt fokus.</li>
         <li><strong>Aantal Rame:</strong> Kies hoeveel rame (individuele beelde) jou video sal hê. Jy kan tot 25 rame kies, met 16 as die verstek.</li>
         <li><strong>Denoising Stappe:</strong> Dit beheer hoe glad jou video lyk. Meer stappe beteken 'n skoner video. Jy kan tot 50 stappe instel, met 20 as die verstek.</li>
-        <li><strong>Rigting Skaal:</strong> Dit help die video om noukeurig by jou beskrywing te hou. Die reeks is van 1.0 tot 8.0, en jy kan die begin- en eindwaardes aanpas om te lei hoe die video ontwikkel.</li>
+        <li><strong>Rigting Skaal:</strong> Dit help die video om naby jou beskrywing te bly. Die reeks is van 1.0 tot 8.0, en jy kan die begin- en eindwaardes aanpas om te lei hoe die video ontwikkel.</li>
         <li><strong>Beweging:</strong> Pas aan hoeveel beweging in jou video is. 'n Hoër waarde beteken meer aksie. Die reeks is van 0 tot 127, met 60 as die verstek.</li>
         <li><strong>Ruis Versterking Sterkte:</strong> Voeg 'n bietjie ruis by jou video om dit 'n meer tekstuurlike voorkoms te gee. Die reeks is van 0 tot 1, met 0 as die verstek.</li>
         <li><strong>Rame per Sekonde (FPS):</strong> Stel in hoe vinnig jou video speel. Die verstek is 16 FPS, maar jy kan tot 16 gaan vir 'n vinniger afspeel.</li>
         <li><strong>Interpolasie Metode:</strong> Kies hoe die rame saamgevoeg word. Die verstek is "lerp" (lineêre interpolasie), maar jy kan ook "slerp" (sferiese lineêre interpolasie) gebruik vir verskillende effekte.</li>
-        <li><strong>Clip Skip:</strong> Slaan sekere lae oor vir 'n ander video styl. Jy kan tot 2 lae oorslaan, of dit leeg laat vir die verstek gedrag.</li>
+        <li><strong>Clip Slaan:</strong> Slaan sekere lae oor vir 'n ander video styl. Jy kan tot 2 lae oorslaan, of dit leeg laat vir die verstek gedrag.</li>
     </ul>
 
     <p>Onthou, AiCasso is redelik slim! Jy hoef nie elke detail perfek te kry of korrekte grammatika te gebruik nie. Beskryf net wat jy wil hê, en AiCasso sal die res doen. Geniet dit om jou video's te skep!</p>

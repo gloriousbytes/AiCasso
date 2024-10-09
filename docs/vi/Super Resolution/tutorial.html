@@ -31,9 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -41,41 +48,41 @@
 <body>
 
     <h2>Hướng Dẫn Sử Dụng Tính Năng Siêu Phân Giải</h2>
-    <p>Tính năng Siêu Phân Giải trong AiCasso giúp hình ảnh của bạn trở nên đẹp hơn. Bạn chỉ cần nói cho nó biết bạn muốn cải thiện hình ảnh như thế nào, và AiCasso sẽ lo phần còn lại. Dù bạn muốn làm sắc nét chi tiết hay tăng cường toàn bộ hình ảnh, việc sử dụng rất dễ dàng.</p>
+    <p>Tính năng Siêu Phân Giải trong AiCasso giúp hình ảnh của bạn trông đẹp hơn. Bạn chỉ cần cho biết cách bạn muốn cải thiện hình ảnh, và AiCasso sẽ lo phần còn lại. Dù bạn đang làm sắc nét chi tiết hay tăng cường toàn bộ hình ảnh, việc sử dụng rất dễ dàng.</p>
 
     <h3>Cách Hoạt Động:</h3>
     
     <div class="example">
         <strong>Hình Ảnh Đầu Vào:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="Hình Ảnh Đầu Vào" loading="lazy">
         </div>
-        <strong>Lời Nhắc:</strong>
-        <p>"Phóng to gấp 4 lần, sử dụng mô hình Ultra Sharp"</p>
+        <strong>Yêu Cầu:</strong>
+        <p>"Phóng to 4 lần, sử dụng mô hình Ultra Sharp"</p>
         <strong>Kết Quả:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="Hình Ảnh Kết Quả" loading="lazy">
         </div>
     </div>
 
-    <h3>Tham Số Tùy Chọn</h3>
-    <p>Nếu bạn muốn kiểm soát nhiều hơn cách hình ảnh của bạn được cải thiện, đây là một số tùy chọn thêm mà bạn có thể thử:</p>
+    <h3>Các Tham Số Tùy Chọn</h3>
+    <p>Nếu bạn muốn có thêm một chút kiểm soát về cách hình ảnh của bạn được cải thiện, đây là một số tùy chọn bổ sung mà bạn có thể thử:</p>
 
     <ul>
         <li><strong>Tỷ Lệ:</strong> Đây là mức độ bạn muốn phóng to hình ảnh của mình. Bạn có thể chọn tỷ lệ từ 1 đến 4, với 4 là mặc định. Nói chung, số lớn hơn có nghĩa là hình ảnh lớn hơn.</li>
-        <li><strong>Mô Hình Phóng To:</strong> Đây giống như chọn một bộ lọc cho hình ảnh của bạn, nhưng thông minh hơn nhiều. Dưới đây là các tùy chọn:
+        <li><strong>Mô Hình Phóng To:</strong> Đây giống như việc chọn một bộ lọc cho hình ảnh của bạn, nhưng thông minh hơn nhiều. Dưới đây là các tùy chọn:
             <ul>
-                <li><strong>Tăng Cường Chi Tiết Lớn:</strong> Tốt nhất để phóng to các chi tiết nhỏ.</li>
-                <li><strong>Ultra Sharp:</strong> Làm cho hình ảnh rõ nét và sắc nét.</li>
-                <li><strong>Tăng Cường Anime:</strong> Hoàn hảo cho hình ảnh phong cách anime, làm cho chúng sắc nét và sống động.</li>
-                <li><strong>Chi Tiết Gấp Đôi:</strong> Nhân đôi chi tiết mà không quá mức.</li>
-                <li><strong>Tăng Cường Chung:</strong> Một lựa chọn tốt cho hầu hết các hình ảnh.</li>
+                <li><strong>Tăng Cường Chi Tiết Lớn:</strong> Tốt nhất cho việc phóng to các chi tiết nhỏ.</li>
+                <li><strong>Ultra Sharp:</strong> Làm cho hình ảnh cực kỳ rõ nét và sắc sảo.</li>
+                <li><strong>Tăng Cường Anime:</strong> Hoàn hảo cho hình ảnh phong cách anime, làm cho chúng trông sắc nét và sống động.</li>
+                <li><strong>Chi Tiết Gấp Đôi:</strong> Gấp đôi chi tiết mà không làm quá mức.</li>
+                <li><strong>Tăng Cường Chung:</strong> Một tùy chọn tốt cho hầu hết các hình ảnh.</li>
             </ul>
         </li>
         <li><strong>Tăng Cường Khuôn Mặt:</strong> Nếu hình ảnh của bạn có khuôn mặt, tùy chọn này có thể giúp làm cho nó trông đẹp hơn. Chỉ cần bật nó lên nếu bạn muốn AiCasso tập trung vào việc cải thiện các đặc điểm khuôn mặt.</li>
     </ul>
 
-    <p>Hãy nhớ rằng, những tùy chọn này hoàn toàn là tùy chọn! Bạn không cần phải điều chỉnh chúng nếu không muốn. Chỉ cần mô tả những gì bạn muốn, và AiCasso sẽ tìm ra cách tốt nhất để thực hiện. Và đừng lo lắng về việc phải diễn đạt hoàn hảo—AiCasso hiểu bạn!</p>
+    <p>Nhớ rằng, những tùy chọn này hoàn toàn là tùy chọn! Bạn không cần phải chỉnh sửa chúng nếu không muốn. Chỉ cần mô tả những gì bạn muốn, và AiCasso sẽ tìm ra cách tốt nhất để thực hiện điều đó. Và đừng lo lắng về việc phải hoàn hảo với từ ngữ của bạn—AiCasso hiểu bạn!</p>
 
 </body>
 </html>

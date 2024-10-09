@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>የድምፅ እንደገና መቀየር መመሪያ</title>
+    <title>መመሪያ መመሪያ ተደራሽነት</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,12 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
         }
         .iframe-container {
             display: flex;
@@ -47,37 +50,37 @@
 
 <body>
 
-    <h2>የድምፅ እንደገና መቀየር መመሪያ</h2>
-    <p>በAiCasso ውስጥ የድምፅ እንደገና መቀየር ባለቤት ነው! በጥቂት ቃላት ውስጥ በምስሎችዎ ውስጥ የብርሃን ማሻሻያ ማድረግ ይቻላል። ፀሐይ በኋላ ወይም ከጎን የሚለው ብርሃን ይፈልጋሉ? ችግኝ የለም! ይገልጹ፣ እና AiCasso የቀረበውን ይዘው ይደርሳል።</p>
+    <h2>መመሪያ መመሪያ ተደራሽነት</h2>
+    <p>በAiCasso ውስጥ ያለው ተደራሽነት ተግባር እጅግ አሪፍ ነው! በጥቂት ቃላት በምስሎችዎ ውስጥ ያለውን ብርሃን ማለወጥ ይችላሉ። ፀሐይ በኋላ ወይም ከጎን የሚመጣ ለስላሳ ብርሃን ትፈልጋለህ? ችግር የለም! እንደዚህ ግለጽ፣ AiCasso ያለውን ያደርጋል።</p>
 
-    <h3>እንዴት ይሰራል:</h3>
+    <h3>እንዴት እንደሚሰራ:</h3>
     
     <div class="example">
-        <strong>የገባ ምስል:</strong>
+        <strong>የገቢ ምስል:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+            <img src="../../images/tutorials/relighting/input.jpg" alt="የገቢ ምስል" loading="lazy">
         </div>
-        <strong>የተጠቀሰ ጥያቄ:</strong>
-        <p>"ፀሐይ በኋላ ይኖር"</p>
+        <strong>የተጠቀሰው መጠይቅ:</strong>
+        <p>"ፀሐይ በኋላ እንዲሆን አድርገው"</p>
         <strong>ውጤት:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+            <img src="../../images/tutorials/relighting/result.jpg" alt="የተደራሽነት ውጤት" loading="lazy">
         </div>
     </div>
 
     <h3>አማራጭ ማሻሻያዎች</h3>
-    <p>እንደገና መቀየር ላይ በተጨማሪ አንዳንድ ዝግጅቶች ማድረግ ይፈልጋሉ? እነዚህ ናቸው የምትቀይሩት:</p>
+    <p>በመገረም እና በተደራሽነትዎ ትንሽ ተጨማሪ ውበት ማምጣት ከፈለጉ፣ እነዚህ ነገሮች ማሻሻያ ይችላሉ:</p>
 
     <ul>
-        <li><strong>አልባ ጥያቄ:</strong> ነገር አለመኖር ይፈልጋሉ? እንደ አይCasso ምን አይኖር ይቀርባሉ። ነገር ግን ይቅርታ፣ ይህን ባይቀርቡ እንደ አይCasso የምትፈልጉትን በተመለከተ ይቀርባል።</li>
-        <li><strong>የብርሃን አቅጣጫ:</strong> ብርሃን ከየት ይመጣ? ግራ፣ ቀኝ፣ ላይ፣ ታች ወይም አንድ ምንም አይደለም። በአማካይ ብርሃን ከግራ ይመጣ።</li>
-        <li><strong>የመመሪያ ደረጃ:</strong> ይህ አይCasso ወደ ዝርዝርዎ ይቀመጣል። ደረጃው ከ1 እስከ 20 ይሆናል፣ 7 የአማካይ ነው። ቁጥር ወደ ላይ ሂደት ይቀመጣል።</li>
-        <li><strong>የከፍተኛ ዝርዝር ደረጃ:</strong> የምስልዎ በጣም ይቀርባል? ይህ የግልጽነት መቆጣጠር ነው። የአማካይ 1.5 ነው፣ ነገር ግን ከ1.0 እስከ 2.0 ይቀመጣል።</li>
-        <li><strong>የድምፅ ደረጃዎች:</strong> ሁለት ደረጃዎች አሉ—ዝቅተኛ ዝርዝር እና ከፍተኛ ዝርዝር። እነዚህ የመጨረሻ ምስል የሚመለከቱትን ይቀመጣሉ። ዝቅተኛ የድምፅ ደረጃ ከ0.0 እስከ 1.0 ይቀመጣል (አማካይ 0.9) እና ከፍተኛ ወደ 0.0 እስከ 1.0 (አማካይ 0.5) ይቀመጣል።</li>
-        <li><strong>የእርምጃ ቁጥር:</strong> ይህ አይCasso የምስልዎን ማሻሻያ ይወዳድር። የአማካይ 50 ነው፣ ነገር ግን ከ20 እስከ 50 ይሆናል።</li>
+        <li><strong>አሉታዊ መጠይቅ:</strong> አንድ ነገር ማስወገድ ትፈልጋለህ? AiCasso ምን እንደማይካተት ማሳወቅ ይችላሉ። ነገር ግን ይህን ባዶ ብቋርጡት አይጨነቁ፣ AiCasso በሚፈልጉት ላይ ብቻ ያተኮራል።</li>
+        <li><strong>የብርሃን አቅጣጫ:</strong> ብርሃኑ ከየት እንደሚመጣ መግለጽ ይችላሉ—ግራ፣ ቀኝ፣ ላይ፣ ታች፣ ወይም ምንም አይደለም። በነባሪ ብርሃኑ ከግራ ይመጣል።</li>
+        <li><strong>መመሪያ መጠን:</strong> ይህ አይካሶን በመግለጻችሁ ላይ ማቆም ይረዳዋል። መጠኑ ከ1 እስከ 20 ነው፣ 7 ደግሞ ነባሪ ነው። ቁጥሩ ከፍ እንደሚል አይካሶ በመጠይቅዎ ላይ ይቆያል።</li>
+        <li><strong>ከፍተኛ ውጤት መጠን:</strong> ምስልዎ እንዲወጣ ትፈልጋለህ? ይህ ግምታውን ይቆጣጠራል። ነባሪው 1.5 ነው፣ ነገር ግን ከ1.0 እስከ 2.0 ማድረግ ይችላሉ ለበለጠ ግምታ ምስል።</li>
+        <li><strong>የድምጽ ደረጃዎች:</strong> ሁለት ደረጃዎች አሉ—ዝቅተኛ ውጤት እና ከፍተኛ ውጤት። ይህ የመጨረሻ ምስል ምን ያህል ለስላሳ ወይም ዝርዝር እንደሚመስል ይቆጣጠራል። ዝቅተኛ ውጤት የድምጽ ደረጃ ከ0.0 እስከ 1.0 ማድረግ ይችላሉ (ነባሪው 0.9 ነው) እና ከፍተኛ ውጤት ከ0.0 እስከ 1.0 ማድረግ ይችላሉ (ነባሪው 0.5 ነው)።</li>
+        <li><strong>የመስመር ብዛት:</strong> አይካሶ ምስልዎን ለማሻሻል ምን ያህል መስመር እንደሚወስድ። ነባሪው 50 ነው፣ ነገር ግን ከ20 እስከ 50 መስመር ማድረግ ይችላሉ።</li>
     </ul>
 
-    <p>እባኮትን ይህ ዝግጅቶች በጣም አማራጭ ናቸው! AiCasso የምትፈልጉትን ማስተዋል በጣም ጥሩ ነው፣ ስለዚህ የምትለውን በየቃላትዎ ይገልጹ፣ እና ይህ የሚያደርግ ይሆናል። ከምርጥ ግን ወይም ዝርዝር ይወዳድር ይቀርባል—በጣም ይደሰቱ እና የምትፈልጉትን ይመለከቱ!</p>
+    <p>እነዚህ ማሻሻያዎች በፍጹም አማራጭ ናቸው እንደምትወዱ ይዘምሩ እና ምን ማመነጨት እንደሚችሉ ይመልከቱ!</p>
 
 </body>
 </html>

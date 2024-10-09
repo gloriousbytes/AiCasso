@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -48,26 +49,26 @@
 <body>
 
     <h2>Przewodnik po korzystaniu z funkcji Headshot</h2>
-    <p>Dzięki funkcji Headshot w AiCasso możesz tworzyć niesamowite i unikalne portrety, po prostu opisując, co chcesz. To idealne rozwiązanie do tworzenia oszałamiających obrazów, niezależnie od tego, czy chcesz spokojnej sceny, epickiego wojownika, czy czegokolwiek innego, co wyobraźnia podpowiada!</p>
+    <p>Dzięki funkcji Headshot w AiCasso możesz tworzyć niesamowite i unikalne portrety, po prostu opisując, co chcesz. To idealne rozwiązanie do tworzenia oszałamiających obrazów, niezależnie od tego, czy chcesz uzyskać spokojną scenę, epickiego wojownika, czy cokolwiek innego, co podpowiada ci wyobraźnia!</p>
 
     <h3>Jak to działa:</h3>
     
     <div class="example">
         <strong>Obraz wejściowy:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+            <img src="../../images/tutorials/headshot/input.jpg" alt="Obraz wejściowy">
         </div>
         <strong>Podpowiedź 1:</strong>
         <p>"Mężczyzna w śniegu"</p>
         <strong>Wynik 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+            <img src="../../images/tutorials/headshot/maninsnow.jpg" alt="Mężczyzna w śniegu - wynik">
         </div>
         <strong>Podpowiedź 2:</strong>
         <p>"Wojownik w lesie, użyj średniej skali wysokiej, jak 78% z tego"</p>
         <strong>Wynik 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+            <img src="../../images/tutorials/headshot/warrior.jpg" alt="Wojownik w lesie - wynik">
         </div>
     </div>
 
@@ -75,13 +76,13 @@
     <p>Chcesz dodać trochę więcej stylu lub kontroli do swoich wygenerowanych portretów? Oto kilka fajnych opcji, które możesz dostosować:</p>
 
     <ul>
-        <li><strong>Negatywna podpowiedź:</strong> Tutaj możesz powiedzieć AiCasso, czego <em>nie</em> chcesz widzieć na obrazie. Na przykład, jeśli nie chcesz żadnych elementów tła, możesz to tutaj wspomnieć. Jeśli to zostawisz puste, AiCasso skupi się tylko na tym, co chcesz.</li>
+        <li><strong>Negatywna podpowiedź:</strong> Tutaj możesz powiedzieć AiCasso, czego <em>nie</em> chcesz widzieć na obrazie. Na przykład, jeśli nie chcesz żadnych elementów tła, możesz to tutaj wspomnieć. Jeśli zostawisz to pole puste, AiCasso skupi się tylko na tym, co chcesz.</li>
         <li><strong>Liczba kroków denoisingu:</strong> To kontroluje, jak gładka i dopracowana wygląda twarz. Możesz wybrać między 21, 31 lub 41 krokami, przy czym 41 to domyślna wartość. Więcej kroków zazwyczaj oznacza czystszy, bardziej dopracowany wynik.</li>
-        <li><strong>Skala prowadzenia:</strong> To jakby dawanie AiCasso dodatkowego impulsu, aby pozostał wierny twojemu opisowi. Skala waha się od 1 do 20, przy czym 10 to wartość domyślna. Wyższe liczby oznaczają, że AiCasso będzie bliżej tego, co opisujesz.</li>
-        <li><strong>Skala S:</strong> To dostosowuje strukturę twarzy. Jest to trochę techniczne, ale zasadniczo reguluje, jak mocne lub delikatne są cechy twarzy. Domyślna wartość to 1.0, a możesz ustawić od 0.0 do 2.0 w zależności od wyglądu, który chcesz osiągnąć.</li>
+        <li><strong>Skala wskazówek:</strong> To jak danie AiCasso dodatkowego impulsu, aby pozostał wierny twojemu opisowi. Skala wynosi od 1 do 20, przy czym 10 to wartość domyślna. Wyższe liczby oznaczają, że AiCasso będzie bardziej trzymał się tego, co opisujesz.</li>
+        <li><strong>Skala S:</strong> To dostosowuje strukturę twarzy. Jest to trochę techniczne, ale zasadniczo reguluje, jak mocne lub delikatne są cechy twarzy. Wartość domyślna to 1.0, a możesz ustawić ją w zakresie od 0.0 do 2.0, w zależności od wyglądu, który chcesz uzyskać.</li>
     </ul>
 
-    <p>Pamiętaj, że te parametry są całkowicie opcjonalne. AiCasso jest dość wyrozumiałe, więc nie musisz być super precyzyjny ani gramatycznie poprawny. Po prostu opisz, co chcesz swoimi słowami, a AiCasso zrobi resztę. Baw się dobrze, tworząc swoje portrety!</p>
+    <p>Pamiętaj, że te parametry są całkowicie opcjonalne. AiCasso jest dość wyrozumiałe, więc nie musisz być super precyzyjny ani gramatycznie poprawny. Po prostu opisz, co chcesz własnymi słowami, a AiCasso zrobi resztę. Baw się dobrze, tworząc swoje portrety!</p>
 
 </body>
 </html>

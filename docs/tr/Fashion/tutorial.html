@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moda Üretim Özellik Kılavuzu</title>
+    <title>Moda Üretim Özelliği Rehberi</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -47,39 +48,39 @@
 
 <body>
 
-    <h2>Moda Üretim Özelliğini Kullanma Kılavuzu</h2>
-    <p>AiCasso'daki Moda Üretim özelliği, birini gömlek, elbise veya pantolon gibi belirli bir kıyafetle giydirmenizi sağlar. Ne istediğinizi basitçe tarif edin ve AiCasso'nun kıyafet parçasını resimdeki kişiye uygulamasını izleyin.</p>
+    <h2>Moda Üretim Özelliğini Kullanma Rehberi</h2>
+    <p>AiCasso'daki Moda Üretim özelliği, birini belirli bir kıyafetle giydirmenizi sağlar; örneğin bir gömlek, elbise veya pantolon. Ne istediğinizi basitçe tanımlayın ve AiCasso'nun görüntüdeki kişiye kıyafet parçasını uygulamasını izleyin.</p>
 
     <h3>Nasıl Çalışır:</h3>
     
     <div class="example">
         <strong>Girdi 1 - Kişi Görseli:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 1.jpg" alt="Kişi Görseli">
         </div>
         <strong>Girdi 2 - Kıyafet Parçası:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 2.jpg" alt="Kıyafet Parçası">
         </div>
-        <strong>Komut:</strong>
+        <strong>İstek:</strong>
         <p>"Gömlek giyen adam"</p>
         <strong>Sonuç:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+            <img src="../../images/tutorials/fashion/result.jpg" alt="Sonuç Görseli">
         </div>
     </div>
 
     <h3>Opsiyonel Parametreler</h3>
-    <p>Kendi tarzınızı eklemek veya sonucun tam istediğiniz gibi olmasını sağlamak istiyorsanız, bu ayarları değiştirebilirsiniz:</p>
+    <p>Kendi stilinizi eklemek veya sonucun tam istediğiniz gibi olmasını sağlamak istiyorsanız, bu ayarları değiştirebilirsiniz:</p>
 
     <ul>
-        <li><strong>Negatif Komut:</strong> Görüntüde <em>istemediğiniz</em> bir şey varsa, burada belirtin. AiCasso'nun üreteceği her şeyle mutluysanız boş bırakın.</li>
-        <li><strong>Kıyafet Türü:</strong> AiCasso'ya <em>üst vücut</em>, <em>alt vücut</em> veya <em>elbiseler</em> üzerinde mi odaklandığınızı söyleyin. Emin değilseniz, varsayılan olarak üst vücut seçilir.</li>
-        <li><strong>Gürültü Azaltma Adım Sayısı:</strong> Görüntünün ne kadar pürüzsüz ve cilalı görüneceğini belirler. 21, 31 veya 41 adım arasında seçim yapabilirsiniz, varsayılan 21'dir. Daha fazla adım genellikle daha rafine bir görünüm sağlar.</li>
-        <li><strong>Rehberlik Ölçeği:</strong> Görüntünün açıklamanıza ne kadar yakın kalacağını belirler. 1 ile 20 arasında ayarlayabilirsiniz, varsayılan 7'dir. Daha yüksek sayılar, AiCasso'nun komutunuzu daha yakından takip etmesini sağlar.</li>
+        <li><strong>Olumsuz İstek:</strong> Görselde istemediğiniz bir şey varsa, burada belirtin. AiCasso'nun ne bulduğuna razıysanız, boş bırakabilirsiniz.</li>
+        <li><strong>Giysi Türü:</strong> AiCasso'ya <em>üst vücut</em>, <em>alt vücut</em> veya <em>elbise</em> üzerine mi odaklandığınızı söyleyin. Emin değilseniz, varsayılan olarak üst vücut olarak ayarlanır.</li>
+        <li><strong>Gürültü Giderme Adım Sayısı:</strong> Bu, görüntünün ne kadar pürüzsüz ve cilalı görüneceğini belirler. 21, 31 veya 41 adım arasında seçim yapabilirsiniz; 21 varsayılandır. Daha fazla adım genellikle daha rafine bir görünüm anlamına gelir.</li>
+        <li><strong>Rehberlik Ölçeği:</strong> Bu, görüntünün tanımınıza ne kadar yakın kalmasına yardımcı olur. 1 ile 20 arasında ayarlayabilirsiniz; 7 varsayılandır. Daha yüksek sayılar, AiCasso'nun isteğinize daha yakın bir şekilde uymasını sağlar.</li>
     </ul>
 
-    <p>Unutmayın, bu ayarlar isteğe bağlıdır! AiCasso oldukça akıllıdır ve her detayı mükemmel yapmasanız bile ne demek istediğinizi anlayabilir. Sadece eğlenin ve yaratıcılığınızı serbest bırakın!</p>
+    <p>Unutmayın, bu ayarlar isteğe bağlıdır! AiCasso oldukça akıllıdır ve her detayı mükemmel yapmasanız bile ne demek istediğinizi anlayabilir. Sadece eğlenin ve yaratıcılığınızın akmasına izin verin!</p>
 
 </body>
 </html>

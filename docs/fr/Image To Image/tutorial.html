@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide de la Fonction Image à Image</title>
+    <title>Guide de la Fonctionnalité Image à Image</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,9 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
-            height: auto;
+        .result img {
+            max-width: 100%;  /* Assure que l'image ne déborde pas du conteneur */
+            height: auto;     /* Garde le rapport d'aspect */
         }
         .iframe-container {
             display: flex;
@@ -47,224 +47,225 @@
 
 <body>
 
-    <h2>Guide d'utilisation de la fonction Image à Image</h2>
-    <p>La fonction Image à Image dans AiCasso est un moyen cool de prendre une image que vous avez déjà et de la transformer en quelque chose de nouveau. C'est comme donner un relooking à votre photo basé sur votre propre description !</p>
+    <h2>Guide d'utilisation de la fonctionnalité Image à Image</h2>
+    <p>La fonctionnalité Image à Image dans AiCasso est un moyen génial de prendre une image que vous avez déjà et de la transformer en quelque chose de nouveau. C'est comme donner un relooking à votre image en fonction de votre propre description !</p>
 
     <h3>Comment ça fonctionne :</h3>
     
     <div class="example">
         <strong>Image d'entrée :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/14N7B-yT-d7Z4HGSlogD859D-JitVcq2_/preview"></iframe>
+            <img src="../../images/tutorials/Image to Image/input.jpg" style="max-width: 100%; height: auto;" alt="Image d'entrée">
         </div>
         <strong>Prompt 1 :</strong>
-        <p>"Un chien mignon, utilisez la moitié de la force"</p>
+        <p>"Un chien mignon, utilise la moitié de la force"</p>
         <strong>Résultat 1 :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1g8GQ6cHuB2ntmBwafGgPWiJ3VHU2r7S5/preview"></iframe>
+            <img src="../../images/tutorials/Image to Image/cutedog.jpg" style="max-width: 100%; height: auto;" alt="Résultat 1">
         </div>
         <strong>Prompt 2 :</strong>
-        <p>"Un chat mignon en 3D CGI avec de grands yeux, utilisez 90% de force, et utilisez le style cartoon 3D"</p>
+        <p>"Un chat CGI 3D mignon avec de grands yeux, utilise 90% de force, et utilise le style cartoon 3D"</p>
         <strong>Résultat 2 :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IeR0SRrPwZi6nfAF9-1SdM6mj4EtyyfM/preview"></iframe>
+            <img src="../../images/tutorials/Image to Image/3dcgicat.jpg" style="max-width: 100%; height: auto;" alt="Résultat 2">
         </div>
         <strong>Prompt 3 :</strong>
-        <p>"Un chat noir, rendez-le réaliste"</p>
+        <p>"Un chat noir, rends-le réaliste"</p>
         <strong>Résultat 3 :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1Ocmsoi89Pn5Un_iNg349FMdQZRQaCUBr/preview"></iframe>
+            <img src="../../images/tutorials/Image to Image/blackcat.jpg" style="max-width: 100%; height: auto;" alt="Résultat 3">
         </div>
     </div>
 
-    <h3>Paramètres Optionnels</h3>
-    <p>Si vous souhaitez ajouter votre propre touche à la transformation de l'image, voici quelques réglages optionnels avec lesquels vous pouvez jouer. Mais ne vous inquiétez pas—si vous voulez simplement décrire ce que vous voulez, AiCasso fera le travail sans avoir besoin de ces extras !</p>
+    <h3>Paramètres optionnels</h3>
+    <p>Si vous souhaitez ajouter votre propre touche à la transformation d'image, voici quelques paramètres optionnels avec lesquels vous pouvez jouer. Mais ne vous inquiétez pas, si vous voulez juste décrire ce que vous voulez, AiCasso fera le travail sans avoir besoin de ces extras !</p>
 
     <ul>
-        <li><strong>Prompt Négatif :</strong> Si vous ne voulez pas quelque chose de spécifique dans votre nouvelle image, vous pouvez le mentionner ici. Mais si vous le laissez vide, c'est bien aussi !</li>
+        <li><strong>Prompt négatif :</strong> S'il y a quelque chose de spécifique que vous <em>ne</em> voulez pas dans votre nouvelle image, vous pouvez le mentionner ici. Mais si vous laissez vide, c'est aussi bien !</li>
         <li><strong>Force :</strong> Cela contrôle combien de l'image originale est utilisée. Vous pouvez aller de 0.1 à 1.0. Plus le nombre est bas, plus votre image gardera son apparence originale. La valeur par défaut est 0.5, ce qui est un bon équilibre.</li>
-        <li><strong>Améliorer le Style :</strong> Vous voulez donner une ambiance spécifique à votre image ? Choisissez un style comme bande dessinée, chibi, 3D, anime, ou réaliste. La valeur par défaut est réaliste, mais n'hésitez pas à explorer !</li>
+        <li><strong>Style d'amélioration :</strong> Vous voulez donner à votre image une ambiance spécifique ? Choisissez un style comme comic, chibi, 3D, anime ou réaliste. La valeur par défaut est réaliste, mais n'hésitez pas à explorer !</li>
     </ul>
 
-    <p>Et hé, rappelez-vous, vous n'avez pas à vous soucier de tout rendre parfait. Décrivez simplement ce que vous voulez avec vos propres mots, et AiCasso fera le reste. Amusez-vous à créer !</p>
-<h3>Styles d'Amélioration</h3>
-<p>Vous ne savez pas quel style choisir ? Ne vous inquiétez pas ! Mentionnez simplement n'importe quel style qui vous vient à l'esprit, même s'il n'est pas grammaticalement correct, et AiCasso le comprendra à partir de la liste des Styles d'Amélioration disponibles.</p>
+    <p>Et n'oubliez pas, vous n'avez pas à vous soucier de tout rendre parfait. Décrivez simplement ce que vous voulez avec vos propres mots, et AiCasso fera le reste. Amusez-vous à créer !</p>
+    
+    <h3>Styles d'amélioration</h3>
+    <p>Vous ne savez pas quel style choisir ? Ne vous inquiétez pas ! Mentionnez simplement n'importe quel style qui vous vient à l'esprit, même s'il n'est pas grammaticalement correct, et AiCasso le comprendra à partir de la liste des styles d'amélioration disponibles.</p>
 
     <ul>
-        <li><strong>Défaut :</strong> Un style équilibré et neutre sans influence artistique spécifique.</li>
+        <li><strong>Par défaut :</strong> Un style équilibré et neutre sans influence artistique spécifique.</li>
         <li><strong>Améliorer :</strong> Améliore légèrement les détails et l'esthétique globale.</li>
-        <li><strong>Diva Cinématographique :</strong> Ajoute un effet dramatique, semblable à un film avec de forts contrastes de lumière.</li>
-        <li><strong>Expressionnisme Abstrait :</strong> Met l'accent sur les formes abstraites et les éclaboussures de couleurs vives.</li>
-        <li><strong>Académique :</strong> Ajoute une touche savante et classique à l'image.</li>
-        <li><strong>Figurine d'Action :</strong> Génère des images avec le style exagéré et dynamique des figurines d'action.</li>
-        <li><strong>Personnage 3D Adorable :</strong> Produit des personnages 3D mignons et cartoon.</li>
-        <li><strong>Kawaii Adorable :</strong> Met l'accent sur le style mignon et charmant typique de la culture Kawaii.</li>
-        <li><strong>Art Déco :</strong> Utilise le style géométrique et décoratif de la période Art Déco.</li>
-        <li><strong>Art Nouveau :</strong> Ajoute des lignes fluides et des éléments inspirés de la nature, typiques de l'Art Nouveau.</li>
-        <li><strong>Aura Astrale :</strong> Crée une atmosphère mystique et d'un autre monde.</li>
-        <li><strong>Avant-Garde :</strong> Se concentre sur des expressions artistiques innovantes et expérimentales.</li>
+        <li><strong>Diva cinématographique :</strong> Ajoute un effet dramatique, semblable à un film, avec de forts contrastes de lumière.</li>
+        <li><strong>Expressionnisme abstrait :</strong> Met l'accent sur les formes abstraites et les éclaboussures de couleurs vives.</li>
+        <li><strong>Académie :</strong> Ajoute une touche savante et classique à l'image.</li>
+        <li><strong>Figurine d'action :</strong> Génère des images avec le style exagéré et dynamique des figurines d'action.</li>
+        <li><strong>Personnage 3D adorable :</strong> Produit des personnages 3D mignons et cartoonish.</li>
+        <li><strong>Kawaii adorable :</strong> Met l'accent sur le style mignon et charmant typique de la culture Kawaii.</li>
+        <li><strong>Art déco :</strong> Utilise le style géométrique et décoratif de la période Art déco.</li>
+        <li><strong>Art nouveau :</strong> Ajoute des lignes fluides et des éléments inspirés de la nature, typiques de l'Art nouveau.</li>
+        <li><strong>Aura astrale :</strong> Crée une atmosphère mystique et d'un autre monde.</li>
+        <li><strong>Avant-garde :</strong> Se concentre sur des expressions artistiques innovantes et expérimentales.</li>
         <li><strong>Baroque :</strong> Utilise le style dramatique, détaillé et élaboré de l'époque baroque.</li>
-        <li><strong>Affiche Style Bauhaus :</strong> Reflète les principes de design minimalistes et fonctionnels du Bauhaus.</li>
-        <li><strong>Dessin Schématique en Bleu :</strong> Produit des images ressemblant à des plans techniques.</li>
-        <li><strong>Caricature :</strong> Génère des portraits exagérés et cartoon.</li>
-        <li><strong>Art en Cellulo :</strong> Utilise les couleurs plates et audacieuses typiques de l'animation en cellulo.</li>
-        <li><strong>Feuille de Conception de Personnage :</strong> Se concentre sur des conceptions de personnages claires et nettes, adaptées à l'animation.</li>
-        <li><strong>Art du Classicisme :</strong> Émule le style artistique raffiné et idéalisé de l'Antiquité Classique.</li>
-        <li><strong>Peinture de Champ de Couleur :</strong> Présente de grandes zones de couleur unique pour créer un plan de couleur plat.</li>
-        <li><strong>Art au Crayon de Couleur :</strong> Imite la texture et l'apparence des dessins au crayon de couleur.</li>
-        <li><strong>Art Conceptuel :</strong> Priorise les idées et concepts plutôt que les préoccupations esthétiques ou matérielles.</li>
-        <li><strong>Constructivisme :</strong> Reflète le style industriel et géométrique du mouvement constructiviste.</li>
+        <li><strong>Affiche de style Bauhaus :</strong> Réflète les principes de design minimaliste et fonctionnel du Bauhaus.</li>
+        <li><strong>Dessin schématique de plan :</strong> Produit des images ressemblant à des plans techniques.</li>
+        <li><strong>Caricature :</strong> Génère des portraits exagérés et cartoonish.</li>
+        <li><strong>Art en cel-shading :</strong> Utilise les couleurs plates et audacieuses typiques de l'animation en cel-shading.</li>
+        <li><strong>Feuille de design de personnage :</strong> Se concentre sur des designs de personnages clairs et nets adaptés à l'animation.</li>
+        <li><strong>Art classique :</strong> Émule le style artistique raffiné et idéalisé de l'Antiquité classique.</li>
+        <li><strong>Dessin de champ de couleur :</strong> Présente de grandes zones de couleur unique pour créer un plan de couleur plat.</li>
+        <li><strong>Art au crayon de couleur :</strong> Imite la texture et l'apparence des dessins au crayon de couleur.</li>
+        <li><strong>Art conceptuel :</strong> Privilégie les idées et les concepts par rapport aux préoccupations esthétiques ou matérielles.</li>
+        <li><strong>Constructivisme :</strong> Réflète le style industriel et géométrique du mouvement constructiviste.</li>
         <li><strong>Cubisme :</strong> Décompose les objets en formes géométriques et les présente sous des formes abstraites.</li>
-        <li><strong>Dadaïsme :</strong> Met l'accent sur l'absurdité, l'irrationalité et les esthétiques anti-art.</li>
-        <li><strong>Fantaisie Sombre :</strong> Crée une atmosphère sombre et gothique avec des éléments sombres et étranges.</li>
-        <li><strong>Atmosphère Sombre et Humeur :</strong> Utilise un faible éclairage et des ombres pour créer une ambiance sombre.</li>
+        <li><strong>Dadaïsme :</strong> Met l'accent sur l'absurde, l'irrationalité et l'esthétique anti-art.</li>
+        <li><strong>Fantaisie sombre :</strong> Crée une atmosphère gothique et d'humeur avec des éléments sombres et étranges.</li>
+        <li><strong>Atmosphère sombre et mélancolique :</strong> Utilise un éclairage faible et des ombres pour créer une ambiance mélancolique.</li>
         <li><strong>Art DMT :</strong> Présente des visuels vibrants et psychédéliques inspirés des expériences DMT.</li>
-        <li><strong>Art Doodle :</strong> Met l'accent sur des styles de dessin fantaisistes et ludiques, souvent complexes et détaillés.</li>
-        <li><strong>Double Exposition :</strong> Combine deux images en une seule, créant un effet surréaliste et superposé.</li>
-        <li><strong>Éclaboussure de Peinture Dégoulinante :</strong> Utilise de la peinture éclaboussée et dégoulinante pour créer des compositions dynamiques et chaotiques.</li>
-        <li><strong>Expressionnisme :</strong> Priorise l'expression émotionnelle sur la représentation réaliste, souvent en utilisant des couleurs audacieuses et des formes dramatiques.</li>
-        <li><strong>Photo Polaroid Fanée :</strong> Imite l'apparence vieillie et nostalgique d'une photo Polaroid fanée.</li>
+        <li><strong>Art de gribouillage :</strong> Met l'accent sur des styles de dessin fantaisistes et ludiques, souvent complexes et détaillés.</li>
+        <li><strong>Double exposition :</strong> Combine deux images en une, créant un effet surréaliste et superposé.</li>
+        <li><strong>Éclaboussures de peinture goutte à goutte :</strong> Utilise de la peinture éclaboussée et gouttante pour créer des compositions dynamiques et chaotiques.</li>
+        <li><strong>Expressionnisme :</strong> Privilégie l'expression émotionnelle par rapport à la représentation réaliste, utilisant souvent des couleurs audacieuses et des formes dramatiques.</li>
+        <li><strong>Photo Polaroid décolorée :</strong> Imite l'apparence vieillie et nostalgique d'une photo Polaroid décolorée.</li>
         <li><strong>Fauvisme :</strong> Utilise des couleurs vives et non naturelles et un coup de pinceau audacieux, inspiré par le mouvement fauviste.</li>
-        <li><strong>2D Plat :</strong> Met l'accent sur des conceptions simples et plates avec un ombrage ou une profondeur minimaux, souvent dans un style cartoon.</li>
-        <li><strong>Style Fortnite :</strong> Reflète le style artistique vibrant et cartoon typique du jeu vidéo Fortnite.</li>
+        <li><strong>Plat 2D :</strong> Met l'accent sur des designs simples et plats avec un ombrage ou une profondeur minimale, souvent dans un style cartoon.</li>
+        <li><strong>Style Fortnite :</strong> Réflète le style artistique vibrant et cartoonish typique du jeu vidéo Fortnite.</li>
         <li><strong>Futurisme :</strong> Se concentre sur le mouvement dynamique, l'énergie et la représentation des technologies futures.</li>
-        <li><strong>Glitchcore :</strong> Met l'accent sur les erreurs numériques et les glitches comme un style artistique, souvent avec des visuels déformés.</li>
+        <li><strong>Glitchcore :</strong> Met l'accent sur les erreurs numériques et les glitches comme style artistique, souvent avec des visuels déformés.</li>
         <li><strong>Glo-Fi :</strong> Utilise un éclairage doux et lumineux pour créer une atmosphère rêveuse et éthérée.</li>
-        <li><strong>Style Googie :</strong> Reflète les tendances de design futuristes et de l'ère spatiale du milieu du 20e siècle.</li>
-        <li><strong>Art Graffiti :</strong> Utilise les esthétiques vibrantes et de style urbain typiques du graffiti et des fresques urbaines.</li>
-        <li><strong>Art de la Renaissance de Harlem :</strong> Reflète les riches expressions culturelles et artistiques de la Renaissance de Harlem.</li>
-        <li><strong>Haute Couture :</strong> Met l'accent sur les esthétiques élégantes, sophistiquées et avant-gardistes de la haute couture.</li>
+        <li><strong>Style Googie :</strong> Réflète les tendances de design futuriste et de l'ère spatiale du milieu du 20ème siècle.</li>
+        <li><strong>Art de graffiti :</strong> Utilise les esthétiques vibrantes et de style urbain typiques du graffiti et des fresques urbaines.</li>
+        <li><strong>Art de la Renaissance de Harlem :</strong> Réflète les riches expressions culturelles et artistiques de la Renaissance de Harlem.</li>
+        <li><strong>Haute couture :</strong> Met l'accent sur l'esthétique élégante, sophistiquée et avant-gardiste de la haute couture.</li>
         <li><strong>Idyllique :</strong> Crée une atmosphère paisible, sereine et souvent pastorale.</li>
-        <li><strong>Impressionnisme :</strong> Utilise un coup de pinceau lâche et des couleurs vives pour capturer les effets de la lumière et de l'atmosphère.</li>
-        <li><strong>Dessin Infographique :</strong> Met l'accent sur des mises en page claires et visuellement attrayantes pour présenter des informations graphiquement.</li>
-        <li><strong>Dessin à l'Encre Dégoulinante :</strong> Utilise de l'encre pour créer des effets fluides et dégoulinants dans un dessin.</li>
-        <li><strong>Dessin à l'Encre Japonaise :</strong> Émule les techniques de pinceau traditionnelles et les esthétiques de l'art à l'encre japonaise.</li>
+        <li><strong>Impressionnisme :</strong> Utilise des coups de pinceau lâches et des couleurs vives pour capturer les effets de la lumière et de l'atmosphère.</li>
+        <li><strong>Dessin infographique :</strong> Met l'accent sur des mises en page claires et visuellement attrayantes pour présenter des informations graphiquement.</li>
+        <li><strong>Dessin à l'encre goutte à goutte :</strong> Utilise de l'encre pour créer des effets fluides et dégoulinants dans un dessin.</li>
+        <li><strong>Dessin à l'encre japonais :</strong> Émule les techniques de coups de pinceau traditionnelles et les esthétiques de l'art à l'encre japonais.</li>
         <li><strong>Photographie Knolling :</strong> Met l'accent sur l'arrangement soigné et organisé des objets, souvent photographiés d'en haut.</li>
-        <li><strong>Atmosphère Légère et Joyeuse :</strong> Utilise des couleurs vives et un éclairage pour créer une atmosphère joyeuse et édifiante.</li>
-        <li><strong>Conception de Logo :</strong> Se concentre sur la création de logos et d'éléments de marque propres et reconnaissables.</li>
-        <li><strong>Élégance Luxueuse :</strong> Met l'accent sur la sophistication et le luxe, souvent avec des textures et des matériaux riches.</li>
-        <li><strong>Photographie Macro :</strong> Se concentre sur des gros plans extrêmes, révélant souvent des détails complexes non visibles à l'œil nu.</li>
-        <li><strong>Art Mandala :</strong> Crée des motifs complexes et symétriques inspirés des conceptions traditionnelles de mandalas.</li>
-        <li><strong>Dessin au Marqueur :</strong> Imite les lignes et les couleurs audacieuses typiques des dessins au marqueur.</li>
-        <li><strong>Médiévalisme :</strong> Reflète les esthétiques artistiques et de design de la période médiévale.</li>
+        <li><strong>Atmosphère légère et joyeuse :</strong> Utilise des couleurs vives et un éclairage pour créer une ambiance joyeuse et optimiste.</li>
+        <li><strong>Design de logo :</strong> Se concentre sur la création de logos et d'éléments de marque propres et reconnaissables.</li>
+        <li><strong>Élégance luxueuse :</strong> Met l'accent sur la sophistication et le luxe, souvent avec des textures et des matériaux riches.</li>
+        <li><strong>Photographie macro :</strong> Se concentre sur des gros plans extrêmes, révélant souvent des détails complexes invisibles à l'œil nu.</li>
+        <li><strong>Art mandala :</strong> Crée des motifs symétriques et complexes inspirés des designs de mandala traditionnels.</li>
+        <li><strong>Dessin au marqueur :</strong> Émule les lignes et les couleurs audacieuses et vibrantes typiques des dessins au marqueur.</li>
+        <li><strong>Médievalisme :</strong> Réflète les esthétiques artistiques et de design de la période médiévale.</li>
         <li><strong>Minimalisme :</strong> Met l'accent sur la simplicité et la réduction des formes à leurs éléments essentiels.</li>
-        <li><strong>Néo-Baroque :</strong> Revitalise le style opulent et dramatique de la période baroque, avec des influences modernes.</li>
-        <li><strong>Néo-Byzantin :</strong> Combine le style artistique religieux et orné de l'Empire byzantin avec des éléments contemporains.</li>
-        <li><strong>Néo-Futurisme :</strong> Se concentre sur des designs futuristes, souvent avec des esthétiques high-tech et élégantes.</li>
-        <li><strong>Néo-Impressionnisme :</strong> Utilise de petits points distincts de couleur pour créer des images, inspiré par le mouvement néo-impressionniste.</li>
-        <li><strong>Néo-Rococo :</strong> Revitalise le style décoratif et élaboré de la période rococo, avec des touches modernes.</li>
-        <li><strong>Néoclassicisme :</strong> Émule les esthétiques artistiques et de design de l'Antiquité classique, en mettant l'accent sur l'harmonie et la simplicité.</li>
-        <li><strong>Art Optique :</strong> Crée des illusions et des effets optiques grâce à l'utilisation de motifs géométriques et de contrastes.</li>
-        <li><strong>Orné et Complexe :</strong> Se concentre sur des designs très détaillés et élaborés avec un accent sur la décoration.</li>
-        <li><strong>Dessin au Crayon :</strong> Imite la texture et l'apparence des croquis au crayon.</li>
-        <li><strong>Art Pop :</strong> Utilise des couleurs audacieuses et des images inspirées de la culture populaire et des médias de masse.</li>
-        <li><strong>Rococo :</strong> Reflète le style artistique décoratif et élaboré de la période rococo, avec un accent sur la légèreté et l'élégance.</li>
-        <li><strong>Art de Silhouette :</strong> Utilise de forts contrastes entre la lumière et l'ombre pour créer des images basées sur des silhouettes.</li>
-        <li><strong>Art Vectoriel Simple :</strong> Met l'accent sur des formes géométriques propres et des couleurs plates, typiques de l'art vectoriel.</li>
-        <li><strong>SketchUp :</strong> Imite l'apparence et la sensation des modèles 3D créés à l'aide du logiciel SketchUp.</li>
+        <li><strong>Néo-baroque :</strong> Ravive le style opulent et dramatique de la période baroque, avec des influences modernes.</li>
+        <li><strong>Néo-byzantin :</strong> Combine le style artistique orné et religieux de l'Empire byzantin avec des éléments contemporains.</li>
+        <li><strong>Néo-futurisme :</strong> Se concentre sur des designs futuristes, souvent avec des esthétiques modernes et high-tech.</li>
+        <li><strong>Néo-impressionnisme :</strong> Utilise de petits points distincts de couleur pour créer des images, inspirées par le mouvement néo-impressionniste.</li>
+        <li><strong>Néo-rococo :</strong> Ravive le style élaboré et décoratif de la période rococo, avec des twists modernes.</li>
+        <li><strong>Néoclassicisme :</strong> Émule les esthétiques artistiques et de design de l'Antiquité classique, mettant l'accent sur l'harmonie et la simplicité.</li>
+        <li><strong>Art optique :</strong> Crée des illusions et des effets optiques grâce à l'utilisation de motifs géométriques et de contrastes.</li>
+        <li><strong>Orné et complexe :</strong> Se concentre sur des designs très détaillés et élaborés avec un accent sur la décoration.</li>
+        <li><strong>Dessin au crayon :</strong> Émule la texture et l'apparence des croquis au crayon.</li>
+        <li><strong>Art pop :</strong> Utilise des couleurs audacieuses et des images inspirées de la culture populaire et des médias de masse.</li>
+        <li><strong>Rococo :</strong> Réflète le style artistique élaboré et décoratif de la période rococo, avec un accent sur la légèreté et l'élégance.</li>
+        <li><strong>Art de silhouette :</strong> Utilise de forts contrastes entre la lumière et l'ombre pour créer des images basées sur des silhouettes.</li>
+        <li><strong>Art vectoriel simple :</strong> Met l'accent sur des formes géométriques propres et des couleurs plates, typiques de l'art vectoriel.</li>
+        <li><strong>SketchUp :</strong> Émule l'apparence et la sensation des modèles 3D créés à l'aide du logiciel SketchUp.</li>
         <li><strong>Steampunk :</strong> Combine les esthétiques de l'époque victorienne avec la technologie à vapeur, créant un style rétro-futuriste.</li>
-        <li><strong>Surréalisme :</strong> Mélange la réalité et des images oniriques pour créer des scènes surréalistes et fantastiques.</li>
-        <li><strong>Suprématisme :</strong> Se concentre sur des formes géométriques de base et des palettes de couleurs limitées, inspiré par le mouvement suprématiste.</li>
-        <li><strong>Terragen :</strong> Imite les paysages réalistes générés par ordinateur créés à l'aide du logiciel Terragen.</li>
-        <li><strong>Atmosphère Tranquille et Relaxante :</strong> Utilise des couleurs douces et des images apaisantes pour créer un environnement paisible et serein.</li>
-        <li><strong>Conceptions d'Autocollants :</strong> Se concentre sur la création d'images ludiques et cartoon adaptées aux autocollants.</li>
-        <li><strong>Lumière de Bord Vibrante :</strong> Met l'accent sur un éclairage de bord lumineux autour des sujets pour créer un effet frappant et vibrant.</li>
-        <li><strong>Éclairage Volumétrique :</strong> Utilise des faisceaux de lumière et des effets atmosphériques pour créer de la profondeur et de la dimension.</li>
-        <li><strong>Aquarelle :</strong> Imite les textures douces et fluides des peintures à l'aquarelle.</li>
-        <li><strong>Fantaisiste et Ludique :</strong> Se concentre sur des images légères, imaginatives et souvent excentriques.</li>
-        <li><strong>Net :</strong> Améliore la clarté et la définition des bords pour un look plus net.</li>
-        <li><strong>Chef-d'œuvre :</strong> Met l'accent sur une production artistique de haute qualité, détaillée et soignée.</li>
+        <li><strong>Surréalisme :</strong> Mélange la réalité et des images de rêve pour créer des scènes surréalistes et fantastiques.</li>
+        <li><strong>Suprématisme :</strong> Se concentre sur des formes géométriques de base et des palettes de couleurs limitées, inspirées par le mouvement suprématiste.</li>
+        <li><strong>Terragen :</strong> Émule les paysages réalistes générés par ordinateur créés à l'aide du logiciel Terragen.</li>
+        <li><strong>Atmosphère tranquille et relaxante :</strong> Utilise des couleurs douces et des images apaisantes pour créer un environnement paisible et serein.</li>
+        <li><strong>Designs d'autocollants :</strong> Se concentre sur la création d'images ludiques et cartoonish adaptées aux autocollants.</li>
+        <li><strong>Lumière de contour vibrante :</strong> Met l'accent sur un éclairage vif autour des sujets pour créer un effet frappant et vibrant.</li>
+        <li><strong>Éclairage volumétrique :</strong> Utilise des faisceaux lumineux et des effets atmosphériques pour créer de la profondeur et de la dimension.</li>
+        <li><strong>Aquarelle :</strong> Émule les textures douces et fluides des peintures à l'aquarelle.</li>
+        <li><strong>Fantaisiste et ludique :</strong> Se concentre sur des images légères, imaginatives et souvent excentriques.</li>
+        <li><strong>Net :</strong> Améliore la clarté et la définition des bords pour un aspect plus net.</li>
+        <li><strong>Chef-d'œuvre :</strong> Met l'accent sur une production artistique de haute qualité, détaillée et polie.</li>
         <li><strong>Photographie :</strong> Vise une qualité photographique réaliste et vivante.</li>
         <li><strong>Négatif :</strong> Inverse les couleurs pour créer un effet de négatif photographique.</li>
         <li><strong>Publicités - Publicité :</strong> Se concentre sur des visuels propres et professionnels adaptés à la publicité.</li>
         <li><strong>Publicités - Automobile :</strong> Adapte le style visuel pour une publicité automobile dynamique et soignée.</li>
-        <li><strong>Publicités - Entreprise :</strong> Met l'accent sur un design élégant et professionnel adapté aux environnements d'entreprise.</li>
-        <li><strong>Publicités - Mode Éditoriale :</strong> Met en valeur le look élégant et haute couture utilisé dans les éditoriaux de mode.</li>
-        <li><strong>Publicités - Photographie Alimentaire :</strong> Optimise les images pour le look vibrant et appétissant typique de la photographie alimentaire.</li>
-        <li><strong>Publicités - Photographie Alimentaire Gastronomique :</strong> Met l'accent sur les esthétiques riches et détaillées de la photographie alimentaire gastronomique.</li>
+        <li><strong>Publicités - Corporate :</strong> Met l'accent sur un design élégant et professionnel adapté aux environnements d'entreprise.</li>
+        <li><strong>Publicités - Éditorial de mode :</strong> Met en avant le look élégant et haute couture utilisé dans les éditoriaux de mode.</li>
+        <li><strong>Publicités - Photographie culinaire :</strong> Optimise les images pour le look vibrant et appétissant typique de la photographie culinaire.</li>
+        <li><strong>Publicités - Photographie de nourriture gastronomique :</strong> Met l'accent sur l'esthétique riche et détaillée de la photographie de nourriture gastronomique.</li>
         <li><strong>Publicités - Luxe :</strong> Se concentre sur le style opulent et haut de gamme adapté aux marques de luxe.</li>
-        <li><strong>Publicités - Immobilier :</strong> Met en valeur les visuels propres et accueillants typiques de la publicité immobilière.</li>
-        <li><strong>Publicités - Vente au Détail :</strong> Met l'accent sur le style attrayant et axé sur le consommateur adapté à la publicité de détail.</li>
-        <li><strong>Hyperréalisme :</strong> S'efforce d'obtenir un style visuel extrêmement détaillé et réaliste.</li>
-        <li><strong>Pointillisme :</strong> Utilise de petits points distincts de couleur pour créer une image, inspiré par le mouvement pointilliste.</li>
-        <li><strong>Psychédélique :</strong> Met l'accent sur des couleurs vives et des visuels surréalistes inspirés de l'art psychédélique.</li>
-        <li><strong>Renaissance :</strong> Reflète le style harmonieux et classique de l'art de la Renaissance.</li>
+        <li><strong>Publicités - Immobilier :</strong> Met en avant les visuels propres et accueillants typiques de la publicité immobilière.</li>
+        <li><strong>Publicités - Vente au détail :</strong> Met l'accent sur le style attrayant et axé sur le consommateur adapté à la publicité de vente au détail.</li>
+        <li><strong>Hyperréalisme :</strong> Vise un style visuel extrêmement détaillé et réaliste.</li>
+        <li><strong>Pointillisme :</strong> Utilise de petits points distincts de couleur pour créer une image, inspirée par le mouvement pointilliste.</li>
+        <li><strong>Psychedelique :</strong> Met l'accent sur des couleurs vives et des visuels surréalistes inspirés de l'art psychédélique.</li>
+        <li><strong>Renaissance :</strong> Réflète le style harmonieux et classique de l'art de la Renaissance.</li>
         <li><strong>Typographie :</strong> Se concentre sur l'utilisation créative et artistique du texte et des polices.</li>
-        <li><strong>Biomécanique Futuriste :</strong> Combine des éléments futuristes et biomécaniques pour créer un style high-tech et organique.</li>
-        <li><strong>Cyberpunk Biomécanique Futuriste :</strong> Fusionne les esthétiques biomécaniques et cyberpunk pour un look futuriste et granuleux.</li>
-        <li><strong>Cybernétique Futuriste :</strong> Se concentre sur des visuels high-tech et cybernétiques.</li>
-        <li><strong>Robot Cybernétique Futuriste :</strong> Met l'accent sur des designs robotiques et cybernétiques avec une touche futuriste.</li>
-        <li><strong>Paysage Urbain Cyberpunk Futuriste :</strong> Reflète les paysages urbains granuleux et éclairés au néon typiques de l'art cyberpunk.</li>
-        <li><strong>Sci-Fi Futuriste :</strong> Se concentre sur les esthétiques futuristes et inspirées de la science-fiction.</li>
-        <li><strong>Cyberpunk Rétro Futuriste :</strong> Combine des éléments rétro et cyberpunk pour un style nostalgique mais futuriste.</li>
-        <li><strong>Rétro Futuriste :</strong> Fusionne des visuels futuristes avec des éléments de design rétro.</li>
-        <li><strong>Vaporwave Futuriste :</strong> Met l'accent sur les visuels nostalgiques et surréalistes typiques de l'art Vaporwave.</li>
-        <li><strong>Bulle de Jeu :</strong> Se concentre sur une esthétique ludique et pétillante souvent vue dans les jeux occasionnels.</li>
-        <li><strong>Cyberpunk de Jeu :</strong> Fusionne des éléments de design de jeu avec des esthétiques cyberpunk.</li>
-        <li><strong>Combat de Jeu :</strong> Reflète le style dynamique et intense typique des jeux de combat.</li>
-        <li><strong>GTA de Jeu :</strong> Imite le style urbain et granuleux typique des jeux Grand Theft Auto.</li>
-        <li><strong>Mario de Jeu :</strong> Se concentre sur le style vibrant et cartoon typique des jeux Mario.</li>
-        <li><strong>Minecraft de Jeu :</strong> Imite le style pixelisé et en blocs typique de Minecraft.</li>
-        <li><strong>Pokemon de Jeu :</strong> Reflète le style vibrant et inspiré de l'anime typique des jeux Pokémon.</li>
-        <li><strong>Arcade Rétro de Jeu :</strong> Met l'accent sur le style pixelisé et nostalgique typique des jeux d'arcade rétro.</li>
-        <li><strong>RPG Fantaisie de Jeu :</strong> Reflète les esthétiques détaillées et inspirées de la fantaisie typiques des jeux RPG.</li>
-        <li><strong>Stratégie de Jeu :</strong> Se concentre sur le design propre et fonctionnel typique des jeux de stratégie.</li>
-        <li><strong>Streetfighter de Jeu :</strong> Imite le style audacieux et dynamique typique des jeux Street Fighter.</li>
-        <li><strong>Zelda de Jeu :</strong> Reflète le style inspiré de la fantaisie typique des jeux Zelda.</li>
-        <li><strong>Architectural Divers :</strong> Se concentre sur des rendus architecturaux propres et précis.</li>
-        <li><strong>Disco Divers :</strong> Met l'accent sur les esthétiques vibrantes et éclairées au néon typiques de la culture disco.</li>
-        <li><strong>Paysage de Rêve Divers :</strong> Crée des environnements surréalistes et oniriques.</li>
-        <li><strong>Dystopique Divers :</strong> Reflète les visuels granuleux et sombres typiques des décors dystopiques.</li>
-        <li><strong>Conte de Fées Divers :</strong> Met l'accent sur les éléments fantaisistes et magiques typiques des contes de fées.</li>
-        <li><strong>Gothique Divers :</strong> Reflète le style sombre et orné typique de l'art et de l'architecture gothiques.</li>
-        <li><strong>Grunge Divers :</strong> Met l'accent sur les esthétiques granuleuses et brutes typiques de la culture grunge.</li>
-        <li><strong>Horreur Divers :</strong> Se concentre sur des visuels sombres, étranges et inquiétants typiques de l'horreur.</li>
-        <li><strong>Kawaii Divers :</strong> Reflète le style mignon et charmant typique de la culture Kawaii.</li>
-        <li><strong>Lovecraftien Divers :</strong> Met l'accent sur l'horreur cosmique et étrange typique de la fiction lovecraftienne.</li>
-        <li><strong>Macabre Divers :</strong> Se concentre sur des thèmes sombres, morbides et inquiétants.</li>
-        <li><strong>Manga Divers :</strong> Imite le style audacieux et dynamique typique du manga.</li>
-        <li><strong>Métropole Divers :</strong> Reflète les esthétiques urbaines et élégantes typiques des métropoles modernes.</li>
-        <li><strong>Minimaliste Divers :</strong> Met l'accent sur la simplicité et la réduction des formes à leurs essentiels.</li>
-        <li><strong>Monochrome Divers :</strong> Se concentre sur des images créées dans des nuances variées d'une seule couleur.</li>
-        <li><strong>Nautique Divers :</strong> Reflète les esthétiques inspirées de la mer typiques des thèmes nautiques.</li>
-        <li><strong>Espace Divers :</strong> Met l'accent sur les visuels vastes et d'un autre monde typiques des décors spatiaux.</li>
-        <li><strong>Vitrail Divers :</strong> Imite les conceptions complexes et colorées typiques de l'art du vitrail.</li>
-        <li><strong>Mode Techwear Divers :</strong> Se concentre sur les esthétiques futuristes et fonctionnelles typiques de la mode techwear.</li>
-        <li><strong>Tribal Divers :</strong> Reflète les esthétiques culturelles audacieuses typiques de l'art tribal.</li>
-        <li><strong>Zentangle Divers :</strong> Met l'accent sur des motifs complexes et répétitifs typiques de l'art Zentangle.</li>
-        <li><strong>Collage en Papier :</strong> Utilise du papier découpé pour créer des collages texturés et superposés.</li>
-        <li><strong>Découpe Plate en Papier :</strong> Met l'accent sur des conceptions plates et découpées en papier.</li>
-        <li><strong>Kirigami en Papier :</strong> Se concentre sur les conceptions pliées et complexes typiques du Kirigami.</li>
-        <li><strong>Papier Mâché en Papier :</strong> Utilise du papier mâché pour créer des formes texturées et tridimensionnelles.</li>
-        <li><strong>Quilling en Papier :</strong> Met l'accent sur les conceptions délicates et roulées en papier typiques du quilling en papier.</li>
-        <li><strong>Collage Découpé en Papier :</strong> Combine des éléments découpés en papier pour créer des collages superposés.</li>
-        <li><strong>Boîte à Ombres Découpée en Papier :</strong> Utilise des découpes en papier superposées pour créer des boîtes à ombres tridimensionnelles.</li>
-        <li><strong>Découpe Empilée en Papier :</strong> Se concentre sur des conceptions en papier superposées et empilées.</li>
-        <li><strong>Découpe Épaisse en Papier :</strong> Met l'accent sur l'apparence dimensionnelle et superposée typique des conceptions en découpe épaisse en papier.</li>
-        <li><strong>Photo Alien :</strong> Se concentre sur des visuels surréalistes et extraterrestres.</li>
-        <li><strong>Film Noir Photo :</strong> Met l'accent sur les esthétiques sombres et d'humeur typiques du film noir.</li>
-        <li><strong>Glamour Photo :</strong> Met en valeur le look soigné et élégant typique de la photographie glamour.</li>
-        <li><strong>HDR Photo :</strong> Utilise une plage dynamique élevée (HDR) pour créer des images avec une large gamme de lumière et de couleur.</li>
-        <li><strong>Photographie iPhone :</strong> Imite le style propre et moderne typique de la photographie iPhone.</li>
-        <li><strong>Longue Exposition Photo :</strong> Utilise une longue exposition pour créer des effets dynamiques et flous de mouvement.</li>
-        <li><strong>Neon Noir Photo :</strong> Combine un éclairage néon avec les esthétiques sombres et d'humeur du noir.</li>
-        <li><strong>Silhouette Photo :</strong> Se concentre sur de forts contrastes entre la lumière et l'ombre pour créer des images basées sur des silhouettes.</li>
-        <li><strong>Tilt Shift Photo :</strong> Utilise des effets de bascule pour créer une apparence miniaturisée et semblable à un jouet.</li>
+        <li><strong>Biomecanique futuriste :</strong> Combine des éléments futuristes et biomécaniques pour créer un style organique et high-tech.</li>
+        <li><strong>Cyberpunk biomécanique futuriste :</strong> Fusionne les esthétiques biomécaniques et cyberpunk pour un look futuriste et gritty.</li>
+        <li><strong>Cybernétique futuriste :</strong> Se concentre sur des visuels high-tech et cybernétiques.</li>
+        <li><strong>Robot cybernétique futuriste :</strong> Met l'accent sur des designs robotiques et cybernétiques avec une touche futuriste.</li>
+        <li><strong>Paysage urbain cyberpunk futuriste :</strong> Réflète les paysages urbains sombres et éclairés au néon typiques de l'art cyberpunk.</li>
+        <li><strong>Science-fiction futuriste :</strong> Se concentre sur des esthétiques futuristes et inspirées de la science-fiction.</li>
+        <li><strong>Cyberpunk rétro futuriste :</strong> Combine des éléments rétro et cyberpunk pour un style nostalgique mais futuriste.</li>
+        <li><strong>Rétro futuriste :</strong> Fusionne des visuels futuristes avec des éléments de design rétro.</li>
+        <li><strong>Vaporwave futuriste :</strong> Met l'accent sur les visuels nostalgiques et surréalistes typiques de l'art Vaporwave.</li>
+        <li><strong>Bulle de jeu :</strong> Se concentre sur une esthétique ludique et pétillante souvent vue dans les jeux décontractés.</li>
+        <li><strong>Jeu Cyberpunk :</strong> Fusionne des éléments de design de jeu avec des esthétiques cyberpunk.</li>
+        <li><strong>Jeu de combat :</strong> Réflète le style dynamique et intense typique des jeux de combat.</li>
+        <li><strong>Jeu GTA :</strong> Émule le style urbain gritty typique des jeux Grand Theft Auto.</li>
+        <li><strong>Jeu Mario :</strong> Se concentre sur le style vibrant et cartoonish typique des jeux Mario.</li>
+        <li><strong>Jeu Minecraft :</strong> Émule le style pixelisé et en blocs typique de Minecraft.</li>
+        <li><strong>Jeu Pokémon :</strong> Réflète le style vibrant et inspiré de l'anime typique des jeux Pokémon.</li>
+        <li><strong>Jeu d'arcade rétro :</strong> Met l'accent sur le style pixelisé et nostalgique typique des jeux d'arcade rétro.</li>
+        <li><strong>Jeu RPG Fantasy :</strong> Réflète les esthétiques détaillées et inspirées de la fantasy typiques des jeux RPG.</li>
+        <li><strong>Jeu de stratégie :</strong> Se concentre sur le design propre et fonctionnel typique des jeux de stratégie.</li>
+        <li><strong>Jeu Streetfighter :</strong> Émule le style audacieux et dynamique typique des jeux Street Fighter.</li>
+        <li><strong>Jeu Zelda :</strong> Réflète le style inspiré de la fantasy typique des jeux Zelda.</li>
+        <li><strong>Architecture divers :</strong> Se concentre sur des rendus architecturaux propres et précis.</li>
+        <li><strong>Disco divers :</strong> Met l'accent sur les esthétiques vibrantes et éclairées au néon typiques de la culture disco.</li>
+        <li><strong>Rêverie divers :</strong> Crée des environnements surréalistes et oniriques.</li>
+        <li><strong>Dystopie divers :</strong> Réflète les visuels sombres et désolés typiques des environnements dystopiques.</li>
+        <li><strong>Conte de fées divers :</strong> Met l'accent sur les éléments fantaisistes et magiques typiques des contes de fées.</li>
+        <li><strong>Gothique divers :</strong> Réflète le style sombre et orné typique de l'art et de l'architecture gothiques.</li>
+        <li><strong>Grunge divers :</strong> Met l'accent sur les esthétiques brutes et rugueuses typiques de la culture grunge.</li>
+        <li><strong>Horreur divers :</strong> Se concentre sur des visuels sombres, étranges et troublants typiques de l'horreur.</li>
+        <li><strong>Kawaii divers :</strong> Réflète le style mignon et charmant typique de la culture Kawaii.</li>
+        <li><strong>Lovecraftien divers :</strong> Met l'accent sur l'horreur cosmique étrange typique de la fiction lovecraftienne.</li>
+        <li><strong>Macabre divers :</strong> Se concentre sur des thèmes sombres, morbides et troublants.</li>
+        <li><strong>Manga divers :</strong> Émule le style audacieux et dynamique typique du manga.</li>
+        <li><strong>Métropole divers :</strong> Réflète les esthétiques urbaines élégantes typiques des métropoles modernes.</li>
+        <li><strong>Minimaliste divers :</strong> Met l'accent sur la simplicité et la réduction des formes à leurs éléments essentiels.</li>
+        <li><strong>Monochrome divers :</strong> Se concentre sur des images créées dans des nuances variées d'une seule couleur.</li>
+        <li><strong>Nautique divers :</strong> Réflète les esthétiques inspirées de la mer typiques des thèmes nautiques.</li>
+        <li><strong>Espace divers :</strong> Met l'accent sur les visuels vastes et d'un autre monde typiques des environnements spatiaux.</li>
+        <li><strong>Vitrail divers :</strong> Émule les designs colorés et complexes typiques de l'art du vitrail.</li>
+        <li><strong>Mode techwear divers :</strong> Se concentre sur les esthétiques futuristes et fonctionnelles typiques de la mode techwear.</li>
+        <li><strong>Tribal divers :</strong> Réflète les esthétiques culturelles audacieuses typiques de l'art tribal.</li>
+        <li><strong>Zentangle divers :</strong> Met l'accent sur des motifs complexes et répétitifs typiques de l'art Zentangle.</li>
+        <li><strong>Collage en papercraft :</strong> Utilise du papier découpé pour créer des collages texturés et superposés.</li>
+        <li><strong>Papercraft découpe plate :</strong> Met l'accent sur des designs en papier découpé plats.</li>
+        <li><strong>Papercraft Kirigami :</strong> Se concentre sur les designs complexes et pliés typiques du Kirigami.</li>
+        <li><strong>Papercraft papier mâché :</strong> Utilise du papier mâché pour créer des formes texturées et tridimensionnelles.</li>
+        <li><strong>Papercraft quilling en papier :</strong> Met l'accent sur les designs délicats et enroulés typiques du quilling en papier.</li>
+        <li><strong>Papercraft collage découpé :</strong> Combine des éléments en papier découpé pour créer des collages superposés.</li>
+        <li><strong>Papercraft boîte à ombres découpée :</strong> Utilise des découpes superposées pour créer des boîtes à ombres tridimensionnelles.</li>
+        <li><strong>Papercraft découpe empilée :</strong> Se concentre sur des designs en papier empilés et superposés.</li>
+        <li><strong>Papercraft découpe épaisse empilée :</strong> Met l'accent sur l'apparence dimensionnelle et superposée typique des designs en papier découpé épais.</li>
+        <li><strong>Photo extraterrestre :</strong> Se concentre sur des visuels surréalistes et extraterrestres.</li>
+        <li><strong>Photo film noir :</strong> Met l'accent sur les esthétiques sombres et mélancoliques typiques du film noir.</li>
+        <li><strong>Photo glamour :</strong> Met en avant le look poli et stylé typique de la photographie glamour.</li>
+        <li><strong>Photo HDR :</strong> Utilise une large gamme dynamique (HDR) pour créer des images avec une large gamme de lumière et de couleur.</li>
+        <li><strong>Photo iPhone photographique :</strong> Émule le style moderne et propre typique de la photographie iPhone.</li>
+        <li><strong>Photo longue exposition :</strong> Utilise une longue exposition pour créer des effets dynamiques et flous de mouvement.</li>
+        <li><strong>Photo néon noir :</strong> Combine un éclairage néon avec les esthétiques sombres et mélancoliques du noir.</li>
+        <li><strong>Photo silhouette :</strong> Se concentre sur de forts contrastes entre la lumière et l'ombre pour créer des images basées sur des silhouettes.</li>
+        <li><strong>Photo tilt shift :</strong> Utilise des effets de tilt-shift pour créer un look miniaturisé et semblable à un jouet.</li>
         <li><strong>Modèle 3D :</strong> Se concentre sur l'apparence propre et détaillée typique des modèles 3D.</li>
-        <li><strong>Film Analogique :</strong> Imite l'apparence granuleuse et texturée typique de la photographie sur film analogique.</li>
+        <li><strong>Film analogique :</strong> Émule l'apparence granuleuse et texturée typique de la photographie sur film analogique.</li>
         <li><strong>Anime :</strong> Met l'accent sur le style vibrant et dynamique typique de l'anime.</li>
-        <li><strong>Cinématographique :</strong> Crée un effet dramatique et semblable à un film avec un éclairage et des compositions forts.</li>
-        <li><strong>Bande Dessinée :</strong> Utilise des lignes audacieuses et des couleurs vives typiques de l'art de la bande dessinée.</li>
-        <li><strong>Argile Artisanale :</strong> Imite l'apparence texturée et faite à la main des modèles en argile.</li>
-        <li><strong>Art Numérique :</strong> Se concentre sur des œuvres d'art numériques propres et soignées.</li>
-        <li><strong>Art Fantastique :</strong> Met l'accent sur les visuels détaillés et imaginatifs typiques de l'art fantastique.</li>
-        <li><strong>Isométrique :</strong> Utilise une perspective isométrique pour créer une apparence tridimensionnelle.</li>
-        <li><strong>Art Linéaire :</strong> Se concentre sur des lignes nettes et précises pour créer des dessins détaillés.</li>
-        <li><strong>Low Poly :</strong> Utilise des modèles 3D à faible polygone pour créer une apparence minimaliste et géométrique.</li>
-        <li><strong>Neonpunk :</strong> Combine un éclairage néon avec les esthétiques granuleuses du cyberpunk.</li>
-        <li><strong>Origami :</strong> Se concentre sur les conceptions pliées et complexes typiques de l'origami.</li>
+        <li><strong>Cinématographique :</strong> Crée un effet dramatique, semblable à un film, avec un éclairage et des compositions forts.</li>
+        <li><strong>Bande dessinée :</strong> Utilise des lignes audacieuses et des couleurs vibrantes typiques de l'art de la bande dessinée.</li>
+        <li><strong>Argile artisanale :</strong> Émule l'apparence texturée et faite à la main des modèles en argile.</li>
+        <li><strong>Art numérique :</strong> Se concentre sur des œuvres d'art numériques propres et polies.</li>
+        <li><strong>Art fantastique :</strong> Met l'accent sur les visuels détaillés et imaginatifs typiques de l'art fantastique.</li>
+        <li><strong>Isométrique :</strong> Utilise une perspective isométrique pour créer un look tridimensionnel.</li>
+        <li><strong>Art linéaire :</strong> Se concentre sur des lignes nettes et précises pour créer des dessins détaillés.</li>
+        <li><strong>Low Poly :</strong> Utilise des modèles 3D à faible polygone pour créer un look minimaliste et géométrique.</li>
+        <li><strong>Neonpunk :</strong> Combine un éclairage néon avec les esthétiques brutes du cyberpunk.</li>
+        <li><strong>Origami :</strong> Se concentre sur les designs complexes et pliés typiques de l'origami.</li>
         <li><strong>Photographique :</strong> Vise des visuels réalistes et vivants.</li>
-        <li><strong>Art Pixel :</strong> Utilise des conceptions pixelisées pour créer une apparence rétro inspirée des jeux vidéo.</li>
+        <li><strong>Art pixel :</strong> Utilise des designs pixelisés pour créer un look rétro inspiré des jeux vidéo.</li>
         <li><strong>Texture :</strong> Se concentre sur des textures riches et détaillées pour améliorer la profondeur visuelle.</li>
     </ul>
 </body>

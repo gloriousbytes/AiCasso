@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wskazówki dotyczące edytowania z użyciem obrazu</title>
+    <title>Porady dotyczące edytowania z wykorzystaniem obrazu</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,31 +31,25 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img {
+            width: 100%;
             height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+            max-width: 100%;
         }
     </style>
 </head>
 
 <body>
 
-    <h2>Wskazówki dotyczące edytowania z użyciem obrazu</h2>
-    <p>Funkcja Edytowania z użyciem obrazu w AiCasso pozwala na wprowadzenie zmian w zdjęciu tylko poprzez opisanie, co chcesz zmienić. Niezależnie od tego, czy chcesz zmienić styl, dostosować nastrój, czy poprawić niektóre elementy, AiCasso zajmie się tym za Ciebie, nie wymagając ręcznego zaznaczania ani malowania czegokolwiek.</p>
+    <h2>Porady dotyczące edytowania z wykorzystaniem obrazu</h2>
+    <p>Funkcja Edytowania z wykorzystaniem obrazu w AiCasso pozwala na wprowadzenie zmian w zdjęciu tylko poprzez opisanie, co chcesz zmienić. Niezależnie od tego, czy chcesz zmienić styl, dostosować nastrój, czy poprawić niektóre elementy, AiCasso zajmie się tym za Ciebie, nie wymagając ręcznego zaznaczania ani malowania czegokolwiek.</p>
 
     <h3>Jak to działa:</h3>
 
     <div class="example">
-        <strong>Obraz początkowy:</strong>
+        <strong>Początkowy obraz:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CpnI7HqIAzcrMjmQb5_25yJilhxraZ80/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/startingimage1.jpg" alt="Początkowy obraz">
         </div>
     </div>
 
@@ -69,7 +63,7 @@
     <div class="example">
         <strong>Przykład 1:</strong> "Zrób ją blondynką."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI2vE6dOcFxInjqzq1_mVru_nLCGFTaS/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/makeherblonde.jpg" alt="Przykład zrobienia jej blondynką">
         </div>
         <p><em>Wynik:</em> AiCasso zmieni kolor włosów osoby na blond.</p>
     </div>
@@ -79,22 +73,22 @@
         <div class="example">
             <strong>Obraz wejściowy:</strong>
             <div class="result">
-                <iframe src="https://drive.google.com/file/d/1PlJNkwIWrK3Uu_bq38te_dtqp2XBkW_e/preview"></iframe>
+                <img src="../../images/tutorials/imageguidededit/example2input.jpg" alt="Obraz wejściowy Przykład 2">
             </div>
         </div>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11mjTtcBdI8T0cMcfQz6HEJ79xOhw81VG/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/example2result.jpg" alt="Obraz wynikowy Przykład 2">
         </div>
-        <p><em>Wynik:</em> Obraz zostanie przekształcony w nocną scenę z określonymi dostosowaniami na podstawie podanych szczegółów.</p>
+        <p><em>Wynik:</em> Obraz zostanie przekształcony w nocną scenę z określonymi dostosowaniami na podstawie podanych przez Ciebie szczegółów.</p>
     </div>
 
     <h3>Dodatkowe opcje</h3>
     <p>Możesz dostosować swoje edycje, korzystając z tych opcjonalnych ustawień:</p>
 
     <ul>
-        <li><strong>Skala prowadzenia obrazu:</strong> To kontroluje, jak blisko nowy obraz trzyma się oryginału. Niższa wartość oznacza, że zmiany są bardziej subtelne, podczas gdy wyższa wartość sprawia, że bardziej się wyróżniają. Możesz ustawić to w zakresie od 1 do 8.</li>
-        <li><strong>Kroki:</strong> To ustawia, ile poprawek narzędzie wykona. Więcej kroków oznacza gładszy i bardziej szczegółowy końcowy obraz. Możesz wybrać od 1 do 50 kroków, z domyślną wartością 20.</li>
-        <li><strong>Skala prowadzenia:</strong> To wpływa na to, jak blisko AI podąża za twoim opisem. Niższa skala daje AI większą swobodę twórczą, podczas gdy wyższa skala sprawia, że ściśle trzyma się tego, co powiedziałeś. Możesz dostosować to w zakresie od 1 do 20.</li>
+        <li><strong>Skala prowadzenia obrazu:</strong> To kontroluje, jak blisko nowy obraz trzyma się oryginału. Niższa wartość oznacza, że zmiany są subtelniejsze, podczas gdy wyższa wartość sprawia, że bardziej się wyróżniają. Możesz ustawić to w zakresie od 1 do 8.</li>
+        <li><strong>Kroki:</strong> To ustawia, ile poprawek narzędzie wykona. Więcej kroków oznacza gładszy i bardziej szczegółowy końcowy obraz. Możesz wybrać między 1 a 50 krokami, przy czym domyślnie jest to 20.</li>
+        <li><strong>Skala prowadzenia:</strong> To wpływa na to, jak blisko AI podąża za Twoim opisem. Niższa skala daje AI większą swobodę twórczą, podczas gdy wyższa skala sprawia, że ściśle trzyma się tego, co powiedziałeś. Możesz dostosować to w zakresie od 1 do 20.</li>
     </ul>
 
 </body>

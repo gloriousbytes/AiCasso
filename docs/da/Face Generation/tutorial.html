@@ -3,92 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide til Ansigt Generering Funktion</title>
+    <title>Guide til Ansigtsgenereringsfunktion</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Sikrer at billedet ikke overskrider containeren */
+    height: auto;     /* Bevarer aspektforholdet */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
-    <h2>Guide til Brug af Ansigt Generering Funktion</h2>
-    <p>Ansigt Generering funktionen i AiCasso er utrolig alsidig! Den giver dig mulighed for at skabe fantastiske billeder ved at inkorporere et specifikt ansigt i forskellige karakterer eller stilarter. Uanset om du forestiller dig en ridder, samurai eller en anden karakter, bruger AiCasso det indtastede ansigt til at generere et billede med det ansigt integreret i det ønskede design.</p>
+    <h2>Guide til at Bruge Ansigtsgenereringsfunktionen</h2>
+    <p>Ansigtsgenereringsfunktionen i AiCasso er utrolig alsidig! Den giver dig mulighed for at skabe fantastiske billeder ved at inkorporere et specifikt ansigt i forskellige karakterer eller stilarter. Uanset om du forestiller dig en ridder, samurai eller en anden karakter, bruger AiCasso det indtastede ansigt til at generere et billede med det ansigt integreret i det ønskede design.</p>
 
-    <h3>Sådan fungerer det:</h3>
+    <h3>Sådan Fungerer Det:</h3>
     
-    <div class="example">
-        <strong>Inputbillede:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
-        </div>
-        <strong>Prompt 1:</strong>
-        <p>"En realistisk ridder, brug maksimal skala"</p>
-        <strong>Resultat 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
-        </div>
-        <strong>Prompt 2:</strong>
-        <p>"Brug chibi-stilen og lav en samurai, brug standardværdier"</p>
-        <strong>Resultat 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
-        </div>
-        <strong>Prompt 3:</strong>
-        <p>"En samurai, brug 31 denoising trin, og anime stil"</p>
-        <strong>Resultat 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Indgangsbillede:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/input.jpg" alt="Indgangsbillede">
     </div>
+    <strong>Prompt 1:</strong>
+    <p>"En realistisk ridder, brug maksimal skala"</p>
+    <strong>Resultat 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="Realistisk Ridder">
+    </div>
+    <strong>Prompt 2:</strong>
+    <p>"Brug chibi-stilen og lav en samurai, brug standardværdier"</p>
+    <strong>Resultat 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="Chibi Samurai">
+    </div>
+    <strong>Prompt 3:</strong>
+    <p>"En samurai, brug 31 denoising trin, og anime stil"</p>
+    <strong>Resultat 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="Anime Samurai">
+    </div>
+</div>
 
     <h3>Valgfri Parametre</h3>
     <p>Hvis du vil tilføje lidt mere personlighed eller kontrol til dine genererede billeder, er her nogle muligheder, du kan justere:</p>
 
     <ul>
-        <li><strong>Negativ Prompt:</strong> Her kan du fortælle AiCasso, hvad du <em>ikke</em> ønsker at se i billedet. Hvis du lader dette stå tomt, vil AiCasso bare fokusere på den positive prompt.</li>
+        <li><strong>Negativ Prompt:</strong> Her kan du fortælle AiCasso, hvad du <em>ikke</em> ønsker at se i billedet. Hvis du lader dette være tomt, vil AiCasso blot fokusere på den positive prompt.</li>
         <li><strong>Antal Denoising Trin:</strong> Dette styrer, hvor glat og raffineret billedet ser ud. Du kan vælge mellem 21, 31 eller 41 trin, hvor 41 er standard. Flere trin betyder et renere, mere poleret billede.</li>
-        <li><strong>Guidance Scale:</strong> Dette hjælper billedet med at forblive tro mod din beskrivelse. Skalaen går fra 1 til 20, hvor 10 er standard. Højere tal betyder, at AiCasso vil holde sig tættere på din prompt.</li>
-        <li><strong>S Skala:</strong> Dette handler om strukturen af ansigtet. Det er lidt teknisk, men i bund og grund justerer det vægten af ansigtsstrukturen. Standard er 1.0, og du kan gå fra 0.0 til 2.0.</li>
+        <li><strong>Guidance Scale:</strong> Dette hjælper billedet med at forblive tro mod din beskrivelse. Skalaen spænder fra 1 til 20, hvor 10 er standard. Højere tal betyder, at AiCasso vil holde sig tættere på din prompt.</li>
+        <li><strong>S Skala:</strong> Dette handler om strukturen af ansigtet. Det er lidt teknisk, men grundlæggende justerer det vægten af ansigtsstrukturen. Standard er 1.0, og du kan gå fra 0.0 til 2.0.</li>
         <li><strong>Stil:</strong> Vil du give dit billede en specifik stemning? Du kan vælge en stil som comic, chibi, 3D, anime eller realistisk. Realistisk er standard, men vær ikke bange for at være kreativ!</li>
     </ul>
 
-    <p>Og husk, AiCasso er ret tilgivende. Du behøver ikke at være en grammatikmester eller få hver detalje perfekt. Bare beskriv, hvad du ønsker med dine egne ord, og AiCasso vil tage sig af resten. God fornøjelse med at skabe!</p>
+    <p>Og husk, AiCasso er ret tilgivende. Du behøver ikke at være en grammatikhelt eller få hver detalje perfekt. Beskriv blot, hvad du ønsker med dine egne ord, og AiCasso vil tage sig af resten. God fornøjelse med at skabe!</p>
 
 </body>
 </html>

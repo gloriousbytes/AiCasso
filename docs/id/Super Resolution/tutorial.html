@@ -31,9 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -41,41 +48,41 @@
 <body>
 
     <h2>Panduan Menggunakan Fitur Super Resolution</h2>
-    <p>Fitur Super Resolution di AiCasso bertujuan untuk membuat gambar Anda terlihat lebih baik. Anda hanya perlu memberi tahu bagaimana Anda ingin meningkatkan gambar Anda, dan AiCasso akan mengurus sisanya. Apakah Anda ingin mempertajam detail atau memberikan peningkatan keseluruhan pada gambar, ini sangat mudah digunakan.</p>
+    <p>Fitur Super Resolution di AiCasso adalah tentang membuat gambar Anda terlihat lebih baik. Anda hanya perlu memberi tahu bagaimana Anda ingin meningkatkan gambar Anda, dan AiCasso akan mengurus sisanya. Apakah Anda ingin memperjelas detail atau memberikan dorongan pada seluruh gambar, sangat mudah digunakan.</p>
 
-    <h3>Cara Kerjanya:</h3>
+    <h3>Bagaimana Cara Kerjanya:</h3>
     
     <div class="example">
-        <strong>Gambar Input:</strong>
+        <strong>Gambar Masukan:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="Gambar Masukan" loading="lazy">
         </div>
         <strong>Prompt:</strong>
         <p>"Perbesar 4 kali, gunakan model Ultra Sharp"</p>
         <strong>Hasil:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="Gambar Hasil" loading="lazy">
         </div>
     </div>
 
     <h3>Parameter Opsional</h3>
-    <p>Jika Anda ingin menambahkan sedikit lebih banyak kontrol tentang bagaimana gambar Anda ditingkatkan, berikut beberapa opsi tambahan yang bisa Anda coba:</p>
+    <p>Jika Anda ingin menambahkan sedikit lebih banyak kontrol atas bagaimana gambar Anda ditingkatkan, berikut adalah beberapa opsi tambahan yang bisa Anda coba:</p>
 
     <ul>
-        <li><strong>Skala:</strong> Ini adalah seberapa besar Anda ingin memperbesar gambar Anda. Anda bisa memilih skala dari 1 hingga 4, dengan 4 sebagai default. Pada dasarnya, angka yang lebih besar berarti gambar yang lebih besar.</li>
-        <li><strong>Model Upscale:</strong> Ini seperti memilih filter untuk gambar Anda, tetapi jauh lebih pintar. Berikut adalah opsinya:
+        <li><strong>Skala:</strong> Ini adalah seberapa besar Anda ingin memperbesar gambar Anda. Anda dapat memilih skala dari 1 hingga 4, dengan 4 sebagai default. Pada dasarnya, angka yang lebih besar berarti gambar yang lebih besar.</li>
+        <li><strong>Model Upscale:</strong> Ini seperti memilih filter untuk gambar Anda, tetapi jauh lebih pintar. Berikut adalah opsi-opsinya:
             <ul>
-                <li><strong>Big Detail Boost:</strong> Terbaik untuk memperbesar detail kecil.</li>
+                <li><strong>Peningkatan Detail Besar:</strong> Terbaik untuk memperbesar detail kecil.</li>
                 <li><strong>Ultra Sharp:</strong> Membuat gambar sangat jelas dan tajam.</li>
-                <li><strong>Anime Enhance:</strong> Sempurna untuk gambar bergaya anime, membuatnya terlihat tajam dan cerah.</li>
-                <li><strong>Double Detail:</strong> Menggandakan detail tanpa berlebihan.</li>
-                <li><strong>General Boost:</strong> Pilihan yang baik untuk sebagian besar gambar.</li>
+                <li><strong>Peningkatan Anime:</strong> Sempurna untuk gambar bergaya anime, membuatnya terlihat tajam dan cerah.</li>
+                <li><strong>Detail Ganda:</strong> Menggandakan detail tanpa berlebihan.</li>
+                <li><strong>Peningkatan Umum:</strong> Opsi yang baik untuk sebagian besar gambar.</li>
             </ul>
         </li>
-        <li><strong>Face Enhance:</strong> Jika gambar Anda memiliki wajah, opsi ini dapat membantu membuatnya terlihat lebih baik. Cukup aktifkan jika Anda ingin AiCasso fokus pada peningkatan fitur wajah.</li>
+        <li><strong>Peningkatan Wajah:</strong> Jika gambar Anda memiliki wajah, opsi ini dapat membantu membuatnya terlihat lebih baik. Cukup aktifkan jika Anda ingin AiCasso fokus pada peningkatan fitur wajah.</li>
     </ul>
 
-    <p>Ingat, opsi-opsi ini sepenuhnya opsional! Anda tidak perlu mengutak-atiknya jika tidak mau. Cukup deskripsikan apa yang Anda inginkan, dan AiCasso akan mencari cara terbaik untuk mewujudkannya. Dan jangan khawatir tentang harus sempurna dengan kata-kata Anda—AiCasso mengerti Anda!</p>
+    <p>Ingat, opsi ini sepenuhnya opsional! Anda tidak perlu mengutak-atiknya jika tidak mau. Cukup deskripsikan apa yang Anda inginkan, dan AiCasso akan mencari cara terbaik untuk mewujudkannya. Dan jangan khawatir tentang kesempurnaan kata-kata Anda—AiCasso mengerti Anda!</p>
 
 </body>
 </html>

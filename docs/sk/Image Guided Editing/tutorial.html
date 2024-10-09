@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tipy na úpravy s pomocou obrázkov</title>
+    <title>Tipy na úpravy s obrazom</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,31 +31,25 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img {
+            width: 100%;
             height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+            max-width: 100%;
         }
     </style>
 </head>
 
 <body>
 
-    <h2>Tipy na úpravy s pomocou obrázkov</h2>
-    <p>Funkcia úpravy s pomocou obrázkov v AiCasso vám umožňuje vykonávať zmeny na obrázku len tým, že popíšete, čo chcete. Či už chcete zmeniť štýl, upraviť náladu alebo upraviť určité časti, AiCasso to za vás vybaví bez toho, aby ste museli manuálne vyberať alebo maľovať niečo.</p>
+    <h2>Tipy na úpravy s obrazom</h2>
+    <p>Funkcia úpravy s obrazom v AiCasso vám umožňuje vykonávať zmeny na obrázku len tým, že popíšete, čo chcete. Či už chcete zmeniť štýl, upraviť náladu alebo upraviť určité časti, AiCasso to za vás zvládne bez toho, aby ste museli manuálne vyberať alebo maľovať čokoľvek.</p>
 
     <h3>Ako to funguje:</h3>
 
     <div class="example">
         <strong>Počiatočný obrázok:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CpnI7HqIAzcrMjmQb5_25yJilhxraZ80/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/startingimage1.jpg" alt="Počiatočný obrázok">
         </div>
     </div>
 
@@ -69,32 +63,32 @@
     <div class="example">
         <strong>Príklad 1:</strong> "Urobte ju blond."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI2vE6dOcFxInjqzq1_mVru_nLCGFTaS/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/makeherblonde.jpg" alt="Príklad urobte ju blond">
         </div>
         <p><em>Výsledok:</em> AiCasso zmení farbu vlasov osoby na blond.</p>
     </div>
 
     <div class="example">
-        <strong>Príklad 2:</strong> "Urobte to v noci, použite 50 krokov, mierku usmernenia 1 a mierku usmernenia obrázkov 1."
+        <strong>Príklad 2:</strong> "Urobte to v noci, použite 50 krokov, mierku vedenia 1 a mierku vedenia obrázku 1."
         <div class="example">
             <strong>Vstupný obrázok:</strong>
             <div class="result">
-                <iframe src="https://drive.google.com/file/d/1PlJNkwIWrK3Uu_bq38te_dtqp2XBkW_e/preview"></iframe>
+                <img src="../../images/tutorials/imageguidededit/example2input.jpg" alt="Vstupný obrázok príkladu 2">
             </div>
         </div>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11mjTtcBdI8T0cMcfQz6HEJ79xOhw81VG/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/example2result.jpg" alt="Výsledný obrázok príkladu 2">
         </div>
-        <p><em>Výsledok:</em> Obrázok bude transformovaný na nočnú scénu so špecifickými úpravami na základe poskytnutých detailov.</p>
+        <p><em>Výsledok:</em> Obrázok bude transformovaný na nočnú scénu s konkrétnymi úpravami na základe poskytnutých detailov.</p>
     </div>
 
     <h3>Ďalšie možnosti</h3>
     <p>Môžete jemne doladiť svoje úpravy pomocou týchto voliteľných nastavení:</p>
 
     <ul>
-        <li><strong>Mierka usmernenia obrázkov:</strong> Toto ovláda, ako blízko sa nový obrázok drží pôvodného. Nižšia hodnota znamená, že zmeny sú jemnejšie, zatiaľ čo vyššia hodnota ich robí výraznejšími. Môžete nastaviť hodnotu medzi 1 a 8.</li>
+        <li><strong>Mierka vedenia obrázku:</strong> Toto ovláda, ako blízko sa nový obrázok drží pôvodného. Nižšia hodnota znamená, že zmeny sú subtílnejšie, zatiaľ čo vyššia hodnota ich robí výraznejšími. Môžete nastaviť hodnotu medzi 1 a 8.</li>
         <li><strong>Kroky:</strong> Toto nastavuje, koľko vylepšení nástroj vykoná. Viac krokov znamená hladší a podrobnejší konečný obrázok. Môžete si vybrať medzi 1 a 50 krokmi, pričom 20 je predvolené.</li>
-        <li><strong>Mierka usmernenia:</strong> Toto ovplyvňuje, ako blízko AI nasleduje váš popis. Nižšia mierka dáva AI viac kreatívnej slobody, zatiaľ čo vyššia mierka ju núti držať sa presne toho, čo ste povedali. Môžete to nastaviť medzi 1 a 20.</li>
+        <li><strong>Mierka vedenia:</strong> Toto ovplyvňuje, ako blízko AI nasleduje váš popis. Nižšia mierka dáva AI viac kreatívnej slobody, zatiaľ čo vyššia mierka ju núti držať sa toho, čo ste povedali. Môžete to nastaviť medzi 1 a 20.</li>
     </ul>
 
 </body>

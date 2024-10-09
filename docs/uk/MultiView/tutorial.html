@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Посібник з функції багатоглядності</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        img, video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Посібник з використання функції багатоглядності</h2>
+    <p>Функція багатоглядності в AiCasso дозволяє переглядати об'єкт з різних кутів, генеруючи кілька перспектив об'єкта на вашому зображенні. Це особливо корисно для кращого розуміння 3D форм або демонстрації продуктів. Ця функція працює найкраще, коли об'єкт не має фону, тому обов'язково видаліть будь-які відволікаючі елементи для досягнення оптимальних результатів.</p>
+
+    <h3>Як це працює:</h3>
+    
+    <div class="example">
+        <strong>Вхідне зображення:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/input.jpg" alt="Вхідне зображення" loading="lazy">
+        </div>
+        <strong>Запит:</strong>
+        <p>"Показати цей об'єкт з кількох перспектив"</p>
+        <strong>Результат:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/result.jpg" alt="Результат зображення" loading="lazy">
+        </div>
+    </div>
+
+    <h3>Поради для найкращих результатів</h3>
+    <p>Ось кілька порад, щоб ваше зображення вийшло чудовим:</p>
+
+    <ul>
+        <li><strong>Об'єкт без фону:</strong> Функція багатоглядності працює найкраще, коли об'єкт на вашому зображенні ізольований від фону. Це дозволяє AiCasso зосередитися виключно на об'єкті та генерувати чіткі перспективи.</li>
+        <li><strong>Добре освітлення:</strong> Переконайтеся, що ваш об'єкт добре освітлений на вхідному зображенні, оскільки тіні та нерівне освітлення можуть вплинути на те, як об'єкт виглядає з різних кутів.</li>
+        <li><strong>Кілька об'єктів:</strong> Якщо на зображенні є більше одного об'єкта, спробуйте ізолювати той, який ви хочете переглянути з різних кутів, або виберіть простіше зображення з лише одним фокусним об'єктом.</li>
+    </ul>
+
+    <p>Як і всі функції в AiCasso, вам не потрібно надто думати — просто опишіть, що ви хочете, і AiCasso зробить важку роботу. Функція багатоглядності ідеально підходить для демонстрації продуктів, креативних показів та багато іншого!</p>
+
+</body>
+</html>

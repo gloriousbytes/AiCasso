@@ -31,9 +31,12 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
         }
         .iframe-container {
             display: flex;
@@ -48,36 +51,36 @@
 <body>
 
     <h2>Przewodnik po korzystaniu z funkcji ponownego oświetlenia</h2>
-    <p>Funkcja ponownego oświetlenia w AiCasso jest super fajna! Pozwala na zmianę oświetlenia w Twoich obrazach za pomocą zaledwie kilku słów. Chcesz słońce z tyłu lub miękkie światło z boku? Żaden problem! Po prostu opisz to, a AiCasso zajmie się resztą.</p>
+    <p>Funkcja ponownego oświetlenia w AiCasso jest super fajna! Pozwala na zmianę oświetlenia w Twoich obrazach za pomocą zaledwie kilku słów. Chcesz, aby słońce było z tyłu lub miękkie światło z boku? Żaden problem! Po prostu to opisz, a AiCasso zajmie się resztą.</p>
 
     <h3>Jak to działa:</h3>
     
     <div class="example">
         <strong>Obraz wejściowy:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+            <img src="../../images/tutorials/relighting/input.jpg" alt="Obraz wejściowy" loading="lazy">
         </div>
         <strong>Użyty prompt:</strong>
-        <p>"Spraw, aby słońce było z tyłu"</p>
+        <p>"Zrób tak, aby słońce było z tyłu"</p>
         <strong>Wynik:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+            <img src="../../images/tutorials/relighting/result.jpg" alt="Wynik ponownego oświetlenia" loading="lazy">
         </div>
     </div>
 
-    <h3>Opcjonalne dostosowania</h3>
+    <h3>Opcjonalne poprawki</h3>
     <p>Jeśli czujesz się odważnie i chcesz dodać trochę więcej stylu do swojego ponownego oświetlenia, oto kilka rzeczy, które możesz dostosować:</p>
 
     <ul>
-        <li><strong>Negatywny prompt:</strong> Chcesz czegoś uniknąć? Możesz powiedzieć AiCasso, co <em>nie</em> powinno być uwzględnione. Ale nie martw się, jeśli zostawisz to puste, AiCasso skupi się tylko na tym, co chcesz.</li>
-        <li><strong>Kierunek światła:</strong> Możesz określić, skąd powinno pochodzić światło—z lewej, prawej, z góry, z dołu, a nawet wcale. Domyślnie światło pochodzi z lewej.</li>
-        <li><strong>Skala prowadzenia:</strong> To pomaga AiCasso trzymać się Twojego opisu. Skala wynosi od 1 do 20, przy czym 7 jest domyślną wartością. Im wyższa liczba, tym bardziej AiCasso trzyma się Twojego promptu.</li>
-        <li><strong>Skala wysokiej rozdzielczości:</strong> Chcesz, aby Twój obraz był wyraźniejszy? To kontroluje klarowność. Domyślnie wynosi 1.5, ale możesz ustawić ją od 1.0 do 2.0, aby uzyskać ostrzejszy obraz.</li>
-        <li><strong>Poziomy odszumiania:</strong> Są dwa poziomy—niska rozdzielczość i wysoka rozdzielczość. Te poziomy kontrolują, jak gładki lub szczegółowy wygląda końcowy obraz. Możesz ustawić niski poziom odszumiania między 0.0 a 1.0 (domyślnie 0.9) oraz wysoki poziom między 0.0 a 1.0 (domyślnie 0.5).</li>
-        <li><strong>Liczba kroków:</strong> To liczba kroków, które AiCasso wykonuje, aby dopracować Twój obraz. Domyślnie wynosi 50, ale możesz ustawić od 20 do 50 kroków.</li>
+        <li><strong>Negatywny prompt:</strong> Chcesz czegoś uniknąć? Możesz powiedzieć AiCasso, co <em>nie</em> powinno być uwzględnione. Ale nie martw się, jeśli to zostawisz puste, AiCasso skupi się tylko na tym, co chcesz.</li>
+        <li><strong>Kierunek światła:</strong> Możesz określić, skąd ma pochodzić światło—z lewej, prawej, z góry, z dołu, a nawet wcale. Domyślnie światło pochodzi z lewej.</li>
+        <li><strong>Skala wskazówek:</strong> To pomaga AiCasso trzymać się Twojego opisu. Skala wynosi od 1 do 20, przy czym 7 to domyślna wartość. Im wyższa liczba, tym bardziej AiCasso trzyma się Twojego promptu.</li>
+        <li><strong>Skala wysokiej rozdzielczości:</strong> Chcesz, aby Twój obraz był wyraźny? To kontroluje klarowność. Domyślna wartość to 1.5, ale możesz ustawić ją od 1.0 do 2.0, aby uzyskać ostrzejszy obraz.</li>
+        <li><strong>Poziomy redukcji szumów:</strong> Są dwa poziomy—niska rozdzielczość i wysoka rozdzielczość. Te ustawienia kontrolują, jak gładki lub szczegółowy wygląda końcowy obraz. Możesz ustawić poziom redukcji szumów w niskiej rozdzielczości między 0.0 a 1.0 (domyślnie 0.9) oraz w wysokiej rozdzielczości między 0.0 a 1.0 (domyślnie 0.5).</li>
+        <li><strong>Liczba kroków:</strong> To liczba kroków, które AiCasso wykonuje, aby poprawić Twój obraz. Domyślnie to 50, ale możesz ustawić od 20 do 50 kroków.</li>
     </ul>
 
-    <p>Pamiętaj, że te dostosowania są całkowicie opcjonalne! AiCasso jest całkiem dobry w rozumieniu, czego chcesz, więc po prostu opisz swoją wizję własnymi słowami, a on zrobi magię. Nie musisz być perfekcyjny w gramatyce czy szczegółach—po prostu baw się dobrze i zobacz, co możesz stworzyć!</p>
+    <p>Pamiętaj, te poprawki są całkowicie opcjonalne! AiCasso jest całkiem dobry w rozumieniu, czego chcesz, więc po prostu opisz swoją wizję własnymi słowami, a on zrobi magię. Nie musisz być perfekcyjny w gramatyce czy szczegółach—po prostu baw się dobrze i zobacz, co możesz stworzyć!</p>
 
 </body>
 </html>

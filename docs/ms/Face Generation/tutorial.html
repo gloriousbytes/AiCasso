@@ -6,89 +6,90 @@
     <title>Panduan Ciri Penjanaan Wajah</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Memastikan imej tidak melimpah dari bekas */
+    height: auto;     /* Menjaga nisbah aspek */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
     <h2>Panduan Menggunakan Ciri Penjanaan Wajah</h2>
-    <p>Ciri Penjanaan Wajah dalam AiCasso sangat serba boleh! Ia membolehkan anda mencipta imej yang menakjubkan dengan menggabungkan wajah tertentu ke dalam pelbagai watak atau gaya. Sama ada anda membayangkan seorang kesatria, samurai, atau mana-mana watak lain, AiCasso menggunakan wajah input untuk menjana imej dengan wajah tersebut yang diintegrasikan ke dalam reka bentuk yang diminta.</p>
+    <p>Ciri Penjanaan Wajah dalam AiCasso sangat serbaguna! Ia membolehkan anda mencipta imej yang menakjubkan dengan menggabungkan wajah tertentu ke dalam pelbagai watak atau gaya. Sama ada anda membayangkan seorang kesatria, samurai, atau mana-mana watak lain, AiCasso menggunakan wajah input untuk menjana imej dengan wajah tersebut yang diintegrasikan ke dalam reka bentuk yang diminta.</p>
 
     <h3>Bagaimana Ia Berfungsi:</h3>
     
-    <div class="example">
-        <strong>Imej Input:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
-        </div>
-        <strong>Prompt 1:</strong>
-        <p>"Seorang kesatria realistik, gunakan Skala maksimum"</p>
-        <strong>Hasil 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
-        </div>
-        <strong>Prompt 2:</strong>
-        <p>"Gunakan gaya chibi dan buat seorang samurai, gunakan nilai lalai"</p>
-        <strong>Hasil 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
-        </div>
-        <strong>Prompt 3:</strong>
-        <p>"Seorang samurai, gunakan 31 langkah denoising, dan gaya anime"</p>
-        <strong>Hasil 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Imej Input:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/input.jpg" alt="Imej Input">
     </div>
+    <strong>Prompt 1:</strong>
+    <p>"Seorang kesatria yang realistik, gunakan skala maksimum"</p>
+    <strong>Hasil 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="Kesatria Realistik">
+    </div>
+    <strong>Prompt 2:</strong>
+    <p>"Gunakan gaya chibi dan buat seorang samurai, gunakan nilai lalai"</p>
+    <strong>Hasil 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="Samurai Chibi">
+    </div>
+    <strong>Prompt 3:</strong>
+    <p>"Seorang samurai, gunakan 31 langkah denoising, dan gaya anime"</p>
+    <strong>Hasil 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="Samurai Anime">
+    </div>
+</div>
 
     <h3>Parameter Pilihan</h3>
-    <p>Jika anda ingin menambah sedikit personaliti atau kawalan kepada imej yang dijana, berikut adalah beberapa pilihan yang boleh anda ubah:</p>
+    <p>Jika anda ingin menambah sedikit lagi personaliti atau kawalan kepada imej yang dijana, berikut adalah beberapa pilihan yang boleh anda ubah:</p>
 
     <ul>
-        <li><strong>Prompt Negatif:</strong> Di sini anda boleh memberitahu AiCasso apa yang anda <em>tidak</em> mahu lihat dalam imej. Jika anda biarkan kosong, AiCasso akan fokus pada prompt positif.</li>
-        <li><strong>Bilangan Langkah Denoising:</strong> Ini mengawal betapa licin dan halus imej kelihatan. Anda boleh memilih antara 21, 31, atau 41 langkah, dengan 41 sebagai lalai. Lebih banyak langkah bermakna imej yang lebih bersih dan lebih halus.</li>
-        <li><strong>Skala Panduan:</strong> Ini membantu imej kekal setia kepada penerangan anda. Skala berkisar dari 1 hingga 20, dengan 10 sebagai lalai. Nombor yang lebih tinggi bermakna AiCasso akan lebih setia kepada prompt anda.</li>
+        <li><strong>Prompt Negatif:</strong> Di sini anda boleh memberitahu AiCasso apa yang anda <em>tidak</em> mahu lihat dalam imej. Jika anda membiarkannya kosong, AiCasso hanya akan memberi tumpuan kepada prompt positif.</li>
+        <li><strong>Bilangan Langkah Denoising:</strong> Ini mengawal seberapa lancar dan halus imej kelihatan. Anda boleh memilih antara 21, 31, atau 41 langkah, dengan 41 sebagai lalai. Lebih banyak langkah bermakna imej yang lebih bersih dan lebih halus.</li>
+        <li><strong>Skala Panduan:</strong> Ini membantu imej tetap setia kepada penerangan anda. Skala ini berkisar dari 1 hingga 20, dengan 10 sebagai lalai. Nombor yang lebih tinggi bermakna AiCasso akan lebih dekat dengan prompt anda.</li>
         <li><strong>Skala S:</strong> Ini berkaitan dengan struktur wajah. Ia agak teknikal, tetapi pada dasarnya ia menyesuaikan berat struktur wajah. Lalai adalah 1.0, dan anda boleh pergi dari 0.0 hingga 2.0.</li>
-        <li><strong>Gaya:</strong> Ingin memberikan imej anda suasana tertentu? Anda boleh memilih gaya seperti komik, chibi, 3D, anime, atau realistik. Realistik adalah lalai, tetapi jangan ragu untuk menjadi kreatif!</li>
+        <li><strong>Gaya:</strong> Mahu memberikan imej anda suasana tertentu? Anda boleh memilih gaya seperti komik, chibi, 3D, anime, atau realistik. Realistik adalah lalai, tetapi jangan ragu untuk berkreasi!</li>
     </ul>
 
-    <p>Dan ingat, AiCasso agak pemaaf. Anda tidak perlu menjadi pakar tatabahasa atau mendapatkan setiap perincian dengan sempurna. Hanya terangkan apa yang anda mahu dalam kata-kata anda sendiri, dan AiCasso akan menguruskan selebihnya. Selamat mencipta!</p>
+    <p>Dan ingat, AiCasso sangat memaafkan. Anda tidak perlu menjadi pakar tatabahasa atau mendapatkan setiap butiran dengan sempurna. Cukup terangkan apa yang anda mahu dalam kata-kata anda sendiri, dan AiCasso akan menguruskan selebihnya. Selamat mencipta!</p>
 
 </body>
 </html>

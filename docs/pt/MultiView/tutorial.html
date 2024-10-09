@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Recursos de Múltiplas Visões</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        img, video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guia para Usar o Recurso de Múltiplas Visões</h2>
+    <p>O recurso de Múltiplas Visões no AiCasso permite que você visualize um objeto de diferentes ângulos, gerando múltiplas perspectivas do objeto na sua imagem. É especialmente útil para obter uma melhor compreensão de formas 3D ou para exibir produtos. Este recurso funciona melhor quando o objeto não tem um fundo, então certifique-se de remover quaisquer elementos distrativos para resultados ótimos.</p>
+
+    <h3>Como Funciona:</h3>
+    
+    <div class="example">
+        <strong>Imagem de Entrada:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/input.jpg" alt="Imagem de Entrada" loading="lazy">
+        </div>
+        <strong>Prompt:</strong>
+        <p>"Mostre este objeto de múltiplas perspectivas"</p>
+        <strong>Resultado:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/result.jpg" alt="Imagem do Resultado" loading="lazy">
+        </div>
+    </div>
+
+    <h3>Dicas para Melhores Resultados</h3>
+    <p>Aqui estão algumas dicas para garantir que sua imagem fique ótima:</p>
+
+    <ul>
+        <li><strong>Objeto Sem Fundo:</strong> O recurso de Múltiplas Visões funciona melhor quando o objeto na sua imagem está isolado do fundo. Isso permite que o AiCasso se concentre apenas no objeto e gere perspectivas claras.</li>
+        <li><strong>Boa Iluminação:</strong> Certifique-se de que seu objeto esteja bem iluminado na imagem de entrada, pois sombras e iluminação desigual podem afetar a aparência do objeto de diferentes ângulos.</li>
+        <li><strong>Múltiplos Objetos:</strong> Se houver mais de um objeto na imagem, tente isolar aquele que você deseja visualizar de diferentes ângulos ou escolha uma imagem mais simples com apenas um objeto focal.</li>
+    </ul>
+
+    <p>Assim como todos os recursos do AiCasso, você não precisa pensar demais—descreva o que você quer e o AiCasso fará o trabalho duro. O recurso de Múltiplas Visões é perfeito para exibições de produtos, mostras criativas e muito mais!</p>
+
+</body>
+</html>

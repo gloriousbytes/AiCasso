@@ -31,16 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img {
+            width: 100%;
+            max-width: 400px;
             height: auto;
         }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        @media (max-width: 768px) {
+            .result img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -57,7 +57,8 @@
         <p>"‘n 3D geanimeerde volstruis in 'n veld heeltemal alleen, eet en gelukkig wees. Maak dit 'n portretvideo met 50 denoising stappe."</p>
         <strong>Resultaat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/animated3d.gif" alt="Geanimeerde 3D Volstruis">
+            <noscript><img src="../../images/tutorials/texttovideo/animated3d.gif" alt="Geanimeerde 3D Volstruis"></noscript>
         </div>
     </div>
 
@@ -66,7 +67,8 @@
         <p>"‘n Karikatuur van 'n volstruis in 'n veld in landskap dimensies."</p>
         <strong>Resultaat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/cartoon.gif" alt="Karikatuur Volstruis">
+            <noscript><img src="../../images/tutorials/texttovideo/cartoon.gif" alt="Karikatuur Volstruis"></noscript>
         </div>
     </div>
 
@@ -75,7 +77,8 @@
         <p>"‘n Volstruis in 'n veld."</p>
         <strong>Resultaat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/default.gif" alt="Standaard Volstruis">
+            <noscript><img src="../../images/tutorials/texttovideo/default.gif" alt="Standaard Volstruis"></noscript>
         </div>
     </div>
 
@@ -84,7 +87,8 @@
         <p>"‘n Volstruis wat heeltemal alleen in die veld is. Gee dit 'n natuurlike gevoel."</p>
         <strong>Resultaat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/natural.gif" alt="Natuurlike Volstruis">
+            <noscript><img src="../../images/tutorials/texttovideo/natural.gif" alt="Natuurlike Volstruis"></noscript>
         </div>
     </div>
 
@@ -94,14 +98,14 @@
     <ul>
         <li><strong>Aantal Raamwerke:</strong> Kies hoeveel raamwerke (individuele beelde) jou video sal hê. Jy kan tot 25 raamwerke hê, met 16 as die verstek.</li>
         <li><strong>Aantal Denoising Stappe:</strong> Dit beheer hoe glad jou video lyk. Meer stappe beteken gladder video's. Jy kan tot 50 stappe instel, met 20 as die verstek.</li>
-        <li><strong>Rigting Skaal:</strong> Dit help die video om naby aan jou beskrywing te bly. Hoe hoër die nommer, hoe meer volg dit jou prompt. Die reeks is 0 tot 8, met 8 as die verstek.</li>
+        <li><strong>Rigting Skaal:</strong> Dit help die video om naby jou beskrywing te bly. Hoe hoër die nommer, hoe meer volg dit jou prompt. Die reeks is 0 tot 8, met 8 as die verstek.</li>
         <li><strong>Clip Skip:</strong> Slaan sekere lae oor vir 'n ander video styl. Standaard word geen lae oorgeslaan nie, maar jy kan tot 2 oorslaan.</li>
         <li><strong>Upscale Breedte en Hoogte:</strong> Jy kan jou video groter maak deur die resolusie aan te pas. Die verstek is 1024x1024 pixels, maar jy kan dit aanpas om aan jou behoeftes te voldoen.</li>
         <li><strong>Upscale Krag:</strong> Dit verander hoeveel jou video aanpas wanneer dit opgeskaal word. Die verstek is 1, maar jy kan dit aanpas om meer verskille te sien.</li>
-        <li><strong>Upscale Rigting Skaal:</strong> Dit lei die opskalingsproses, met 'n reeks van 0 tot 8, en 'n verstek van 8.</li>
-        <li><strong>Upscale Inferensie Stappe:</strong> Die aantal stappe wat geneem word om die video op te skaal. Meer stappe maak vir gladder opskaling, met 'n maksimum van 50 en 'n verstek van 20.</li>
-        <li><strong>Verbeterde Monsters:</strong> Wil jy 'n meer verfynde video? Skakel dit aan. Dit is standaard afgeskakel.</li>
-        <li><strong>Verbeterde Monsters Saad:</strong> Gebruik dit om elke keer dieselfde video te genereer met verbeterde monsters. Dit is opsioneel en standaard afgeskakel.</li>
+        <li><strong>Upscale Rigting Skaal:</strong> Dit lei die opskaal proses, met 'n reeks van 0 tot 8, en 'n verstek van 8.</li>
+        <li><strong>Upscale Inferensiestappe:</strong> Die aantal stappe wat geneem word om die video op te skaal. Meer stappe maak vir gladder opskaling, met 'n maksimum van 50 en 'n verstek van 20.</li>
+        <li><strong>Verbeterde Monsterneming:</strong> Wil jy 'n meer verfynde video hê? Skakel dit aan. Dit is standaard afgeskakel.</li>
+        <li><strong>Verbeterde Monsterneming Saad:</strong> Gebruik dit om elke keer dieselfde video te genereer met verbeterde monsterneming. Dit is opsioneel en standaard afgeskakel.</li>
         <li><strong>Raamwerke per Sekonde (FPS):</strong> Stel die spoed van jou video in. Die verstek is 16 FPS, maar jy kan dit tot 16 aanpas.</li>
         <li><strong>Video Model:</strong> Kies die styl van jou video. Opsies sluit in:
             <ul>

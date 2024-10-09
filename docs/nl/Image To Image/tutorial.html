@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Handleiding voor de Afbeelding-naar-Afbeelding Functie</title>
+    <title>Afbeelding naar Afbeelding Functiegids</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,9 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
-            height: auto;
+        .result img {
+            max-width: 100%;  /* Zorgt ervoor dat de afbeelding niet buiten de container valt */
+            height: auto;     /* Houdt de beeldverhouding */
         }
         .iframe-container {
             display: flex;
@@ -47,224 +47,224 @@
 
 <body>
 
-    <h2>Handleiding voor het Gebruik van de Afbeelding-naar-Afbeelding Functie</h2>
-    <p>De Afbeelding-naar-Afbeelding functie in AiCasso is een coole manier om een afbeelding die je al hebt om te toveren in iets nieuws. Het is alsof je je foto een make-over geeft op basis van je eigen beschrijving!</p>
+    <h2>Gids voor het Gebruik van de Afbeelding naar Afbeelding Functie</h2>
+    <p>De Afbeelding naar Afbeelding functie in AiCasso is een coole manier om een afbeelding die je al hebt te transformeren in iets nieuws. Het is alsof je je foto een make-over geeft op basis van je eigen beschrijving!</p>
 
-    <h3>Hoe het Werkt:</h3>
+    <h3>Hoe Het Werkt:</h3>
     
-    <div class="example">
-        <strong>Invoera afbeelding:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/14N7B-yT-d7Z4HGSlogD859D-JitVcq2_/preview"></iframe>
-        </div>
-        <strong>Prompt 1:</strong>
-        <p>"Een schattige hond, gebruik halve kracht"</p>
-        <strong>Resultaat 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1g8GQ6cHuB2ntmBwafGgPWiJ3VHU2r7S5/preview"></iframe>
-        </div>
-        <strong>Prompt 2:</strong>
-        <p>"Een schattige 3D CGI-achtige kat met grote ogen, gebruik 90% kracht, en gebruik de 3D cartoonstijl"</p>
-        <strong>Resultaat 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IeR0SRrPwZi6nfAF9-1SdM6mj4EtyyfM/preview"></iframe>
-        </div>
-        <strong>Prompt 3:</strong>
-        <p>"Een zwarte kat, maak het realistisch"</p>
-        <strong>Resultaat 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1Ocmsoi89Pn5Un_iNg349FMdQZRQaCUBr/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Ingangsafbeelding:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/input.jpg" style="max-width: 100%; height: auto;" alt="Ingangsafbeelding">
     </div>
+    <strong>Prompt 1:</strong>
+    <p>"Een schattige hond, gebruik de helft van de kracht"</p>
+    <strong>Resultaat 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/cutedog.jpg" style="max-width: 100%; height: auto;" alt="Resultaat 1">
+    </div>
+    <strong>Prompt 2:</strong>
+    <p>"Een schattige 3D CGI-kat met grote ogen, gebruik 90% kracht, en gebruik de 3D cartoonstijl"</p>
+    <strong>Resultaat 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/3dcgicat.jpg" style="max-width: 100%; height: auto;" alt="Resultaat 2">
+    </div>
+    <strong>Prompt 3:</strong>
+    <p>"Een zwarte kat, maak het realistisch"</p>
+    <strong>Resultaat 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/blackcat.jpg" style="max-width: 100%; height: auto;" alt="Resultaat 3">
+    </div>
+</div>
 
     <h3>Optionele Parameters</h3>
-    <p>Als je je eigen draai aan de afbeeldingstransformatie wilt geven, zijn hier enkele optionele instellingen waarmee je kunt spelen. Maar maak je geen zorgen—als je gewoon wilt beschrijven wat je wilt, doet AiCasso het werk zonder dat je deze extra's nodig hebt!</p>
+    <p>Als je je eigen draai aan de afbeeldingstransformatie wilt geven, zijn hier enkele optionele instellingen waar je mee kunt experimenteren. Maar maak je geen zorgen—als je gewoon wilt beschrijven wat je wilt, zal AiCasso het werk doen zonder dat je deze extra's nodig hebt!</p>
 
     <ul>
-        <li><strong>Negatieve Prompt:</strong> Als er iets specifieks is dat je <em>niet</em> in je nieuwe afbeelding wilt, kun je het hier vermelden. Maar als je het leeg laat, is dat ook prima!</li>
-        <li><strong>Kracht:</strong> Dit bepaalt hoeveel van de originele afbeelding wordt gebruikt. Je kunt gaan van 0.1 tot 1.0. Hoe lager het getal, hoe meer je afbeelding zijn originele uiterlijk behoudt. De standaard is 0.5, wat een mooie balans is.</li>
-        <li><strong>Stijl Verbeteren:</strong> Wil je je afbeelding een specifieke sfeer geven? Kies een stijl zoals strip, chibi, 3D, anime of realistisch. De standaard is realistisch, maar voel je vrij om te verkennen!</li>
+        <li><strong>Negatieve Prompt:</strong> Als er iets specifieks is dat je <em>niet</em> wilt in je nieuwe afbeelding, kun je het hier vermelden. Maar als je het leeg laat, is dat ook prima!</li>
+        <li><strong>Kracht:</strong> Dit bepaalt hoeveel van de originele afbeelding wordt gebruikt. Je kunt van 0.1 tot 1.0 gaan. Hoe lager het getal, hoe meer je afbeelding zijn oorspronkelijke uiterlijk behoudt. De standaard is 0.5, wat een mooie balans is.</li>
+        <li><strong>Stijl Verbeteren:</strong> Wil je je afbeelding een specifieke sfeer geven? Kies een stijl zoals stripverhaal, chibi, 3D, anime of realistisch. De standaard is realistisch, maar voel je vrij om te verkennen!</li>
     </ul>
 
-    <p>En hé, onthoud, je hoeft je geen zorgen te maken over het perfect krijgen van alles. Beschrijf gewoon wat je wilt in je eigen woorden, en AiCasso doet de rest. Veel plezier met creëren!</p>
+    <p>En hey, onthoud, je hoeft je geen zorgen te maken over het perfect krijgen van alles. Beschrijf gewoon wat je wilt in je eigen woorden, en AiCasso doet de rest. Veel plezier met creëren!</p>
 <h3>Stijlen Verbeteren</h3>
-<p>Niet zeker welke stijl je moet kiezen? Geen zorgen! Noem gewoon elke stijl die in je opkomt, zelfs als het grammaticaal niet correct is, en AiCasso zal het uitzoeken uit de lijst van beschikbare Stijlen Verbeteren.</p>
+<p>Weet je niet welke stijl je moet kiezen? Maak je geen zorgen! Vermeld gewoon elke stijl die in je opkomt, zelfs als het niet grammaticaal correct is, en AiCasso zal het uit de lijst van beschikbare Verbeterde Stijlen halen.</p>
 
     <ul>
         <li><strong>Standaard:</strong> Een gebalanceerde en neutrale stijl zonder specifieke artistieke invloed.</li>
-        <li><strong>Verbeteren:</strong> Verbetert details en algehele esthetiek enigszins.</li>
+        <li><strong>Verbeteren:</strong> Verbetert lichtjes de details en de algehele esthetiek.</li>
         <li><strong>Cinematische Diva:</strong> Voegt een dramatisch, filmachtig effect toe met sterke lichtcontrasten.</li>
         <li><strong>Abstract Expressionisme:</strong> Benadrukt abstracte vormen en levendige kleurspatten.</li>
-        <li><strong>Academia:</strong> Voegt een wetenschappelijk en klassiek tintje toe aan de afbeelding.</li>
+        <li><strong>Academia:</strong> Voegt een geleerde en klassieke toets toe aan de afbeelding.</li>
         <li><strong>Actiefiguur:</strong> Genereert afbeeldingen met de overdreven en dynamische stijl van actiefiguren.</li>
-        <li><strong>Schattig 3D Personage:</strong> Produceert schattige, cartoonachtige 3D-personages.</li>
-        <li><strong>Schattige Kawaii:</strong> Benadrukt de schattige en charmante stijl die typisch is voor Kawaii-cultuur.</li>
+        <li><strong>Schattig 3D-personage:</strong> Produceert schattige, cartoonachtige 3D-personages.</li>
+        <li><strong>Schattig Kawaii:</strong> Benadrukt de schattige en charmante stijl die typisch is voor Kawaii-cultuur.</li>
         <li><strong>Art Deco:</strong> Gebruikt de geometrische en decoratieve stijl van de Art Deco-periode.</li>
         <li><strong>Art Nouveau:</strong> Voegt vloeiende lijnen en door de natuur geïnspireerde elementen toe, typisch voor Art Nouveau.</li>
         <li><strong>Astrale Aura:</strong> Creëert een mystieke en andere wereldse sfeer.</li>
-        <li><strong>Avant Garde:</strong> Richt zich op innovatieve en experimentele artistieke uitdrukkingen.</li>
+        <li><strong>Avant-Garde:</strong> Richt zich op innovatieve en experimentele artistieke uitdrukkingen.</li>
         <li><strong>Barok:</strong> Gebruikt de dramatische, gedetailleerde en uitgebreide stijl van de Barokperiode.</li>
         <li><strong>Bauhaus Stijl Poster:</strong> Reflecteert de minimalistische en functionele ontwerpprincipes van Bauhaus.</li>
-        <li><strong>Blauwdruk Schematische Tekening:</strong> Produceert afbeeldingen die lijken op technische blauwdrukken.</li>
+        <li><strong>Blueprint Schematische Tekeningen:</strong> Produceert afbeeldingen die lijken op technische blauwdrukken.</li>
         <li><strong>Karikatuur:</strong> Genereert overdreven, cartoonachtige portretten.</li>
-        <li><strong>Cel-Shaded Kunst:</strong> Gebruikt de vlakke, gedurfde kleuren die typisch zijn voor cel-shaded animatie.</li>
+        <li><strong>Cel-Shaded Kunst:</strong> Gebruikt de platte, gedurfde kleuren die typisch zijn voor cel-geanimeerde animatie.</li>
         <li><strong>Personage Ontwerpblad:</strong> Richt zich op schone en duidelijke personageontwerpen die geschikt zijn voor animatie.</li>
-        <li><strong>Classicisme Kunst:</strong> Emuleert de verfijnde en geïdealiseerde kunststijl van de Klassieke Oudheid.</li>
-        <li><strong>Kleurveld Schilderij:</strong> Kenmerkt grote gebieden met één kleur om een vlak kleurvlak te creëren.</li>
-        <li><strong>Kleurpotlood Kunst:</strong> Imiteert de textuur en uitstraling van kleurpotloodtekeningen.</li>
+        <li><strong>Klassieke Kunst:</strong> Imiteert de verfijnde en geïdealiseerde kunststijl van de klassieke oudheid.</li>
+        <li><strong>Kleurveld Schilderkunst:</strong> Bevat grote gebieden van enkele kleur om een vlakke kleurvlak te creëren.</li>
+        <li><strong>Kleurpotlood Kunst:</strong> Imiteert de textuur en het uiterlijk van kleurpotloodtekeningen.</li>
         <li><strong>Conceptuele Kunst:</strong> Geeft prioriteit aan ideeën en concepten boven esthetische of materiële zorgen.</li>
-        <li><strong>Constructivisme:</strong> Reflecteert de industriële, geometrische stijl van de Constructivistische beweging.</li>
+        <li><strong>Constructivisme:</strong> Reflecteert de industriële, geometrische stijl van de constructivistische beweging.</li>
         <li><strong>Cubisme:</strong> Breekt objecten af in geometrische vormen en presenteert ze in abstracte vormen.</li>
         <li><strong>Dadaïsme:</strong> Benadrukt absurditeit, irrationaliteit en anti-kunst esthetiek.</li>
         <li><strong>Donkere Fantasie:</strong> Creëert een sombere, gotische sfeer met donkere en griezelige elementen.</li>
-        <li><strong>Donkere Sombere Sfeer:</strong> Gebruikt weinig verlichting en schaduw om een sombere ambiance te creëren.</li>
-        <li><strong>DMT Kunst:</strong> Kenmerkt levendige, psychedelische beelden geïnspireerd door DMT-ervaringen.</li>
-        <li><strong>Kriebelkunst:</strong> Benadrukt speelse en grillige tekenstijlen, vaak ingewikkeld en gedetailleerd.</li>
+        <li><strong>Donkere Sombere Sfeer:</strong> Gebruikt lage verlichting en schaduw om een sombere ambiance te creëren.</li>
+        <li><strong>DMT Kunst:</strong> Bevat levendige, psychedelische visuals geïnspireerd door DMT-ervaringen.</li>
+        <li><strong>Doodle Kunst:</strong> Benadrukt speelse en speelse tekenstijlen, vaak ingewikkeld en gedetailleerd.</li>
         <li><strong>Dubbele Belichting:</strong> Combineert twee afbeeldingen in één, waardoor een surrealistisch, gelaagd effect ontstaat.</li>
-        <li><strong>Druipende Verfspatten:</strong> Gebruikt gespatte en druipende verf om dynamische en chaotische composities te creëren.</li>
-        <li><strong>Expressionisme:</strong> Geeft prioriteit aan emotionele expressie boven realistische weergave, vaak met gedurfde kleuren en dramatische vormen.</li>
-        <li><strong>Verbleekte Polaroid Foto:</strong> Imiteert de verouderde en nostalgische uitstraling van een verbleekte Polaroid-foto.</li>
-        <li><strong>Fauvisme:</strong> Gebruikt levendige, onnatuurlijke kleuren en gedurfde penseelstreken, geïnspireerd door de Fauvisme-beweging.</li>
-        <li><strong>Vlak 2D:</strong> Benadrukt eenvoudige, vlakke ontwerpen met minimale schaduw of diepte, vaak in een cartoonstijl.</li>
-        <li><strong>Fortnite Stijl:</strong> Reflecteert de levendige, cartoonachtige kunststijl die typisch is voor het Fortnite-videospel.</li>
+        <li><strong>Druipende Verf Spatten:</strong> Gebruikt gespatte en druipende verf om dynamische en chaotische composities te creëren.</li>
+        <li><strong>Expressionisme:</strong> Geeft prioriteit aan emotionele expressie boven realistische representatie, vaak met gedurfde kleuren en dramatische vormen.</li>
+        <li><strong>Vervaagde Polaroid Foto:</strong> Imiteert de verouderde en nostalgische uitstraling van een vervaagde Polaroidfoto.</li>
+        <li><strong>Fauvisme:</strong> Gebruikt levendige, onnatuurlijke kleuren en gedurfde penseelstreken, geïnspireerd door de Fauviste beweging.</li>
+        <li><strong>Vlak 2D:</strong> Benadrukt eenvoudige, platte ontwerpen met minimale schaduw of diepte, vaak in cartoonstijl.</li>
+        <li><strong>Fortnite Stijl:</strong> Reflecteert de levendige, cartoonachtige kunststijl die typisch is voor de Fortnite-videogame.</li>
         <li><strong>Futurisme:</strong> Richt zich op dynamische beweging, energie en de weergave van toekomstige technologieën.</li>
-        <li><strong>Glitchcore:</strong> Benadrukt digitale fouten en glitches als een artistieke stijl, vaak met vervormde beelden.</li>
+        <li><strong>Glitchcore:</strong> Benadrukt digitale fouten en glitches als een artistieke stijl, vaak met vervormde visuals.</li>
         <li><strong>Glo-Fi:</strong> Gebruikt zachte, gloeiende verlichting om een dromerige, etherische sfeer te creëren.</li>
-        <li><strong>Googie Stijl:</strong> Reflecteert de futuristische en Space Age-ontwerptrends van het midden van de 20e eeuw.</li>
+        <li><strong>Googie Stijl:</strong> Reflecteert de futuristische en Space Age ontwerptrends van het midden van de 20e eeuw.</li>
         <li><strong>Graffiti Kunst:</strong> Gebruikt de levendige, straatstijl esthetiek die typisch is voor graffiti en stedelijke muurschilderingen.</li>
         <li><strong>Harlem Renaissance Kunst:</strong> Reflecteert de rijke culturele en artistieke uitdrukkingen van de Harlem Renaissance.</li>
-        <li><strong>High Fashion:</strong> Benadrukt de strakke, verfijnde en avant-garde esthetiek van high fashion.</li>
+        <li><strong>Hoogwaardige Mode:</strong> Benadrukt de strakke, verfijnde en avant-garde esthetiek van de haute couture.</li>
         <li><strong>Idyllisch:</strong> Creëert een vredige, serene en vaak pastorale sfeer.</li>
         <li><strong>Impressionisme:</strong> Gebruikt losse penseelstreken en levendige kleuren om de effecten van licht en sfeer vast te leggen.</li>
-        <li><strong>Infografische Tekening:</strong> Benadrukt duidelijke, visueel aantrekkelijke lay-outs voor het grafisch presenteren van informatie.</li>
-        <li><strong>Inkt Druipende Tekening:</strong> Gebruikt inkt om vloeiende, druipende effecten in een tekening te creëren.</li>
-        <li><strong>Japanse Inkttekening:</strong> Emuleert de traditionele penseeltechnieken en esthetiek van Japanse inktkunst.</li>
+        <li><strong>Infographic Tekeningen:</strong> Benadrukt duidelijke, visueel aantrekkelijke lay-outs voor het grafisch presenteren van informatie.</li>
+        <li><strong>Inkt Druipende Tekeningen:</strong> Gebruikt inkt om vloeibare, druipende effecten in een tekening te creëren.</li>
+        <li><strong>Japanse Inkttekening:</strong> Imiteert de traditionele penseeltechnieken en esthetiek van Japanse inktkunst.</li>
         <li><strong>Knolling Fotografie:</strong> Benadrukt de nette en georganiseerde rangschikking van objecten, vaak van bovenaf gefotografeerd.</li>
         <li><strong>Lichte Vrolijke Sfeer:</strong> Gebruikt heldere kleuren en verlichting om een vrolijke en opbeurende sfeer te creëren.</li>
         <li><strong>Logo Ontwerp:</strong> Richt zich op het creëren van schone, herkenbare logo's en branding-elementen.</li>
-        <li><strong>Luxe Elegantie:</strong> Benadrukt verfijning en luxe, vaak met rijke texturen en materialen.</li>
-        <li><strong>Macro Fotografie:</strong> Richt zich op extreme close-ups, vaak onthullend ingewikkelde details die niet zichtbaar zijn voor het blote oog.</li>
+        <li><strong>Luxueuze Elegantie:</strong> Benadrukt verfijning en luxe, vaak met rijke texturen en materialen.</li>
+        <li><strong>Macro Fotografie:</strong> Richt zich op extreme close-ups, vaak met ingewikkelde details die niet met het blote oog zichtbaar zijn.</li>
         <li><strong>Mandala Kunst:</strong> Creëert ingewikkelde, symmetrische patronen geïnspireerd door traditionele mandala-ontwerpen.</li>
-        <li><strong>Marker Tekening:</strong> Imiteert de gedurfde, levendige lijnen en kleuren die typisch zijn voor markertekeningen.</li>
-        <li><strong>Middeleeuws:</strong> Reflecteert de kunst- en ontwerpesthetiek van de Middeleeuwen.</li>
+        <li><strong>Marker Tekeningen:</strong> Imiteert de gedurfde, levendige lijnen en kleuren die typisch zijn voor markertekeningen.</li>
+        <li><strong>Middeleeuws:</strong> Reflecteert de kunst- en ontwerpesthetiek van de middeleeuwse periode.</li>
         <li><strong>Minimalisme:</strong> Benadrukt eenvoud en de reductie van vormen tot hun essentiële elementen.</li>
-        <li><strong>Neo-Barok:</strong> Herleeft de weelderige, dramatische stijl van de Barokperiode, met moderne invloeden.</li>
-        <li><strong>Neo-Byzantijns:</strong> Combineert de sierlijke, religieuze kunststijl van het Byzantijnse Rijk met hedendaagse elementen.</li>
+        <li><strong>Neo-Barok:</strong> Herleeft de weelderige, dramatische stijl van de barokperiode, met moderne invloeden.</li>
+        <li><strong>Neo-Byzantijns:</strong> Combineert de ornamentele, religieuze kunststijl van het Byzantijnse Rijk met hedendaagse elementen.</li>
         <li><strong>Neo-Futurisme:</strong> Richt zich op futuristische ontwerpen, vaak met strakke, high-tech esthetiek.</li>
-        <li><strong>Neo-Impressionisme:</strong> Gebruikt kleine, onderscheidende kleurpunten om afbeeldingen te creëren, geïnspireerd door de Neo-Impressionistische beweging.</li>
-        <li><strong>Neo-Rococo:</strong> Herleeft de uitgebreide, decoratieve stijl van de Rococo-periode, met moderne wendingen.</li>
-        <li><strong>Neoclassicisme:</strong> Emuleert de kunst- en ontwerpesthetiek van de Klassieke Oudheid, met nadruk op harmonie en eenvoud.</li>
+        <li><strong>Neo-Impressionisme:</strong> Gebruikt kleine, duidelijke kleurpunten om beelden te creëren, geïnspireerd door de neo-impressionistische beweging.</li>
+        <li><strong>Neo-Rococo:</strong> Herleeft de uitgebreide, decoratieve stijl van de rococo-periode, met moderne twists.</li>
+        <li><strong>Neoclassicisme:</strong> Imiteert de kunst- en ontwerpesthetiek van de klassieke oudheid, met nadruk op harmonie en eenvoud.</li>
         <li><strong>Op Art:</strong> Creëert optische illusies en effecten door het gebruik van geometrische patronen en contrasten.</li>
-        <li><strong>Sierlijk en Ingewikkeld:</strong> Richt zich op zeer gedetailleerde, uitgebreide ontwerpen met een focus op decoratie.</li>
-        <li><strong>Potloodschets Tekening:</strong> Imiteert de textuur en uitstraling van potloodschetsen.</li>
+        <li><strong>Ornate en Ingewikkeld:</strong> Richt zich op zeer gedetailleerde, uitgebreide ontwerpen met een focus op decoratie.</li>
+        <li><strong>Potloodschets Tekeningen:</strong> Imiteert de textuur en het uiterlijk van potloodschetsen.</li>
         <li><strong>Pop Art:</strong> Gebruikt gedurfde kleuren en beelden geïnspireerd door populaire cultuur en massamedia.</li>
-        <li><strong>Rococo:</strong> Reflecteert de uitgebreide, decoratieve kunststijl van de Rococo-periode, met een nadruk op lichtheid en elegantie.</li>
-        <li><strong>Silhouet Kunst:</strong> Gebruikt sterke contrasten tussen licht en schaduw om gedurfde, silhouet-gebaseerde afbeeldingen te creëren.</li>
-        <li><strong>Eenvoudige Vector Kunst:</strong> Benadrukt schone, geometrische vormen en vlakke kleuren, typisch voor vector kunst.</li>
-        <li><strong>SketchUp:</strong> Imiteert de look en feel van 3D-modellen gemaakt met SketchUp-software.</li>
-        <li><strong>Steampunk:</strong> Combineert Victoriaanse esthetiek met stoom aangedreven technologie, waardoor een retro-futuristische stijl ontstaat.</li>
-        <li><strong>Surrealisme:</strong> Vermengt realiteit en droomachtige beelden om surrealistische, fantastische scènes te creëren.</li>
-        <li><strong>Suprematisme:</strong> Richt zich op basis geometrische vormen en beperkte kleurenpaletten, geïnspireerd door de Suprematistische beweging.</li>
-        <li><strong>Terragen:</strong> Imiteert de realistische, computer gegenereerde landschappen gemaakt met Terragen-software.</li>
-        <li><strong>Rustige Ontspannende Sfeer:</strong> Gebruikt zachte kleuren en kalmerende beelden om een vredige en serene omgeving te creëren.</li>
+        <li><strong>Rococo:</strong> Reflecteert de uitgebreide, decoratieve kunststijl van de rococo-periode, met nadruk op lichtheid en elegantie.</li>
+        <li><strong>Silhouet Kunst:</strong> Gebruikt sterke contrasten tussen licht en schaduw om gedurfde, op silhouetten gebaseerde beelden te creëren.</li>
+        <li><strong>Eenvoudige Vector Kunst:</strong> Benadrukt schone, geometrische vormen en platte kleuren, typisch voor vector kunst.</li>
+        <li><strong>SketchUp:</strong> Imiteert de uitstraling en het gevoel van 3D-modellen die zijn gemaakt met SketchUp-software.</li>
+        <li><strong>Steampunk:</strong> Combineert de esthetiek van het Victoriaanse tijdperk met stoomkrachttechnologie, waardoor een retro-futuristische stijl ontstaat.</li>
+        <li><strong>Surrealisme:</strong> Mengt realiteit en droomachtige beelden om surrealistische, fantastische scènes te creëren.</li>
+        <li><strong>Suprematisme:</strong> Richt zich op basis geometrische vormen en beperkte kleurpaletten, geïnspireerd door de suprematistische beweging.</li>
+        <li><strong>Terragen:</strong> Imiteert de realistische, computergegenereerde landschappen die zijn gemaakt met Terragen-software.</li>
+        <li><strong>Tranquiele Ontspannen Sfeer:</strong> Gebruikt zachte kleuren en rustgevende beelden om een vredige en serene omgeving te creëren.</li>
         <li><strong>Sticker Ontwerpen:</strong> Richt zich op het creëren van speelse, cartoonachtige afbeeldingen die geschikt zijn voor stickers.</li>
-        <li><strong>Levendige Randverlichting:</strong> Benadrukt heldere, randverlichting rond onderwerpen om een opvallend, levendig effect te creëren.</li>
+        <li><strong>Vibrante Randverlichting:</strong> Benadrukt heldere, randverlichting rond onderwerpen om een opvallend, levendig effect te creëren.</li>
         <li><strong>Volumetrische Verlichting:</strong> Gebruikt lichtstralen en atmosferische effecten om diepte en dimensie te creëren.</li>
         <li><strong>Aquarel:</strong> Imiteert de zachte, vloeiende texturen van aquarel schilderijen.</li>
-        <li><strong>Grillig en Speels:</strong> Richt zich op luchtige, fantasierijke en vaak eigenzinnige beelden.</li>
-        <li><strong>Scherp:</strong> Verbetert helderheid en randdefinitie voor een scherper uiterlijk.</li>
+        <li><strong>Speels en Fantasierijk:</strong> Richt zich op luchtige, fantasierijke en vaak eigenzinnige beelden.</li>
+        <li><strong>Scherp:</strong> Verbetert de helderheid en randdefinitie voor een scherpere uitstraling.</li>
         <li><strong>Meesterwerk:</strong> Benadrukt hoogwaardige, gedetailleerde en gepolijste artistieke output.</li>
-        <li><strong>Foto:</strong> Streeft naar een realistische en levensechte fotografische kwaliteit.</li>
-        <li><strong>Negatief:</strong> Keert kleuren om om een fotografisch negatieveffect te creëren.</li>
-        <li><strong>Advertenties - Reclame:</strong> Richt zich op schone, professionele beelden die geschikt zijn voor reclame.</li>
-        <li><strong>Advertenties - Automotive:</strong> Past de visuele stijl aan voor dynamische en gepolijste autoadvertenties.</li>
-        <li><strong>Advertenties - Bedrijf:</strong> Benadrukt strakke, professionele ontwerpen die geschikt zijn voor zakelijke omgevingen.</li>
-        <li><strong>Advertenties - Mode Editorial:</strong> Benadrukt de stijlvolle, high-fashion look die wordt gebruikt in mode-editorials.</li>
-        <li><strong>Advertenties - Voedselfotografie:</strong> Optimaliseert afbeeldingen voor de levendige en smakelijke uitstraling die typisch is voor voedselfotografie.</li>
-        <li><strong>Advertenties - Gourmet Voedselfotografie:</strong> Benadrukt de rijke, gedetailleerde esthetiek van gourmet voedselfotografie.</li>
-        <li><strong>Advertenties - Luxe:</strong> Richt zich op de weelderige, high-end stijl die geschikt is voor luxemerken.</li>
-        <li><strong>Advertenties - Vastgoed:</strong> Benadrukt de schone en uitnodigende beelden die typisch zijn voor vastgoedadvertenties.</li>
-        <li><strong>Advertenties - Detailhandel:</strong> Benadrukt de aantrekkelijke, consumentgerichte stijl die geschikt is voor detailhandeladvertenties.</li>
-        <li><strong>Hyperrealisme:</strong> Streeft naar een uiterst gedetailleerde, levensechte visuele stijl.</li>
-        <li><strong>Pointillisme:</strong> Gebruikt kleine, onderscheidende kleurpunten om een afbeelding te creëren, geïnspireerd door de Pointillistische beweging.</li>
-        <li><strong>Psychedelisch:</strong> Benadrukt levendige kleuren en surrealistische beelden geïnspireerd door psychedelische kunst.</li>
-        <li><strong>Renaissance:</strong> Reflecteert de harmonieuze, klassieke stijl van Renaissance kunst.</li>
-        <li><strong>Typografie:</strong> Richt zich op creatief en artistiek gebruik van tekst en lettertypen.</li>
+        <li><strong>Fotografie:</strong> Streeft naar een realistische en levensechte fotografische kwaliteit.</li>
+        <li><strong>Negatief:</strong> Keert kleuren om om een fotografisch negatief effect te creëren.</li>
+        <li><strong>Ads - Reclame:</strong> Richt zich op schone, professionele visuals die geschikt zijn voor reclame.</li>
+        <li><strong>Ads - Automotive:</strong> Past de visuele stijl aan voor dynamische en gepolijste automotive reclame.</li>
+        <li><strong>Ads - Corporate:</strong> Benadrukt strakke, professionele ontwerpen die geschikt zijn voor zakelijke omgevingen.</li>
+        <li><strong>Ads - Mode Editorial:</strong> Benadrukt de stijlvolle, haute couture uitstraling die wordt gebruikt in mode-editorials.</li>
+        <li><strong>Ads - Voedselfotografie:</strong> Optimaliseert afbeeldingen voor de levendige en smakelijke uitstraling die typisch is voor voedselfotografie.</li>
+        <li><strong>Ads - Gourmet Voedselfotografie:</strong> Benadrukt de rijke, gedetailleerde esthetiek van gourmet voedselfotografie.</li>
+        <li><strong>Ads - Luxe:</strong> Richt zich op de weelderige, high-end stijl die geschikt is voor luxe merken.</li>
+        <li><strong>Ads - Vastgoed:</strong> Benadrukt de schone en uitnodigende visuals die typisch zijn voor vastgoedreclame.</li>
+        <li><strong>Ads - Retail:</strong> Benadrukt de aantrekkelijke, consumentgerichte stijl die geschikt is voor retailreclame.</li>
+        <li><strong>Hyperrealisme:</strong> Streeft naar een extreem gedetailleerde, levensechte visuele stijl.</li>
+        <li><strong>Pointillisme:</strong> Gebruikt kleine, duidelijke kleurpunten om een afbeelding te creëren, geïnspireerd door de pointillistische beweging.</li>
+        <li><strong>Psychedelisch:</strong> Benadrukt levendige kleuren en surrealistische visuals geïnspireerd door psychedelische kunst.</li>
+        <li><strong>Renaissance:</strong> Reflecteert de harmonieuze, klassieke stijl van renaissancekunst.</li>
+        <li><strong>Typografie:</strong> Richt zich op creatieve en artistieke toepassingen van tekst en lettertypen.</li>
         <li><strong>Futuristisch Biomechanisch:</strong> Combineert futuristische en biomechanische elementen om een high-tech, organische stijl te creëren.</li>
-        <li><strong>Futuristisch Biomechanisch Cyberpunk:</strong> Vermengt biomechanische en cyberpunk esthetiek voor een grimmige, futuristische uitstraling.</li>
-        <li><strong>Futuristisch Cybernetisch:</strong> Richt zich op high-tech, cybernetische beelden.</li>
-        <li><strong>Futuristisch Cybernetische Robot:</strong> Benadrukt robotachtige en cybernetische ontwerpen met een futuristische edge.</li>
-        <li><strong>Futuristisch Cyberpunk Stadsgezicht:</strong> Reflecteert de grimmige, neon-verlichte stadsgezichten die typisch zijn voor cyberpunk kunst.</li>
-        <li><strong>Futuristisch Sci-Fi:</strong> Richt zich op futuristische en science fiction-geïnspireerde esthetiek.</li>
-        <li><strong>Futuristisch Retro Cyberpunk:</strong> Combineert retro en cyberpunk elementen voor een nostalgische maar futuristische stijl.</li>
-        <li><strong>Futuristisch Retro:</strong> Vermengt futuristische beelden met retro ontwerpelementen.</li>
-        <li><strong>Futuristisch Vaporwave:</strong> Benadrukt de nostalgische, surrealistische beelden die typisch zijn voor Vaporwave kunst.</li>
-        <li><strong>Spel Bubble:</strong> Richt zich op een speelse, bubbelachtige esthetiek die vaak wordt gezien in casual games.</li>
-        <li><strong>Spel Cyberpunk:</strong> Vermengt game-ontwerpelementen met cyberpunk esthetiek.</li>
-        <li><strong>Spel Vechten:</strong> Reflecteert de dynamische, intense stijl die typisch is voor vechtspellen.</li>
-        <li><strong>Spel GTA:</strong> Imiteert de grimmige, stedelijke stijl die typisch is voor Grand Theft Auto-spellen.</li>
-        <li><strong>Spel Mario:</strong> Richt zich op de levendige, cartoonachtige stijl die typisch is voor Mario-spellen.</li>
-        <li><strong>Spel Minecraft:</strong> Imiteert de blokkerige, gepixelde stijl die typisch is voor Minecraft.</li>
-        <li><strong>Spel Pokemon:</strong> Reflecteert de levendige, anime-geïnspireerde stijl die typisch is voor Pokémon-spellen.</li>
-        <li><strong>Spel Retro Arcade:</strong> Benadrukt de nostalgische, gepixelde stijl die typisch is voor retro arcade-spellen.</li>
-        <li><strong>Spel RPG Fantasie:</strong> Reflecteert de gedetailleerde, fantasie-geïnspireerde esthetiek die typisch is voor RPG-spellen.</li>
-        <li><strong>Spel Strategie:</strong> Richt zich op het schone, functionele ontwerp dat typisch is voor strategiespellen.</li>
-        <li><strong>Spel Streetfighter:</strong> Imiteert de gedurfde, dynamische stijl die typisch is voor Street Fighter-spellen.</li>
-        <li><strong>Spel Zelda:</strong> Reflecteert de fantasie-geïnspireerde stijl die typisch is voor Zelda-spellen.</li>
-        <li><strong>Divers Architecturaal:</strong> Richt zich op schone, precieze architectonische weergaven.</li>
-        <li><strong>Divers Disco:</strong> Benadrukt de levendige, neon-verlichte esthetiek die typisch is voor discocultuur.</li>
-        <li><strong>Divers Droomlandschap:</strong> Creëert surrealistische, droomachtige omgevingen.</li>
-        <li><strong>Divers Dystopisch:</strong> Reflecteert de grimmige, sombere beelden die typisch zijn voor dystopische omgevingen.</li>
-        <li><strong>Divers Sprookje:</strong> Benadrukt de grillige, magische elementen die typisch zijn voor sprookjes.</li>
-        <li><strong>Divers Gotisch:</strong> Reflecteert de donkere, sierlijke stijl die typisch is voor gotische kunst en architectuur.</li>
-        <li><strong>Divers Grunge:</strong> Benadrukt de grimmige, rauwe esthetiek die typisch is voor grungecultuur.</li>
-        <li><strong>Divers Horror:</strong> Richt zich op donkere, griezelige en verontrustende beelden die typisch zijn voor horror.</li>
-        <li><strong>Divers Kawaii:</strong> Reflecteert de schattige, charmante stijl die typisch is voor Kawaii-cultuur.</li>
-        <li><strong>Divers Lovecraftiaans:</strong> Benadrukt de griezelige, kosmische horror die typisch is voor Lovecraftiaanse fictie.</li>
-        <li><strong>Divers Macaber:</strong> Richt zich op donkere, morbide en verontrustende thema's.</li>
-        <li><strong>Divers Manga:</strong> Imiteert de gedurfde, dynamische stijl die typisch is voor manga.</li>
-        <li><strong>Divers Metropool:</strong> Reflecteert de strakke, stedelijke esthetiek die typisch is voor moderne metropolen.</li>
-        <li><strong>Divers Minimalistisch:</strong> Benadrukt eenvoud en de reductie van vormen tot hun essenties.</li>
-        <li><strong>Divers Monochroom:</strong> Richt zich op afbeeldingen die zijn gemaakt in verschillende tinten van één kleur.</li>
-        <li><strong>Divers Nautisch:</strong> Reflecteert de maritiem-geïnspireerde esthetiek die typisch is voor nautische thema's.</li>
-        <li><strong>Divers Ruimte:</strong> Benadrukt de uitgestrekte, andere wereldse beelden die typisch zijn voor ruimteomgevingen.</li>
-        <li><strong>Divers Glas-in-lood:</strong> Imiteert de ingewikkelde, kleurrijke ontwerpen die typisch zijn voor glas-in-loodkunst.</li>
-        <li><strong>Divers Techwear Mode:</strong> Richt zich op de futuristische, functionele esthetiek die typisch is voor techwear mode.</li>
-        <li><strong>Divers Tribaal:</strong> Reflecteert de gedurfde, culturele esthetiek die typisch is voor tribale kunst.</li>
-        <li><strong>Divers Zentangle:</strong> Benadrukt ingewikkelde, repetitieve patronen die typisch zijn voor Zentangle-kunst.</li>
-        <li><strong>Papierkunst Collage:</strong> Gebruikt gesneden papier om gelaagde, getextureerde collages te creëren.</li>
-        <li><strong>Papierkunst Vlakke Papercut:</strong> Benadrukt vlakke, gesneden papierontwerpen.</li>
-        <li><strong>Papierkunst Kirigami:</strong> Richt zich op de ingewikkelde, gevouwen ontwerpen die typisch zijn voor Kirigami.</li>
-        <li><strong>Papierkunst Papier-maché:</strong> Gebruikt papier-maché om getextureerde, driedimensionale vormen te creëren.</li>
-        <li><strong>Papierkunst Papier Quilling:</strong> Benadrukt de delicate, opgerolde papierontwerpen die typisch zijn voor papier quilling.</li>
-        <li><strong>Papierkunst Papercut Collage:</strong> Combineert gesneden papieren elementen om gelaagde collages te creëren.</li>
-        <li><strong>Papierkunst Papercut Schaduwdoos:</strong> Gebruikt gelaagde papercuts om driedimensionale schaduwdozen te creëren.</li>
-        <li><strong>Papierkunst Gestapelde Papercut:</strong> Richt zich op gelaagde, gestapelde papierontwerpen.</li>
-        <li><strong>Papierkunst Dikke Gelaagde Papercut:</strong> Benadrukt de dimensionale, gelaagde look die typisch is voor dikke papercut ontwerpen.</li>
-        <li><strong>Foto Alien:</strong> Richt zich op surrealistische, buitenaardse beelden.</li>
+        <li><strong>Futuristisch Biomechanisch Cyberpunk:</strong> Combineert biomechanische en cyberpunk esthetiek voor een ruige, futuristische uitstraling.</li>
+        <li><strong>Futuristisch Cybernetisch:</strong> Richt zich op high-tech, cybernetische visuals.</li>
+        <li><strong>Futuristisch Cybernetisch Robot:</strong> Benadrukt robotachtige en cybernetische ontwerpen met een futuristische rand.</li>
+        <li><strong>Futuristisch Cyberpunk Stadsbeeld:</strong> Reflecteert de ruige, neonverlichte stadsgezichten die typisch zijn voor cyberpunk kunst.</li>
+        <li><strong>Futuristisch Sci-Fi:</strong> Richt zich op futuristische en sciencefiction-geïnspireerde esthetiek.</li>
+        <li><strong>Futuristisch Retro Cyberpunk:</strong> Combineert retro- en cyberpunk-elementen voor een nostalgische maar futuristische stijl.</li>
+        <li><strong>Futuristisch Retro:</strong> Combineert futuristische visuals met retro-ontwerpelementen.</li>
+        <li><strong>Futuristisch Vaporwave:</strong> Benadrukt de nostalgische, surrealistische visuals die typisch zijn voor Vaporwave kunst.</li>
+        <li><strong>Game Bubble:</strong> Richt zich op een speelse, luchtige esthetiek die vaak te zien is in casual games.</li>
+        <li><strong>Game Cyberpunk:</strong> Combineert game-ontwerpelementen met cyberpunk esthetiek.</li>
+        <li><strong>Game Vecht:</strong> Reflecteert de dynamische, intense stijl die typisch is voor vechtgames.</li>
+        <li><strong>Game GTA:</strong> Imiteert de ruige, stedelijke stijl die typisch is voor Grand Theft Auto-games.</li>
+        <li><strong>Game Mario:</strong> Richt zich op de levendige, cartoonachtige stijl die typisch is voor Mario-games.</li>
+        <li><strong>Game Minecraft:</strong> Imiteert de blokachtige, pixelachtige stijl die typisch is voor Minecraft.</li>
+        <li><strong>Game Pokémon:</strong> Reflecteert de levendige, anime-geïnspireerde stijl die typisch is voor Pokémon-games.</li>
+        <li><strong>Game Retro Arcade:</strong> Benadrukt de nostalgische, pixelachtige stijl die typisch is voor retro arcadegames.</li>
+        <li><strong>Game RPG Fantasie:</strong> Reflecteert de gedetailleerde, fantasie-geïnspireerde esthetiek die typisch is voor RPG-games.</li>
+        <li><strong>Game Strategie:</strong> Richt zich op het schone, functionele ontwerp dat typisch is voor strategie games.</li>
+        <li><strong>Game Streetfighter:</strong> Imiteert de gedurfde, dynamische stijl die typisch is voor Street Fighter-games.</li>
+        <li><strong>Game Zelda:</strong> Reflecteert de fantasie-geïnspireerde stijl die typisch is voor Zelda-games.</li>
+        <li><strong>Overige Architectonisch:</strong> Richt zich op schone, nauwkeurige architectonische weergaven.</li>
+        <li><strong>Overige Disco:</strong> Benadrukt de levendige, neonverlichte esthetiek die typisch is voor de disco-cultuur.</li>
+        <li><strong>Overige Droomlandschap:</strong> Creëert surrealistische, droomachtige omgevingen.</li>
+        <li><strong>Overige Dystopisch:</strong> Reflecteert de ruige, sombere visuals die typisch zijn voor dystopische settings.</li>
+        <li><strong>Overige Sprookje:</strong> Benadrukt de speelse, magische elementen die typisch zijn voor sprookjes.</li>
+        <li><strong>Overige Gotisch:</strong> Reflecteert de donkere, ornamentale stijl die typisch is voor gotische kunst en architectuur.</li>
+        <li><strong>Overige Grunge:</strong> Benadrukt de ruige, rauwe esthetiek die typisch is voor grunge-cultuur.</li>
+        <li><strong>Overige Horror:</strong> Richt zich op donkere, griezelige en onheilspellende visuals die typisch zijn voor horror.</li>
+        <li><strong>Overige Kawaii:</strong> Reflecteert de schattige, charmante stijl die typisch is voor Kawaii-cultuur.</li>
+        <li><strong>Overige Lovecraftiaans:</strong> Benadrukt de griezelige, kosmische horror die typisch is voor Lovecraftiaanse fictie.</li>
+        <li><strong>Overige Macaber:</strong> Richt zich op donkere, morbide en onheilspellende thema's.</li>
+        <li><strong>Overige Manga:</strong> Imiteert de gedurfde, dynamische stijl die typisch is voor manga.</li>
+        <li><strong>Overige Metropool:</strong> Reflecteert de strakke, stedelijke esthetiek die typisch is voor moderne metropolen.</li>
+        <li><strong>Overige Minimalistisch:</strong> Benadrukt eenvoud en de reductie van vormen tot hun essenties.</li>
+        <li><strong>Overige Monochroom:</strong> Richt zich op afbeeldingen die zijn gemaakt in verschillende tinten van een enkele kleur.</li>
+        <li><strong>Overige Nautisch:</strong> Reflecteert de maritiem geïnspireerde esthetiek die typisch is voor nautische thema's.</li>
+        <li><strong>Overige Ruimte:</strong> Benadrukt de uitgestrekte, andere wereldse visuals die typisch zijn voor ruimte-instellingen.</li>
+        <li><strong>Overige Glas-in-lood:</strong> Imiteert de ingewikkelde, kleurrijke ontwerpen die typisch zijn voor glas-in-loodkunst.</li>
+        <li><strong>Overige Techwear Mode:</strong> Richt zich op de futuristische, functionele esthetiek die typisch is voor techwear mode.</li>
+        <li><strong>Overige Tribaal:</strong> Reflecteert de gedurfde, culturele esthetiek die typisch is voor tribale kunst.</li>
+        <li><strong>Overige Zentangle:</strong> Benadrukt ingewikkelde, repetitieve patronen die typisch zijn voor Zentangle-kunst.</li>
+        <li><strong>Papercraft Collage:</strong> Gebruikt geknipt papier om gelaagde, textuurcollages te creëren.</li>
+        <li><strong>Papercraft Vlakke Papercut:</strong> Benadrukt platte, geknipte papieren ontwerpen.</li>
+        <li><strong>Papercraft Kirigami:</strong> Richt zich op de ingewikkelde, gevouwen ontwerpen die typisch zijn voor Kirigami.</li>
+        <li><strong>Papercraft Papier-maché:</strong> Gebruikt papier-maché om textuur, driedimensionale vormen te creëren.</li>
+        <li><strong>Papercraft Papier Quilling:</strong> Benadrukt de delicate, opgerolde papieren ontwerpen die typisch zijn voor papierquilling.</li>
+        <li><strong>Papercraft Papercut Collage:</strong> Combineert geknipte paperelementen om gelaagde collages te creëren.</li>
+        <li><strong>Papercraft Papercut Schaduwdoos:</strong> Gebruikt gelaagde papercuts om driedimensionale schaduwdozen te creëren.</li>
+        <li><strong>Papercraft Gestapelde Papercut:</strong> Richt zich op gelaagde, gestapelde papieren ontwerpen.</li>
+        <li><strong>Papercraft Dikke Gelaagde Papercut:</strong> Benadrukt de dimensionale, gelaagde uitstraling die typisch is voor dikke papercut-ontwerpen.</li>
+        <li><strong>Foto Alien:</strong> Richt zich op surrealistische, buitenaardse visuals.</li>
         <li><strong>Foto Film Noir:</strong> Benadrukt de donkere, sombere esthetiek die typisch is voor film noir.</li>
         <li><strong>Foto Glamour:</strong> Benadrukt de gepolijste, stijlvolle uitstraling die typisch is voor glamourfotografie.</li>
-        <li><strong>Foto HDR:</strong> Gebruikt een hoog dynamisch bereik (HDR) om afbeeldingen te creëren met een breed scala aan licht en kleur.</li>
-        <li><strong>Foto iPhone Fotografisch:</strong> Imiteert de schone, moderne stijl die typisch is voor iPhone-fotografie.</li>
-        <li><strong>Foto Lange Belichting:</strong> Gebruikt lange belichting om dynamische, bewegingsonscherpte-effecten te creëren.</li>
+        <li><strong>Foto HDR:</strong> Gebruikt hoge dynamische bereik (HDR) om afbeeldingen te creëren met een breed scala aan licht en kleur.</li>
+        <li><strong>Foto iPhone Fotografie:</strong> Imiteert de schone, moderne stijl die typisch is voor iPhone-fotografie.</li>
+        <li><strong>Foto Lange Belichting:</strong> Gebruikt lange belichting om dynamische, bewegingsvervagende effecten te creëren.</li>
         <li><strong>Foto Neon Noir:</strong> Combineert neonverlichting met de donkere, sombere esthetiek van noir.</li>
-        <li><strong>Foto Silhouet:</strong> Richt zich op sterke contrasten tussen licht en schaduw om silhouet-gebaseerde afbeeldingen te creëren.</li>
-        <li><strong>Foto Tilt Shift:</strong> Gebruikt tilt-shift effecten om een geminiaturiseerde, speelgoedachtige look te creëren.</li>
-        <li><strong>3D Model:</strong> Richt zich op de schone, gedetailleerde look die typisch is voor 3D-modellen.</li>
-        <li><strong>Analoog Film:</strong> Imiteert de korrelige, getextureerde look die typisch is voor analoge filmfotografie.</li>
+        <li><strong>Foto Silhouet:</strong> Richt zich op sterke contrasten tussen licht en schaduw om silhouet-gebaseerde beelden te creëren.</li>
+        <li><strong>Foto Tilt Shift:</strong> Gebruikt tilt-shift-effecten om een geminiaturiseerd, speelgoedachtig uiterlijk te creëren.</li>
+        <li><strong>3D Model:</strong> Richt zich op de schone, gedetailleerde uitstraling die typisch is voor 3D-modellen.</li>
+        <li><strong>Analoge Film:</strong> Imiteert de korrelige, textuurachtige uitstraling die typisch is voor analoge filmfotografie.</li>
         <li><strong>Anime:</strong> Benadrukt de levendige, dynamische stijl die typisch is voor anime.</li>
-        <li><strong>Cinematisch:</strong> Creëert een dramatisch, filmachtig effect met sterke verlichting en composities.</li>
+        <li><strong>Cinematisch:</strong> Creëert een dramatisch, filmachtig effect met sterke belichting en composities.</li>
         <li><strong>Stripboek:</strong> Gebruikt gedurfde lijnen en levendige kleuren die typisch zijn voor stripboekkunst.</li>
-        <li><strong>Klei Ambacht:</strong> Imiteert de getextureerde, handgemaakte look van kleimodellen.</li>
+        <li><strong>Klei Ambacht:</strong> Imiteert de textuur, handgemaakte uitstraling van kleimodellen.</li>
         <li><strong>Digitale Kunst:</strong> Richt zich op schone, gepolijste digitale kunstwerken.</li>
-        <li><strong>Fantasie Kunst:</strong> Benadrukt de gedetailleerde, fantasierijke beelden die typisch zijn voor fantasiekunst.</li>
-        <li><strong>Isometrisch:</strong> Gebruikt een isometrisch perspectief om een driedimensionale look te creëren.</li>
-        <li><strong>Lijnkunst:</strong> Richt zich op schone, scherpe lijnen om gedetailleerde tekeningen te creëren.</li>
-        <li><strong>Lage Poly:</strong> Gebruikt laag-polygonale 3D-modellen om een minimalistische, geometrische look te creëren.</li>
-        <li><strong>Neonpunk:</strong> Combineert neonverlichting met de grimmige esthetiek van cyberpunk.</li>
+        <li><strong>Fantasie Kunst:</strong> Benadrukt de gedetailleerde, fantasierijke visuals die typisch zijn voor fantasiekunst.</li>
+        <li><strong>Isometrisch:</strong> Gebruikt een isometrisch perspectief om een driedimensionale uitstraling te creëren.</li>
+        <li><strong>Lijn Kunst:</strong> Richt zich op schone, scherpe lijnen om gedetailleerde tekeningen te creëren.</li>
+        <li><strong>Laag Poly:</strong> Gebruikt low-polygon 3D-modellen om een minimalistische, geometrische uitstraling te creëren.</li>
+        <li><strong>Neonpunk:</strong> Combineert neonverlichting met de ruige esthetiek van cyberpunk.</li>
         <li><strong>Origami:</strong> Richt zich op de ingewikkelde, gevouwen ontwerpen die typisch zijn voor origami.</li>
-        <li><strong>Fotografisch:</strong> Streeft naar realistische, levensechte beelden.</li>
-        <li><strong>Pixelkunst:</strong> Gebruikt gepixelde ontwerpen om een retro, videogame-geïnspireerde look te creëren.</li>
+        <li><strong>Fotografisch:</strong> Streeft naar realistische, levensechte visuals.</li>
+        <li><strong>Pixel Kunst:</strong> Gebruikt pixelachtige ontwerpen om een retro, videospel-geïnspireerde uitstraling te creëren.</li>
         <li><strong>Textuur:</strong> Richt zich op rijke, gedetailleerde texturen om visuele diepte te verbeteren.</li>
     </ul>
 </body>

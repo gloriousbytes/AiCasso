@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            max-width: 100%;
             height: auto;
+            object-fit: contain;
         }
         .iframe-container {
             display: flex;
@@ -48,26 +49,26 @@
 <body>
 
     <h2>Panduan Menggunakan Fitur Gambar ke Video</h2>
-    <p>Fitur Gambar ke Video di AiCasso memungkinkan Anda mengubah satu gambar menjadi video dinamis. Cukup deskripsikan apa yang ingin Anda lihat dalam video Anda, dan AiCasso akan mewujudkannya!</p>
+    <p>Fitur Gambar ke Video di AiCasso memungkinkan Anda mengubah satu gambar menjadi video dinamis. Cukup deskripsikan apa yang ingin Anda lihat di video Anda, dan AiCasso akan mewujudkannya!</p>
 
-    <h3>Cara Kerjanya:</h3>
+    <h3>Bagaimana Cara Kerjanya:</h3>
     
     <div class="example">
         <strong>Gambar Masukan:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/input.jpg" alt="Gambar Masukan" loading="lazy">
         </div>
         <strong>Prompt 1:</strong>
-        <p>"Anak anjing lucu di taman"</p>
+        <p>"Anjing kecil yang lucu di taman"</p>
         <strong>Hasil 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppy.gif" alt="Anjing Kecil yang Lucu di Taman" loading="lazy">
         </div>
         <strong>Prompt 2:</strong>
-        <p>"Anak anjing lucu di taman, gunakan FPS maksimum, frame maksimum, dan gerakan maksimum"</p>
+        <p>"Anjing kecil yang lucu di taman, gunakan FPS maksimum, jumlah bingkai maksimum, dan gerakan maksimum"</p>
         <strong>Hasil 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppymaxframes.gif" alt="Anjing dengan FPS Maksimum di Taman" loading="lazy">
         </div>
     </div>
 
@@ -76,14 +77,14 @@
 
     <ul>
         <li><strong>Prompt Negatif:</strong> Deskripsikan apa yang *tidak* Anda inginkan dalam video. Jika dibiarkan kosong, AiCasso hanya akan fokus pada prompt positif.</li>
-        <li><strong>Jumlah Frame:</strong> Pilih berapa banyak frame (gambar individu) yang akan dimiliki video Anda. Anda dapat memilih hingga 25 frame, dengan 16 sebagai default.</li>
-        <li><strong>Langkah Denoising:</strong> Ini mengontrol seberapa halus tampilan video Anda. Langkah lebih banyak berarti video yang lebih bersih. Anda dapat mengatur hingga 50 langkah, dengan 20 sebagai default.</li>
-        <li><strong>Skala Panduan:</strong> Ini membantu video tetap sesuai dengan deskripsi Anda. Rentangnya dari 1.0 hingga 8.0, dan Anda dapat menyesuaikan nilai awal dan akhir untuk membimbing bagaimana video berkembang.</li>
+        <li><strong>Jumlah Bingkai:</strong> Pilih berapa banyak bingkai (gambar individu) yang akan dimiliki video Anda. Anda dapat memilih hingga 25 bingkai, dengan 16 sebagai default.</li>
+        <li><strong>Langkah Denoising:</strong> Ini mengontrol seberapa halus video Anda terlihat. Semakin banyak langkah berarti video yang lebih bersih. Anda dapat mengatur hingga 50 langkah, dengan 20 sebagai default.</li>
+        <li><strong>Skala Panduan:</strong> Ini membantu video tetap dekat dengan deskripsi Anda. Rentangnya dari 1.0 hingga 8.0, dan Anda dapat menyesuaikan nilai awal dan akhir untuk membimbing bagaimana video berkembang.</li>
         <li><strong>Gerakan:</strong> Sesuaikan seberapa banyak gerakan dalam video Anda. Nilai yang lebih tinggi berarti lebih banyak aksi. Rentangnya dari 0 hingga 127, dengan 60 sebagai default.</li>
         <li><strong>Kekuatan Augmentasi Noise:</strong> Tambahkan sedikit noise ke video Anda untuk memberikan tampilan yang lebih bertekstur. Rentangnya dari 0 hingga 1, dengan 0 sebagai default.</li>
-        <li><strong>Frame per Detik (FPS):</strong> Atur seberapa cepat video Anda diputar. Defaultnya adalah 16 FPS, tetapi Anda dapat meningkatkannya hingga 16 untuk pemutaran yang lebih cepat.</li>
-        <li><strong>Metode Interpolasi:</strong> Pilih bagaimana frame dibaurkan bersama. Defaultnya adalah "lerp" (interpolasi linear), tetapi Anda juga dapat menggunakan "slerp" (interpolasi linear sferis) untuk efek yang berbeda.</li>
-        <li><strong>Lompatan Klip:</strong> Lewati lapisan tertentu untuk gaya video yang berbeda. Anda dapat melewati hingga 2 lapisan, atau biarkan kosong untuk perilaku default.</li>
+        <li><strong>Bingkai per Detik (FPS):</strong> Atur seberapa cepat video Anda diputar. Defaultnya adalah 16 FPS, tetapi Anda dapat meningkatkannya hingga 16 untuk pemutaran yang lebih cepat.</li>
+        <li><strong>Metode Interpolasi:</strong> Pilih bagaimana bingkai dicampur bersama. Defaultnya adalah "lerp" (interpolasi linier), tetapi Anda juga dapat menggunakan "slerp" (interpolasi linier sferis) untuk efek yang berbeda.</li>
+        <li><strong>Skip Klip:</strong> Lewati lapisan tertentu untuk gaya video yang berbeda. Anda dapat melewati hingga 2 lapisan, atau membiarkannya null untuk perilaku default.</li>
     </ul>
 
     <p>Ingat, AiCasso cukup pintar! Anda tidak perlu mendapatkan setiap detail dengan sempurna atau menggunakan tata bahasa yang benar. Cukup deskripsikan apa yang Anda inginkan, dan AiCasso akan melakukan sisanya. Selamat bersenang-senang membuat video Anda!</p>

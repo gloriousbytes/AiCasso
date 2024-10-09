@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            max-width: 100%;
             height: auto;
+            object-fit: contain;
         }
         .iframe-container {
             display: flex;
@@ -55,35 +56,35 @@
     <div class="example">
         <strong>Vstupní obrázek:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/input.jpg" alt="Vstupní obrázek" loading="lazy">
         </div>
         <strong>Výzva 1:</strong>
         <p>"Roztomilý štěně v parku"</p>
         <strong>Výsledek 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppy.gif" alt="Roztomilé štěně v parku" loading="lazy">
         </div>
         <strong>Výzva 2:</strong>
-        <p>"Roztomilý štěně v parku, použijte maximální FPS, maximální snímky a maximální pohyb"</p>
+        <p>"Roztomilé štěně v parku, použijte maximální FPS, maximální snímky a maximální pohyb"</p>
         <strong>Výsledek 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppymaxframes.gif" alt="Maximální FPS štěně v parku" loading="lazy">
         </div>
     </div>
 
     <h3>Volitelné parametry</h3>
-    <p>Pokud chcete být konkrétnější ve svém videu, zde jsou některá nastavení, která můžete upravit:</p>
+    <p>Pokud chcete být ve svém videu konkrétnější, zde jsou některá nastavení, která můžete upravit:</p>
 
     <ul>
-        <li><strong>Negativní výzva:</strong> Popište, co *nechcete* ve videu. Pokud zůstane prázdné, AiCasso se zaměří pouze na pozitivní výzvu.</li>
-        <li><strong>Počet snímků:</strong> Vyberte, kolik snímků (jednotlivých obrázků) vaše video bude mít. Můžete zvolit až 25 snímků, přičemž 16 je výchozí hodnota.</li>
-        <li><strong>Kroky denoisingu:</strong> To ovlivňuje, jak hladké vaše video vypadá. Více kroků znamená čistší video. Můžete nastavit až 50 kroků, přičemž 20 je výchozí hodnota.</li>
-        <li><strong>Škála vedení:</strong> To pomáhá videu držet se blízko vašeho popisu. Rozsah je od 1.0 do 8.0 a můžete upravit počáteční a koncové hodnoty, abyste vedli, jak se video vyvíjí.</li>
-        <li><strong>Pohyb:</strong> Upravte, kolik pohybu je ve vašem videu. Vyšší hodnota znamená více akce. Rozsah je od 0 do 127, přičemž 60 je výchozí hodnota.</li>
-        <li><strong>Síla augmentace šumu:</strong> Přidejte do svého videa nějaký šum, aby mělo texturovanější vzhled. Rozsah je od 0 do 1, přičemž 0 je výchozí hodnota.</li>
-        <li><strong>Snímky za sekundu (FPS):</strong> Nastavte, jak rychle vaše video hraje. Výchozí hodnota je 16 FPS, ale můžete jít až na 16 pro rychlejší přehrávání.</li>
-        <li><strong>Metoda interpolace:</strong> Vyberte, jak se snímky míchají dohromady. Výchozí hodnota je "lerp" (lineární interpolace), ale můžete také použít "slerp" (sférická lineární interpolace) pro různé efekty.</li>
-        <li><strong>Přeskočení klipu:</strong> Přeskočte určité vrstvy pro jiný styl videa. Můžete přeskočit až 2 vrstvy, nebo to nechat prázdné pro výchozí chování.</li>
+        <li><strong>Negativní výzva:</strong> Popište, co *nechcete* ve videu. Pokud je ponecháno prázdné, AiCasso se zaměří pouze na pozitivní výzvu.</li>
+        <li><strong>Počet snímků:</strong> Vyberte, kolik snímků (jednotlivých obrázků) vaše video bude mít. Můžete zvolit až 25 snímků, přičemž 16 je výchozí.</li>
+        <li><strong>Kroky denoisingu:</strong> To ovlivňuje, jak hladké vaše video vypadá. Více kroků znamená čistší video. Můžete nastavit až 50 kroků, přičemž 20 je výchozí.</li>
+        <li><strong>Guidance Scale:</strong> To pomáhá videu držet se blízko vašeho popisu. Rozsah je od 1.0 do 8.0 a můžete upravit počáteční a koncové hodnoty, abyste nasměrovali, jak se video vyvíjí.</li>
+        <li><strong>Pohyb:</strong> Upravte, kolik pohybu je ve vašem videu. Vyšší hodnota znamená více akce. Rozsah je od 0 do 127, přičemž 60 je výchozí.</li>
+        <li><strong>Intenzita šumu:</strong> Přidejte do svého videa trochu šumu, abyste mu dodali texturovanější vzhled. Rozsah je od 0 do 1, přičemž 0 je výchozí.</li>
+        <li><strong>Snímky za sekundu (FPS):</strong> Nastavte, jak rychle se vaše video přehrává. Výchozí hodnota je 16 FPS, ale můžete jít až na 16 pro rychlejší přehrávání.</li>
+        <li><strong>Metoda interpolace:</strong> Vyberte, jak se snímky míchají dohromady. Výchozí je "lerp" (lineární interpolace), ale můžete také použít "slerp" (sférická lineární interpolace) pro různé efekty.</li>
+        <li><strong>Přeskočení klipu:</strong> Přeskočte určité vrstvy pro jiný styl videa. Můžete přeskočit až 2 vrstvy, nebo je nechat prázdné pro výchozí chování.</li>
     </ul>
 
     <p>Pamatujte, AiCasso je docela chytrý! Nemusíte mít každý detail dokonalý nebo používat správnou gramatiku. Stačí popsat, co chcete, a AiCasso udělá zbytek. Bavte se při vytváření svých videí!</p>

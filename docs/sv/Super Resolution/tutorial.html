@@ -31,9 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -48,13 +55,13 @@
     <div class="example">
         <strong>Inmatningsbild:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="Inmatningsbild" loading="lazy">
         </div>
         <strong>Prompt:</strong>
         <p>"Skala upp den 4 gånger, använd Ultra Sharp-modellen"</p>
         <strong>Resultat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="Resultatbild" loading="lazy">
         </div>
     </div>
 
@@ -62,17 +69,17 @@
     <p>Om du vill ha lite mer kontroll över hur din bild förbättras, här är några extra alternativ du kan leka med:</p>
 
     <ul>
-        <li><strong>Skala:</strong> Detta är hur mycket du vill förstora din bild. Du kan välja en skala från 1 till 4, där 4 är standard. I grund och botten betyder större siffror en större bild.</li>
+        <li><strong>Skala:</strong> Detta är hur mycket du vill förstora din bild. Du kan välja en skala från 1 till 4, där 4 är standard. Större siffror betyder helt enkelt en större bild.</li>
         <li><strong>Upscale-modell:</strong> Detta är som att välja ett filter för din bild, men det är mycket smartare. Här är alternativen:
             <ul>
-                <li><strong>Stora detaljförstärkning:</strong> Bäst för att zooma in på små detaljer.</li>
+                <li><strong>Stort detaljlyft:</strong> Bäst för att zooma in på små detaljer.</li>
                 <li><strong>Ultra Sharp:</strong> Gör bilden superklar och skarp.</li>
-                <li><strong>Anime-förbättring:</strong> Perfekt för anime-stil bilder, vilket gör dem skarpa och livfulla.</li>
-                <li><strong>Dubbel detalj:</strong> Fördubblar detaljerna utan att överdriva.</li>
-                <li><strong>Allmän förstärkning:</strong> Ett bra allroundalternativ för de flesta bilder.</li>
+                <li><strong>Anime Enhance:</strong> Perfekt för anime-stil bilder, vilket gör dem skarpa och livfulla.</li>
+                <li><strong>Dubbla detaljer:</strong> Dubblar detaljerna utan att överdriva.</li>
+                <li><strong>Allmän boost:</strong> Ett bra allroundalternativ för de flesta bilder.</li>
             </ul>
         </li>
-        <li><strong>Ansiktsförbättring:</strong> Om din bild har ett ansikte kan detta alternativ hjälpa till att få det att se ännu bättre ut. Slå bara på det om du vill att AiCasso ska fokusera på att förbättra ansiktsdrag.</li>
+        <li><strong>Ansiktsförbättring:</strong> Om din bild har ett ansikte kan detta alternativ hjälpa till att göra det ännu bättre. Slå bara på det om du vill att AiCasso ska fokusera på att förbättra ansiktsdrag.</li>
     </ul>
 
     <p>Kom ihåg, dessa alternativ är helt valfria! Du behöver inte pilla med dem om du inte vill. Beskriv bara vad du vill, så kommer AiCasso att lista ut det bästa sättet att få det att hända. Och oroa dig inte för att vara perfekt med dina ord—AiCasso förstår dig!</p>

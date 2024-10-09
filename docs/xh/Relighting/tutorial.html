@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umhlahlo Wokusebenzisa Umsebenzi Wokuphinda Ubonise</title>
+    <title>Umhlahlandlela Wokusebenzisa Umsebenzi Wokuphinda Ukukhanya</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,12 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
         }
         .iframe-container {
             display: flex;
@@ -47,37 +50,37 @@
 
 <body>
 
-    <h2>Umhlahlo Wokusebenzisa Umsebenzi Wokuphinda Ubonise</h2>
-    <p>Umsebenzi Wokuphinda Ubonise kwi-AiCasso ubukeka umhle kakhulu! Uvumela ukuba utshintshe ukukhanya kwiifoto zakho ngeemvakalelo ezimbalwa. Ufuna ilanga ngasemva okanye ukukhanya okuthambileyo ngasecaleni? Akukho ngxaki! Just chaza, kwaye i-AiCasso izakuphatha konke.</p>
+    <h2>Umhlahlandlela Wokusebenzisa Umsebenzi Wokuphinda Ukukhanya</h2>
+    <p>Umsebenzi Wokuphinda Ukukhanya kwi-AiCasso ubukeka umangalisayo! Uvumela ukuba utshintshe ukukhanya kwiifoto zakho ngeempendulo ezimbalwa. Ufuna ilanga ngasemva okanye ukukhanya okuthambileyo ukusuka ecaleni? Akukho ngxaki! Just chaza, kwaye i-AiCasso izakuphatha konke.</p>
 
     <h3>Ukwenza Kusebenza:</h3>
     
     <div class="example">
         <strong>Umfanekiso Wokufaka:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+            <img src="../../images/tutorials/relighting/input.jpg" alt="Umfanekiso Wokufaka" loading="lazy">
         </div>
-        <strong>Umphakamo Osetyenzisiweyo:</strong>
+        <strong>Imiyalelo Esetyenziswa:</strong>
         <p>"Yenza kube njalo ukuba ilanga likwi ndawo engasemva"</p>
         <strong>Umphumo:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+            <img src="../../images/tutorials/relighting/result.jpg" alt="Umphumo Wokuphinda Ukukhanya" loading="lazy">
         </div>
     </div>
 
     <h3>Uhlengahlengiso Olukhethwayo</h3>
-    <p>Ukuba uziva unomoya wokuphosa kwaye ufuna ukwenzela umphumo wakho wokuphinda ubonise, nantsi eminye imiba onokuyilungisa:</p>
+    <p>Ukuba uziva unomdla kwaye ufuna ukwenzela umphumo omhle, nantsi eminye imisebenzi onokuyilungisa:</p>
 
     <ul>
-        <li><strong>Umphakamo Ongalungelwanga:</strong> Ufuna ukugwema into ethile? Ungabhalela i-AiCasso ukuba <em>ungayifaki</em>. Kodwa ungakhathazeki, ukuba uyayishiya le ndawo ingenanto, i-AiCasso izakugxila kuphela kulokho ofuna.</li>
-        <li><strong>Umgca Wokukhanya:</strong> Ungachaza ukuba ukukhanya kufuneka kuvele phi—kwicala, ngasekunene, phezulu, phantsi, okanye kungabi khona. Ngokwenene, ukukhanya kuvela kwicala.</li>
-        <li><strong>Isikali Sokukhuthaza:</strong> Oku kusiza i-AiCasso ukuba igcine incazelo yakho. Isikali sihamba ukusuka ku-1 ukuya ku-20, kunye no-7 njengokwenene. Njengoko inani liphakamile, i-AiCasso igcina ngakumbi kumphakamo wakho.</li>
-        <li><strong>Isikali Esiphezulu Sezithombe:</strong> Ufuna ukuba umfanekiso wakho ubonakale? Oku kulawula ukucaca. Okwenene ngu-1.5, kodwa ungayilungisa ukusuka ku-1.0 ukuya ku-2.0 ukuze ufumane umfanekiso ocacileyo.</li>
-        <li><strong>Izinga Lokunciphisa Iingxaki:</strong> Kukho iizinga ezimbini—eziphantsi kunye neziphezulu. Lezi zilawula ukuba umfanekiso wokugqibela ubonakale njani. Ungayilungisa i-low-res denoise level phakathi kwe-0.0 kunye ne-1.0 (okwenene ngu-0.9) kunye ne-high-res phakathi kwe-0.0 kunye ne-1.0 (okwenene ngu-0.5).</li>
-        <li><strong>Inani Lezinyathelo:</strong> Le yindlela i-AiCasso ethatha ngayo ukujolisa umfanekiso wakho. Okwenene ngu-50, kodwa ungahamba ukusuka kwi-20 ukuya kwi-50 izinyathelo.</li>
+        <li><strong>Imiyalelo Engalunganga:</strong> Ufuna ukugwema into ethile? Ungatshela i-AiCasso ukuba <em>ungayifaki</em> ntoni. Kodwa ungakhathazeki, ukuba uyishiya ingenanto, i-AiCasso izakugxila kuphela kulokho ofuna.</li>
+        <li><strong>Umjikelo Wokukhanya:</strong> Ungachaza ukuba ukukhanya kufuneka kuvele phi—kwicala, kumacala, phezulu, phantsi, okanye kungabi khona. Ngokwemvelo, ukukhanya kuvela kwicala.</li>
+        <li><strong>Isikali Sokukhuthaza:</strong> Oku kusiza i-AiCasso ukuba igcine incazelo yakho. Isikali sihamba ukusuka ku-1 ukuya ku-20, kunye no-7 njengomgangatho. Njengoko inani liphakamile, i-AiCasso igcina incazelo yakho ngakumbi.</li>
+        <li><strong>Isikali Esiphezulu Sokucacisa:</strong> Ufuna umfanekiso wakho ubonakale? Oku kulawula ukucaciswa. Umgangatho ungama-1.5, kodwa ungawuseta ukusuka ku-1.0 ukuya ku-2.0 ukuze umfanekiso ubonakale ngcono.</li>
+        <li><strong>Izinga Lokunciphisa Umsindo:</strong> Kukho iinqanaba ezimbini—ukucaciswa okuphantsi kunye nokucaciswa okuphezulu. Lezi zilawula ukuba umfanekiso wokugqibela ubonakale njani. Ungaseta umgangatho ophantsi wokunciphisa umsindo phakathi kwe-0.0 kunye ne-1.0 (umgangatho ngu-0.9) kunye nokucaciswa okuphezulu phakathi kwe-0.0 kunye ne-1.0 (umgangatho ngu-0.5).</li>
+        <li><strong>Inani Lezinyathelo:</strong> Le yindlela i-AiCasso ethatha ngayo ukucoca umfanekiso wakho. Umgangatho ngu-50, kodwa ungahamba ukusuka kwi-20 ukuya kwi-50 ze.</li>
     </ul>
 
-    <p>Khumbula, lezi zihlengahlengiso zikhululekile ngokupheleleyo! I-AiCasso ikhululekile kakhulu ekuqondeni ukuba ufisa ntoni, ngoko ke chaza umbono wakho ngamagama akho, kwaye izakwenza um magic. Akukho mfuneko yokuba ube perfect ngolwimi okanye iinkcukacha—just ujabulele kwaye ubone ukuba ungayenza ntoni!</p>
+    <p>Khumbula, le misebenzi yokuhlela iyakhethwa ngokupheleleyo! I-AiCasso ikhululekile ekufumaneni ukuba ufune ntoni, ngoko ke chaza umbono wakho ngamagama akho, kwaye izakwenza um magic. Akukho mfuneko yokuba ube perfect ngolwimi okanye iinkcukacha—just ujabulele kwaye ubone ukuba ungayenza ntoni!</p>
 
 </body>
 </html>

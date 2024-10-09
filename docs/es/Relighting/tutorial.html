@@ -31,9 +31,12 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
         }
         .iframe-container {
             display: flex;
@@ -48,20 +51,20 @@
 <body>
 
     <h2>Guía para Usar la Función de Reiluminación</h2>
-    <p>¡La función de Reiluminación en AiCasso es súper genial! Te permite cambiar la iluminación en tus imágenes con solo unas pocas palabras. ¿Quieres el sol en la parte trasera o una luz suave desde el lado? ¡No hay problema! Solo descríbelo, y AiCasso se encargará del resto.</p>
+    <p>¡La función de reiluminación en AiCasso es increíble! Te permite cambiar la iluminación en tus imágenes con solo unas pocas palabras. ¿Quieres el sol al fondo o una luz suave desde un lado? ¡No hay problema! Solo descríbelo y AiCasso se encargará del resto.</p>
 
     <h3>Cómo Funciona:</h3>
     
     <div class="example">
         <strong>Imagen de Entrada:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+            <img src="../../images/tutorials/relighting/input.jpg" alt="Imagen de Entrada" loading="lazy">
         </div>
-        <strong>Instrucción Usada:</strong>
-        <p>"Haz que el sol esté en la parte trasera"</p>
+        <strong>Prompt Usado:</strong>
+        <p>"Haz que el sol esté al fondo"</p>
         <strong>Resultado:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+            <img src="../../images/tutorials/relighting/result.jpg" alt="Resultado de Reiluminación" loading="lazy">
         </div>
     </div>
 
@@ -69,15 +72,15 @@
     <p>Si te sientes aventurero y quieres añadir un poco más de estilo a tu reiluminación, aquí hay algunas cosas que puedes ajustar:</p>
 
     <ul>
-        <li><strong>Instrucción Negativa:</strong> ¿Quieres evitar algo? Puedes decirle a AiCasso qué <em>no</em> incluir. Pero no te preocupes, si dejas esto en blanco, AiCasso se centrará solo en lo que quieres.</li>
-        <li><strong>Dirección de la Luz:</strong> Puedes especificar de dónde debe venir la luz: izquierda, derecha, arriba, abajo, o incluso ninguna. Por defecto, la luz viene de la izquierda.</li>
-        <li><strong>Escala de Guía:</strong> Esto ayuda a AiCasso a seguir tu descripción. La escala va de 1 a 20, siendo 7 el valor predeterminado. Cuanto mayor sea el número, más se apega AiCasso a tu instrucción.</li>
-        <li><strong>Escala de Alta Resolución:</strong> ¿Quieres que tu imagen resalte? Esto controla la claridad. El valor predeterminado es 1.5, pero puedes establecerlo de 1.0 a 2.0 para una imagen más nítida.</li>
-        <li><strong>Niveles de Reducción de Ruido:</strong> Hay dos niveles: baja resolución y alta resolución. Estos controlan qué tan suave o detallada se ve la imagen final. Puedes establecer el nivel de reducción de ruido de baja resolución entre 0.0 y 1.0 (el valor predeterminado es 0.9) y el de alta resolución entre 0.0 y 1.0 (el valor predeterminado es 0.5).</li>
-        <li><strong>Número de Pasos:</strong> Esto es cuántos pasos toma AiCasso para pulir tu imagen. El valor predeterminado es 50, pero puedes ir de 20 a 50 pasos.</li>
+        <li><strong>Prompt Negativo:</strong> ¿Quieres evitar algo? Puedes decirle a AiCasso qué <em>no</em> incluir. Pero no te preocupes, si dejas esto en blanco, AiCasso solo se centrará en lo que sí quieres.</li>
+        <li><strong>Dirección de la Luz:</strong> Puedes especificar de dónde debería venir la luz: izquierda, derecha, arriba, abajo, o incluso ninguna. Por defecto, la luz viene de la izquierda.</li>
+        <li><strong>Escala de Guía:</strong> Esto ayuda a AiCasso a ceñirse a tu descripción. La escala va de 1 a 20, siendo 7 el valor por defecto. Cuanto mayor sea el número, más se apega AiCasso a tu prompt.</li>
+        <li><strong>Escala de Alta Resolución:</strong> ¿Quieres que tu imagen resalte? Esto controla la claridad. El valor por defecto es 1.5, pero puedes configurarlo entre 1.0 y 2.0 para una imagen más nítida.</li>
+        <li><strong>Niveles de Reducción de Ruido:</strong> Hay dos niveles: baja resolución y alta resolución. Estos controlan cuán suave o detallada se ve la imagen final. Puedes establecer el nivel de reducción de ruido de baja resolución entre 0.0 y 1.0 (el valor por defecto es 0.9) y el de alta resolución entre 0.0 y 1.0 (el valor por defecto es 0.5).</li>
+        <li><strong>Número de Pasos:</strong> Este es el número de pasos que AiCasso toma para pulir tu imagen. El valor por defecto es 50, pero puedes elegir entre 20 y 50 pasos.</li>
     </ul>
 
-    <p>Recuerda, estos ajustes son totalmente opcionales. ¡AiCasso es bastante bueno para averiguar lo que quieres, así que solo describe tu visión con tus propias palabras y hará la magia. No necesitas ser perfecto con la gramática o los detalles, solo diviértete y ve lo que puedes crear!</p>
+    <p>Recuerda, ¡estos ajustes son totalmente opcionales! AiCasso es bastante bueno para averiguar lo que quieres, así que solo describe tu visión con tus propias palabras y hará la magia. No es necesario ser perfecto con la gramática o los detalles, ¡solo diviértete y ve lo que puedes crear!</p>
 
 </body>
 </html>

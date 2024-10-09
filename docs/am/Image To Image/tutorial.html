@@ -3,97 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>የምስል ወደ ምስል ባለቤት መመሪያ</title>
+    <title>ምስል ወደ ምስል ባህሪ መመሪያ</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+             body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Ensures the image doesn't overflow the container */
+    height: auto;     /* Keeps the aspect ratio */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
-    <h2>የምስል ወደ ምስል ባለቤት መመሪያ</h2>
-    <p>በAiCasso ውስጥ የምስል ወደ ምስል ባለቤት ባለቤት እንደ ወይዘር የምስል ወደ ምስል ይህ የምስል ወደ ምስል ባለቤት ነው። ይህ የምስል ወደ ምስል ባለቤት ነው።</p>
+    <h2>ምስል ወደ ምስል ባህሪን ለመጠቀም መመሪያ</h2>
+    <p>በ AiCasso ውስጥ ያለው ምስል ወደ ምስል ባህሪ የእርስዎን ምስል በገላት አማካይ መቀየር የሚያስችል ውቅር ነው። እንደማይቀየር ሰንደቅ ማስተካከል ቢኖርም እርስዎ በግምት መገለጸ እንዲሁም እንደተመረቆች እንዲሁ መጠቀም ይችላሉ።</p>
 
-    <h3>እንዴት ይሰራል:</h3>
+    <h3>እንዴት እንደሚሰራ ባህሪ:</h3>
     
-    <div class="example">
-        <strong>የገባ ምስል:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/14N7B-yT-d7Z4HGSlogD859D-JitVcq2_/preview"></iframe>
-        </div>
-        <strong>አስተያየት 1:</strong>
-        <p>"አንድ ውድ ውሻ፣ የአንድ ክፍል ኃይል ይጠቀሙ"</p>
-        <strong>ውጤት 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1g8GQ6cHuB2ntmBwafGgPWiJ3VHU2r7S5/preview"></iframe>
-        </div>
-        <strong>አስተያየት 2:</strong>
-        <p>"አንድ ውድ 3D CGI የድመቅ ውስጥ የታላቅ ዓይኖች ይጠቀሙ፣ 90% ኃይል ይጠቀሙ፣ እና 3D ካርቱን ቅርጸ ተንቀሳቃሽ ይጠቀሙ"</p>
-        <strong>ውጤት 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IeR0SRrPwZi6nfAF9-1SdM6mj4EtyyfM/preview"></iframe>
-        </div>
-        <strong>አስተያየት 3:</strong>
-        <p>"አንድ ጥቁር ድመቅ፣ ወደ እውነታ ይወስዱ"</p>
-        <strong>ውጤት 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1Ocmsoi89Pn5Un_iNg349FMdQZRQaCUBr/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>ግቤት ምስል:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/input.jpg" style="max-width: 100%; height: auto;" alt="ግቤት ምስል">
     </div>
+    <strong>መጠይቅ 1:</strong>
+    <p>"አንድ ቆንጆ ውሻ፣ በኃይሉ እኩሌታን ጠቀም"</p>
+    <strong>ውጤት 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/cutedog.jpg" style="max-width: 100%; height: auto;" alt="ውጤት 1">
+    </div>
+    <strong>መጠይቅ 2:</strong>
+    <p>"አንድ ቆንጆ 3D የCGI ውሻ ከታላቅ ዓይኖች፣ ከ90% ኃይል ጠቀም፣ እና የ3D ካርቶን ቅጥ ጠቀም"</p>
+    <strong>ውጤት 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/3dcgicat.jpg" style="max-width: 100%; height: auto;" alt="ውጤት 2">
+    </div>
+    <strong>መጠይቅ 3:</strong>
+    <p>"አንድ ጥቁር ድመት፣ እውነተኛ አርገው"</p>
+    <strong>ውጤት 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/blackcat.jpg" style="max-width: 100%; height: auto;" alt="ውጤት 3">
+    </div>
+</div>
 
-    <h3>አማራጭ ዝርዝሮች</h3>
-    <p>የምስል ማሻሻያ ላይ የሚያወድሱ የእርስዎን የተለየ እንደ ማሻሻያ ይቀበሉ። ነገር ግን እንደ ወይዘር የምስል ወደ ምስል ባለቤት ይህ የምስል ወደ ምስል ባለቤት ነው።</p>
+    <h3>ቅድሚያ አማራጮች</h3>
+    <p>እርስዎ የራስዎን ልዩ ቅጥ በምስል ማስተካከል ላይ ላደርጉ፣ ይህን አማራጮች ማግኘት ትችላሉ፣ እና ቢንቀሳቅሱም አንዳንድ ባህሮችን የምታገኙ ነው።</p>
 
     <ul>
-        <li><strong>አስተያየት አለመድረስ:</strong> የእርስዎን የምስል ወደ ምስል ይህ የምስል ወደ ምስል ባለቤት ነው። ነገር ግን እንደ ወይዘር የምስል ወደ ምስል ባለቤት ይህ የምስል ወደ ምስል ባለቤት ነው።</li>
-        <li><strong>ኃይል:</strong> ይህ የምስል ወደ ምስል ባለቤት ነው። ወደ 0.1 እስከ 1.0 ይሄዳል። በታች የምስል ወደ ምስል ይህ የምስል ወደ ምስል ባለቤት ነው። የተመለከተው 0.5 ነው።</li>
-        <li><strong>የእንደ ምስል ማሻሻያ:</strong> የምስል ወደ ምስል ይህ የምስል ወደ ምስል ባለቤት ነው። ወደ 0.1 እስከ 1.0 ይሄዳል።</li>
+        <li><strong>አለኝ መጠይቅ:</strong> እርስዎ በአዲሱ ምስል አማካይ ማልዶ ከሚቀርበው የአማረግ ነገር እንዲሆን ሊከታተሉ ይችላሉ። የተዋጋኸው ከላይኛ ልዩነት ወይም የማናቸውን ቅርጥ ለማማንቅ ትካሄ ምንም ማህበረት አልወጣበትም።</li>
+        <li><strong>ኃይል:</strong> ይህ የእንቅስቃሴ እንቅስቃሴ አንደነት አስተዋውቅ ማቀነባበር ትችላላችሁ።</li>
+        <li><strong>ቅጥ:</strong> ለምስልዎ ልዩ ልምድ ለመስጠት የትዳር ቅጥን ይገድሉ። እርስዎ እንደሚገላጭው እርስዎም እንዲሁ ይችላሉ።</li>
     </ul>
 
-    <p>እና እባኮትን ይህ የምስል ወደ ምስል ባለቤት ነው። ወደ 0.1 እስከ 1.0 ይሄዳል። ወደ 0.1 እስከ 1.0 ይሄዳል።</p>
-<h3>የምስል ማሻሻያዎች</h3>
-<p>የምስል ወደ ምስል ይህ የምስል ወደ ምስል ባለቤት ነው። ወደ 0.1 እስከ 1.0 ይሄዳል። ወደ 0.1 እስከ 1.0 ይሄዳል።</p>
+    <p>እና አያል። እርስዎ ምንም እንዳይሞክሩ፣ ምን ትፈልጋላችሁ ብትግለጹ የ AiCasso የሚቀጥለውን ማስታወቂያውን ታደርጋላችሁ። አስተካካኝን በደስታ ይጠቀሙ።</p>
+<h3>ቅጥ ልምዶች</h3>
+<p>የምርጫዎን ቅጥ ልምድ መምረጥ ችግር ይሆናል? ሁኔታ ይህ ሲሆን ቅጥ ትተኛል። እንኳን ትምህርት በማድረግ ማስታወቂያዎን እንዳያደርጉት ትችላሉ።</p>
 
     <ul>
-        <li><strong>የተመለከተው:</strong> የምስል ወደ ምስል ይህ የምስል ወደ ምስል ባለቤት ነው። ወደ 0.1 እስከ 1.0 ይሄዳል።</li>
-        <li><strong>የምስል ወደ ምስል ይህ የምስል ወደ ምስል ባለቤት ነው። ወደ 0.1 እስከ 1.0 ይሄዳል።</li>
-        <li><strong>የምስል ወደ ምስል ይህ የምስል ወደ ምስል ባለቤት ነው። ወደ 0.1 እስከ 1.0 ይሄዳል።</li>
+        <li><strong>መልስ:</strong> አስተዋውቅን ከማንኛውም አምንታ ጠቅላላ ቅጥን ያላደረጉ።</li>
+        <li><strong>ኃይል:</strong> ቅጥ ብንቀርብ አስተውዬትን ማምለክን ትችላለሁ።</li>
     </ul>
 </body>
 </html>

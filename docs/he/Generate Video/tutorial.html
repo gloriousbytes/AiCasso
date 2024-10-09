@@ -31,16 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img {
+            width: 100%;
+            max-width: 400px;
             height: auto;
         }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        @media (max-width: 768px) {
+            .result img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -54,19 +54,21 @@
     
     <div class="example">
         <strong>הנחיה:</strong>
-        <p>"תרנגול אנימציה תלת מימדית בשדה לבד, אוכל ומאושר. הפוך את זה לסרטון פורטרט עם 50 שלבי דנואיזינג."</p>
+        <p>"תרנגול אנימציה תלת-ממדית בשדה לבד, אוכל ושמח. הפוך את זה לסרטון פורטרט עם 50 שלבי דנואיזינג."</p>
         <strong>תוצאה:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/animated3d.gif" alt="תרנגול אנימציה תלת-ממדית">
+            <noscript><img src="../../images/tutorials/texttovideo/animated3d.gif" alt="תרנגול אנימציה תלת-ממדית"></noscript>
         </div>
     </div>
 
     <div class="example">
         <strong>הנחיה:</strong>
-        <p>"קריקטורה של תרנגול בשדה במידות נוף."</p>
+        <p>"קריקטורה של תרנגול בשדה בממדי נוף."</p>
         <strong>תוצאה:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/cartoon.gif" alt="תרנגול קריקטורה">
+            <noscript><img src="../../images/tutorials/texttovideo/cartoon.gif" alt="תרנגול קריקטורה"></noscript>
         </div>
     </div>
 
@@ -75,7 +77,8 @@
         <p>"תרנגול בשדה."</p>
         <strong>תוצאה:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/default.gif" alt="תרנגול ברירת מחדל">
+            <noscript><img src="../../images/tutorials/texttovideo/default.gif" alt="תרנגול ברירת מחדל"></noscript>
         </div>
     </div>
 
@@ -84,36 +87,37 @@
         <p>"תרנגול שנמצא בשדה לבד. תן לו תחושה טבעית."</p>
         <strong>תוצאה:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/natural.gif" alt="תרנגול טבעי">
+            <noscript><img src="../../images/tutorials/texttovideo/natural.gif" alt="תרנגול טבעי"></noscript>
         </div>
     </div>
 
     <h3>אפשרויות נוספות</h3>
-    <p>רוצה לכוונן את הסרטון שלך? הנה כמה הגדרות שאתה יכול לשחק איתן:</p>
+    <p>רוצה לדייק את הסרטון שלך? הנה כמה הגדרות שאתה יכול לשחק איתן:</p>
 
     <ul>
         <li><strong>מספר פריימים:</strong> בחר כמה פריימים (תמונות בודדות) יהיו בסרטון שלך. אתה יכול להגיע עד 25 פריימים, עם 16 כברירת מחדל.</li>
-        <li><strong>מספר שלבי דנואיזינג:</strong> זה שולט כמה חלק הסרטון שלך ייראה. יותר שלבים משמעותם סרטונים חלקים יותר. אתה יכול לקבוע עד 50 שלבים, עם 20 כברירת מחדל.</li>
-        <li><strong>סקאלת הנחיה:</strong> זה עוזר לסרטון להיצמד לתיאור שלך. ככל שהמספר גבוה יותר, כך הוא עוקב יותר אחרי ההנחיה שלך. הטווח הוא 0 עד 8, כאשר 8 היא ברירת המחדל.</li>
+        <li><strong>מספר שלבי דנואיזינג:</strong> זה קובע כמה חלק הסרטון שלך ייראה. יותר שלבים פירושם סרטונים חלקים יותר. אתה יכול לקבוע עד 50 שלבים, עם 20 כברירת מחדל.</li>
+        <li><strong>קנה מידה של הנחיה:</strong> זה עוזר לסרטון להיצמד לתיאור שלך. ככל שהמספר גבוה יותר, כך הוא עוקב יותר אחרי ההנחיה שלך. הטווח הוא 0 עד 8, כאשר 8 היא ברירת המחדל.</li>
         <li><strong>דלג על שכבות:</strong> דלג על שכבות מסוימות לסגנון סרטון שונה. כברירת מחדל, אין שכבות מדלגות, אבל אתה יכול לדלג על עד 2.</li>
-        <li><strong>רוחב וגובה מוגדלים:</strong> אתה יכול להגדיל את הסרטון שלך על ידי התאמת הרזולוציה. ברירת המחדל היא 1024x1024 פיקסלים, אבל אתה יכול להתאים את זה לפי הצורך שלך.</li>
+        <li><strong>רוחב וגובה מוגדלים:</strong> אתה יכול להגדיל את הסרטון שלך על ידי התאמת הרזולוציה. ברירת המחדל היא 1024x1024 פיקסלים, אבל אתה יכול לשנות את זה לפי הצורך שלך.</li>
         <li><strong>עוצמת הגדלה:</strong> זה משנה כמה הסרטון שלך מתכוונן כאשר הוא מוגדל. ברירת המחדל היא 1, אבל אתה יכול להתאים את זה כדי לראות יותר הבדלים.</li>
-        <li><strong>סקאלת הנחיה להגדלה:</strong> זה מנחה את תהליך ההגדלה, עם טווח של 0 עד 8, וברירת מחדל של 8.</li>
-        <li><strong>שלבי אינפרנציה להגדלה:</strong> מספר השלבים שננקטים כדי להגדיל את הסרטון. יותר שלבים מביאים להגדלה חלקה יותר, עם מקסימום של 50 וברירת מחדל של 20.</li>
+        <li><strong>קנה מידה של הנחיה להגדלה:</strong> זה מדריך את תהליך ההגדלה, עם טווח של 0 עד 8, וברירת מחדל של 8.</li>
+        <li><strong>שלבי אינפרנציה להגדלה:</strong> מספר השלבים שננקטים כדי להגדיל את הסרטון. יותר שלבים גורמים להגדלה חלקה יותר, עם מקסימום של 50 וברירת מחדל של 20.</li>
         <li><strong>דגימה משופרת:</strong> רוצה סרטון מעודן יותר? הפעל את זה. זה כבוי כברירת מחדל.</li>
-        <li><strong>זרע דגימה משופרת:</strong> השתמש בזה כדי ליצור את אותו סרטון בכל פעם עם דגימה משופרת. זה אופציונלי וכבוי כברירת מחדל.</li>
+        <li><strong>זרע דגימה משופרת:</strong> השתמש בזה כדי ליצור את אותו הסרטון בכל פעם עם דגימה משופרת. זה אופציונלי וכבוי כברירת מחדל.</li>
         <li><strong>פריימים לשנייה (FPS):</strong> קבע את מהירות הסרטון שלך. ברירת המחדל היא 16 FPS, אבל אתה יכול להתאים את זה עד 16.</li>
         <li><strong>מודל וידאו:</strong> בחר את הסגנון של הסרטון שלך. אפשרויות כוללות:
             <ul>
                 <li><strong>ברירת מחדל:</strong> מודל וידאו סטנדרטי.</li>
                 <li><strong>קריקטורה:</strong> סגנון וידאו קריקטורי.</li>
-                <li><strong>טבעי:</strong> סגנון וידאו מציאותי ומראה טבעי.</li>
-                <li><strong>אנימציה תלת מימדית:</strong> סגנון וידאו אנימציה תלת מימדית.</li>
+                <li><strong>טבעי:</strong> סגנון וידאו מציאותי וטבעי.</li>
+                <li><strong>אנימציה תלת-ממדית:</strong> סגנון וידאו אנימציה תלת-ממדית.</li>
             </ul>
         </li>
     </ul>
 
-    <p>זכור, ההגדרות הללו אופציונליות. תכונת יצירת הווידאו פועלת מצוין עם תיאור פשוט, אז אל תהסס לנסות ולראות מה אתה יכול ליצור!</p>
+    <p>זכור, ההגדרות הללו אופציונליות. תכונת יצירת הווידאו עובדת מצוין עם תיאור פשוט, אז אל תהסס להתנסות ולראות מה אתה יכול ליצור!</p>
 
 </body>
 </html>

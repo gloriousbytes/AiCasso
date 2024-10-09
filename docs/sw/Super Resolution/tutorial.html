@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mwongozo wa Kipengele cha Azimio Kuu</title>
+    <title>Mwongozo wa Kipengele cha Super Resolution</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,51 +31,58 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h2>Mwongozo wa Kutumia Kipengele cha Azimio Kuu</h2>
-    <p>Kipengele cha Azimio Kuu katika AiCasso kinahusu kuboresha picha zako zaidi. Unachohitaji ni kueleza jinsi unavyotaka kuboresha picha yako, na AiCasso itashughulikia mengine. Iwe unataka kuimarisha maelezo au kuboresha picha nzima, ni rahisi sana kutumia.</p>
+    <h2>Mwongozo wa Kutumia Kipengele cha Super Resolution</h2>
+    <p>Kipengele cha Super Resolution katika AiCasso kinahusiana na kufanya picha zako ziwe bora zaidi. Unachohitaji ni kusema jinsi unavyotaka kuboresha picha yako, na AiCasso itashughulikia mengine. Iwe unachora maelezo au kutoa picha nzima nguvu, ni rahisi sana kutumia.</p>
 
     <h3>Jinsi Inavyofanya Kazi:</h3>
     
     <div class="example">
         <strong>Picha ya Kuingiza:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="Picha ya Kuingiza" loading="lazy">
         </div>
-        <strong>Maelekezo:</strong>
-        <p>"Iboreshe mara 4, tumia modeli ya Ultra Sharp"</p>
+        <strong>Maagizo:</strong>
+        <p>"Pandisha ukubwa mara 4, tumia mfano wa Ultra Sharp"</p>
         <strong>Matokeo:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="Picha ya Matokeo" loading="lazy">
         </div>
     </div>
 
     <h3>Vigezo vya Hiari</h3>
-    <p>Kama unataka kuongeza udhibiti zaidi juu ya jinsi picha yako inavyoboreshwa, hapa kuna chaguo za ziada unazoweza kucheza nazo:</p>
+    <p>Kama unataka kuongeza kidogo udhibiti juu ya jinsi picha yako inavyoboreshwa, hapa kuna chaguzi za ziada unazoweza kucheza nazo:</p>
 
     <ul>
-        <li><strong>Skeli:</strong> Hii ni jinsi unavyotaka kupanua picha yako. Unaweza kuchagua skeli kutoka 1 hadi 4, na 4 ikiwa chaguo la msingi. Kimsingi, namba kubwa zinamaanisha picha kubwa.</li>
-        <li><strong>Modeli ya Kuboresha:</strong> Hii ni kama kuchagua kichujio kwa picha yako, lakini ni bora zaidi. Hapa kuna chaguo:
+        <li><strong>Kuongeza Ukubwa:</strong> Hii ni jinsi unavyotaka kupanua picha yako. Unaweza kuchagua kiwango kutoka 1 hadi 4, ambapo 4 ni chaguo la msingi. Kimsingi, nambari kubwa zinamaanisha picha kubwa.</li>
+        <li><strong>Mfano wa Kuongeza Ukubwa:</strong> Hii ni kama kuchagua kichujio kwa picha yako, lakini ni ya akili zaidi. Hapa kuna chaguzi:
             <ul>
-                <li><strong>Kuongeza Maelezo Makubwa:</strong> Bora kwa kukuza maelezo madogo.</li>
+                <li><strong>Kuongeza Maelezo Makubwa:</strong> Bora kwa kuangazia maelezo madogo.</li>
                 <li><strong>Ultra Sharp:</strong> Inafanya picha kuwa wazi na safi sana.</li>
-                <li><strong>Kuboresha Anime:</strong> Inafaa kwa picha za mtindo wa anime, kuzifanya ziwe wazi na angavu.</li>
-                <li><strong>Maelezo Mara Mbili:</strong> Inadumisha maelezo bila kuzidisha.</li>
+                <li><strong>Kuongeza Anime:</strong> Bora kwa picha za mtindo wa anime, zinazoifanya kuonekana wazi na yenye rangi.</li>
+                <li><strong>Maelezo Mara Mbili:</strong> Inafanya maelezo kuwa mara mbili bila kupita kiasi.</li>
                 <li><strong>Kuongeza Kawaida:</strong> Chaguo nzuri kwa picha nyingi.</li>
             </ul>
         </li>
-        <li><strong>Kuboresha Uso:</strong> Kama picha yako ina uso, chaguo hili linaweza kusaidia kuifanya ionekane bora zaidi. Weka tu ikiwa unataka AiCasso ilenge kuboresha vipengele vya uso.</li>
+        <li><strong>Kuongeza Uso:</strong> Ikiwa picha yako ina uso, chaguo hili linaweza kusaidia kuifanya ionekane bora zaidi. Geuza tu kuwa wazi ikiwa unataka AiCasso kuzingatia kuboresha sifa za uso.</li>
     </ul>
 
-    <p>Kumbuka, chaguo hizi ni za hiari kabisa! Huna haja ya kuzitumia ikiwa hutaki. Eleza tu unachotaka, na AiCasso itajua njia bora ya kufanya hivyo. Na usijali kuhusu kuwa sahihi na maneno yako—AiCasso inakuelewa!</p>
+    <p>Kumbuka, chaguzi hizi ni za hiari kabisa! Huna haja ya kuzishughulikia ikiwa hutaki. Eleza tu unachotaka, na AiCasso itapata njia bora ya kufanya iweze kutokea. Na usijali kuhusu kuwa kamilifu katika maneno yako—AiCasso inakuelewa!</p>
 
 </body>
 </html>

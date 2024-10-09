@@ -31,9 +31,9 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
-            height: auto;
+        .result img {
+            max-width: 100%;  /* Biztosítja, hogy a kép ne lépje túl a tartályt */
+            height: auto;     /* Megőrzi az arányokat */
         }
         .iframe-container {
             display: flex;
@@ -48,224 +48,224 @@
 <body>
 
     <h2>A Kép a Képhez Funkció Használati Útmutatója</h2>
-    <p>A Kép a Képhez funkció az AiCasso-ban egy nagyszerű módja annak, hogy egy már meglévő képet újraalkossunk. Olyan, mintha egy átalakítást adnánk a képednek a saját leírásod alapján!</p>
+    <p>A Kép a Képhez funkció az AiCasso-ban egy nagyszerű módja annak, hogy egy már meglévő képet újraalkossunk. Olyan, mintha a képednek egy átalakítást adnál a saját leírásod alapján!</p>
 
     <h3>Hogyan Működik:</h3>
     
-    <div class="example">
-        <strong>Bemeneti Kép:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/14N7B-yT-d7Z4HGSlogD859D-JitVcq2_/preview"></iframe>
-        </div>
-        <strong>Prompt 1:</strong>
-        <p>"Egy aranyos kutya, használd a teljesítmény felét"</p>
-        <strong>Eredmény 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1g8GQ6cHuB2ntmBwafGgPWiJ3VHU2r7S5/preview"></iframe>
-        </div>
-        <strong>Prompt 2:</strong>
-        <p>"Egy aranyos 3D CGI macska nagy szemekkel, használd a 90%-os teljesítményt, és használd a 3D mese stílust"</p>
-        <strong>Eredmény 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IeR0SRrPwZi6nfAF9-1SdM6mj4EtyyfM/preview"></iframe>
-        </div>
-        <strong>Prompt 3:</strong>
-        <p>"Egy fekete macska, tedd élethűvé"</p>
-        <strong>Eredmény 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1Ocmsoi89Pn5Un_iNg349FMdQZRQaCUBr/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Bemeneti Kép:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/input.jpg" style="max-width: 100%; height: auto;" alt="Bemeneti Kép">
     </div>
+    <strong>Prompt 1:</strong>
+    <p>"Egy aranyos kutya, használd a teljesítmény felét"</p>
+    <strong>Eredmény 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/cutedog.jpg" style="max-width: 100%; height: auto;" alt="Eredmény 1">
+    </div>
+    <strong>Prompt 2:</strong>
+    <p>"Egy aranyos 3D CGI macska nagy szemekkel, használd a 90%-os teljesítményt, és használd a 3D mese stílust"</p>
+    <strong>Eredmény 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/3dcgicat.jpg" style="max-width: 100%; height: auto;" alt="Eredmény 2">
+    </div>
+    <strong>Prompt 3:</strong>
+    <p>"Egy fekete macska, tedd élethűvé"</p>
+    <strong>Eredmény 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/blackcat.jpg" style="max-width: 100%; height: auto;" alt="Eredmény 3">
+    </div>
+</div>
 
     <h3>Opcionális Paraméterek</h3>
-    <p>Ha saját csavart szeretnél adni a kép átalakításához, itt van néhány opcionális beállítás, amivel játszhatsz. De ne aggódj—ha csak leírni szeretnéd, amit szeretnél, az AiCasso elvégzi a munkát anélkül, hogy szükséged lenne ezekre a kiegészítőkre!</p>
+    <p>Ha szeretnél egy kis csavart adni a kép átalakításának, itt van néhány opcionális beállítás, amivel játszhatsz. De ne aggódj—ha csak azt szeretnéd leírni, amit akarsz, az AiCasso elvégzi a munkát ezek a kiegészítők nélkül is!</p>
 
     <ul>
         <li><strong>Negatív Prompt:</strong> Ha van valami konkrét, amit <em>nem</em> szeretnél az új képedben, itt említheted. De ha üresen hagyod, az is rendben van!</li>
-        <li><strong>Teljesítmény:</strong> Ez szabályozza, hogy mennyire használjuk az eredeti képet. 0.1-től 1.0-ig terjedhet. Minél alacsonyabb a szám, annál inkább megőrzi a képed az eredeti megjelenését. Az alapértelmezett 0.5, ami egy szép egyensúlyt jelent.</li>
-        <li><strong>Stílus Fokozása:</strong> Szeretnéd, ha a képednek lenne egy specifikus hangulata? Válassz egy stílust, mint például képregény, chibi, 3D, anime vagy élethű. Az alapértelmezett élethű, de bátran kísérletezz!</li>
+        <li><strong>Teljesítmény:</strong> Ez szabályozza, hogy mennyire használja az eredeti képet. 0.1-től 1.0-ig terjedhet. Minél alacsonyabb a szám, annál inkább megőrzi a kép az eredeti megjelenését. Az alapértelmezett 0.5, ami egy szép egyensúlyt teremt.</li>
+        <li><strong>Stílus Fokozása:</strong> Szeretnél egy konkrét hangulatot adni a képednek? Válassz egy stílust, mint például képregény, chibi, 3D, anime vagy élethű. Az alapértelmezett az élethű, de bátran kísérletezz!</li>
     </ul>
 
-    <p>És ne feledd, nem kell aggódnod, hogy mindent tökéletesen csinálsz. Csak írd le, mit szeretnél a saját szavaiddal, és az AiCasso elvégzi a többit. Jó szórakozást a kreatívkodáshoz!</p>
+    <p>És ne feledd, nem kell aggódnod, hogy mindent tökéletesen csinálsz. Csak írd le, amit szeretnél a saját szavaiddal, és az AiCasso elvégzi a többit. Jó szórakozást a létrehozáshoz!</p>
 <h3>Stílusok Fokozása</h3>
 <p>Nem tudod, melyik stílust válaszd? Ne aggódj! Csak említs meg bármilyen stílust, ami eszedbe jut, még ha nem is grammatikailag helyes, az AiCasso kitalálja az elérhető Stílusok Fokozása listájából.</p>
 
     <ul>
-        <li><strong>Alapértelmezett:</strong> Egy kiegyensúlyozott és semleges stílus, amelynek nincs specifikus művészi hatása.</li>
+        <li><strong>Alapértelmezett:</strong> Egy kiegyensúlyozott és semleges stílus, amely nem tartalmaz konkrét művészi hatást.</li>
         <li><strong>Fokozás:</strong> Enyhén javítja a részleteket és az általános esztétikát.</li>
-        <li><strong>Cinematikus Diva:</strong> Drámai, filmes hatást ad erős fénykontrasztokkal.</li>
+        <li><strong>Filmsztár:</strong> Drámai, filmszerű hatást ad erős fénykontrasztokkal.</li>
         <li><strong>Absztrakt Expresszionizmus:</strong> Az absztrakt formákra és élénk színfoltokra helyezi a hangsúlyt.</li>
         <li><strong>Akadémia:</strong> Tudományos és klasszikus érintést ad a képnek.</li>
-        <li><strong>Akciófigura:</strong> Olyan képeket generál, amelyek az akciófigurák eltúlzott és dinamikus stílusával rendelkeznek.</li>
+        <li><strong>Akciófigura:</strong> Olyan képeket generál, amelyek az akciófigurák eltúlzott és dinamikus stílusát követik.</li>
         <li><strong>Aranyos 3D Karakter:</strong> Aranyos, mesebeli 3D karaktereket hoz létre.</li>
         <li><strong>Aranyos Kawaii:</strong> Hangsúlyozza a Kawaii kultúrára jellemző aranyos és bájos stílust.</li>
         <li><strong>Művészeti Deco:</strong> Az Art Deco időszak geometrikus és dekoratív stílusát használja.</li>
-        <li><strong>Művészeti Új:</strong> Áramló vonalakat és természet inspirálta elemeket ad hozzá, amelyek a Művészeti Újra jellemzőek.</li>
+        <li><strong>Művészeti Új Stílus:</strong> Áramló vonalakat és természet inspirálta elemeket ad hozzá, amelyek a Művészeti Új Stílusra jellemzőek.</li>
         <li><strong>Astrális Aura:</strong> Misztikus és másvilági légkört teremt.</li>
         <li><strong>Avantgárd:</strong> Innovatív és kísérleti művészi kifejezésekre összpontosít.</li>
         <li><strong>Barokk:</strong> A barokk korszak drámai, részletes és kidolgozott stílusát használja.</li>
         <li><strong>Bauhaus Stílusú Poszter:</strong> A Bauhaus minimalista és funkcionális tervezési elveit tükrözi.</li>
-        <li><strong>Kéknyomtatás Sémás Rajz:</strong> Olyan képeket készít, amelyek technikai kéknyomtatásokra hasonlítanak.</li>
+        <li><strong>Kéknyomás Sémás Rajz:</strong> Olyan képeket készít, amelyek hasonlítanak a műszaki kéknyomatokhoz.</li>
         <li><strong>Karikatur:</strong> Eltúlzott, mesebeli portrékat generál.</li>
-        <li><strong>Cel-Shaded Művészet:</strong> A cel-shaded animációkra jellemző lapos, élénk színeket használ.</li>
+        <li><strong>Cellás Árnyékolás:</strong> A cellás animációkra jellemző lapos, élénk színeket használ.</li>
         <li><strong>Karaktertervezési Lap:</strong> Tiszta és világos karaktertervekre összpontosít, amelyek alkalmasak animációra.</li>
         <li><strong>Klasszicizmus Művészet:</strong> A klasszikus antikvitás finom és idealizált művészeti stílusát utánozza.</li>
-        <li><strong>Színmező Festészet:</strong> Nagy, egyszínű területeket használ, hogy sík színmezőt hozzon létre.</li>
+        <li><strong>Színmező Festészet:</strong> Nagy, egyszínű területeket tartalmaz, hogy sík színfelületet hozzon létre.</li>
         <li><strong>Színes Ceruza Művészet:</strong> Utánozza a színes ceruzarajzok textúráját és megjelenését.</li>
         <li><strong>Konceptuális Művészet:</strong> Az esztétikai vagy anyagi szempontok helyett az ötletekre és koncepciókra helyezi a hangsúlyt.</li>
         <li><strong>Konstruálás:</strong> A konstruktivista mozgalom ipari, geometrikus stílusát tükrözi.</li>
-        <li><strong>Kubizmus:</strong> Az objektumokat geometrikus formákra bontja, és absztrakt formákban mutatja be őket.</li>
+        <li><strong>Kubizmus:</strong> Az objektumokat geometrikus formákra bontja és absztrakt formákban mutatja be.</li>
         <li><strong>Dadaizmus:</strong> Az abszurditásra, irracionalitásra és anti-művészeti esztétikákra helyezi a hangsúlyt.</li>
         <li><strong>Sötét Fantázia:</strong> Hangulatos, gótikus légkört teremt sötét és kísérteties elemekkel.</li>
-        <li><strong>Sötét Hangulatos Légkör:</strong> Alacsony világítást és árnyékot használ a hangulatos légkör megteremtéséhez.</li>
-        <li><strong>DMT Művészet:</strong> Élénk, pszichedelikus vizuális elemeket tartalmaz, amelyek a DMT élményekből inspirálódtak.</li>
-        <li><strong>Doodle Művészet:</strong> Hangsúlyozza a játékos és szeszélyes rajzolási stílusokat, gyakran bonyolult és részletes.</li>
+        <li><strong>Sötét Hangulatos Atmoszféra:</strong> Alacsony világítást és árnyékot használ a hangulatos légkör megteremtésére.</li>
+        <li><strong>DMT Művészet:</strong> Élénk, pszichedelikus látványokat tartalmaz, amelyek a DMT élményekből inspirálódtak.</li>
+        <li><strong>Firka Művészet:</strong> A játékos és szeszélyes rajzolási stílusokra helyezi a hangsúlyt, gyakran bonyolult és részletes.</li>
         <li><strong>Dupla Expozíció:</strong> Két képet egyesít egybe, létrehozva egy szürreális, rétegzett hatást.</li>
-        <li><strong>Csepegő Festék Fröccsenés:</strong> Fröccsenő és csepegő festéket használ dinamikus és kaotikus kompozíciók létrehozásához.</li>
+        <li><strong>Csepegő Festék Fröccs:</strong> Fröccsentett és csepegő festéket használ dinamikus és kaotikus kompozíciók létrehozásához.</li>
         <li><strong>Expresszionizmus:</strong> Az érzelmi kifejezésre helyezi a hangsúlyt a valósághű ábrázolás helyett, gyakran élénk színeket és drámai formákat használva.</li>
         <li><strong>Elhalványult Polaroid Fotó:</strong> Utánozza az elhalványult Polaroid fénykép öreg és nosztalgikus megjelenését.</li>
         <li><strong>Fauvizmus:</strong> Élénk, természetellenes színeket és merész ecsetvonásokat használ, a fauvizmus mozgalom inspirációjával.</li>
-        <li><strong>Lapos 2D:</strong> Egyszerű, lapos dizájnokat hangsúlyoz minimális árnyékolással vagy mélységgel, gyakran mese stílusban.</li>
+        <li><strong>Lapos 2D:</strong> Egyszerű, lapos formákat hangsúlyoz minimális árnyékolással vagy mélységgel, gyakran mese stílusban.</li>
         <li><strong>Fortnite Stílus:</strong> A Fortnite videojátékra jellemző élénk, mesebeli művészeti stílust tükrözi.</li>
         <li><strong>Futurizmus:</strong> A dinamikus mozgásra, energiára és a jövő technológiáinak ábrázolására összpontosít.</li>
-        <li><strong>Glitchcore:</strong> A digitális hibákra és glitch-ekre helyezi a hangsúlyt művészi stílusként, gyakran torzított vizuális elemekkel.</li>
-        <li><strong>Glo-Fi:</strong> Puha, ragyogó világítást használ álomszerű, éteri légkör megteremtéséhez.</li>
-        <li><strong>Googie Stílus:</strong> A 20. század közepének futurisztikus és űrkorszakbeli tervezési trendjeit tükrözi.</li>
-        <li><strong>Graffiti Művészet:</strong> A graffiti és városi falfestmények élénk, utcai stílusú esztétikáját használja.</li>
+        <li><strong>Glitchcore:</strong> A digitális hibákra és glitch-ekre helyezi a hangsúlyt művészi stílusként, gyakran torzított látványokkal.</li>
+        <li><strong>Glo-Fi:</strong> Puha, ragyogó világítást használ, hogy álomszerű, éteri légkört teremtsen.</li>
+        <li><strong>Googie Stílus:</strong> A 20. század közepének futurisztikus és Űrkorszak dizájntrendjeit tükrözi.</li>
+        <li><strong>Graffiti Művészet:</strong> A graffiti és városi falfestményekre jellemző élénk, utcai stílusú esztétikát használ.</li>
         <li><strong>Harlem Reneszánsz Művészet:</strong> A Harlem Reneszánsz gazdag kulturális és művészi kifejezéseit tükrözi.</li>
         <li><strong>Magas Divat:</strong> A magas divat sima, kifinomult és avantgárd esztétikáját hangsúlyozza.</li>
         <li><strong>Idilli:</strong> Béke, nyugalom és gyakran pásztori légkört teremt.</li>
-        <li><strong>Impresszionizmus:</strong> Laza ecsetvonásokat és élénk színeket használ a fény és légkör hatásainak megörökítésére.</li>
-        <li><strong>Infografikai Rajz:</strong> Tiszta, vizuálisan vonzó elrendezéseket hangsúlyoz az információ grafikus bemutatásához.</li>
-        <li><strong>Tinta Csepegő Rajz:</strong> Tinta használatával folyékony, csepegő hatásokat hoz létre a rajzban.</li>
+        <li><strong>Impresszionizmus:</strong> Laza ecsetvonásokat és élénk színeket használ, hogy megragadja a fény és a légkör hatásait.</li>
+        <li><strong>Infografika Rajz:</strong> Tiszta, vizuálisan vonzó elrendezésekre helyezi a hangsúlyt az információ grafikus bemutatásához.</li>
+        <li><strong>Tinta Csepegő Rajz:</strong> Tinta használatával folyékony, csepegő hatásokat hoz létre egy rajzban.</li>
         <li><strong>Japán Tinta Rajz:</strong> Utánozza a japán tinta művészet hagyományos ecsetvonás technikáit és esztétikáját.</li>
-        <li><strong>Knolling Fotográfia:</strong> A tárgyak rendezett és szervezett elrendezésére helyezi a hangsúlyt, gyakran felülnézetből fényképezve.</li>
-        <li><strong>Világos, Vidám Légkör:</strong> Élénk színeket és világítást használ a vidám és felemelő légkör megteremtéséhez.</li>
+        <li><strong>Knolling Fotográfia:</strong> A tárgyak rendezett és szervezett elrendezésére helyezi a hangsúlyt, gyakran felülről fényképezve.</li>
+        <li><strong>Világos, Vidám Atmoszféra:</strong> Élénk színeket és világítást használ, hogy vidám és felemelő légkört teremtsen.</li>
         <li><strong>Logó Tervezés:</strong> Tiszta, könnyen felismerhető logók és márkázási elemek létrehozására összpontosít.</li>
         <li><strong>Luxus Elegancia:</strong> A kifinomultságot és a luxust hangsúlyozza, gyakran gazdag textúrákkal és anyagokkal.</li>
-        <li><strong>Makró Fotográfia:</strong> Az extrém közeli felvételekre összpontosít, gyakran olyan részleteket felfedve, amelyek a szabad szemmel nem láthatók.</li>
+        <li><strong>Makro Fotográfia:</strong> Az extrém közeli felvételekre összpontosít, gyakran olyan részleteket felfedve, amelyek a szabad szemmel nem láthatók.</li>
         <li><strong>Mandala Művészet:</strong> Bonyolult, szimmetrikus mintákat hoz létre, amelyek a hagyományos mandala tervezésekből inspirálódtak.</li>
-        <li><strong>Filctoll Rajz:</strong> Utánozza a filctoll rajzok merész, élénk vonalait és színeit.</li>
+        <li><strong>Filctoll Rajz:</strong> A filctoll rajzokra jellemző merész, élénk vonalakat és színeket utánozza.</li>
         <li><strong>Középkor:</strong> A középkori időszak művészeti és tervezési esztétikáit tükrözi.</li>
-        <li><strong>Minimalizmus:</strong> Az egyszerűségre és a formák lényeges elemeire való redukálásra helyezi a hangsúlyt.</li>
+        <li><strong>Minimalizmus:</strong> Az egyszerűségre és a formák lényeges elemekre való csökkentésére helyezi a hangsúlyt.</li>
         <li><strong>Neo-Barokk:</strong> Feléleszti a barokk korszak fényűző, drámai stílusát, modern hatásokkal.</li>
         <li><strong>Neo-Bizánci:</strong> A bizánci birodalom díszes, vallásos művészeti stílusát ötvözi kortárs elemekkel.</li>
         <li><strong>Neo-Futurizmus:</strong> A futurisztikus dizájnokra összpontosít, gyakran sima, high-tech esztétikával.</li>
-        <li><strong>Neo-Impresszionizmus:</strong> Kicsi, jól elkülönített színpontokat használ a képek létrehozásához, a neo-impresszionista mozgalom inspirációjával.</li>
-        <li><strong>Neo-Rokokó:</strong> Feléleszti a rokoko korszak bonyolult, dekoratív stílusát, modern csavarokkal.</li>
+        <li><strong>Neo-Impresszionizmus:</strong> Kicsi, megkülönböztetett színpontokat használ a képek létrehozásához, a Neo-Impresszionista mozgalom inspirációjával.</li>
+        <li><strong>Neo-Rokokó:</strong> Feléleszti a rokokó korszak bonyolult, dekoratív stílusát, modern csavarokkal.</li>
         <li><strong>Neoklasszicizmus:</strong> A klasszikus antikvitás művészeti és tervezési esztétikáit utánozza, hangsúlyozva a harmóniát és az egyszerűséget.</li>
         <li><strong>Op Art:</strong> Optikai illúziókat és hatásokat hoz létre geometrikus minták és kontrasztok használatával.</li>
-        <li><strong>Díszes és Bonyolult:</strong> Nagyon részletes, kidolgozott dizájnokra összpontosít, a díszítésre helyezve a hangsúlyt.</li>
-        <li><strong>Ceruza Vázlat Rajz:</strong> Utánozza a ceruzarajzok textúráját és megjelenését.</li>
-        <li><strong>Pop Art:</strong> Merész színeket és képeket használ, amelyek a popkultúrából és a tömegmédia hatásából inspirálódtak.</li>
-        <li><strong>Rokokó:</strong> A rokoko korszak bonyolult, dekoratív művészeti stílusát tükrözi, a könnyedségre és eleganciára helyezve a hangsúlyt.</li>
-        <li><strong>Silhouette Művészet:</strong> Erős kontrasztokat használ a fény és árnyék között, hogy merész, silhuett alapú képeket hozzon létre.</li>
-        <li><strong>Egyszerű Vektor Művészet:</strong> Tiszta, geometrikus formákat és lapos színeket hangsúlyoz, amelyek a vektor művészetre jellemzőek.</li>
+        <li><strong>Díszes és Bonyolult:</strong> Nagyon részletes, kidolgozott tervezésekre összpontosít, a díszítésre helyezve a hangsúlyt.</li>
+        <li><strong>Ceruza Vázlat Rajz:</strong> A ceruzarajzok textúráját és megjelenését utánozza.</li>
+        <li><strong>Pop Art:</strong> Merész színeket és képeket használ, amelyek a popkultúrából és a tömegmédia inspirációjából származnak.</li>
+        <li><strong>Rokokó:</strong> A rokokó korszak bonyolult, dekoratív művészeti stílusát tükrözi, a könnyedség és elegancia hangsúlyozásával.</li>
+        <li><strong>Silhouette Művészet:</strong> Erős kontrasztokat használ a fény és árnyék között, hogy merész, sziluett-alapú képeket hozzon létre.</li>
+        <li><strong>Egyszerű Vektor Művészet:</strong> Tiszta, geometrikus formákra és lapos színekre helyezi a hangsúlyt, amelyek a vektor művészetre jellemzőek.</li>
         <li><strong>SketchUp:</strong> A SketchUp szoftverrel készült 3D modellek megjelenését és érzését utánozza.</li>
-        <li><strong>Steampunk:</strong> A viktoriánus korszak esztétikáját ötvözi a gőzhajtású technológiával, retro-futurista stílust teremtve.</li>
+        <li><strong>Steampunk:</strong> A viktoriánus korszak esztétikáját ötvözi a gőzhajtású technológiával, létrehozva egy retro-futurista stílust.</li>
         <li><strong>Szürrealizmus:</strong> A valóságot és az álomszerű képeket ötvözi, hogy szürreális, fantáziadús jeleneteket hozzon létre.</li>
         <li><strong>Suprematizmus:</strong> Az alapvető geometrikus formákra és korlátozott színpalettákra helyezi a hangsúlyt, a suprematista mozgalom inspirációjával.</li>
-        <li><strong>Terragen:</strong> A Terragen szoftverrel készült, valósághű, számítógép által generált tájakat utánozza.</li>
-        <li><strong>Nyugodt, Pihentető Légkör:</strong> Puha színeket és megnyugtató képeket használ, hogy békés és nyugodt környezetet teremtsen.</li>
-        <li><strong>Matricák Tervezése:</strong> Játékos, mesebeli képek létrehozására összpontosít, amelyek alkalmasak matricákhoz.</li>
-        <li><strong>Élénk Perem Fény:</strong> Élénk, perem világítást hangsúlyoz a témák körül, hogy figyelemfelkeltő, élénk hatást hozzon létre.</li>
-        <li><strong>Volumetrikus Világítás:</strong> Fénycsóvákat és atmoszférikus hatásokat használ a mélység és dimenzió megteremtéséhez.</li>
-        <li><strong>Akvarell:</strong> A vízfestmények puha, áramló textúráit utánozza.</li>
-        <li><strong>Szeszélyes és Játékos:</strong> A könnyed, képzeletbeli és gyakran szeszélyes képekre helyezi a hangsúlyt.</li>
+        <li><strong>Terragen:</strong> A Terragen szoftverrel készült, valósághű, számítógéppel generált tájakat utánozza.</li>
+        <li><strong>Nyugodt, Pihentető Atmoszféra:</strong> Puha színeket és megnyugtató képeket használ, hogy békés és nyugodt környezetet teremtsen.</li>
+        <li><strong>Matricák Tervezése:</strong> Játékos, mesebeli képek létrehozására összpontosít, amelyek alkalmasak matricákra.</li>
+        <li><strong>Élénk Peremfény:</strong> Élénk, peremfények hangsúlyozása a témák körül, hogy figyelemfelkeltő, élénk hatást hozzon létre.</li>
+        <li><strong>Volumetrikus Világítás:</strong> Fénycsóvákat és légköri hatásokat használ a mélység és dimenzió létrehozásához.</li>
+        <li><strong>Akvarell:</strong> A vízfestmények lágy, áramló textúráját utánozza.</li>
+        <li><strong>Játékos és Szeszélyes:</strong> Könnyed, képzeletbeli és gyakran furcsa képekre helyezi a hangsúlyt.</li>
         <li><strong>Éles:</strong> Fokozza a tisztaságot és a kontúrok meghatározottságát, hogy élesebb megjelenést biztosítson.</li>
-        <li><strong>Műalkotás:</strong> A magas minőségű, részletes és csiszolt művészi kimenetre helyezi a hangsúlyt.</li>
-        <li><strong>Fénykép:</strong> A valósághű és élethű fényképi minőségre törekszik.</li>
+        <li><strong>Műalkotás:</strong> Magas színvonalú, részletes és csiszolt művészi kimenetre helyezi a hangsúlyt.</li>
+        <li><strong>Fénykép:</strong> Valósághű és élethű fényképi minőségre törekszik.</li>
         <li><strong>Negatív:</strong> Megfordítja a színeket, hogy fényképi negatív hatást hozzon létre.</li>
-        <li><strong>Hirdetések - Reklám:</strong> Tiszta, professzionális vizuális elemekre összpontosít, amelyek alkalmasak reklámhoz.</li>
-        <li><strong>Hirdetések - Autóipar:</strong> A vizuális stílust dinamikus és csiszolt autóipari reklámokhoz igazítja.</li>
+        <li><strong>Hirdetések - Reklám:</strong> Tiszta, professzionális vizuális megjelenésre összpontosít, amely alkalmas reklámra.</li>
+        <li><strong>Hirdetések - Autóipar:</strong> A dinamikus és csiszolt autóipari reklámok vizuális stílusát célozza meg.</li>
         <li><strong>Hirdetések - Vállalati:</strong> A sima, professzionális dizájnra helyezi a hangsúlyt, amely alkalmas vállalati környezetekhez.</li>
-        <li><strong>Hirdetések - Divat Szerkesztő:</strong> A divat szerkesztésekben használt stílusos, magas divat megjelenését hangsúlyozza.</li>
-        <li><strong>Hirdetések - Étel Fotográfia:</strong> Az ételek fényképezésére jellemző élénk és étvágygerjesztő megjelenéshez optimalizálja a képeket.</li>
+        <li><strong>Hirdetések - Divat Szerkesztő:</strong> A divat szerkesztésekben használt stílusos, magas divat megjelenést emeli ki.</li>
+        <li><strong>Hirdetések - Étel Fotográfia:</strong> Az ételek fényképezésére jellemző élénk és étvágygerjesztő megjelenés optimalizálására összpontosít.</li>
         <li><strong>Hirdetések - Gourmet Étel Fotográfia:</strong> A gourmet ételek fényképezésének gazdag, részletes esztétikáját hangsúlyozza.</li>
-        <li><strong>Hirdetések - Luxus:</strong> A fényűző, prémium stílusra helyezi a hangsúlyt, amely alkalmas luxus márkákhoz.</li>
-        <li><strong>Hirdetések - Ingatlan:</strong> A tiszta és vonzó vizuális elemeket hangsúlyozza, amelyek jellemzőek az ingatlan reklámokra.</li>
-        <li><strong>Hirdetések - Kiskereskedelem:</strong> A vonzó, fogyasztóközpontú stílust hangsúlyozza, amely alkalmas a kiskereskedelmi reklámokra.</li>
+        <li><strong>Hirdetések - Luxus:</strong> A fényűző, prémium stílusra összpontosít, amely alkalmas luxus márkákhoz.</li>
+        <li><strong>Hirdetések - Ingatlan:</strong> A tiszta és vonzó vizuális megjelenésre helyezi a hangsúlyt, amely jellemző az ingatlan reklámokra.</li>
+        <li><strong>Hirdetések - Kiskereskedelem:</strong> A vonzó, fogyasztóközpontú stílusra helyezi a hangsúlyt, amely alkalmas a kiskereskedelmi reklámokra.</li>
         <li><strong>Hiperrrealizmus:</strong> Rendkívül részletes, élethű vizuális stílusra törekszik.</li>
-        <li><strong>Pontillizmus:</strong> Kicsi, jól elkülönített színpontokat használ a kép létrehozásához, a pontillista mozgalom inspirációjával.</li>
-        <li><strong>Pszichedelikus:</strong> Élénk színeket és szürreális vizuális elemeket hangsúlyoz, amelyek a pszichedelikus művészetből inspirálódtak.</li>
+        <li><strong>Pontillizmus:</strong> Kicsi, megkülönböztetett színpontokat használ a kép létrehozásához, a pontillista mozgalom inspirációjával.</li>
+        <li><strong>Pszichedelikus:</strong> Élénk színeket és szürreális látványokat hangsúlyoz, amelyek a pszichedelikus művészetből inspirálódtak.</li>
         <li><strong>Reneszánsz:</strong> A reneszánsz művészet harmonikus, klasszikus stílusát tükrözi.</li>
-        <li><strong>Tipográfia:</strong> A szöveg és betűtípus kreatív és művészi használatára összpontosít.</li>
-        <li><strong>Futurista Biomechanikai:</strong> Futurista és biomechanikai elemeket ötvöz, hogy egy high-tech, organikus stílust hozzon létre.</li>
+        <li><strong>Tipográfia:</strong> A szöveg és a betűtípusok kreatív és művészi használatára összpontosít.</li>
+        <li><strong>Futurista Biomechanikai:</strong> Futurisztikus és biomechanikai elemeket ötvöz, hogy egy high-tech, organikus stílust hozzon létre.</li>
         <li><strong>Futurista Biomechanikai Cyberpunk:</strong> A biomechanikai és cyberpunk esztétikákat ötvözi, hogy egy durva, futurista megjelenést hozzon létre.</li>
-        <li><strong>Futurista Cybernetikus:</strong> A high-tech, cybernetikus vizuális elemekre összpontosít.</li>
-        <li><strong>Futurista Cybernetikus Robot:</strong> A robotikus és cybernetikus dizájnokat hangsúlyozza futurisztikus éllel.</li>
+        <li><strong>Futurista Kybernetikai:</strong> A high-tech, kybernetikai vizuálisokra helyezi a hangsúlyt.</li>
+        <li><strong>Futurista Kybernetikai Robot:</strong> A robotikus és kybernetikai dizájnokat hangsúlyozza futurisztikus éllel.</li>
         <li><strong>Futurista Cyberpunk Városkép:</strong> A cyberpunk művészetre jellemző durva, neonfényes városképeket tükrözi.</li>
-        <li><strong>Futurista Sci-Fi:</strong> A futurisztikus és tudományos-fantasztikus inspirációjú esztétikákra összpontosít.</li>
+        <li><strong>Futurista Sci-Fi:</strong> Futurisztikus és tudományos-fantasztikus inspirációjú esztétikákra összpontosít.</li>
         <li><strong>Futurista Retro Cyberpunk:</strong> A retro és cyberpunk elemeket ötvözi, hogy nosztalgikus, mégis futurista stílust hozzon létre.</li>
-        <li><strong>Futurista Retro:</strong> A futurisztikus vizuális elemeket retro tervezési elemekkel ötvözi.</li>
-        <li><strong>Futurista Vaporwave:</strong> A vaporwave művészetre jellemző nosztalgikus, szürreális vizuális elemeket hangsúlyozza.</li>
-        <li><strong>Játék Buborék:</strong> Játékos, buborékos esztétikára összpontosít, amely gyakran látható a casual játékokban.</li>
-        <li><strong>Játék Cyberpunk:</strong> A játéktervezési elemeket a cyberpunk esztétikákkal ötvözi.</li>
+        <li><strong>Futurista Retro:</strong> A futurisztikus látványokat retro dizájn elemekkel ötvözi.</li>
+        <li><strong>Futurista Vaporwave:</strong> A vaporwave művészetre jellemző nosztalgikus, szürreális látványokat hangsúlyozza.</li>
+        <li><strong>Játék Buborék:</strong> A játékos, buborékos esztétikára helyezi a hangsúlyt, amely gyakran látható a casual játékokban.</li>
+        <li><strong>Játék Cyberpunk:</strong> A játék dizájn elemeit ötvözi a cyberpunk esztétikákkal.</li>
         <li><strong>Játék Harc:</strong> A harci játékokra jellemző dinamikus, intenzív stílust tükrözi.</li>
         <li><strong>Játék GTA:</strong> A Grand Theft Auto játékokra jellemző durva, városi stílust utánozza.</li>
         <li><strong>Játék Mario:</strong> A Mario játékokra jellemző élénk, mesebeli stílusra összpontosít.</li>
-        <li><strong>Játék Minecraft:</strong> A Minecraftra jellemző blokkszerű, pixeles stílust utánozza.</li>
-        <li><strong>Játék Pokemon:</strong> A Pokémon játékokra jellemző élénk, anime inspirálta stílust tükrözi.</li>
+        <li><strong>Játék Minecraft:</strong> A Minecraft-ra jellemző blokkos, pixeles stílust utánozza.</li>
+        <li><strong>Játék Pokemon:</strong> A Pokémon játékokra jellemző élénk, anime ihlette stílust tükrözi.</li>
         <li><strong>Játék Retro Arcade:</strong> A retro arcade játékokra jellemző nosztalgikus, pixeles stílust hangsúlyozza.</li>
-        <li><strong>Játék RPG Fantázia:</strong> A RPG játékokra jellemző részletes, fantázia inspirálta esztétikákat tükrözi.</li>
+        <li><strong>Játék RPG Fantázia:</strong> A RPG játékokra jellemző részletes, fantázia ihlette esztétikákat tükrözi.</li>
         <li><strong>Játék Stratégia:</strong> A stratégiai játékokra jellemző tiszta, funkcionális dizájnra összpontosít.</li>
         <li><strong>Játék Streetfighter:</strong> A Street Fighter játékokra jellemző merész, dinamikus stílust utánozza.</li>
-        <li><strong>Játék Zelda:</strong> A Zelda játékokra jellemző fantázia inspirálta stílust tükrözi.</li>
-        <li><strong>Misc Építészeti:</strong> Tiszta, precíz építészeti ábrázolásokra összpontosít.</li>
-        <li><strong>Misc Disco:</strong> A disco kultúrára jellemző élénk, neonfényes esztétikát hangsúlyozza.</li>
-        <li><strong>Misc Álomvilág:</strong> Szürreális, álomszerű környezeteket teremt.</li>
-        <li><strong>Misc Dystópikus:</strong> A disztópikus környezetekre jellemző durva, sivár vizuális elemeket tükrözi.</li>
-        <li><strong>Misc Tündérmese:</strong> A tündérmesékhez jellemző szeszélyes, varázslatos elemeket hangsúlyozza.</li>
-        <li><strong>Misc Gótikus:</strong> A gótikus művészet és építészet sötét, díszes stílusát tükrözi.</li>
-        <li><strong>Misc Grunge:</strong> A grunge kultúrára jellemző durva, nyers esztétikát hangsúlyozza.</li>
-        <li><strong>Misc Horror:</strong> A horrorra jellemző sötét, kísérteties és nyugtalanító vizuális elemekre összpontosít.</li>
-        <li><strong>Misc Kawaii:</strong> A Kawaii kultúrára jellemző aranyos, bájos stílust tükrözi.</li>
-        <li><strong>Misc Lovecrafti:</strong> A Lovecrafti fikcióra jellemző kísérteties, kozmikus horrorra helyezi a hangsúlyt.</li>
-        <li><strong>Misc Macabre:</strong> A sötét, morbid és nyugtalanító témákra összpontosít.</li>
-        <li><strong>Misc Manga:</strong> A mangára jellemző merész, dinamikus stílust utánozza.</li>
-        <li><strong>Misc Metropolis:</strong> A modern metropolisokra jellemző sima, városi esztétikát tükrözi.</li>
-        <li><strong>Misc Minimalista:</strong> Az egyszerűségre és a formák lényeges elemeire való redukálásra helyezi a hangsúlyt.</li>
-        <li><strong>Misc Monokróm:</strong> Különböző árnyalatú egy színben készült képekre összpontosít.</li>
-        <li><strong>Misc Tengeri:</strong> A tengeri témákra jellemző tengerészeti inspirálta esztétikát tükrözi.</li>
-        <li><strong>Misc Űr:</strong> A térbeli környezetekre jellemző hatalmas, másvilági vizuális elemeket hangsúlyozza.</li>
-        <li><strong>Misc Ólomüveg:</strong> A színes, bonyolult mintákat utánozza, amelyek az ólomüveg művészetre jellemzőek.</li>
-        <li><strong>Misc Techwear Divat:</strong> A techwear divatra jellemző futurisztikus, funkcionális esztétikára összpontosít.</li>
-        <li><strong>Misc Törzsi:</strong> A törzsi művészetre jellemző merész, kulturális esztétikát tükrözi.</li>
-        <li><strong>Misc Zentangle:</strong> A Zentangle művészetre jellemző bonyolult, ismétlődő mintákra helyezi a hangsúlyt.</li>
-        <li><strong>Papercraft Kollázs:</strong> Kivágott papírt használ rétegezett, texturált kollázsok létrehozásához.</li>
-        <li><strong>Papercraft Lapos Papírvágás:</strong> A lapos, kivágott papír dizájnokra helyezi a hangsúlyt.</li>
-        <li><strong>Papercraft Kirigami:</strong> A kirigamira jellemző bonyolult, hajtogatott dizájnokra összpontosít.</li>
-        <li><strong>Papercraft Papírmasé:</strong> Papírmasét használ texturált, háromdimenziós formák létrehozásához.</li>
-        <li><strong>Papercraft Papírtekercs:</strong> A papírtekercsekre jellemző finom, tekert papír dizájnokat hangsúlyozza.</li>
-        <li><strong>Papercraft Papírvágás Kollázs:</strong> Kivágott papírelemeket kombinál rétegezett kollázsok létrehozásához.</li>
-        <li><strong>Papercraft Papírvágás Árnyékdoboz:</strong> Rétegezett papírvágásokat használ háromdimenziós árnyékdobozok létrehozásához.</li>
-        <li><strong>Papercraft Rétegezett Papírvágás:</strong> Rétegezett, egymásra rakott papír dizájnokra összpontosít.</li>
-        <li><strong>Papercraft Vastag Rétegezett Papírvágás:</strong> A vastag papírvágás dizájnokra jellemző dimenzionális, rétegezett megjelenést hangsúlyozza.</li>
-        <li><strong>Fotó Alien:</strong> Szürreális, földönkívüli vizuális elemekre összpontosít.</li>
-        <li><strong>Fotó Film Noir:</strong> A film noir sötét, hangulatos esztétikáját hangsúlyozza.</li>
+        <li><strong>Játék Zelda:</strong> A Zelda játékokra jellemző fantázia ihlette stílust tükrözi.</li>
+        <li><strong>Vegyes Építészeti:</strong> Tiszta, precíz építészeti ábrázolásokra összpontosít.</li>
+        <li><strong>Vegyes Disco:</strong> A disco kultúrára jellemző élénk, neonfényes esztétikát hangsúlyozza.</li>
+        <li><strong>Vegyes Álomvilág:</strong> Szürreális, álomszerű környezeteket teremt.</li>
+        <li><strong>Vegyes Dystopikus:</strong> A disztópikus környezetekre jellemző durva, komor látványokat tükrözi.</li>
+        <li><strong>Vegyes Tündérmese:</strong> A tündérmesékhez jellemző szeszélyes, varázslatos elemeket hangsúlyozza.</li>
+        <li><strong>Vegyes Gótikus:</strong> A gótikus művészet és építészet sötét, díszes stílusát tükrözi.</li>
+        <li><strong>Vegyes Grunge:</strong> A grunge kultúrára jellemző durva, nyers esztétikát hangsúlyozza.</li>
+        <li><strong>Vegyes Horror:</strong> A horrorra jellemző sötét, kísérteties és nyugtalanító látványokra összpontosít.</li>
+        <li><strong>Vegyes Kawaii:</strong> A Kawaii kultúrára jellemző aranyos, bájos stílust tükrözi.</li>
+        <li><strong>Vegyes Lovecrafti:</strong> A Lovecrafti fikcióra jellemző kísérteties, kozmikus horrorra helyezi a hangsúlyt.</li>
+        <li><strong>Vegyes Macabre:</strong> Sötét, morbid és nyugtalanító témákra összpontosít.</li>
+        <li><strong>Vegyes Manga:</strong> A mangára jellemző merész, dinamikus stílust utánozza.</li>
+        <li><strong>Vegyes Metropolis:</strong> A modern metropolisokra jellemző sima, városi esztétikát tükrözi.</li>
+        <li><strong>Vegyes Minimalista:</strong> Az egyszerűségre és a formák lényeges elemekre való csökkentésére helyezi a hangsúlyt.</li>
+        <li><strong>Vegyes Monokróm:</strong> Különböző árnyalatokban készült képekre összpontosít, amelyek egyetlen színből állnak.</li>
+        <li><strong>Vegyes Tengeri:</strong> A tengeri témákra jellemző tengerészeti ihletésű esztétikát tükrözi.</li>
+        <li><strong>Vegyes Űr:</strong> Az űr környezetekre jellemző hatalmas, másvilági látványokra helyezi a hangsúlyt.</li>
+        <li><strong>Vegyes Üvegablak:</strong> A színes üveg művészetre jellemző bonyolult, színes mintákat utánozza.</li>
+        <li><strong>Vegyes Techwear Divat:</strong> A techwear divatra jellemző futurisztikus, funkcionális esztétikára összpontosít.</li>
+        <li><strong>Vegyes Törzsi:</strong> A törzsi művészetre jellemző merész, kulturális esztétikát tükrözi.</li>
+        <li><strong>Vegyes Zentangle:</strong> A Zentangle művészetre jellemző bonyolult, ismétlődő mintákra helyezi a hangsúlyt.</li>
+        <li><strong>Papírművészet Kollázs:</strong> Kivágott papírt használ rétegzett, texturált kollázsok létrehozásához.</li>
+        <li><strong>Papírművészet Lapos Papírvágás:</strong> A lapos, kivágott papír dizájnokra helyezi a hangsúlyt.</li>
+        <li><strong>Papírművészet Kirigami:</strong> A kirigamira jellemző bonyolult, hajtogatott dizájnokra összpontosít.</li>
+        <li><strong>Papírművészet Papírmasé:</strong> Papírmasét használ texturált, háromdimenziós formák létrehozásához.</li>
+        <li><strong>Papírművészet Papírtekercs:</strong> A papírtekercshez jellemző finom, tekercselt papír dizájnokra helyezi a hangsúlyt.</li>
+        <li><strong>Papírművészet Papírvágás Kollázs:</strong> Kivágott papírelemeket kombinál rétegzett kollázsok létrehozásához.</li>
+        <li><strong>Papírművészet Papírvágás Árnyékdoboz:</strong> Rétegzett papírvágásokat használ háromdimenziós árnyékdobozok létrehozásához.</li>
+        <li><strong>Papírművészet Rétegzett Papírvágás:</strong> Rétegzett, halmozott papír dizájnokra összpontosít.</li>
+        <li><strong>Papírművészet Vastag Rétegzett Papírvágás:</strong> A vastag papírvágás dizájnokra jellemző dimenzionális, rétegzett megjelenést hangsúlyozza.</li>
+        <li><strong>Fotó Alien:</strong> Szürreális, földönkívüli látványokra összpontosít.</li>
+        <li><strong>Fotó Film Noir:</strong> A film noirra jellemző sötét, hangulatos esztétikát hangsúlyozza.</li>
         <li><strong>Fotó Glamour:</strong> A glamour fényképezésre jellemző csiszolt, stílusos megjelenést emeli ki.</li>
-        <li><strong>Fotó HDR:</strong> Magas dinamikai tartományt (HDR) használ, hogy széles fény- és színskálájú képeket hozzon létre.</li>
-        <li><strong>Fotó iPhone Fényképezés:</strong> A modern, tiszta stílust utánozza, amely az iPhone fényképezésre jellemző.</li>
+        <li><strong>Fotó HDR:</strong> Magas dinamikus tartományt (HDR) használ, hogy széles fény- és színskálájú képeket hozzon létre.</li>
+        <li><strong>Fotó iPhone Fényképezés:</strong> A iPhone fényképezésre jellemző tiszta, modern stílust utánozza.</li>
         <li><strong>Fotó Hosszú Expozíció:</strong> Hosszú expozíciót használ dinamikus, mozgásban elmosódott hatások létrehozásához.</li>
         <li><strong>Fotó Neon Noir:</strong> A neon világítást ötvözi a noir sötét, hangulatos esztétikájával.</li>
-        <li><strong>Fotó Silhouette:</strong> Erős kontrasztokra összpontosít a fény és árnyék között, hogy silhuett alapú képeket hozzon létre.</li>
-        <li><strong>Fotó Dőlt Shift:</strong> Dőlt shift hatásokat használ, hogy miniaturizált, játékos megjelenést hozzon létre.</li>
-        <li><strong>3D Modell:</strong> A 3D modellek tiszta, részletes megjelenésére összpontosít.</li>
+        <li><strong>Fotó Silhouette:</strong> Erős kontrasztokat használ a fény és árnyék között, hogy sziluett-alapú képeket hozzon létre.</li>
+        <li><strong>Fotó Döntött Shift:</strong> Döntött shift hatásokat használ, hogy miniaturizált, játékos megjelenést hozzon létre.</li>
+        <li><strong>3D Modell:</strong> A 3D modellekre jellemző tiszta, részletes megjelenésre összpontosít.</li>
         <li><strong>Analóg Film:</strong> Az analóg film fényképezésre jellemző szemcsés, texturált megjelenést utánozza.</li>
-        <li><strong>Anime:</strong> Az anime élénk, dinamikus stílusát hangsúlyozza.</li>
-        <li><strong>Cinematikus:</strong> Drámai, filmes hatást teremt erős világítással és kompozíciókkal.</li>
+        <li><strong>Anime:</strong> Az anime-ra jellemző élénk, dinamikus stílust hangsúlyozza.</li>
+        <li><strong>Filmszerű:</strong> Drámai, filmszerű hatást teremt erős világítással és kompozíciókkal.</li>
         <li><strong>Képregény:</strong> A képregény művészetre jellemző merész vonalakat és élénk színeket használ.</li>
-        <li><strong>Kézműves Agya:</strong> A kézműves modellek texturált, kézzel készült megjelenését utánozza.</li>
-        <li><strong>Digitális Művészet:</strong> Tiszta, csiszolt digitális műalkotásokra összpontosít.</li>
-        <li><strong>Fantázia Művészet:</strong> A fantázia művészetre jellemző részletes, képzeletbeli vizuális elemeket hangsúlyozza.</li>
+        <li><strong>Kézműves Agyag:</strong> A kézműves modellek texturált, kézzel készült megjelenését utánozza.</li>
+        <li><strong>Digitális Művészet:</strong> Tiszta, csiszolt digitális művészetre összpontosít.</li>
+        <li><strong>Fantázia Művészet:</strong> A fantázia művészetre jellemző részletes, képzeletbeli látványokat hangsúlyozza.</li>
         <li><strong>Izometrikus:</strong> Izometrikus perspektívát használ, hogy háromdimenziós megjelenést hozzon létre.</li>
         <li><strong>Vonal Művészet:</strong> Tiszta, éles vonalakra összpontosít, hogy részletes rajzokat hozzon létre.</li>
         <li><strong>Alacsony Poligon:</strong> Alacsony poligonú 3D modelleket használ, hogy minimalista, geometrikus megjelenést hozzon létre.</li>
         <li><strong>Neonpunk:</strong> A neon világítást ötvözi a cyberpunk durva esztétikájával.</li>
-        <li><strong>Origami:</strong> A hajtogatott dizájnokra jellemző bonyolult, hajtogatott mintákra összpontosít.</li>
-        <li><strong>Fényképező:</strong> A valósághű, élethű vizuális elemekre törekszik.</li>
-        <li><strong>Pixel Művészet:</strong> Pixeles dizájnokat használ, hogy retro, videojáték inspirálta megjelenést hozzon létre.</li>
-        <li><strong>Textúra:</strong> Gazdag, részletes textúrákra összpontosít a vizuális mélység fokozásához.</li>
+        <li><strong>Origami:</strong> A hagyományos origamihoz jellemző bonyolult, hajtogatott dizájnokra összpontosít.</li>
+        <li><strong>Fényképező:</strong> Valósághű, élethű látványokra törekszik.</li>
+        <li><strong>Pixel Művészet:</strong> Pixeles dizájnokat használ, hogy retro, videojáték ihlette megjelenést hozzon létre.</li>
+        <li><strong>Textúra:</strong> Gazdag, részletes textúrákra összpontosít, hogy fokozza a vizuális mélységet.</li>
     </ul>
 </body>
 </html>

@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            max-width: 100%;
             height: auto;
+            object-fit: contain;
         }
         .iframe-container {
             display: flex;
@@ -47,27 +48,27 @@
 
 <body>
 
-    <h2>Guide til at Bruge Billede til Video Funktionen</h2>
-    <p>Billede til Video funktionen i AiCasso lader dig omdanne et enkelt billede til en dynamisk video. Beskriv blot, hvad du ønsker at se i din video, og AiCasso vil få det til at ske!</p>
+    <h2>Guide til at Bruge Billede til Video Funktion</h2>
+    <p>Billede til Video funktionen i AiCasso lader dig forvandle et enkelt billede til en dynamisk video. Beskriv blot, hvad du ønsker at se i din video, og AiCasso vil få det til at ske!</p>
 
     <h3>Sådan Fungerer Det:</h3>
     
     <div class="example">
         <strong>Input Billede:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/input.jpg" alt="Input Billede" loading="lazy">
         </div>
         <strong>Prompt 1:</strong>
         <p>"En sød hvalp i parken"</p>
         <strong>Resultat 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppy.gif" alt="Sød Hvalp i Parken" loading="lazy">
         </div>
         <strong>Prompt 2:</strong>
-        <p>"En sød hvalp i parken, brug maksimal FPS, maksimale rammer og maksimal bevægelse"</p>
+        <p>"En sød hvalp i parken, brug maksimum FPS, maksimum rammer og maksimum bevægelse"</p>
         <strong>Resultat 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppymaxframes.gif" alt="Maksimum FPS Hvalp i Parken" loading="lazy">
         </div>
     </div>
 
@@ -75,18 +76,18 @@
     <p>Hvis du vil være mere specifik med din video, er her nogle indstillinger, du kan justere:</p>
 
     <ul>
-        <li><strong>Negativ Prompt:</strong> Beskriv hvad du *ikke* ønsker i videoen. Hvis den er tom, vil AiCasso blot fokusere på den positive prompt.</li>
-        <li><strong>Antal Rammer:</strong> Vælg hvor mange rammer (individuelle billeder) din video skal have. Du kan vælge op til 25 rammer, med 16 som standard.</li>
-        <li><strong>Denoising Steps:</strong> Dette styrer, hvor glat din video ser ud. Flere trin betyder en renere video. Du kan indstille op til 50 trin, med 20 som standard.</li>
+        <li><strong>Negativ Prompt:</strong> Beskriv hvad du *ikke* ønsker i videoen. Hvis den efterlades tom, vil AiCasso blot fokusere på den positive prompt.</li>
+        <li><strong>Antal Rammer:</strong> Vælg hvor mange rammer (enkeltbilleder) din video skal have. Du kan vælge op til 25 rammer, med 16 som standard.</li>
+        <li><strong>Denoising Steps:</strong> Dette styrer hvor glat din video ser ud. Flere trin betyder en renere video. Du kan indstille op til 50 trin, med 20 som standard.</li>
         <li><strong>Guidance Scale:</strong> Dette hjælper videoen med at holde sig tæt på din beskrivelse. Området er fra 1.0 til 8.0, og du kan justere start- og slutværdierne for at guide, hvordan videoen udvikler sig.</li>
         <li><strong>Bevægelse:</strong> Juster hvor meget bevægelse der er i din video. En højere værdi betyder mere action. Området er fra 0 til 127, med 60 som standard.</li>
-        <li><strong>Støjforstærkningsstyrke:</strong> Tilføj noget støj til din video for at give den et mere tekstureret udseende. Området er fra 0 til 1, med 0 som standard.</li>
-        <li><strong>Rammer pr. Sekund (FPS):</strong> Indstil hvor hurtigt din video afspilles. Standard er 16 FPS, men du kan gå op til 16 for en hurtigere afspilning.</li>
+        <li><strong>Noise Augmentation Strength:</strong> Tilføj noget støj til din video for at give den et mere tekstureret udseende. Området er fra 0 til 1, med 0 som standard.</li>
+        <li><strong>Ramper pr. Sekund (FPS):</strong> Indstil hvor hurtigt din video afspilles. Standard er 16 FPS, men du kan gå op til 16 for en hurtigere afspilning.</li>
         <li><strong>Interpolationsmetode:</strong> Vælg hvordan rammerne blandes sammen. Standard er "lerp" (lineær interpolation), men du kan også bruge "slerp" (spherical linear interpolation) for forskellige effekter.</li>
         <li><strong>Clip Skip:</strong> Spring visse lag over for en anden videostil. Du kan springe op til 2 lag over, eller lade det være null for standardadfærden.</li>
     </ul>
 
-    <p>Husk, AiCasso er ret smart! Du behøver ikke at få hver detalje perfekt eller bruge korrekt grammatik. Beskriv blot hvad du ønsker, og AiCasso vil gøre resten. Hav det sjovt med at skabe dine videoer!</p>
+    <p>Husk, AiCasso er ret smart! Du behøver ikke at få hver detalje perfekt eller bruge korrekt grammatik. Beskriv blot hvad du ønsker, og AiCasso vil klare resten. Hav det sjovt med at skabe dine videoer!</p>
 
 </body>
 </html>

@@ -31,9 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -48,34 +55,34 @@
     <div class="example">
         <strong>Imagen de Entrada:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="Imagen de Entrada" loading="lazy">
         </div>
         <strong>Instrucción:</strong>
-        <p>"Escalar 4 veces, usar el modelo Ultra Sharp"</p>
+        <p>"Agrandarla 4 veces, usar el modelo Ultra Sharp"</p>
         <strong>Resultado:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="Imagen de Resultado" loading="lazy">
         </div>
     </div>
 
     <h3>Parámetros Opcionales</h3>
-    <p>Si deseas tener un poco más de control sobre cómo se mejora tu imagen, aquí hay algunas opciones adicionales con las que puedes jugar:</p>
+    <p>Si deseas agregar un poco más de control sobre cómo se mejora tu imagen, aquí hay algunas opciones adicionales con las que puedes jugar:</p>
 
     <ul>
-        <li><strong>Escala:</strong> Esto es cuánto deseas agrandar tu imagen. Puedes elegir una escala de 1 a 4, siendo 4 el valor predeterminado. Básicamente, números más grandes significan una imagen más grande.</li>
-        <li><strong>Modelo de Escalado:</strong> Esto es como elegir un filtro para tu imagen, pero es mucho más inteligente. Aquí están las opciones:
+        <li><strong>Escala:</strong> Esto es cuánto deseas agrandar tu imagen. Puedes elegir una escala de 1 a 4, siendo 4 la predeterminada. Básicamente, números más grandes significan una imagen más grande.</li>
+        <li><strong>Modelo de Agrandamiento:</strong> Esto es como elegir un filtro para tu imagen, pero es mucho más inteligente. Aquí están las opciones:
             <ul>
-                <li><strong>Gran Impulso de Detalle:</strong> Mejor para acercarse a detalles diminutos.</li>
+                <li><strong>Aumento de Detalles Grandes:</strong> Mejor para acercarse a pequeños detalles.</li>
                 <li><strong>Ultra Sharp:</strong> Hace que la imagen sea súper clara y nítida.</li>
                 <li><strong>Mejora de Anime:</strong> Perfecto para imágenes de estilo anime, haciéndolas lucir nítidas y vibrantes.</li>
-                <li><strong>Doble Detalle:</strong> Duplica los detalles sin exagerar.</li>
-                <li><strong>Impulso General:</strong> Una buena opción para la mayoría de las imágenes.</li>
+                <li><strong>Detalle Doble:</strong> Duplica los detalles sin exagerar.</li>
+                <li><strong>Aumento General:</strong> Una buena opción general para la mayoría de las imágenes.</li>
             </ul>
         </li>
-        <li><strong>Mejora de Rostro:</strong> Si tu imagen tiene un rostro, esta opción puede ayudar a que se vea aún mejor. Solo actívala si deseas que AiCasso se enfoque en mejorar las características faciales.</li>
+        <li><strong>Mejora de Rostros:</strong> Si tu imagen tiene un rostro, esta opción puede ayudar a que se vea aún mejor. Simplemente actívala si deseas que AiCasso se enfoque en mejorar las características faciales.</li>
     </ul>
 
-    <p>Recuerda, ¡estas opciones son totalmente opcionales! No tienes que usarlas si no quieres. Solo describe lo que deseas, y AiCasso encontrará la mejor manera de hacerlo realidad. Y no te preocupes por ser perfecto con tus palabras—¡AiCasso te entiende!</p>
+    <p>Recuerda, ¡estas opciones son totalmente opcionales! No tienes que jugar con ellas si no quieres. Simplemente describe lo que deseas, y AiCasso encontrará la mejor manera de hacerlo realidad. Y no te preocupes por ser perfecto con tus palabras: ¡AiCasso te entiende!</p>
 
 </body>
 </html>

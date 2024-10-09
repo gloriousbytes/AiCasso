@@ -31,9 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -48,31 +55,31 @@
     <div class="example">
         <strong>Vstupní obrázek:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="Vstupní obrázek" loading="lazy">
         </div>
         <strong>Příkaz:</strong>
-        <p>"Zvětši to 4x, použij model Ultra Sharp"</p>
+        <p>"Zvětšit 4x, použijte model Ultra Sharp"</p>
         <strong>Výsledek:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="Výsledný obrázek" loading="lazy">
         </div>
     </div>
 
     <h3>Volitelné parametry</h3>
-    <p>Pokud chcete mít o něco větší kontrolu nad tím, jak je váš obrázek vylepšen, zde jsou některé další možnosti, se kterými si můžete hrát:</p>
+    <p>Pokud chcete mít větší kontrolu nad tím, jak je váš obrázek vylepšen, zde jsou některé další možnosti, se kterými si můžete hrát:</p>
 
     <ul>
-        <li><strong>Škálování:</strong> Toto je míra, jak moc chcete zvětšit svůj obrázek. Můžete si vybrat škálu od 1 do 4, přičemž 4 je výchozí. V podstatě, větší čísla znamenají větší obrázek.</li>
+        <li><strong>Škálování:</strong> Toto je míra, jak moc chcete zvětšit svůj obrázek. Můžete si vybrat škálu od 1 do 4, přičemž 4 je výchozí. V podstatě větší čísla znamenají větší obrázek.</li>
         <li><strong>Model zvětšení:</strong> To je jako výběr filtru pro váš obrázek, ale je to mnohem chytřejší. Zde jsou možnosti:
             <ul>
-                <li><strong>Velké zvýšení detailů:</strong> Nejlepší pro přiblížení na malé detaily.</li>
+                <li><strong>Velké zvýšení detailů:</strong> Nejlepší pro přiblížení malých detailů.</li>
                 <li><strong>Ultra Sharp:</strong> Dělá obrázek super jasným a ostrým.</li>
                 <li><strong>Anime Enhance:</strong> Perfektní pro obrázky ve stylu anime, dělá je ostré a živé.</li>
-                <li><strong>Dvojnásobné detaily:</strong> Dvojnásobí detaily, aniž by to přehánělo.</li>
-                <li><strong>Obecné zvýšení:</strong> Dobrá univerzální možnost pro většinu obrázků.</li>
+                <li><strong>Dvojnásobné detaily:</strong> Dvojnásobí detaily, aniž by to bylo přehnané.</li>
+                <li><strong>Obecné zvýšení:</strong> Dobrá univerzální volba pro většinu obrázků.</li>
             </ul>
         </li>
-        <li><strong>Zlepšení obličeje:</strong> Pokud váš obrázek obsahuje obličej, tato možnost může pomoci, aby vypadal ještě lépe. Stačí ji zapnout, pokud chcete, aby se AiCasso zaměřil na vylepšení rysů obličeje.</li>
+        <li><strong>Vylepšení obličeje:</strong> Pokud má váš obrázek obličej, tato možnost může pomoci, aby vypadal ještě lépe. Stačí ji zapnout, pokud chcete, aby se AiCasso zaměřil na vylepšení rysů obličeje.</li>
     </ul>
 
     <p>Pamatujte, že tyto možnosti jsou zcela volitelné! Nemusíte se s nimi zabývat, pokud nechcete. Stačí popsat, co chcete, a AiCasso zjistí nejlepší způsob, jak to uskutečnit. A nebojte se být dokonalí ve svých slovech—AiCasso vám rozumí!</p>

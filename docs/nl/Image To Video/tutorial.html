@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gids voor de Afbeelding naar Video Functie</title>
+    <title>Handleiding voor de Afbeelding naar Video Functie</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            max-width: 100%;
             height: auto;
+            object-fit: contain;
         }
         .iframe-container {
             display: flex;
@@ -47,27 +48,27 @@
 
 <body>
 
-    <h2>Gids voor het Gebruik van de Afbeelding naar Video Functie</h2>
-    <p>Met de Afbeelding naar Video functie in AiCasso kun je een enkele afbeelding omzetten in een dynamische video. Beschrijf gewoon wat je in je video wilt zien, en AiCasso maakt het voor je!</p>
+    <h2>Handleiding voor het Gebruik van de Afbeelding naar Video Functie</h2>
+    <p>De Afbeelding naar Video functie in AiCasso stelt je in staat om een enkele afbeelding om te zetten in een dynamische video. Beschrijf gewoon wat je in je video wilt zien, en AiCasso zorgt ervoor!</p>
 
-    <h3>Hoe het Werkt:</h3>
+    <h3>Hoe Het Werkt:</h3>
     
     <div class="example">
-        <strong>Invoer Afbeelding:</strong>
+        <strong>Ingangsafbeelding:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/input.jpg" alt="Ingangsafbeelding" loading="lazy">
         </div>
         <strong>Prompt 1:</strong>
         <p>"Een schattige puppy in het park"</p>
         <strong>Resultaat 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppy.gif" alt="Schattige Puppy in het Park" loading="lazy">
         </div>
         <strong>Prompt 2:</strong>
         <p>"Een schattige puppy in het park, gebruik maximale FPS, maximale frames en maximale beweging"</p>
         <strong>Resultaat 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppymaxframes.gif" alt="Maximale FPS Puppy in het Park" loading="lazy">
         </div>
     </div>
 
@@ -75,15 +76,15 @@
     <p>Als je specifieker wilt zijn met je video, zijn hier enkele instellingen die je kunt aanpassen:</p>
 
     <ul>
-        <li><strong>Negatieve Prompt:</strong> Beschrijf wat je *niet* in de video wilt. Als dit leeg blijft, richt AiCasso zich alleen op de positieve prompt.</li>
+        <li><strong>Negatieve Prompt:</strong> Beschrijf wat je *niet* in de video wilt. Als dit leeg wordt gelaten, zal AiCasso zich alleen richten op de positieve prompt.</li>
         <li><strong>Aantal Frames:</strong> Kies hoeveel frames (individuele afbeeldingen) je video zal hebben. Je kunt tot 25 frames selecteren, met 16 als standaard.</li>
         <li><strong>Denoising Stappen:</strong> Dit bepaalt hoe soepel je video eruitziet. Meer stappen betekenen een schonere video. Je kunt tot 50 stappen instellen, met 20 als standaard.</li>
-        <li><strong>Guidance Scale:</strong> Dit helpt de video nauwkeurig aan je beschrijving te houden. Het bereik is van 1.0 tot 8.0, en je kunt de begin- en eindwaarden aanpassen om te sturen hoe de video zich ontwikkelt.</li>
-        <li><strong>Beweging:</strong> Pas aan hoeveel beweging er in je video zit. Een hogere waarde betekent meer actie. Het bereik is van 0 tot 127, met 60 als standaard.</li>
-        <li><strong>Ruisversterking:</strong> Voeg wat ruis toe aan je video voor een meer getextureerde look. Het bereik is van 0 tot 1, met 0 als standaard.</li>
-        <li><strong>Frames per Seconde (FPS):</strong> Stel in hoe snel je video afspeelt. De standaard is 16 FPS, maar je kunt tot 16 gaan voor een snellere weergave.</li>
-        <li><strong>Interpolatiemethode:</strong> Kies hoe de frames worden samengevoegd. De standaard is "lerp" (lineaire interpolatie), maar je kunt ook "slerp" (sferische lineaire interpolatie) gebruiken voor verschillende effecten.</li>
-        <li><strong>Clip Skip:</strong> Sla bepaalde lagen over voor een andere videostijl. Je kunt tot 2 lagen overslaan, of laat het leeg voor het standaardgedrag.</li>
+        <li><strong>Guidance Scale:</strong> Dit helpt de video dicht bij je beschrijving te blijven. Het bereik is van 1.0 tot 8.0, en je kunt de start- en eindwaarden aanpassen om te sturen hoe de video zich ontwikkelt.</li>
+        <li><strong>Beweging:</strong> Pas aan hoeveel beweging er in je video is. Een hogere waarde betekent meer actie. Het bereik is van 0 tot 127, met 60 als standaard.</li>
+        <li><strong>Ruisversterking Sterkte:</strong> Voeg wat ruis toe aan je video om het een meer gestructureerde uitstraling te geven. Het bereik is van 0 tot 1, met 0 als standaard.</li>
+        <li><strong>Frames per Seconde (FPS):</strong> Stel in hoe snel je video afspeelt. De standaard is 16 FPS, maar je kunt tot 16 gaan voor snellere weergave.</li>
+        <li><strong>Interpolatiemethode:</strong> Kies hoe de frames met elkaar worden gemengd. De standaard is "lerp" (lineaire interpolatie), maar je kunt ook "slerp" (sferische lineaire interpolatie) gebruiken voor verschillende effecten.</li>
+        <li><strong>Clip Overslaan:</strong> Sla bepaalde lagen over voor een andere videostijl. Je kunt tot 2 lagen overslaan, of het leeg laten voor het standaardgedrag.</li>
     </ul>
 
     <p>Vergeet niet, AiCasso is behoorlijk slim! Je hoeft niet elk detail perfect te krijgen of correcte grammatica te gebruiken. Beschrijf gewoon wat je wilt, en AiCasso doet de rest. Veel plezier met het maken van je video's!</p>

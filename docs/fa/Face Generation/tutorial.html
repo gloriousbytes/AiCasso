@@ -6,76 +6,77 @@
     <title>راهنمای ویژگی تولید چهره</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Ensures the image doesn't overflow the container */
+    height: auto;     /* Keeps the aspect ratio */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
     <h2>راهنمای استفاده از ویژگی تولید چهره</h2>
-    <p>ویژگی تولید چهره در AiCasso بسیار چندمنظوره است! این امکان را به شما می‌دهد که تصاویر شگفت‌انگیزی با ادغام یک چهره خاص در شخصیت‌ها یا سبک‌های مختلف ایجاد کنید. چه در حال تصور یک شوالیه، سامورایی یا هر شخصیت دیگری باشید، AiCasso از چهره ورودی برای تولید تصویری با آن چهره در طراحی درخواست شده استفاده می‌کند.</p>
+    <p>ویژگی تولید چهره در AiCasso بسیار انعطاف‌پذیر است! این امکان را به شما می‌دهد که تصاویر شگفت‌انگیزی با ترکیب یک چهره خاص در شخصیت‌ها یا سبک‌های مختلف ایجاد کنید. چه در حال تصور یک شوالیه، سامورایی یا هر شخصیت دیگری باشید، AiCasso از چهره ورودی برای تولید تصویری با آن چهره در طراحی درخواست شده استفاده می‌کند.</p>
 
-    <h3>نحوه کار:</h3>
+    <h3>چگونه کار می‌کند:</h3>
     
-    <div class="example">
-        <strong>تصویر ورودی:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
-        </div>
-        <strong>دستور ۱:</strong>
-        <p>"یک شوالیه واقعی، از حداکثر مقیاس استفاده کنید"</p>
-        <strong>نتیجه ۱:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
-        </div>
-        <strong>دستور ۲:</strong>
-        <p>"از سبک چینی استفاده کنید و یک سامورایی بسازید، از مقادیر پیش‌فرض استفاده کنید"</p>
-        <strong>نتیجه ۲:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
-        </div>
-        <strong>دستور ۳:</strong>
-        <p>"یک سامورایی، از ۳۱ مرحله کاهش نویز استفاده کنید و از سبک انیمه استفاده کنید"</p>
-        <strong>نتیجه ۳:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>تصویر ورودی:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/input.jpg" alt="تصویر ورودی">
     </div>
+    <strong>دستور ۱:</strong>
+    <p>"یک شوالیه واقعی، از حداکثر مقیاس استفاده کنید"</p>
+    <strong>نتیجه ۱:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="شوالیه واقعی">
+    </div>
+    <strong>دستور ۲:</strong>
+    <p>"از سبک چینی استفاده کنید و یک سامورایی بسازید، از مقادیر پیش‌فرض استفاده کنید"</p>
+    <strong>نتیجه ۲:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="سامورایی چینی">
+    </div>
+    <strong>دستور ۳:</strong>
+    <p>"یک سامورایی، از ۳۱ مرحله کاهش نویز استفاده کنید و از سبک انیمه"</p>
+    <strong>نتیجه ۳:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="سامورایی انیمه">
+    </div>
+</div>
 
     <h3>پارامترهای اختیاری</h3>
     <p>اگر می‌خواهید کمی شخصیت یا کنترل بیشتری به تصاویر تولید شده خود اضافه کنید، در اینجا چند گزینه وجود دارد که می‌توانید تنظیم کنید:</p>
@@ -83,12 +84,12 @@
     <ul>
         <li><strong>دستور منفی:</strong> اینجا جایی است که می‌توانید به AiCasso بگویید چه چیزی را <em>نمی‌خواهید</em> در تصویر ببینید. اگر این قسمت را خالی بگذارید، AiCasso فقط بر روی دستور مثبت تمرکز خواهد کرد.</li>
         <li><strong>تعداد مراحل کاهش نویز:</strong> این کنترل می‌کند که تصویر چقدر صاف و تصفیه شده به نظر برسد. می‌توانید بین ۲۱، ۳۱ یا ۴۱ مرحله انتخاب کنید که ۴۱ پیش‌فرض است. مراحل بیشتر به معنای تصویر تمیزتر و صیقلی‌تر است.</li>
-        <li><strong>مقیاس راهنمایی:</strong> این کمک می‌کند تا تصویر به توصیف شما نزدیک بماند. مقیاس از ۱ تا ۲۰ متغیر است که ۱۰ پیش‌فرض است. اعداد بالاتر به این معنی است که AiCasso به دستور شما نزدیک‌تر خواهد بود.</li>
+        <li><strong>مقیاس راهنمایی:</strong> این کمک می‌کند تا تصویر به توصیف شما وفادار بماند. مقیاس از ۱ تا ۲۰ متغیر است که ۱۰ پیش‌فرض است. اعداد بالاتر به این معنی است که AiCasso به دستور شما نزدیک‌تر خواهد بود.</li>
         <li><strong>مقیاس S:</strong> این به ساختار چهره مربوط می‌شود. کمی فنی است، اما اساساً وزن ساختار چهره را تنظیم می‌کند. پیش‌فرض ۱.۰ است و می‌توانید از ۰.۰ تا ۲.۰ بروید.</li>
         <li><strong>سبک:</strong> آیا می‌خواهید به تصویر خود حال و هوای خاصی بدهید؟ می‌توانید سبکی مانند کمیک، چینی، ۳D، انیمه یا واقعی انتخاب کنید. واقعی پیش‌فرض است، اما احساس خلاقیت کنید!</li>
     </ul>
 
-    <p>و به یاد داشته باشید، AiCasso بسیار بخشنده است. شما نیازی به یک جادوگر گرامر ندارید یا هر جزئیات را به طور کامل درست کنید. فقط آنچه را که می‌خواهید با کلمات خود توصیف کنید و AiCasso بقیه را انجام خواهد داد. از خلق کردن لذت ببرید!</p>
+    <p>و به یاد داشته باشید، AiCasso بسیار بخشنده است. شما نیازی به یک جادوگر گرامر ندارید یا هر جزئیات را به طور کامل درست کنید. فقط آنچه را که می‌خواهید به زبان خود توصیف کنید و AiCasso بقیه را انجام خواهد داد. از خلق کردن لذت ببرید!</p>
 
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panduan Fitur Fashion Generation</title>
+    <title>Panduan Fitur Generasi Fashion</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -47,39 +48,39 @@
 
 <body>
 
-    <h2>Panduan Menggunakan Fitur Fashion Generation</h2>
-    <p>Fitur Fashion Generation di AiCasso memungkinkan Anda mendandani seseorang dengan pakaian tertentu, seperti kemeja, gaun, atau celana. Cukup jelaskan apa yang Anda inginkan, dan lihat AiCasso menerapkan item pakaian tersebut pada orang di gambar.</p>
+    <h2>Panduan Menggunakan Fitur Generasi Fashion</h2>
+    <p>Fitur Generasi Fashion di AiCasso memungkinkan Anda untuk mendandani seseorang dengan pakaian tertentu, seperti kemeja, gaun, atau celana. Cukup deskripsikan apa yang Anda inginkan, dan saksikan AiCasso menerapkan item pakaian tersebut pada orang dalam gambar.</p>
 
-    <h3>Cara Kerjanya:</h3>
+    <h3>Bagaimana Cara Kerjanya:</h3>
     
     <div class="example">
         <strong>Input 1 - Gambar Orang:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 1.jpg" alt="Gambar Orang">
         </div>
         <strong>Input 2 - Item Pakaian:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 2.jpg" alt="Item Pakaian">
         </div>
         <strong>Prompt:</strong>
-        <p>"Pria mengenakan kemeja"</p>
+        <p>"Pria yang mengenakan kemeja"</p>
         <strong>Hasil:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+            <img src="../../images/tutorials/fashion/result.jpg" alt="Gambar Hasil">
         </div>
     </div>
 
     <h3>Parameter Opsional</h3>
-    <p>Jika Anda ingin menambahkan gaya Anda sendiri atau memastikan hasilnya tepat, Anda dapat mengatur pengaturan ini:</p>
+    <p>Jika Anda ingin menambahkan gaya Anda sendiri atau memastikan hasilnya sesuai, Anda dapat menyesuaikan pengaturan ini:</p>
 
     <ul>
-        <li><strong>Prompt Negatif:</strong> Jika ada sesuatu yang <em>tidak</em> Anda inginkan dalam gambar, sebutkan saja di sini. Biarkan kosong jika Anda setuju dengan apa pun yang dihasilkan AiCasso.</li>
-        <li><strong>Jenis Pakaian:</strong> Beritahu AiCasso apakah Anda fokus pada <em>tubuh bagian atas</em>, <em>tubuh bagian bawah</em>, atau <em>gaun</em>. Jika Anda tidak yakin, secara default akan fokus pada tubuh bagian atas.</li>
-        <li><strong>Jumlah Langkah Denoising:</strong> Ini menentukan seberapa halus dan rapi tampilan gambar. Anda dapat memilih antara 21, 31, atau 41 langkah, dengan 21 sebagai default. Lebih banyak langkah biasanya berarti tampilan yang lebih halus.</li>
-        <li><strong>Skala Panduan:</strong> Ini membantu gambar tetap sesuai dengan deskripsi Anda. Anda dapat mengaturnya dari 1 hingga 20, dengan 7 sebagai default. Angka yang lebih tinggi berarti AiCasso akan lebih mengikuti prompt Anda.</li>
+        <li><strong>Prompt Negatif:</strong> Jika ada sesuatu yang Anda <em>tidak</em> inginkan dalam gambar, sebutkan di sini. Biarkan kosong jika Anda tidak keberatan dengan apa pun yang dihasilkan AiCasso.</li>
+        <li><strong>Jenis Kain:</strong> Beritahu AiCasso apakah Anda fokus pada <em>bagian atas</em>, <em>bagian bawah</em>, atau <em>gaun</em>. Jika Anda tidak yakin, secara default akan menggunakan bagian atas.</li>
+        <li><strong>Jumlah Langkah Denoising:</strong> Ini menentukan seberapa halus dan rapi gambar tersebut. Anda dapat memilih antara 21, 31, atau 41 langkah, dengan 21 sebagai default. Semakin banyak langkah biasanya berarti tampilan yang lebih halus.</li>
+        <li><strong>Skala Panduan:</strong> Ini membantu gambar tetap dekat dengan deskripsi Anda. Anda dapat mengatur dari 1 hingga 20, dengan 7 sebagai default. Angka yang lebih tinggi berarti AiCasso akan mengikuti prompt Anda lebih dekat.</li>
     </ul>
 
-    <p>Ingat, pengaturan ini opsional! AiCasso cukup pintar dan dapat memahami apa yang Anda maksud bahkan jika Anda tidak mendapatkan setiap detail dengan sempurna. Nikmati saja dan biarkan kreativitas Anda mengalir!</p>
+    <p>Ingat, pengaturan ini bersifat opsional! AiCasso cukup pintar dan dapat memahami maksud Anda bahkan jika Anda tidak mendapatkan setiap detail dengan sempurna. Nikmati saja dan biarkan kreativitas Anda mengalir!</p>
 
 </body>
 </html>

@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            max-width: 100%;
             height: auto;
+            object-fit: contain;
         }
         .iframe-container {
             display: flex;
@@ -47,7 +48,7 @@
 
 <body>
 
-    <h2>A Kép a Videó Funkció Használatának Útmutatója</h2>
+    <h2>A Kép a Videó Funkció Használati Útmutatója</h2>
     <p>A Kép a Videó funkció az AiCasso-ban lehetővé teszi, hogy egyetlen képet dinamikus videóvá alakíts. Csak írd le, mit szeretnél látni a videódban, és az AiCasso megvalósítja!</p>
 
     <h3>Hogyan Működik:</h3>
@@ -55,19 +56,19 @@
     <div class="example">
         <strong>Bemeneti Kép:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/input.jpg" alt="Bemeneti Kép" loading="lazy">
         </div>
         <strong>Prompt 1:</strong>
         <p>"Egy aranyos kiskutya a parkban"</p>
         <strong>Eredmény 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppy.gif" alt="Aranyos Kiskutya a Parkban" loading="lazy">
         </div>
         <strong>Prompt 2:</strong>
-        <p>"Egy aranyos kiskutya a parkban, használj maximális FPS-t, maximális képkockákat és maximális mozgást"</p>
+        <p>"Egy aranyos kiskutya a parkban, maximális FPS, maximális képkockák és maximális mozgás használatával"</p>
         <strong>Eredmény 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppymaxframes.gif" alt="Maximális FPS Kiskutya a Parkban" loading="lazy">
         </div>
     </div>
 
@@ -76,17 +77,17 @@
 
     <ul>
         <li><strong>Negatív Prompt:</strong> Írd le, mit *nem* szeretnél a videóban. Ha üresen hagyod, az AiCasso csak a pozitív prompt-ra fog összpontosítani.</li>
-        <li><strong>Képkockák Száma:</strong> Válaszd ki, hány képkockát (egyedi képet) szeretnél a videódban. Maximum 25 képkockát választhatsz, az alapértelmezett 16.</li>
-        <li><strong>Zajcsökkentési Lépések:</strong> Ez határozza meg, mennyire sima a videód. Minél több lépés, annál tisztább a videó. Maximum 50 lépést állíthatsz be, az alapértelmezett 20.</li>
-        <li><strong>Irányítási Skála:</strong> Ez segít, hogy a videó szorosan kövesse a leírásodat. A tartomány 1.0-tól 8.0-ig terjed, és beállíthatod a kezdő és végértékeket, hogy irányítsd, hogyan fejlődik a videó.</li>
-        <li><strong>Mozi:</strong> Állítsd be, mennyi mozgás legyen a videódban. A magasabb érték több akciót jelent. A tartomány 0-tól 127-ig terjed, az alapértelmezett 60.</li>
-        <li><strong>Zaj Növelési Erősség:</strong> Adj hozzá egy kis zajt a videódhoz, hogy textúrázottabb megjelenést kapjon. A tartomány 0-tól 1-ig terjed, az alapértelmezett 0.</li>
-        <li><strong>Képkockák másodpercenként (FPS):</strong> Állítsd be, milyen gyorsan játszódjon le a videód. Az alapértelmezett 16 FPS, de akár 16-ig is mehetsz a gyorsabb lejátszáshoz.</li>
+        <li><strong>Képkockák Száma:</strong> Válaszd ki, hány képkocka (egyedi kép) legyen a videódban. Maximum 25 képkockát választhatsz, a 16 a alapértelmezett.</li>
+        <li><strong>Zajcsökkentési Lépések:</strong> Ez határozza meg, mennyire sima a videód. Minél több lépés, annál tisztább a videó. Maximum 50 lépést állíthatsz be, a 20 az alapértelmezett.</li>
+        <li><strong>Irányítási Skála:</strong> Ez segít a videónak szorosan követni a leírásodat. A tartomány 1.0-tól 8.0-ig terjed, és beállíthatod a kezdő és végértékeket, hogy irányítsd, hogyan fejlődik a videó.</li>
+        <li><strong>Mozi:</strong> Állítsd be, mennyi mozgás legyen a videódban. A magasabb érték több akciót jelent. A tartomány 0-tól 127-ig terjed, a 60 az alapértelmezett.</li>
+        <li><strong>Zaj Növelési Erősség:</strong> Adj hozzá egy kis zajt a videódhoz, hogy textúrázottabb megjelenést kapjon. A tartomány 0-tól 1-ig terjed, a 0 az alapértelmezett.</li>
+        <li><strong>Képkockák másodpercenként (FPS):</strong> Állítsd be, milyen gyorsan játssza le a videódat. Az alapértelmezett 16 FPS, de akár 16-ig is mehetsz a gyorsabb lejátszáshoz.</li>
         <li><strong>Interpolációs Módszer:</strong> Válaszd ki, hogyan keverednek össze a képkockák. Az alapértelmezett a "lerp" (lineáris interpoláció), de használhatsz "slerp"-et (gömbi lineáris interpoláció) is különböző hatásokhoz.</li>
-        <li><strong>Réteg Kihagyás:</strong> Hagyj ki bizonyos rétegeket a különböző videóstílushoz. Maximum 2 réteget hagyhatsz ki, vagy hagyhatod üresen az alapértelmezett viselkedéshez.</li>
+        <li><strong>Réteg Kihagyás:</strong> Hagyj ki bizonyos rétegeket a különböző videóstílushoz. Maximum 2 réteget hagyhatsz ki, vagy hagyd üresen az alapértelmezett viselkedéshez.</li>
     </ul>
 
-    <p>Ne feledd, az AiCasso elég okos! Nem kell minden részletet tökéletesen megadnod, vagy helyes nyelvtant használnod. Csak írd le, mit szeretnél, és az AiCasso megcsinálja a többit. Jó szórakozást a videóid készítéséhez!</p>
+    <p>Ne feledd, az AiCasso elég okos! Nem kell minden részletet tökéletesen megadnod, vagy helyes nyelvtant használnod. Csak írd le, mit szeretnél, és az AiCasso elvégzi a többit. Jó szórakozást a videóid készítéséhez!</p>
 
 </body>
 </html>

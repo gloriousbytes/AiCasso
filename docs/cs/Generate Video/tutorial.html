@@ -31,16 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img {
+            width: 100%;
+            max-width: 400px;
             height: auto;
         }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        @media (max-width: 768px) {
+            .result img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -53,38 +53,42 @@
     <h3>Jak to funguje:</h3>
     
     <div class="example">
-        <strong>Výzva:</strong>
-        <p>"3D animovaný kohout na poli sám, jak jí a je šťastný. Udělejte z toho portrétní video s 50 kroky odhlučnění."</p>
+        <strong>Příkaz:</strong>
+        <p>"3D animovaný kohout na poli sám, jak jí a je šťastný. Udělej z toho portrétní video s 50 kroky denoisingu."</p>
         <strong>Výsledek:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/animated3d.gif" alt="Animovaný 3D Kohout">
+            <noscript><img src="../../images/tutorials/texttovideo/animated3d.gif" alt="Animovaný 3D Kohout"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Výzva:</strong>
-        <p>"Kreslený kohout na poli v krajině."</p>
+        <strong>Příkaz:</strong>
+        <p>"Kreslený kohout na poli v krajinných rozměrech."</p>
         <strong>Výsledek:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/cartoon.gif" alt="Kreslený Kohout">
+            <noscript><img src="../../images/tutorials/texttovideo/cartoon.gif" alt="Kreslený Kohout"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Výzva:</strong>
+        <strong>Příkaz:</strong>
         <p>"Kohout na poli."</p>
         <strong>Výsledek:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/default.gif" alt="Výchozí Kohout">
+            <noscript><img src="../../images/tutorials/texttovideo/default.gif" alt="Výchozí Kohout"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Výzva:</strong>
-        <p>"Kohout, který je na poli sám. Dejte mu přirozený pocit."</p>
+        <strong>Příkaz:</strong>
+        <p>"Kohout, který je na poli sám. Dej mu přirozený pocit."</p>
         <strong>Výsledek:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/natural.gif" alt="Přirozený Kohout">
+            <noscript><img src="../../images/tutorials/texttovideo/natural.gif" alt="Přirozený Kohout"></noscript>
         </div>
     </div>
 
@@ -93,22 +97,22 @@
 
     <ul>
         <li><strong>Počet snímků:</strong> Vyberte, kolik snímků (jednotlivých obrázků) vaše video bude mít. Můžete mít až 25 snímků, přičemž 16 je výchozí.</li>
-        <li><strong>Počet kroků odhlučnění:</strong> Toto ovlivňuje, jak hladké vaše video vypadá. Více kroků znamená hladší videa. Můžete nastavit až 50 kroků, přičemž 20 je výchozí.</li>
-        <li><strong>Škála vedení:</strong> Toto pomáhá videu držet se blízko vašeho popisu. Čím vyšší číslo, tím více se řídí vaší výzvou. Rozsah je od 0 do 8, přičemž 8 je výchozí.</li>
-        <li><strong>Přeskočit klipy:</strong> Přeskočte určité vrstvy pro jiný styl videa. Ve výchozím nastavení se žádné vrstvy nepřeskakují, ale můžete přeskočit až 2.</li>
-        <li><strong>Šířka a výška zvětšení:</strong> Můžete své video zvětšit úpravou rozlišení. Výchozí je 1024x1024 pixelů, ale můžete to upravit podle svých potřeb.</li>
-        <li><strong>Síla zvětšení:</strong> Toto mění, jak moc se vaše video upraví při zvětšení. Výchozí je 1, ale můžete to upravit, abyste viděli více rozdílů.</li>
-        <li><strong>Škála vedení zvětšení:</strong> Toto řídí proces zvětšení, s rozsahem od 0 do 8 a výchozí hodnotou 8.</li>
-        <li><strong>Kroky inference zvětšení:</strong> Počet kroků provedených pro zvětšení videa. Více kroků znamená hladší zvětšení, s maximem 50 a výchozí hodnotou 20.</li>
-        <li><strong>Vylepšené vzorkování:</strong> Chcete více rafinované video? Zapněte to. Ve výchozím nastavení je to vypnuto.</li>
-        <li><strong>Semeno vylepšeného vzorkování:</strong> Použijte to k vygenerování stejného videa pokaždé s vylepšeným vzorkováním. Je to volitelné a ve výchozím nastavení je to vypnuto.</li>
-        <li><strong>Snímky za sekundu (FPS):</strong> Nastavte rychlost svého videa. Výchozí je 16 FPS, ale můžete to upravit až na 16.</li>
-        <li><strong>Model videa:</strong> Vyberte styl svého videa. Možnosti zahrnují:
+        <li><strong>Počet kroků denoisingu:</strong> Toto ovlivňuje, jak hladké vaše video vypadá. Více kroků znamená hladší videa. Můžete nastavit až 50 kroků, přičemž 20 je výchozí.</li>
+        <li><strong>Guidance Scale:</strong> Toto pomáhá videu držet se blízko vašeho popisu. Čím vyšší číslo, tím více se řídí vaším příkazem. Rozsah je od 0 do 8, přičemž 8 je výchozí.</li>
+        <li><strong>Clip Skip:</strong> Přeskočte určité vrstvy pro jiný styl videa. Ve výchozím nastavení se žádné vrstvy nepřeskakují, ale můžete přeskočit až 2.</li>
+        <li><strong>Upscale Width and Height:</strong> Můžete své video zvětšit úpravou rozlišení. Výchozí je 1024x1024 pixelů, ale můžete to upravit podle svých potřeb.</li>
+        <li><strong>Upscale Strength:</strong> Toto mění, jak moc se vaše video upraví při zvětšení. Výchozí je 1, ale můžete to upravit, abyste viděli více rozdílů.</li>
+        <li><strong>Upscale Guidance Scale:</strong> Toto řídí proces zvětšení, s rozsahem od 0 do 8 a výchozím nastavením 8.</li>
+        <li><strong>Upscale Inference Steps:</strong> Počet kroků provedených pro zvětšení videa. Více kroků znamená hladší zvětšení, s maximem 50 a výchozím nastavením 20.</li>
+        <li><strong>Improved Sampling:</strong> Chcete rafinovanější video? Zapněte to. Ve výchozím nastavení je to vypnuto.</li>
+        <li><strong>Improved Sampling Seed:</strong> Použijte to k vygenerování stejného videa pokaždé s vylepšeným vzorkováním. Je to volitelné a ve výchozím nastavení je to vypnuto.</li>
+        <li><strong>Frames per Second (FPS):</strong> Nastavte rychlost svého videa. Výchozí je 16 FPS, ale můžete to upravit až na 16.</li>
+        <li><strong>Video Model:</strong> Vyberte styl svého videa. Možnosti zahrnují:
             <ul>
-                <li><strong>Výchozí:</strong> Standardní model videa.</li>
+                <li><strong>Výchozí:</strong> Standardní video model.</li>
                 <li><strong>Kreslený:</strong> Kreslený styl videa.</li>
                 <li><strong>Přirozený:</strong> Realistický, přirozeně vypadající styl videa.</li>
-                <li><strong>Animovaný 3D:</strong> 3D animovaný styl videa.</li>
+                <li><strong>Animovaný 3D:</strong> Styl videa s 3D animací.</li>
             </ul>
         </li>
     </ul>

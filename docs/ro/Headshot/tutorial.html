@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -48,26 +49,26 @@
 <body>
 
     <h2>Ghid pentru Utilizarea Funcției Headshot</h2>
-    <p>Cu funcția Headshot din AiCasso, poți crea portrete uimitoare și unice doar descriind ceea ce dorești. Este perfect pentru a realiza imagini impresionante, fie că vrei o scenă serenă, un războinic epic sau orice altceva îți imaginezi!</p>
+    <p>Cu funcția Headshot din AiCasso, poți crea portrete uimitoare și unice descriind pur și simplu ceea ce dorești. Este perfect pentru a crea imagini impresionante, fie că vrei o scenă serenă, un războinic epic sau orice altceva îți imaginezi!</p>
 
     <h3>Cum Funcționează:</h3>
     
     <div class="example">
         <strong>Imagine de Intrare:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+            <img src="../../images/tutorials/headshot/input.jpg" alt="Imagine de Intrare">
         </div>
         <strong>Prompt 1:</strong>
         <p>"Un bărbat în zăpadă"</p>
         <strong>Rezultatul 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+            <img src="../../images/tutorials/headshot/maninsnow.jpg" alt="Rezultatul Bărbat în Zăpadă">
         </div>
         <strong>Prompt 2:</strong>
-        <p>"Un războinic în pădure, folosește o scară medie înaltă, cum ar fi 78% din asta"</p>
+        <p>"Un războinic în pădure, folosește o scară medie înaltă, cum ar fi 78% din aceasta"</p>
         <strong>Rezultatul 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+            <img src="../../images/tutorials/headshot/warrior.jpg" alt="Rezultatul Războinic în Pădure">
         </div>
     </div>
 
@@ -75,13 +76,13 @@
     <p>Vrei să adaugi un pic mai mult stil sau control la headshot-urile tale generate? Iată câteva opțiuni interesante pe care le poți ajusta:</p>
 
     <ul>
-        <li><strong>Prompt Negativ:</strong> Aici poți spune AiCasso ce <em>nu</em> vrei să vezi în imagine. De exemplu, dacă nu vrei elemente de fundal, poți menționa asta aici. Dacă lași acest câmp gol, AiCasso se va concentra doar pe ceea ce dorești.</li>
+        <li><strong>Prompt Negativ:</strong> Aici poți spune AiCasso ce <em>nu</em> vrei să vezi în imagine. De exemplu, dacă nu vrei elemente de fundal, poți menționa asta aici. Dacă lași acest câmp gol, AiCasso se va concentra doar pe ceea ce vrei.</li>
         <li><strong>Numărul de Pași de Denoising:</strong> Acesta controlează cât de neted și rafinat arată fața. Poți alege între 21, 31 sau 41 de pași, cu 41 fiind valoarea implicită. Mai mulți pași înseamnă de obicei un rezultat mai curat și mai finisat.</li>
-        <li><strong>Scara de Ghidare:</strong> Aceasta este ca și cum ai oferi AiCasso un mic impuls suplimentar pentru a rămâne fidel descrierii tale. Scara variază de la 1 la 20, cu 10 ca valoare implicită. Numerele mai mari înseamnă că AiCasso va respecta mai mult ceea ce descrii.</li>
-        <li><strong>Scara S:</strong> Aceasta ajustează structura feței. Este un pic tehnică, dar esențial este că ajustează cât de puternice sau moi sunt trăsăturile faciale. Valoarea implicită este 1.0, iar tu poți merge de la 0.0 la 2.0, în funcție de aspectul pe care îl cauți.</li>
+        <li><strong>Scara de Ghidare:</strong> Aceasta este ca și cum ai oferi AiCasso un mic impuls suplimentar pentru a rămâne fidel descrierii tale. Scara variază de la 1 la 20, cu 10 ca valoare implicită. Numerele mai mari înseamnă că AiCasso va respecta mai aproape ceea ce descrii.</li>
+        <li><strong>Scara S:</strong> Aceasta ajustează structura feței. Este un pic tehnică, dar esențial, ajustează cât de puternice sau moi sunt trăsăturile faciale. Valoarea implicită este 1.0, iar tu poți merge de la 0.0 la 2.0 în funcție de aspectul pe care îl cauți.</li>
     </ul>
 
-    <p>Ține minte, acești parametri sunt complet opționali. AiCasso este destul de iertător, așa că nu trebuie să fii super precis sau gramatical corect. Doar descrie ceea ce vrei în cuvintele tale, iar AiCasso va face magia. Distracție plăcută la crearea headshot-urilor tale!</p>
+    <p>Îți amintești, acești parametri sunt complet opționali. AiCasso este destul de iertător, așa că nu trebuie să fii super precis sau gramatical corect. Doar descrie ceea ce vrei în propriile tale cuvinte, iar AiCasso va face magia. Distracție plăcută creând headshot-urile tale!</p>
 
 </body>
 </html>

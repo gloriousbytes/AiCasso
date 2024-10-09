@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -47,38 +48,38 @@
 
 <body>
 
-    <h2>Guide d'Utilisation de la Fonctionnalité Portrait</h2>
-    <p>Avec la fonctionnalité Portrait dans AiCasso, vous pouvez créer des portraits incroyables et uniques simplement en décrivant ce que vous voulez. C'est parfait pour réaliser des images époustouflantes, que vous souhaitiez une scène sereine, un guerrier épique, ou tout autre chose que votre imagination peut concevoir !</p>
+    <h2>Guide d'utilisation de la fonctionnalité Portrait</h2>
+    <p>Avec la fonctionnalité Portrait dans AiCasso, vous pouvez créer des portraits incroyables et uniques en décrivant simplement ce que vous voulez. C'est parfait pour réaliser des images époustouflantes, que vous souhaitiez une scène sereine, un guerrier épique ou tout autre chose que votre imagination peut conjurer !</p>
 
-    <h3>Comment ça Marche :</h3>
+    <h3>Comment ça fonctionne :</h3>
     
     <div class="example">
-        <strong>Image d'Entrée :</strong>
+        <strong>Image d'entrée :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+            <img src="../../images/tutorials/headshot/input.jpg" alt="Image d'entrée">
         </div>
-        <strong>Prompt 1 :</strong>
+        <strong>Invite 1 :</strong>
         <p>"Un homme dans la neige"</p>
         <strong>Résultat 1 :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+            <img src="../../images/tutorials/headshot/maninsnow.jpg" alt="Résultat Homme dans la Neige">
         </div>
-        <strong>Prompt 2 :</strong>
-        <p>"Un guerrier dans la forêt, utiliser une échelle moyenne haute comme 78% de ceci"</p>
+        <strong>Invite 2 :</strong>
+        <p>"Un guerrier dans la forêt, utilisez une échelle moyenne haute comme 78% de cela"</p>
         <strong>Résultat 2 :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+            <img src="../../images/tutorials/headshot/warrior.jpg" alt="Résultat Guerrier dans la Forêt">
         </div>
     </div>
 
-    <h3>Paramètres Optionnels</h3>
-    <p>Vous voulez ajouter un peu plus de style ou de contrôle à vos portraits générés ? Voici quelques options intéressantes que vous pouvez ajuster :</p>
+    <h3>Paramètres optionnels</h3>
+    <p>Vous souhaitez ajouter un peu plus de flair ou de contrôle à vos portraits générés ? Voici quelques options intéressantes que vous pouvez ajuster :</p>
 
     <ul>
-        <li><strong>Prompt Négatif :</strong> C'est ici que vous pouvez dire à AiCasso ce que vous <em>ne</em> voulez pas voir dans l'image. Par exemple, si vous ne voulez pas d'éléments d'arrière-plan, vous pouvez le mentionner ici. Si vous laissez cela vide, AiCasso se concentrera simplement sur ce que vous voulez.</li>
-        <li><strong>Nombre d'Étapes de Dénoyage :</strong> Cela contrôle à quel point le visage est lisse et raffiné. Vous pouvez choisir entre 21, 31 ou 41 étapes, 41 étant la valeur par défaut. Plus d'étapes signifient généralement un résultat plus propre et plus poli.</li>
-        <li><strong>Échelle de Guidance :</strong> C'est comme donner à AiCasso un petit coup de pouce pour rester fidèle à votre description. L'échelle va de 1 à 20, avec 10 comme valeur par défaut. Des chiffres plus élevés signifient qu'AiCasso collera plus étroitement à ce que vous décrivez.</li>
-        <li><strong>Échelle S :</strong> Cela ajuste la structure du visage. C'est un peu technique, mais essentiellement, cela modifie à quel point les traits du visage sont forts ou doux. La valeur par défaut est 1.0, et vous pouvez aller de 0.0 à 2.0 selon le look que vous recherchez.</li>
+        <li><strong>Invite Négative :</strong> C'est ici que vous pouvez dire à AiCasso ce que vous <em>ne</em> voulez <em>pas</em> voir dans l'image. Par exemple, si vous ne voulez pas d'éléments de fond, vous pouvez le mentionner ici. Si vous laissez cela vide, AiCasso se concentrera simplement sur ce que vous voulez.</li>
+        <li><strong>Nombre d'étapes de débruitage :</strong> Cela contrôle à quel point le visage est lisse et raffiné. Vous pouvez choisir entre 21, 31 ou 41 étapes, 41 étant la valeur par défaut. Plus d'étapes signifient généralement un résultat plus propre et plus poli.</li>
+        <li><strong>Échelle de guidance :</strong> C'est comme donner à AiCasso un petit coup de pouce supplémentaire pour rester fidèle à votre description. L'échelle varie de 1 à 20, avec 10 comme valeur par défaut. Des chiffres plus élevés signifient qu'AiCasso s'en tiendra plus près de ce que vous décrivez.</li>
+        <li><strong>Échelle S :</strong> Cela ajuste la structure du visage. C'est un peu technique, mais en gros, cela modifie la force ou la douceur des traits du visage. La valeur par défaut est 1.0, et vous pouvez aller de 0.0 à 2.0 selon le look que vous recherchez.</li>
     </ul>
 
     <p>Rappelez-vous, ces paramètres sont totalement optionnels. AiCasso est assez indulgent, donc vous n'avez pas besoin d'être super précis ou grammaticalement correct. Décrivez simplement ce que vous voulez avec vos propres mots, et AiCasso fera la magie. Amusez-vous à créer vos portraits !</p>

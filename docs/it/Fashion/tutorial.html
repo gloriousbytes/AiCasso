@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -47,39 +48,39 @@
 
 <body>
 
-    <h2>Guida all'Uso della Funzionalità Fashion Generation</h2>
-    <p>La funzionalità Fashion Generation in AiCasso ti permette di vestire qualcuno con un abito specifico, come una camicia, un vestito o dei pantaloni. Basta descrivere ciò che desideri e guarda AiCasso applicare l'indumento alla persona nell'immagine.</p>
+    <h2>Guida all'Utilizzo della Funzionalità di Fashion Generation</h2>
+    <p>La funzionalità Fashion Generation in AiCasso ti consente di vestire qualcuno con un abbigliamento specifico, come una camicia, un vestito o dei pantaloni. Basta descrivere cosa desideri e guardare AiCasso applicare l'abbigliamento alla persona nell'immagine.</p>
 
     <h3>Come Funziona:</h3>
     
     <div class="example">
         <strong>Input 1 - Immagine della Persona:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 1.jpg" alt="Immagine della Persona">
         </div>
-        <strong>Input 2 - Indumento:</strong>
+        <strong>Input 2 - Abbigliamento:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 2.jpg" alt="Abbigliamento">
         </div>
-        <strong>Prompt:</strong>
+        <strong>Richiesta:</strong>
         <p>"Ragazzo che indossa una camicia"</p>
         <strong>Risultato:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+            <img src="../../images/tutorials/fashion/result.jpg" alt="Immagine del Risultato">
         </div>
     </div>
 
     <h3>Parametri Opzionali</h3>
-    <p>Se vuoi aggiungere il tuo stile o assicurarti che il risultato sia perfetto, puoi modificare queste impostazioni:</p>
+    <p>Se desideri aggiungere il tuo stile o assicurarti che il risultato sia proprio come lo vuoi, puoi modificare queste impostazioni:</p>
 
     <ul>
-        <li><strong>Prompt Negativo:</strong> Se c'è qualcosa che <em>non</em> vuoi nell'immagine, menzionalo qui. Lascialo vuoto se ti va bene qualsiasi cosa AiCasso crei.</li>
-        <li><strong>Tipo di Indumento:</strong> Indica ad AiCasso se ti stai concentrando sulla <em>parte superiore del corpo</em>, <em>parte inferiore del corpo</em> o <em>vestiti</em>. Se non sei sicuro, il predefinito è la parte superiore del corpo.</li>
-        <li><strong>Numero di Passaggi di Denoising:</strong> Questo decide quanto l'immagine appare liscia e raffinata. Puoi scegliere tra 21, 31 o 41 passaggi, con 21 come predefinito. Più passaggi di solito significano un aspetto più raffinato.</li>
-        <li><strong>Scala di Guida:</strong> Questo aiuta l'immagine a seguire da vicino la tua descrizione. Puoi impostarla da 1 a 20, con 7 come predefinito. Numeri più alti significano che AiCasso seguirà più da vicino il tuo prompt.</li>
+        <li><strong>Richiesta Negativa:</strong> Se c'è qualcosa che <em>non</em> vuoi nell'immagine, menzionalo qui. Lascialo vuoto se sei d'accordo con qualsiasi cosa AiCasso proponga.</li>
+        <li><strong>Tipo di Tessuto:</strong> Dì ad AiCasso se ti stai concentrando sulla <em>parte superiore del corpo</em>, <em>parte inferiore del corpo</em> o <em>vestiti</em>. Se non sei sicuro, il valore predefinito è la parte superiore del corpo.</li>
+        <li><strong>Numero di Passi di Denoising:</strong> Questo decide quanto liscia e rifinita appare l'immagine. Puoi scegliere tra 21, 31 o 41 passi, con 21 come predefinito. Più passi di solito significano un aspetto più raffinato.</li>
+        <li><strong>Scala di Guida:</strong> Questo aiuta l'immagine a rimanere vicina alla tua descrizione. Puoi impostarla da 1 a 20, con 7 come predefinito. Numeri più alti significano che AiCasso seguirà la tua richiesta più da vicino.</li>
     </ul>
 
-    <p>Ricorda, queste impostazioni sono opzionali! AiCasso è piuttosto intelligente e può capire cosa intendi anche se non curi ogni dettaglio alla perfezione. Divertiti e lascia fluire la tua creatività!</p>
+    <p>Ricorda, queste impostazioni sono opzionali! AiCasso è abbastanza intelligente e può capire cosa intendi anche se non ottieni ogni dettaglio perfetto. Divertiti e lascia fluire la tua creatività!</p>
 
 </body>
 </html>

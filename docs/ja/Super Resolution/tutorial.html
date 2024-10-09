@@ -31,9 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -41,41 +48,41 @@
 <body>
 
     <h2>スーパー解像度機能の使い方ガイド</h2>
-    <p>AiCassoのスーパー解像度機能は、画像をさらに美しくするためのものです。どのように画像を強化したいかを指示するだけで、AiCassoが残りを処理します。詳細をシャープにしたり、画像全体を強化したりするのはとても簡単です。</p>
+    <p>AiCassoのスーパー解像度機能は、画像をさらに美しくすることに特化しています。画像をどのように強化したいかを伝えるだけで、AiCassoが残りを処理します。細部をシャープにしたり、全体の画像を強化したりするのはとても簡単です。</p>
 
-    <h3>動作の仕組み:</h3>
+    <h3>動作の仕組み：</h3>
     
     <div class="example">
-        <strong>入力画像:</strong>
+        <strong>入力画像：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="入力画像" loading="lazy">
         </div>
-        <strong>プロンプト:</strong>
+        <strong>プロンプト：</strong>
         <p>"4倍に拡大し、ウルトラシャープモデルを使用"</p>
-        <strong>結果:</strong>
+        <strong>結果：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="結果画像" loading="lazy">
         </div>
     </div>
 
     <h3>オプションパラメータ</h3>
-    <p>画像の強化方法をさらにコントロールしたい場合、以下の追加オプションを試してみてください:</p>
+    <p>画像の強化方法にもう少しコントロールを加えたい場合は、以下の追加オプションを試してみてください：</p>
 
     <ul>
-        <li><strong>スケール:</strong> 画像をどの程度拡大したいかを指定します。1から4まで選べ、4がデフォルトです。基本的に、大きな数字ほど大きな画像になります。</li>
-        <li><strong>アップスケールモデル:</strong> 画像にフィルターをかけるようなものですが、もっと賢いです。以下のオプションがあります:
+        <li><strong>スケール：</strong> これは画像をどれだけ拡大したいかを示します。1から4のスケールを選択でき、4がデフォルトです。基本的に、大きな数字は大きな画像を意味します。</li>
+        <li><strong>アップスケールモデル：</strong> これは画像のフィルターを選ぶようなもので、もっと賢いです。オプションは以下の通りです：
             <ul>
-                <li><strong>ビッグディテールブースト:</strong> 小さなディテールを拡大するのに最適です。</li>
-                <li><strong>ウルトラシャープ:</strong> 画像を非常にクリアでシャープにします。</li>
-                <li><strong>アニメエンハンス:</strong> アニメスタイルの画像に最適で、シャープで鮮やかにします。</li>
-                <li><strong>ダブルディテール:</strong> ディテールを倍増させますが、やりすぎません。</li>
-                <li><strong>ジェネラルブースト:</strong> ほとんどの画像に適した万能オプションです。</li>
+                <li><strong>ビッグディテールブースト：</strong> 小さな詳細をズームインするのに最適です。</li>
+                <li><strong>ウルトラシャープ：</strong> 画像を非常にクリアでシャープにします。</li>
+                <li><strong>アニメ強化：</strong> アニメスタイルの画像に最適で、シャープで鮮やかに見せます。</li>
+                <li><strong>ダブルディテール：</strong> 過剰にならずに詳細を2倍にします。</li>
+                <li><strong>一般的なブースト：</strong> ほとんどの画像に対して良いオールラウンドオプションです。</li>
             </ul>
         </li>
-        <li><strong>フェイスエンハンス:</strong> 画像に顔がある場合、このオプションをオンにすると顔の特徴を強化できます。AiCassoに顔の特徴を強化させたい場合はオンにしてください。</li>
+        <li><strong>顔の強化：</strong> 画像に顔がある場合、このオプションを使用すると、さらに良く見せることができます。顔の特徴を強化したい場合は、これをオンにしてください。</li>
     </ul>
 
-    <p>これらのオプションは完全に任意です！調整したくない場合はそのままで大丈夫です。望むことを説明するだけで、AiCassoが最適な方法を見つけてくれます。言葉に自信がなくても心配しないでください—AiCassoはあなたを理解します！</p>
+    <p>これらのオプションは完全にオプションです！使いたくない場合は、いじる必要はありません。やりたいことを説明するだけで、AiCassoが最適な方法を見つけてくれます。言葉を完璧にすることを心配しないでください—AiCassoはあなたの意図を理解します！</p>
 
 </body>
 </html>

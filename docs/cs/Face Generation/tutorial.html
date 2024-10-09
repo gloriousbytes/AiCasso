@@ -3,92 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Průvodce funkcí generování obličejů</title>
+    <title>Průvodce funkcí generování obličeje</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Zajišťuje, že obrázek nepřeteče kontejnerem */
+    height: auto;     /* Udržuje poměr stran */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
-    <h2>Průvodce používáním funkce generování obličejů</h2>
-    <p>Funkce generování obličejů v AiCasso je neuvěřitelně všestranná! Umožňuje vám vytvářet ohromující obrázky tím, že do různých postav nebo stylů začleníte konkrétní obličej. Ať už si představujete rytíře, samuraje nebo jakoukoli jinou postavu, AiCasso používá zadaný obličej k vygenerování obrázku s tímto obličejem integrovaným do požadovaného designu.</p>
+    <h2>Průvodce používáním funkce generování obličeje</h2>
+    <p>Funkce generování obličeje v AiCasso je neuvěřitelně všestranná! Umožňuje vám vytvářet ohromující obrázky tím, že začleňuje konkrétní obličej do různých postav nebo stylů. Ať už si představujete rytíře, samuraje nebo jakoukoli jinou postavu, AiCasso používá zadaný obličej k vygenerování obrázku s tímto obličejem integrovaným do požadovaného designu.</p>
 
     <h3>Jak to funguje:</h3>
     
-    <div class="example">
-        <strong>Vstupní obrázek:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
-        </div>
-        <strong>Výzva 1:</strong>
-        <p>"Realistický rytíř, použij maximální měřítko"</p>
-        <strong>Výsledek 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
-        </div>
-        <strong>Výzva 2:</strong>
-        <p>"Použij chibi styl a udělej samuraje, použij výchozí hodnoty"</p>
-        <strong>Výsledek 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
-        </div>
-        <strong>Výzva 3:</strong>
-        <p>"Samuraj, použij 31 kroků denoisingu a anime styl"</p>
-        <strong>Výsledek 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Vstupní obrázek:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/input.jpg" alt="Vstupní obrázek">
     </div>
+    <strong>Výzva 1:</strong>
+    <p>"Realistický rytíř, použijte maximální měřítko"</p>
+    <strong>Výsledek 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="Realistický rytíř">
+    </div>
+    <strong>Výzva 2:</strong>
+    <p>"Použijte chibi styl a vytvořte samuraje, použijte výchozí hodnoty"</p>
+    <strong>Výsledek 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="Chibi samuraj">
+    </div>
+    <strong>Výzva 3:</strong>
+    <p>"Samuraj, použijte 31 kroků denoisingu a anime styl"</p>
+    <strong>Výsledek 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="Anime samuraj">
+    </div>
+</div>
 
     <h3>Volitelné parametry</h3>
-    <p>Pokud chcete přidat trochu více osobnosti nebo kontroly nad vašimi generovanými obrázky, zde jsou některé možnosti, které můžete upravit:</p>
+    <p>Pokud chcete přidat trochu více osobnosti nebo kontroly nad vašimi generovanými obrázky, zde je několik možností, které můžete upravit:</p>
 
     <ul>
         <li><strong>Negativní výzva:</strong> Zde můžete říct AiCasso, co <em>nechcete</em> vidět na obrázku. Pokud to necháte prázdné, AiCasso se zaměří pouze na pozitivní výzvu.</li>
-        <li><strong>Počet kroků denoisingu:</strong> To ovlivňuje, jak hladký a rafinovaný obrázek vypadá. Můžete si vybrat mezi 21, 31 nebo 41 kroky, přičemž 41 je výchozí. Více kroků znamená čistší, více vyleštěný obrázek.</li>
+        <li><strong>Počet kroků denoisingu:</strong> To řídí, jak hladký a rafinovaný obrázek vypadá. Můžete si vybrat mezi 21, 31 nebo 41 kroky, přičemž 41 je výchozí. Více kroků znamená čistší, více vyleštěný obrázek.</li>
         <li><strong>Guidance Scale:</strong> To pomáhá obrázku zůstat věrný vašemu popisu. Měřítko se pohybuje od 1 do 20, přičemž 10 je výchozí. Vyšší čísla znamenají, že AiCasso se bude více držet vaší výzvy.</li>
         <li><strong>S Scale:</strong> To se týká struktury obličeje. Je to trochu technické, ale v podstatě to upravuje váhu struktury obličeje. Výchozí hodnota je 1.0 a můžete se pohybovat od 0.0 do 2.0.</li>
         <li><strong>Styl:</strong> Chcete dát svému obrázku specifickou atmosféru? Můžete si vybrat styl jako komiks, chibi, 3D, anime nebo realistický. Realistický je výchozí, ale nebojte se být kreativní!</li>
     </ul>
 
-    <p>A pamatujte, AiCasso je docela shovívavý. Nemusíte být gramatický kouzelník nebo mít každý detail dokonalý. Jen popište, co chcete, svými vlastními slovy, a AiCasso se postará o zbytek. Užijte si tvoření!</p>
+    <p>A pamatujte, AiCasso je docela shovívavý. Nemusíte být gramatický kouzelník nebo mít každý detail dokonalý. Jen popište, co chcete svými vlastními slovy, a AiCasso se postará o zbytek. Užijte si tvoření!</p>
 
 </body>
 </html>

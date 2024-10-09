@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -41,41 +41,41 @@
 <body>
 
     <h2>Panduan Menggunakan Fitur Ganti Latar Belakang</h2>
-    <p>Fitur Ganti Latar Belakang di AiCasso sangat cocok ketika Anda ingin mengganti latar belakang dalam gambar Anda. Apakah Anda hanya ingin menghapus latar belakang atau menggantinya dengan sesuatu yang lain, AiCasso membuatnya sangat mudah. Anda tidak perlu khawatir tentang hal-hal teknis—cukup deskripsikan apa yang Anda inginkan, dan AiCasso akan melakukan sisanya.</p>
+    <p>Fitur Ganti Latar Belakang di AiCasso sangat cocok untuk saat Anda ingin mengganti latar belakang gambar Anda. Apakah Anda hanya ingin menghapus latar belakang atau menggantinya dengan sesuatu yang lain, AiCasso membuatnya sangat mudah. Anda tidak perlu khawatir tentang hal-hal teknis—cukup deskripsikan apa yang Anda inginkan, dan AiCasso akan melakukan sisanya.</p>
 
-    <h3>Cara Kerjanya:</h3>
+    <h3>Bagaimana Cara Kerjanya:</h3>
     
     <div class="example">
         <strong>Gambar Masukan:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Gambar Masukan" loading="lazy">
         </div>
         <strong>Prompt 1:</strong>
         <p>"Hapus latar belakang"</p>
         <strong>Hasil 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Hasil Latar Belakang Dihapus" loading="lazy">
         </div>
         <strong>Prompt 2:</strong>
-        <p>"Ganti latar belakang dengan hutan, bukan hanya menghapusnya, dengan alpha matting dinonaktifkan. Gunakan ambang batas latar depan 240, ambang batas latar belakang 20, dan ukuran erosi 5 untuk alpha matting."</p>
+        <p>"Ganti latar belakang dengan hutan, bukan hanya menghapusnya, dengan alpha matting dinonaktifkan. Gunakan ambang batas foreground 240, ambang batas latar belakang 20, dan ukuran erode 5 untuk alpha matting."</p>
         <strong>Hasil 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Latar Belakang Diganti dengan Hutan" loading="lazy">
         </div>
     </div>
 
     <h3>Parameter Opsional</h3>
-    <p>Jika Anda ingin menambahkan sentuhan pribadi atau menyesuaikan hasilnya, berikut beberapa opsi yang bisa Anda coba:</p>
+    <p>Jika Anda ingin menambahkan sentuhan pribadi atau menyempurnakan hasil, berikut beberapa opsi yang dapat Anda coba:</p>
 
     <ul>
-        <li><strong>Hanya Hapus:</strong> Jika Anda hanya ingin menghapus latar belakang dan tidak menggantinya dengan apapun, ini adalah opsi yang tepat. Ini seperti menekan tombol bersih.</li>
-        <li><strong>Alpha Matting:</strong> Ini adalah cara mewah untuk mengatakan "memadukan tepi." Ketika Anda mengaktifkannya, ini membantu membuat tepi subjek Anda terlihat lebih halus dan tidak terpotong. Secara default, ini dinonaktifkan.</li>
-        <li><strong>Ambang Batas Latar Depan Alpha Matting:</strong> Ini mengontrol seberapa banyak subjek utama (seperti orang) tetap terlihat saat menggunakan alpha matting. Defaultnya adalah 240, dan Anda dapat menyesuaikannya untuk membuat tepi lebih lembut atau tajam.</li>
-        <li><strong>Ambang Batas Latar Belakang Alpha Matting:</strong> Ini melakukan hal yang sama seperti ambang batas latar depan tetapi untuk latar belakang. Defaultnya adalah 20, dan ini semua tentang mendapatkan perpaduan sempurna dengan latar belakang baru.</li>
-        <li><strong>Ukuran Erosi Alpha Matting:</strong> Ini membantu mengecilkan tepi sedikit untuk membuat potongan terlihat lebih bersih. Ukuran defaultnya adalah 5, tetapi Anda dapat menyesuaikannya untuk mendapatkan tampilan yang tepat yang Anda inginkan.</li>
+        <li><strong>Hapus Saja:</strong> Jika Anda hanya ingin menghapus latar belakang dan tidak menggantinya dengan apa pun, ini adalah opsi yang tepat untuk Anda. Ini seperti menekan tombol bersih.</li>
+        <li><strong>Alpha Matting:</strong> Ini adalah cara yang canggih untuk mengatakan "campurkan tepi." Ketika Anda mengaktifkannya, ini membantu membuat tepi subjek Anda terlihat lebih halus dan tidak terlalu terpotong. Secara default, ini dinonaktifkan.</li>
+        <li><strong>Ambang Batas Foreground Alpha Matting:</strong> Ini mengontrol seberapa banyak subjek utama (seperti orang) tetap terlihat saat menggunakan alpha matting. Defaultnya adalah 240, dan Anda dapat menyesuaikannya untuk membuat tepi lebih lembut atau lebih tajam.</li>
+        <li><strong>Ambang Batas Latar Belakang Alpha Matting:</strong> Ini melakukan hal yang sama dengan ambang batas foreground tetapi untuk latar belakang. Defaultnya adalah 20, dan ini semua tentang mendapatkan campuran yang sempurna dengan latar belakang baru.</li>
+        <li><strong>Ukuran Erode Alpha Matting:</strong> Ini membantu mengecilkan tepi sedikit untuk membuat potongan terlihat lebih bersih. Ukuran defaultnya adalah 5, tetapi Anda dapat menyesuaikannya untuk mendapatkan tampilan yang tepat yang Anda inginkan.</li>
     </ul>
 
-    <p>Ingat, Anda tidak perlu stres untuk mendapatkan semuanya sempurna. AiCasso cukup baik dalam memahami apa yang Anda maksud, jadi jangan ragu untuk bersikap santai atau detail sesuai keinginan Anda. Selamat berkreasi!</p>
+    <p>Ingat, Anda tidak perlu stres tentang mendapatkan semuanya sempurna. AiCasso cukup baik dalam memahami apa yang Anda maksud, jadi jangan ragu untuk bersikap santai atau detail sesuai keinginan Anda. Selamat berkarya!</p>
 
 </body>
 </html>

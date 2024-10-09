@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muotigeneraatio Ominaisuuden Opas</title>
+    <title>Muotigeneraatio-ominaisuuden opas</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -47,39 +48,39 @@
 
 <body>
 
-    <h2>Opas Muotigeneraatio Ominaisuuden Käyttämiseen</h2>
-    <p>Muotigeneraatio-ominaisuus AiCasso:ssa antaa sinun pukea jonkun tiettyyn asuun, kuten paitaan, mekkoon tai housuihin. Kuvaile vain, mitä haluat, ja katso, kuinka AiCasso sovittaa vaatekappaleen kuvan henkilöön.</p>
+    <h2>Opas muotigeneraatio-ominaisuuden käyttöön</h2>
+    <p>Muotigeneraatio-ominaisuus AiCassossa antaa sinun pukea jonkun tiettyyn asuun, kuten paitaan, mekkoon tai housuihin. Kuvaile vain, mitä haluat, ja katso, kuinka AiCasso soveltaa vaatekappaletta kuvaan.</p>
 
     <h3>Kuinka se toimii:</h3>
     
     <div class="example">
-        <strong>Syöte 1 - Henkilökuva:</strong>
+        <strong>Syöte 1 - Henkilön kuva:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 1.jpg" alt="Henkilön kuva">
         </div>
         <strong>Syöte 2 - Vaatetus:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 2.jpg" alt="Vaatetus">
         </div>
         <strong>Kehoitus:</strong>
         <p>"Mies, jolla on paita päällä"</p>
         <strong>Tulos:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+            <img src="../../images/tutorials/fashion/result.jpg" alt="Tuloksen kuva">
         </div>
     </div>
 
-    <h3>Valinnaiset Parametrit</h3>
+    <h3>Valinnaiset parametrit</h3>
     <p>Jos haluat lisätä oman tyylisi tai varmistaa, että tulos on juuri oikea, voit säätää näitä asetuksia:</p>
 
     <ul>
-        <li><strong>Negatiivinen Kehoitus:</strong> Jos on jotain, mitä <em>et</em> halua kuvassa, mainitse se täällä. Jätä tyhjäksi, jos olet tyytyväinen siihen, mitä AiCasso keksii.</li>
-        <li><strong>Kangastyypi:</strong> Kerro AiCasso:lle, keskitytkö <em>ylävartaloon</em>, <em>alavartaloon</em> vai <em>mekkoihin</em>. Jos et ole varma, se oletusarvoisesti keskittyy ylävartaloon.</li>
-        <li><strong>Denoinnin Askeleiden Määrä:</strong> Tämä päättää, kuinka sileä ja hiottu kuva näyttää. Voit valita 21, 31 tai 41 askeleen välillä, 21 on oletusarvo. Enemmän askeleita tarkoittaa yleensä hienostuneempaa ilmettä.</li>
-        <li><strong>Ohjausaste:</strong> Tämä auttaa kuvaa pysymään tiiviisti kuvauksessasi. Voit asettaa sen 1:stä 20:een, 7 on oletusarvo. Korkeammat numerot tarkoittavat, että AiCasso seuraa kehoitustasi tarkemmin.</li>
+        <li><strong>Negatiivinen kehoitus:</strong> Jos on jotain, mitä <em>et</em> halua kuvaan, mainitse se täällä. Jätä tyhjäksi, jos olet tyytyväinen siihen, mitä AiCasso keksii.</li>
+        <li><strong>Kangastyypi:</strong> Kerro AiCassolle, keskitytkö <em>ylävartaloon</em>, <em>alavartaloon</em> vai <em>mekkoihin</em>. Jos et ole varma, oletus on ylävartalo.</li>
+        <li><strong>Denoinnin askelten määrä:</strong> Tämä päättää, kuinka sileältä ja hiotulta kuva näyttää. Voit valita 21, 31 tai 41 askeleen välillä, jossa 21 on oletus. Enemmän askeleita tarkoittaa yleensä hienostuneempaa ilmettä.</li>
+        <li><strong>Ohjausaste:</strong> Tämä auttaa kuvaa pysymään tiiviisti kuvauksessasi. Voit asettaa sen 1:stä 20:een, jossa 7 on oletus. Korkeammat numerot tarkoittavat, että AiCasso seuraa kehoitustasi tarkemmin.</li>
     </ul>
 
-    <p>Muista, että nämä asetukset ovat valinnaisia! AiCasso on melko älykäs ja voi ymmärtää, mitä tarkoitat, vaikka et saisikaan jokaista yksityiskohtaa täydellisesti. Nauti vain ja anna luovuutesi virrata!</p>
+    <p>Muista, että nämä asetukset ovat valinnaisia! AiCasso on melko älykäs ja osaa ymmärtää, mitä tarkoitat, vaikka et saisikaan jokaista yksityiskohtaa täydellisesti. Nauti vain ja anna luovuutesi virrata!</p>
 
 </body>
 </html>

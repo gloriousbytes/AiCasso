@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คู่มือฟีเจอร์มุมมองหลายมุม</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        img, video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>คู่มือการใช้ฟีเจอร์มุมมองหลายมุม</h2>
+    <p>ฟีเจอร์มุมมองหลายมุมใน AiCasso ช่วยให้คุณสามารถดูวัตถุจากมุมต่าง ๆ โดยการสร้างมุมมองหลายมุมของวัตถุในภาพของคุณ ซึ่งมีประโยชน์โดยเฉพาะในการทำความเข้าใจรูปร่าง 3 มิติหรือการนำเสนอผลิตภัณฑ์ ฟีเจอร์นี้ทำงานได้ดีที่สุดเมื่อวัตถุไม่มีพื้นหลัง ดังนั้นโปรดลบองค์ประกอบที่ทำให้เสียสมาธิเพื่อผลลัพธ์ที่ดีที่สุด</p>
+
+    <h3>วิธีการทำงาน:</h3>
+    
+    <div class="example">
+        <strong>ภาพนำเข้า:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/input.jpg" alt="ภาพนำเข้า" loading="lazy">
+        </div>
+        <strong>คำสั่ง:</strong>
+        <p>"แสดงวัตถุนี้จากมุมมองหลายมุม"</p>
+        <strong>ผลลัพธ์:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/result.jpg" alt="ภาพผลลัพธ์" loading="lazy">
+        </div>
+    </div>
+
+    <h3>เคล็ดลับสำหรับผลลัพธ์ที่ดีที่สุด</h3>
+    <p>นี่คือเคล็ดลับบางประการเพื่อให้แน่ใจว่าภาพของคุณออกมาดี:</p>
+
+    <ul>
+        <li><strong>วัตถุที่ไม่มีพื้นหลัง:</strong> ฟีเจอร์มุมมองหลายมุมทำงานได้ดีที่สุดเมื่อวัตถุในภาพของคุณแยกออกจากพื้นหลัง ซึ่งช่วยให้ AiCasso มุ่งเน้นไปที่วัตถุและสร้างมุมมองที่ชัดเจน</li>
+        <li><strong>แสงสว่างที่ดี:</strong> ตรวจสอบให้แน่ใจว่าวัตถุของคุณมีแสงสว่างเพียงพอในภาพนำเข้า เนื่องจากเงาและแสงที่ไม่สม่ำเสมออาจส่งผลต่อรูปลักษณ์ของวัตถุจากมุมต่าง ๆ</li>
+        <li><strong>วัตถุหลายชิ้น:</strong> หากมีวัตถุมากกว่าหนึ่งชิ้นในภาพ ให้พยายามแยกวัตถุที่คุณต้องการดูจากมุมต่าง ๆ หรือเลือกภาพที่ง่ายกว่าที่มีวัตถุหลักเพียงชิ้นเดียว</li>
+    </ul>
+
+    <p>เช่นเดียวกับฟีเจอร์ทั้งหมดใน AiCasso คุณไม่จำเป็นต้องคิดมาก—เพียงแค่บรรยายสิ่งที่คุณต้องการและ AiCasso จะทำงานหนักให้ ฟีเจอร์มุมมองหลายมุมเหมาะสำหรับการนำเสนอผลิตภัณฑ์ การแสดงความคิดสร้างสรรค์ และอื่น ๆ!</p>
+
+</body>
+</html>

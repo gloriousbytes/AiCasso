@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -48,40 +49,40 @@
 <body>
 
     <h2>헤드샷 기능 사용 가이드</h2>
-    <p>AiCasso의 헤드샷 기능을 사용하면 원하는 것을 설명하기만 하면 멋지고 독특한 초상화를 만들 수 있습니다. 평화로운 장면, 서사적인 전사, 또는 상상력이 만들어내는 어떤 이미지든 멋진 이미지를 만들기에 완벽합니다!</p>
+    <p>AiCasso의 헤드샷 기능을 사용하면 원하는 것을 간단히 설명하여 놀랍고 독특한 초상화를 만들 수 있습니다. 평화로운 장면, 서사적인 전사 또는 상상하는 어떤 것이든 멋진 이미지를 만드는 데 완벽합니다!</p>
 
     <h3>작동 방식:</h3>
     
     <div class="example">
         <strong>입력 이미지:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+            <img src="../../images/tutorials/headshot/input.jpg" alt="입력 이미지">
         </div>
         <strong>프롬프트 1:</strong>
         <p>"눈 속의 남자"</p>
         <strong>결과 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+            <img src="../../images/tutorials/headshot/maninsnow.jpg" alt="눈 속의 남자 결과">
         </div>
         <strong>프롬프트 2:</strong>
-        <p>"숲 속의 전사, 이 중간 높이 비율 78% 사용"</p>
+        <p>"숲 속의 전사, 이의 78% 정도의 중간 높은 비율을 사용하세요"</p>
         <strong>결과 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+            <img src="../../images/tutorials/headshot/warrior.jpg" alt="숲 속의 전사 결과">
         </div>
     </div>
 
     <h3>선택적 매개변수</h3>
-    <p>생성된 헤드샷에 조금 더 멋을 추가하거나 제어하고 싶으신가요? 다음은 조정할 수 있는 몇 가지 멋진 옵션입니다:</p>
+    <p>생성된 헤드샷에 좀 더 멋을 추가하거나 제어하고 싶으신가요? 조정할 수 있는 멋진 옵션이 있습니다:</p>
 
     <ul>
-        <li><strong>부정 프롬프트:</strong> AiCasso에게 이미지에서 보고 싶지 않은 것을 말할 수 있는 곳입니다. 예를 들어, 배경 요소를 원하지 않는 경우 여기에 언급할 수 있습니다. 이 부분을 비워두면 AiCasso는 당신이 원하는 것에 집중할 것입니다.</li>
-        <li><strong>디노이징 단계 수:</strong> 얼굴이 얼마나 매끄럽고 정제되어 보이는지를 제어합니다. 21, 31, 41단계 중에서 선택할 수 있으며, 기본값은 41입니다. 단계가 많을수록 더 깔끔하고 세련된 결과를 얻을 수 있습니다.</li>
-        <li><strong>가이드 스케일:</strong> AiCasso가 설명에 충실하도록 약간의 추가 도움을 주는 것과 같습니다. 스케일은 1에서 20까지이며, 기본값은 10입니다. 숫자가 높을수록 AiCasso가 설명에 더 충실하게 됩니다.</li>
-        <li><strong>S 스케일:</strong> 얼굴의 구조를 조정합니다. 약간 기술적인 부분이지만, 본질적으로 얼굴 특징이 얼마나 강하거나 부드러운지를 조정합니다. 기본값은 1.0이며, 원하는 외관에 따라 0.0에서 2.0까지 조정할 수 있습니다.</li>
+        <li><strong>부정 프롬프트:</strong> 여기에서 AiCasso에게 이미지에서 <em>보고 싶지 않은 것</em>을 말할 수 있습니다. 예를 들어, 배경 요소가 없기를 원하면 여기에서 언급할 수 있습니다. 이 부분을 비워두면 AiCasso는 원하는 것에만 집중합니다.</li>
+        <li><strong>디노이징 단계 수:</strong> 이것은 얼굴이 얼마나 부드럽고 정교하게 보이는지를 제어합니다. 21, 31 또는 41 단계 중에서 선택할 수 있으며, 기본값은 41입니다. 단계가 많을수록 일반적으로 더 깨끗하고 다듬어진 결과를 의미합니다.</li>
+        <li><strong>가이드 스케일:</strong> 이것은 AiCasso에게 설명에 충실하도록 약간의 추가 압력을 주는 것과 같습니다. 스케일은 1에서 20까지 있으며, 기본값은 10입니다. 숫자가 높을수록 AiCasso는 설명에 더 가까이 유지됩니다.</li>
+        <li><strong>S 스케일:</strong> 이것은 얼굴의 구조를 조정합니다. 약간 기술적이지만 본질적으로 얼굴 특징이 얼마나 강하거나 부드러운지를 조정합니다. 기본값은 1.0이며, 원하는 모습에 따라 0.0에서 2.0까지 조정할 수 있습니다.</li>
     </ul>
 
-    <p>이 매개변수는 전적으로 선택 사항입니다. AiCasso는 꽤 관대하므로 매우 정확하거나 문법적으로 정확할 필요는 없습니다. 원하는 것을 자신의 말로 설명하면 AiCasso가 마법을 부릴 것입니다. 헤드샷을 만드는 것을 즐기세요!</p>
+    <p>이 매개변수는 완전히 선택 사항임을 기억하세요. AiCasso는 꽤 관대하므로 매우 정확하거나 문법적으로 올바를 필요는 없습니다. 원하는 것을 자신의 말로 설명하면 AiCasso가 마법을 부릴 것입니다. 헤드샷을 만드는 재미를 느껴보세요!</p>
 
 </body>
 </html>

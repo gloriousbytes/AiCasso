@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mwongozo wa Kipengele cha Relighting</title>
+    <title>Mwongozo wa Kipengele cha Kurejesha Mwanga</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,12 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
         }
         .iframe-container {
             display: flex;
@@ -47,37 +50,37 @@
 
 <body>
 
-    <h2>Mwongozo wa Kutumia Kipengele cha Relighting</h2>
-    <p>Kipengele cha Relighting katika AiCasso ni kizuri sana! Kinakuruhusu kubadilisha mwangaza katika picha zako kwa maneno machache tu. Unataka jua liwe nyuma au mwangaza laini kutoka upande? Hakuna shida! Eleza tu, na AiCasso itashughulikia yote.</p>
+    <h2>Mwongozo wa Kutumia Kipengele cha Kurejesha Mwanga</h2>
+    <p>Kipengele cha Kurejesha Mwanga katika AiCasso ni kizuri sana! Kinakuwezesha kubadilisha mwangaza katika picha zako kwa maneno machache tu. Unataka jua nyuma au mwangaza mwepesi kutoka upande? Hakuna shida! Eleza tu, na AiCasso itashughulikia mengine.</p>
 
     <h3>Jinsi Inavyofanya Kazi:</h3>
     
     <div class="example">
         <strong>Picha ya Kuingiza:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+            <img src="../../images/tutorials/relighting/input.jpg" alt="Picha ya Kuingiza" loading="lazy">
         </div>
-        <strong>Maelezo Yaliyotumika:</strong>
-        <p>"Fanya jua liwe nyuma"</p>
+        <strong>Maelekezo Yaliyotumika:</strong>
+        <p>"Fanya iwe hivyo kwamba jua liko nyuma"</p>
         <strong>Matokeo:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+            <img src="../../images/tutorials/relighting/result.jpg" alt="Matokeo ya Kurejesha Mwanga" loading="lazy">
         </div>
     </div>
 
-    <h3>Marekebisho ya Hiari</h3>
-    <p>Kama unataka kujaribu na kuongeza mvuto zaidi kwenye relighting yako, hapa kuna mambo unayoweza kurekebisha:</p>
+    <h3>Badiliko la Hiari</h3>
+    <p>Kama unajisikia kuwa na ujasiri na unataka kuongeza mvuto zaidi kwenye kurejesha mwanga, hapa kuna mambo ambayo unaweza kubadilisha:</p>
 
     <ul>
-        <li><strong>Maelezo ya Kuepuka:</strong> Unataka kuepuka kitu? Unaweza kumwambia AiCasso nini <em>usiweke</em>. Lakini usijali, ukiacha hii tupu, AiCasso itazingatia kile unachotaka tu.</li>
-        <li><strong>Mwelekeo wa Mwangaza:</strong> Unaweza kubainisha mwangaza unatoka wapi—kushoto, kulia, juu, chini, au hata hakuna kabisa. Kwa default, mwangaza unatoka kushoto.</li>
-        <li><strong>Skeli ya Mwongozo:</strong> Hii inasaidia AiCasso kushikamana na maelezo yako. Skeli inakwenda kutoka 1 hadi 20, na 7 ikiwa ni default. Kadri namba inavyoongezeka, ndivyo AiCasso inavyoshikamana na maelezo yako.</li>
-        <li><strong>Skeli ya Azimio la Juu:</strong> Unataka picha yako iwe wazi? Hii inadhibiti uwazi. Default ni 1.5, lakini unaweza kuweka kutoka 1.0 hadi 2.0 kwa picha iliyo wazi zaidi.</li>
-        <li><strong>Viwango vya Kuondoa Kelele:</strong> Kuna viwango viwili—azimio la chini na azimio la juu. Hivi vinadhibiti jinsi picha ya mwisho inavyoonekana laini au yenye maelezo. Unaweza kuweka kiwango cha kuondoa kelele cha azimio la chini kati ya 0.0 na 1.0 (default ni 0.9) na cha azimio la juu kati ya 0.0 na 1.0 (default ni 0.5).</li>
-        <li><strong>Idadi ya Hatua:</strong> Hii ni jinsi AiCasso inavyopiga hatua kuboresha picha yako. Default ni 50, lakini unaweza kwenda kutoka hatua 20 hadi 50.</li>
+        <li><strong>Maelekezo Mabaya:</strong> Unataka kuepuka kitu? Unaweza kumwambia AiCasso kile <em>usichohitaji</em>. Lakini usijali, ikiwa utaacha hili tupu, AiCasso itazingatia kile unachotaka.</li>
+        <li><strong>Direction ya Mwanga:</strong> Unaweza kubainisha mahali mwanga unapaswa kutoka—kushoto, kulia, juu, chini, au hata hakuna kabisa. Kwa kawaida, mwanga unatoka kushoto.</li>
+        <li><strong>Skeli ya Mwongozo:</strong> Hii inasaidia AiCasso kushikilia maelezo yako. Skeli inakwenda kutoka 1 hadi 20, ambapo 7 ni ya kawaida. Kadri nambari inavyokuwa kubwa, ndivyo AiCasso inavyoshikilia maelekezo yako.</li>
+        <li><strong>Skeli ya Ubora wa Juu:</strong> Unataka picha yako iwe na mvuto? Hii inasimamia uwazi. Ya kawaida ni 1.5, lakini unaweza kuweka kutoka 1.0 hadi 2.0 kwa picha yenye uwazi zaidi.</li>
+        <li><strong>Viwango vya Kuondoa Kelele:</strong> Kuna viwango viwili—kasi ya chini na kasi ya juu. Hizi zinadhibiti jinsi picha ya mwisho inavyoonekana laini au yenye maelezo. Unaweza kuweka kiwango cha kuondoa kelele ya kasi ya chini kati ya 0.0 na 1.0 (ya kawaida ni 0.9) na ya kasi ya juu kati ya 0.0 na 1.0 (ya kawaida ni 0.5).</li>
+        <li><strong>Idadi ya Hatua:</strong> Hii ni idadi ya hatua ambazo AiCasso inachukua kuboresha picha yako. Ya kawaida ni 50, lakini unaweza kwenda kutoka hatua 20 hadi 50.</li>
     </ul>
 
-    <p>Kumbuka, marekebisho haya ni ya hiari kabisa! AiCasso ni mzuri sana katika kufahamu unachotaka, hivyo eleza tu maono yako kwa maneno yako mwenyewe, na itafanya uchawi. Hakuna haja ya kuwa mkamilifu na sarufi au maelezo—furahia tu na uone unachoweza kuunda!</p>
+    <p>Kumbuka, mabadiliko haya ni ya hiari kabisa! AiCasso ni mzuri sana katika kuelewa kile unachotaka, hivyo eleza tu maono yako kwa maneno yako mwenyewe, na itafanya uchawi. Hakuna haja ya kuwa kamilifu katika sarufi au maelezo—furahia tu na uone kile unachoweza kuunda!</p>
 
 </body>
 </html>

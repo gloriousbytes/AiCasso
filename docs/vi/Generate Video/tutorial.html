@@ -31,16 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img {
+            width: 100%;
+            max-width: 400px;
             height: auto;
         }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        @media (max-width: 768px) {
+            .result img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -48,72 +48,76 @@
 <body>
 
     <h2>Hướng Dẫn Sử Dụng Tính Năng Tạo Video</h2>
-    <p>Tính năng Tạo Video trong AiCasso cho phép bạn tạo video chỉ bằng cách mô tả những gì bạn muốn thấy. Chỉ cần gõ ý tưởng của bạn, và AiCasso sẽ biến nó thành một video!</p>
+    <p>Tính năng Tạo Video trong AiCasso cho phép bạn tạo video chỉ bằng cách mô tả những gì bạn muốn thấy. Chỉ cần gõ ý tưởng của bạn, và AiCasso sẽ biến nó thành hiện thực trong một video!</p>
 
     <h3>Cách Hoạt Động:</h3>
     
     <div class="example">
-        <strong>Lời Nhắc:</strong>
-        <p>"Một con gà trống hoạt hình 3D trong một cánh đồng một mình, ăn và vui vẻ. Làm video chân dung với 50 bước giảm nhiễu."</p>
+        <strong>Gợi Ý:</strong>
+        <p>"Một con gà trống hoạt hình 3D trong một cánh đồng hoàn toàn một mình, đang ăn và vui vẻ. Làm cho nó thành một video chân dung với 50 bước khử nhiễu."</p>
         <strong>Kết Quả:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/animated3d.gif" alt="Gà Trống Hoạt Hình 3D">
+            <noscript><img src="../../images/tutorials/texttovideo/animated3d.gif" alt="Gà Trống Hoạt Hình 3D"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Lời Nhắc:</strong>
-        <p>"Một bức tranh hoạt hình của một con gà trống trên cánh đồng với kích thước phong cảnh."</p>
+        <strong>Gợi Ý:</strong>
+        <p>"Một bức tranh hoạt hình của một con gà trống trên một cánh đồng theo kích thước phong cảnh."</p>
         <strong>Kết Quả:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/cartoon.gif" alt="Gà Trống Hoạt Hình">
+            <noscript><img src="../../images/tutorials/texttovideo/cartoon.gif" alt="Gà Trống Hoạt Hình"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Lời Nhắc:</strong>
-        <p>"Một con gà trống trên cánh đồng."</p>
+        <strong>Gợi Ý:</strong>
+        <p>"Một con gà trống trên một cánh đồng."</p>
         <strong>Kết Quả:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/default.gif" alt="Gà Trống Mặc Định">
+            <noscript><img src="../../images/tutorials/texttovideo/default.gif" alt="Gà Trống Mặc Định"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Lời Nhắc:</strong>
-        <p>"Một con gà trống ở trên cánh đồng một mình. Tạo cảm giác tự nhiên."</p>
+        <strong>Gợi Ý:</strong>
+        <p>"Một con gà trống đang ở trên cánh đồng hoàn toàn một mình. Hãy tạo cho nó cảm giác tự nhiên."</p>
         <strong>Kết Quả:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/natural.gif" alt="Gà Trống Tự Nhiên">
+            <noscript><img src="../../images/tutorials/texttovideo/natural.gif" alt="Gà Trống Tự Nhiên"></noscript>
         </div>
     </div>
 
-    <h3>Tùy Chọn Bổ Sung</h3>
-    <p>Muốn tinh chỉnh video của bạn? Dưới đây là một số cài đặt bạn có thể thử:</p>
+    <h3>Các Tùy Chọn Bổ Sung</h3>
+    <p>Bạn muốn tinh chỉnh video của mình? Dưới đây là một số cài đặt mà bạn có thể thử nghiệm:</p>
 
     <ul>
-        <li><strong>Số Khung Hình:</strong> Chọn số lượng khung hình (hình ảnh riêng lẻ) mà video của bạn sẽ có. Bạn có thể chọn tối đa 25 khung hình, với 16 là mặc định.</li>
-        <li><strong>Số Bước Giảm Nhiễu:</strong> Điều này kiểm soát độ mượt mà của video. Nhiều bước hơn có nghĩa là video mượt mà hơn. Bạn có thể đặt tối đa 50 bước, với 20 là mặc định.</li>
-        <li><strong>Thang Hướng Dẫn:</strong> Điều này giúp video bám sát mô tả của bạn. Số càng cao, video càng theo sát lời nhắc của bạn. Phạm vi từ 0 đến 8, với 8 là mặc định.</li>
-        <li><strong>Bỏ Qua Clip:</strong> Bỏ qua một số lớp để có phong cách video khác. Mặc định là không bỏ qua lớp nào, nhưng bạn có thể bỏ qua tối đa 2 lớp.</li>
-        <li><strong>Tăng Kích Thước Chiều Rộng và Chiều Cao:</strong> Bạn có thể làm cho video lớn hơn bằng cách điều chỉnh độ phân giải. Mặc định là 1024x1024 pixel, nhưng bạn có thể điều chỉnh để phù hợp với nhu cầu của mình.</li>
-        <li><strong>Độ Mạnh Tăng Kích Thước:</strong> Điều này thay đổi mức độ điều chỉnh của video khi tăng kích thước. Mặc định là 1, nhưng bạn có thể điều chỉnh để thấy nhiều khác biệt hơn.</li>
-        <li><strong>Thang Hướng Dẫn Tăng Kích Thước:</strong> Điều này hướng dẫn quá trình tăng kích thước, với phạm vi từ 0 đến 8, và mặc định là 8.</li>
-        <li><strong>Số Bước Suy Luận Tăng Kích Thước:</strong> Số bước thực hiện để tăng kích thước video. Nhiều bước hơn làm cho việc tăng kích thước mượt mà hơn, với tối đa 50 và mặc định là 20.</li>
-        <li><strong>Lấy Mẫu Cải Tiến:</strong> Muốn video tinh tế hơn? Bật tính năng này. Mặc định là tắt.</li>
-        <li><strong>Hạt Giống Lấy Mẫu Cải Tiến:</strong> Sử dụng điều này để tạo ra cùng một video mỗi lần với lấy mẫu cải tiến. Đây là tùy chọn và mặc định là tắt.</li>
-        <li><strong>Khung Hình Trên Giây (FPS):</strong> Đặt tốc độ của video. Mặc định là 16 FPS, nhưng bạn có thể điều chỉnh lên đến 16.</li>
-        <li><strong>Mô Hình Video:</strong> Chọn phong cách của video. Các tùy chọn bao gồm:
+        <li><strong>Số Khung Hình:</strong> Chọn số lượng khung hình (hình ảnh riêng lẻ) mà video của bạn sẽ có. Bạn có thể lên đến 25 khung hình, với 16 là mặc định.</li>
+        <li><strong>Số Bước Khử Nhiễu:</strong> Điều này kiểm soát độ mượt mà của video. Nhiều bước hơn có nghĩa là video mượt mà hơn. Bạn có thể đặt lên đến 50 bước, với 20 là mặc định.</li>
+        <li><strong>Tỷ Lệ Hướng Dẫn:</strong> Điều này giúp video bám sát mô tả của bạn. Số càng cao, video càng theo sát gợi ý của bạn. Phạm vi từ 0 đến 8, với 8 là mặc định.</li>
+        <li><strong>Bỏ Qua Clip:</strong> Bỏ qua một số lớp để có phong cách video khác. Mặc định, không có lớp nào bị bỏ qua, nhưng bạn có thể bỏ qua tối đa 2 lớp.</li>
+        <li><strong>Kích Thước Mở Rộng Chiều Rộng và Chiều Cao:</strong> Bạn có thể làm cho video của mình lớn hơn bằng cách điều chỉnh độ phân giải. Mặc định là 1024x1024 pixel, nhưng bạn có thể điều chỉnh để phù hợp với nhu cầu của mình.</li>
+        <li><strong>Sức Mạnh Mở Rộng:</strong> Điều này thay đổi mức độ video của bạn điều chỉnh khi được mở rộng. Mặc định là 1, nhưng bạn có thể điều chỉnh để thấy nhiều sự khác biệt hơn.</li>
+        <li><strong>Tỷ Lệ Hướng Dẫn Mở Rộng:</strong> Điều này hướng dẫn quá trình mở rộng, với phạm vi từ 0 đến 8, và mặc định là 8.</li>
+        <li><strong>Số Bước Suy Diễn Mở Rộng:</strong> Số bước thực hiện để mở rộng video. Nhiều bước hơn tạo ra sự mở rộng mượt mà hơn, với tối đa là 50 và mặc định là 20.</li>
+        <li><strong>Mẫu Lấy Mẫu Cải Tiến:</strong> Bạn muốn một video tinh tế hơn? Bật tính năng này lên. Mặc định là tắt.</li>
+        <li><strong>Hạt Giống Lấy Mẫu Cải Tiến:</strong> Sử dụng điều này để tạo ra cùng một video mỗi lần với mẫu cải tiến. Tùy chọn và mặc định là tắt.</li>
+        <li><strong>Khung Hình Mỗi Giây (FPS):</strong> Đặt tốc độ của video của bạn. Mặc định là 16 FPS, nhưng bạn có thể điều chỉnh lên đến 16.</li>
+        <li><strong>Mô Hình Video:</strong> Chọn phong cách của video của bạn. Các tùy chọn bao gồm:
             <ul>
-                <li><strong>Mặc Định:</strong> Mô hình video tiêu chuẩn.</li>
-                <li><strong>Hoạt Hình:</strong> Phong cách video hoạt hình.</li>
-                <li><strong>Tự Nhiên:</strong> Phong cách video trông tự nhiên, chân thực.</li>
-                <li><strong>Hoạt Hình 3D:</strong> Phong cách video hoạt hình 3D.</li>
+                <li><strong>Mặc Định:</strong> Một mô hình video tiêu chuẩn.</li>
+                <li><strong>Hoạt Hình:</strong> Một phong cách video hoạt hình.</li>
+                <li><strong>Tự Nhiên:</strong> Một phong cách video thực tế, tự nhiên.</li>
+                <li><strong>Hoạt Hình 3D:</strong> Một phong cách video hoạt hình 3D.</li>
             </ul>
         </li>
     </ul>
 
-    <p>Nhớ rằng, các cài đặt này là tùy chọn. Tính năng Tạo Video hoạt động tốt chỉ với một mô tả đơn giản, vì vậy hãy thoải mái thử nghiệm và xem bạn có thể tạo ra những gì!</p>
+    <p>Nhớ rằng, những cài đặt này là tùy chọn. Tính năng Tạo Video hoạt động tuyệt vời chỉ với một mô tả đơn giản, vì vậy hãy thoải mái thử nghiệm và xem bạn có thể tạo ra điều gì!</p>
 
 </body>
 </html>

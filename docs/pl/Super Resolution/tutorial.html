@@ -31,9 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -41,41 +48,41 @@
 <body>
 
     <h2>Przewodnik po korzystaniu z funkcji Super Rozdzielczości</h2>
-    <p>Funkcja Super Rozdzielczości w AiCasso polega na tym, aby Twoje obrazy wyglądały jeszcze lepiej. Po prostu powiedz, jak chcesz poprawić swój obraz, a AiCasso zajmie się resztą. Niezależnie od tego, czy chcesz wyostrzyć szczegóły, czy nadać całemu obrazowi nowy blask, jest to bardzo proste w użyciu.</p>
+    <p>Funkcja Super Rozdzielczości w AiCasso polega na tym, aby Twoje obrazy wyglądały jeszcze lepiej. Wystarczy, że powiesz, jak chcesz poprawić swój obraz, a AiCasso zajmie się resztą. Niezależnie od tego, czy chcesz wyostrzyć szczegóły, czy nadać całemu obrazowi nowy blask, jest to bardzo proste w użyciu.</p>
 
     <h3>Jak to działa:</h3>
     
     <div class="example">
         <strong>Obraz wejściowy:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="Obraz wejściowy" loading="lazy">
         </div>
         <strong>Podpowiedź:</strong>
         <p>"Powiększ go 4 razy, użyj modelu Ultra Sharp"</p>
         <strong>Wynik:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="Obraz wynikowy" loading="lazy">
         </div>
     </div>
 
     <h3>Opcjonalne parametry</h3>
-    <p>Jeśli chcesz dodać trochę więcej kontroli nad tym, jak Twój obraz jest poprawiany, oto kilka dodatkowych opcji, z którymi możesz eksperymentować:</p>
+    <p>Jeśli chcesz mieć nieco większą kontrolę nad tym, jak Twój obraz jest poprawiany, oto kilka dodatkowych opcji, z którymi możesz eksperymentować:</p>
 
     <ul>
-        <li><strong>Skala:</strong> To jest to, jak bardzo chcesz powiększyć swój obraz. Możesz wybrać skalę od 1 do 4, przy czym 4 jest domyślną wartością. Zasadniczo, większe liczby oznaczają większy obraz.</li>
+        <li><strong>Skala:</strong> To jest to, jak bardzo chcesz powiększyć swój obraz. Możesz wybrać skalę od 1 do 4, przy czym 4 jest domyślną wartością. Generalnie, większe liczby oznaczają większy obraz.</li>
         <li><strong>Model powiększania:</strong> To jak wybieranie filtra dla Twojego obrazu, ale jest znacznie mądrzejsze. Oto opcje:
             <ul>
-                <li><strong>Wzmocnienie szczegółów:</strong> Najlepsze do powiększania małych detali.</li>
+                <li><strong>Wzmocnienie szczegółów:</strong> Najlepsze do powiększania małych szczegółów.</li>
                 <li><strong>Ultra Sharp:</strong> Sprawia, że obraz jest super wyraźny i ostry.</li>
                 <li><strong>Anime Enhance:</strong> Idealne dla obrazów w stylu anime, sprawiając, że wyglądają ostro i żywo.</li>
                 <li><strong>Podwójne szczegóły:</strong> Podwaja szczegóły bez przesady.</li>
                 <li><strong>Ogólne wzmocnienie:</strong> Dobra opcja uniwersalna dla większości obrazów.</li>
             </ul>
         </li>
-        <li><strong>Wzmocnienie twarzy:</strong> Jeśli Twój obraz ma twarz, ta opcja może pomóc uczynić ją jeszcze lepszą. Po prostu włącz ją, jeśli chcesz, aby AiCasso skupił się na poprawie cech twarzy.</li>
+        <li><strong>Wzmocnienie twarzy:</strong> Jeśli Twój obraz zawiera twarz, ta opcja może pomóc sprawić, że będzie wyglądać jeszcze lepiej. Wystarczy ją włączyć, jeśli chcesz, aby AiCasso skupił się na poprawie cech twarzy.</li>
     </ul>
 
-    <p>Pamiętaj, że te opcje są całkowicie opcjonalne! Nie musisz się nimi zajmować, jeśli nie chcesz. Po prostu opisz, czego chcesz, a AiCasso znajdzie najlepszy sposób, aby to zrealizować. I nie martw się o perfekcję w swoich słowach — AiCasso Cię rozumie!</p>
+    <p>Pamiętaj, że te opcje są całkowicie opcjonalne! Nie musisz się nimi przejmować, jeśli nie chcesz. Po prostu opisz, czego chcesz, a AiCasso znajdzie najlepszy sposób, aby to zrealizować. I nie martw się o perfekcję w swoich słowach — AiCasso Cię rozumie!</p>
 
 </body>
 </html>

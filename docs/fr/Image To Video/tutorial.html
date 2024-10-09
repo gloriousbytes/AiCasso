@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide de la Fonction Image en Vidéo</title>
+    <title>Guide de la fonctionnalité Image vers Vidéo</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            max-width: 100%;
             height: auto;
+            object-fit: contain;
         }
         .iframe-container {
             display: flex;
@@ -47,46 +48,46 @@
 
 <body>
 
-    <h2>Guide d'utilisation de la fonction Image en Vidéo</h2>
-    <p>La fonction Image en Vidéo d'AiCasso vous permet de transformer une seule image en une vidéo dynamique. Décrivez simplement ce que vous voulez voir dans votre vidéo, et AiCasso le réalisera pour vous !</p>
+    <h2>Guide d'utilisation de la fonctionnalité Image vers Vidéo</h2>
+    <p>La fonctionnalité Image vers Vidéo dans AiCasso vous permet de transformer une seule image en une vidéo dynamique. Il vous suffit de décrire ce que vous souhaitez voir dans votre vidéo, et AiCasso s'en chargera !</p>
 
     <h3>Comment ça fonctionne :</h3>
     
     <div class="example">
         <strong>Image d'entrée :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/input.jpg" alt="Image d'entrée" loading="lazy">
         </div>
-        <strong>Prompt 1 :</strong>
+        <strong>Invite 1 :</strong>
         <p>"Un chiot mignon dans le parc"</p>
         <strong>Résultat 1 :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppy.gif" alt="Chiot mignon dans le parc" loading="lazy">
         </div>
-        <strong>Prompt 2 :</strong>
-        <p>"Un chiot mignon dans le parc, utiliser le maximum de FPS, de frames et de mouvement"</p>
+        <strong>Invite 2 :</strong>
+        <p>"Un chiot mignon dans le parc, utilisez le maximum de FPS, le maximum d'images et le maximum de mouvement"</p>
         <strong>Résultat 2 :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppymaxframes.gif" alt="Chiot avec FPS maximum dans le parc" loading="lazy">
         </div>
     </div>
 
-    <h3>Paramètres Optionnels</h3>
-    <p>Si vous souhaitez être plus précis avec votre vidéo, voici quelques réglages que vous pouvez ajuster :</p>
+    <h3>Paramètres optionnels</h3>
+    <p>Si vous souhaitez être plus précis avec votre vidéo, voici quelques paramètres que vous pouvez ajuster :</p>
 
     <ul>
-        <li><strong>Prompt Négatif :</strong> Décrivez ce que vous *ne* voulez pas dans la vidéo. Si laissé vide, AiCasso se concentrera uniquement sur le prompt positif.</li>
-        <li><strong>Nombre de Frames :</strong> Choisissez combien de frames (images individuelles) votre vidéo aura. Vous pouvez sélectionner jusqu'à 25 frames, avec 16 par défaut.</li>
-        <li><strong>Étapes de Dénonciation :</strong> Cela contrôle la fluidité de votre vidéo. Plus d'étapes signifient une vidéo plus propre. Vous pouvez définir jusqu'à 50 étapes, avec 20 par défaut.</li>
-        <li><strong>Échelle de Guidage :</strong> Cela aide la vidéo à coller de près à votre description. La plage est de 1.0 à 8.0, et vous pouvez ajuster les valeurs de début et de fin pour guider l'évolution de la vidéo.</li>
-        <li><strong>Mouvement :</strong> Ajustez la quantité de mouvement dans votre vidéo. Une valeur plus élevée signifie plus d'action. La plage est de 0 à 127, avec 60 par défaut.</li>
-        <li><strong>Force d'Augmentation du Bruit :</strong> Ajoutez du bruit à votre vidéo pour lui donner un aspect plus texturé. La plage est de 0 à 1, avec 0 par défaut.</li>
-        <li><strong>Images par Seconde (FPS) :</strong> Définissez la vitesse de lecture de votre vidéo. Le défaut est de 16 FPS, mais vous pouvez aller jusqu'à 16 pour une lecture plus rapide.</li>
-        <li><strong>Méthode d'Interpolation :</strong> Choisissez comment les frames sont mélangées ensemble. Le défaut est "lerp" (interpolation linéaire), mais vous pouvez également utiliser "slerp" (interpolation linéaire sphérique) pour des effets différents.</li>
-        <li><strong>Saut de Clip :</strong> Sautez certaines couches pour un style de vidéo différent. Vous pouvez sauter jusqu'à 2 couches, ou laisser null pour le comportement par défaut.</li>
+        <li><strong>Invite négative :</strong> Décrivez ce que vous *ne* voulez *pas* dans la vidéo. Si laissé vide, AiCasso se concentrera uniquement sur l'invite positive.</li>
+        <li><strong>Nombre d'images :</strong> Choisissez combien d'images (images individuelles) votre vidéo aura. Vous pouvez sélectionner jusqu'à 25 images, avec 16 comme valeur par défaut.</li>
+        <li><strong>Étapes de débruitage :</strong> Cela contrôle la fluidité de votre vidéo. Plus il y a d'étapes, plus la vidéo est propre. Vous pouvez définir jusqu'à 50 étapes, avec 20 comme valeur par défaut.</li>
+        <li><strong>Échelle de guidage :</strong> Cela aide la vidéo à rester proche de votre description. La plage va de 1.0 à 8.0, et vous pouvez ajuster les valeurs de début et de fin pour guider l'évolution de la vidéo.</li>
+        <li><strong>Mouvement :</strong> Ajustez la quantité de mouvement dans votre vidéo. Une valeur plus élevée signifie plus d'action. La plage va de 0 à 127, avec 60 comme valeur par défaut.</li>
+        <li><strong>Force d'augmentation du bruit :</strong> Ajoutez un peu de bruit à votre vidéo pour lui donner un aspect plus texturé. La plage va de 0 à 1, avec 0 comme valeur par défaut.</li>
+        <li><strong>Images par seconde (FPS) :</strong> Définissez la vitesse de lecture de votre vidéo. La valeur par défaut est de 16 FPS, mais vous pouvez aller jusqu'à 16 pour une lecture plus rapide.</li>
+        <li><strong>Méthode d'interpolation :</strong> Choisissez comment les images sont mélangées. La valeur par défaut est "lerp" (interpolation linéaire), mais vous pouvez également utiliser "slerp" (interpolation linéaire sphérique) pour différents effets.</li>
+        <li><strong>Ignorer les clips :</strong> Ignorez certaines couches pour un style vidéo différent. Vous pouvez ignorer jusqu'à 2 couches, ou laisser nul pour le comportement par défaut.</li>
     </ul>
 
-    <p>Rappelez-vous, AiCasso est assez intelligent ! Vous n'avez pas besoin d'être parfait dans chaque détail ou d'utiliser une grammaire correcte. Décrivez simplement ce que vous voulez, et AiCasso fera le reste. Amusez-vous à créer vos vidéos !</p>
+    <p>Rappelez-vous, AiCasso est assez intelligent ! Vous n'avez pas besoin de rendre chaque détail parfait ou d'utiliser une grammaire correcte. Décrivez simplement ce que vous voulez, et AiCasso fera le reste. Amusez-vous à créer vos vidéos !</p>
 
 </body>
 </html>

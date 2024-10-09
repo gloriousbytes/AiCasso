@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anleitung zur Superauflösungsfunktion</title>
+    <title>Leitfaden zur Superauflösungsfunktion</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,51 +31,58 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h2>Anleitung zur Verwendung der Superauflösungsfunktion</h2>
-    <p>Die Superauflösungsfunktion in AiCasso dreht sich darum, Ihre Bilder noch besser aussehen zu lassen. Sie müssen nur angeben, wie Sie Ihr Bild verbessern möchten, und AiCasso kümmert sich um den Rest. Egal, ob Sie Details schärfen oder das gesamte Bild aufwerten möchten, es ist super einfach zu bedienen.</p>
+    <h2>Leitfaden zur Verwendung der Superauflösungsfunktion</h2>
+    <p>Die Superauflösungsfunktion in AiCasso dient dazu, Ihre Bilder noch besser aussehen zu lassen. Sie sagen einfach, wie Sie Ihr Bild verbessern möchten, und AiCasso kümmert sich um den Rest. Egal, ob Sie Details schärfen oder das gesamte Bild aufwerten möchten, es ist super einfach zu bedienen.</p>
 
-    <h3>Wie es funktioniert:</h3>
+    <h3>So funktioniert es:</h3>
     
     <div class="example">
         <strong>Eingabebild:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="Eingabebild" loading="lazy">
         </div>
-        <strong>Eingabeaufforderung:</strong>
-        <p>"Vergrößern Sie es 4-mal, verwenden Sie das Ultra Sharp-Modell"</p>
+        <strong>Prompt:</strong>
+        <p>"Vergrößern Sie es um das Vierfache, verwenden Sie das Ultra Sharp-Modell"</p>
         <strong>Ergebnis:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="Ergebnisbild" loading="lazy">
         </div>
     </div>
 
     <h3>Optionale Parameter</h3>
-    <p>Wenn Sie mehr Kontrolle darüber haben möchten, wie Ihr Bild verbessert wird, gibt es hier einige zusätzliche Optionen, mit denen Sie spielen können:</p>
+    <p>Wenn Sie etwas mehr Kontrolle darüber haben möchten, wie Ihr Bild verbessert wird, finden Sie hier einige zusätzliche Optionen, mit denen Sie experimentieren können:</p>
 
     <ul>
-        <li><strong>Skalierung:</strong> Dies ist, wie stark Sie Ihr Bild vergrößern möchten. Sie können eine Skalierung von 1 bis 4 wählen, wobei 4 der Standardwert ist. Grundsätzlich bedeuten größere Zahlen ein größeres Bild.</li>
-        <li><strong>Upscale-Modell:</strong> Das ist wie das Auswählen eines Filters für Ihr Bild, aber viel intelligenter. Hier sind die Optionen:
+        <li><strong>Skalierung:</strong> Dies ist, wie viel Sie Ihr Bild vergrößern möchten. Sie können eine Skalierung von 1 bis 4 wählen, wobei 4 der Standard ist. Größere Zahlen bedeuten im Grunde ein größeres Bild.</li>
+        <li><strong>Upscale-Modell:</strong> Dies ist wie die Auswahl eines Filters für Ihr Bild, aber es ist viel intelligenter. Hier sind die Optionen:
             <ul>
-                <li><strong>Großer Detail-Boost:</strong> Am besten geeignet, um winzige Details zu vergrößern.</li>
+                <li><strong>Große Detailverbesserung:</strong> Am besten geeignet, um auf winzige Details zu zoomen.</li>
                 <li><strong>Ultra Sharp:</strong> Macht das Bild super klar und scharf.</li>
-                <li><strong>Anime Enhance:</strong> Perfekt für Anime-Stil-Bilder, die scharf und lebendig aussehen sollen.</li>
-                <li><strong>Doppeltes Detail:</strong> Verdoppelt die Details, ohne zu übertreiben.</li>
-                <li><strong>Allgemeiner Boost:</strong> Eine gute Allround-Option für die meisten Bilder.</li>
+                <li><strong>Anime-Verbesserung:</strong> Perfekt für Anime-Stil-Bilder, die scharf und lebendig aussehen.</li>
+                <li><strong>Doppelte Details:</strong> Verdoppelt die Details, ohne übertrieben zu wirken.</li>
+                <li><strong>Allgemeine Verbesserung:</strong> Eine gute Allround-Option für die meisten Bilder.</li>
             </ul>
         </li>
-        <li><strong>Gesichtsverbesserung:</strong> Wenn Ihr Bild ein Gesicht enthält, kann diese Option helfen, es noch besser aussehen zu lassen. Schalten Sie es einfach ein, wenn Sie möchten, dass AiCasso sich auf die Verbesserung der Gesichtszüge konzentriert.</li>
+        <li><strong>Gesichtsverbesserung:</strong> Wenn Ihr Bild ein Gesicht hat, kann diese Option helfen, es noch besser aussehen zu lassen. Schalten Sie es einfach ein, wenn Sie möchten, dass AiCasso sich auf die Verbesserung der Gesichtszüge konzentriert.</li>
     </ul>
 
-    <p>Denken Sie daran, diese Optionen sind völlig optional! Sie müssen sich nicht damit beschäftigen, wenn Sie nicht möchten. Beschreiben Sie einfach, was Sie möchten, und AiCasso wird den besten Weg finden, es zu verwirklichen. Und machen Sie sich keine Sorgen, perfekt mit Ihren Worten zu sein – AiCasso versteht Sie!</p>
+    <p>Denken Sie daran, diese Optionen sind völlig optional! Sie müssen sich nicht damit beschäftigen, wenn Sie nicht möchten. Beschreiben Sie einfach, was Sie wollen, und AiCasso wird den besten Weg finden, es umzusetzen. Und machen Sie sich keine Sorgen, dass Sie mit Ihren Worten perfekt sein müssen – AiCasso versteht Sie!</p>
 
 </body>
 </html>

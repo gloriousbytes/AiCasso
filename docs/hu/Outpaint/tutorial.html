@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
         .iframe-container {
@@ -48,14 +48,14 @@
 <body>
 
     <h2>Tippek az Outpaint Funkció Használatához</h2>
-    <p>Az AiCasso Outpaint funkciója lehetővé teszi, hogy egy képet bővítsünk új elemek hozzáadásával vagy a meglévő elemek kiterjesztésével. Csak írd le, mit szeretnél, és az AiCasso elvégzi a többit.</p>
+    <p>Az AiCasso Outpaint funkciója lehetővé teszi, hogy egy képet új elemek hozzáadásával bővítsünk, vagy a már meglévő elemeket kiterjesszük. Csak írd le, mit szeretnél, és az AiCasso elintézi a többit.</p>
 
     <h3>Hogyan Működik:</h3>
     
     <div class="example">
         <strong>Kezdő Kép:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/input.jpg" alt="Kezdő Kép" loading="lazy">
         </div>
     </div>
 
@@ -69,32 +69,32 @@
     <div class="example">
         <strong>Példa 1:</strong> "Adj hozzá egy jéghegyet jobbra, 0.4-es fordítási faktort használva."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/iceberg.jpg" alt="Példa 1 - Jéghegy" loading="lazy">
         </div>
-        <p><em>Eredmény:</em> Az AiCasso jobbra bővíti a képet, és hozzáad egy jéghegyet, megőrizve a meglévő táj összhangját.</p>
+        <p><em>Eredmény:</em> Az AiCasso kiterjeszti a képet jobbra és hozzáad egy jéghegyet, megőrizve a meglévő tájjal való összhangot.</p>
     </div>
 
     <div class="example">
         <strong>Példa 2:</strong> "Zoomolj ki, tartsd meg az éjszakai sötét tenger konzisztenciáját."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/zoomout.jpg" alt="Példa 2 - Zoom Ki" loading="lazy">
         </div>
         <p><em>Eredmény:</em> A kép zoomol, felfedve a sötét tengert, miközben megőrzi az éjszakai jelenet hangulatát.</p>
     </div>
 
     <h3>További Opciók</h3>
-    <p>Itt van néhány opcionális beállítás, amelyeket használhatsz a szerkesztések finomhangolásához:</p>
+    <p>Itt van néhány opcionális beállítás, amelyeket használhatsz a szerkesztéseid finomhangolásához:</p>
 
     <ul>
         <li><strong>Negatív Prompt:</strong> Ha van valami konkrét, amit nem szeretnél a képen, itt megmondhatod az AiCasso-nak. Például elkerülheted bizonyos színek vagy tárgyak hozzáadását.</li>
-        <li><strong>Séta Típusa:</strong> Ez határozza meg, hogy a kép melyik irányba bővül. Választhatsz balra, jobbra, felfelé, lefelé vagy hátrafelé (ami zoomolás). Például, ha jobbra szeretnél panorámázni, válaszd a 'jobbra' opciót.</li>
-        <li><strong>Fordítási Faktor:</strong> Ez szabályozza, hogy a kép mennyit mozdul el minden lépésnél a bővítés során. A magasabb érték jobban elmozdítja a képet, felfedve több új tartalmat. Az alapértelmezett 0.05, de ezt 0 és 1 között állíthatod.</li>
-        <li><strong>Szélesség/Magasság Fordítás Lépésenként:</strong> Ezek szabályozzák, hogy a kép mennyit mozdul el vízszintesen (szélesség) vagy függőlegesen (magasság) minden lépésnél. Az alapértelmezett 32 pixel lépésenként, de ezt az igényeid szerint állíthatod.</li>
-        <li><strong>Inferálási vagy Denoising Lépések Száma:</strong> Ez határozza meg, hogy az AiCasso hány módosítást végez a végső kép eléréséhez. A több lépés simább eredményt ad, az alapértelmezett 20 lépés, de akár 50-ig is elmehetsz.</li>
-        <li><strong>Interpolációs Lépések Száma:</strong> Ez szabályozza, hogy a két irány közötti átmenet mennyire simán történik egyetlen bővítés során. Az alapértelmezett 60, de ezt akár 120-ra is növelheted a simább átmenetek érdekében.</li>
+        <li><strong>Séta Típusa:</strong> Ez határozza meg, hogy a kép melyik irányba terjeszkedik. Választhatsz balra, jobbra, felfelé, lefelé vagy hátrafelé (ami zoomol). Például, ha jobbra szeretnél panorámázni, válaszd a 'jobbra' opciót.</li>
+        <li><strong>Fordítási Faktor:</strong> Ez szabályozza, hogy a kép mennyit mozog minden lépésnél a kiterjesztés során. Magasabb érték nagyobb mozgást jelent, felfedve több új tartalmat. Az alapértelmezett 0.05, de 0-tól 1-ig állíthatod.</li>
+        <li><strong>Szélesség/Magasság Fordítás Lépésenként:</strong> Ezek szabályozzák, hogy a kép mennyit mozog vízszintesen (szélesség) vagy függőlegesen (magasság) minden lépésnél. Az alapértelmezett 32 pixel lépésenként, de ezt az igényeid szerint módosíthatod.</li>
+        <li><strong>Inferálási vagy Denoising Lépések Száma:</strong> Ez határozza meg, hogy az AiCasso hány módosítást végez a végső kép eléréséhez. Több lépés simább eredményt ad, az alapértelmezett 20 lépés, de akár 50-ig is elmehetsz.</li>
+        <li><strong>Interpolációs Lépések Száma:</strong> Ez szabályozza, hogy a két irány közötti átmenet mennyire simán történik egyetlen kiterjesztésen belül. Az alapértelmezett 60, de akár 120-ra is növelheted a simább átmenetek érdekében.</li>
     </ul>
 
-    <p>Ne feledd, ezek a beállítások opcionálisak. Az AiCasso úgy van tervezve, hogy jól működjön a természetes nyelvi leírásoddal. Kísérletezz bátran, és nézd meg, mi működik a legjobban a képedhez!</p>
+    <p>Ne feledd, ezek a beállítások opcionálisak. Az AiCasso úgy van tervezve, hogy jól működjön a természetes nyelvi leírásoddal. Kísérletezz bátran, és nézd meg, mi működik a legjobban a képed számára!</p>
 
 </body>
 </html>

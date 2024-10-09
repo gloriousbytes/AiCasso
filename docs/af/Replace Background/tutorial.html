@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -41,41 +41,41 @@
 <body>
 
     <h2>Gids vir die Gebruik van die Vervang Agtergrond Kenmerk</h2>
-    <p>Die Vervang Agtergrond kenmerk in AiCasso is perfek wanneer jy die agtergrond in jou beeld wil vervang. Of jy nou net die agtergrond wil verwyder of dit met iets anders wil vervang, AiCasso maak dit baie maklik. Jy hoef nie oor tegniese goed te stress nie—beskryf net wat jy wil hê, en AiCasso sal die res doen.</p>
+    <p>Die Vervang Agtergrond kenmerk in AiCasso is perfek wanneer jy die agtergrond in jou beeld wil vervang. Of jy net die agtergrond wil verwyder of dit met iets anders wil vervang, AiCasso maak dit baie maklik. Jy hoef nie oor tegniese goed te bekommer nie—beskryf net wat jy wil hê, en AiCasso sal die res doen.</p>
 
     <h3>Hoe Dit Werk:</h3>
     
     <div class="example">
         <strong>Invoer Beeld:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Invoer Beeld" loading="lazy">
         </div>
         <strong>Prompt 1:</strong>
         <p>"Verwyder die agtergrond"</p>
         <strong>Resultaat 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Agtergrond Verwyder Resultaat" loading="lazy">
         </div>
         <strong>Prompt 2:</strong>
-        <p>"Vervang die agtergrond met 'n bos, nie net verwyder nie, met alfa matting gedeaktiveer. Gebruik 'n foreground drempel van 240, 'n agtergrond drempel van 20, en 'n erode grootte van 5 vir alfa matting."</p>
+        <p>"Vervang die agtergrond met 'n woud, nie net verwyder nie, met alfa matting gedeaktiveer. Gebruik 'n voorgronddrempel van 240, 'n agtergronddrempel van 20, en 'n erode grootte van 5 vir alfa matting."</p>
         <strong>Resultaat 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Vervang Agtergrond met Woud" loading="lazy">
         </div>
     </div>
 
     <h3>Opsionele Parameters</h3>
-    <p>As jy 'n persoonlike aanraking wil byvoeg of die resultate wil fynstel, hier is 'n paar opsies waarmee jy kan speel:</p>
+    <p>As jy 'n persoonlike aanraking wil toevoeg of die resultate wil fynstel, hier is 'n paar opsies waarmee jy kan speel:</p>
 
     <ul>
         <li><strong>Net Verwyder:</strong> As jy net die agtergrond wil verwyder en dit nie met iets wil vervang nie, is dit jou beste opsie. Dit is soos om 'n skoon bladsy knoppie te druk.</li>
-        <li><strong>Alfa Matting:</strong> Dit is 'n fancy manier om te sê "meng die kante." Wanneer jy dit aanstel, help dit om die kante van jou onderwerp gladder en minder uitgesny te laat lyk. Dit is standaard afgeskakel.</li>
-        <li><strong>Alfa Matting Foreground Drempel:</strong> Dit beheer hoeveel van die hoofonderwerp (soos 'n persoon) sigbaar bly wanneer alfa matting gebruik word. Die standaard is 240, en jy kan dit aanpas om die kante sagter of skerper te maak.</li>
-        <li><strong>Alfa Matting Agtergrond Drempel:</strong> Dit doen dieselfde as die foreground drempel, maar vir die agtergrond. Die standaard is 20, en dit gaan alles oor om die perfekte mengsel met die nuwe agtergrond te kry.</li>
+        <li><strong>Alfa Matting:</strong> Dit is 'n fancy manier om te sê "meng die kante." Wanneer jy dit aanstel, help dit om die kante van jou onderwerp gladder en minder uitgesny te laat lyk. Dit is standaard gedeaktiveer.</li>
+        <li><strong>Alfa Matting Voorgrond Drempel:</strong> Dit beheer hoeveel van die hoofonderwerp (soos 'n persoon) sigbaar bly wanneer alfa matting gebruik word. Die standaard is 240, en jy kan dit aanpas om die kante sagter of skerper te maak.</li>
+        <li><strong>Alfa Matting Agtergrond Drempel:</strong> Dit doen dieselfde as die voorgronddrempel, maar vir die agtergrond. Die standaard is 20, en dit gaan alles oor die perfekte mengsel met die nuwe agtergrond.</li>
         <li><strong>Alfa Matting Erode Grootte:</strong> Dit help om die kante 'n bietjie te verklein om die uitsny meer skoon te laat lyk. Die standaardgrootte is 5, maar jy kan dit aanpas om die presiese voorkoms te kry wat jy wil.</li>
     </ul>
 
-    <p>Onthou, jy hoef nie te stres oor om alles perfek te kry nie. AiCasso is redelik goed om uit te vind wat jy bedoel, so voel vry om so ontspanne of gedetailleerd te wees soos jy wil. Gelukkige skep!</p>
+    <p>Onthou, jy hoef nie te stres oor om alles perfek te kry nie. AiCasso is redelik goed om uit te figure wat jy bedoel, so voel vry om so ontspanne of gedetailleerd te wees soos jy wil. Gelukkige skepping!</p>
 
 </body>
 </html>

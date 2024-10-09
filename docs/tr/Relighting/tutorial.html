@@ -31,9 +31,12 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
         }
         .iframe-container {
             display: flex;
@@ -48,36 +51,36 @@
 <body>
 
     <h2>Yeniden Aydınlatma Özelliği Kullanım Kılavuzu</h2>
-    <p>AiCasso'daki Yeniden Aydınlatma özelliği süper havalı! Görüntülerinizdeki aydınlatmayı sadece birkaç kelimeyle değiştirebilirsiniz. Güneşi arkada mı istiyorsunuz yoksa yandan yumuşak bir ışık mı? Sorun değil! Sadece tarif edin, gerisini AiCasso halleder.</p>
+    <p>AiCasso'daki Yeniden Aydınlatma özelliği harika! Sadece birkaç kelime ile görüntülerinizdeki aydınlatmayı değiştirebilirsiniz. Güneşi arka planda mı yoksa yan taraftan yumuşak bir ışık mı istiyorsunuz? Sorun değil! Sadece tarif edin, AiCasso geri kalanını halledecektir.</p>
 
     <h3>Nasıl Çalışır:</h3>
     
     <div class="example">
         <strong>Giriş Görüntüsü:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+            <img src="../../images/tutorials/relighting/input.jpg" alt="Giriş Görüntüsü" loading="lazy">
         </div>
-        <strong>Kullanılan Komut:</strong>
-        <p>"Güneşi arkaya al"</p>
+        <strong>Kullanılan İfade:</strong>
+        <p>"Güneşin arka planda olmasını sağla"</p>
         <strong>Sonuç:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+            <img src="../../images/tutorials/relighting/result.jpg" alt="Yeniden Aydınlatma Sonucu" loading="lazy">
         </div>
     </div>
 
-    <h3>İsteğe Bağlı Ayarlamalar</h3>
-    <p>Eğer biraz daha maceracı hissediyorsanız ve yeniden aydınlatmanıza biraz daha stil katmak istiyorsanız, işte ayarlayabileceğiniz bazı şeyler:</p>
+    <h3>Opsiyonel Ayarlamalar</h3>
+    <p>Eğer maceracı hissediyorsanız ve yeniden aydınlatmanıza biraz daha stil katmak istiyorsanız, işte ayarlayabileceğiniz bazı şeyler:</p>
 
     <ul>
-        <li><strong>Negatif Komut:</strong> Bir şeyi istemiyor musunuz? AiCasso'ya neyi <em>içermemesi</em> gerektiğini söyleyebilirsiniz. Ama merak etmeyin, bunu boş bırakırsanız, AiCasso sadece istediğiniz şeye odaklanır.</li>
-        <li><strong>Aydınlatma Yönü:</strong> Işığın nereden gelmesi gerektiğini belirtebilirsiniz—sol, sağ, üst, alt veya hiçbiri. Varsayılan olarak, ışık soldan gelir.</li>
-        <li><strong>Rehberlik Ölçeği:</strong> Bu, AiCasso'nun tanımınıza bağlı kalmasına yardımcı olur. Ölçek 1'den 20'ye kadar gider ve varsayılan 7'dir. Sayı ne kadar yüksekse, AiCasso komutunuza o kadar bağlı kalır.</li>
-        <li><strong>Yüksek Çözünürlük Ölçeği:</strong> Görüntünüzün öne çıkmasını mı istiyorsunuz? Bu, netliği kontrol eder. Varsayılan 1.5'tir, ancak daha net bir görüntü için 1.0 ile 2.0 arasında ayarlayabilirsiniz.</li>
-        <li><strong>Gürültü Azaltma Seviyeleri:</strong> İki seviye vardır—düşük çözünürlük ve yüksek çözünürlük. Bunlar, son görüntünün ne kadar pürüzsüz veya detaylı görüneceğini kontrol eder. Düşük çözünürlük gürültü azaltma seviyesini 0.0 ile 1.0 arasında ayarlayabilirsiniz (varsayılan 0.9) ve yüksek çözünürlük için 0.0 ile 1.0 arasında (varsayılan 0.5).</li>
-        <li><strong>Adım Sayısı:</strong> Bu, AiCasso'nun görüntünüzü cilalamak için kaç adım attığını belirtir. Varsayılan 50'dir, ancak 20 ile 50 adım arasında gidebilirsiniz.</li>
+        <li><strong>Negatif İfade:</strong> Bir şeyden kaçınmak mı istiyorsunuz? AiCasso'ya <em>dahil etmemesi gerekenleri</em> söyleyebilirsiniz. Ama endişelenmeyin, bunu boş bırakırsanız, AiCasso sadece istediğiniz şeylere odaklanır.</li>
+        <li><strong>Işık Yönü:</strong> Işığın nereden gelmesi gerektiğini belirtebilirsiniz—sol, sağ, üst, alt veya hiçbiri. Varsayılan olarak, ışık soldan gelir.</li>
+        <li><strong>Rehberlik Ölçeği:</strong> Bu, AiCasso'nun tarifinize sadık kalmasına yardımcı olur. Ölçek 1 ile 20 arasında değişir, 7 varsayılandır. Sayı ne kadar yüksek olursa, AiCasso o kadar çok ifadenize sadık kalır.</li>
+        <li><strong>Yüksek Çözünürlük Ölçeği:</strong> Görüntünüzün daha belirgin olmasını mı istiyorsunuz? Bu, netliği kontrol eder. Varsayılan 1.5'tir, ancak daha keskin bir görüntü için 1.0 ile 2.0 arasında ayarlayabilirsiniz.</li>
+        <li><strong>Gürültü Azaltma Seviyeleri:</strong> İki seviye vardır—düşük çözünürlük ve yüksek çözünürlük. Bu, son görüntünün ne kadar pürüzsüz veya detaylı görüneceğini kontrol eder. Düşük çözünürlük gürültü azaltma seviyesini 0.0 ile 1.0 arasında (varsayılan 0.9) ve yüksek çözünürlük seviyesini 0.0 ile 1.0 arasında (varsayılan 0.5) ayarlayabilirsiniz.</li>
+        <li><strong>Adım Sayısı:</strong> Bu, AiCasso'nun görüntünüzü parlatmak için aldığı adım sayısıdır. Varsayılan 50'dir, ancak 20 ile 50 adım arasında gidebilirsiniz.</li>
     </ul>
 
-    <p>Unutmayın, bu ayarlamalar tamamen isteğe bağlıdır! AiCasso, ne istediğinizi anlamada oldukça iyidir, bu yüzden vizyonunuzu kendi kelimelerinizle tarif edin ve sihrini gerçekleştirsin. Dilbilgisi veya detaylar konusunda mükemmel olmanıza gerek yok—sadece eğlenin ve neler yaratabileceğinizi görün!</p>
+    <p>Unutmayın, bu ayarlamalar tamamen isteğe bağlıdır! AiCasso, ne istediğinizi anlamada oldukça iyidir, bu yüzden vizyonunuzu kendi kelimelerinizle tarif edin ve sihri gerçekleştirsin. Dil bilgisi veya detaylarla mükemmel olmanıza gerek yok—sadece eğlenin ve ne yaratabileceğinizi görün!</p>
 
 </body>
 </html>

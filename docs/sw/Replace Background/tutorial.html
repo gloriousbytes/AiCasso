@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -41,41 +41,41 @@
 <body>
 
     <h2>Mwongozo wa Kutumia Kipengele cha Kubadilisha Mandharinyuma</h2>
-    <p>Kipengele cha Kubadilisha Mandharinyuma katika AiCasso ni bora kwa wakati unapotaka kubadilisha mandharinyuma katika picha yako. Iwe unataka tu kuondoa mandharinyuma au kubadilisha na kitu kingine, AiCasso inafanya iwe rahisi sana. Huna haja ya kuwa na wasiwasi kuhusu mambo ya kiufundi—eleza tu unachotaka, na AiCasso itafanya mengine yote.</p>
+    <p>Kipengele cha Kubadilisha Mandharinyuma katika AiCasso ni bora unapotaka kubadilisha mandharinyuma katika picha yako. Iwe unataka tu kuondoa mandharinyuma au kulibadilisha na kitu kingine, AiCasso inafanya iwe rahisi sana. Huna haja ya kuwa na wasiwasi kuhusu mambo ya kiufundi—eleza tu unachotaka, na AiCasso itafanya mengine yote.</p>
 
     <h3>Jinsi Inavyofanya Kazi:</h3>
     
     <div class="example">
         <strong>Picha ya Kuingiza:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Picha ya Kuingiza" loading="lazy">
         </div>
-        <strong>Maelekezo 1:</strong>
+        <strong>Maagizo 1:</strong>
         <p>"Ondoa mandharinyuma"</p>
         <strong>Matokeo 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Matokeo ya Mandharinyuma Yameondolewa" loading="lazy">
         </div>
-        <strong>Maelekezo 2:</strong>
-        <p>"Badilisha mandharinyuma na msitu, usiondoe tu, na alpha matting izimwe. Tumia kizingiti cha mbele cha 240, kizingiti cha mandharinyuma cha 20, na ukubwa wa erode wa 5 kwa alpha matting."</p>
+        <strong>Maagizo 2:</strong>
+        <p>"Badilisha mandharinyuma na msitu, si tu kuondoa, na alpha matting imezimwa. Tumia kigezo cha mbele cha 240, kigezo cha mandharinyuma cha 20, na ukubwa wa erode wa 5 kwa alpha matting."</p>
         <strong>Matokeo 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Mandharinyuma Yamebadilishwa na Msitu" loading="lazy">
         </div>
     </div>
 
     <h3>Vigezo vya Hiari</h3>
-    <p>Kama unataka kuongeza mguso wa kibinafsi au kurekebisha matokeo, hapa kuna chaguo kadhaa unazoweza kucheza nazo:</p>
+    <p>Kama unataka kuongeza mguso wa kibinafsi au kurekebisha matokeo, hapa kuna chaguzi chache unazoweza kucheza nazo:</p>
 
     <ul>
-        <li><strong>Ondoa Tu:</strong> Kama unataka tu kuondoa mandharinyuma na sio kubadilisha na chochote, hii ni chaguo lako bora. Ni kama kubonyeza kitufe cha kuanza upya.</li>
-        <li><strong>Alpha Matting:</strong> Hii ni njia ya kifahari ya kusema "changanya mipaka." Unapoiwasha, inasaidia kufanya mipaka ya somo lako ionekane laini na isiyo na makali. Kwa default, imezimwa.</li>
-        <li><strong>Kizingiti cha Mbele cha Alpha Matting:</strong> Hii inadhibiti ni kiasi gani cha somo kuu (kama mtu) kinabaki kuonekana wakati wa kutumia alpha matting. Default ni 240, na unaweza kurekebisha ili kufanya mipaka iwe laini au kali zaidi.</li>
-        <li><strong>Kizingiti cha Mandharinyuma cha Alpha Matting:</strong> Hii hufanya sawa na kizingiti cha mbele lakini kwa mandharinyuma. Default ni 20, na yote ni kuhusu kupata mchanganyiko kamili na mandharinyuma mpya.</li>
-        <li><strong>Ukubwa wa Erode wa Alpha Matting:</strong> Hii husaidia kupunguza mipaka kidogo ili kufanya kukatwa kuonekane safi. Ukubwa wa default ni 5, lakini unaweza kuirekebisha kupata mwonekano halisi unaotaka.</li>
+        <li><strong>Ondoa Tu:</strong> Ikiwa unataka tu kuondoa mandharinyuma na si kubadilisha na chochote, hii ndiyo chaguo lako. Ni kama kubonyeza kitufe cha kuanzisha upya.</li>
+        <li><strong>Alpha Matting:</strong> Hii ni njia ya kisasa ya kusema "changanya mipaka." Unapoiwasha, inasaidia kufanya mipaka ya kipengele chako ionekane laini zaidi na isionekane kama imekatwa. Kwa kawaida, imezimwa.</li>
+        <li><strong>Kigezo cha Mipaka ya Alpha Matting:</strong> Hii inasimamia ni kiasi gani cha kipengele kikuu (kama mtu) kinabaki kuonekana unapokuwa unatumia alpha matting. Kiwango cha kawaida ni 240, na unaweza kukirekebisha ili kufanya mipaka iwe laini au kali zaidi.</li>
+        <li><strong>Kigezo cha Mipaka ya Mandharinyuma ya Alpha Matting:</strong> Hii inafanya sawa na kigezo cha mbele lakini kwa mandharinyuma. Kiwango cha kawaida ni 20, na inahusiana na kupata mchanganyiko mzuri na mandharinyuma mpya.</li>
+        <li><strong>Kubwa ya Erode ya Alpha Matting:</strong> Hii inasaidia kupunguza mipaka kidogo ili kufanya kukatwa kuonekana safi zaidi. Ukubwa wa kawaida ni 5, lakini unaweza kuubadilisha ili kupata muonekano sahihi unayotaka.</li>
     </ul>
 
-    <p>Kumbuka, huna haja ya kuwa na wasiwasi kuhusu kupata kila kitu kikamilifu. AiCasso ni nzuri katika kuelewa unachomaanisha, hivyo jisikie huru kuwa wa kawaida au wa kina unavyopenda. Furahia kuunda!</p>
+    <p>Kumbuka, huna haja ya kuwa na wasiwasi kuhusu kupata kila kitu kuwa sahihi. AiCasso ni mzuri katika kuelewa unachomaanisha, hivyo jisikie huru kuwa wa kawaida au wa kina kadri unavyotaka. Furahia kuunda!</p>
 
 </body>
 </html>

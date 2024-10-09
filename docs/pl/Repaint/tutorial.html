@@ -3,109 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porady dotyczące funkcji Repaint</title>
+    <title>Porady dotyczące funkcji malowania</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+         body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Zapewnia, że obraz nie wychodzi poza kontener */
+    height: auto;     /* Utrzymuje proporcje */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
-    <h2>Porady dotyczące funkcji Repaint</h2>
-    <p>Używanie funkcji Inpaint w AiCasso pozwala na modyfikację konkretnych obszarów obrazu poprzez ich wypełnianie lub zastępowanie. Niezależnie od tego, czy chcesz poprawić istniejący obraz, czy całkowicie zmienić niektóre sekcje, AiCasso sprawia, że proces jest prosty. Wystarczy zaznaczyć obszary, które chcesz zmienić, podać podpowiedź i pozwolić AiCasso działać.</p>
+    <h2>Porady dotyczące funkcji malowania</h2>
+    <p>Korzystanie z funkcji Inpaint w AiCasso pozwala na modyfikację konkretnych obszarów obrazu poprzez ich wypełnienie lub zastąpienie. Niezależnie od tego, czy chcesz poprawić istniejący obraz, czy całkowicie zmienić niektóre sekcje, AiCasso sprawia, że proces jest prosty. Wystarczy zaznaczyć obszary, które chcesz zmienić, podać wskazówkę i pozwolić AiCasso działać.</p>
 
    <h3>Opcje:</h3>
 
     <div class="example">
         <strong>Siła:</strong>
-        <p>Opcja siły kontroluje, jak bardzo oryginalny obraz jest zmieniany przez podpowiedź. Wartość ta waha się od 0 do 1. Wartość 0 oznacza, że oryginalny obraz jest ledwo zmieniony, podczas gdy wartość 1 oznacza, że oryginalny obraz jest prawie całkowicie zastąpiony nowymi szczegółami, które opisujesz. Pomyśl o tym jako o tym, jak 'silne' będą twoje zmiany.</p>
+        <p>Opcja siły kontroluje, jak bardzo oryginalny obraz jest zmieniany przez wskazówkę. Waha się od 0 do 1. Wartość 0 oznacza, że oryginalny obraz jest ledwo zmieniony, podczas gdy wartość 1 oznacza, że oryginalny obraz jest prawie całkowicie zastąpiony nowymi szczegółami, które opisujesz. Pomyśl o tym jako o tym, jak 'silne' będą twoje zmiany.</p>
     </div>
 
     <div class="example">
-        <strong>Styl Ulepszania:</strong>
-        <p>Opcja stylu ulepszania pozwala na dodanie konkretnego artystycznego lub tematycznego stylu do zmodyfikowanych obszarów. Możesz wybierać spośród różnych stylów, takich jak:</p>
+        <strong>Styl wzmacniający:</strong>
+        <p>Opcja stylu wzmacniającego pozwala dodać konkretny artystyczny lub tematyczny styl do zmodyfikowanych obszarów. Możesz wybierać spośród różnych stylów, takich jak:</p>
     </div>
 
     <h3>Jak to działa:</h3>
 
-    <div class="example">
-        <strong>Obraz wejściowy:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OzuoAKoYvwEW30ScvOjgX9lfe6VpbdNq/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Obraz wejściowy:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/inpain/input.jpg" alt="Obraz wejściowy">
     </div>
+</div>
 
-    <div class="example">
-        <strong>Malowanie obszarów do wypełnienia lub zastąpienia:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1-PaOaaDEvMogYhFjiMjUztvsxhllTsQ3/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Maluj obszary do wypełnienia lub zastąpienia:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/inpain/paintareas.jpg" alt="Maluj obszary">
     </div>
+</div>
 
-    <h3>Przykłady:</h3>
+<h3>Przykłady:</h3>
 
-    <div class="example">
-        <strong>Podpowiedź 1:</strong> "Hiperrzeczywisty obraz kota w parku."
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1BpTJPP7s5CJ-6Yk03s281K6ay6DQ-sFa/preview"></iframe>
-        </div>
-        <p><em>Wynik:</em> AiCasso wygeneruje hiperrzeczywistego kota w parku, wypełniając malowane obszary płynnie realistycznymi teksturami i oświetleniem.</p>
+<div class="example">
+    <strong>Wskazówka 1:</strong> "Hiperrealistyczny obraz kota w parku."
+    <div class="result">
+        <img src="../../images/tutorials/inpain/catinthepark.jpg" alt="Hiperrealistyczny kot w parku">
     </div>
+    <p><em>Wynik:</em> AiCasso wygeneruje hiperrealistycznego kota w parku, wypełniając malowane obszary płynnie realistycznymi teksturami i oświetleniem.</p>
+</div>
 
-    <div class="example">
-        <strong>Podpowiedź 2:</strong> "Kot w parku w hiperrzeczywistym stylu i sile 0.7."
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1USCGxNAf0iteIGn8Klp97HI-spTTiREW/preview"></iframe>
-        </div>
-        <p><em>Wynik:</em> To stworzy hiperrzeczywistego kota w parku, z siłą modyfikacji ustawioną na 0.7, płynnie łącząc nowe elementy z oryginalnym obrazem.</p>
+<div class="example">
+    <strong>Wskazówka 2:</strong> "Kot w parku w hiperrealistycznym stylu i sile 0.7."
+    <div class="result">
+        <img src="../../images/tutorials/inpain/catintheparkstrength0.7.jpg" alt="Kot w parku siła 0.7">
     </div>
+    <p><em>Wynik:</em> To stworzy hiperrealistycznego kota w parku, z siłą modyfikacji ustawioną na 0.7, płynnie łącząc nowe elementy z oryginalnym obrazem.</p>
+</div>
 
-  <h3>Style Ulepszania</h3>
-<p>Nie wiesz, który styl wybrać? Nie martw się! Wystarczy wspomnieć o dowolnym stylu, który przychodzi ci do głowy, nawet jeśli nie jest gramatycznie poprawny, a AiCasso zrozumie to z listy dostępnych stylów ulepszania.</p>
+  <h3>Style wzmacniające</h3>
+<p>Nie wiesz, który styl wybrać? Nie martw się! Wystarczy wspomnieć o dowolnym stylu, który przychodzi ci na myśl, nawet jeśli nie jest gramatycznie poprawny, a AiCasso zrozumie to z listy dostępnych stylów wzmacniających.</p>
 
     <ul>
-        <li><strong>Domyślny:</strong> Zrównoważony i neutralny styl bez konkretnego wpływu artystycznego.</li>
-        <li><strong>Ulepszony:</strong> Lekko poprawia szczegóły i ogólną estetykę.</li>
-        <li><strong>Cinematic Diva:</strong> Dodaje dramatyczny, filmowy efekt z silnymi kontrastami oświetleniowymi.</li>
+        <li><strong>Domyślny:</strong> Zrównoważony i neutralny styl bez żadnego konkretnego wpływu artystycznego.</li>
+        <li><strong>Wzmacniający:</strong> Lekko poprawia szczegóły i ogólną estetykę.</li>
+        <li><strong>Cinematic Diva:</strong> Dodaje dramatyczny, filmowy efekt z silnymi kontrastami świetlnymi.</li>
         <li><strong>Ekspresjonizm Abstrakcyjny:</strong> Podkreśla abstrakcyjne formy i żywe plamy kolorów.</li>
         <li><strong>Akademia:</strong> Dodaje naukowy i klasyczny akcent do obrazu.</li>
-        <li><strong>Figurka Akcji:</strong> Generuje obrazy w wyolbrzymionym i dynamicznym stylu figurek akcji.</li>
+        <li><strong>Figurka Akcji:</strong> Generuje obrazy z wyolbrzymionym i dynamicznym stylem figurek akcji.</li>
         <li><strong>Urocza postać 3D:</strong> Produkuje urocze, kreskówkowe postacie 3D.</li>
         <li><strong>Urocze Kawaii:</strong> Podkreśla uroczy i czarujący styl typowy dla kultury Kawaii.</li>
         <li><strong>Art Deco:</strong> Używa geometrycznego i dekoracyjnego stylu okresu Art Deco.</li>
@@ -116,59 +117,59 @@
         <li><strong>Plakat w stylu Bauhausu:</strong> Odbija minimalistyczne i funkcjonalne zasady projektowania Bauhausu.</li>
         <li><strong>Rysunek schematyczny:</strong> Produkuje obrazy przypominające techniczne plany.</li>
         <li><strong>Karykatura:</strong> Generuje wyolbrzymione, kreskówkowe portrety.</li>
-        <li><strong>Sztuka w stylu cel-shaded:</strong> Używa płaskich, wyrazistych kolorów typowych dla animacji cel-shaded.</li>
+        <li><strong>Sztuka cel-shaded:</strong> Używa płaskich, wyrazistych kolorów typowych dla animacji cel-shaded.</li>
         <li><strong>Arkusz projektowy postaci:</strong> Skupia się na czystych i wyraźnych projektach postaci odpowiednich do animacji.</li>
         <li><strong>Sztuka klasycyzmu:</strong> Emuluje wyrafinowany i idealizowany styl artystyczny starożytności klasycznej.</li>
-        <li><strong>Malarstwo w polu kolorów:</strong> Prezentuje duże obszary jednolitego koloru, tworząc płaską powierzchnię koloru.</li>
+        <li><strong>Malarstwo pola kolorów:</strong> Prezentuje duże obszary jednolitego koloru, tworząc płaską płaszczyznę koloru.</li>
         <li><strong>Sztuka ołówkowa:</strong> Naśladuje teksturę i wygląd rysunków wykonanych kredkami.</li>
-        <li><strong>Sztuka konceptualna:</strong> Priorytetowo traktuje pomysły i koncepcje ponad estetyczne lub materialne kwestie.</li>
-        <li><strong>Konstruowanie:</strong> Odbija przemysłowy, geometryczny styl ruchu konstruktywistycznego.</li>
-        <li><strong>Kubizm:</strong> Rozkłada obiekty na kształty geometryczne i przedstawia je w formach abstrakcyjnych.</li>
+        <li><strong>Sztuka konceptualna:</strong> Priorytetowo traktuje pomysły i koncepcje ponad estetyką lub materialnymi kwestiami.</li>
+        <li><strong>Konstruktywizm:</strong> Odbija przemysłowy, geometryczny styl ruchu konstruktywistycznego.</li>
+        <li><strong>Kubizm:</strong> Rozkłada obiekty na geometryczne kształty i przedstawia je w formach abstrakcyjnych.</li>
         <li><strong>Dadaizm:</strong> Podkreśla absurd, irracjonalność i estetykę antysztuki.</li>
-        <li><strong>Dark Fantasy:</strong> Tworzy mroczną, gotycką atmosferę z ciemnymi i niepokojącymi elementami.</li>
-        <li><strong>Mroczna, nastrojowa atmosfera:</strong> Używa niskiego oświetlenia i cienia, aby stworzyć nastrojową atmosferę.</li>
+        <li><strong>Dark Fantasy:</strong> Tworzy nastrojową, gotycką atmosferę z ciemnymi i niepokojącymi elementami.</li>
+        <li><strong>Ciemna nastrojowa atmosfera:</strong> Używa niskiego oświetlenia i cienia, aby stworzyć nastrojową atmosferę.</li>
         <li><strong>Sztuka DMT:</strong> Prezentuje żywe, psychodeliczne wizualizacje inspirowane doświadczeniami DMT.</li>
-        <li><strong>Sztuka doodle:</strong> Podkreśla whimsicalne i zabawne style rysunkowe, często skomplikowane i szczegółowe.</li>
+        <li><strong>Sztuka doodle:</strong> Podkreśla fantazyjne i zabawne style rysunkowe, często skomplikowane i szczegółowe.</li>
         <li><strong>Podwójna ekspozycja:</strong> Łączy dwa obrazy w jeden, tworząc surrealistyczny, warstwowy efekt.</li>
-        <li><strong>Kapnięcia farby:</strong> Używa rozpryskującej się i kapiejącej farby, aby stworzyć dynamiczne i chaotyczne kompozycje.</li>
+        <li><strong>Plama farby kapiącej:</strong> Używa rozpryskanej i kapiącej farby, aby stworzyć dynamiczne i chaotyczne kompozycje.</li>
         <li><strong>Ekspresjonizm:</strong> Priorytetowo traktuje emocjonalne wyrażenie ponad realistyczną reprezentację, często używając wyrazistych kolorów i dramatycznych form.</li>
-        <li><strong>Wyblakłe zdjęcie Polaroid:</strong> Naśladuje starzejący się i nostalgiczny wygląd wyblakłego zdjęcia Polaroid.</li>
+        <li><strong>Wyblakłe zdjęcie Polaroid:</strong> Naśladuje postarzały i nostalgiczny wygląd wyblakłego zdjęcia Polaroid.</li>
         <li><strong>Fowizm:</strong> Używa żywych, nienaturalnych kolorów i wyrazistego pędzla, inspirowanego ruchem fowistycznym.</li>
-        <li><strong>Płaski 2D:</strong> Podkreśla proste, płaskie projekty z minimalnym cieniowaniem lub głębią, często w stylu kreskówkowym.</li>
-        <li><strong>Styl Fortnite:</strong> Odbija żywy, kreskówkowy styl artystyczny typowy dla gry Fortnite.</li>
+        <li><strong>Płaski 2D:</strong> Podkreśla proste, płaskie projekty z minimalnym cieniowaniem lub głębokością, często w stylu kreskówkowym.</li>
+        <li><strong>Styl Fortnite:</strong> Odbija żywy, kreskówkowy styl typowy dla gry wideo Fortnite.</li>
         <li><strong>Futuryzm:</strong> Skupia się na dynamicznym ruchu, energii i przedstawieniu przyszłych technologii.</li>
         <li><strong>Glitchcore:</strong> Podkreśla błędy cyfrowe i glitch'e jako styl artystyczny, często z zniekształconymi wizualizacjami.</li>
         <li><strong>Glo-Fi:</strong> Używa miękkiego, świecącego oświetlenia, aby stworzyć marzycielską, eteryczną atmosferę.</li>
-        <li><strong>Styl Googie:</strong> Odbija futurystyczne i kosmiczne trendy projektowe z połowy XX wieku.</li>
+        <li><strong>Styl Googie:</strong> Odbija futurystyczne i kosmiczne trendy projektowe połowy XX wieku.</li>
         <li><strong>Sztuka graffiti:</strong> Używa żywych, ulicznych estetyk typowych dla graffiti i miejskich murali.</li>
         <li><strong>Sztuka renesansu harlemskiego:</strong> Odbija bogate kulturowe i artystyczne wyrażenia renesansu harlemskiego.</li>
         <li><strong>Wysoka moda:</strong> Podkreśla elegancki, wyrafinowany i awangardowy styl wysokiej mody.</li>
-        <li><strong>Idylliczny:</strong> Tworzy spokojną, serene i często pastoralną atmosferę.</li>
-        <li><strong>Impresjonizm:</strong> Używa luźnych pociągnięć pędzla i żywych kolorów, aby uchwycić efekty światła i atmosfery.</li>
+        <li><strong>IDYLLICZNY:</strong> Tworzy spokojną, serene i często pastoralną atmosferę.</li>
+        <li><strong>Impresjonizm:</strong> Używa luźnego pędzla i żywych kolorów, aby uchwycić efekty światła i atmosfery.</li>
         <li><strong>Rysunek infograficzny:</strong> Podkreśla przejrzyste, wizualnie atrakcyjne układy do przedstawiania informacji graficznie.</li>
-        <li><strong>Rysunek z kapaniem atramentu:</strong> Używa atramentu, aby stworzyć płynne, kapiejące efekty w rysunku.</li>
-        <li><strong>Japoński rysunek atramentowy:</strong> Emuluje tradycyjne techniki pociągnięcia pędzla i estetykę japońskiej sztuki atramentowej.</li>
-        <li><strong>Fotografia knolling:</strong> Podkreśla schludny i zorganizowany układ obiektów, często fotografowany z góry.</li>
+        <li><strong>Rysunek z kapiącym tuszem:</strong> Używa tuszu, aby stworzyć płynne, kapiące efekty w rysunku.</li>
+        <li><strong>Japoński rysunek tuszem:</strong> Emuluje tradycyjne techniki pędzla i estetykę japońskiej sztuki tuszem.</li>
+        <li><strong>Fotografia Knolling:</strong> Podkreśla schludny i zorganizowany układ obiektów, często fotografowanych z góry.</li>
         <li><strong>Jasna, wesoła atmosfera:</strong> Używa jasnych kolorów i oświetlenia, aby stworzyć radosną i podnoszącą na duchu atmosferę.</li>
         <li><strong>Projekt logo:</strong> Skupia się na tworzeniu czystych, rozpoznawalnych logo i elementów brandingowych.</li>
         <li><strong>Luksusowa elegancja:</strong> Podkreśla wyrafinowanie i luksus, często z bogatymi teksturami i materiałami.</li>
-        <li><strong>Fotografia makro:</strong> Skupia się na ekstremalnych zbliżeniach, często ujawniając skomplikowane szczegóły niewidoczne gołym okiem.</li>
-        <li><strong>Sztuka mandali:</strong> Tworzy skomplikowane, symetryczne wzory inspirowane tradycyjnymi wzorami mandali.</li>
+        <li><strong>Fotografia makro:</strong> Skupia się na ekstremalnych zbliżeniach, często ujawniających skomplikowane szczegóły niewidoczne gołym okiem.</li>
+        <li><strong>Sztuka mandali:</strong> Tworzy skomplikowane, symetryczne wzory inspirowane tradycyjnymi projektami mandali.</li>
         <li><strong>Rysunek markerem:</strong> Emuluje wyraziste, żywe linie i kolory typowe dla rysunków markerem.</li>
-        <li><strong>Średniowiecze:</strong> Odbija estetykę sztuki i designu okresu średniowiecza.</li>
-        <li><strong>Minimalizm:</strong> Podkreśla prostotę i redukcję form do ich istotnych elementów.</li>
-        <li><strong>Neo-barok:</strong> Ożywia opulentny, dramatyczny styl epoki baroku, z nowoczesnymi wpływami.</li>
-        <li><strong>Neo-bizantyjski:</strong> Łączy ozdobny, religijny styl sztuki Bizancjum z elementami współczesnymi.</li>
+        <li><strong>Średniowiecze:</strong> Odbija estetykę sztuki i projektowania okresu średniowiecza.</li>
+        <li><strong>Minimalizm:</strong> Podkreśla prostotę i redukcję form do ich podstawowych elementów.</li>
+        <li><strong>Neo-barok:</strong> Ożywia bogaty, dramatyczny styl epoki baroku, z nowoczesnymi wpływami.</li>
+        <li><strong>Neo-bizantyjski:</strong> Łączy ozdobny, religijny styl sztuki Bizancjum z współczesnymi elementami.</li>
         <li><strong>Neo-futuryzm:</strong> Skupia się na futurystycznych projektach, często z elegancką, nowoczesną estetyką.</li>
         <li><strong>Neo-impresjonizm:</strong> Używa małych, wyraźnych kropek koloru do tworzenia obrazów, inspirowanych ruchem neo-impresjonistycznym.</li>
         <li><strong>Neo-rokoko:</strong> Ożywia bogaty, dekoracyjny styl epoki rokoko, z nowoczesnymi akcentami.</li>
-        <li><strong>Neoklasycyzm:</strong> Emuluje estetykę sztuki i designu starożytności klasycznej, podkreślając harmonię i prostotę.</li>
-        <li><strong>Sztuka optyczna:</strong> Tworzy iluzje optyczne i efekty za pomocą geometrycznych wzorów i kontrastów.</li>
+        <li><strong>Neoklasycyzm:</strong> Emuluje estetykę sztuki i projektowania starożytności klasycznej, podkreślając harmonię i prostotę.</li>
+        <li><strong>Sztuka optyczna:</strong> Tworzy iluzje optyczne i efekty poprzez użycie geometrycznych wzorów i kontrastów.</li>
         <li><strong>Ozdobne i skomplikowane:</strong> Skupia się na bardzo szczegółowych, bogatych projektach z naciskiem na dekorację.</li>
-        <li><strong>Rysunek szkicowy:</strong> Emuluje teksturę i wygląd rysunków wykonanych ołówkiem.</li>
+        <li><strong>Rysunek ołówkiem:</strong> Emuluje teksturę i wygląd szkiców ołówkowych.</li>
         <li><strong>Sztuka pop:</strong> Używa wyrazistych kolorów i obrazów inspirowanych kulturą popularną i mediami masowymi.</li>
         <li><strong>Rokoko:</strong> Odbija bogaty, dekoracyjny styl sztuki epoki rokoko, z naciskiem na lekkość i elegancję.</li>
-        <li><strong>Sztuka sylwetki:</strong> Używa silnych kontrastów między światłem a cieniem, aby tworzyć wyraziste obrazy oparte na sylwetkach.</li>
+        <li><strong>Sztuka sylwetki:</strong> Używa silnych kontrastów między światłem a cieniem, aby tworzyć odważne obrazy oparte na sylwetkach.</li>
         <li><strong>Prosta sztuka wektorowa:</strong> Podkreśla czyste, geometryczne kształty i płaskie kolory, typowe dla sztuki wektorowej.</li>
         <li><strong>SketchUp:</strong> Emuluje wygląd i odczucie modeli 3D stworzonych za pomocą oprogramowania SketchUp.</li>
         <li><strong>Steampunk:</strong> Łączy estetykę epoki wiktoriańskiej z technologią napędzaną parą, tworząc retro-futurystyczny styl.</li>
@@ -177,95 +178,95 @@
         <li><strong>Terragen:</strong> Emuluje realistyczne, komputerowo generowane krajobrazy stworzone za pomocą oprogramowania Terragen.</li>
         <li><strong>Spokojna, relaksująca atmosfera:</strong> Używa miękkich kolorów i uspokajających obrazów, aby stworzyć spokojne i serene otoczenie.</li>
         <li><strong>Projekty naklejek:</strong> Skupia się na tworzeniu zabawnych, kreskówkowych obrazów odpowiednich do naklejek.</li>
-        <li><strong>Jasne światło brzegowe:</strong> Podkreśla jasne, brzegowe oświetlenie wokół obiektów, aby stworzyć uderzający, żywy efekt.</li>
+        <li><strong>Jasne światło krawędzi:</strong> Podkreśla jasne, krawędziowe oświetlenie wokół obiektów, aby stworzyć uderzający, żywy efekt.</li>
         <li><strong>Oświetlenie objętościowe:</strong> Używa promieni świetlnych i efektów atmosferycznych, aby stworzyć głębię i wymiar.</li>
         <li><strong>Akwaforta:</strong> Emuluje miękkie, płynące tekstury obrazów akwarelowych.</li>
-        <li><strong>Whimsical i zabawny:</strong> Skupia się na lekkich, wyobraźniowych i często dziwacznych obrazach.</li>
-        <li><strong>Ostry:</strong> Zwiększa klarowność i definicję krawędzi dla ostrzejszego wyglądu.</li>
-        <li><strong>Dzieło sztuki:</strong> Podkreśla wysoką jakość, szczegółowość i dopracowany artystyczny efekt.</li>
+        <li><strong>Fantazyjny i zabawny:</strong> Skupia się na lekkich, wyobraźniowych i często dziwacznych obrazach.</li>
+        <li><strong>Ostry:</strong> Zwiększa klarowność i definicję krawędzi dla wyraźniejszego wyglądu.</li>
+        <li><strong>Arcydzieło:</strong> Podkreśla wysoką jakość, szczegółowość i dopracowane artystyczne wyjście.</li>
         <li><strong>Fotografia:</strong> Dąży do realistycznej i żywej jakości fotograficznej.</li>
-        <li><strong>Negatyw:</strong> Odwraca kolory, aby stworzyć efekt negatywu fotograficznego.</li>
+        <li><strong>Negatyw:</strong> Inwertuje kolory, aby stworzyć efekt negatywu fotograficznego.</li>
         <li><strong>Reklamy - Reklama:</strong> Skupia się na czystych, profesjonalnych wizualizacjach odpowiednich do reklamy.</li>
-        <li><strong>Reklamy - Motoryzacja:</strong> Dostosowuje styl wizualny do dynamicznej i dopracowanej reklamy motoryzacyjnej.</li>
+        <li><strong>Reklamy - Motoryzacyjne:</strong> Dostosowuje styl wizualny do dynamicznej i dopracowanej reklamy motoryzacyjnej.</li>
         <li><strong>Reklamy - Korporacyjne:</strong> Podkreśla elegancki, profesjonalny design odpowiedni do środowisk korporacyjnych.</li>
-        <li><strong>Reklamy - Moda:</strong> Podkreśla stylowy, wysokiej mody wygląd używany w edytorialach modowych.</li>
-        <li><strong>Reklamy - Fotografia jedzenia:</strong> Optymalizuje obrazy dla żywego i apetycznego wyglądu typowego dla fotografii jedzenia.</li>
-        <li><strong>Reklamy - Fotografia jedzenia gourmet:</strong> Podkreśla bogate, szczegółowe estetyki fotografii jedzenia gourmet.</li>
-        <li><strong>Reklamy - Luksus:</strong> Skupia się na opulentnym, wysokiej klasy stylu odpowiednim dla luksusowych marek.</li>
+        <li><strong>Reklamy - Moda:</strong> Podkreśla stylowy, wysokiej mody wygląd używany w redakcjach mody.</li>
+        <li><strong>Reklamy - Fotografia żywności:</strong> Optymalizuje obrazy dla żywego i apetycznego wyglądu typowego dla fotografii żywności.</li>
+        <li><strong>Reklamy - Fotografia żywności gourmet:</strong> Podkreśla bogate, szczegółowe estetyki fotografii żywności gourmet.</li>
+        <li><strong>Reklamy - Luksus:</strong> Skupia się na bogatym, wysokiej jakości stylu odpowiednim dla luksusowych marek.</li>
         <li><strong>Reklamy - Nieruchomości:</strong> Podkreśla czyste i zapraszające wizualizacje typowe dla reklamy nieruchomości.</li>
         <li><strong>Reklamy - Detal:</strong> Podkreśla atrakcyjny, skoncentrowany na konsumencie styl odpowiedni dla reklamy detalicznej.</li>
-        <li><strong>Hiperrzeczywistość:</strong> Dąży do ekstremalnie szczegółowego, realistycznego stylu wizualnego.</li>
-        <li><strong>Pointylizm:</strong> Używa małych, wyraźnych kropek koloru do stworzenia obrazu, inspirowanego ruchem pointylizmu.</li>
+        <li><strong>Hyperrealizm:</strong> Dąży do ekstremalnie szczegółowego, realistycznego stylu wizualnego.</li>
+        <li><strong>Pointylizm:</strong> Używa małych, wyraźnych kropek koloru do tworzenia obrazu, inspirowanego ruchem pointylizmu.</li>
         <li><strong>Psychedeliczny:</strong> Podkreśla żywe kolory i surrealistyczne wizualizacje inspirowane sztuką psychodeliczną.</li>
         <li><strong>Renesans:</strong> Odbija harmonijny, klasyczny styl sztuki renesansowej.</li>
         <li><strong>Typografia:</strong> Skupia się na kreatywnym i artystycznym użyciu tekstu i czcionek.</li>
         <li><strong>Futurystyczny biomechaniczny:</strong> Łączy futurystyczne i biomechaniczne elementy, aby stworzyć nowoczesny, organiczny styl.</li>
-        <li><strong>Futurystyczny biomechaniczny cyberpunk:</strong> Łączy estetykę biomechaniczną i cyberpunkową dla surowego, futurystycznego wyglądu.</li>
+        <li><strong>Futurystyczny biomechaniczny cyberpunk:</strong> Łączy biomechaniczne i cyberpunkowe estetyki, aby stworzyć surowy, futurystyczny wygląd.</li>
         <li><strong>Futurystyczny cybernetyczny:</strong> Skupia się na nowoczesnych, cybernetycznych wizualizacjach.</li>
-        <li><strong>Futurystyczny robot cybernetyczny:</strong> Podkreśla projektowanie robotyczne i cybernetyczne z futurystycznym akcentem.</li>
+        <li><strong>Futurystyczny robot cybernetyczny:</strong> Podkreśla projektowanie robotów i cybernetycznych z futurystycznym akcentem.</li>
         <li><strong>Futurystyczny krajobraz cyberpunkowy:</strong> Odbija surowe, neonowe krajobrazy typowe dla sztuki cyberpunkowej.</li>
         <li><strong>Futurystyczny sci-fi:</strong> Skupia się na futurystycznych i inspirowanych science fiction estetykach.</li>
-        <li><strong>Futurystyczny retro cyberpunk:</strong> Łączy retro i cyberpunkowe elementy dla nostalgicznego, ale futurystycznego stylu.</li>
-        <li><strong>Futurystyczny retro:</strong> Łączy futurystyczne wizualizacje z retro elementami projektowymi.</li>
+        <li><strong>Futurystyczny retro cyberpunk:</strong> Łączy retro i cyberpunkowe elementy, aby stworzyć nostalgiczny, ale futurystyczny styl.</li>
+        <li><strong>Futurystyczny retro:</strong> Łączy futurystyczne wizualizacje z retro elementami projektowania.</li>
         <li><strong>Futurystyczny vaporwave:</strong> Podkreśla nostalgiczne, surrealistyczne wizualizacje typowe dla sztuki vaporwave.</li>
         <li><strong>Gra Bąbel:</strong> Skupia się na zabawnym, bąbelkowym estetyce często widocznej w grach casualowych.</li>
-        <li><strong>Gra cyberpunk:</strong> Łączy elementy projektowania gier z estetyką cyberpunkową.</li>
-        <li><strong>Gra walki:</strong> Odbija dynamiczny, intensywny styl typowy dla gier walki.</li>
+        <li><strong>Gra Cyberpunk:</strong> Łączy elementy projektowania gier z estetyką cyberpunkową.</li>
+        <li><strong>Gra Walki:</strong> Odbija dynamiczny, intensywny styl typowy dla gier walki.</li>
         <li><strong>Gra GTA:</strong> Emuluje surowy, miejski styl typowy dla gier Grand Theft Auto.</li>
         <li><strong>Gra Mario:</strong> Skupia się na żywym, kreskówkowym stylu typowym dla gier Mario.</li>
         <li><strong>Gra Minecraft:</strong> Emuluje blokowy, pikselowy styl typowy dla Minecraft.</li>
         <li><strong>Gra Pokemon:</strong> Odbija żywy, inspirowany anime styl typowy dla gier Pokémon.</li>
-        <li><strong>Gra retro arcade:</strong> Podkreśla nostalgiczny, pikselowy styl typowy dla retro gier arcade.</li>
-        <li><strong>Gra RPG fantasy:</strong> Odbija szczegółowe, inspirowane fantasy estetyki typowe dla gier RPG.</li>
-        <li><strong>Gra strategiczna:</strong> Skupia się na czystym, funkcjonalnym designie typowym dla gier strategicznych.</li>
+        <li><strong>Gra Retro Arcade:</strong> Podkreśla nostalgiczny, pikselowy styl typowy dla retro gier arcade.</li>
+        <li><strong>Gra RPG Fantasy:</strong> Odbija szczegółowe, inspirowane fantastyką estetyki typowe dla gier RPG.</li>
+        <li><strong>Gra Strategia:</strong> Skupia się na czystym, funkcjonalnym designie typowym dla gier strategicznych.</li>
         <li><strong>Gra Streetfighter:</strong> Emuluje odważny, dynamiczny styl typowy dla gier Street Fighter.</li>
-        <li><strong>Gra Zelda:</strong> Odbija styl inspirowany fantasy typowy dla gier Zelda.</li>
+        <li><strong>Gra Zelda:</strong> Odbija styl inspirowany fantastyką typowy dla gier Zelda.</li>
         <li><strong>Misc Architektoniczne:</strong> Skupia się na czystych, precyzyjnych wizualizacjach architektonicznych.</li>
         <li><strong>Misc Disco:</strong> Podkreśla żywe, neonowe estetyki typowe dla kultury disco.</li>
-        <li><strong>Misc Kraina snów:</strong> Tworzy surrealistyczne, przypominające sny środowiska.</li>
+        <li><strong>Misc Dreamscape:</strong> Tworzy surrealistyczne, przypominające sny środowiska.</li>
         <li><strong>Misc Dystopijne:</strong> Odbija surowe, ponure wizualizacje typowe dla dystopijnych scenerii.</li>
-        <li><strong>Misc Baśniowe:</strong> Podkreśla whimsicalne, magiczne elementy typowe dla baśni.</li>
+        <li><strong>Misc Baśniowe:</strong> Podkreśla fantazyjne, magiczne elementy typowe dla baśni.</li>
         <li><strong>Misc Gotyckie:</strong> Odbija ciemny, ozdobny styl typowy dla sztuki i architektury gotyckiej.</li>
         <li><strong>Misc Grunge:</strong> Podkreśla surowe, surowe estetyki typowe dla kultury grunge.</li>
-        <li><strong>Misc Horror:</strong> Skupia się na ciemnych, niepokojących i niepokojących wizualizacjach typowych dla horroru.</li>
+        <li><strong>Misc Horror:</strong> Skupia się na ciemnych, niepokojących i nieprzyjemnych wizualizacjach typowych dla horroru.</li>
         <li><strong>Misc Kawaii:</strong> Odbija uroczy, czarujący styl typowy dla kultury Kawaii.</li>
-        <li><strong>Misc Lovecraftian:</strong> Podkreśla niepokojący, kosmiczny horror typowy dla fikcji Lovecrafta.</li>
+        <li><strong>Misc Lovecraftowski:</strong> Podkreśla niepokojący, kosmiczny horror typowy dla fikcji Lovecrafta.</li>
         <li><strong>Misc Makabryczne:</strong> Skupia się na ciemnych, mrocznych i niepokojących tematach.</li>
         <li><strong>Misc Manga:</strong> Emuluje odważny, dynamiczny styl typowy dla mangi.</li>
-        <li><strong>Misc Metropolia:</strong> Odbija elegancką, miejską estetykę typową dla nowoczesnych metropolii.</li>
-        <li><strong>Misc Minimalistyczne:</strong> Podkreśla prostotę i redukcję form do ich istotnych elementów.</li>
+        <li><strong>Misc Metropolia:</strong> Odbija eleganckie, miejskie estetyki typowe dla nowoczesnych metropolii.</li>
+        <li><strong>Misc Minimalistyczne:</strong> Podkreśla prostotę i redukcję form do ich podstawowych elementów.</li>
         <li><strong>Misc Monochromatyczne:</strong> Skupia się na obrazach stworzonych w różnych odcieniach jednego koloru.</li>
-        <li><strong>Misc Morska:</strong> Odbija estetykę inspirowaną morskimi tematami.</li>
-        <li><strong>Misc Kosmiczne:</strong> Podkreśla ogromne, nieziemskie wizualizacje typowe dla kosmicznych scenerii.</li>
+        <li><strong>Misc Morska:</strong> Odbija estetyki inspirowane morzem, typowe dla tematów morskich.</li>
+        <li><strong>Misc Kosmiczne:</strong> Podkreśla ogromne, nieziemskie wizualizacje typowe dla scenerii kosmicznych.</li>
         <li><strong>Misc Witrażowe:</strong> Emuluje skomplikowane, kolorowe wzory typowe dla sztuki witrażowej.</li>
         <li><strong>Misc Techwear Fashion:</strong> Skupia się na futurystycznych, funkcjonalnych estetykach typowych dla mody techwear.</li>
         <li><strong>Misc Plemię:</strong> Odbija odważne, kulturowe estetyki typowe dla sztuki plemiennej.</li>
-        <li><strong>Misc Zentangle:</strong> Podkreśla skomplikowane, powtarzalne wzory typowe dla sztuki Zentangle.</li>
+        <li><strong>Misc Zentangle:</strong> Podkreśla skomplikowane, powtarzające się wzory typowe dla sztuki Zentangle.</li>
         <li><strong>Kolaż z papieru:</strong> Używa ciętego papieru do tworzenia warstwowych, teksturowanych kolaży.</li>
         <li><strong>Płaski wycięty papier:</strong> Podkreśla płaskie, wycięte projekty papierowe.</li>
-        <li><strong>Kirigami:</strong> Skupia się na skomplikowanych, złożonych projektach typowych dla kirigami.</li>
+        <li><strong>Kiriagami:</strong> Skupia się na skomplikowanych, złożonych projektach typowych dla kirigami.</li>
         <li><strong>Papier mache:</strong> Używa papier mache do tworzenia teksturowanych, trójwymiarowych form.</li>
         <li><strong>Quilling papierowy:</strong> Podkreśla delikatne, zwinięte projekty papierowe typowe dla quillingu.</li>
         <li><strong>Kolaż wycięty z papieru:</strong> Łączy elementy wycięte z papieru, aby stworzyć warstwowe kolaże.</li>
-        <li><strong>Shadow Box z wyciętym papierem:</strong> Używa warstwowych wycięć papierowych do tworzenia trójwymiarowych shadow boxów.</li>
-        <li><strong>Wycięty papier w warstwach:</strong> Skupia się na warstwowych, ułożonych projektach papierowych.</li>
-        <li><strong>Gruby wycięty papier w warstwach:</strong> Podkreśla wymiarowy, warstwowy wygląd typowy dla grubych projektów wyciętych z papieru.</li>
-        <li><strong>Obraz Obcego:</strong> Skupia się na surrealistycznych, pozaziemskich wizualizacjach.</li>
-        <li><strong>Film Noir:</strong> Podkreśla ciemne, nastrojowe estetyki typowe dla filmu noir.</li>
-        <li><strong>Glamour:</strong> Podkreśla dopracowany, stylowy wygląd typowy dla fotografii glamour.</li>
+        <li><strong>Wycięty cień z papieru:</strong> Używa warstwowych wycięć papierowych do tworzenia trójwymiarowych pudełek cieniowych.</li>
+        <li><strong>Wycięty papier warstwowy:</strong> Skupia się na warstwowych, ułożonych projektach papierowych.</li>
+        <li><strong>Gruby wycięty papier warstwowy:</strong> Podkreśla wymiarowy, warstwowy wygląd typowy dla grubych projektów wyciętych z papieru.</li>
+        <li><strong>Obraz obcego:</strong> Skupia się na surrealistycznych, pozaziemskich wizualizacjach.</li>
+        <li><strong>Film Noir:</strong> Podkreśla ciemne, nastrojowe estetyki typowe dla filmów noir.</li>
+        <li><strong>Glamour:</strong> Podkreśla wypolerowany, stylowy wygląd typowy dla fotografii glamour.</li>
         <li><strong>HDR:</strong> Używa wysokiego zakresu dynamicznego (HDR), aby tworzyć obrazy z szerokim zakresem światła i koloru.</li>
         <li><strong>Fotografia iPhone:</strong> Emuluje czysty, nowoczesny styl typowy dla fotografii iPhone.</li>
-        <li><strong>Długie naświetlenie:</strong> Używa długiego naświetlenia, aby tworzyć dynamiczne, rozmyte efekty ruchu.</li>
+        <li><strong>Długie naświetlenie:</strong> Używa długiego naświetlenia, aby stworzyć dynamiczne, rozmyte efekty ruchu.</li>
         <li><strong>Neon Noir:</strong> Łączy neonowe oświetlenie z ciemnymi, nastrojowymi estetykami noir.</li>
         <li><strong>Sylwetka:</strong> Skupia się na silnych kontrastach między światłem a cieniem, aby tworzyć obrazy oparte na sylwetkach.</li>
-        <li><strong>Efekt Tilt Shift:</strong> Używa efektów tilt-shift, aby stworzyć zminiaturyzowany, zabawkowy wygląd.</li>
+        <li><strong>Efekt tilt-shift:</strong> Używa efektów tilt-shift, aby stworzyć zminiaturyzowany, zabawkowy wygląd.</li>
         <li><strong>Model 3D:</strong> Skupia się na czystym, szczegółowym wyglądzie typowym dla modeli 3D.</li>
-        <li><strong>Film analogowy:</strong> Emuluje ziarnisty, teksturowany wygląd typowy dla fotografii analogowej.</li>
+        <li><strong>Film analogowy:</strong> Emuluje ziarnisty, teksturowany wygląd typowy dla analogowej fotografii filmowej.</li>
         <li><strong>Anime:</strong> Podkreśla żywy, dynamiczny styl typowy dla anime.</li>
         <li><strong>Cinematic:</strong> Tworzy dramatyczny, filmowy efekt z silnym oświetleniem i kompozycjami.</li>
         <li><strong>Książka komiksowa:</strong> Używa wyrazistych linii i żywych kolorów typowych dla sztuki komiksowej.</li>
         <li><strong>Rękodzieło z gliny:</strong> Emuluje teksturowany, ręcznie wykonany wygląd modeli z gliny.</li>
-        <li><strong>Sztuka cyfrowa:</strong> Skupia się na czystych, dopracowanych dziełach sztuki cyfrowej.</li>
+        <li><strong>Sztuka cyfrowa:</strong> Skupia się na czystych, wypolerowanych dziełach sztuki cyfrowej.</li>
         <li><strong>Sztuka fantasy:</strong> Podkreśla szczegółowe, wyobraźniowe wizualizacje typowe dla sztuki fantasy.</li>
         <li><strong>Izometryczny:</strong> Używa perspektywy izometrycznej, aby stworzyć trójwymiarowy wygląd.</li>
         <li><strong>Sztuka liniowa:</strong> Skupia się na czystych, wyraźnych liniach, aby tworzyć szczegółowe rysunki.</li>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide de la Fonctionnalité de Rééclairage</title>
+    <title>Guide de la Fonction de Relighting</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,12 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
         }
         .iframe-container {
             display: flex;
@@ -47,37 +50,37 @@
 
 <body>
 
-    <h2>Guide d'utilisation de la fonctionnalité de rééclairage</h2>
-    <p>La fonctionnalité de rééclairage dans AiCasso est super cool ! Elle vous permet de changer l'éclairage de vos images avec juste quelques mots. Vous voulez le soleil à l'arrière ou une lumière douce sur le côté ? Pas de problème ! Décrivez-le simplement, et AiCasso s'occupera du reste.</p>
+    <h2>Guide d'Utilisation de la Fonction de Relighting</h2>
+    <p>La fonction de Relighting dans AiCasso est super cool ! Elle vous permet de changer l'éclairage de vos images avec juste quelques mots. Vous voulez le soleil à l'arrière ou une lumière douce sur le côté ? Pas de problème ! Décrivez-le simplement, et AiCasso s'occupera du reste.</p>
 
-    <h3>Comment ça fonctionne :</h3>
+    <h3>Comment Ça Marche :</h3>
     
     <div class="example">
-        <strong>Image d'entrée :</strong>
+        <strong>Image d'Entrée :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+            <img src="../../images/tutorials/relighting/input.jpg" alt="Image d'Entrée" loading="lazy">
         </div>
-        <strong>Prompt utilisé :</strong>
+        <strong>Invite Utilisée :</strong>
         <p>"Faites en sorte que le soleil soit à l'arrière"</p>
         <strong>Résultat :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+            <img src="../../images/tutorials/relighting/result.jpg" alt="Résultat de Relighting" loading="lazy">
         </div>
     </div>
 
-    <h3>Ajustements optionnels</h3>
-    <p>Si vous vous sentez aventureux et que vous voulez ajouter un peu plus de style à votre rééclairage, voici quelques éléments que vous pouvez ajuster :</p>
+    <h3>Ajustements Optionnels</h3>
+    <p>Si vous vous sentez aventureux et souhaitez ajouter un peu plus de style à votre relighting, voici quelques éléments que vous pouvez ajuster :</p>
 
     <ul>
-        <li><strong>Prompt négatif :</strong> Vous voulez éviter quelque chose ? Vous pouvez dire à AiCasso ce qu'il ne doit <em>pas</em> inclure. Mais ne vous inquiétez pas, si vous laissez cela vide, AiCasso se concentrera simplement sur ce que vous voulez.</li>
-        <li><strong>Direction de la lumière :</strong> Vous pouvez spécifier d'où la lumière doit venir—gauche, droite, haut, bas, ou même pas de lumière du tout. Par défaut, la lumière vient de la gauche.</li>
-        <li><strong>Échelle de guidage :</strong> Cela aide AiCasso à s'en tenir à votre description. L'échelle va de 1 à 20, avec 7 comme valeur par défaut. Plus le nombre est élevé, plus AiCasso s'en tient à votre prompt.</li>
-        <li><strong>Échelle de haute résolution :</strong> Vous voulez que votre image ressorte ? Cela contrôle la clarté. La valeur par défaut est 1.5, mais vous pouvez la régler de 1.0 à 2.0 pour une image plus nette.</li>
-        <li><strong>Niveaux de débruitage :</strong> Il y a deux niveaux—basse résolution et haute résolution. Ceux-ci contrôlent à quel point l'image finale est lisse ou détaillée. Vous pouvez régler le niveau de débruitage basse résolution entre 0.0 et 1.0 (par défaut est 0.9) et la haute résolution entre 0.0 et 1.0 (par défaut est 0.5).</li>
-        <li><strong>Nombre d'étapes :</strong> C'est le nombre d'étapes qu'AiCasso prend pour peaufiner votre image. La valeur par défaut est 50, mais vous pouvez aller de 20 à 50 étapes.</li>
+        <li><strong>Invite Négative :</strong> Vous voulez éviter quelque chose ? Vous pouvez dire à AiCasso ce qu'il ne faut <em>pas</em> inclure. Mais ne vous inquiétez pas, si vous laissez cela vide, AiCasso se concentrera simplement sur ce que vous voulez.</li>
+        <li><strong>Direction de la Lumière :</strong> Vous pouvez spécifier d'où doit venir la lumière : gauche, droite, haut, bas, ou même aucune lumière. Par défaut, la lumière vient de la gauche.</li>
+        <li><strong>Échelle de Guidage :</strong> Cela aide AiCasso à s'en tenir à votre description. L'échelle va de 1 à 20, avec 7 comme valeur par défaut. Plus le nombre est élevé, plus AiCasso s'en tient à votre invite.</li>
+        <li><strong>Échelle de Haute Résolution :</strong> Vous voulez que votre image ressorte ? Cela contrôle la clarté. La valeur par défaut est 1.5, mais vous pouvez la régler entre 1.0 et 2.0 pour une image plus nette.</li>
+        <li><strong>Niveaux de Dénaturation :</strong> Il y a deux niveaux : basse résolution et haute résolution. Ceux-ci contrôlent la douceur ou le détail de l'image finale. Vous pouvez régler le niveau de dénaturation basse résolution entre 0.0 et 1.0 (la valeur par défaut est 0.9) et le niveau haute résolution entre 0.0 et 1.0 (la valeur par défaut est 0.5).</li>
+        <li><strong>Nombre d'Étapes :</strong> C'est le nombre d'étapes qu'AiCasso prend pour peaufiner votre image. La valeur par défaut est 50, mais vous pouvez choisir entre 20 et 50 étapes.</li>
     </ul>
 
-    <p>Rappelez-vous, ces ajustements sont totalement optionnels ! AiCasso est assez bon pour comprendre ce que vous voulez, alors décrivez simplement votre vision avec vos propres mots, et il fera la magie. Pas besoin d'être parfait avec la grammaire ou les détails—amusez-vous simplement et voyez ce que vous pouvez créer !</p>
+    <p>Rappelez-vous, ces ajustements sont totalement optionnels ! AiCasso est assez bon pour comprendre ce que vous voulez, alors décrivez simplement votre vision avec vos propres mots, et il fera la magie. Pas besoin d'être parfait avec la grammaire ou les détails : amusez-vous et voyez ce que vous pouvez créer !</p>
 
 </body>
 </html>

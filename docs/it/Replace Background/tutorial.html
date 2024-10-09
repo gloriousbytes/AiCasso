@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guida alla Funzione di Sostituzione dello Sfondo</title>
+    <title>Guida alla Funzione Sostituisci Sfondo</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -40,42 +40,42 @@
 
 <body>
 
-    <h2>Guida all'Uso della Funzione di Sostituzione dello Sfondo</h2>
-    <p>La funzione di Sostituzione dello Sfondo in AiCasso è perfetta quando vuoi cambiare lo sfondo della tua immagine. Che tu voglia semplicemente rimuovere lo sfondo o sostituirlo con qualcos'altro, AiCasso lo rende super facile. Non devi preoccuparti di cose tecniche—basta descrivere ciò che vuoi, e AiCasso farà il resto.</p>
+    <h2>Guida all'Utilizzo della Funzione Sostituisci Sfondo</h2>
+    <p>La funzione Sostituisci Sfondo in AiCasso è perfetta quando vuoi cambiare lo sfondo della tua immagine. Che tu voglia semplicemente rimuovere lo sfondo o sostituirlo con qualcos'altro, AiCasso rende tutto molto facile. Non devi preoccuparti di aspetti tecnici: basta descrivere ciò che desideri e AiCasso farà il resto.</p>
 
     <h3>Come Funziona:</h3>
     
     <div class="example">
         <strong>Immagine di Input:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Immagine di Input" loading="lazy">
         </div>
         <strong>Prompt 1:</strong>
         <p>"Rimuovi lo sfondo"</p>
         <strong>Risultato 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Risultato Sfondo Rimosso" loading="lazy">
         </div>
         <strong>Prompt 2:</strong>
-        <p>"Sostituisci lo sfondo con una foresta, non solo rimuoverlo, con il matting alfa disabilitato. Usa una soglia di primo piano di 240, una soglia di sfondo di 20 e una dimensione di erosione di 5 per il matting alfa."</p>
+        <p>"Sostituisci lo sfondo con una foresta, non solo rimuovilo, con il matting alfa disabilitato. Usa una soglia di primo piano di 240, una soglia di sfondo di 20 e una dimensione di erosione di 5 per il matting alfa."</p>
         <strong>Risultato 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Sfondo Sostituito con Foresta" loading="lazy">
         </div>
     </div>
 
     <h3>Parametri Opzionali</h3>
-    <p>Se vuoi aggiungere un tocco personale o perfezionare i risultati, ecco alcune opzioni con cui puoi giocare:</p>
+    <p>Se desideri aggiungere un tocco personale o perfezionare i risultati, ecco alcune opzioni con cui puoi giocare:</p>
 
     <ul>
-        <li><strong>Solo Rimozione:</strong> Se vuoi solo rimuovere lo sfondo senza sostituirlo con nulla, questa è l'opzione giusta per te. È come premere un pulsante di ripristino.</li>
-        <li><strong>Matting Alfa:</strong> Questo è un modo elegante per dire "sfuma i bordi". Quando lo attivi, aiuta a rendere i bordi del tuo soggetto più lisci e meno ritagliati. Di default, è disattivato.</li>
-        <li><strong>Soglia di Primo Piano per Matting Alfa:</strong> Questo controlla quanto del soggetto principale (come una persona) rimane visibile quando si usa il matting alfa. Il valore predefinito è 240, e puoi regolarlo per rendere i bordi più morbidi o più nitidi.</li>
-        <li><strong>Soglia di Sfondo per Matting Alfa:</strong> Fa lo stesso della soglia di primo piano ma per lo sfondo. Il valore predefinito è 20, ed è tutto per ottenere la fusione perfetta con il nuovo sfondo.</li>
-        <li><strong>Dimensione di Erosione per Matting Alfa:</strong> Aiuta a restringere un po' i bordi per rendere il ritaglio più pulito. La dimensione predefinita è 5, ma puoi modificarla per ottenere l'aspetto esatto che desideri.</li>
+        <li><strong>Rimuovi Solo:</strong> Se vuoi semplicemente rimuovere lo sfondo e non sostituirlo con nulla, questa è l'opzione che fa per te. È come premere un pulsante per un foglio pulito.</li>
+        <li><strong>Matting Alfa:</strong> Questo è un modo elegante per dire "sfuma i bordi." Quando attivi questa opzione, aiuta a rendere i bordi del tuo soggetto più morbidi e meno tagliati. Di default, è disattivato.</li>
+        <li><strong>Soglia di Primo Piano per Matting Alfa:</strong> Questo controlla quanto del soggetto principale (come una persona) rimane visibile quando si utilizza il matting alfa. Il valore predefinito è 240, e puoi regolarlo per rendere i bordi più morbidi o più netti.</li>
+        <li><strong>Soglia di Sfondo per Matting Alfa:</strong> Questo fa lo stesso della soglia di primo piano, ma per lo sfondo. Il valore predefinito è 20, ed è tutto incentrato sull'ottenere la fusione perfetta con il nuovo sfondo.</li>
+        <li><strong>Dimensione di Erosione per Matting Alfa:</strong> Questo aiuta a ridurre un po' i bordi per rendere il ritaglio più pulito. La dimensione predefinita è 5, ma puoi modificarla per ottenere l'aspetto esatto che desideri.</li>
     </ul>
 
-    <p>Ricorda, non devi preoccuparti di ottenere tutto perfetto. AiCasso è abbastanza bravo a capire cosa intendi, quindi sentiti libero di essere casuale o dettagliato quanto vuoi. Buona creazione!</p>
+    <p>Ricorda, non devi preoccuparti di ottenere tutto perfetto. AiCasso è abbastanza bravo a capire cosa intendi, quindi sentiti libero di essere casual o dettagliato come preferisci. Buona creazione!</p>
 
 </body>
 </html>

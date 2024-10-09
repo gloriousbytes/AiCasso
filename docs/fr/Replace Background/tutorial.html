@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide de la Fonction Remplacer l'Arrière-plan</title>
+    <title>Guide de la Fonction de Remplacement de Fond</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -40,42 +40,42 @@
 
 <body>
 
-    <h2>Guide d'Utilisation de la Fonction Remplacer l'Arrière-plan</h2>
-    <p>La fonction Remplacer l'Arrière-plan dans AiCasso est parfaite lorsque vous souhaitez changer l'arrière-plan de votre image. Que vous vouliez simplement supprimer l'arrière-plan ou le remplacer par autre chose, AiCasso rend cela très facile. Vous n'avez pas besoin de vous soucier des aspects techniques—décrivez simplement ce que vous voulez, et AiCasso fera le reste.</p>
+    <h2>Guide d'utilisation de la Fonction de Remplacement de Fond</h2>
+    <p>La fonction de remplacement de fond dans AiCasso est parfaite lorsque vous souhaitez changer le fond de votre image. Que vous souhaitiez simplement supprimer le fond ou le remplacer par autre chose, AiCasso rend cela très facile. Vous n'avez pas à vous soucier des aspects techniques : décrivez simplement ce que vous voulez, et AiCasso s'occupera du reste.</p>
 
     <h3>Comment ça fonctionne :</h3>
     
     <div class="example">
         <strong>Image d'entrée :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Image d'entrée" loading="lazy">
         </div>
         <strong>Invite 1 :</strong>
-        <p>"Supprimer l'arrière-plan"</p>
+        <p>"Supprimer le fond"</p>
         <strong>Résultat 1 :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Résultat de fond supprimé" loading="lazy">
         </div>
         <strong>Invite 2 :</strong>
-        <p>"Remplacer l'arrière-plan par une forêt, pas seulement le supprimer, avec le matting alpha désactivé. Utilisez un seuil de premier plan de 240, un seuil d'arrière-plan de 20, et une taille d'érosion de 5 pour le matting alpha."</p>
+        <p>"Remplacer le fond par une forêt, pas seulement le supprimer, avec le matting alpha désactivé. Utilisez un seuil de premier plan de 240, un seuil d'arrière-plan de 20, et une taille d'érosion de 5 pour le matting alpha."</p>
         <strong>Résultat 2 :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Fond remplacé par une forêt" loading="lazy">
         </div>
     </div>
 
-    <h3>Paramètres Optionnels</h3>
+    <h3>Paramètres optionnels</h3>
     <p>Si vous souhaitez ajouter une touche personnelle ou affiner les résultats, voici quelques options avec lesquelles vous pouvez jouer :</p>
 
     <ul>
-        <li><strong>Supprimer Seulement :</strong> Si vous souhaitez simplement supprimer l'arrière-plan sans le remplacer par quoi que ce soit, c'est votre option de prédilection. C'est comme appuyer sur un bouton de remise à zéro.</li>
-        <li><strong>Matting Alpha :</strong> C'est une façon sophistiquée de dire "mélanger les bords". Lorsque vous l'activez, cela aide à rendre les bords de votre sujet plus lisses et moins découpés. Par défaut, il est désactivé.</li>
-        <li><strong>Seuil de Premier Plan pour le Matting Alpha :</strong> Cela contrôle combien du sujet principal (comme une personne) reste visible lors de l'utilisation du matting alpha. La valeur par défaut est 240, et vous pouvez l'ajuster pour rendre les bords plus doux ou plus nets.</li>
-        <li><strong>Seuil d'Arrière-plan pour le Matting Alpha :</strong> Cela fonctionne de la même manière que le seuil de premier plan mais pour l'arrière-plan. La valeur par défaut est 20, et il s'agit d'obtenir le mélange parfait avec le nouvel arrière-plan.</li>
-        <li><strong>Taille d'Érosion pour le Matting Alpha :</strong> Cela aide à réduire un peu les bords pour que la découpe soit plus propre. La taille par défaut est 5, mais vous pouvez la modifier pour obtenir l'apparence exacte que vous souhaitez.</li>
+        <li><strong>Supprimer uniquement :</strong> Si vous souhaitez simplement supprimer le fond et ne pas le remplacer par quoi que ce soit, c'est votre option de prédilection. C'est comme appuyer sur un bouton de réinitialisation.</li>
+        <li><strong>Matting alpha :</strong> C'est une façon élégante de dire "fondre les bords". Lorsque vous activez cela, cela aide à rendre les bords de votre sujet plus lisses et moins découpés. Par défaut, c'est désactivé.</li>
+        <li><strong>Seuil de premier plan pour le matting alpha :</strong> Cela contrôle combien du sujet principal (comme une personne) reste visible lors de l'utilisation du matting alpha. La valeur par défaut est 240, et vous pouvez l'ajuster pour rendre les bords plus doux ou plus nets.</li>
+        <li><strong>Seuil d'arrière-plan pour le matting alpha :</strong> Cela fait la même chose que le seuil de premier plan mais pour l'arrière-plan. La valeur par défaut est 20, et il s'agit d'obtenir le mélange parfait avec le nouveau fond.</li>
+        <li><strong>Taille d'érosion pour le matting alpha :</strong> Cela aide à réduire un peu les bords pour rendre le découpage plus propre. La taille par défaut est 5, mais vous pouvez l'ajuster pour obtenir l'apparence exacte que vous souhaitez.</li>
     </ul>
 
-    <p>Rappelez-vous, vous n'avez pas besoin de vous stresser pour obtenir tout parfaitement. AiCasso est assez bon pour comprendre ce que vous voulez dire, alors n'hésitez pas à être aussi décontracté ou détaillé que vous le souhaitez. Bonne création !</p>
+    <p>Rappelez-vous, vous n'avez pas besoin de vous stresser pour que tout soit parfait. AiCasso est assez bon pour comprendre ce que vous voulez dire, alors n'hésitez pas à être aussi décontracté ou détaillé que vous le souhaitez. Bonne création !</p>
 
 </body>
 </html>

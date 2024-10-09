@@ -3,92 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia de Recursos de Geração de Rostos</title>
+    <title>Guia de Recursos de Geração de Faces</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Garante que a imagem não transborde o contêiner */
+    height: auto;     /* Mantém a proporção */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
-    <h2>Guia para Usar o Recurso de Geração de Rostos</h2>
-    <p>O recurso de Geração de Rostos no AiCasso é incrivelmente versátil! Ele permite que você crie imagens impressionantes incorporando um rosto específico em vários personagens ou estilos. Se você está imaginando um cavaleiro, samurai ou qualquer outro personagem, o AiCasso usa o rosto de entrada para gerar uma imagem com esse rosto integrado ao design solicitado.</p>
+    <h2>Guia para Usar o Recurso de Geração de Faces</h2>
+    <p>O recurso de Geração de Faces no AiCasso é incrivelmente versátil! Ele permite que você crie imagens impressionantes incorporando um rosto específico em vários personagens ou estilos. Se você está imaginando um cavaleiro, samurai ou qualquer outro personagem, o AiCasso usa o rosto de entrada para gerar uma imagem com esse rosto integrado no design solicitado.</p>
 
     <h3>Como Funciona:</h3>
     
-    <div class="example">
-        <strong>Imagem de Entrada:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
-        </div>
-        <strong>Prompt 1:</strong>
-        <p>"Um cavaleiro realista, use escala máxima"</p>
-        <strong>Resultado 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
-        </div>
-        <strong>Prompt 2:</strong>
-        <p>"Use o estilo chibi e faça um samurai, use valores padrão"</p>
-        <strong>Resultado 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
-        </div>
-        <strong>Prompt 3:</strong>
-        <p>"Um samurai, use 31 passos de redução de ruído e estilo anime"</p>
-        <strong>Resultado 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Imagem de Entrada:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/input.jpg" alt="Imagem de Entrada">
     </div>
+    <strong>Prompt 1:</strong>
+    <p>"Um cavaleiro realista, use escala máxima"</p>
+    <strong>Resultado 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="Cavaleiro Realista">
+    </div>
+    <strong>Prompt 2:</strong>
+    <p>"Use o estilo chibi e faça um samurai, use valores padrão"</p>
+    <strong>Resultado 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="Samurai Chibi">
+    </div>
+    <strong>Prompt 3:</strong>
+    <p>"Um samurai, use 31 passos de desruído e estilo anime"</p>
+    <strong>Resultado 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="Samurai Anime">
+    </div>
+</div>
 
     <h3>Parâmetros Opcionais</h3>
     <p>Se você quiser adicionar um pouco mais de personalidade ou controle às suas imagens geradas, aqui estão algumas opções que você pode ajustar:</p>
 
     <ul>
-        <li><strong>Prompt Negativo:</strong> Aqui você pode dizer ao AiCasso o que você <em>não</em> quer ver na imagem. Se você deixar isso em branco, o AiCasso se concentrará apenas no prompt positivo.</li>
-        <li><strong>Número de Passos de Redução de Ruído:</strong> Isso controla o quão suave e refinada a imagem parece. Você pode escolher entre 21, 31 ou 41 passos, sendo 41 o padrão. Mais passos significam uma imagem mais limpa e polida.</li>
-        <li><strong>Escala de Orientação:</strong> Isso ajuda a imagem a permanecer fiel à sua descrição. A escala varia de 1 a 20, sendo 10 o padrão. Números mais altos significam que o AiCasso seguirá mais de perto o seu prompt.</li>
-        <li><strong>Escala S:</strong> Isso diz respeito à estrutura do rosto. É um pouco técnico, mas essencialmente ajusta o peso da estrutura do rosto. O padrão é 1.0, e você pode ir de 0.0 a 2.0.</li>
-        <li><strong>Estilo:</strong> Quer dar à sua imagem um clima específico? Você pode escolher um estilo como quadrinhos, chibi, 3D, anime ou realista. Realista é o padrão, mas sinta-se à vontade para ser criativo!</li>
+        <li><strong>Prompt Negativo:</strong> Aqui é onde você pode dizer ao AiCasso o que você <em>não</em> quer ver na imagem. Se você deixar isso em branco, o AiCasso se concentrará apenas no prompt positivo.</li>
+        <li><strong>Número de Passos de Desruído:</strong> Isso controla quão suave e refinada a imagem parece. Você pode escolher entre 21, 31 ou 41 passos, sendo 41 o padrão. Mais passos significam uma imagem mais limpa e polida.</li>
+        <li><strong>Escala de Orientação:</strong> Isso ajuda a imagem a permanecer fiel à sua descrição. A escala varia de 1 a 20, sendo 10 o padrão. Números mais altos significam que o AiCasso se manterá mais próximo do seu prompt.</li>
+        <li><strong>Escala S:</strong> Isso diz respeito à estrutura do rosto. É um pouco técnico, mas essencialmente ajusta o peso da estrutura facial. O padrão é 1.0, e você pode ir de 0.0 a 2.0.</li>
+        <li><strong>Estilo:</strong> Quer dar à sua imagem uma vibração específica? Você pode escolher um estilo como quadrinhos, chibi, 3D, anime ou realista. Realista é o padrão, mas sinta-se à vontade para ser criativo!</li>
     </ul>
 
-    <p>E lembre-se, o AiCasso é bastante tolerante. Você não precisa ser um mestre da gramática ou acertar todos os detalhes. Basta descrever o que você quer com suas próprias palavras, e o AiCasso cuidará do resto. Divirta-se criando!</p>
+    <p>E lembre-se, o AiCasso é bastante indulgente. Você não precisa ser um mago da gramática ou acertar todos os detalhes perfeitamente. Basta descrever o que você quer com suas próprias palavras, e o AiCasso cuidará do resto. Aproveite a criação!</p>
 
 </body>
 </html>

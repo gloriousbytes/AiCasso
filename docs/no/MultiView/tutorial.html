@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide til Multi View-funksjonen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        img, video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guide til å bruke Multi View-funksjonen</h2>
+    <p>Multi View-funksjonen i AiCasso lar deg se et objekt fra forskjellige vinkler ved å generere flere perspektiver av objektet i bildet ditt. Det er spesielt nyttig for å få en bedre forståelse av 3D-former eller for å vise frem produkter. Denne funksjonen fungerer best når objektet ikke har en bakgrunn, så vær sikker på å fjerne eventuelle distraherende elementer for optimale resultater.</p>
+
+    <h3>Slik fungerer det:</h3>
+    
+    <div class="example">
+        <strong>Inngangsbildet:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/input.jpg" alt="Inngangsbildet" loading="lazy">
+        </div>
+        <strong>Prompt:</strong>
+        <p>"Vis dette objektet fra flere perspektiver"</p>
+        <strong>Resultat:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/result.jpg" alt="Resultatbilde" loading="lazy">
+        </div>
+    </div>
+
+    <h3>Tips for best resultat</h3>
+    <p>Her er noen tips for å sikre at bildet ditt blir flott:</p>
+
+    <ul>
+        <li><strong>Objekt uten bakgrunn:</strong> Multi View-funksjonen fungerer best når objektet i bildet ditt er isolert fra bakgrunnen. Dette lar AiCasso fokusere utelukkende på objektet og generere klare perspektiver.</li>
+        <li><strong>God belysning:</strong> Sørg for at objektet ditt er godt opplyst i inngangsbildet, da skygger og ujevn belysning kan påvirke hvordan objektet ser ut fra forskjellige vinkler.</li>
+        <li><strong>Flere objekter:</strong> Hvis det er mer enn ett objekt i bildet, prøv å isolere det du ønsker å se fra forskjellige vinkler, eller velg et enklere bilde med bare ett fokusobjekt.</li>
+    </ul>
+
+    <p>Akkurat som alle funksjoner i AiCasso, trenger du ikke å overtenke det—beskriv hva du ønsker, så vil AiCasso gjøre det harde arbeidet. Multi View-funksjonen er perfekt for produktvisninger, kreative presentasjoner og mer!</p>
+
+</body>
+</html>

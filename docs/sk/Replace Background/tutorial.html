@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -41,26 +41,26 @@
 <body>
 
     <h2>Príručka k používaniu funkcie Nahradiť pozadie</h2>
-    <p>Funkcia Nahradiť pozadie v AiCasso je ideálna, keď chcete vymeniť pozadie vo vašej fotografii. Či už chcete len odstrániť pozadie alebo ho nahradiť niečím iným, AiCasso to robí veľmi jednoduché. Nemusíte sa obávať technických vecí—stačí opísať, čo chcete, a AiCasso sa postará o zvyšok.</p>
+    <p>Funkcia Nahradiť pozadie v AiCasso je ideálna, keď chcete vymeniť pozadie vo vašej fotografii. Či už chcete len odstrániť pozadie alebo ho nahradiť niečím iným, AiCasso to urobí veľmi jednoducho. Nemusíte sa obávať technických vecí—stačí opísať, čo chcete, a AiCasso sa postará o zvyšok.</p>
 
     <h3>Ako to funguje:</h3>
     
     <div class="example">
         <strong>Vstupný obrázok:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Vstupný obrázok" loading="lazy">
         </div>
         <strong>Výzva 1:</strong>
         <p>"Odstrániť pozadie"</p>
         <strong>Výsledok 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Výsledok s odstráneným pozadím" loading="lazy">
         </div>
         <strong>Výzva 2:</strong>
         <p>"Nahradiť pozadie lesom, nie len odstrániť, s vypnutým alfa matovaním. Použite prah predného plánu 240, prah pozadia 20 a veľkosť erózie 5 pre alfa matovanie."</p>
         <strong>Výsledok 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Nahradené pozadie lesom" loading="lazy">
         </div>
     </div>
 
@@ -68,14 +68,14 @@
     <p>Ak chcete pridať osobný dotyk alebo doladiť výsledky, tu je niekoľko možností, s ktorými môžete experimentovať:</p>
 
     <ul>
-        <li><strong>Len odstrániť:</strong> Ak chcete len odstrániť pozadie a nenahradiť ho ničím, toto je vaša voľba. Je to ako stlačiť tlačidlo na vyčistenie plochy.</li>
-        <li><strong>Alfa matovanie:</strong> Toto je sofistikovaný spôsob, ako povedať "zmiešať okraje." Keď to zapnete, pomáha to, aby okraje vášho subjektu vyzerali hladšie a menej vystrihnuté. Predvolene je to vypnuté.</li>
-        <li><strong>Prahová hodnota alfa matovania predného plánu:</strong> Toto ovláda, koľko z hlavného subjektu (napríklad osoby) zostane viditeľné pri použití alfa matovania. Predvolene je 240 a môžete to upraviť, aby ste okraje zjemnili alebo zaostril.</li>
-        <li><strong>Prahová hodnota alfa matovania pozadia:</strong> Toto robí to isté ako prah predného plánu, ale pre pozadie. Predvolene je 20 a ide o dosiahnutie dokonalého zmiešania s novým pozadím.</li>
+        <li><strong>Len odstrániť:</strong> Ak chcete len odstrániť pozadie a ničím ho nenahradiť, toto je vaša voľba. Je to ako stlačiť tlačidlo na vyčistenie plochy.</li>
+        <li><strong>Alfa matovanie:</strong> Toto je elegantný spôsob, ako povedať "zmiešať okraje." Keď to zapnete, pomáha to, aby okraje vášho subjektu vyzerali hladšie a menej ako vystrihnuté. Predvolene je to vypnuté.</li>
+        <li><strong>Prahová hodnota predného plánu alfa matovania:</strong> Toto ovláda, koľko z hlavného subjektu (napríklad osoby) zostane viditeľné pri použití alfa matovania. Predvolene je to 240 a môžete to upraviť, aby ste okraje spravili mäkšie alebo ostrejšie.</li>
+        <li><strong>Prahová hodnota pozadia alfa matovania:</strong> Toto robí to isté ako prah predného plánu, ale pre pozadie. Predvolene je to 20 a ide o dosiahnutie dokonalého prechodu s novým pozadím.</li>
         <li><strong>Veľkosť erózie alfa matovania:</strong> Toto pomáha zmenšiť okraje, aby vystrihnutie vyzeralo čistejšie. Predvolená veľkosť je 5, ale môžete to upraviť, aby ste dosiahli presne ten vzhľad, ktorý chcete.</li>
     </ul>
 
-    <p>Pamätajte, nemusíte sa stresovať, aby ste všetko dokázali dokonale. AiCasso je celkom dobrý v tom, aby pochopil, čo myslíte, takže sa nebojte byť tak neformálni alebo podrobní, ako chcete. Šťastné vytváranie!</p>
+    <p>Nezabudnite, nemusíte sa stresovať, aby ste všetko mali dokonalé. AiCasso je celkom dobrý v tom, aby pochopil, čo myslíte, takže sa nebojte byť tak neformálni alebo podrobní, ako chcete. Šťastné vytváranie!</p>
 
 </body>
 </html>

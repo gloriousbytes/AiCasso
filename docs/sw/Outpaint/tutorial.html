@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mwongozo wa Kipengele cha Outpaint</title>
+    <title>Vidokezo vya Kipengele cha Outpaint</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
         .iframe-container {
@@ -48,53 +48,53 @@
 <body>
 
     <h2>Vidokezo vya Kutumia Kipengele cha Outpaint</h2>
-    <p>Kipengele cha Outpaint katika AiCasso kinakuruhusu kupanua picha kwa kuongeza vipengele vipya au kupanua vilivyopo. Eleza tu unachotaka, na AiCasso itashughulikia mengine.</p>
+    <p>Kipengele cha Outpaint katika AiCasso kinakuruhusu kupanua picha kwa kuongeza vipengele vipya kuzunguka au kupanua kile kilichopo tayari. Eleza tu unachotaka, na AiCasso itashughulikia mengineyo.</p>
 
     <h3>Jinsi Inavyofanya Kazi:</h3>
     
     <div class="example">
-        <strong>Picha ya Kuanza:</strong>
+        <strong>Picha ya Mwanzo:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/input.jpg" alt="Picha ya Mwanzo" loading="lazy">
         </div>
     </div>
 
     <div class="example">
         <strong>Eleza Mabadiliko Yako:</strong>
-        <p>Andika tu unachotaka kuongeza au kupanua, na AiCasso itatumia mabadiliko hayo. Unaweza kubainisha mwelekeo kama kushoto, kulia, juu, au chini, na hata maelezo kama kupanua au kusogeza.</p>
+        <p>Andika tu unachotaka kuongeza au kupanua, na AiCasso itatekeleza mabadiliko hayo. Unaweza kubainisha mwelekeo kama kushoto, kulia, juu, au chini, na hata maelezo kama kupunguza ukubwa au kuhamasisha.</p>
     </div>
 
-    <h3>Mifano ya Uhariri:</h3>
+    <h3>Mifano ya Marekebisho:</h3>
 
     <div class="example">
-        <strong>Mfano 1:</strong> "Ongeza barafu upande wa kulia kwa kutumia kipengele cha tafsiri cha 0.4."
+        <strong>Mfano 1:</strong> "Ongeza iceberg upande wa kulia kwa kutumia kipengele cha tafsiri cha 0.4."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/iceberg.jpg" alt="Mfano 1 - Iceberg" loading="lazy">
         </div>
-        <p><em>Matokeo:</em> AiCasso inapanua picha upande wa kulia na kuongeza barafu, ikidumisha mandhari iliyopo.</p>
+        <p><em>Matokeo:</em> AiCasso inapanuwa picha upande wa kulia na kuongeza iceberg, ikihifadhi muonekano wa mazingira yaliyopo.</p>
     </div>
 
     <div class="example">
-        <strong>Mfano 2:</strong> "Panua nje, dumisha mwonekano wa bahari nyeusi usiku."
+        <strong>Mfano 2:</strong> "Punguza ukubwa, hifadhi muonekano wa baharini giza usiku."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/zoomout.jpg" alt="Mfano 2 - Punguza Ukubwa" loading="lazy">
         </div>
-        <p><em>Matokeo:</em> Picha inapanuka nje, ikionyesha zaidi ya bahari nyeusi, huku ikidumisha mandhari ya usiku.</p>
+        <p><em>Matokeo:</em> Picha inapunguza ukubwa, ikifunua zaidi ya baharini giza, huku ikihifadhi hali ya mandhari ya usiku.</p>
     </div>
 
-    <h3>Chaguzi za Ziada</h3>
-    <p>Hapa kuna mipangilio ya hiari unayoweza kutumia kuboresha uhariri wako:</p>
+    <h3>Chaguzi Zaidi</h3>
+    <p>Hapa kuna baadhi ya mipangilio ya hiari unayoweza kutumia kuboresha marekebisho yako:</p>
 
     <ul>
-        <li><strong>Maelezo Hasi:</strong> Ikiwa kuna kitu maalum ambacho hutaki kiwe kwenye picha, unaweza kumwambia AiCasso hapa. Kwa mfano, unaweza kuepuka kuongeza rangi au vitu fulani.</li>
-        <li><strong>Aina ya Kutembea:</strong> Hii inaamua mwelekeo ambao picha inapanuka. Unaweza kuchagua kutoka kushoto, kulia, juu, chini, au nyuma (ambayo inapanua nje). Kwa mfano, kusogeza kulia, unachagua 'kulia'.</li>
-        <li><strong>Kipengele cha Tafsiri:</strong> Hii inadhibiti jinsi picha inavyosonga kwa kila hatua inapopanuka. Thamani ya juu zaidi inasogeza picha zaidi, ikionyesha zaidi ya maudhui mapya. Chaguo-msingi ni 0.05, lakini unaweza kurekebisha kutoka 0 hadi 1.</li>
-        <li><strong>Upana/Urefu wa Tafsiri kwa Kila Hatua:</strong> Hizi zinadhibiti jinsi picha inavyosonga kwa usawa (upana) au wima (urefu) kwa kila hatua. Chaguo-msingi ni pikseli 32 kwa kila hatua, lakini unaweza kurekebisha kulingana na jinsi unavyotaka picha ihame.</li>
-        <li><strong>Idadi ya Hatua za Ufafanuzi au Kuondoa Kelele:</strong> Hii inaamua ni marekebisho mangapi AiCasso inafanya kupata picha ya mwisho. Hatua zaidi husababisha matokeo laini, na chaguo-msingi ni hatua 20, lakini unaweza kwenda hadi 50.</li>
-        <li><strong>Idadi ya Hatua za Uingiliaji:</strong> Hii inadhibiti jinsi mabadiliko yanavyotokea kwa urahisi kati ya mwelekeo miwili katika upanuzi mmoja. Chaguo-msingi ni 60, lakini unaweza kuongeza hadi 120 kwa mabadiliko laini zaidi.</li>
+        <li><strong>Maelekezo Mabaya:</strong> Ikiwa kuna kitu maalum hutaki katika picha, unaweza kumwambia AiCasso hapa. Kwa mfano, unaweza kutaka kuepuka kuongeza rangi au vitu fulani.</li>
+        <li><strong>Aina ya Kutembea:</strong> Hii inamua mwelekeo ambao picha inapanuka. Unaweza kuchagua kutoka kushoto, kulia, juu, chini, au nyuma (ambayo hupunguza ukubwa). Kwa mfano, ili kuhamasisha upande wa kulia, ungetakiwa kuchagua 'kulia'.</li>
+        <li><strong>Kipengele cha Tafsiri:</strong> Hii inasimamia kiasi gani picha inavyohama kwa kila hatua wakati wa kupanua. Thamani ya juu inahamisha picha zaidi, ikifunua zaidi ya maudhui mapya. Kiwango cha kawaida ni 0.05, lakini unaweza kubadilisha kutoka 0 hadi 1.</li>
+        <li><strong>Upana/Kimo cha Tafsiri kwa Kila Hatua:</strong> Hizi zinadhibiti jinsi picha inavyohama kwa usawa (upana) au wima (kimo) kwa kila hatua. Kiwango cha kawaida ni pikseli 32 kwa hatua, lakini unaweza kubadilisha hii kulingana na kiasi unachotaka picha ihame.</li>
+        <li><strong>Idadi ya Hatua za Ufafanuzi au Kuondoa Kelele:</strong> Hii inamua ni hatua ngapi AiCasso inafanya ili kupata picha ya mwisho. Hatua zaidi zinapelekea matokeo laini, huku kiwango cha kawaida kikiwa hatua 20, lakini unaweza kuenda hadi 50.</li>
+        <li><strong>Idadi ya Hatua za Uhamasishaji:</strong> Hii inasimamia jinsi mpito unavyofanyika kwa urahisi kati ya mwelekeo miwili katika upanuzi mmoja. Kiwango cha kawaida ni 60, lakini unaweza kuongeza hadi 120 kwa mpito laini zaidi.</li>
     </ul>
 
-    <p>Kumbuka, mipangilio hii ni ya hiari. AiCasso imeundwa kufanya kazi vizuri na maelezo yako ya lugha ya asili. Jisikie huru kujaribu na kuona nini kinafanya kazi bora kwa picha yako!</p>
+    <p>Kumbuka, mipangilio hii ni hiari. AiCasso imeundwa kufanya kazi vizuri na maelezo yako ya lugha ya asili. Jisikie huru kujaribu na kuona ni nini kinachofanya kazi bora kwa picha yako!</p>
 
 </body>
 </html>

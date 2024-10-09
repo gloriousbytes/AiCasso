@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide des Fonctionnalités de Super Résolution</title>
+    <title>Guide de la Fonctionnalité de Super Résolution</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,51 +31,58 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h2>Guide d'Utilisation de la Fonctionnalité de Super Résolution</h2>
-    <p>La fonctionnalité de Super Résolution dans AiCasso consiste à améliorer l'apparence de vos images. Vous indiquez simplement comment vous souhaitez améliorer votre image, et AiCasso s'occupe du reste. Que vous souhaitiez affiner les détails ou donner un coup de pouce à l'ensemble de l'image, c'est très facile à utiliser.</p>
+    <h2>Guide d'utilisation de la Fonctionnalité de Super Résolution</h2>
+    <p>La fonctionnalité de Super Résolution dans AiCasso vise à améliorer l'apparence de vos images. Il vous suffit de lui indiquer comment vous souhaitez améliorer votre image, et AiCasso s'occupe du reste. Que vous souhaitiez affiner les détails ou donner un coup de pouce à l'ensemble de l'image, c'est très facile à utiliser.</p>
 
     <h3>Comment ça fonctionne :</h3>
     
     <div class="example">
         <strong>Image d'entrée :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="Image d'entrée" loading="lazy">
         </div>
-        <strong>Commande :</strong>
-        <p>"Agrandissez-la 4 fois, utilisez le modèle Ultra Sharp"</p>
+        <strong>Invite :</strong>
+        <p>"Agrandir 4 fois, utiliser le modèle Ultra Sharp"</p>
         <strong>Résultat :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="Image de résultat" loading="lazy">
         </div>
     </div>
 
-    <h3>Paramètres Optionnels</h3>
+    <h3>Paramètres optionnels</h3>
     <p>Si vous souhaitez avoir un peu plus de contrôle sur la façon dont votre image est améliorée, voici quelques options supplémentaires avec lesquelles vous pouvez jouer :</p>
 
     <ul>
-        <li><strong>Échelle :</strong> C'est la taille à laquelle vous souhaitez agrandir votre image. Vous pouvez choisir une échelle de 1 à 4, 4 étant la valeur par défaut. En gros, plus le nombre est grand, plus l'image est grande.</li>
-        <li><strong>Modèle d'Agrandissement :</strong> C'est comme choisir un filtre pour votre image, mais c'est beaucoup plus intelligent. Voici les options :
+        <li><strong>Échelle :</strong> C'est le degré d'agrandissement de votre image. Vous pouvez choisir une échelle de 1 à 4, 4 étant la valeur par défaut. En gros, des chiffres plus grands signifient une image plus grande.</li>
+        <li><strong>Modèle d'agrandissement :</strong> C'est comme choisir un filtre pour votre image, mais c'est beaucoup plus intelligent. Voici les options :
             <ul>
-                <li><strong>Augmentation des Détails Importants :</strong> Idéal pour zoomer sur les petits détails.</li>
+                <li><strong>Amélioration des Détails :</strong> Idéal pour zoomer sur de petits détails.</li>
                 <li><strong>Ultra Sharp :</strong> Rend l'image super claire et nette.</li>
                 <li><strong>Amélioration Anime :</strong> Parfait pour les images de style anime, les rendant nettes et vibrantes.</li>
                 <li><strong>Détails Doubles :</strong> Double les détails sans exagérer.</li>
                 <li><strong>Amélioration Générale :</strong> Une bonne option polyvalente pour la plupart des images.</li>
             </ul>
         </li>
-        <li><strong>Amélioration du Visage :</strong> Si votre image contient un visage, cette option peut aider à l'améliorer encore plus. Activez-la simplement si vous souhaitez qu'AiCasso se concentre sur l'amélioration des traits du visage.</li>
+        <li><strong>Amélioration du Visage :</strong> Si votre image contient un visage, cette option peut aider à l'améliorer encore plus. Il suffit de l'activer si vous souhaitez qu'AiCasso se concentre sur l'amélioration des traits du visage.</li>
     </ul>
 
-    <p>Rappelez-vous, ces options sont totalement facultatives ! Vous n'avez pas besoin de les utiliser si vous ne le souhaitez pas. Décrivez simplement ce que vous voulez, et AiCasso trouvera la meilleure façon de le réaliser. Et ne vous inquiétez pas d'être parfait avec vos mots—AiCasso vous comprend !</p>
+    <p>Rappelez-vous, ces options sont totalement facultatives ! Vous n'avez pas à les utiliser si vous ne le souhaitez pas. Décrivez simplement ce que vous voulez, et AiCasso trouvera le meilleur moyen de le réaliser. Et ne vous inquiétez pas d'être parfait avec vos mots—AiCasso vous comprend !</p>
 
 </body>
 </html>

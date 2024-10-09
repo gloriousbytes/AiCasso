@@ -3,92 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Handleiding voor de Gezichtsgeneratiefunctie</title>
+    <title>Handleiding voor de Gezichts generatie functie</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Zorgt ervoor dat de afbeelding niet uit de container overflowt */
+    height: auto;     /* Houdt de beeldverhouding */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
-    <h2>Handleiding voor het Gebruik van de Gezichtsgeneratiefunctie</h2>
-    <p>De Gezichtsgeneratiefunctie in AiCasso is ongelooflijk veelzijdig! Het stelt je in staat om verbluffende afbeeldingen te maken door een specifiek gezicht in verschillende personages of stijlen te integreren. Of je nu een ridder, samoerai of een ander personage voor ogen hebt, AiCasso gebruikt het ingevoerde gezicht om een afbeelding te genereren met dat gezicht geïntegreerd in het gevraagde ontwerp.</p>
+    <h2>Handleiding voor het Gebruik van de Gezichts generatie functie</h2>
+    <p>De Gezichts generatie functie in AiCasso is ongelooflijk veelzijdig! Het stelt je in staat om verbluffende afbeeldingen te creëren door een specifiek gezicht in verschillende karakters of stijlen te integreren. Of je nu een ridder, samoerai of een ander karakter voorstelt, AiCasso gebruikt het ingevoerde gezicht om een afbeelding te genereren met dat gezicht geïntegreerd in het gevraagde ontwerp.</p>
 
-    <h3>Hoe het Werkt:</h3>
+    <h3>Hoe Het Werkt:</h3>
     
-    <div class="example">
-        <strong>Invoervisie:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
-        </div>
-        <strong>Prompt 1:</strong>
-        <p>"Een realistische ridder, gebruik maximale schaal"</p>
-        <strong>Resultaat 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
-        </div>
-        <strong>Prompt 2:</strong>
-        <p>"Gebruik de chibi-stijl en maak een samoerai, gebruik standaardwaarden"</p>
-        <strong>Resultaat 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
-        </div>
-        <strong>Prompt 3:</strong>
-        <p>"Een samoerai, gebruik 31 denoising stappen, en anime-stijl"</p>
-        <strong>Resultaat 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Invoefafbeelding:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/input.jpg" alt="Invoefafbeelding">
     </div>
+    <strong>Prompt 1:</strong>
+    <p>"Een realistische ridder, gebruik maximale schaal"</p>
+    <strong>Resultaat 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="Realistische Ridder">
+    </div>
+    <strong>Prompt 2:</strong>
+    <p>"Gebruik de chibi-stijl en maak een samoerai, gebruik standaardwaarden"</p>
+    <strong>Resultaat 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="Chibi Samoerai">
+    </div>
+    <strong>Prompt 3:</strong>
+    <p>"Een samoerai, gebruik 31 denoising stappen, en anime-stijl"</p>
+    <strong>Resultaat 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="Anime Samoerai">
+    </div>
+</div>
 
     <h3>Optionele Parameters</h3>
     <p>Als je wat meer persoonlijkheid of controle aan je gegenereerde afbeeldingen wilt toevoegen, zijn hier enkele opties die je kunt aanpassen:</p>
 
     <ul>
-        <li><strong>Negatieve Prompt:</strong> Hier kun je AiCasso vertellen wat je <em>niet</em> in de afbeelding wilt zien. Als je dit leeg laat, zal AiCasso zich alleen op de positieve prompt richten.</li>
-        <li><strong>Aantal Denoising Stappen:</strong> Dit bepaalt hoe glad en verfijnd de afbeelding eruitziet. Je kunt kiezen tussen 21, 31 of 41 stappen, waarbij 41 de standaard is. Meer stappen betekenen een schonere, meer gepolijste afbeelding.</li>
-        <li><strong>Begeleidingsschaal:</strong> Dit helpt de afbeelding trouw te blijven aan je beschrijving. De schaal varieert van 1 tot 20, waarbij 10 de standaard is. Hogere getallen betekenen dat AiCasso dichter bij je prompt blijft.</li>
-        <li><strong>S-schaal:</strong> Dit gaat over de structuur van het gezicht. Het is een beetje technisch, maar het past in wezen het gewicht van de gezichtsstructuur aan. De standaard is 1.0, en je kunt variëren van 0.0 tot 2.0.</li>
+        <li><strong>Negatieve Prompt:</strong> Dit is waar je AiCasso kunt vertellen wat je <em>niet</em> wilt zien in de afbeelding. Als je dit leeg laat, zal AiCasso zich gewoon richten op de positieve prompt.</li>
+        <li><strong>Aantal Denoising Stappen:</strong> Dit bepaalt hoe soepel en verfijnd de afbeelding eruit ziet. Je kunt kiezen tussen 21, 31 of 41 stappen, waarbij 41 de standaard is. Meer stappen betekenen een schonere, meer gepolijste afbeelding.</li>
+        <li><strong>Guidance Scale:</strong> Dit helpt de afbeelding trouw te blijven aan je beschrijving. De schaal loopt van 1 tot 20, waarbij 10 de standaard is. Hogere nummers betekenen dat AiCasso dichter bij je prompt blijft.</li>
+        <li><strong>Schaal:</strong> Dit gaat helemaal over de structuur van het gezicht. Het is een beetje technisch, maar in wezen past het het gewicht van de gezichtsstructuur aan. De standaard is 1.0, en je kunt ergens tussen 0.0 en 2.0 gaan.</li>
         <li><strong>Stijl:</strong> Wil je je afbeelding een specifieke sfeer geven? Je kunt een stijl kiezen zoals strip, chibi, 3D, anime of realistisch. Realistisch is de standaard, maar voel je vrij om creatief te zijn!</li>
     </ul>
 
-    <p>En onthoud, AiCasso is vrij vergevingsgezind. Je hoeft geen grammaticawizard te zijn of elk detail perfect te krijgen. Beschrijf gewoon wat je wilt in je eigen woorden, en AiCasso doet de rest. Veel plezier met creëren!</p>
+    <p>En onthoud, AiCasso is behoorlijk vergevingsgezind. Je hoeft geen grammaticawonder te zijn of elk detail perfect te krijgen. Beschrijf gewoon wat je wilt in je eigen woorden, en AiCasso zorgt voor de rest. Veel plezier met creëren!</p>
 
 </body>
 </html>

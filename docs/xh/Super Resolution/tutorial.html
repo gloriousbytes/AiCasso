@@ -31,9 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -41,41 +48,41 @@
 <body>
 
     <h2>Umhlahlandlela Wokusebenzisa Umsebenzi Wokwandisa Umfanekiso</h2>
-    <p>Umsebenzi Wokwandisa Umfanekiso kwi-AiCasso ubandakanya ukwenza ukuba imifanekiso yakho ibonakale ngcono. Uthetha nje ukuba ufuna ukuyithuthukisa njani imifanekiso yakho, kwaye i-AiCasso izakuthatha ingqalelo yonke into. Nokuba uthetha ngokuphucula iinkcukacha okanye ukunika umfanekiso wonke umphuculo, kulula kakhulu ukuyisebenzisa.</p>
+    <p>Umsebenzi Wokwandisa Umfanekiso kwi-AiCasso uthetha ngokwenza ukuba imifanekiso yakho ibonakale ngcono. Uthetha nje ukuba ufuna njani ukuphucula umfanekiso wakho, kwaye i-AiCasso izakujolisa kuyo yonke into. Nokuba ujonge ukuphucula iinkcukacha okanye ukunika umfanekiso wonke umphuculo, kulula kakhulu ukuyisebenzisa.</p>
 
-    <h3>Indlela Isebenza Ngayo:</h3>
+    <h3>Ukwenza Kusebenza:</h3>
     
     <div class="example">
         <strong>Umfanekiso Wokufaka:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="Umfanekiso Wokufaka" loading="lazy">
         </div>
         <strong>Umphakamo:</strong>
-        <p>"Wandisa ngama-4, sebenzisa imodeli ye-Ultra Sharp"</p>
+        <p>"Wandise ngama-4, sebenzisa imodeli ye-Ultra Sharp"</p>
         <strong>Umphumo:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="Umfanekiso Womphumo" loading="lazy">
         </div>
     </div>
 
-    <h3>Imigaqo Eyakhelwe Ngaphakathi</h3>
-    <p>Ukuba ufuna ukongeza ulawulo oluninzi malunga nokuba imifanekiso yakho ithuthukiswa njani, nantsi eminye imigaqo onokuyijolisa kuyo:</p>
+    <h3>Iiparameter Ezikhethiweyo</h3>
+    <p>Ukuba ufuna ukwengeza ulawulo olungakumbi malunga nokuphuculwa komfanekiso wakho, nantsi eminye imigaqo onokuyijolisa kuyo:</p>
 
     <ul>
-        <li><strong>Uphakamiso:</strong> Le yindlela ofuna ngayo ukwandisa imifanekiso yakho. Ungakhetha ukuphakamisa ukusuka ku-1 ukuya ku-4, kunye no-4 njengomgangatho ophakathi. Ngamafutshane, amanani amakhulu abhekisa kumfanekiso omkhulu.</li>
-        <li><strong>Imodeli Yokwandisa:</strong> Le ifana nokukhetha ifilitha yomfanekiso wakho, kodwa ikhokela kakhulu. Nantsi imigaqo:
+        <li><strong>Uphakamiso:</strong> Le yindlela ofuna ngayo ukwandisa umfanekiso wakho. Ungakhetha ukuphakamisa ukusuka ku-1 ukuya ku-4, kunye no-4 njengomgangatho ophakathi. Ngamafutshane, amanani amakhulu athetha umfanekiso omkhulu.</li>
+        <li><strong>Imodeli Yokwandisa:</strong> Le ifana nokukhetha ifilitha yomfanekiso wakho, kodwa ikakhulu iyahlakanipha. Nantsi imigaqo:
             <ul>
                 <li><strong>Uphuculo LweeNkcukacha Ezikhulu:</strong> Kulungile ukujolisa kwiinkcukacha ezincinci.</li>
-                <li><strong>Ultra Sharp:</strong> Yenza umfanekiso ube sobala kwaye ube neenkcukacha ezicacileyo.</li>
-                <li><strong>Anime Enhance:</strong> Ilungile kumfanekiso wesitayile se-anime, iyenza ibonakale icacile kwaye inobungakanani.</li>
+                <li><strong>Ultra Sharp:</strong> Yenza umfanekiso ube sobala kwaye ube nekhono.</li>
+                <li><strong>Anime Enhance:</strong> Ilungile kumfanekiso wesitayile se-anime, iyenza ibonakale icacile kwaye inemibala.</li>
                 <li><strong>Uphuculo LweeNkcukacha Ezimbini:</strong> Uphucula iinkcukacha kabini ngaphandle kokuphosa.</li>
-                <li><strong>Uphuculo Olubanzi:</strong> Kukhetho oluhle lwezithombe ezininzi.</li>
+                <li><strong>Uphuculo Olubanzi:</strong> Kukhetho oluhle olujolise kwiimifanekiso ezininzi.</li>
             </ul>
         </li>
-        <li><strong>Uphuculo LweMilo:</strong> Ukuba umfanekiso wakho unomlilo, le migaqo ingasiza ukwenza ibonakale ngcono. Vula nje ukuba ufuna i-AiCasso igxile ekuphuculeni iimpawu zomlilo.</li>
+        <li><strong>Uphuculo LweMilo:</strong> Ukuba umfanekiso wakho unomlilo, le nketho inganceda ukwenza ibonakale ngcono. Vula nje ukuba ufuna i-AiCasso igxile ekuphuculeni iimpawu zomlilo.</li>
     </ul>
 
-    <p>Khumbula, le migaqo iyakhelwe ngaphakathi! Awudingi ukuyijolisa ukuba awufuni. Chaza nje ukuba ufuna ntoni, kwaye i-AiCasso izakufumanisa indlela efanelekileyo yokwenza kube yinyani. Futhi ungakhathazeki ngokuba neempawu ezilungileyo ngeemvakalelo zakho—i-AiCasso iyakuqonda!</p>
+    <p>Khumbula, ezi nketho zihlala zikhankanywe! Awudingi ukuziphosa ukuba awufuni. Chaza nje ukuba ufuna ntoni, kwaye i-AiCasso izakufumanisa indlela efanelekileyo yokwenza kube yinyani. Kwaye ungakhathazeki ngokuba neempawu ezilungileyo—i-AiCasso iyakuqonda!</p>
 
 </body>
 </html>

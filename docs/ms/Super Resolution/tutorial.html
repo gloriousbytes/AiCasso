@@ -31,9 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -41,41 +48,41 @@
 <body>
 
     <h2>Panduan Menggunakan Ciri Resolusi Super</h2>
-    <p>Ciri Resolusi Super dalam AiCasso adalah tentang menjadikan imej anda kelihatan lebih baik. Anda hanya perlu memberitahu bagaimana anda mahu meningkatkan imej anda, dan AiCasso akan menguruskan selebihnya. Sama ada anda mahu memperincikan butiran atau memberikan peningkatan keseluruhan pada imej, ia sangat mudah digunakan.</p>
+    <p>Ciri Resolusi Super dalam AiCasso adalah tentang menjadikan gambar anda kelihatan lebih baik. Anda hanya perlu memberitahu bagaimana anda ingin meningkatkan gambar anda, dan AiCasso akan menguruskan selebihnya. Sama ada anda ingin menajamkan butiran atau memberikan dorongan kepada keseluruhan gambar, ia sangat mudah digunakan.</p>
 
     <h3>Bagaimana Ia Berfungsi:</h3>
     
     <div class="example">
         <strong>Imej Input:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="Imej Input" loading="lazy">
         </div>
         <strong>Prompt:</strong>
-        <p>"Tingkatkan 4 kali, gunakan model Ultra Sharp"</p>
+        <p>"Perbesarkan 4 kali, gunakan model Ultra Sharp"</p>
         <strong>Hasil:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="Imej Hasil" loading="lazy">
         </div>
     </div>
 
     <h3>Parameter Pilihan</h3>
-    <p>Jika anda mahu menambah sedikit kawalan ke atas bagaimana imej anda dipertingkatkan, berikut adalah beberapa pilihan tambahan yang boleh anda cuba:</p>
+    <p>Jika anda ingin menambah sedikit lebih kawalan ke atas bagaimana gambar anda ditingkatkan, berikut adalah beberapa pilihan tambahan yang boleh anda mainkan:</p>
 
     <ul>
-        <li><strong>Skala:</strong> Ini adalah sejauh mana anda mahu membesarkan imej anda. Anda boleh memilih skala dari 1 hingga 4, dengan 4 sebagai lalai. Pada dasarnya, nombor yang lebih besar bermakna imej yang lebih besar.</li>
-        <li><strong>Model Upscale:</strong> Ini seperti memilih penapis untuk imej anda, tetapi ia lebih pintar. Berikut adalah pilihan yang ada:
+        <li><strong>Skala:</strong> Ini adalah berapa banyak anda ingin membesarkan gambar anda. Anda boleh memilih skala dari 1 hingga 4, dengan 4 sebagai lalai. Secara asasnya, nombor yang lebih besar bermakna gambar yang lebih besar.</li>
+        <li><strong>Model Upscale:</strong> Ini seperti memilih penapis untuk gambar anda, tetapi ia jauh lebih pintar. Berikut adalah pilihan-pilihannya:
             <ul>
                 <li><strong>Peningkatan Butiran Besar:</strong> Terbaik untuk memperbesar butiran kecil.</li>
-                <li><strong>Ultra Sharp:</strong> Menjadikan imej sangat jelas dan tajam.</li>
-                <li><strong>Peningkatan Anime:</strong> Sesuai untuk imej gaya anime, menjadikannya kelihatan tajam dan berwarna-warni.</li>
+                <li><strong>Ultra Sharp:</strong> Membuat gambar sangat jelas dan tajam.</li>
+                <li><strong>Peningkatan Anime:</strong> Sempurna untuk gambar gaya anime, menjadikannya kelihatan tajam dan berwarna-warni.</li>
                 <li><strong>Butiran Berganda:</strong> Menggandakan butiran tanpa berlebihan.</li>
-                <li><strong>Peningkatan Umum:</strong> Pilihan yang baik untuk kebanyakan imej.</li>
+                <li><strong>Peningkatan Umum:</strong> Pilihan yang baik untuk kebanyakan gambar.</li>
             </ul>
         </li>
-        <li><strong>Peningkatan Wajah:</strong> Jika imej anda mempunyai wajah, pilihan ini boleh membantu menjadikannya kelihatan lebih baik. Hanya hidupkan jika anda mahu AiCasso memberi tumpuan kepada peningkatan ciri wajah.</li>
+        <li><strong>Peningkatan Muka:</strong> Jika gambar anda mempunyai muka, pilihan ini boleh membantu menjadikannya kelihatan lebih baik. Hanya aktifkan jika anda ingin AiCasso memberi tumpuan kepada peningkatan ciri wajah.</li>
     </ul>
 
-    <p>Ingat, pilihan ini adalah sepenuhnya pilihan! Anda tidak perlu mengubahnya jika tidak mahu. Hanya terangkan apa yang anda mahu, dan AiCasso akan mencari cara terbaik untuk melakukannya. Dan jangan risau tentang kesempurnaan kata-kata anda—AiCasso memahami anda!</p>
+    <p>Ingat, pilihan ini adalah sepenuhnya pilihan! Anda tidak perlu mengganggu mereka jika anda tidak mahu. Hanya terangkan apa yang anda inginkan, dan AiCasso akan mencari cara terbaik untuk merealisasikannya. Dan jangan risau tentang menjadi sempurna dengan kata-kata anda—AiCasso memahami anda!</p>
 
 </body>
 </html>

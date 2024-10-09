@@ -3,92 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دليل ميزة توليد الوجوه</title>
+    <title>دليل ميزة توليد الوجه</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* يضمن عدم تجاوز الصورة للحاوية */
+    height: auto;     /* يحافظ على نسبة العرض إلى الارتفاع */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
-    <h2>دليل استخدام ميزة توليد الوجوه</h2>
-    <p>ميزة توليد الوجوه في AiCasso متعددة الاستخدامات بشكل لا يصدق! تتيح لك إنشاء صور مذهلة من خلال دمج وجه معين في شخصيات أو أنماط مختلفة. سواء كنت تتخيل فارسًا أو ساموراي أو أي شخصية أخرى، يستخدم AiCasso الوجه المدخل لإنشاء صورة مع دمج هذا الوجه في التصميم المطلوب.</p>
+    <h2>دليل استخدام ميزة توليد الوجه</h2>
+    <p>ميزة توليد الوجه في AiCasso متعددة الاستخدامات بشكل مذهل! تتيح لك إنشاء صور رائعة من خلال دمج وجه محدد في شخصيات أو أنماط متنوعة. سواء كنت تتخيل فارسًا، ساموراي، أو أي شخصية أخرى، يستخدم AiCasso الوجه المدخل لتوليد صورة مع دمج ذلك الوجه في التصميم المطلوب.</p>
 
     <h3>كيف تعمل:</h3>
     
-    <div class="example">
-        <strong>صورة المدخل:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
-        </div>
-        <strong>الموجه 1:</strong>
-        <p>"فارس واقعي، استخدم الحد الأقصى للمقياس"</p>
-        <strong>النتيجة 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
-        </div>
-        <strong>الموجه 2:</strong>
-        <p>"استخدم أسلوب تشيبي وصنع ساموراي، استخدم القيم الافتراضية"</p>
-        <strong>النتيجة 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
-        </div>
-        <strong>الموجه 3:</strong>
-        <p>"ساموراي، استخدم 31 خطوة لإزالة الضوضاء، وأسلوب الأنمي"</p>
-        <strong>النتيجة 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>صورة المدخل:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/input.jpg" alt="صورة المدخل">
     </div>
+    <strong>الطلب 1:</strong>
+    <p>"فارس واقعي، استخدم أقصى مقياس"</p>
+    <strong>النتيجة 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="فارس واقعي">
+    </div>
+    <strong>الطلب 2:</strong>
+    <p>"استخدم نمط تشيبي واجعل ساموراي، استخدم القيم الافتراضية"</p>
+    <strong>النتيجة 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="ساموراي تشيبي">
+    </div>
+    <strong>الطلب 3:</strong>
+    <p>"ساموراي، استخدم 31 خطوة إزالة الضوضاء، ونمط أنمي"</p>
+    <strong>النتيجة 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="ساموراي أنمي">
+    </div>
+</div>
 
-    <h3>الخيارات الاختيارية</h3>
-    <p>إذا كنت ترغب في إضافة المزيد من الشخصية أو التحكم في الصور المولدة، فإليك بعض الخيارات التي يمكنك تعديلها:</p>
+    <h3>معلمات اختيارية</h3>
+    <p>إذا كنت ترغب في إضافة المزيد من الشخصية أو التحكم في الصور التي تم إنشاؤها، إليك بعض الخيارات التي يمكنك تعديلها:</p>
 
     <ul>
-        <li><strong>الموجه السلبي:</strong> هنا يمكنك إخبار AiCasso بما لا تريد رؤيته في الصورة. إذا تركت هذا فارغًا، سيركز AiCasso فقط على الموجه الإيجابي.</li>
-        <li><strong>عدد خطوات إزالة الضوضاء:</strong> يتحكم هذا في مدى سلاسة وتصفية الصورة. يمكنك الاختيار بين 21، 31، أو 41 خطوة، مع كون 41 هو الافتراضي. المزيد من الخطوات تعني صورة أنظف وأكثر دقة.</li>
-        <li><strong>مقياس التوجيه:</strong> يساعد هذا في بقاء الصورة وفية لوصفك. يتراوح المقياس من 1 إلى 20، مع كون 10 هو الافتراضي. الأرقام الأعلى تعني أن AiCasso سيلتزم أكثر بالموجه الخاص بك.</li>
-        <li><strong>مقياس S:</strong> يتعلق هذا بهيكل الوجه. إنه تقني بعض الشيء، ولكنه يضبط وزن هيكل الوجه. الافتراضي هو 1.0، ويمكنك الذهاب من 0.0 إلى 2.0.</li>
-        <li><strong>الأسلوب:</strong> هل تريد إعطاء صورتك جوًا معينًا؟ يمكنك اختيار أسلوب مثل الكوميك، تشيبي، 3D، أنمي، أو واقعي. الواقعي هو الافتراضي، ولكن لا تتردد في الإبداع!</li>
+        <li><strong>الطلب السلبي:</strong> هنا يمكنك إخبار AiCasso بما <em>لا</em> تريد رؤيته في الصورة. إذا تركت هذا فارغًا، سيركز AiCasso فقط على الطلب الإيجابي.</li>
+        <li><strong>عدد خطوات إزالة الضوضاء:</strong> هذا يتحكم في مدى سلاسة الصورة ونعومتها. يمكنك الاختيار بين 21، 31، أو 41 خطوة، مع كون 41 هو الافتراضي. المزيد من الخطوات تعني صورة أنظف وأكثر تلميعًا.</li>
+        <li><strong>مقياس التوجيه:</strong> يساعد هذا الصورة على البقاء وفية لوصفك. يتراوح المقياس من 1 إلى 20، مع كون 10 هو الافتراضي. الأرقام الأعلى تعني أن AiCasso سيلتزم أكثر بطلبك.</li>
+        <li><strong>مقياس S:</strong> يتعلق هذا ببنية الوجه. إنه تقني قليلاً، ولكنه يعدل وزن بنية الوجه. الافتراضي هو 1.0، ويمكنك الذهاب من 0.0 إلى 2.0.</li>
+        <li><strong>النمط:</strong> هل تريد إعطاء صورتك أجواء معينة؟ يمكنك اختيار نمط مثل كوميك، تشيبي، ثلاثي الأبعاد، أنمي، أو واقعي. الواقعي هو الافتراضي، لكن لا تتردد في أن تكون مبدعًا!</li>
     </ul>
 
-    <p>وتذكر، AiCasso متسامح جدًا. لا تحتاج إلى أن تكون خبيرًا في القواعد أو تحصل على كل التفاصيل بشكل مثالي. فقط صف ما تريده بكلماتك الخاصة، وسيهتم AiCasso بالباقي. استمتع بالإبداع!</p>
+    <p>وتذكر، AiCasso متسامح جدًا. لا تحتاج إلى أن تكون خبيرًا في القواعد أو الحصول على كل التفاصيل بشكل مثالي. فقط صف ما تريده بكلماتك الخاصة، وسيتولى AiCasso الباقي. استمتع بالإبداع!</p>
 
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hướng Dẫn Tính Năng Thay Thế Nền</title>
+    <title>Hướng Dẫn Tính Năng Thay Đổi Nền</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -40,42 +40,42 @@
 
 <body>
 
-    <h2>Hướng Dẫn Sử Dụng Tính Năng Thay Thế Nền</h2>
-    <p>Tính năng Thay Thế Nền trong AiCasso rất tuyệt vời khi bạn muốn thay đổi nền trong hình ảnh của mình. Dù bạn chỉ muốn xóa nền hay thay thế nó bằng một thứ khác, AiCasso làm điều đó rất dễ dàng. Bạn không cần lo lắng về các vấn đề kỹ thuật—chỉ cần mô tả những gì bạn muốn, và AiCasso sẽ làm phần còn lại.</p>
+    <h2>Hướng Dẫn Sử Dụng Tính Năng Thay Đổi Nền</h2>
+    <p>Tính năng Thay Đổi Nền trong AiCasso rất hoàn hảo khi bạn muốn thay đổi nền trong hình ảnh của mình. Dù bạn chỉ muốn xóa nền hay thay thế nó bằng một thứ khác, AiCasso giúp việc này trở nên dễ dàng. Bạn không cần phải lo lắng về các vấn đề kỹ thuật—chỉ cần mô tả những gì bạn muốn, và AiCasso sẽ làm phần còn lại.</p>
 
     <h3>Cách Hoạt Động:</h3>
     
     <div class="example">
         <strong>Hình Ảnh Đầu Vào:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Hình Ảnh Đầu Vào" loading="lazy">
         </div>
-        <strong>Lệnh 1:</strong>
+        <strong>Yêu Cầu 1:</strong>
         <p>"Xóa nền"</p>
         <strong>Kết Quả 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Kết Quả Xóa Nền" loading="lazy">
         </div>
-        <strong>Lệnh 2:</strong>
-        <p>"Thay thế nền bằng một khu rừng, không chỉ xóa nó, với chế độ alpha matting bị vô hiệu hóa. Sử dụng ngưỡng tiền cảnh là 240, ngưỡng nền là 20, và kích thước xói mòn là 5 cho alpha matting."</p>
+        <strong>Yêu Cầu 2:</strong>
+        <p>"Thay thế nền bằng một khu rừng, không chỉ xóa nó, với alpha matting tắt. Sử dụng ngưỡng foreground là 240, ngưỡng background là 20, và kích thước erode là 5 cho alpha matting."</p>
         <strong>Kết Quả 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Thay Thế Nền Bằng Khu Rừng" loading="lazy">
         </div>
     </div>
 
-    <h3>Tham Số Tùy Chọn</h3>
-    <p>Nếu bạn muốn thêm một chút cá nhân hóa hoặc tinh chỉnh kết quả, đây là một vài tùy chọn bạn có thể thử:</p>
+    <h3>Các Tham Số Tùy Chọn</h3>
+    <p>Nếu bạn muốn thêm một chút cá nhân hóa hoặc tinh chỉnh kết quả, đây là một vài tùy chọn bạn có thể thử nghiệm:</p>
 
     <ul>
-        <li><strong>Chỉ Xóa:</strong> Nếu bạn chỉ muốn xóa nền mà không thay thế nó bằng bất kỳ thứ gì, đây là tùy chọn của bạn. Nó giống như nhấn nút làm sạch.</li>
-        <li><strong>Alpha Matting:</strong> Đây là cách nói hoa mỹ của "làm mờ các cạnh." Khi bạn bật tính năng này, nó giúp làm cho các cạnh của đối tượng trông mượt mà hơn và ít bị cắt hơn. Mặc định, nó bị tắt.</li>
-        <li><strong>Ngưỡng Tiền Cảnh Alpha Matting:</strong> Điều này kiểm soát mức độ hiển thị của đối tượng chính (như một người) khi sử dụng alpha matting. Mặc định là 240, và bạn có thể điều chỉnh để làm cho các cạnh mềm mại hơn hoặc sắc nét hơn.</li>
-        <li><strong>Ngưỡng Nền Alpha Matting:</strong> Điều này làm tương tự như ngưỡng tiền cảnh nhưng cho nền. Mặc định là 20, và nó giúp đạt được sự hòa trộn hoàn hảo với nền mới.</li>
-        <li><strong>Kích Thước Xói Mòn Alpha Matting:</strong> Điều này giúp thu nhỏ các cạnh một chút để làm cho hình cắt trông sạch hơn. Kích thước mặc định là 5, nhưng bạn có thể điều chỉnh để có được cái nhìn chính xác mà bạn muốn.</li>
+        <li><strong>Chỉ Xóa:</strong> Nếu bạn chỉ muốn xóa nền mà không thay thế bằng bất cứ thứ gì, đây là tùy chọn dành cho bạn. Nó giống như nhấn nút làm sạch.</li>
+        <li><strong>Alpha Matting:</strong> Đây là cách nói tinh tế để nói "làm mịn các cạnh." Khi bạn bật tính năng này, nó giúp làm cho các cạnh của đối tượng trông mượt mà hơn và ít bị cắt ra. Mặc định, nó được tắt.</li>
+        <li><strong>Ngưỡng Foreground Alpha Matting:</strong> Điều này kiểm soát bao nhiêu phần của đối tượng chính (như một người) vẫn hiển thị khi sử dụng alpha matting. Mặc định là 240, và bạn có thể điều chỉnh để làm cho các cạnh mềm mại hoặc sắc nét hơn.</li>
+        <li><strong>Ngưỡng Background Alpha Matting:</strong> Điều này hoạt động tương tự như ngưỡng foreground nhưng cho nền. Mặc định là 20, và tất cả đều nhằm đạt được sự hòa trộn hoàn hảo với nền mới.</li>
+        <li><strong>Kích Thước Erode Alpha Matting:</strong> Điều này giúp thu nhỏ các cạnh một chút để làm cho phần cắt ra trông sạch hơn. Kích thước mặc định là 5, nhưng bạn có thể điều chỉnh để có được vẻ ngoài chính xác mà bạn muốn.</li>
     </ul>
 
-    <p>Hãy nhớ rằng, bạn không cần phải căng thẳng về việc làm mọi thứ hoàn hảo. AiCasso khá giỏi trong việc hiểu ý bạn, vì vậy hãy thoải mái diễn đạt một cách tự nhiên hoặc chi tiết như bạn muốn. Chúc bạn sáng tạo vui vẻ!</p>
+    <p>Nhớ rằng, bạn không cần phải lo lắng về việc làm mọi thứ hoàn hảo. AiCasso khá giỏi trong việc hiểu những gì bạn có ý nghĩa, vì vậy hãy thoải mái để tự nhiên hoặc chi tiết như bạn thích. Chúc bạn sáng tạo vui vẻ!</p>
 
 </body>
 </html>

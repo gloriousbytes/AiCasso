@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -41,41 +41,41 @@
 <body>
 
     <h2>Arka Plan Değiştirme Özelliği Kullanım Kılavuzu</h2>
-    <p>AiCasso'daki Arka Plan Değiştirme özelliği, resminizdeki arka planı değiştirmek istediğinizde mükemmeldir. İster arka planı kaldırmak ister başka bir şeyle değiştirmek isteyin, AiCasso bunu çok kolay hale getirir. Teknik konular hakkında endişelenmenize gerek yok—sadece ne istediğinizi tarif edin, AiCasso gerisini halleder.</p>
+    <p>AiCasso'daki Arka Plan Değiştirme özelliği, görüntünüzdeki arka planı değiştirmek istediğinizde mükemmeldir. Arka planı kaldırmak veya başka bir şeyle değiştirmek istiyorsanız, AiCasso bunu çok kolay hale getirir. Teknik detaylar hakkında endişelenmenize gerek yok—sadece ne istediğinizi tarif edin, AiCasso geri kalanını halledecektir.</p>
 
     <h3>Nasıl Çalışır:</h3>
     
     <div class="example">
-        <strong>Girdi Görseli:</strong>
+        <strong>Girdi Görüntüsü:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Girdi Görüntüsü" loading="lazy">
         </div>
-        <strong>Komut 1:</strong>
+        <strong>İstek 1:</strong>
         <p>"Arka planı kaldır"</p>
         <strong>Sonuç 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Arka Plan Kaldırılmış Sonuç" loading="lazy">
         </div>
-        <strong>Komut 2:</strong>
-        <p>"Arka planı sadece kaldırmak yerine bir ormanla değiştir, alfa matlama devre dışı bırakılmış olarak. Alfa matlama için bir ön plan eşiği olarak 240, bir arka plan eşiği olarak 20 ve bir erozyon boyutu olarak 5 kullan."</p>
+        <strong>İstek 2:</strong>
+        <p>"Arka planı bir orman ile değiştir, sadece kaldırma değil, alfa matting devre dışı. Alfa matting için 240 ön plan eşiği, 20 arka plan eşiği ve 5 erozyon boyutu kullan."</p>
         <strong>Sonuç 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Orman ile Değiştirilmiş Arka Plan" loading="lazy">
         </div>
     </div>
 
     <h3>Opsiyonel Parametreler</h3>
-    <p>Kişisel bir dokunuş eklemek veya sonuçları ince ayar yapmak istiyorsanız, oynayabileceğiniz birkaç seçenek:</p>
+    <p>Kişisel bir dokunuş eklemek veya sonuçları ince ayar yapmak istiyorsanız, oynayabileceğiniz birkaç seçenek burada:</p>
 
     <ul>
-        <li><strong>Sadece Kaldır:</strong> Eğer sadece arka planı kaldırmak ve yerine bir şey koymak istemiyorsanız, bu sizin için ideal bir seçenek. Temiz bir sayfa düğmesine basmak gibi.</li>
-        <li><strong>Alfa Matlama:</strong> Bu, "kenarları karıştır" demenin şık bir yoludur. Bunu açtığınızda, konunuzun kenarlarının daha pürüzsüz ve daha az kesik görünmesine yardımcı olur. Varsayılan olarak kapalıdır.</li>
-        <li><strong>Alfa Matlama Ön Plan Eşiği:</strong> Bu, alfa matlama kullanırken ana konunun (örneğin bir kişi) ne kadarının görünür kalacağını kontrol eder. Varsayılan 240'tır ve kenarları daha yumuşak veya daha keskin yapmak için ayarlayabilirsiniz.</li>
-        <li><strong>Alfa Matlama Arka Plan Eşiği:</strong> Bu, ön plan eşiği ile aynı şeyi yapar ancak arka plan için. Varsayılan 20'dir ve yeni arka planla mükemmel bir karışım elde etmekle ilgilidir.</li>
-        <li><strong>Alfa Matlama Erozyon Boyutu:</strong> Bu, kenarları biraz küçültmeye yardımcı olur, böylece kesim daha temiz görünür. Varsayılan boyut 5'tir, ancak istediğiniz görünümü elde etmek için ayarlayabilirsiniz.</li>
+        <li><strong>Sadece Kaldır:</strong> Eğer sadece arka planı kaldırmak ve başka bir şeyle değiştirmek istemiyorsanız, bu sizin için en uygun seçenek. Temiz bir sayfa butonuna basmak gibi.</li>
+        <li><strong>Alfa Matting:</strong> Bu, "kenarları harmanla" demenin şık bir yoludur. Bunu açtığınızda, nesnenizin kenarlarının daha pürüzsüz ve daha az kesilmiş görünmesine yardımcı olur. Varsayılan olarak kapalıdır.</li>
+        <li><strong>Alfa Matting Ön Plan Eşiği:</strong> Bu, alfa matting kullanırken ana nesnenin (bir kişi gibi) ne kadarının görünür kalacağını kontrol eder. Varsayılan 240'tır ve kenarları daha yumuşak veya keskin hale getirmek için ayarlayabilirsiniz.</li>
+        <li><strong>Alfa Matting Arka Plan Eşiği:</strong> Bu, ön plan eşiği ile aynı işi yapar ama arka plan için. Varsayılan 20'dir ve yeni arka planla mükemmel bir harman elde etmekle ilgilidir.</li>
+        <li><strong>Alfa Matting Erozyon Boyutu:</strong> Bu, kesimin daha temiz görünmesi için kenarları biraz küçültmeye yardımcı olur. Varsayılan boyut 5'tir, ancak istediğiniz görünümü elde etmek için ayarlayabilirsiniz.</li>
     </ul>
 
-    <p>Unutmayın, her şeyi mükemmel yapma konusunda strese girmenize gerek yok. AiCasso, ne demek istediğinizi anlamakta oldukça iyidir, bu yüzden rahat veya ayrıntılı olmaktan çekinmeyin. İyi yaratmalar!</p>
+    <p>Unutmayın, her şeyi mükemmel hale getirmek için stres yapmanıza gerek yok. AiCasso, ne demek istediğinizi anlamada oldukça iyidir, bu yüzden istediğiniz kadar rahat veya detaylı olmaktan çekinmeyin. İyi yaratıcılıklar!</p>
 
 </body>
 </html>

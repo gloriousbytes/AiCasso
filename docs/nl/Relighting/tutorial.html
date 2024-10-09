@@ -31,9 +31,12 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
         }
         .iframe-container {
             display: flex;
@@ -47,37 +50,37 @@
 
 <body>
 
-    <h2>Handleiding voor het gebruik van de Relighting-functie</h2>
-    <p>De Relighting-functie in AiCasso is super cool! Het laat je de belichting in je afbeeldingen veranderen met slechts een paar woorden. Wil je de zon in de rug of een zacht licht van opzij? Geen probleem! Beschrijf het gewoon, en AiCasso doet de rest.</p>
+    <h2>Handleiding voor het Gebruik van de Relighting-functie</h2>
+    <p>De Relighting-functie in AiCasso is super gaaf! Het stelt je in staat om de belichting in je afbeeldingen te veranderen met slechts een paar woorden. Wil je de zon op de achtergrond of een zachte lichtinval van opzij? Geen probleem! Beschrijf het gewoon, en AiCasso doet de rest.</p>
 
-    <h3>Hoe het werkt:</h3>
+    <h3>Hoe Het Werkt:</h3>
     
     <div class="example">
-        <strong>Invoerafbeelding:</strong>
+        <strong>Ingangsafbeelding:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+            <img src="../../images/tutorials/relighting/input.jpg" alt="Ingangsafbeelding" loading="lazy">
         </div>
-        <strong>Gebruikte prompt:</strong>
-        <p>"Zorg ervoor dat de zon in de rug is"</p>
+        <strong>Gebruikte Prompt:</strong>
+        <p>"Zorg ervoor dat de zon op de achtergrond staat"</p>
         <strong>Resultaat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+            <img src="../../images/tutorials/relighting/result.jpg" alt="Relighting Resultaat" loading="lazy">
         </div>
     </div>
 
-    <h3>Optionele aanpassingen</h3>
-    <p>Als je avontuurlijk bent en wat meer flair aan je relighting wilt toevoegen, zijn hier enkele dingen die je kunt aanpassen:</p>
+    <h3>Optionele Aanpassingen</h3>
+    <p>Als je je avontuurlijk voelt en wat meer flair aan je relighting wilt toevoegen, zijn hier enkele dingen die je kunt aanpassen:</p>
 
     <ul>
-        <li><strong>Negatieve prompt:</strong> Wil je iets vermijden? Je kunt AiCasso vertellen wat je <em>niet</em> wilt opnemen. Maar maak je geen zorgen, als je dit leeg laat, zal AiCasso zich gewoon richten op wat je wel wilt.</li>
-        <li><strong>Richting van de verlichting:</strong> Je kunt specificeren waar het licht vandaan moet komen—links, rechts, boven, onder, of zelfs helemaal niet. Standaard komt het licht van links.</li>
-        <li><strong>Begeleidingsschaal:</strong> Dit helpt AiCasso om zich aan je beschrijving te houden. De schaal loopt van 1 tot 20, waarbij 7 de standaard is. Hoe hoger het getal, hoe meer AiCasso zich aan je prompt houdt.</li>
-        <li><strong>Hoge-resolutieschaal:</strong> Wil je dat je afbeelding opvalt? Dit regelt de helderheid. De standaard is 1.5, maar je kunt het instellen van 1.0 tot 2.0 voor een scherpere afbeelding.</li>
-        <li><strong>Ontruisniveaus:</strong> Er zijn twee niveaus—lage resolutie en hoge resolutie. Deze bepalen hoe glad of gedetailleerd de uiteindelijke afbeelding eruitziet. Je kunt het lage-res ontuisniveau instellen tussen 0.0 en 1.0 (standaard is 0.9) en het hoge-res tussen 0.0 en 1.0 (standaard is 0.5).</li>
-        <li><strong>Aantal stappen:</strong> Dit is hoeveel stappen AiCasso neemt om je afbeelding te perfectioneren. De standaard is 50, maar je kunt gaan van 20 tot 50 stappen.</li>
+        <li><strong>Negatieve Prompt:</strong> Wil je iets vermijden? Je kunt AiCasso vertellen wat je <em>niet</em> wilt opnemen. Maar maak je geen zorgen, als je dit leeg laat, zal AiCasso zich gewoon richten op wat je wel wilt.</li>
+        <li><strong>Verlichtingsrichting:</strong> Je kunt specificeren waar het licht vandaan moet komen—links, rechts, boven, onder, of zelfs helemaal geen licht. Standaard komt het licht van links.</li>
+        <li><strong>Guidance Scale:</strong> Dit helpt AiCasso om zich aan je beschrijving te houden. De schaal loopt van 1 tot 20, waarbij 7 de standaard is. Hoe hoger het nummer, hoe meer AiCasso zich aan je prompt houdt.</li>
+        <li><strong>High-Resolution Scale:</strong> Wil je dat je afbeelding opvalt? Dit regelt de helderheid. De standaard is 1.5, maar je kunt het instellen van 1.0 tot 2.0 voor een scherpere afbeelding.</li>
+        <li><strong>Denoise Levels:</strong> Er zijn twee niveaus—lage resolutie en hoge resolutie. Deze regelen hoe glad of gedetailleerd de uiteindelijke afbeelding eruitziet. Je kunt het lage resolutie denoise-niveau instellen tussen 0.0 en 1.0 (standaard is 0.9) en de hoge resolutie tussen 0.0 en 1.0 (standaard is 0.5).</li>
+        <li><strong>Aantal Stappen:</strong> Dit is hoeveel stappen AiCasso neemt om je afbeelding te verfijnen. De standaard is 50, maar je kunt van 20 tot 50 stappen gaan.</li>
     </ul>
 
-    <p>Vergeet niet, deze aanpassingen zijn helemaal optioneel! AiCasso is behoorlijk goed in het begrijpen van wat je wilt, dus beschrijf je visie gewoon in je eigen woorden, en het zal de magie doen. Geen noodzaak om perfect te zijn met grammatica of details—heb gewoon plezier en kijk wat je kunt creëren!</p>
+    <p>Vergeet niet, deze aanpassingen zijn volledig optioneel! AiCasso is behoorlijk goed in het begrijpen van wat je wilt, dus beschrijf gewoon je visie in je eigen woorden, en het zal de magie doen. Geen nood om perfect te zijn met grammatica of details—heb gewoon plezier en kijk wat je kunt creëren!</p>
 
 </body>
 </html>

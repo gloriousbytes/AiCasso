@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tips voor Beeldgeleide Bewerking</title>
+    <title>Tips voor Beeldgestuurd Bewerken</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,70 +31,64 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img {
+            width: 100%;
             height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+            max-width: 100%;
         }
     </style>
 </head>
 
 <body>
 
-    <h2>Tips voor Beeldgeleide Bewerking</h2>
-    <p>Met de functie Beeldgeleide Bewerking in AiCasso kun je een afbeelding wijzigen door simpelweg te beschrijven wat je wilt. Of je nu de stijl wilt veranderen, de sfeer wilt aanpassen, of bepaalde delen wilt wijzigen, AiCasso regelt het voor je zonder dat je handmatig iets hoeft te selecteren of te schilderen.</p>
+    <h2>Tips voor Beeldgestuurd Bewerken</h2>
+    <p>De functie Beeldgestuurd Bewerken in AiCasso stelt je in staat om wijzigingen aan een afbeelding aan te brengen door simpelweg te beschrijven wat je wilt. Of je nu de stijl wilt veranderen, de sfeer wilt aanpassen of bepaalde delen wilt bijstellen, AiCasso regelt het voor je zonder dat je handmatig iets hoeft te selecteren of te schilderen.</p>
 
-    <h3>Hoe Het Werkt:</h3>
+    <h3>Hoe het Werkt:</h3>
 
     <div class="example">
         <strong>Startafbeelding:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CpnI7HqIAzcrMjmQb5_25yJilhxraZ80/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/startingimage1.jpg" alt="Startafbeelding">
         </div>
     </div>
 
     <div class="example">
-        <strong>Beschrijf Je Wijziging:</strong>
+        <strong>Beschrijf je Wijziging:</strong>
         <p>Typ gewoon wat je wilt veranderen, en AiCasso past die wijzigingen toe op de afbeelding.</p>
     </div>
 
-    <h3>Voorbeeldbewerkingen:</h3>
+    <h3>Voorbeeld Bewerking:</h3>
 
     <div class="example">
         <strong>Voorbeeld 1:</strong> "Maak haar blond."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI2vE6dOcFxInjqzq1_mVru_nLCGFTaS/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/makeherblonde.jpg" alt="Voorbeeld Maak haar blond">
         </div>
-        <p><em>Resultaat:</em> AiCasso verandert de haarkleur van de persoon naar blond.</p>
+        <p><em>Resultaat:</em> AiCasso zal de haarkleur van de persoon naar blond veranderen.</p>
     </div>
 
     <div class="example">
-        <strong>Voorbeeld 2:</strong> "Maak het nacht, gebruik 50 stappen, een begeleidingsschaal van 1, en een beeldbegeleidingsschaal van 1."
+        <strong>Voorbeeld 2:</strong> "Maak het nacht, gebruik 50 stappen, een richtschaal van 1, en een beeldrichtschaal van 1."
         <div class="example">
-            <strong>Invoerafbeelding:</strong>
+            <strong>Ingangsafbeelding:</strong>
             <div class="result">
-                <iframe src="https://drive.google.com/file/d/1PlJNkwIWrK3Uu_bq38te_dtqp2XBkW_e/preview"></iframe>
+                <img src="../../images/tutorials/imageguidededit/example2input.jpg" alt="Voorbeeld 2 Ingangsafbeelding">
             </div>
         </div>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11mjTtcBdI8T0cMcfQz6HEJ79xOhw81VG/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/example2result.jpg" alt="Voorbeeld 2 Resultaatafbeelding">
         </div>
-        <p><em>Resultaat:</em> De afbeelding wordt omgezet in een nachtscène met specifieke aanpassingen op basis van de door jou verstrekte details.</p>
+        <p><em>Resultaat:</em> De afbeelding zal worden getransformeerd in een nachtelijke scène met specifieke aanpassingen op basis van de details die je hebt opgegeven.</p>
     </div>
 
     <h3>Aanvullende Opties</h3>
     <p>Je kunt je bewerkingen verfijnen met deze optionele instellingen:</p>
 
     <ul>
-        <li><strong>Beeldbegeleidingsschaal:</strong> Dit bepaalt hoe dicht de nieuwe afbeelding bij het origineel blijft. Een lagere waarde betekent subtielere veranderingen, terwijl een hogere waarde ze meer laat opvallen. Je kunt dit instellen tussen 1 en 8.</li>
-        <li><strong>Stappen:</strong> Dit bepaalt hoeveel verfijningen de tool zal maken. Meer stappen betekenen een vloeiender en gedetailleerder eindbeeld. Je kunt kiezen tussen 1 en 50 stappen, met 20 als standaard.</li>
-        <li><strong>Begeleidingsschaal:</strong> Dit beïnvloedt hoe nauw de AI je beschrijving volgt. Een lagere schaal geeft de AI meer creatieve vrijheid, terwijl een hogere schaal ervoor zorgt dat het nauwkeurig volgt wat je hebt gezegd. Je kunt dit aanpassen tussen 1 en 20.</li>
+        <li><strong>Beeldrichtschaal:</strong> Dit bepaalt hoe nauwkeurig de nieuwe afbeelding aan de originele afbeelding vastzit. Een lagere waarde betekent dat de wijzigingen subtieler zijn, terwijl een hogere waarde ze meer laat opvallen. Je kunt dit instellen tussen 1 en 8.</li>
+        <li><strong>Stappen:</strong> Dit stelt in hoeveel verfijningen het hulpmiddel zal maken. Meer stappen betekenen een soepelere en gedetailleerdere eindafbeelding. Je kunt kiezen tussen 1 en 50 stappen, met 20 als standaard.</li>
+        <li><strong>Richtschaal:</strong> Dit beïnvloedt hoe nauwkeurig de AI je beschrijving volgt. Een lagere schaal geeft de AI meer creatieve vrijheid, terwijl een hogere schaal ervoor zorgt dat deze nauwkeuriger blijft bij wat je hebt gezegd. Je kunt dit aanpassen tussen 1 en 20.</li>
     </ul>
 
 </body>

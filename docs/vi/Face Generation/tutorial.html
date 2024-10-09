@@ -6,89 +6,90 @@
     <title>Hướng Dẫn Tính Năng Tạo Khuôn Mặt</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Đảm bảo hình ảnh không tràn ra ngoài khung */
+    height: auto;     /* Giữ tỷ lệ khung hình */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
     <h2>Hướng Dẫn Sử Dụng Tính Năng Tạo Khuôn Mặt</h2>
-    <p>Tính năng Tạo Khuôn Mặt trong AiCasso vô cùng đa năng! Nó cho phép bạn tạo ra những hình ảnh tuyệt đẹp bằng cách kết hợp một khuôn mặt cụ thể vào các nhân vật hoặc phong cách khác nhau. Cho dù bạn đang tưởng tượng một hiệp sĩ, samurai, hay bất kỳ nhân vật nào khác, AiCasso sử dụng khuôn mặt đầu vào để tạo ra một hình ảnh với khuôn mặt đó tích hợp vào thiết kế yêu cầu.</p>
+    <p>Tính năng Tạo Khuôn Mặt trong AiCasso cực kỳ linh hoạt! Nó cho phép bạn tạo ra những hình ảnh tuyệt đẹp bằng cách kết hợp một khuôn mặt cụ thể vào nhiều nhân vật hoặc phong cách khác nhau. Dù bạn đang tưởng tượng một hiệp sĩ, samurai, hay bất kỳ nhân vật nào khác, AiCasso sẽ sử dụng khuôn mặt đầu vào để tạo ra một hình ảnh với khuôn mặt đó được tích hợp vào thiết kế yêu cầu.</p>
 
     <h3>Cách Hoạt Động:</h3>
     
-    <div class="example">
-        <strong>Hình Ảnh Đầu Vào:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
-        </div>
-        <strong>Lời Nhắc 1:</strong>
-        <p>"Một hiệp sĩ thực tế, sử dụng tối đa Tỷ Lệ"</p>
-        <strong>Kết Quả 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
-        </div>
-        <strong>Lời Nhắc 2:</strong>
-        <p>"Sử dụng phong cách chibi và tạo một samurai, sử dụng các giá trị mặc định"</p>
-        <strong>Kết Quả 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
-        </div>
-        <strong>Lời Nhắc 3:</strong>
-        <p>"Một samurai, sử dụng 31 bước khử nhiễu, và phong cách anime"</p>
-        <strong>Kết Quả 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Hình Ảnh Đầu Vào:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/input.jpg" alt="Hình Ảnh Đầu Vào">
     </div>
+    <strong>Yêu Cầu 1:</strong>
+    <p>"Một hiệp sĩ thực tế, sử dụng tỷ lệ tối đa"</p>
+    <strong>Kết Quả 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="Hiệp Sĩ Thực Tế">
+    </div>
+    <strong>Yêu Cầu 2:</strong>
+    <p>"Sử dụng phong cách chibi và tạo một samurai, sử dụng giá trị mặc định"</p>
+    <strong>Kết Quả 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="Samurai Chibi">
+    </div>
+    <strong>Yêu Cầu 3:</strong>
+    <p>"Một samurai, sử dụng 31 bước khử nhiễu, và phong cách anime"</p>
+    <strong>Kết Quả 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="Samurai Anime">
+    </div>
+</div>
 
-    <h3>Tham Số Tùy Chọn</h3>
-    <p>Nếu bạn muốn thêm một chút cá tính hoặc kiểm soát hình ảnh được tạo ra, đây là một số tùy chọn bạn có thể điều chỉnh:</p>
+    <h3>Các Tham Số Tùy Chọn</h3>
+    <p>Nếu bạn muốn thêm một chút cá tính hoặc kiểm soát vào những hình ảnh được tạo ra, đây là một số tùy chọn bạn có thể điều chỉnh:</p>
 
     <ul>
-        <li><strong>Lời Nhắc Tiêu Cực:</strong> Đây là nơi bạn có thể nói với AiCasso những gì bạn <em>không</em> muốn thấy trong hình ảnh. Nếu bạn để trống, AiCasso sẽ chỉ tập trung vào lời nhắc tích cực.</li>
-        <li><strong>Số Bước Khử Nhiễu:</strong> Điều này kiểm soát độ mượt mà và tinh tế của hình ảnh. Bạn có thể chọn giữa 21, 31, hoặc 41 bước, với 41 là mặc định. Nhiều bước hơn có nghĩa là hình ảnh sạch hơn, tinh tế hơn.</li>
-        <li><strong>Tỷ Lệ Hướng Dẫn:</strong> Điều này giúp hình ảnh giữ đúng với mô tả của bạn. Tỷ lệ dao động từ 1 đến 20, với 10 là mặc định. Số cao hơn có nghĩa là AiCasso sẽ bám sát hơn với lời nhắc của bạn.</li>
-        <li><strong>Tỷ Lệ S:</strong> Điều này liên quan đến cấu trúc của khuôn mặt. Nó hơi kỹ thuật, nhưng về cơ bản nó điều chỉnh trọng lượng của cấu trúc khuôn mặt. Mặc định là 1.0, và bạn có thể điều chỉnh từ 0.0 đến 2.0.</li>
-        <li><strong>Phong Cách:</strong> Muốn tạo cho hình ảnh của bạn một phong cách cụ thể? Bạn có thể chọn một phong cách như truyện tranh, chibi, 3D, anime, hoặc thực tế. Thực tế là mặc định, nhưng hãy thoải mái sáng tạo!</li>
+        <li><strong>Yêu Cầu Tiêu Cực:</strong> Đây là nơi bạn có thể cho AiCasso biết những gì bạn <em>không</em> muốn thấy trong hình ảnh. Nếu bạn để trống, AiCasso sẽ chỉ tập trung vào yêu cầu tích cực.</li>
+        <li><strong>Số Bước Khử Nhiễu:</strong> Điều này kiểm soát độ mượt mà và tinh tế của hình ảnh. Bạn có thể chọn giữa 21, 31 hoặc 41 bước, với 41 là mặc định. Nhiều bước hơn có nghĩa là hình ảnh sẽ sạch hơn, tinh tế hơn.</li>
+        <li><strong>Tỷ Lệ Hướng Dẫn:</strong> Điều này giúp hình ảnh giữ đúng với mô tả của bạn. Tỷ lệ dao động từ 1 đến 20, với 10 là mặc định. Số lớn hơn có nghĩa là AiCasso sẽ bám sát yêu cầu của bạn hơn.</li>
+        <li><strong>Tỷ Lệ S:</strong> Điều này liên quan đến cấu trúc của khuôn mặt. Nó hơi kỹ thuật, nhưng về cơ bản nó điều chỉnh trọng số của cấu trúc khuôn mặt. Mặc định là 1.0, và bạn có thể điều chỉnh từ 0.0 đến 2.0.</li>
+        <li><strong>Phong Cách:</strong> Bạn muốn tạo cho hình ảnh của mình một phong cách cụ thể? Bạn có thể chọn một phong cách như truyện tranh, chibi, 3D, anime, hoặc thực tế. Thực tế là mặc định, nhưng hãy thoải mái sáng tạo!</li>
     </ul>
 
-    <p>Và hãy nhớ, AiCasso khá dễ chịu. Bạn không cần phải là một chuyên gia ngữ pháp hay phải hoàn hảo từng chi tiết. Chỉ cần mô tả những gì bạn muốn bằng từ ngữ của riêng bạn, và AiCasso sẽ lo phần còn lại. Chúc bạn sáng tạo vui vẻ!</p>
+    <p>Và hãy nhớ, AiCasso rất dễ tính. Bạn không cần phải là một bậc thầy ngữ pháp hay làm mọi chi tiết hoàn hảo. Chỉ cần mô tả những gì bạn muốn bằng từ ngữ của riêng bạn, và AiCasso sẽ lo phần còn lại. Chúc bạn vui vẻ sáng tạo!</p>
 
 </body>
 </html>

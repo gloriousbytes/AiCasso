@@ -31,16 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img {
+            width: 100%;
+            max-width: 400px;
             height: auto;
         }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        @media (max-width: 768px) {
+            .result img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -48,7 +48,7 @@
 <body>
 
     <h2>Guide til at Bruge Generer Video Funktion</h2>
-    <p>Generer Video-funktionen i AiCasso lader dig skabe videoer ved blot at beskrive, hvad du ønsker at se. Skriv din idé, og AiCasso vil bringe den til live i en video!</p>
+    <p>Generer Video-funktionen i AiCasso lader dig skabe videoer ved blot at beskrive, hvad du ønsker at se. Skriv blot din idé, og AiCasso vil bringe den til live i en video!</p>
 
     <h3>Sådan Fungerer Det:</h3>
     
@@ -57,25 +57,28 @@
         <p>"En 3D-animeret hanekam i et felt helt alene, spisende og glad. Lav det til en portrætvideo med 50 støjreduceringstrin."</p>
         <strong>Resultat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/animated3d.gif" alt="Animeret 3D Hane">
+            <noscript><img src="../../images/tutorials/texttovideo/animated3d.gif" alt="Animeret 3D Hane"></noscript>
         </div>
     </div>
 
     <div class="example">
         <strong>Prompt:</strong>
-        <p>"En tegneserie af en hane i et felt i landskabsdimensioner."</p>
+        <p>"En tegneserie af en hane på et felt i landskabsdimensioner."</p>
         <strong>Resultat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/cartoon.gif" alt="Tegneserie Hane">
+            <noscript><img src="../../images/tutorials/texttovideo/cartoon.gif" alt="Tegneserie Hane"></noscript>
         </div>
     </div>
 
     <div class="example">
         <strong>Prompt:</strong>
-        <p>"En hane i et felt."</p>
+        <p>"En hane på et felt."</p>
         <strong>Resultat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/default.gif" alt="Standard Hane">
+            <noscript><img src="../../images/tutorials/texttovideo/default.gif" alt="Standard Hane"></noscript>
         </div>
     </div>
 
@@ -84,7 +87,8 @@
         <p>"En hane, der er i feltet helt alene. Giv det en naturlig følelse."</p>
         <strong>Resultat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/natural.gif" alt="Naturlig Hane">
+            <noscript><img src="../../images/tutorials/texttovideo/natural.gif" alt="Naturlig Hane"></noscript>
         </div>
     </div>
 
@@ -95,14 +99,14 @@
         <li><strong>Antal Rammer:</strong> Vælg, hvor mange rammer (enkeltbilleder) din video skal have. Du kan gå op til 25 rammer, med 16 som standard.</li>
         <li><strong>Antal Støjreduceringstrin:</strong> Dette styrer, hvor glat din video ser ud. Flere trin betyder glattere videoer. Du kan indstille op til 50 trin, med 20 som standard.</li>
         <li><strong>Guidance Scale:</strong> Dette hjælper videoen med at holde sig tæt på din beskrivelse. Jo højere tallet er, jo mere følger det din prompt. Området er 0 til 8, med 8 som standard.</li>
-        <li><strong>Clip Skip:</strong> Spring visse lag over for en anden videostil. Som standard springes der ikke over lag, men du kan springe op til 2 over.</li>
+        <li><strong>Clip Skip:</strong> Spring visse lag over for en anden videostil. Som standard springes ingen lag over, men du kan springe op til 2 over.</li>
         <li><strong>Upscale Bredde og Højde:</strong> Du kan gøre din video større ved at justere opløsningen. Standard er 1024x1024 pixels, men du kan justere dette for at passe til dine behov.</li>
         <li><strong>Upscale Styrke:</strong> Dette ændrer, hvor meget din video justeres, når den opskaleres. Standard er 1, men du kan justere det for at se flere forskelle.</li>
         <li><strong>Upscale Guidance Scale:</strong> Dette guider opskaleringprocessen, med et område fra 0 til 8, og en standard på 8.</li>
         <li><strong>Upscale Inference Steps:</strong> Antallet af trin taget for at opskalere videoen. Flere trin giver en glattere opskalering, med et maksimum på 50 og en standard på 20.</li>
-        <li><strong>Forbedret Sampling:</strong> Ønsker du en mere raffineret video? Tænd for dette. Det er slukket som standard.</li>
+        <li><strong>Forbedret Sampling:</strong> Vil du have en mere raffineret video? Tænd for dette. Det er slukket som standard.</li>
         <li><strong>Forbedret Sampling Seed:</strong> Brug dette til at generere den samme video hver gang med forbedret sampling. Det er valgfrit og slukket som standard.</li>
-        <li><strong>Rammer pr. Sekund (FPS):</strong> Indstil hastigheden på din video. Standard er 16 FPS, men du kan justere det op til 16.</li>
+        <li><strong>Rammer per Sekund (FPS):</strong> Indstil hastigheden på din video. Standard er 16 FPS, men du kan justere det op til 16.</li>
         <li><strong>Video Model:</strong> Vælg stilen på din video. Muligheder inkluderer:
             <ul>
                 <li><strong>Standard:</strong> En standard videomodel.</li>

@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -41,26 +41,26 @@
 <body>
 
     <h2>Przewodnik po korzystaniu z funkcji Zastąp Tło</h2>
-    <p>Funkcja Zastąp Tło w AiCasso jest idealna, gdy chcesz wymienić tło w swoim obrazie. Niezależnie od tego, czy chcesz po prostu usunąć tło, czy zastąpić je czymś innym, AiCasso sprawia, że jest to bardzo proste. Nie musisz martwić się o techniczne szczegóły — wystarczy opisać, co chcesz, a AiCasso zrobi resztę.</p>
+    <p>Funkcja Zastąp Tło w AiCasso jest idealna, gdy chcesz wymienić tło w swoim obrazie. Niezależnie od tego, czy chcesz po prostu usunąć tło, czy zastąpić je czymś innym, AiCasso sprawia, że jest to niezwykle proste. Nie musisz się martwić o techniczne szczegóły — po prostu opisz, co chcesz, a AiCasso zrobi resztę.</p>
 
     <h3>Jak to działa:</h3>
     
     <div class="example">
         <strong>Obraz wejściowy:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Obraz wejściowy" loading="lazy">
         </div>
-        <strong>Podpowiedź 1:</strong>
+        <strong>Zapytanie 1:</strong>
         <p>"Usuń tło"</p>
         <strong>Wynik 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Wynik usunięcia tła" loading="lazy">
         </div>
-        <strong>Podpowiedź 2:</strong>
-        <p>"Zastąp tło lasem, nie tylko je usuń, z wyłączonym matowaniem alfa. Użyj progu pierwszego planu 240, progu tła 20 i rozmiaru erozji 5 dla matowania alfa."</p>
+        <strong>Zapytanie 2:</strong>
+        <p>"Zastąp tło lasem, a nie tylko je usuń, z wyłączonym matowaniem alfa. Użyj progu pierwszego planu 240, progu tła 20 i rozmiaru erozji 5 dla matowania alfa."</p>
         <strong>Wynik 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Zastąpione tło lasem" loading="lazy">
         </div>
     </div>
 
@@ -68,14 +68,14 @@
     <p>Jeśli chcesz dodać osobisty akcent lub dostosować wyniki, oto kilka opcji, z którymi możesz eksperymentować:</p>
 
     <ul>
-        <li><strong>Tylko usuń:</strong> Jeśli chcesz tylko usunąć tło i nie zastępować go niczym, to jest twoja opcja. To jak naciśnięcie przycisku czystego ekranu.</li>
-        <li><strong>Matowanie alfa:</strong> To elegancki sposób na powiedzenie "wtopić krawędzie". Kiedy to włączysz, pomoże to sprawić, że krawędzie twojego obiektu będą wyglądać na gładsze i mniej wycięte. Domyślnie jest wyłączone.</li>
-        <li><strong>Próg pierwszego planu matowania alfa:</strong> To kontroluje, ile z głównego obiektu (jak osoba) pozostaje widoczne podczas używania matowania alfa. Domyślnie wynosi 240, a możesz go dostosować, aby krawędzie były bardziej miękkie lub ostrzejsze.</li>
+        <li><strong>Tylko usuń:</strong> Jeśli chcesz tylko usunąć tło i nie zastępować go niczym, to jest twoja opcja. To jak naciśnięcie przycisku czystej kartki.</li>
+        <li><strong>Matowanie alfa:</strong> To elegancki sposób na powiedzenie "wtopić krawędzie". Gdy to włączysz, pomoże to sprawić, że krawędzie twojego obiektu będą wyglądać na gładsze i mniej wycięte. Domyślnie jest wyłączone.</li>
+        <li><strong>Próg pierwszego planu matowania alfa:</strong> To kontroluje, ile z głównego obiektu (takiego jak osoba) pozostaje widoczne podczas używania matowania alfa. Domyślnie wynosi 240, a ty możesz go dostosować, aby krawędzie były bardziej miękkie lub ostrzejsze.</li>
         <li><strong>Próg tła matowania alfa:</strong> To działa tak samo jak próg pierwszego planu, ale dla tła. Domyślnie wynosi 20 i chodzi o uzyskanie idealnego połączenia z nowym tłem.</li>
         <li><strong>Rozmiar erozji matowania alfa:</strong> To pomaga nieco zmniejszyć krawędzie, aby wycięcie wyglądało na czystsze. Domyślny rozmiar to 5, ale możesz go dostosować, aby uzyskać dokładny wygląd, którego chcesz.</li>
     </ul>
 
-    <p>Pamiętaj, nie musisz się stresować, aby wszystko było idealne. AiCasso jest całkiem dobry w rozumieniu, co masz na myśli, więc śmiało bądź tak swobodny lub szczegółowy, jak chcesz. Miłego tworzenia!</p>
+    <p>Pamiętaj, że nie musisz się stresować, aby wszystko było idealne. AiCasso jest całkiem dobry w rozumieniu, co masz na myśli, więc śmiało bądź tak swobodny lub szczegółowy, jak chcesz. Miłego tworzenia!</p>
 
 </body>
 </html>

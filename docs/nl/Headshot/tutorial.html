@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -53,21 +54,21 @@
     <h3>Hoe het Werkt:</h3>
     
     <div class="example">
-        <strong>Invoerafbeelding:</strong>
+        <strong>Invoefbeeld:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+            <img src="../../images/tutorials/headshot/input.jpg" alt="Invoefbeeld">
         </div>
         <strong>Prompt 1:</strong>
         <p>"Een man in de sneeuw"</p>
         <strong>Resultaat 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+            <img src="../../images/tutorials/headshot/maninsnow.jpg" alt="Man in de Sneeuw Resultaat">
         </div>
         <strong>Prompt 2:</strong>
-        <p>"Een krijger in het bos, gebruik een middelhoge schaal zoals 78% hiervan"</p>
+        <p>"Een krijger in het bos, gebruik een gemiddelde hoge schaal zoals 78% van dit"</p>
         <strong>Resultaat 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+            <img src="../../images/tutorials/headshot/warrior.jpg" alt="Krijger in het Bos Resultaat">
         </div>
     </div>
 
@@ -75,13 +76,13 @@
     <p>Wil je wat meer flair of controle toevoegen aan je gegenereerde headshots? Hier zijn enkele coole opties die je kunt aanpassen:</p>
 
     <ul>
-        <li><strong>Negatieve Prompt:</strong> Hier kun je AiCasso vertellen wat je <em>niet</em> in de afbeelding wilt zien. Bijvoorbeeld, als je geen achtergrond elementen wilt, kun je dat hier vermelden. Als je dit leeg laat, zal AiCasso zich alleen richten op wat je wel wilt.</li>
-        <li><strong>Aantal Ontstoringsstappen:</strong> Dit bepaalt hoe glad en verfijnd het gezicht eruitziet. Je kunt kiezen tussen 21, 31 of 41 stappen, waarbij 41 de standaard is. Meer stappen betekenen meestal een schoner, gepolijster resultaat.</li>
-        <li><strong>Leidingschaal:</strong> Dit is als het geven van een extra duwtje aan AiCasso om trouw te blijven aan je beschrijving. De schaal varieert van 1 tot 20, met 10 als standaard. Hogere getallen betekenen dat AiCasso dichter bij je beschrijving blijft.</li>
-        <li><strong>S Schaal:</strong> Dit past de structuur van het gezicht aan. Het is een beetje technisch, maar het komt erop neer dat het de sterkte of zachtheid van de gelaatstrekken aanpast. De standaard is 1.0, en je kunt variëren van 0.0 tot 2.0, afhankelijk van de look die je wilt.</li>
+        <li><strong>Negatieve Prompt:</strong> Hier kun je AiCasso vertellen wat je <em>niet</em> wilt zien in de afbeelding. Bijvoorbeeld, als je geen achtergrond elementen wilt, kun je dat hier vermelden. Als je dit leeg laat, zal AiCasso zich gewoon richten op wat je wel wilt.</li>
+        <li><strong>Aantal Denoising Stappen:</strong> Dit bepaalt hoe soepel en verfijnd het gezicht eruitziet. Je kunt kiezen tussen 21, 31 of 41 stappen, waarbij 41 de standaard is. Meer stappen betekenen meestal een schoner, meer gepolijst resultaat.</li>
+        <li><strong>Guidance Scale:</strong> Dit is als het geven van een extra duwtje aan AiCasso om trouw te blijven aan jouw beschrijving. De schaal loopt van 1 tot 20, met 10 als standaard. Hogere nummers betekenen dat AiCasso dichter bij jouw beschrijving blijft.</li>
+        <li><strong>S-schaal:</strong> Dit past de structuur van het gezicht aan. Het is een beetje technisch, maar in wezen past het aan hoe sterk of zacht de gelaatskenmerken zijn. De standaard is 1.0, en je kunt variëren van 0.0 tot 2.0, afhankelijk van de uitstraling die je wilt.</li>
     </ul>
 
-    <p>Vergeet niet, deze parameters zijn volledig optioneel. AiCasso is vrij vergevingsgezind, dus je hoeft niet super precies of grammaticaal correct te zijn. Beschrijf gewoon wat je wilt in je eigen woorden, en AiCasso doet de magie. Veel plezier met het maken van je headshots!</p>
+    <p>Vergeet niet, deze parameters zijn volledig optioneel. AiCasso is vrij vergevingsgezind, dus je hoeft niet super precies of grammaticaal correct te zijn. Beschrijf gewoon wat je wilt in je eigen woorden, en AiCasso zal de magie doen. Veel plezier met het creëren van je headshots!</p>
 
 </body>
 </html>

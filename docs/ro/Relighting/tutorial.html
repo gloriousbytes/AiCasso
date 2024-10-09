@@ -31,9 +31,12 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
         }
         .iframe-container {
             display: flex;
@@ -48,20 +51,20 @@
 <body>
 
     <h2>Ghid pentru Utilizarea Funcției de Reiluminare</h2>
-    <p>Funcția de Reiluminare din AiCasso este super tare! Îți permite să schimbi iluminarea din imaginile tale cu doar câteva cuvinte. Vrei soarele în spate sau o lumină moale din lateral? Nicio problemă! Doar descrie asta, iar AiCasso se va ocupa de restul.</p>
+    <p>Funcția de Reiluminare din AiCasso este super tare! Îți permite să schimbi iluminarea în imaginile tale cu doar câteva cuvinte. Vrei soarele în spate sau o lumină moale din lateral? Nicio problemă! Doar descrie-l, iar AiCasso se va ocupa de restul.</p>
 
     <h3>Cum Funcționează:</h3>
     
     <div class="example">
         <strong>Imagine de Intrare:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+            <img src="../../images/tutorials/relighting/input.jpg" alt="Imagine de Intrare" loading="lazy">
         </div>
         <strong>Prompt Folosit:</strong>
         <p>"Fă să fie soarele în spate"</p>
         <strong>Rezultatul:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+            <img src="../../images/tutorials/relighting/result.jpg" alt="Rezultatul Reiluminării" loading="lazy">
         </div>
     </div>
 
@@ -71,10 +74,10 @@
     <ul>
         <li><strong>Prompt Negativ:</strong> Vrei să eviți ceva? Poți spune AiCasso ce <em>nu</em> vrei să includă. Dar nu-ți face griji, dacă lași acest câmp gol, AiCasso se va concentra doar pe ceea ce vrei.</li>
         <li><strong>Direcția Luminii:</strong> Poți specifica de unde ar trebui să vină lumina—stânga, dreapta, sus, jos sau chiar deloc. În mod implicit, lumina vine din stânga.</li>
-        <li><strong>Scara de Ghidare:</strong> Aceasta ajută AiCasso să se țină de descrierea ta. Scara variază de la 1 la 20, cu 7 fiind implicit. Cu cât numărul este mai mare, cu atât AiCasso se va ține mai mult de promptul tău.</li>
-        <li><strong>Scara de Înaltă Rezoluție:</strong> Vrei ca imaginea ta să iasă în evidență? Aceasta controlează claritatea. Implicit este 1.5, dar poți seta între 1.0 și 2.0 pentru o imagine mai clară.</li>
-        <li><strong>Leveluri de Denoise:</strong> Există două niveluri—rezoluție joasă și rezoluție înaltă. Acestea controlează cât de netedă sau detaliată arată imaginea finală. Poți seta nivelul de denoise pentru rezoluție joasă între 0.0 și 1.0 (implicit este 0.9) și pentru rezoluție înaltă între 0.0 și 1.0 (implicit este 0.5).</li>
-        <li><strong>Numărul de Pași:</strong> Aceasta este numărul de pași pe care AiCasso îi face pentru a-ți rafina imaginea. Implicit este 50, dar poți alege între 20 și 50 de pași.</li>
+        <li><strong>Scara de Ghidare:</strong> Aceasta ajută AiCasso să se țină de descrierea ta. Scara variază de la 1 la 20, cu 7 fiind valoarea implicită. Cu cât numărul este mai mare, cu atât AiCasso se va ține mai mult de promptul tău.</li>
+        <li><strong>Scara de Înaltă Rezoluție:</strong> Vrei ca imaginea ta să iasă în evidență? Aceasta controlează claritatea. Valoarea implicită este 1.5, dar poți seta între 1.0 și 2.0 pentru o imagine mai clară.</li>
+        <li><strong>Niveluri de Reducere a Zgomotului:</strong> Există două niveluri—rezoluție joasă și rezoluție înaltă. Acestea controlează cât de netedă sau detaliată arată imaginea finală. Poți seta nivelul de reducere a zgomotului pentru rezoluție joasă între 0.0 și 1.0 (valoarea implicită este 0.9) și pentru rezoluție înaltă între 0.0 și 1.0 (valoarea implicită este 0.5).</li>
+        <li><strong>Numărul de Pași:</strong> Aceasta este numărul de pași pe care AiCasso îi face pentru a-ți rafina imaginea. Valoarea implicită este 50, dar poți alege între 20 și 50 de pași.</li>
     </ul>
 
     <p>Ține minte, aceste ajustări sunt complet opționale! AiCasso este destul de bun la a înțelege ce vrei, așa că doar descrie-ți viziunea în cuvintele tale și va face magia. Nu trebuie să fii perfect cu gramatica sau detaliile—doar distrează-te și vezi ce poți crea!</p>

@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -48,38 +49,38 @@
 <body>
 
     <h2>Hướng Dẫn Sử Dụng Tính Năng Thế Hệ Thời Trang</h2>
-    <p>Tính năng Thế Hệ Thời Trang trong AiCasso cho phép bạn mặc đồ cho ai đó với một bộ trang phục cụ thể, chẳng hạn như áo sơ mi, váy, hoặc quần. Chỉ cần mô tả những gì bạn muốn, và xem AiCasso áp dụng trang phục đó cho người trong hình ảnh.</p>
+    <p>Tính năng Thế Hệ Thời Trang trong AiCasso cho phép bạn mặc cho ai đó một bộ trang phục cụ thể, chẳng hạn như áo sơ mi, váy hoặc quần. Chỉ cần mô tả những gì bạn muốn, và xem AiCasso áp dụng món đồ quần áo lên người trong hình ảnh.</p>
 
-    <h3>Cách Hoạt Động:</h3>
+    <h3>Cách Thức Hoạt Động:</h3>
     
     <div class="example">
-        <strong>Đầu Vào 1 - Hình Ảnh Người:</strong>
+        <strong>Đầu vào 1 - Hình Ảnh Người:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 1.jpg" alt="Hình Ảnh Người">
         </div>
-        <strong>Đầu Vào 2 - Món Đồ Thời Trang:</strong>
+        <strong>Đầu vào 2 - Món Đồ Quần Áo:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 2.jpg" alt="Món Đồ Quần Áo">
         </div>
-        <strong>Lời Nhắc:</strong>
+        <strong>Yêu Cầu:</strong>
         <p>"Chàng trai mặc áo sơ mi"</p>
         <strong>Kết Quả:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+            <img src="../../images/tutorials/fashion/result.jpg" alt="Hình Ảnh Kết Quả">
         </div>
     </div>
 
-    <h3>Tham Số Tùy Chọn</h3>
-    <p>Nếu bạn muốn thêm phong cách của riêng mình hoặc đảm bảo kết quả hoàn hảo, bạn có thể điều chỉnh các cài đặt sau:</p>
+    <h3>Các Tham Số Tùy Chọn</h3>
+    <p>Nếu bạn muốn thêm phong cách riêng của mình hoặc đảm bảo rằng kết quả là chính xác, bạn có thể điều chỉnh các cài đặt sau:</p>
 
     <ul>
-        <li><strong>Lời Nhắc Tiêu Cực:</strong> Nếu có điều gì bạn <em>không</em> muốn trong hình ảnh, chỉ cần đề cập ở đây. Để trống nếu bạn hài lòng với bất kỳ điều gì AiCasso tạo ra.</li>
-        <li><strong>Loại Trang Phục:</strong> Cho AiCasso biết bạn đang tập trung vào <em>phần trên cơ thể</em>, <em>phần dưới cơ thể</em>, hay <em>váy</em>. Nếu bạn không chắc chắn, mặc định là phần trên cơ thể.</li>
-        <li><strong>Số Bước Khử Nhiễu:</strong> Điều này quyết định hình ảnh trông mượt mà và tinh tế như thế nào. Bạn có thể chọn giữa 21, 31, hoặc 41 bước, với 21 là mặc định. Nhiều bước thường có nghĩa là một cái nhìn tinh tế hơn.</li>
-        <li><strong>Thang Hướng Dẫn:</strong> Điều này giúp hình ảnh bám sát mô tả của bạn. Bạn có thể đặt từ 1 đến 20, với 7 là mặc định. Số cao hơn có nghĩa là AiCasso sẽ theo sát lời nhắc của bạn hơn.</li>
+        <li><strong>Yêu Cầu Tiêu Cực:</strong> Nếu có điều gì đó bạn <em>không</em> muốn có trong hình ảnh, chỉ cần đề cập ở đây. Để trống nếu bạn không quan tâm đến bất cứ điều gì mà AiCasso tạo ra.</li>
+        <li><strong>Loại Vải:</strong> Hãy cho AiCasso biết bạn đang tập trung vào <em>phần trên cơ thể</em>, <em>phần dưới cơ thể</em>, hoặc <em>váy</em>. Nếu bạn không chắc chắn, nó sẽ mặc định là phần trên cơ thể.</li>
+        <li><strong>Số Bước Giảm Nhiễu:</strong> Điều này quyết định hình ảnh trông mượt mà và tinh tế như thế nào. Bạn có thể chọn giữa 21, 31 hoặc 41 bước, với 21 là mặc định. Nhiều bước hơn thường có nghĩa là hình ảnh sẽ tinh tế hơn.</li>
+        <li><strong>Tỷ Lệ Hướng Dẫn:</strong> Điều này giúp hình ảnh bám sát vào mô tả của bạn. Bạn có thể đặt từ 1 đến 20, với 7 là mặc định. Số cao hơn có nghĩa là AiCasso sẽ tuân theo yêu cầu của bạn chặt chẽ hơn.</li>
     </ul>
 
-    <p>Nhớ rằng, những cài đặt này là tùy chọn! AiCasso khá thông minh và có thể hiểu ý bạn ngay cả khi bạn không hoàn thiện mọi chi tiết. Hãy vui vẻ và để sự sáng tạo của bạn bay cao!</p>
+    <p>Nhớ rằng, những cài đặt này là tùy chọn! AiCasso khá thông minh và có thể hiểu những gì bạn muốn ngay cả khi bạn không hoàn hảo từng chi tiết. Chỉ cần vui vẻ và để sự sáng tạo của bạn tự do!</p>
 
 </body>
 </html>

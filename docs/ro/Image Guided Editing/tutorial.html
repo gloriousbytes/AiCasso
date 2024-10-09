@@ -31,16 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img {
+            width: 100%;
             height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+            max-width: 100%;
         }
     </style>
 </head>
@@ -48,19 +42,19 @@
 <body>
 
     <h2>Sfaturi pentru Editarea Ghidată de Imagine</h2>
-    <p>Funcția de Editare Ghidată de Imagine în AiCasso îți permite să faci modificări unei imagini doar descriind ce dorești. Fie că vrei să schimbi stilul, să ajustezi atmosfera sau să modifici anumite părți, AiCasso se va ocupa de asta fără să fie nevoie să selectezi sau să pictezi manual nimic.</p>
+    <p>Funcția de Editare Ghidată de Imagine în AiCasso îți permite să faci modificări unei imagini doar descriind ce vrei. Fie că vrei să schimbi stilul, să ajustezi atmosfera sau să modifici anumite părți, AiCasso se va ocupa de asta fără să fie nevoie să selectezi sau să pictezi manual nimic.</p>
 
     <h3>Cum Funcționează:</h3>
 
     <div class="example">
-        <strong>Imagine de Start:</strong>
+        <strong>Imagine de Pornire:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CpnI7HqIAzcrMjmQb5_25yJilhxraZ80/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/startingimage1.jpg" alt="Imagine de Pornire">
         </div>
     </div>
 
     <div class="example">
-        <strong>Descrie Modificarea Ta:</strong>
+        <strong>Descrie Schimbarea Ta:</strong>
         <p>Scrie pur și simplu ce vrei să schimbi, iar AiCasso va aplica acele modificări imaginii.</p>
     </div>
 
@@ -69,21 +63,21 @@
     <div class="example">
         <strong>Exemplu 1:</strong> "Fă-o blondă."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI2vE6dOcFxInjqzq1_mVru_nLCGFTaS/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/makeherblonde.jpg" alt="Exemplu Fă-o blondă">
         </div>
         <p><em>Rezultatul:</em> AiCasso va schimba culoarea părului persoanei în blond.</p>
     </div>
 
     <div class="example">
-        <strong>Exemplu 2:</strong> "Fă-l noapte, folosește 50 de pași, o scară de ghidare de 1 și o scară de ghidare a imaginii de 1."
+        <strong>Exemplu 2:</strong> "Fă-o noapte, folosește 50 de pași, o scară de ghidare de 1 și o scară de ghidare a imaginii de 1."
         <div class="example">
             <strong>Imagine de Intrare:</strong>
             <div class="result">
-                <iframe src="https://drive.google.com/file/d/1PlJNkwIWrK3Uu_bq38te_dtqp2XBkW_e/preview"></iframe>
+                <img src="../../images/tutorials/imageguidededit/example2input.jpg" alt="Imagine de Intrare Exemplu 2">
             </div>
         </div>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11mjTtcBdI8T0cMcfQz6HEJ79xOhw81VG/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/example2result.jpg" alt="Imagine de Rezultat Exemplu 2">
         </div>
         <p><em>Rezultatul:</em> Imaginea va fi transformată într-o scenă de noapte cu ajustări specifice bazate pe detaliile pe care le-ai furnizat.</p>
     </div>
@@ -94,7 +88,7 @@
     <ul>
         <li><strong>Scara de Ghidare a Imaginii:</strong> Aceasta controlează cât de aproape se menține noua imagine de original. O valoare mai mică înseamnă că modificările sunt mai subtile, în timp ce o valoare mai mare le face să iasă mai mult în evidență. Poți seta aceasta între 1 și 8.</li>
         <li><strong>Pași:</strong> Aceasta stabilește câte rafinări va face instrumentul. Mai mulți pași înseamnă o imagine finală mai netedă și mai detaliată. Poți alege între 1 și 50 de pași, cu 20 ca valoare implicită.</li>
-        <li><strong>Scara de Ghidare:</strong> Aceasta afectează cât de aproape urmează AI descrierea ta. O scară mai mică oferă AI mai multă libertate creativă, în timp ce o scară mai mare îl face să se mențină aproape de ceea ce ai spus. Poți ajusta aceasta între 1 și 20.</li>
+        <li><strong>Scara de Ghidare:</strong> Aceasta afectează cât de aproape urmează AI descrierea ta. O scară mai mică oferă AI mai multă libertate creativă, în timp ce o scară mai mare îl face să se țină strâns de ceea ce ai spus. Poți ajusta aceasta între 1 și 20.</li>
     </ul>
 
 </body>

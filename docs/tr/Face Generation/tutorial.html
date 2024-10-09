@@ -6,89 +6,90 @@
     <title>Yüz Oluşturma Özelliği Kılavuzu</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Resmin konteyneri aşmamasını sağlar */
+    height: auto;     /* Oranını korur */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
-    <h2>Yüz Oluşturma Özelliği Kullanım Kılavuzu</h2>
-    <p>AiCasso'daki Yüz Oluşturma özelliği inanılmaz derecede çok yönlü! Belirli bir yüzü çeşitli karakterlere veya stillere entegre ederek çarpıcı görüntüler oluşturmanıza olanak tanır. İster bir şövalye, ister samuray veya başka bir karakter hayal edin, AiCasso, girilen yüzü istenen tasarıma entegre edilmiş bir görüntü oluşturmak için kullanır.</p>
+    <h2>Yüz Oluşturma Özelliğini Kullanma Kılavuzu</h2>
+    <p>AiCasso'daki Yüz Oluşturma özelliği son derece çok yönlü! Belirli bir yüzü çeşitli karakterlere veya stillere entegre ederek etkileyici görüntüler oluşturmanıza olanak tanır. Bir şövalye, samuray veya başka bir karakter hayal ediyor olun, AiCasso, girişteki yüzü kullanarak istenen tasarıma entegre edilmiş bir görüntü oluşturur.</p>
 
     <h3>Nasıl Çalışır:</h3>
     
-    <div class="example">
-        <strong>Giriş Görüntüsü:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
-        </div>
-        <strong>İpucu 1:</strong>
-        <p>"Gerçekçi bir şövalye, maksimum Ölçek kullan"</p>
-        <strong>Sonuç 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
-        </div>
-        <strong>İpucu 2:</strong>
-        <p>"Chibi stilini kullan ve bir samuray yap, varsayılan değerleri kullan"</p>
-        <strong>Sonuç 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
-        </div>
-        <strong>İpucu 3:</strong>
-        <p>"Bir samuray, 31 gürültü giderme adımı kullan ve anime stili"</p>
-        <strong>Sonuç 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Giriş Resmi:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/input.jpg" alt="Giriş Resmi">
     </div>
+    <strong>İstek 1:</strong>
+    <p>"Gerçekçi bir şövalye, maksimum ölçek kullan"</p>
+    <strong>Sonuç 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="Gerçekçi Şövalye">
+    </div>
+    <strong>İstek 2:</strong>
+    <p>"Chibi stilini kullan ve bir samuray yap, varsayılan değerleri kullan"</p>
+    <strong>Sonuç 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="Chibi Samuray">
+    </div>
+    <strong>İstek 3:</strong>
+    <p>"Bir samuray, 31 gürültü azaltma adımı kullan ve anime stilinde"</p>
+    <strong>Sonuç 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="Anime Samuray">
+    </div>
+</div>
 
-    <h3>Opsiyonel Parametreler</h3>
-    <p>Oluşturulan görüntülerinize biraz daha kişilik veya kontrol eklemek istiyorsanız, işte ayarlayabileceğiniz bazı seçenekler:</p>
+    <h3>İsteğe Bağlı Parametreler</h3>
+    <p>Oluşturduğunuz görüntülere biraz daha kişilik veya kontrol eklemek istiyorsanız, ayarlayabileceğiniz bazı seçenekler burada:</p>
 
     <ul>
-        <li><strong>Negatif İpucu:</strong> Bu, AiCasso'ya görüntüde <em>görmek istemediğiniz</em> şeyleri söyleyebileceğiniz yerdir. Bunu boş bırakırsanız, AiCasso sadece olumlu ipucuna odaklanacaktır.</li>
-        <li><strong>Gürültü Giderme Adım Sayısı:</strong> Bu, görüntünün ne kadar pürüzsüz ve rafine göründüğünü kontrol eder. 21, 31 veya 41 adım arasında seçim yapabilirsiniz, varsayılan 41'dir. Daha fazla adım, daha temiz ve daha cilalı bir görüntü anlamına gelir.</li>
-        <li><strong>Rehberlik Ölçeği:</strong> Bu, görüntünün tanımınıza sadık kalmasına yardımcı olur. Ölçek 1 ile 20 arasında değişir, varsayılan 10'dur. Daha yüksek sayılar, AiCasso'nun ipucunuza daha yakın kalacağı anlamına gelir.</li>
-        <li><strong>S Ölçeği:</strong> Bu, yüzün yapısıyla ilgilidir. Biraz teknik bir konu, ancak esasen yüz yapısının ağırlığını ayarlar. Varsayılan 1.0'dır ve 0.0 ile 2.0 arasında herhangi bir yere gidebilirsiniz.</li>
-        <li><strong>Stil:</strong> Görüntünüze belirli bir hava mı vermek istiyorsunuz? Çizgi roman, chibi, 3D, anime veya gerçekçi gibi bir stil seçebilirsiniz. Varsayılan gerçekçidir, ancak yaratıcı olmaktan çekinmeyin!</li>
+        <li><strong>Negatif İstek:</strong> Bu, AiCasso'ya görüntüde <em>görmek istemediğiniz</em> şeyleri söyleyebileceğiniz yerdir. Burası boş bırakılırsa, AiCasso sadece olumlu isteğe odaklanacaktır.</li>
+        <li><strong>Gürültü Azaltma Adım Sayısı:</strong> Bu, görüntünün ne kadar pürüzsüz ve rafine görüneceğini kontrol eder. 21, 31 veya 41 adım arasında seçim yapabilirsiniz, 41 varsayılandır. Daha fazla adım, daha temiz ve daha cilalı bir görüntü anlamına gelir.</li>
+        <li><strong>Rehberlik Ölçeği:</strong> Bu, görüntünün tanımınıza sadık kalmasına yardımcı olur. Ölçek 1 ile 20 arasında değişir, 10 varsayılandır. Daha yüksek sayılar, AiCasso'nun isteğinize daha yakın kalacağı anlamına gelir.</li>
+        <li><strong>S Ölçeği:</strong> Bu, yüzün yapısıyla ilgilidir. Biraz teknik, ancak esasen yüz yapısının ağırlığını ayarlar. Varsayılan 1.0'dır ve 0.0 ile 2.0 arasında herhangi bir değere gidebilirsiniz.</li>
+        <li><strong>Stil:</strong> Görüntünüze belirli bir hava vermek mi istiyorsunuz? Comic, chibi, 3D, anime veya gerçekçi gibi bir stil seçebilirsiniz. Gerçekçi varsayılandır, ancak yaratıcı olmaktan çekinmeyin!</li>
     </ul>
 
-    <p>Ve unutmayın, AiCasso oldukça bağışlayıcıdır. Dilbilgisi uzmanı olmanıza veya her detayı mükemmel yapmanıza gerek yok. Sadece ne istediğinizi kendi kelimelerinizle tarif edin, gerisini AiCasso halleder. Yaratmanın tadını çıkarın!</p>
+    <p>Ve unutmayın, AiCasso oldukça hoşgörülüdür. Bir dil bilgisi ustası olmanıza veya her detayı mükemmel yapmanıza gerek yok. Sadece istediğinizi kendi kelimelerinizle tarif edin, AiCasso geri kalanını halledecektir. Yaratmanın tadını çıkarın!</p>
 
 </body>
 </html>

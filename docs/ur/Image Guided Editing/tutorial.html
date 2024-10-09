@@ -31,16 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img {
+            width: 100%;
             height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+            max-width: 100%;
         }
     </style>
 </head>
@@ -48,20 +42,20 @@
 <body>
 
     <h2>تصویر کی رہنمائی کے ساتھ ترمیم کے نکات</h2>
-    <p>AiCasso میں تصویر کی رہنمائی کے ساتھ ترمیم کی خصوصیت آپ کو صرف یہ بیان کرکے تصویر میں تبدیلیاں کرنے کی اجازت دیتی ہے کہ آپ کیا چاہتے ہیں۔ چاہے آپ طرز تبدیل کرنا چاہتے ہوں، موڈ کو ایڈجسٹ کرنا چاہتے ہوں، یا کچھ حصوں میں تبدیلی کرنا چاہتے ہوں، AiCasso آپ کے لیے یہ سب کچھ بغیر کسی چیز کو دستی طور پر منتخب یا پینٹ کیے بغیر سنبھال لے گا۔</p>
+    <p>AiCasso میں تصویر کی رہنمائی کے ساتھ ترمیم کی خصوصیت آپ کو صرف یہ بیان کرکے تصویر میں تبدیلیاں کرنے کی اجازت دیتی ہے کہ آپ کیا چاہتے ہیں۔ چاہے آپ انداز تبدیل کرنا چاہتے ہوں، موڈ کو ایڈجسٹ کرنا چاہتے ہوں، یا کچھ حصے میں تبدیلی کرنا چاہتے ہوں، AiCasso آپ کے لیے یہ سب کچھ بغیر کسی چیز کو دستی طور پر منتخب یا پینٹ کیے کر دے گا۔</p>
 
     <h3>یہ کیسے کام کرتا ہے:</h3>
 
     <div class="example">
         <strong>شروع کی تصویر:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CpnI7HqIAzcrMjmQb5_25yJilhxraZ80/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/startingimage1.jpg" alt="شروع کی تصویر">
         </div>
     </div>
 
     <div class="example">
         <strong>اپنی تبدیلی بیان کریں:</strong>
-        <p>بس وہ چیز ٹائپ کریں جسے آپ تبدیل کرنا چاہتے ہیں، اور AiCasso ان تبدیلیوں کو تصویر پر لاگو کرے گا۔</p>
+        <p>صرف یہ ٹائپ کریں کہ آپ کیا تبدیل کرنا چاہتے ہیں، اور AiCasso ان تبدیلیوں کو تصویر پر لاگو کرے گا۔</p>
     </div>
 
     <h3>مثالی ترمیمات:</h3>
@@ -69,9 +63,9 @@
     <div class="example">
         <strong>مثال 1:</strong> "اسے سنہری بنائیں۔"
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI2vE6dOcFxInjqzq1_mVru_nLCGFTaS/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/makeherblonde.jpg" alt="اسے سنہری بنائیں مثال">
         </div>
-        <p><em>نتیجہ:</em> AiCasso اس شخص کے بالوں کا رنگ سنہری میں تبدیل کرے گا۔</p>
+        <p><em>نتیجہ:</em> AiCasso اس شخص کے بالوں کا رنگ سنہری کر دے گا۔</p>
     </div>
 
     <div class="example">
@@ -79,22 +73,22 @@
         <div class="example">
             <strong>ان پٹ تصویر:</strong>
             <div class="result">
-                <iframe src="https://drive.google.com/file/d/1PlJNkwIWrK3Uu_bq38te_dtqp2XBkW_e/preview"></iframe>
+                <img src="../../images/tutorials/imageguidededit/example2input.jpg" alt="مثال 2 ان پٹ تصویر">
             </div>
         </div>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11mjTtcBdI8T0cMcfQz6HEJ79xOhw81VG/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/example2result.jpg" alt="مثال 2 نتیجہ تصویر">
         </div>
         <p><em>نتیجہ:</em> تصویر کو رات کے منظر میں مخصوص تبدیلیوں کے ساتھ تبدیل کیا جائے گا جو آپ نے فراہم کی ہیں۔</p>
     </div>
 
     <h3>اضافی اختیارات</h3>
-    <p>آپ ان اختیاری ترتیبات کا استعمال کرتے ہوئے اپنی ترمیمات کو بہتر بنا سکتے ہیں:</p>
+    <p>آپ ان اختیاری ترتیبات کا استعمال کرتے ہوئے اپنی ترامیم کو بہتر بنا سکتے ہیں:</p>
 
     <ul>
         <li><strong>تصویر کی رہنمائی کا پیمانہ:</strong> یہ کنٹرول کرتا ہے کہ نئی تصویر اصل کے قریب کتنی رہتی ہے۔ کم قیمت کا مطلب ہے کہ تبدیلیاں زیادہ لطیف ہیں، جبکہ زیادہ قیمت انہیں زیادہ نمایاں بناتی ہے۔ آپ اسے 1 سے 8 کے درمیان سیٹ کر سکتے ہیں۔</li>
-        <li><strong>مراحل:</strong> یہ طے کرتا ہے کہ ٹول کتنی باریکیوں کو بنائے گا۔ زیادہ مراحل کا مطلب ہے کہ حتمی تصویر زیادہ ہموار اور تفصیلی ہوگی۔ آپ 1 سے 50 مراحل میں سے انتخاب کر سکتے ہیں، جبکہ 20 ڈیفالٹ ہے۔</li>
-        <li><strong>رہنمائی کا پیمانہ:</strong> یہ متاثر کرتا ہے کہ AI آپ کی وضاحت کے قریب کتنی رہتا ہے۔ کم پیمانہ AI کو زیادہ تخلیقی آزادی دیتا ہے، جبکہ زیادہ پیمانہ اسے آپ کی کہی ہوئی باتوں کے قریب رکھتا ہے۔ آپ اسے 1 سے 20 کے درمیان ایڈجسٹ کر سکتے ہیں۔</li>
+        <li><strong>مراحل:</strong> یہ طے کرتا ہے کہ ٹول کتنی باریکیاں کرے گا۔ زیادہ مراحل کا مطلب ہے کہ حتمی تصویر زیادہ ہموار اور تفصیلی ہوگی۔ آپ 1 سے 50 مراحل کے درمیان انتخاب کر سکتے ہیں، جبکہ 20 بطور ڈیفالٹ ہے۔</li>
+        <li><strong>رہنمائی کا پیمانہ:</strong> یہ متاثر کرتا ہے کہ AI آپ کی وضاحت کے قریب کتنی رہتا ہے۔ کم پیمانہ AI کو زیادہ تخلیقی آزادی دیتا ہے، جبکہ زیادہ پیمانہ اسے آپ کی باتوں کے قریب رکھتا ہے۔ آپ اسے 1 سے 20 کے درمیان ایڈجسٹ کر سکتے ہیں۔</li>
     </ul>
 
 </body>

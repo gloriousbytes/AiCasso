@@ -31,9 +31,9 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
-            height: auto;
+        .result img {
+            max-width: 100%;  /* Qinisekisa ukuthi isithombe asiphumi emkhakheni */
+            height: auto;     /* Gcina ubukhulu bayo */
         }
         .iframe-container {
             display: flex;
@@ -48,224 +48,224 @@
 <body>
 
     <h2>Umhlahlandlela Wokusebenzisa Isici Se-Sithombe Ku-Sithombe</h2>
-    <p>Isici se-Sithombe Ku-Sithombe ku-AiCasso yindlela ethokozisayo yokuthatha isithombe osinayo bese usiguqula sibe into entsha. Kufana nokunikeza isithombe sakho ukuguqulwa ngokusekelwe encazelweni yakho!</p>
+    <p>Isici se-Sithombe ku-Sithombe ku-AiCasso yindlela ethokozisayo yokuthatha isithombe osinayo bese usiguqula sibe into entsha. Kufana nokunikeza isithombe sakho ukwenziwa kabusha ngokusekelwe encazelweni yakho!</p>
 
     <h3>Ukusebenza Kwayo:</h3>
     
-    <div class="example">
-        <strong>Isithombe Sokufaka:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/14N7B-yT-d7Z4HGSlogD859D-JitVcq2_/preview"></iframe>
-        </div>
-        <strong>Imiyalo 1:</strong>
-        <p>"Inja emnandi, sebenzisa ugesi ophakathi"</p>
-        <strong>Umphumela 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1g8GQ6cHuB2ntmBwafGgPWiJ3VHU2r7S5/preview"></iframe>
-        </div>
-        <strong>Imiyalo 2:</strong>
-        <p>"Ikati elihle le-3D CGI elinamehlo amakhulu, sebenzisa ugesi ongu-90%, futhi usebenzise isitayela se-3D cartoon"</p>
-        <strong>Umphumela 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IeR0SRrPwZi6nfAF9-1SdM6mj4EtyyfM/preview"></iframe>
-        </div>
-        <strong>Imiyalo 3:</strong>
-        <p>"Ikati elimnyama, lenze libe leqiniso"</p>
-        <strong>Umphumela 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1Ocmsoi89Pn5Un_iNg349FMdQZRQaCUBr/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Isithombe Sokufaka:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/input.jpg" style="max-width: 100%; height: auto;" alt="Isithombe Sokufaka">
     </div>
+    <strong>Umusho 1:</strong>
+    <p>"Inja ethokozisayo, sebenzisa u-50% wamandla"</p>
+    <strong>Umphumela 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/cutedog.jpg" style="max-width: 100%; height: auto;" alt="Umphumela 1">
+    </div>
+    <strong>Umusho 2:</strong>
+    <p>"Ikati elihle le-3D CGI elinamehlo amakhulu, sebenzisa u-90% wamandla, futhi usebenzise isitayela se-3D cartoon"</p>
+    <strong>Umphumela 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/3dcgicat.jpg" style="max-width: 100%; height: auto;" alt="Umphumela 2">
+    </div>
+    <strong>Umusho 3:</strong>
+    <p>"Ikati elimnyama, lenze libe neqiniso"</p>
+    <strong>Umphumela 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/blackcat.jpg" style="max-width: 100%; height: auto;" alt="Umphumela 3">
+    </div>
+</div>
 
     <h3>Izilungiselelo Ezikhethwayo</h3>
-    <p>Uma ufuna ukufaka umqondo wakho ekuguqulweni kwesithombe, nansi eminye imingcele yokukhetha ongayidlala nayo. Kodwa ungakhathazeki—uma ufuna nje ukuchaza lokho okufunayo, i-AiCasso izokwenza umsebenzi ngaphandle kokufuna lezi zengezo!</p>
+    <p>Uma ufuna ukwengeza umqondo wakho ekuhlukaniseni isithombe, nansi eminye imingcele yokukhetha ongayidlala nayo. Kodwa ungakhathazeki—uma ufuna nje ukuchaza lokho okufunayo, i-AiCasso izokwenza umsebenzi ngaphandle kokudinga noma yiziphi zalezi zengezo!</p>
 
     <ul>
-        <li><strong>Imiyalo Engalungile:</strong> Uma kukhona okuthile okukhuluma ngakho <em>ungafuni</em> esithombeni sakho esisha, ungakukhuluma lapha. Kodwa uma uyishiya ingenalutho, lokho kulungile!</li>
-        <li><strong>Ugesi:</strong> Lokhu kulawula ukuthi mangaki esithombe sokuqala asetshenzisiwe. Ungaya kusuka ku-0.1 kuya ku-1.0. Inombolo ephansi, isithombe sakho sizogcina ukubukeka kwaso kokuqala. I-default ingu-0.5, okuyinto elungile.</li>
-        <li><strong>Thuthukisa Isitayela:</strong> Ufuna ukuhlinzeka ngesithombe sakho umoya othile? Khetha isitayela esifana ne-comic, chibi, 3D, anime, noma esiqondile. I-default ingu-realistic, kodwa uzizwe ukhululekile ukuhamba!</li>
+        <li><strong>Umusho Ophiwe:</strong> Uma kukhona okuthile okhethekile ongafuni esithombeni sakho esisha, ungakukhuluma lapha. Kodwa uma uyishiya ingenalutho, lokho kulungile!</li>
+        <li><strong>Amandla:</strong> Lokhu kulawula ukuthi mangaki esithombe sokuqala asetshenzisiwe. Ungaya ku-0.1 kuya ku-1.0. Inombolo ephansi, isithombe sakho sizogcina ukubukeka kwaso kwangempela. Okungokwemvelo ku-0.5, okuyisilinganiso esihle.</li>
+        <li><strong>Thuthukisa Isitayela:</strong> Ufuna ukunika isithombe sakho umoya othile? Khetha isitayela esinjenge-comic, chibi, 3D, anime, noma esiqondile. Okungokwemvelo kuyi-realistic, kodwa uzizwe ukhululekile ukuhamba!</li>
     </ul>
 
     <p>Futhi hey, khumbula, awudingi ukukhathazeka ngokuthola konke kuphume kahle. Chaza nje lokho okufunayo ngamagama akho, futhi i-AiCasso izokwenza okunye. Jabulela ukudala!</p>
 <h3>Thuthukisa Izitayela</h3>
-<p>Ungaqiniseki ukuthi iyiphi isitayela okufanele uyikhethe? Ungakhathazeki! Khuluma nje nganoma yiluphi isitayela esikukhumbuzayo, noma ngabe asilungile ngokuqondile, futhi i-AiCasso izokuthola kuluhlu lwezithombe ezitholakalayo.</p>
+<p>Ungaqiniseki ukuthi yisiphi isitayela okufanele ukhethe? Ungakhathazeki! Khuluma nje nganoma yisiphi isitayela esikukhumbuzayo, noma ngabe asihambisani nemithetho yokwakha, futhi i-AiCasso izokuthola kuluhlu lwezindlela ezitholakalayo zokuthuthukisa.</p>
 
     <ul>
-        <li><strong>I-Default:</strong> Isitayela esilinganayo nesingathathi hlangothi ngaphandle kokuthonywa okuthile kwezobuciko.</li>
-        <li><strong>Thuthukisa:</strong> Thuthukisa kancane imininingwane nezici eziphelele.</li>
-        <li><strong>Cinematic Diva:</strong> Faka umphumela ophawulekayo, ofana nefilimu, onokukhanya okuqinile.</li>
+        <li><strong>Okungokwemvelo:</strong> Isitayela esilinganiselwe nesingathathi hlangothi ngaphandle kokuthinta okuthile kobuciko.</li>
+        <li><strong>Thuthukisa:</strong> Kwenze kube ngcono kancane imininingwane nezithombe jikelele.</li>
+        <li><strong>Cinematic Diva:</strong> Faka umphumela ophawulekayo, ofana nefilimu, onezikhala ezinamandla zokukhanya.</li>
         <li><strong>Abstract Expressionism:</strong> Gcizelela amafomu angokoqobo nezithombe ezinemibala ephilayo.</li>
         <li><strong>Academia:</strong> Faka umoya wesayensi nobuciko esithombeni.</li>
-        <li><strong>Action Figure:</strong> Dala izithombe ezinemigqa egcizeleleka nesitayela esinamandla se-action figures.</li>
-        <li><strong>Adorable 3D Character:</strong> Dala abalingiswa be-3D abahle, abanezithombe ezithokozisayo.</li>
-        <li><strong>Adorable Kawaii:</strong> Gcizelela isitayela esihle nesithokozisayo esijwayelekile s文化 Kawaii.</li>
+        <li><strong>Action Figure:</strong> Dala izithombe ezinefomu eliphakeme nelinamandla leziqhamo zokusebenza.</li>
+        <li><strong>Adorable 3D Character:</strong> Dala abalingiswa be-3D abathokozisayo, abanjengezithombe.</li>
+        <li><strong>Adorable Kawaii:</strong> Gcizelela isitayela esithokozisayo nesijabulisayo esijwayelekile s文化 Kawaii.</li>
         <li><strong>Art Deco:</strong> Sebenzisa isitayela se-geometric nesokwakha se-Art Deco.</li>
-        <li><strong>Art Nouveau:</strong> Faka imigqa ejulile nezinto eziphathelene nemvelo, ezijwayelekile ze-Art Nouveau.</li>
-        <li><strong>Astral Aura:</strong> Dala umoya omangalisayo nowokuphila.</li>
-        <li><strong>Avant Garde:</strong> Gxila ezikhanyisweni ezintsha nezokuhlola zobuciko.</li>
-        <li><strong>Baroque:</strong> Sebenzisa isitayela esiphawulekayo, esinemininingwane, nesichazayo se-Baroque.</li>
-        <li><strong>Bauhaus Style Poster:</strong> Khombisa izimiso zokwakha ezincane nezisebenzayo ze-Bauhaus.</li>
+        <li><strong>Art Nouveau:</strong> Faka imigqa ejulile nezinto eziphathelene nemvelo, ezijwayelekile ku-Art Nouveau.</li>
+        <li><strong>Astral Aura:</strong> Dala umoya ongenakuchazwa nowokuphila.</li>
+        <li><strong>Avant Garde:</strong> Gxila ezicini ezintsha nezizimele zokwakha.</li>
+        <li><strong>Baroque:</strong> Sebenzisa isitayela esiphawulekayo, esinemininingwane, nesiyinkimbinkimbi seBaroque.</li>
+        <li><strong>Bauhaus Style Poster:</strong> Khombisa izimiso zokwakha ezilula nezisebenzayo zeBauhaus.</li>
         <li><strong>Blueprint Schematic Drawing:</strong> Dala izithombe ezifanayo nezinhlelo zobuchwepheshe.</li>
-        <li><strong>Caricature:</strong> Dala izithombe eziphawulekayo, ezinemigqa ebonakalayo.</li>
+        <li><strong>Caricature:</strong> Dala izithombe eziphakeme, ezijabulisayo.</li>
         <li><strong>Cel-Shaded Art:</strong> Sebenzisa imibala eqinile, eqinile ejwayelekile ye-cel-shaded animation.</li>
         <li><strong>Character Design Sheet:</strong> Gxila kumklamo ohlanzekile nowacacile wabalulekile ofaneleka ku-animation.</li>
-        <li><strong>Classicism Art:</strong> Khombisa isitayela sobuciko esihloniphekile nesifanele se-Classical Antiquity.</li>
-        <li><strong>Color Field Painting:</strong> Khombisa izindawo ezinkulu zomkhiqizo owodwa ukuze udale ibhodi elilodwa lemibala.</li>
-        <li><strong>Colored Pencil Art:</strong> Khombisa umphumela nokubukeka kokudweba ngemibala.</li>
-        <li><strong>Conceptual Art:</strong> Gxila kumqondo nemibono kunokukhathazeka kwezobuciko noma kwezinto.</li>
+        <li><strong>Classicism Art:</strong> Khombisa isitayela sobuciko esihloniphekile nesiphakeme se-Classical Antiquity.</li>
+        <li><strong>Color Field Painting:</strong> Khombisa izindawo ezinkulu zomkhiqizo owodwa ukuze udale ipuleti elilodwa lemibala.</li>
+        <li><strong>Colored Pencil Art:</strong> Khombisa ubukhulu nobukeka bezithombe ezinemibala.</li>
+        <li><strong>Conceptual Art:</strong> Gxila ezicini nasezinhlelweni kunokubukeka noma izinkinga zokwakha.</li>
         <li><strong>Constructivism:</strong> Khombisa isitayela se-industrial, se-geometric se-Constructivist movement.</li>
         <li><strong>Cubism:</strong> Phula izinto zibe izimo ze-geometric futhi uziveze ngendlela engokoqobo.</li>
-        <li><strong>Dadaism:</strong> Gcizelela ubuhlakani, ukungaqondi, nezithombe eziphikisanayo.</li>
-        <li><strong>Dark Fantasy:</strong> Dala umoya omnyama, we-gothic onokuthile okumnyama nokwesabekayo.</li>
-        <li><strong>Dark Moody Atmosphere:</strong> Sebenzisa ukukhanya okuphansi neshadow ukuze udale umoya omnyama.</li>
+        <li><strong>Dadaism:</strong> Gcizelela ubuhlungu, ukungaqondi, nezithombe eziphikisana nobuciko.</li>
+        <li><strong>Dark Fantasy:</strong> Dala umoya onomoya, we-gothic onezinto ezimnyama nezithokozisayo.</li>
+        <li><strong>Dark Moody Atmosphere:</strong> Sebenzisa ukukhanya okuphansi nethunzi ukuze udale umoya onomoya.</li>
         <li><strong>DMT Art:</strong> Khombisa izithombe eziphilayo, eziphilayo ezikhuthazwa yizinto ze-DMT.</li>
-        <li><strong>Doodle Art:</strong> Gcizelela izitayela zokudweba ezihlekisayo nezithokozisayo, ngokuvamile ezinzima nezinemininingwane.</li>
-        <li><strong>Double Exposure:</strong> Hlanganisa izithombe ezimbili zibe enye, udale umphumela omangalisayo, ophakeme.</li>
-        <li><strong>Dripping Paint Splatter:</strong> Sebenzisa uphondo oluphakeme noluphakeme ukuze udale izithombe eziphilayo nezixakile.</li>
+        <li><strong>Doodle Art:</strong> Gcizelela izitayela zokudweba ezijabulisayo nezithokozisayo, ngokuvamile ezinzima nezinemininingwane.</li>
+        <li><strong>Double Exposure:</strong> Hlanganisa izithombe ezimbili zibe yodwa, udale umphumela ongenakuchazwa, ophakeme.</li>
+        <li><strong>Dripping Paint Splatter:</strong> Sebenzisa uphahla nolwandle lokupenda ukuze udale izithombe eziphilayo nezihlekisayo.</li>
         <li><strong>Expressionism:</strong> Gxila ekukhulumeni kwemizwa kunokubukeka kweqiniso, ngokuvamile usebenzisa imibala eqinile nezimo eziphawulekayo.</li>
-        <li><strong>Faded Polaroid Photo:</strong> Khombisa ukubukeka okukhuluma ngempilo nokukhumbula kwe-Polaroid.</li>
-        <li><strong>Fauvism:</strong> Sebenzisa imibala ephilayo, engajwayelekile nezithombe eziphakeme, ezikhuthazwa yi-Fauvist movement.</li>
-        <li><strong>Flat 2D:</strong> Gcizelela imiklamo elula, eqondile enezithombe ezincane noma ezijulile, ngokuvamile ngesitayela se-cartoon.</li>
-        <li><strong>Fortnite Style:</strong> Khombisa isitayela esiphilayo, esithokozisayo esijwayelekile se-Fortnite video game.</li>
-        <li><strong>Futurism:</strong> Gxila ekunyakazeni okuphakeme, amandla, nokubukeka kwezobuchwepheshe besikhathi esizayo.</li>
-        <li><strong>Glitchcore:</strong> Gcizelela amaphutha edijithali nezithombe eziphakeme njengendlela yobuciko, ngokuvamile nezithombe eziphakeme.</li>
-        <li><strong>Glo-Fi:</strong> Sebenzisa ukukhanya okuthambile, okukhanyayo ukuze udale umoya opholile, omangalisayo.</li>
-        <li><strong>Googie Style:</strong> Khombisa izitayela zokwakha eziphilayo nezithokozisayo ze-mid-20th century.</li>
-        <li><strong>Graffiti Art:</strong> Sebenzisa izithombe eziphilayo, ezijwayelekile ze-graffiti nezithombe zasedolobheni.</li>
-        <li><strong>Harlem Renaissance Art:</strong> Khombisa izinkanyezi ezicebile nezithombe zobuciko ze-Harlem Renaissance.</li>
+        <li><strong>Faded Polaroid Photo:</strong> Khombisa ukubukeka okukhuluma nokukhumbula kwe-polaroid efaded.</li>
+        <li><strong>Fauvism:</strong> Sebenzisa imibala ephilayo, engajwayelekile nemisebenzi eqinile, ekhuthazwa yi-Fauvist movement.</li>
+        <li><strong>Flat 2D:</strong> Gcizelela imiklamo elula, eqinile enezithombe ezincane noma ubukhulu, ngokuvamile ngesitayela se-cartoon.</li>
+        <li><strong>Fortnite Style:</strong> Khombisa isitayela esiphilayo, esijabulisayo esijwayelekile se-Fortnite video game.</li>
+        <li><strong>Futurism:</strong> Gxila ekunyakazeni okujabulisayo, amandla, nokuchaza ubuchwepheshe besikhathi esizayo.</li>
+        <li><strong>Glitchcore:</strong> Gcizelela amaphutha edijithali nezithombe eziphukile njengendlela yobuciko, ngokuvamile nezithombe eziphukile.</li>
+        <li><strong>Glo-Fi:</strong> Sebenzisa ukukhanya okuthambile, okukhanyayo ukuze udale umoya opholile, ongenakuchazwa.</li>
+        <li><strong>Googie Style:</strong> Khombisa izitayela zokwakha ezizayo nezokwakha ze-Space Age zaleso sikhathi.</li>
+        <li><strong>Graffiti Art:</strong> Sebenzisa izithombe eziphilayo, ezijwayelekile ze-graffiti nezithombe zasemadolobheni.</li>
+        <li><strong>Harlem Renaissance Art:</strong> Khombisa ubuciko obunothile nezithombe eziphilayo ze-Harlem Renaissance.</li>
         <li><strong>High Fashion:</strong> Gcizelela ubuhle, ubuchwepheshe, nezithombe eziphakeme ze-high fashion.</li>
         <li><strong>Idyllic:</strong> Dala umoya opholile, opholile, futhi ngokuvamile opholile.</li>
-        <li><strong>Impressionism:</strong> Sebenzisa imisebenzi ethambile nezithombe eziphilayo ukuze uthole imiphumela yokukhanya nomoya.</li>
-        <li><strong>Infographic Drawing:</strong> Gcizelela izinhlelo ezicacile, ezithokozisayo zokwethula ulwazi ngokuqondile.</li>
-        <li><strong>Ink Dripping Drawing:</strong> Sebenzisa uphondo ukuze udale imiphumela ethambile, ephakeme ekudwebeni.</li>
-        <li><strong>Japanese Ink Drawing:</strong> Khombisa izindlela zokudweba ezijwayelekile nezithombe zobuciko be-Japanese ink.</li>
-        <li><strong>Knolling Photography:</strong> Gcizelela ukuhlela okuhle nokuhleleka kwezinto, ngokuvamile zifotwa phezulu.</li>
-        <li><strong>Light Cheery Atmosphere:</strong> Sebenzisa imibala bright nokukhanya ukuze udale umoya opholile nowokukhuthaza.</li>
-        <li><strong>Logo Design:</strong> Gxila ekwakheni ama-logo ahlanzekile, aqondakalayo nezinto zokub branding.</li>
-        <li><strong>Luxurious Elegance:</strong> Gcizelela ubuchwepheshe nobuhle, ngokuvamile nezinto ezicebile nezinto.</li>
-        <li><strong>Macro Photography:</strong> Gxila ekubukeni okuphakeme, ngokuvamile kubonisa imininingwane ethile engabonakali ngamehlo.</li>
-        <li><strong>Mandala Art:</strong> Dala izithombe ezinzima, ezihambisanayo ezikhuthazwa yimiklamo ye-mandala.</li>
-        <li><strong>Marker Drawing:</strong> Khombisa imigqa eqinile, eziphilayo nezithombe ezijwayelekile zokudweba.</li>
-        <li><strong>Medievalism:</strong> Khombisa ubuciko nezithombe zokwakha ze-Medieval period.</li>
-        <li><strong>Minimalism:</strong> Gcizelela ubulula nokunciphisa amafomu abe yizinto zawo ezisemqoka.</li>
-        <li><strong>Neo-Baroque:</strong> Phinda ubuchwepheshe, isitayela esiphawulekayo se-Baroque, nezithombe ezithokozisayo.</li>
-        <li><strong>Neo-Byzantine:</strong> Hlanganisa isitayela esiyingqayizivele, sobuciko be-Byzantine Empire nezinto zanamuhla.</li>
-        <li><strong>Neo-Futurism:</strong> Gxila kumiklamo yesikhathi esizayo, ngokuvamile nezithombe eziphakeme, eziphilayo.</li>
-        <li><strong>Neo-Impressionism:</strong> Sebenzisa amaphuzu amancane, ahlukanisiwe emibala ukuze udale izithombe, ezikhuthazwa yi-Neo-Impressionist movement.</li>
-        <li><strong>Neo-Rococo:</strong> Phinda isitayela esiyingqayizivele, esiyingqayizivele se-Rococo, nezithombe ezithokozisayo.</li>
-        <li><strong>Neoclassicism:</strong> Khombisa ubuciko nezithombe zokwakha ze-Classical antiquity, ugcizelela ukuvumelana nobulula.</li>
-        <li><strong>Op Art:</strong> Dala izithombe eziphakeme nezithombe ngokusebenzisa izithombe ze-geometric nezithombe eziphikisanayo.</li>
-        <li><strong>Ornate and Intricate:</strong> Gxila kumiklamo enezinhlobonhlobo, ezinzima nezithombe ezithokozisayo.</li>
-        <li><strong>Pencil Sketch Drawing:</strong> Khombisa umphumela nokubukeka kokudweba ngemibala.</li>
-        <li><strong>Pop Art:</strong> Sebenzisa imibala eqinile nezithombe ezikhuthazwa yisiko elidumile nezithombe ezinkulu.</li>
-        <li><strong>Rococo:</strong> Khombisa isitayela esiyingqayizivele, esiyingqayizivele se-Rococo, ugcizelela ukukhanya nobuhle.</li>
-        <li><strong>Silhouette Art:</strong> Sebenzisa izithombe eziphakeme phakathi kokukhanya neshadow ukuze udale izithombe eziphakeme, ezisekelwe ku-silhouette.</li>
-        <li><strong>Simple Vector Art:</strong> Gcizelela izimo ezihlanzekile, ze-geometric nezithombe eziphakeme, ezijwayelekile ze-vector art.</li>
-        <li><strong>SketchUp:</strong> Khombisa ukubukeka nokuzwakala kwemodeli ye-3D edalwe usebenzisa i-SketchUp software.</li>
-        <li><strong>Steampunk:</strong> Hlanganisa izithombe ze-Victorian-era nezobuchwepheshe be-steam-powered, udale isitayela esiphakeme, esiphilayo.</li>
-        <li><strong>Surrealism:</strong> Hlanganisa iqiniso nezithombe eziphakeme ukuze udale izigcawu eziphakeme, ezimangalisayo.</li>
-        <li><strong>Suprematism:</strong> Gxila kumafomu e-geometric ayisisekelo nezithombe ezincane, ezikhuthazwa yi-Suprematist movement.</li>
-        <li><strong>Terragen:</strong> Khombisa izithombe eziphilayo, ezidalwe ngekhompyutha ezidalwe usebenzisa i-Terragen software.</li>
-        <li><strong>Tranquil Relaxing Atmosphere:</strong> Sebenzisa imibala ethambile nezithombe ezithokozisayo ukuze udale indawo ethule, epholile.</li>
-        <li><strong>Sticker Designs:</strong> Gxila ekwakheni izithombe ezihlekisayo, ezithokozisayo ezifanele izithombe.</li>
+        <li><strong>Impressionism:</strong> Sebenzisa imisebenzi ethambile nemibala ephilayo ukuze uthole imiphumela yokukhanya nomoya.</li>
+        <li><strong>Infographic Drawing:</strong> Gcizelela izinhlelo ezicacile, ezibukekayo zokwethula ulwazi ngokuqondile.</li>
+        <li><strong>Ink Dripping Drawing:</strong> Sebenzisa uphahla ukuze udale imiphumela ethambile, ethambile ekudwebeni.</li>
+        <li><strong>Japanese Ink Drawing:</strong> Khombisa izindlela zokudweba ezijwayelekile nezithombe ze-Japanese ink art.</li>
+        <li><strong>Knolling Photography:</strong> Gcizelela ukuhlela okuhle nokuhleleka kwezinto, ngokuvamile kudweba phezulu.</li>
+        <li><strong>Light Cheery Atmosphere:</strong> Sebenzisa imibala bright nezithombe ukuze udale umoya opholile nowokujabula.</li>
+        <li><strong>Logo Design:</strong> Gxila ekwakheni ama-logo ahlanzekile, aqondakalayo nezinto zokumaketha.</li>
+        <li><strong>Luxurious Elegance:</strong> Gcizelela ubuchwepheshe nobuhle, ngokuvamile nezinto ezicebile nezithokozisayo.</li>
+        <li><strong>Macro Photography:</strong> Gxila ezithombeni eziseduze kakhulu, ngokuvamile ziveza imininingwane eyinkimbinkimbi engabonakali ngamehlo alula.</li>
+        <li><strong>Mandala Art:</strong> Dala ama-patterns ahlanzekile, ahlanzekile akhuthazwa yimiklamo ye-mandala yendabuko.</li>
+        <li><strong>Marker Drawing:</strong> Khombisa imigqa eqinile, ephilayo nemibala ejwayelekile yokudweba nge-marker.</li>
+        <li><strong>Medievalism:</strong> Khombisa ubuciko nezithombe ezijwayelekile zaleso sikhathi se-Medieval.</li>
+        <li><strong>Minimalism:</strong> Gcizelela ubulula nokunciphisa amafomu abe yizinto ezisemqoka.</li>
+        <li><strong>Neo-Baroque:</strong> Phinda ubuciko obunothile, obuphakeme besikhathi se-Baroque, nezithombe zanamuhla.</li>
+        <li><strong>Neo-Byzantine:</strong> Hlanganisa isitayela sobuciko obunothile, obukholekile besikhathi se-Byzantine Empire nezinto zanamuhla.</li>
+        <li><strong>Neo-Futurism:</strong> Gxila eziklamo zesikhathi esizayo, ngokuvamile nezithombe eziphakeme, eziphakeme.</li>
+        <li><strong>Neo-Impressionism:</strong> Sebenzisa amaphuzu amancane, ahlukanisiwe emibala ukuze udale izithombe, ekhuthazwa yi-Neo-Impressionist movement.</li>
+        <li><strong>Neo-Rococo:</strong> Phinda isitayela esiyinkimbinkimbi, esiyingqayizivele se-Rococo, nezithombe zanamuhla.</li>
+        <li><strong>Neoclassicism:</strong> Khombisa ubuciko nezithombe ezijwayelekile ze-Classical antiquity, ugcizelela ukuvumelana nobulula.</li>
+        <li><strong>Op Art:</strong> Dala izithombe eziphambene nezithombe ngokusebenzisa ama-patterns e-geometric nezikhala.</li>
+        <li><strong>Ornate and Intricate:</strong> Gxila kumiklamo enemininingwane, eyinkimbinkimbi egxile ekwakhiweni.</li>
+        <li><strong>Pencil Sketch Drawing:</strong> Khombisa ubukhulu nobukeka bezithombe ezidwetshiwe.</li>
+        <li><strong>Pop Art:</strong> Sebenzisa imibala eqinile nezithombe ezikhuthazwa yisiko elidumile nezindaba ezinkulu.</li>
+        <li><strong>Rococo:</strong> Khombisa isitayela esiyinkimbinkimbi, esiyingqayizivele se-Rococo, ugcizelela ukukhanya nobuhle.</li>
+        <li><strong>Silhouette Art:</strong> Sebenzisa izikhala ezinamandla phakathi kokukhanya nethunzi ukuze udale izithombe eziphakeme, ezisekelwe ku-silhouette.</li>
+        <li><strong>Simple Vector Art:</strong> Gcizelela izimo ezihlanzekile, ze-geometric nemibala elula, ejwayelekile ye-vector art.</li>
+        <li><strong>SketchUp:</strong> Khombisa ukubukeka nokuzwakala kwemodeli ze-3D ezidalwe kusetshenziswa isoftware ye-SketchUp.</li>
+        <li><strong>Steampunk:</strong> Hlanganisa izithombe ze-Victorian-era nezobuchwepheshe obuphuma emanzini, udale isitayela esiphakeme, esiyingqayizivele.</li>
+        <li><strong>Surrealism:</strong> Hlanganisa iqiniso nezithombe ezinjengephupho ukuze udale izigcawu eziphakeme, eziphakeme.</li>
+        <li><strong>Suprematism:</strong> Gxila kumafomu e-geometric ayisisekelo nezikhala ezilinganiselwe, ekhuthazwa yi-Suprematist movement.</li>
+        <li><strong>Terragen:</strong> Khombisa izindawo eziphilayo, ezidalwe ngesoftware ye-Terragen.</li>
+        <li><strong>Tranquil Relaxing Atmosphere:</strong> Sebenzisa imibala ethambile nezithombe ezithokozisayo ukuze udale indawo ethokomele nepholile.</li>
+        <li><strong>Sticker Designs:</strong> Gxila ekwakheni izithombe ezijabulisayo, eziphakeme ezifanele izithombe.</li>
         <li><strong>Vibrant Rim Light:</strong> Gcizelela ukukhanya okukhanyayo, okukhanyayo ezindaweni ukuze udale umphumela ophawulekayo, ophilayo.</li>
-        <li><strong>Volumetric Lighting:</strong> Sebenzisa imisebe yokukhanya nemiphumela yokwakha ukuze udale ukujula nokwakha.</li>
-        <li><strong>Watercolor:</strong> Khombisa izithombe ezithambile, ezihambayo ze-watercolor paintings.</li>
-        <li><strong>Whimsical and Playful:</strong> Gxila ezithombeni ezithokozisayo, ezihlekisayo, futhi ngokuvamile ezithokozisayo.</li>
-        <li><strong>Sharp:</strong> Thuthukisa ukujula nokuchaza imiphetho ukuze uthole ukubukeka okuhlanzekile.</li>
-        <li><strong>Masterpiece:</strong> Gcizelela umkhiqizo wobuciko ophakeme, ohlanzekile, nowenziwe kahle.</li>
-        <li><strong>Photograph:</strong> Uhlosile ukuthola ikhwalithi yokufotografiya ebonakalayo neyeqiniso.</li>
+        <li><strong>Volumetric Lighting:</strong> Sebenzisa imisebe yokukhanya nezithombe eziphilayo ukuze udale ubukhulu nobukhulu.</li>
+        <li><strong>Watercolor:</strong> Khombisa ubukhulu obuthambile, obuhambayo bezithombe ze-watercolor.</li>
+        <li><strong>Whimsical and Playful:</strong> Gxila ezithombeni ezijabulisayo, ezicabangayo, futhi ngokuvamile ezihlekisayo.</li>
+        <li><strong>Sharp:</strong> Thuthukisa ukuhlela nokuchaza imiphetho ukuze uthole ukubukeka okuhlanzekile.</li>
+        <li><strong>Masterpiece:</strong> Gcizelela umkhiqizo wobuciko ophakeme, onemininingwane, futhi ophelele.</li>
+        <li><strong>Photograph:</strong> Uhlosile ukufinyelela izinga lokuphila eliqinile lokuthwebula izithombe.</li>
         <li><strong>Negative:</strong> Phendula imibala ukuze udale umphumela we-photographic negative.</li>
-        <li><strong>Ads - Advertising:</strong> Gxila ezithombeni ezihlanzekile, ezisebenzayo ezifanele ukukhangisa.</li>
-        <li><strong>Ads - Automotive:</strong> Hlanganisa isitayela sokubukeka sokukhangisa se-automotive esiphakeme nesihle.</li>
-        <li><strong>Ads - Corporate:</strong> Gcizelela umklamo ophakeme, osebenzayo ofanele izimo ze-corporate.</li>
-        <li><strong>Ads - Fashion Editorial:</strong> Khombisa ukubukeka kwesitayela, okuphezulu okusetshenziswa ezincwadini zokugqoka.</li>
-        <li><strong>Ads - Food Photography:</strong> Thuthukisa izithombe ukuze zibe nokubukeka okuhle nokukhanga okujwayelekile kwezithombe zokudla.</li>
-        <li><strong>Ads - Gourmet Food Photography:</strong> Gcizelela ubuhle, obunemininingwane bezithombe zokudla.</li>
-        <li><strong>Ads - Luxury:</strong> Gxila esitayeleni esiphakeme, esicebile esifanele izinkampani eziphakeme.</li>
-        <li><strong>Ads - Real Estate:</strong> Khombisa izithombe ezihlanzekile nezikhangayo ezijwayelekile zokukhangisa izindlu.</li>
-        <li><strong>Ads - Retail:</strong> Gcizelela isitayela esikhangayo, esibhekiswe kumakhasimende esifanele ukukhangisa.</li>
-        <li><strong>Hyperrealism:</strong> Uhlosile ukuthola isitayela esinembile, esiphilayo, esinembile.</li>
-        <li><strong>Pointillism:</strong> Sebenzisa amaphuzu amancane, ahlukanisiwe emibala ukuze udale isithombe, ezikhuthazwa yi-Pointillist movement.</li>
-        <li><strong>Psychedelic:</strong> Gcizelela imibala ephilayo nezithombe eziphakeme ezikhuthazwa ubuciko be-psychedelic.</li>
-        <li><strong>Renaissance:</strong> Khombisa isitayela esihambisanayo, esiyingqayizivele sobuciko be-Renaissance.</li>
-        <li><strong>Typography:</strong> Gxila ekusetshenzisweni kokudala nokubukeka kwezincwadi nezifonti.</li>
-        <li><strong>Futuristic Biomechanical:</strong> Hlanganisa izithombe zesikhathi esizayo nezinto ze-biomechanical ukuze udale isitayela esiphakeme, esiphilayo.</li>
-        <li><strong>Futuristic Biomechanical Cyberpunk:</strong> Hlanganisa izithombe ze-biomechanical nezithombe ze-cyberpunk ukuze udale ukubukeka okuphakeme, okukhanyayo.</li>
-        <li><strong>Futuristic Cybernetic:</strong> Gxila ezithombeni eziphakeme, ezidijithali.</li>
-        <li><strong>Futuristic Cybernetic Robot:</strong> Gcizelela izithombe ze-robotic nezithombe ze-cybernetic ezinephuzu lesikhathi esizayo.</li>
+        <li><strong>Ads - Advertising:</strong> Gxila ezithombeni ezihlanzekile, ezichwepheshile ezifanele ukumaketha.</li>
+        <li><strong>Ads - Automotive:</strong> Lungisa isitayela sokubukeka sokukhangisa kwezimoto eziphilayo nezichwepheshile.</li>
+        <li><strong>Ads - Corporate:</strong> Gcizelela umklamo opholile, ochwepheshile ofanele izimo zebhizinisi.</li>
+        <li><strong>Ads - Fashion Editorial:</strong> Khombisa ukubukeka okukhangayo, okuphezulu okusetshenziswa ezincwadini zokugqoka.</li>
+        <li><strong>Ads - Food Photography:</strong> Thuthukisa izithombe ukuze zibe nokubukeka okujabulisayo nokukhanga okujwayelekile kwezithombe zokudla.</li>
+        <li><strong>Ads - Gourmet Food Photography:</strong> Gcizelela ubuhle, obunemininingwane bokudla okumnandi.</li>
+        <li><strong>Ads - Luxury:</strong> Gxila esithombeni esiyinkimbinkimbi, esiphakeme esifanele izimpahla eziphakeme.</li>
+        <li><strong>Ads - Real Estate:</strong> Khombisa izithombe ezihlanzekile nezikhangayo ezijwayelekile zokukhangisa kwezindlu.</li>
+        <li><strong>Ads - Retail:</strong> Gcizelela isitayela esikhangayo, esigxile kumakhasimende esifanele ukukhangisa.</li>
+        <li><strong>Hyperrealism:</strong> Uhlosile ukufinyelela isitayela esinemininingwane, esiphilayo.</li>
+        <li><strong>Pointillism:</strong> Sebenzisa amaphuzu amancane, ahlukanisiwe emibala ukuze udale isithombe, ekhuthazwa yi-Pointillist movement.</li>
+        <li><strong>Psychedelic:</strong> Gcizelela imibala ephilayo nezithombe eziphilayo ezikhuthazwa ubuciko be-psychedelic.</li>
+        <li><strong>Renaissance:</strong> Khombisa isitayela esihambisanayo, esijwayelekile sobuciko be-Renaissance.</li>
+        <li><strong>Typography:</strong> Gxila ekusetshenzisweni okwakhiwe nokubukekayo kwemibhalo nezincwadi.</li>
+        <li><strong>Futuristic Biomechanical:</strong> Hlanganisa izici zesikhathi esizayo nezobuchwepheshe be-biomechanical ukuze udale isitayela esiphakeme, esiyingqayizivele.</li>
+        <li><strong>Futuristic Biomechanical Cyberpunk:</strong> Hlanganisa izithombe ze-biomechanical nezobuchwepheshe be-cyberpunk ukuze udale ukubukeka okuphakeme, okukhanyayo.</li>
+        <li><strong>Futuristic Cybernetic:</strong> Gxila ezithombeni eziphakeme, ezibukekayo ze-cybernetic.</li>
+        <li><strong>Futuristic Cybernetic Robot:</strong> Gcizelela izithombe ze-robotic nezobuchwepheshe be-cybernetic ezinephuzu lesikhathi esizayo.</li>
         <li><strong>Futuristic Cyberpunk Cityscape:</strong> Khombisa izithombe eziphakeme, ezikhanyayo ezijwayelekile ze-cyberpunk.</li>
-        <li><strong>Futuristic Sci-Fi:</strong> Gxila ezithombeni zesikhathi esizayo nezithombe ezikhuthazwa yizobuchwepheshe.</li>
-        <li><strong>Futuristic Retro Cyberpunk:</strong> Hlanganisa izithombe eziphakeme nezithombe ze-cyberpunk ukuze udale isitayela esikhumbulekayo kodwa esiphakeme.</li>
-        <li><strong>Futuristic Retro:</strong> Hlanganisa izithombe zesikhathi esizayo nezithombe ezijwayelekile.</li>
-        <li><strong>Futuristic Vaporwave:</strong> Gcizelela izithombe ezikhumbulekayo, eziphakeme ezijwayelekile ze-Vaporwave art.</li>
-        <li><strong>Game Bubble:</strong> Gxila kumoya opholile, ophakeme ovame ukubonwa emidlalweni yokudlala.</li>
-        <li><strong>Game Cyberpunk:</strong> Hlanganisa izithombe zokudlala nezithombe ze-cyberpunk.</li>
+        <li><strong>Futuristic Sci-Fi:</strong> Gxila ezithombeni zesikhathi esizayo nezikhuthazwa yefilimu ye-science fiction.</li>
+        <li><strong>Futuristic Retro Cyberpunk:</strong> Hlanganisa izithombe ezidala nezobuchwepheshe be-cyberpunk ukuze udale isitayela esikhumbuzayo kodwa esiphakeme.</li>
+        <li><strong>Futuristic Retro:</strong> Hlanganisa izithombe zesikhathi esizayo nezinto ezidala.</li>
+        <li><strong>Futuristic Vaporwave:</strong> Gcizelela izithombe ezikhumbuzayo, eziphilayo ezijwayelekile ze-Vaporwave art.</li>
+        <li><strong>Game Bubble:</strong> Gxila ekubukekeni okujabulisayo, okukhanyayo okuvame ukubonwa kumageyimu ajabulisayo.</li>
+        <li><strong>Game Cyberpunk:</strong> Hlanganisa izici zokuklama komdlalo nezobuchwepheshe be-cyberpunk.</li>
         <li><strong>Game Fighting:</strong> Khombisa isitayela esiphakeme, esinamandla esijwayelekile semidlalo yokulwa.</li>
-        <li><strong>Game GTA:</strong> Khombisa isitayela esiphakeme, esedolobheni esijwayelekile semidlalo ye-Grand Theft Auto.</li>
-        <li><strong>Game Mario:</strong> Gxila esitayeleni esiphilayo, esithokozisayo esijwayelekile semidlalo ye-Mario.</li>
-        <li><strong>Game Minecraft:</strong> Khombisa isitayela esiphakeme, esiphakeme esijwayelekile semidlalo ye-Minecraft.</li>
-        <li><strong>Game Pokemon:</strong> Khombisa isitayela esiphilayo, esikhuthazwa yi-anime esijwayelekile semidlalo ye-Pokémon.</li>
-        <li><strong>Game Retro Arcade:</strong> Gcizelela isitayela esikhumbulekayo, esiphakeme esijwayelekile semidlalo ye-retro arcade.</li>
-        <li><strong>Game RPG Fantasy:</strong> Khombisa izithombe ezinemininingwane, ezikhuthazwa yizithombe ze-RPG.</li>
+        <li><strong>Game GTA:</strong> Khombisa isitayela esiphakeme, esijwayelekile se-Grand Theft Auto games.</li>
+        <li><strong>Game Mario:</strong> Gxila esitayeleni esiphilayo, esijabulisayo esijwayelekile se-Mario games.</li>
+        <li><strong>Game Minecraft:</strong> Khombisa isitayela esiphakeme, esiphakeme se-Minecraft.</li>
+        <li><strong>Game Pokemon:</strong> Khombisa isitayela esiphilayo, esikhuthazwa yi-anime esijwayelekile se-Pokemon games.</li>
+        <li><strong>Game Retro Arcade:</strong> Gcizelela isitayela esikhumbuzayo, esiphakeme esijwayelekile semidlalo ye-retro arcade.</li>
+        <li><strong>Game RPG Fantasy:</strong> Khombisa ubuciko obunemininingwane, obukhuthazwa yefantasy obujwayelekile bemidlalo ye-RPG.</li>
         <li><strong>Game Strategy:</strong> Gxila kumklamo ohlanzekile, osebenzayo ojwayelekile wemidlalo ye-strategy.</li>
         <li><strong>Game Streetfighter:</strong> Khombisa isitayela esiphakeme, esinamandla esijwayelekile semidlalo ye-Street Fighter.</li>
-        <li><strong>Game Zelda:</strong> Khombisa isitayela esikhuthazwa yizithombe eziphakeme ezijwayelekile zemidlalo ye-Zelda.</li>
+        <li><strong>Game Zelda:</strong> Khombisa isitayela esikhuthazwa yefantasy esijwayelekile se-Zelda games.</li>
         <li><strong>Misc Architectural:</strong> Gxila kumiklamo ehlanzekile, enembile yokwakha.</li>
         <li><strong>Misc Disco:</strong> Gcizelela izithombe eziphilayo, ezikhanyayo ezijwayelekile zamasiko e-disco.</li>
-        <li><strong>Misc Dreamscape:</strong> Dala izindawo eziphakeme, eziphakeme.</li>
-        <li><strong>Misc Dystopian:</strong> Khombisa izithombe eziphakeme, ezinzima ezijwayelekile ze-dystopian.</li>
-        <li><strong>Misc Fairy Tale:</strong> Gcizelela izithombe ezihlekisayo, ezimangalisayo ezijwayelekile zezinganekwane.</li>
-        <li><strong>Misc Gothic:</strong> Khombisa isitayela esiphakeme, esiyingqayizivele esijwayelekile sobuciko be-Gothic.</li>
+        <li><strong>Misc Dreamscape:</strong> Dala izindawo eziphakeme, ezinjengephupho.</li>
+        <li><strong>Misc Dystopian:</strong> Khombisa izithombe eziphakeme, ezimnyama ezijwayelekile zezimo ezimbi.</li>
+        <li><strong>Misc Fairy Tale:</strong> Gcizelela izici ezijabulisayo, ezimnandi ezijwayelekile zezindaba zezinganekwane.</li>
+        <li><strong>Misc Gothic:</strong> Khombisa isitayela esiphakeme, esiyinkimbinkimbi esijwayelekile sobuciko be-Gothic.</li>
         <li><strong>Misc Grunge:</strong> Gcizelela izithombe eziphakeme, ezinzima ezijwayelekile zamasiko e-grunge.</li>
-        <li><strong>Misc Horror:</strong> Gxila ezithombeni ezimnyama, ezesabekayo, nezikhathazayo ezijwayelekile ze-horror.</li>
-        <li><strong>Misc Kawaii:</strong> Khombisa isitayela esihle, esithokozisayo esijwayelekile s文化 Kawaii.</li>
-        <li><strong>Misc Lovecraftian:</strong> Gcizelela izithombe eziphakeme, ezimangalisayo ezijwayelekile ze-Lovecraftian fiction.</li>
-        <li><strong>Misc Macabre:</strong> Gxila ezithombeni ezimnyama, ezinzima, nezikhathazayo.</li>
-        <li><strong>Misc Manga:</strong> Khombisa isitayela esiphakeme, esiphakeme esijwayelekile se-manga.</li>
+        <li><strong>Misc Horror:</strong> Gxila ezithombeni ezimnyama, eziphakeme, nezikhathazayo ezijwayelekile zobuhlungu.</li>
+        <li><strong>Misc Kawaii:</strong> Khombisa isitayela esithokozisayo, esijabulisayo esijwayelekile s文化 Kawaii.</li>
+        <li><strong>Misc Lovecraftian:</strong> Gcizelela izithombe ezimnandi, eziphilayo ezijwayelekile zobuhlungu be-Lovecraftian.</li>
+        <li><strong>Misc Macabre:</strong> Gxila ezindabeni ezimnyama, eziphakeme, nezikhathazayo.</li>
+        <li><strong>Misc Manga:</strong> Khombisa isitayela esiphakeme, esinamandla esijwayelekile se-manga.</li>
         <li><strong>Misc Metropolis:</strong> Khombisa izithombe eziphakeme, eziphakeme ezijwayelekile ze-metropolises zanamuhla.</li>
-        <li><strong>Misc Minimalist:</strong> Gcizelela ubulula nokunciphisa amafomu abe yizinto zawo ezisemqoka.</li>
-        <li><strong>Misc Monochrome:</strong> Gxila ezithombeni ezidalwe ngemibala ehlukene ye-1 color.</li>
-        <li><strong>Misc Nautical:</strong> Khombisa izithombe eziphakeme, ezikhanyayo ezijwayelekile ze-nautical themes.</li>
-        <li><strong>Misc Space:</strong> Gcizelela izithombe eziphakeme, eziphakeme ezijwayelekile ze-space settings.</li>
-        <li><strong>Misc Stained Glass:</strong> Khombisa izithombe ezinzima, ezinemibala ezijwayelekile ze-stained glass art.</li>
-        <li><strong>Misc Techwear Fashion:</strong> Gxila ezithombeni eziphakeme, ezisebenzayo ezijwayelekile ze-techwear fashion.</li>
-        <li><strong>Misc Tribal:</strong> Khombisa izithombe eziphakeme, eziphakeme ezijwayelekile ze-tribal art.</li>
-        <li><strong>Misc Zentangle:</strong> Gcizelela izithombe ezinzima, eziphakeme ezijwayelekile ze-Zentangle art.</li>
-        <li><strong>Papercraft Collage:</strong> Sebenzisa iphepha elicutshunguliwe ukuze udale izithombe eziphakeme, ezithokozisayo.</li>
-        <li><strong>Papercraft Flat Papercut:</strong> Gcizelela izithombe eziphakeme, ezicutshunguliwe.</li>
-        <li><strong>Papercraft Kirigami:</strong> Gxila kumiklamo enezinhlobonhlobo, eziphakeme ezijwayelekile ze-Kirigami.</li>
-        <li><strong>Papercraft Paper Mache:</strong> Sebenzisa iphepha elicutshunguliwe ukuze udale izithombe eziphakeme, ezithokozisayo.</li>
-        <li><strong>Papercraft Paper Quilling:</strong> Gcizelela izithombe ezithokozisayo, ezithokozisayo ezijwayelekile ze-paper quilling.</li>
-        <li><strong>Papercraft Papercut Collage:</strong> Hlanganisa izithombe ezicutshunguliwe ukuze udale izithombe eziphakeme.</li>
-        <li><strong>Papercraft Papercut Shadow Box:</strong> Sebenzisa izithombe ezicutshunguliwe ukuze udale izithombe eziphakeme.</li>
-        <li><strong>Papercraft Stacked Papercut:</strong> Gxila kumiklamo ehlanzekile, ehlanzekile.</li>
-        <li><strong>Papercraft Thick Layered Papercut:</strong> Gcizelela ukubukeka okukhulu, okuphakeme okujwayelekile kwe-thick papercut designs.</li>
-        <li><strong>Photo Alien:</strong> Gxila ezithombeni eziphakeme, eziphakeme.</li>
+        <li><strong>Misc Minimalist:</strong> Gcizelela ubulula nokunciphisa amafomu abe yizinto ezisemqoka.</li>
+        <li><strong>Misc Monochrome:</strong> Gxila ezithombeni ezidalwe ngemibala ehlukahlukene yephuzu elilodwa.</li>
+        <li><strong>Misc Nautical:</strong> Khombisa izithombe ezikhuthazwa yizinto zasemanzini ezijwayelekile zezihloko ze-nautical.</li>
+        <li><strong>Misc Space:</strong> Gcizelela izithombe ezinkulu, eziphakeme ezijwayelekile zezindawo.</li>
+        <li><strong>Misc Stained Glass:</strong> Khombisa izithombe ezinzima, ezinemibala ezijwayelekile zobuciko be-stained glass.</li>
+        <li><strong>Misc Techwear Fashion:</strong> Gxila ezithombeni zesikhathi esizayo, ezisebenzayo ezijwayelekile ze-techwear fashion.</li>
+        <li><strong>Misc Tribal:</strong> Khombisa izithombe eziphakeme, eziphakeme ezijwayelekile zobuciko be-tribal.</li>
+        <li><strong>Misc Zentangle:</strong> Gcizelela ama-patterns ahlakaniphile, aphindaphindayo ajwayelekile wobuciko be-Zentangle.</li>
+        <li><strong>Papercraft Collage:</strong> Sebenzisa iphepha elicutshunguliwe ukuze udale ama-collages ahlukanisiwe, anemibala.</li>
+        <li><strong>Papercraft Flat Papercut:</strong> Gcizelela imiklamo yephaphethi, yephaphethi.</li>
+        <li><strong>Papercraft Kirigami:</strong> Gxila kumiklamo eyinkimbinkimbi, efoldiwe ejwayelekile ye-Kirigami.</li>
+        <li><strong>Papercraft Paper Mache:</strong> Sebenzisa iphepha elicutshunguliwe ukuze udale izimo ezinemibala, ezinezinhlaka ezintathu.</li>
+        <li><strong>Papercraft Paper Quilling:</strong> Gcizelela imiklamo ethambile, eguquguqukayo ejwayelekile ye-paper quilling.</li>
+        <li><strong>Papercraft Papercut Collage:</strong> Hlanganisa izinto ezicutshunguliwe ukuze udale ama-collages ahlukanisiwe.</li>
+        <li><strong>Papercraft Papercut Shadow Box:</strong> Sebenzisa ama-papercuts ahlukanisiwe ukuze udale ama-shadow boxes anemibala.</li>
+        <li><strong>Papercraft Stacked Papercut:</strong> Gxila kumiklamo ehlukanisiwe, ehlukanisiwe.</li>
+        <li><strong>Papercraft Thick Layered Papercut:</strong> Gcizelela ukubukeka okunezinhlaka, okukhululekile okujwayelekile kwemiklamo ye-thick papercut.</li>
+        <li><strong>Photo Alien:</strong> Gxila ezithombeni eziphakeme, eziphilayo.</li>
         <li><strong>Photo Film Noir:</strong> Gcizelela izithombe ezimnyama, eziphakeme ezijwayelekile ze-film noir.</li>
-        <li><strong>Photo Glamour:</strong> Khombisa ukubukeka okuhle, okuhle okujwayelekile kwezithombe ze-glamour.</li>
-        <li><strong>Photo HDR:</strong> Sebenzisa i-high dynamic range (HDR) ukuze udale izithombe ezinezinhlobonhlobo zokukhanya nemibala.</li>
-        <li><strong>Photo iPhone Photographic:</strong> Khombisa isitayela esihlanzekile, esisha esijwayelekile se-iPhone photography.</li>
-        <li><strong>Photo Long Exposure:</strong> Sebenzisa isikhathi eside ukuze udale imiphumela ethokozisayo, ephakeme.</li>
+        <li><strong>Photo Glamour:</strong> Khombisa ukubukeka okuhle, okujabulisayo okujwayelekile kwezithombe ze-glamour.</li>
+        <li><strong>Photo HDR:</strong> Sebenzisa ibanga eliphezulu lokukhanya (HDR) ukuze udale izithombe ezinezinhlaka eziningi zokukhanya nemibala.</li>
+        <li><strong>Photo iPhone Photographic:</strong> Khombisa isitayela esihlanzekile, esisha esijwayelekile sokuthwebula izithombe ze-iPhone.</li>
+        <li><strong>Photo Long Exposure:</strong> Sebenzisa isikhathi eside sokukhanya ukuze udale imiphumela ethokozisayo, ethokozisayo.</li>
         <li><strong>Photo Neon Noir:</strong> Hlanganisa ukukhanya kwe-neon nezithombe ezimnyama, eziphakeme ze-noir.</li>
-        <li><strong>Photo Silhouette:</strong> Gxila ezithombeni eziphakeme phakathi kokukhanya neshadow ukuze udale izithombe eziphakeme, ezisekelwe ku-silhouette.</li>
-        <li><strong>Photo Tilt Shift:</strong> Sebenzisa imiphumela ye-tilt-shift ukuze udale ukubukeka okuncane, okukhanyayo.</li>
-        <li><strong>3D Model:</strong> Gxila kumiklamo ehlanzekile, enembile ye-3D models.</li>
-        <li><strong>Analog Film:</strong> Khombisa ukubukeka okukhuluma ngempilo, okukhuluma ngempilo kwe-analog film photography.</li>
-        <li><strong>Anime:</strong> Gcizelela isitayela esiphilayo, esiphakeme esijwayelekile se-anime.</li>
-        <li><strong>Cinematic:</strong> Dala umphumela ophawulekayo, ofana nefilimu, onokukhanya okuqinile nezithombe.</li>
-        <li><strong>Comic Book:</strong> Sebenzisa imigqa eqinile nezithombe eziphilayo ezijwayelekile zobuciko be-comic book.</li>
-        <li><strong>Craft Clay:</strong> Khombisa ukubukeka okukhuluma ngempilo, okukhuluma ngempilo kwemodeli ye-clay.</li>
-        <li><strong>Digital Art:</strong> Gxila ezithombeni ezihlanzekile, ezithokozisayo zobuciko be-digital.</li>
-        <li><strong>Fantasy Art:</strong> Gcizelela izithombe ezinemininingwane, ezikhuthazwa yizithombe ze-fantasy.</li>
-        <li><strong>Isometric:</strong> Sebenzisa umbono we-isometric ukuze udale ukubukeka kwe-3D.</li>
+        <li><strong>Photo Silhouette:</strong> Gxila ezikhala ezinamandla phakathi kokukhanya nethunzi ukuze udale izithombe eziphakeme, ezisekelwe ku-silhouette.</li>
+        <li><strong>Photo Tilt Shift:</strong> Sebenzisa imiphumela ye-tilt-shift ukuze udale ukubukeka okuncane, okufana nezinto zokudlala.</li>
+        <li><strong>3D Model:</strong> Gxila kumklamo ohlanzekile, onemininingwane ojwayelekile wemodeli ze-3D.</li>
+        <li><strong>Analog Film:</strong> Khombisa ukubukeka okukhanyayo, okukhanyayo okujwayelekile kwezithombe ze-analog film.</li>
+        <li><strong>Anime:</strong> Gcizelela isitayela esiphilayo, esinamandla esijwayelekile se-anime.</li>
+        <li><strong>Cinematic:</strong> Dala umphumela ophawulekayo, ofana nefilimu, onezikhala ezinamandla nezithombe.</li>
+        <li><strong>Comic Book:</strong> Sebenzisa imigqa eqinile nemibala ephilayo ejwayelekile yobuciko be-comic book.</li>
+        <li><strong>Craft Clay:</strong> Khombisa ukubukeka okukhanyayo, okwenziwe ngesandla kwemodeli ze-clay.</li>
+        <li><strong>Digital Art:</strong> Gxila ezithombeni ezihlanzekile, ezichwepheshile ze-digital art.</li>
+        <li><strong>Fantasy Art:</strong> Gcizelela izithombe ezinemininingwane, ezicabangayo ezijwayelekile zobuciko be-fantasy.</li>
+        <li><strong>Isometric:</strong> Sebenzisa umbono we-isometric ukuze udale ukubukeka kwezithombe ezintathu.</li>
         <li><strong>Line Art:</strong> Gxila kumigqa ehlanzekile, eqinile ukuze udale izithombe ezinemininingwane.</li>
-        <li><strong>Low Poly:</strong> Sebenzisa ama-models e-low-polygon 3D ukuze udale ukubukeka okuncane, okukhanyayo.</li>
-        <li><strong>Neonpunk:</strong> Hlanganisa ukukhanya kwe-neon nezithombe eziphakeme ezijwayelekile ze-cyberpunk.</li>
-        <li><strong>Origami:</strong> Gxila kumiklamo enezinhlobonhlobo, eziphakeme ezijwayelekile ze-origami.</li>
-        <li><strong>Photographic:</strong> Uhlosile ukuthola izithombe eziphilayo, eziphilayo.</li>
-        <li><strong>Pixel Art:</strong> Sebenzisa izithombe eziphakeme ukuze udale ukubukeka okukhumbulekayo, okukhanyayo.</li>
-        <li><strong>Texture:</strong> Gxila kumiklamo enezinhlobonhlobo, eziphakeme ukuze uthuthukise ukujula.</li>
+        <li><strong>Low Poly:</strong> Sebenzisa imodeli ye-low-polygon 3D ukuze udale ukubukeka okuncane, okwe-geometric.</li>
+        <li><strong>Neonpunk:</strong> Hlanganisa ukukhanya kwe-neon nezithombe eziphakeme, ezijwayelekile ze-cyberpunk.</li>
+        <li><strong>Origami:</strong> Gxila kumiklamo eyinkimbinkimbi, efoldiwe ejwayelekile ye-origami.</li>
+        <li><strong>Photographic:</strong> Uhlosile ukufinyelela izithombe eziphilayo, eziphilayo.</li>
+        <li><strong>Pixel Art:</strong> Sebenzisa imiklamo ye-pixelated ukuze udale ukubukeka okukhumbuzayo, okukhanyayo.</li>
+        <li><strong>Texture:</strong> Gxila ezithombeni ezinemininingwane, eziphilayo ukuze uthuthukise ubukhulu bokubuka.</li>
     </ul>
 </body>
 </html>

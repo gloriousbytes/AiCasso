@@ -31,9 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -41,41 +48,41 @@
 <body>
 
     <h2>የሱፐር ሬዞሉሽን ባለመረጃ መመሪያ</h2>
-    <p>በAiCasso ውስጥ የሱፐር ሬዞሉሽን ባለመረጃ የምስሎችዎን ይህን ያስቀምጣል። የምስልዎን እንዴት እንደሚያሻሽል ይነግሩት፣ እና AiCasso የቀረበውን ይወዳድር። ዝርዝር ወይም የምስልዎን የማሻሻያ ይምረጡ፣ ይህ በጣም ቀላል ነው።</p>
+    <p>በAiCasso ውስጥ የሱፐር ሬዞሉሽን ባለመረጃ የምስሎችዎን ይህን ይማርከዋል። የምስልዎን እንዴት እንደሚያሻሽል ይነግሩት፣ እና AiCasso የቀረበውን ይወስዳል። ዝርዝር ይጠብቁ ወይም ሙሉ ምስል ይሻሽሉ፣ ይገናኝ በቀላሉ ነው።</p>
 
     <h3>እንዴት ይሰራል:</h3>
     
     <div class="example">
         <strong>የገባ ምስል:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="የገባ ምስል" loading="lazy">
         </div>
-        <strong>የተነሳ:</strong>
-        <p>"እንደ 4 ጊዜ ያስቀምጡ፣ የአልትራ ሻርፕ ሞዴል ይጠቀሙ"</p>
+        <strong>እቅፍ:</strong>
+        <p>"እንደ 4 ጊዜ ያስቀርብ፣ የአልትራ ሻርፕ ሞዴል ይጠቀሙ"</p>
         <strong>ውጤት:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="ውጤት ምስል" loading="lazy">
         </div>
     </div>
 
-    <h3>አማራጭ ፓራሜተርዎች</h3>
-    <p>የምስልዎን የማሻሻያ መንገድ ላይ በተጨማሪ መቆጣጠር እንደሚፈልጉ እነዚህ የተጨማሪ አማራጭ አሉ፡፡</p>
+    <h3>አማራጭ የማስተካከያ አቀማመጦች</h3>
+    <p>የምስልዎን እንዴት ይሻሽል ላይ ትንሽ ቁጥጥር እንደሚፈልጉ እነዚህ የተጨማሪ አማራጭ አሉ፡፡</p>
 
     <ul>
-        <li><strong>መጠን:</strong> ይህ የምስልዎን የማስታወሻ መጠን ነው። ከ1 እስከ 4 መጠን ይምረጡ፣ 4 የተመረጠ ነው። በተለምዶ ትልቅ ቁጥሮች ትልቅ ምስል ይሆናል።</li>
-        <li><strong>የማሻሻያ ሞዴል:</strong> ይህ የምስልዎን የማሻሻያ ፊልተር ይምረጡ፣ ነገር ግን በጣም ተስፋ ይበልጣል። እነዚህ አማራጭ ናቸው፡፡
+        <li><strong>መጠን:</strong> የምስልዎን የማስተካከያ መጠን ይምረጡ። ከ1 እስከ 4 መጠን ይምረጡ፣ 4 የተመለከተ ነው። በአጠቃላይ፣ ትልቅ ቁጥሮች ትልቅ ምስል ይሆናሉ።</li>
+        <li><strong>የማስተካከያ ሞዴል:</strong> ይህ የምስልዎን የማስተካከያ ፊልተር ይምረጡ፣ ነገር ግን በጣም ውበት ነው። እነዚህ አማራጭ አሉ፡፡
             <ul>
-                <li><strong>ታላቅ ዝርዝር ይጨምር:</strong> በጣም ትንሽ ዝርዝሮች ላይ ይምረጡ።</li>
+                <li><strong>ታላቅ ዝርዝር ይጨምር:</strong> በታንክ ዝርዝሮች ላይ ይምረጡ።</li>
                 <li><strong>አልትራ ሻርፕ:</strong> ምስልውን በጣም ግሩም እና ግሩም ይደርሳል።</li>
-                <li><strong>አኒሜ ይጨምር:</strong> የአኒሜ አይነት ምስሎች ይምረጡ፣ ይህ ይህን ይደርሳል።</li>
+                <li><strong>አኒሜ ይጨምር:</strong> ለአኒሜ ዓይነት ምስሎች በጣም ይሻሽል፣ ይህ ይህን ይደርሳል።</li>
                 <li><strong>ዳቦ ዝርዝር:</strong> ዝርዝሮችን ወይም ወይም ይምረጡ።</li>
-                <li><strong>አጠቃላይ ይጨምር:</strong> በብዙ ምስሎች ውስጥ የተመረጠ አማራጭ ነው።</li>
+                <li><strong>አጠቃላይ ይጨምር:</strong> ለብዙ ምስሎች የተመለከተ ይምረጡ።</li>
             </ul>
         </li>
-        <li><strong>የፊት ይጨምር:</strong> የምስልዎ ፊት ከሆነ፣ ይህ አማራጭ ይምረጡ፣ ይህ ይህን ይደርሳል። የፊት ባለመረጃ ይምረጡ።</li>
+        <li><strong>የፊት ይጨምር:</strong> የምስልዎ ፊት ከሆነ፣ ይህ አማራጭ ይሻሽል። እቅፍ ይቀይሩ እንደሚፈልጉ ይምረጡ።</li>
     </ul>
 
-    <p>እባኮትን እነዚህ አማራጭ በጣም አማራጭ ናቸው! እንደሚፈልጉ ይምረጡ። የምስልዎን ይገልጹ፣ እና AiCasso የሚሰራውን ይምረጡ። እና በቃላትዎ ውስጥ በጣም ተስፋ አይደለም—AiCasso ይህን ይረዳል!</p>
+    <p>እባኮትን እነዚህ አማራጭ በጣም አማራጭ ናቸው! እንደሚፈልጉ ይቀይሩ አይደለም። የምንፈልግ ይገልጹ፣ እና AiCasso ይህን ይወስዳል። እና በቃላትዎ ላይ በተለይ አይደለም ይቅርታ—AiCasso ይህን ይረዳል!</p>
 
 </body>
 </html>

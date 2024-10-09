@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            max-width: 100%;
             height: auto;
+            object-fit: contain;
         }
         .iframe-container {
             display: flex;
@@ -48,45 +49,45 @@
 <body>
 
     <h2>Umhlahlandlela Wokusebenzisa Isici Sokuguqula Isithombe Sibe Ividiyo</h2>
-    <p>Isici sokuguqula isithombe sibe ividiyo ku-AiCasso sikuvumela ukuthi uguqule isithombe esisodwa sibe ividiyo esheshayo. Chaza nje lokho ofuna ukukubona kuvidiyo yakho, futhi i-AiCasso izokwenza kube khona!</p>
+    <p>Isici sokuguqula isithombe sibe ividiyo ku-AiCasso sikuvumela ukuthi uguqule isithombe esisodwa sibe ividiyo esheshayo. Chaza kuphela lokho ofuna ukukubona kuvidiyo yakho, futhi i-AiCasso izokwenza kube khona!</p>
 
     <h3>Ukusebenza Kwayo:</h3>
     
     <div class="example">
         <strong>Isithombe Sokufaka:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/input.jpg" alt="Isithombe Sokufaka" loading="lazy">
         </div>
-        <strong>Imiyalo 1:</strong>
+        <strong>Ukukhuthaza 1:</strong>
         <p>"Inja encane emnandi epakini"</p>
         <strong>Umphumela 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppy.gif" alt="Inja Encane Emnandi Epaki" loading="lazy">
         </div>
-        <strong>Imiyalo 2:</strong>
+        <strong>Ukukhuthaza 2:</strong>
         <p>"Inja encane emnandi epakini, sebenzisa i-FPS ephezulu, amafremu amaningi, kanye nokunyakaza okuningi"</p>
         <strong>Umphumela 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppymaxframes.gif" alt="I-FPS Ephezulu Inja Epaki" loading="lazy">
         </div>
     </div>
 
-    <h3>Izilungiselelo Ezikhethwayo</h3>
-    <p>Uma ufuna ukuba nemininingwane ethile kuvidiyo yakho, nansi eminye imingcele ongayilungisa:</p>
+    <h3>Izilungiselelo Ezingeziwe</h3>
+    <p>Uma ufuna ukuba nezinqumo ezithile kuvidiyo yakho, nansi eminye imingcele ongayilungisa:</p>
 
     <ul>
-        <li><strong>Imiyalo Engalungile:</strong> Chaza lokho *ongafuni* ukukubona kuvidiyo. Uma kushiywe ingenalutho, i-AiCasso izogxila kuphela kumiyalo emihle.</li>
+        <li><strong>Ukukhuthaza Okubi:</strong> Chaza lokho ongafuni kuvidiyo. Uma kushiywe kungapheli, i-AiCasso izogxila kuphela kukhuthazo olumqoka.</li>
         <li><strong>Inani LamaFrames:</strong> Khetha ukuthi mangaki amaframes (izithombe ezihlukene) ividiyo yakho izoba nazo. Ungakhetha kuze kube ngu-25 amaframes, kanti u-16 ungumkhawulo ojwayelekile.</li>
         <li><strong>Izinyathelo Zokuhlanza:</strong> Lokhu kulawula ukuthi ividiyo yakho ibukeka kanjani. Izinyathelo eziningi zisho ividiyo ehlanzekile. Ungasetha kuze kube ngu-50 izinyathelo, kanti u-20 ungumkhawulo ojwayelekile.</li>
-        <li><strong>Isikali Sokuhola:</strong> Lokhu kusiza ividiyo ukuthi ihlale ibambelela encazelweni yakho. Umkhawulo usuka ku-1.0 kuya ku-8.0, futhi ungakwazi ukulungisa amanani okuqala nokugcina ukuze uqondise ukuthi ividiyo ithuthuka kanjani.</li>
-        <li><strong>Ukunyakaza:</strong> Lungisa ukuthi kukhona kangakanani ukuhamba kuvidiyo yakho. Inani eliphezulu lisho ukuhamba okuningi. Umkhawulo usuka ku-0 kuya ku-127, kanti u-60 ungumkhawulo ojwayelekile.</li>
-        <li><strong>Ubukhulu Bokukh noise:</strong> Engeza umsindo kuvidiyo yakho ukuze ube nokubukeka okungaphezulu. Umkhawulo usuka ku-0 kuya ku-1, kanti u-0 ungumkhawulo ojwayelekile.</li>
-        <li><strong>AmaFrames Ngomzuzu (FPS):</strong> Setha ukuthi ividiyo yakho idlalwe ngokushesha kangakanani. Umkhawulo ojwayelekile ngu-16 FPS, kodwa ungaya ku-16 ukuze udlale ngokushesha.</li>
-        <li><strong>Indlela Yokuhlanganisa:</strong> Khetha ukuthi amaframes ahlanganiswa kanjani. Umkhawulo ojwayelekile ngu-"lerp" (ukuhlanganiswa okujwayelekile), kodwa ungasebenzisa futhi "slerp" (ukuhlanganiswa kwe-spherical linear) ukuze uthole imiphumela ehlukene.</li>
-        <li><strong>Ukushiya I-Clip:</strong> Shiya ezinye izingqimba ukuze uthole isitayela sevidiyo esihlukile. Ungashiya kuze kube yizingqimba ezi-2, noma uyishiye ingenalutho ukuze ube nesimo esijwayelekile.</li>
+        <li><strong>Isikali Sokuhola:</strong> Lokhu kusiza ividiyo ukuba ihlale ibambelela encazelweni yakho. Umkhawulo usuka ku-1.0 kuya ku-8.0, futhi ungakwazi ukulungisa amanani okuqala nokugcina ukuze uqondise ukuthi ividiyo ithuthuka kanjani.</li>
+        <li><strong>Ukunyakaza:</strong> Lungisa ukuthi kukhona kangakanani ukuhamba kuvidiyo yakho. Inani eliphezulu lisho isenzo esiningi. Umkhawulo usuka ku-0 kuya ku-127, kanti u-60 ungumkhawulo ojwayelekile.</li>
+        <li><strong>Ubukhulu Bokukhulisa Umsindo:</strong> Faka umsindo kuvidiyo yakho ukuze uyinikeze ukubukeka okunezici. Umkhawulo usuka ku-0 kuya ku-1, kanti u-0 ungumkhawulo ojwayelekile.</li>
+        <li><strong>AmaFrames Ngomzuzu (FPS):</strong> Setha ukuthi ividiyo yakho idlalwa kanjani ngokushesha. Umkhawulo ojwayelekile ngu-16 FPS, kodwa ungaya ku-16 ukuze udlale ngokushesha.</li>
+        <li><strong>Indlela Yokuhlanganisa:</strong> Khetha ukuthi amaframes ahlanganiswa kanjani. Umkhawulo ojwayelekile ngu-"lerp" (ukuhlanganiswa okujwayelekile), kodwa ungasebenzisa futhi "slerp" (ukuhlanganiswa kwe-spherical linear) ukuze uthole imiphumela ehlukile.</li>
+        <li><strong>Ukweqa I-Clip:</strong> Phonsa ezinye izingqimba ukuze uthole isitayela sevidiyo esihlukile. Ungaphonsa kuze kube yizingqimba ezi-2, noma uyishiye ingapheli ukuze ube nesimo esijwayelekile.</li>
     </ul>
 
-    <p>Khumbula, i-AiCasso ikhuluma kahle! Awudingi ukufaka yonke imininingwane kahle noma usebenzise ulimi oluchanile. Chaza nje lokho ofuna, futhi i-AiCasso izokwenza okunye. Jabulela ukudala ama-video akho!</p>
+    <p>Khumbula, i-AiCasso iyahlakanipha! Awudingi ukwenza yonke imininingwane ibe phezulu noma usebenzise ulimi olufanele. Chaza kuphela lokho ofuna, futhi i-AiCasso izokwenza okunye. Jabulela ukudala ama-video akho!</p>
 
 </body>
 </html>

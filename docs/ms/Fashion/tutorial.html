@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -48,35 +49,35 @@
 <body>
 
     <h2>Panduan Menggunakan Ciri Generasi Fesyen</h2>
-    <p>Ciri Generasi Fesyen dalam AiCasso membolehkan anda memakaikan seseorang dengan pakaian tertentu, seperti baju, gaun, atau seluar. Hanya nyatakan apa yang anda mahu, dan lihat AiCasso memakaikan pakaian tersebut kepada orang dalam imej.</p>
+    <p>Ciri Generasi Fesyen dalam AiCasso membolehkan anda menggayakan seseorang dengan pakaian tertentu, seperti baju, gaun, atau seluar. Hanya perlu terangkan apa yang anda inginkan, dan saksikan AiCasso mengenakan item pakaian kepada orang dalam gambar.</p>
 
     <h3>Bagaimana Ia Berfungsi:</h3>
     
     <div class="example">
-        <strong>Input 1 - Imej Orang:</strong>
+        <strong>Input 1 - Gambar Orang:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 1.jpg" alt="Gambar Orang">
         </div>
         <strong>Input 2 - Item Pakaian:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 2.jpg" alt="Item Pakaian">
         </div>
         <strong>Prompt:</strong>
-        <p>"Lelaki memakai baju"</p>
+        <p>"Lelaki yang memakai baju"</p>
         <strong>Hasil:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+            <img src="../../images/tutorials/fashion/result.jpg" alt="Gambar Hasil">
         </div>
     </div>
 
     <h3>Parameter Pilihan</h3>
-    <p>Jika anda ingin menambah gaya anda sendiri atau memastikan hasilnya tepat, anda boleh mengubah suai tetapan ini:</p>
+    <p>Jika anda ingin menambah gaya anda sendiri atau memastikan hasilnya tepat, anda boleh mengubah tetapan ini:</p>
 
     <ul>
-        <li><strong>Prompt Negatif:</strong> Jika ada sesuatu yang anda <em>tidak</em> mahu dalam imej, nyatakannya di sini. Biarkan kosong jika anda okey dengan apa sahaja yang AiCasso hasilkan.</li>
-        <li><strong>Jenis Pakaian:</strong> Beritahu AiCasso sama ada anda memberi tumpuan kepada <em>badan atas</em>, <em>badan bawah</em>, atau <em>gaun</em>. Jika anda tidak pasti, ia akan lalai kepada badan atas.</li>
-        <li><strong>Bilangan Langkah Denoising:</strong> Ini menentukan betapa licin dan halus imej kelihatan. Anda boleh memilih antara 21, 31, atau 41 langkah, dengan 21 sebagai lalai. Lebih banyak langkah biasanya bermaksud rupa yang lebih halus.</li>
-        <li><strong>Skala Panduan:</strong> Ini membantu imej kekal rapat dengan penerangan anda. Anda boleh menetapkannya dari 1 hingga 20, dengan 7 sebagai lalai. Nombor yang lebih tinggi bermaksud AiCasso akan mengikuti prompt anda dengan lebih rapat.</li>
+        <li><strong>Prompt Negatif:</strong> Jika ada sesuatu yang anda <em>tidak</em> mahu dalam gambar, sebutkan di sini. Biarkan kosong jika anda tidak kisah dengan apa yang AiCasso hasilkan.</li>
+        <li><strong>Jenis Kain:</strong> Beritahu AiCasso sama ada anda memberi tumpuan kepada <em>bahagian atas badan</em>, <em>bahagian bawah badan</em>, atau <em>gaun</em>. Jika anda tidak pasti, ia akan secara default kepada bahagian atas badan.</li>
+        <li><strong>Bilangan Langkah Denoising:</strong> Ini menentukan seberapa halus dan kemas gambar tersebut. Anda boleh memilih antara 21, 31, atau 41 langkah, dengan 21 sebagai default. Lebih banyak langkah biasanya bermakna penampilan yang lebih halus.</li>
+        <li><strong>Skala Panduan:</strong> Ini membantu gambar tetap dekat dengan penerangan anda. Anda boleh menetapkannya dari 1 hingga 20, dengan 7 sebagai default. Nombor yang lebih tinggi bermakna AiCasso akan mengikuti prompt anda dengan lebih dekat.</li>
     </ul>
 
     <p>Ingat, tetapan ini adalah pilihan! AiCasso cukup pintar dan boleh memahami apa yang anda maksudkan walaupun anda tidak mendapatkan setiap butiran dengan sempurna. Hanya berseronok dan biarkan kreativiti anda mengalir!</p>

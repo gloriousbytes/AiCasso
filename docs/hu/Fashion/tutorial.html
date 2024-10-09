@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -48,38 +49,38 @@
 <body>
 
     <h2>A Divat Generációs Funkció Használati Útmutatója</h2>
-    <p>A Divat Generációs funkció az AiCasso-ban lehetővé teszi, hogy valakit egy konkrét öltözékbe öltöztessünk, például ingbe, ruhába vagy nadrágba. Egyszerűen írd le, mit szeretnél, és nézd, ahogy az AiCasso alkalmazza a ruhadarabot a képen látható személyre.</p>
+    <p>A Divat Generációs funkció az AiCasso-ban lehetővé teszi, hogy valakit egy adott öltözetbe öltöztessünk, például ingbe, ruhába vagy nadrágba. Egyszerűen írd le, mit szeretnél, és nézd, ahogy az AiCasso alkalmazza a ruhadarabot a képen látható személyre.</p>
 
     <h3>Hogyan Működik:</h3>
     
     <div class="example">
         <strong>Bemenet 1 - Személy Képe:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 1.jpg" alt="Személy Képe">
         </div>
         <strong>Bemenet 2 - Ruhadarab:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 2.jpg" alt="Ruhadarab">
         </div>
         <strong>Prompt:</strong>
         <p>"Férfi ingben"</p>
         <strong>Eredmény:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+            <img src="../../images/tutorials/fashion/result.jpg" alt="Eredmény Képe">
         </div>
     </div>
 
     <h3>Opcionális Paraméterek</h3>
-    <p>Ha szeretnéd hozzáadni a saját stílusodat, vagy biztosítani szeretnéd, hogy az eredmény pontosan olyan legyen, amilyet szeretnél, módosíthatod ezeket a beállításokat:</p>
+    <p>Ha szeretnéd hozzáadni a saját stílusodat, vagy biztos akarsz lenni abban, hogy az eredmény tökéletes legyen, módosíthatod ezeket a beállításokat:</p>
 
     <ul>
         <li><strong>Negatív Prompt:</strong> Ha van valami, amit <em>nem</em> szeretnél a képen, csak említsd meg itt. Hagyd üresen, ha elégedett vagy azzal, amit az AiCasso kitalál.</li>
-        <li><strong>Ruhatípus:</strong> Mondd el az AiCasso-nak, hogy az <em>felsőtestre</em>, <em>alsótestre</em> vagy <em>ruhákkal</em> foglalkozol. Ha nem vagy biztos benne, alapértelmezés szerint a felsőtestre állítja.</li>
-        <li><strong>Denoising Lépések Száma:</strong> Ez határozza meg, hogy mennyire sima és kifinomult a kép. Választhatsz 21, 31 vagy 41 lépés között, ahol a 21 az alapértelmezett. Több lépés általában finomabb megjelenést jelent.</li>
-        <li><strong>Irányítási Skála:</strong> Ez segít, hogy a kép szorosan kövesse a leírásodat. 1-től 20-ig állíthatod, ahol a 7 az alapértelmezett. A magasabb számok azt jelentik, hogy az AiCasso jobban követi a promptodat.</li>
+        <li><strong>Ruhatípus:</strong> Mondd el az AiCasso-nak, hogy az <em>felsőtestre</em>, <em>alsótestre</em> vagy <em>ruhákkal</em> foglalkozol. Ha nem vagy biztos benne, alapértelmezés szerint a felsőtestet választja.</li>
+        <li><strong>Denoising Lépések Száma:</strong> Ez határozza meg, hogy mennyire sima és csiszolt a kép. Választhatsz 21, 31 vagy 41 lépés között, ahol a 21 az alapértelmezett. Több lépés általában finomabb megjelenést jelent.</li>
+        <li><strong>Útmutató Skála:</strong> Ez segít, hogy a kép szorosan kövesse a leírásodat. 1-től 20-ig állíthatod, ahol a 7 az alapértelmezett. A magasabb számok azt jelentik, hogy az AiCasso jobban követi a promptodat.</li>
     </ul>
 
-    <p>Ne feledd, ezek a beállítások opcionálisak! Az AiCasso elég okos, és képes kitalálni, mit értesz, még akkor is, ha nem minden részletet tökéletesen adsz meg. Csak szórakozz, és engedd szabadjára a kreativitásodat!</p>
+    <p>Ne feledd, ezek a beállítások opcionálisak! Az AiCasso elég okos, és képes kitalálni, mit értesz, még akkor is, ha nem minden részlet tökéletes. Csak szórakozz, és engedd szabadjára a kreativitásodat!</p>
 
 </body>
 </html>

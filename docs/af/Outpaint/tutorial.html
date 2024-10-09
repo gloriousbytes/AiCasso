@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uitverf Kenmerk Wenke</title>
+    <title>Uitverf Funksie Wenke</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
         .iframe-container {
@@ -47,21 +47,21 @@
 
 <body>
 
-    <h2>Wenke vir die Gebruik van die Uitverf Kenmerk</h2>
-    <p>Die Uitverf kenmerk in AiCasso laat jou toe om 'n beeld uit te brei deur nuwe elemente rondom dit by te voeg of wat reeds daar is, uit te brei. Beskryf net wat jy wil hê, en AiCasso sal die res hanteer.</p>
+    <h2>Wenke vir die Gebruik van die Uitverf Funksie</h2>
+    <p>Die Uitverf funksie in AiCasso laat jou toe om 'n beeld uit te brei deur nuwe elemente rondom dit by te voeg of wat reeds daar is uit te brei. Beskryf net wat jy wil hê, en AiCasso sal die res hanteer.</p>
 
     <h3>Hoe Dit Werk:</h3>
     
     <div class="example">
         <strong>Begin Beeld:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/input.jpg" alt="Begin Beeld" loading="lazy">
         </div>
     </div>
 
     <div class="example">
         <strong>Beskryf Jou Verandering:</strong>
-        <p>Beskryf net wat jy wil byvoeg of uitbrei, en AiCasso sal daardie veranderinge toepas. Jy kan rigtings soos links, regs, op of af spesifiseer, en selfs besonderhede soos om uit te zoom of te pan.</p>
+        <p>Tik net wat jy wil byvoeg of uitbrei, en AiCasso sal daardie veranderinge toepas. Jy kan rigtings soos links, regs, op, of af spesifiseer, en selfs besonderhede soos om uit te zoom of te pan.</p>
     </div>
 
     <h3>Voorbeeld Wysigings:</h3>
@@ -69,27 +69,27 @@
     <div class="example">
         <strong>Voorbeeld 1:</strong> "Voeg 'n ysberg aan die regterkant by met 'n vertaalfaktor van 0.4."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/iceberg.jpg" alt="Voorbeeld 1 - Ysberg" loading="lazy">
         </div>
-        <p><em>Resultaat:</em> AiCasso brei die beeld na regs uit en voeg 'n ysberg by, terwyl dit konsekwent bly met die bestaande landskap.</p>
+        <p><em>Resultaat:</em> AiCasso brei die beeld na die regterkant uit en voeg 'n ysberg by, terwyl dit konsekwent bly met die bestaande landskap.</p>
     </div>
 
     <div class="example">
         <strong>Voorbeeld 2:</strong> "Zoom uit, hou die konsekwentheid van die donker see by nag."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/zoomout.jpg" alt="Voorbeeld 2 - Zoom Uit" loading="lazy">
         </div>
         <p><em>Resultaat:</em> Die beeld zoom uit, wat meer van die donker see onthul, terwyl dit die atmosfeer van die nagtoneel behou.</p>
     </div>
 
     <h3>Bykomende Opsies</h3>
-    <p>Hier is 'n paar opsionele instellings wat jy kan gebruik om jou wysigings fyn te stel:</p>
+    <p>Hier is 'n paar opsionele instellings wat jy kan gebruik om jou wysigings te verfyn:</p>
 
     <ul>
         <li><strong>Negatiewe Prompt:</strong> As daar iets spesifiek is wat jy nie in die beeld wil hê nie, kan jy dit hier aan AiCasso sê. Byvoorbeeld, jy mag dalk sekere kleure of voorwerpe wil vermy.</li>
-        <li><strong>Stap Tipe:</strong> Dit bepaal die rigting waarin die beeld uitbrei. Jy kan kies tussen links, regs, op, af, of agtertoe (wat uitzoom). Byvoorbeeld, om na regs te pan, sou jy 'regs' kies.</li>
+        <li><strong>Stap Tipe:</strong> Dit bepaal die rigting waarin die beeld uitbrei. Jy kan kies uit links, regs, op, af, of agtertoe (wat uitzoom). Byvoorbeeld, om na die regterkant te pan, sou jy 'regs' kies.</li>
         <li><strong>Vertaalfaktor:</strong> Dit beheer hoeveel die beeld beweeg met elke stap wanneer dit uitbrei. 'n Hoër waarde beweeg die beeld meer, wat meer van die nuwe inhoud onthul. Die standaard is 0.05, maar jy kan dit van 0 tot 1 aanpas.</li>
-        <li><strong>Breedte/Hoogte Vertaling per Stap:</strong> Hierdie beheer hoe ver die beeld horisontaal (breedte) of vertikaal (hoogte) beweeg met elke stap. Die standaard is 32 pixels per stap, maar jy kan dit aanpas op grond van hoe ver jy wil hê die beeld moet skuif.</li>
+        <li><strong>Breedte/Hoogte Vertaling per Stap:</strong> Hierdie beheer hoe ver die beeld horisontaal (breedte) of vertikaal (hoogte) beweeg met elke stap. Die standaard is 32 pixels per stap, maar jy kan dit aanpas op grond van hoeveel jy wil hê die beeld moet skuif.</li>
         <li><strong>Aantal Inferensie of Denoising Stappe:</strong> Dit bepaal hoeveel aanpassings AiCasso maak om die finale beeld te kry. Meer stappe lei tot 'n gladder resultaat, met 'n standaard van 20 stappe, maar jy kan tot 50 gaan.</li>
         <li><strong>Aantal Interpolasie Stappe:</strong> Dit beheer hoe glad die oorgang tussen twee rigtings in 'n enkele uitbreiding gebeur. Die standaard is 60, maar jy kan dit tot 120 verhoog vir gladder oorgange.</li>
     </ul>

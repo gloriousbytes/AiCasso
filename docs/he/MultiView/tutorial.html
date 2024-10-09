@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מדריך לתכונת תצוגה מרובה</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        img, video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>מדריך לשימוש בתכונת תצוגה מרובה</h2>
+    <p>תכונת התצוגה המרובה ב-AiCasso מאפשרת לך לראות אובייקט מזוויות שונות על ידי יצירת פרספקטיבות מרובות של האובייקט בתמונה שלך. זה במיוחד שימושי להבנת צורות תלת-ממדיות או להצגת מוצרים. תכונה זו פועלת הכי טוב כאשר האובייקט אינו כולל רקע, לכן ודא שאתה מסיר כל אלמנט מסיח דעת לתוצאות אופטימליות.</p>
+
+    <h3>איך זה עובד:</h3>
+    
+    <div class="example">
+        <strong>תמונת קלט:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/input.jpg" alt="תמונת קלט" loading="lazy">
+        </div>
+        <strong>הנחיה:</strong>
+        <p>"הצג אובייקט זה מכמה פרספקטיבות"</p>
+        <strong>תוצאה:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/result.jpg" alt="תמונת תוצאה" loading="lazy">
+        </div>
+    </div>
+
+    <h3>טיפים לתוצאות הטובות ביותר</h3>
+    <p>הנה כמה טיפים כדי לוודא שהתמונה שלך תצא נהדר:</p>
+
+    <ul>
+        <li><strong>אובייקט ללא רקע:</strong> תכונת התצוגה המרובה פועלת הכי טוב כאשר האובייקט בתמונה שלך מבודד מהרקע. זה מאפשר ל-AiCasso להתמקד רק באובייקט וליצור פרספקטיבות ברורות.</li>
+        <li><strong>תאורה טובה:</strong> ודא שהאובייקט שלך מואר היטב בתמונת הקלט, שכן צללים ותאורה לא אחידה עשויים להשפיע על איך שהאובייקט נראה מזוויות שונות.</li>
+        <li><strong>אובייקטים מרובים:</strong> אם יש יותר מאובייקט אחד בתמונה, נסה לבודד את זה שאתה רוצה לראות מכמה זוויות או בחר בתמונה פשוטה יותר עם אובייקט מרכזי אחד.</li>
+    </ul>
+
+    <p>כמו כל התכונות ב-AiCasso, אין צורך לחשוב יותר מדי—תאר מה אתה רוצה ו-AiCasso יעשה את העבודה הקשה. תכונת התצוגה המרובה מושלמת להצגת מוצרים, תצוגות יצירתיות ועוד!</p>
+
+</body>
+</html>

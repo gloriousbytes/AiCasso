@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -41,41 +41,41 @@
 <body>
 
     <h2>Umhlahlandlela Wokusebenzisa Isici Sokushintsha Isizinda</h2>
-    <p>Isici sokushintsha isizinda ku-AiCasso silungile uma ufuna ukushintsha isizinda sesithombe sakho. Noma ufuna ukususa isizinda noma ukusishintsha ngento ethile, i-AiCasso iyenza kube lula kakhulu. Awudingi ukukhathazeka ngezinto zobuchwepheshe—chaza nje lokho okufunayo, futhi i-AiCasso izokwenza okunye.</p>
+    <p>Isici sokushintsha isizinda ku-AiCasso silungile uma ufuna ukushintsha isizinda sesithombe sakho. Noma ufuna ukususa isizinda noma ukusishintsha ngento ethile, i-AiCasso ikwenza kube lula kakhulu. Awudingi ukukhathazeka ngezinto zobuchwepheshe—chaza nje lokho okufunayo, futhi i-AiCasso izokwenza okunye.</p>
 
     <h3>Ukusebenza Kwayo:</h3>
     
     <div class="example">
         <strong>Isithombe Sokufaka:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Isithombe Sokufaka" loading="lazy">
         </div>
         <strong>Imiyalo 1:</strong>
         <p>"Susa isizinda"</p>
         <strong>Umphumela 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Umphumela Wokususa Isizinda" loading="lazy">
         </div>
         <strong>Imiyalo 2:</strong>
-        <p>"Shintsha isizinda ngendawo yehlathi, hhayi ukususa kuphela, ngenketho ye-alpha matting ivaliwe. Sebenzisa umkhawulo we-foreground we-240, umkhawulo wesizinda we-20, kanye nosayizi we-erode we-5 ukuze usebenzise i-alpha matting."</p>
+        <p>"Shintsha isizinda ngemuva kwehlathi, hhayi ukususa kuphela, nge-alpha matting ivaliwe. Sebenzisa umkhawulo ophakeme we-240, umkhawulo wesizinda we-20, kanye nosayizi wokuphonsa we-5 we-alpha matting."</p>
         <strong>Umphumela 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Isizinda Esishintshiwe Ngehlathi" loading="lazy">
         </div>
     </div>
 
     <h3>Izinketho Ezingeziwe</h3>
-    <p>Uma ufuna ukwengeza ukuthinta komuntu siqu noma ukuhlela imiphumela, nansi eminye imikhawulo ongayisebenzisa:</p>
+    <p>Uma ufuna ukwengeza ukuthinta komuntu siqu noma ukulungisa imiphumela, nansi eminye imikhawulo ongayidlala nayo:</p>
 
     <ul>
-        <li><strong>Susa Kuphela:</strong> Uma ufuna ukususa isizinda kuphela futhi ungafuni ukusishintsha ngento, le yinketho yakho. Kufana nokucindezela inkinobho yokuhlanza.</li>
-        <li><strong>Alpha Matting:</strong> Le yindlela ethokozisayo yokuthi "hlanganisa imiphetho." Uma uyivula, izosiza ukwenza imiphetho yesikhumbuzo sakho ibonakale ibushelelezi futhi ingabi ne-cut-out. Ngokujwayelekile, ivaliwe.</li>
-        <li><strong>Alpha Matting Foreground Threshold:</strong> Lokhu kulawula ukuthi mangaki emkhakheni omkhulu (njengomuntu) ohlala ubonakala uma usebenzisa i-alpha matting. Okujwayelekile ngu-240, futhi ungakwenza kube softer noma sharper.</li>
-        <li><strong>Alpha Matting Background Threshold:</strong> Lokhu kwenza okufanayo njengomkhawulo we-foreground kodwa wesizinda. Okujwayelekile ngu-20, futhi konke kuhlobene nokuthola ukuhlanganiswa okufanele nesizinda esisha.</li>
-        <li><strong>Alpha Matting Erode Size:</strong> Lokhu kusiza ukunciphisa imiphetho kancane ukuze i-cutout ibonakale ihlanzekile. Usayizi ojwayelekile ngu-5, kodwa ungawuhlela ukuze uthole ukubukeka okufanele.</li>
+        <li><strong>Susa Kuphela:</strong> Uma ufuna ukususa isizinda kuphela futhi ungafuni ukusishintsha ngento, le yinketho yakho. Kufana nokucindezela inkinobho yokuhlanzeka.</li>
+        <li><strong>Alpha Matting:</strong> Le yindlela ethokozisayo yokuthi "hlanganisa imiphetho." Uma uyivula, kusiza ukwenza imiphetho yesihloko sakho ibonakale ibushelelezi futhi ingabi ne-cut-out. Ngokuvamile, ivaliwe.</li>
+        <li><strong>Umkhawulo Wokuphakela we-Alpha Matting:</strong> Lokhu kulawula ukuthi mangaki amaphuzu wesihloko esikhulu (njengomuntu) ahlala ebukeka uma usebenzisa i-alpha matting. Okujwayelekile ngu-240, futhi ungakulungisa ukuze wenze imiphetho ibonakale ibushelelezi noma icace.</li>
+        <li><strong>Umkhawulo Wesizinda se-Alpha Matting:</strong> Lokhu kwenza okufanayo nomkhawulo ophakeme kodwa wesizinda. Okujwayelekile ngu-20, futhi konke kuhlobene nokuthola ukuhlanganiswa okufanele nesizinda esisha.</li>
+        <li><strong>Usayizi Wokuphonsa we-Alpha Matting:</strong> Lokhu kusiza ukunciphisa imiphetho kancane ukuze i-cutout ibonakale ihlanzekile. Usayizi ojwayelekile ngu-5, kodwa ungawulungisa ukuze uthole ukubukeka okufanele.</li>
     </ul>
 
-    <p>Khumbula, awudingi ukukhathazeka ngokuthola konke kuphelele. I-AiCasso ikhululekile ekutholeni ukuthi uthiini, ngakho uzizwe ukhululekile ukuba ne-casual noma imininingwane njengoba uthanda. Jabulela ukudala!</p>
+    <p>Khumbula, awudingi ukukhathazeka ngokuthola konke kuphumelele. I-AiCasso ikhululekile ekutholeni lokho okukhuluma ngakho, ngakho uzizwe ukhululekile ukuba ne-casual noma imininingwane njengoba uthanda. Jabulela ukudala!</p>
 
 </body>
 </html>

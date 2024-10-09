@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Görüntüden Videoya Özellik Kılavuzu</title>
+    <title>Görüntüden Videoya Özellik Rehberi</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            max-width: 100%;
             height: auto;
+            object-fit: contain;
         }
         .iframe-container {
             display: flex;
@@ -47,46 +48,46 @@
 
 <body>
 
-    <h2>Görüntüden Videoya Özelliğini Kullanma Kılavuzu</h2>
+    <h2>Görüntüden Videoya Özelliğini Kullanma Rehberi</h2>
     <p>AiCasso'daki Görüntüden Videoya özelliği, tek bir görüntüyü dinamik bir videoya dönüştürmenizi sağlar. Videonuzda ne görmek istediğinizi tarif edin, AiCasso bunu gerçekleştirsin!</p>
 
     <h3>Nasıl Çalışır:</h3>
     
     <div class="example">
-        <strong>Girdi Görüntüsü:</strong>
+        <strong>Giriş Görüntüsü:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/input.jpg" alt="Giriş Görüntüsü" loading="lazy">
         </div>
-        <strong>İpucu 1:</strong>
-        <p>"Parkta sevimli bir köpek yavrusu"</p>
+        <strong>İstek 1:</strong>
+        <p>"Parkta sevimli bir yavru köpek"</p>
         <strong>Sonuç 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppy.gif" alt="Parkta Sevimli Yavru Köpek" loading="lazy">
         </div>
-        <strong>İpucu 2:</strong>
-        <p>"Parkta sevimli bir köpek yavrusu, maksimum FPS, maksimum kare ve maksimum hareket kullan"</p>
+        <strong>İstek 2:</strong>
+        <p>"Parkta sevimli bir yavru köpek, maksimum FPS, maksimum kare ve maksimum hareket kullan"</p>
         <strong>Sonuç 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppymaxframes.gif" alt="Maksimum FPS ile Parkta Yavru Köpek" loading="lazy">
         </div>
     </div>
 
     <h3>Opsiyonel Parametreler</h3>
-    <p>Videonuzu daha spesifik hale getirmek isterseniz, ayarlayabileceğiniz bazı ayarlar şunlardır:</p>
+    <p>Videonuzda daha spesifik olmak istiyorsanız, ayarlayabileceğiniz bazı seçenekler:</p>
 
     <ul>
-        <li><strong>Negatif İpucu:</strong> Videoda *istemediğiniz* şeyleri tarif edin. Boş bırakılırsa, AiCasso sadece olumlu ipucuya odaklanacaktır.</li>
-        <li><strong>Kare Sayısı:</strong> Videonuzun kaç kare (bireysel görüntü) içereceğini seçin. 25 kareye kadar seçebilirsiniz, varsayılan 16'dır.</li>
-        <li><strong>Gürültü Azaltma Adımları:</strong> Videonuzun ne kadar pürüzsüz görüneceğini kontrol eder. Daha fazla adım daha temiz bir video demektir. 50 adıma kadar ayarlayabilirsiniz, varsayılan 20'dir.</li>
-        <li><strong>Rehberlik Ölçeği:</strong> Videonun tarifinize ne kadar sadık kalacağını belirler. Aralık 1.0 ile 8.0 arasındadır ve videonun nasıl gelişeceğini yönlendirmek için başlangıç ve bitiş değerlerini ayarlayabilirsiniz.</li>
-        <li><strong>Hareket:</strong> Videonuzdaki hareket miktarını ayarlayın. Daha yüksek bir değer daha fazla aksiyon demektir. Aralık 0 ile 127 arasındadır, varsayılan 60'tır.</li>
-        <li><strong>Gürültü Artırma Gücü:</strong> Videonuza daha dokulu bir görünüm vermek için biraz gürültü ekleyin. Aralık 0 ile 1 arasındadır, varsayılan 0'dır.</li>
-        <li><strong>Saniyedeki Kare Sayısı (FPS):</strong> Videonuzun ne kadar hızlı oynatılacağını ayarlayın. Varsayılan 16 FPS'dir, ancak daha hızlı oynatma için 16'ya kadar çıkabilirsiniz.</li>
-        <li><strong>Enterpolasyon Yöntemi:</strong> Karelerin nasıl birleştirileceğini seçin. Varsayılan "lerp" (doğrusal enterpolasyon) iken, farklı efektler için "slerp" (küresel doğrusal enterpolasyon) da kullanabilirsiniz.</li>
+        <li><strong>Negatif İstek:</strong> Videoda istemediğiniz şeyleri tarif edin. Boş bırakılırsa, AiCasso sadece pozitif isteğe odaklanacaktır.</li>
+        <li><strong>Kare Sayısı:</strong> Videonuzun kaç kare (bireysel görüntü) olacağını seçin. 25 kareye kadar seçebilirsiniz, varsayılan 16'dır.</li>
+        <li><strong>Gürültü Giderme Adımları:</strong> Bu, videonuzun ne kadar pürüzsüz görüneceğini kontrol eder. Daha fazla adım, daha temiz bir video anlamına gelir. 50 adım ayarlayabilirsiniz, varsayılan 20'dir.</li>
+        <li><strong>Rehberlik Ölçeği:</strong> Bu, videonun tarifinize ne kadar yakın kalmasına yardımcı olur. Aralık 1.0 ile 8.0 arasındadır ve videonun nasıl gelişeceğini yönlendirmek için başlangıç ve bitiş değerlerini ayarlayabilirsiniz.</li>
+        <li><strong>Hareket:</strong> Videonuzdaki hareket miktarını ayarlayın. Daha yüksek bir değer daha fazla aksiyon anlamına gelir. Aralık 0 ile 127 arasındadır, varsayılan 60'dır.</li>
+        <li><strong>Gürültü Artırma Gücü:</strong> Videonuza daha dokulu bir görünüm vermek için biraz gürültü ekleyin. Aralık 0 ile 1 arasındadır, 0 varsayılandır.</li>
+        <li><strong>Saniyedeki Kare (FPS):</strong> Videonuzun ne kadar hızlı oynayacağını ayarlayın. Varsayılan 16 FPS'dir, ancak daha hızlı bir oynatma için 16'ya kadar çıkabilirsiniz.</li>
+        <li><strong>İnterpolasyon Yöntemi:</strong> Karelerin nasıl birleştirileceğini seçin. Varsayılan "lerp" (doğrusal interpolasyon) olup, farklı efektler için "slerp" (sferik doğrusal interpolasyon) de kullanabilirsiniz.</li>
         <li><strong>Klip Atla:</strong> Farklı bir video stili için belirli katmanları atlayın. 2 katmana kadar atlayabilirsiniz veya varsayılan davranış için boş bırakabilirsiniz.</li>
     </ul>
 
-    <p>Unutmayın, AiCasso oldukça akıllı! Her detayı mükemmel yapmanız veya doğru dilbilgisi kullanmanız gerekmez. Sadece ne istediğinizi tarif edin, AiCasso gerisini halleder. Videolarınızı oluştururken eğlenin!</p>
+    <p>Unutmayın, AiCasso oldukça akıllıdır! Her detayı mükemmel yapmak zorunda değilsiniz veya doğru dilbilgisi kullanmanıza gerek yok. Ne istediğinizi tarif edin, AiCasso geri kalanını halletsin. Videolarınızı oluştururken eğlenin!</p>
 
 </body>
 </html>

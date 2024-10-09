@@ -6,89 +6,90 @@
     <title>फेस उत्पादन विशेषता मार्गदर्शिका</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Ensures the image doesn't overflow the container */
+    height: auto;     /* Keeps the aspect ratio */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
     <h2>फेस उत्पादन विशेषता प्रयोग गर्ने मार्गदर्शिका</h2>
-    <p>AiCasso मा फेस उत्पादन विशेषता अत्यन्त बहुपरकारी छ! यसले तपाईंलाई विभिन्न पात्रहरू वा शैलीहरूमा विशेष अनुहार समावेश गरेर अद्भुत छविहरू सिर्जना गर्न अनुमति दिन्छ। तपाईं एक नाइट, समुराई, वा कुनै अन्य पात्रको कल्पना गर्दै हुनुहुन्छ भने, AiCasso ले इनपुट अनुहारलाई प्रयोग गरेर सोधिएको डिजाइनमा समावेश गरिएको छवि उत्पन्न गर्दछ।</p>
+    <p>AiCasso मा फेस उत्पादन विशेषता अत्यन्त बहुपरकारी छ! यसले तपाईंलाई विशेष अनुहारलाई विभिन्न पात्रहरू वा शैलिहरूमा समावेश गरेर अद्भुत छविहरू सिर्जना गर्न अनुमति दिन्छ। तपाईं एक नाइट, समुराई, वा कुनै अन्य पात्रको कल्पना गरिरहनु भएको छ भने, AiCasso ले इनपुट अनुहारलाई प्रयोग गरेर सोधिएको डिजाइनमा समावेश गरिएको छवि उत्पन्न गर्दछ।</p>
 
-    <h3>यसले कसरी काम गर्छ:</h3>
+    <h3>यसले कसरी काम गर्दछ:</h3>
     
-    <div class="example">
-        <strong>इनपुट छवि:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
-        </div>
-        <strong>प्रॉम्प्ट १:</strong>
-        <p>"एक यथार्थवादी नाइट, अधिकतम स्केल प्रयोग गर्नुहोस्"</p>
-        <strong>परिणाम १:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
-        </div>
-        <strong>प्रॉम्प्ट २:</strong>
-        <p>"चिबी शैली प्रयोग गर्नुहोस् र एक समुराई बनाउनुहोस्, डिफल्ट मानहरू प्रयोग गर्नुहोस्"</p>
-        <strong>परिणाम २:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
-        </div>
-        <strong>प्रॉम्प्ट ३:</strong>
-        <p>"एक समुराई, ३१ डिनोइजिंग चरणहरू प्रयोग गर्नुहोस्, र एनिमे शैली"</p>
-        <strong>परिणाम ३:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>इनपुट छवि:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/input.jpg" alt="इनपुट छवि">
     </div>
+    <strong>प्रॉम्प्ट १:</strong>
+    <p>"एक यथार्थवादी नाइट, अधिकतम स्केल प्रयोग गर्नुहोस्"</p>
+    <strong>परिणाम १:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="यथार्थवादी नाइट">
+    </div>
+    <strong>प्रॉम्प्ट २:</strong>
+    <p>"चिबी शैली प्रयोग गर्नुहोस् र एक समुराई बनाउनुहोस्, डिफल्ट मानहरू प्रयोग गर्नुहोस्"</p>
+    <strong>परिणाम २:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="चिबी समुराई">
+    </div>
+    <strong>प्रॉम्प्ट ३:</strong>
+    <p>"एक समुराई, ३१ डिनोइजिंग चरणहरू प्रयोग गर्नुहोस्, र एनिमे शैली"</p>
+    <strong>परिणाम ३:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="एनिमे समुराई">
+    </div>
+</div>
 
     <h3>वैकल्पिक प्यारामिटरहरू</h3>
-    <p>यदि तपाईंले उत्पन्न गरिएका छविहरूमा थप व्यक्तित्व वा नियन्त्रण थप्न चाहनुहुन्छ भने, यहाँ केहि विकल्पहरू छन् जुन तपाईंले समायोजन गर्न सक्नुहुन्छ:</p>
+    <p>यदि तपाईंले उत्पन्न गरिएका छविहरूमा थोरै व्यक्तित्व वा नियन्त्रण थप्न चाहनुहुन्छ भने, यहाँ केही विकल्पहरू छन् जुन तपाईं समायोजन गर्न सक्नुहुन्छ:</p>
 
     <ul>
-        <li><strong>नकारात्मक प्रॉम्प्ट:</strong> यो त्यहाँ हो जहाँ तपाईं AiCasso लाई के <em>नदेख्न</em> चाहनुहुन्छ भनेर भन्न सक्नुहुन्छ। यदि तपाईं यसलाई खाली छोड्नुहुन्छ भने, AiCasso सकारात्मक प्रॉम्प्टमा मात्र ध्यान केन्द्रित गर्नेछ।</li>
-        <li><strong>डिनोइजिंग चरणहरूको संख्या:</strong> यसले छवि कति चिकन र परिष्कृत देखिन्छ भनेर नियन्त्रण गर्दछ। तपाईं २१, ३१, वा ४१ चरणहरू बीच चयन गर्न सक्नुहुन्छ, जहाँ ४१ डिफल्ट हो। थप चरणहरूले सफा, अधिक पॉलिश गरिएको छवि जनाउँछ।</li>
-        <li><strong>गाइडेंस स्केल:</strong> यसले छविलाई तपाईंको वर्णनमा साँचो रहन मद्दत गर्दछ। स्केल १ देखि २० सम्मको हुन्छ, जहाँ १० डिफल्ट हो। उच्च संख्याहरूले AiCasso लाई तपाईंको प्रॉम्प्टमा नजिकै रहन मद्दत गर्दछ।</li>
-        <li><strong>S स्केल:</strong> यो अनुहारको संरचना बारे हो। यो थोरै प्राविधिक छ, तर यसले अनुहार संरचनाको तौललाई समायोजन गर्दछ। डिफल्ट १.० हो, र तपाईं ०.० देखि २.० सम्म जान सक्नुहुन्छ।</li>
-        <li><strong>शैली:</strong> तपाईंको छविलाई विशेष भिब दिन चाहनुहुन्छ? तपाईंले कमिक, चिबी, 3D, एनिमे, वा यथार्थवादी जस्ता शैलीहरू चयन गर्न सक्नुहुन्छ। यथार्थवादी डिफल्ट हो, तर सिर्जनात्मक हुन नहिचकिचाउनुहोस्!</li>
+        <li><strong>नकारात्मक प्रॉम्प्ट:</strong> यहाँ तपाईं AiCasso लाई भन्न सक्नुहुन्छ कि तपाईं छविमा के <em>नदेख्न</em> चाहनुहुन्छ। यदि तपाईं यसलाई खाली छोड्नुहुन्छ भने, AiCasso केवल सकारात्मक प्रॉम्प्टमा ध्यान केन्द्रित गर्नेछ।</li>
+        <li><strong>डिनोइजिंग चरणहरूको संख्या:</strong> यसले छवि कति चिल्लो र परिष्कृत देखिन्छ भन्ने कुरा नियन्त्रण गर्दछ। तपाईं २१, ३१, वा ४१ चरणहरू बीच चयन गर्न सक्नुहुन्छ, जहाँ ४१ डिफल्ट हो। थप चरणहरू अर्थपूर्ण, अधिक परिष्कृत छवि जनाउँछन्।</li>
+        <li><strong>मार्गदर्शन स्केल:</strong> यसले छविलाई तपाईंको वर्णनमा साँचो रहन मद्दत गर्दछ। स्केल १ देखि २० सम्मको हुन्छ, जहाँ १० डिफल्ट हो। उच्च संख्याहरूले AiCasso लाई तपाईंको प्रॉम्प्टमा नजिक रहन मद्दत गर्दछ।</li>
+        <li><strong>S स्केल:</strong> यो अनुहारको संरचना बारे हो। यो थोरै प्राविधिक छ, तर मूलतः यसले अनुहार संरचनाको तौल समायोजन गर्दछ। डिफल्ट १.० हो, र तपाईं ०.० देखि २.० सम्म जान सक्नुहुन्छ।</li>
+        <li><strong>शैली:</strong> तपाईंको छविलाई विशेष भाब दिन चाहनुहुन्छ? तपाईंले कमिक, चिबी, 3D, एनिमे, वा यथार्थवादी जस्ता शैलीहरू चयन गर्न सक्नुहुन्छ। यथार्थवादी डिफल्ट हो, तर सिर्जनात्मक हुन नहिचकिचाउनुहोस्!</li>
     </ul>
 
-    <p>र सम्झनुहोस्, AiCasso निकै क्षमाशील छ। तपाईंलाई व्याकरणको जादुगर हुन आवश्यक छैन वा प्रत्येक विवरण सही बनाउन आवश्यक छैन। तपाईंले के चाहनुहुन्छ भनेर आफ्नै शब्दमा वर्णन गर्नुहोस्, र AiCasso बाँकीको ख्याल गर्नेछ। सिर्जना गर्न आनन्द लिनुहोस्!</p>
+    <p>र सम्झनुहोस्, AiCasso निकै सहिष्णु छ। तपाईंलाई व्याकरणको जादुगर हुनुपर्दैन वा प्रत्येक विवरण सही बनाउनुपर्दैन। तपाईंले के चाहनुहुन्छ भनेर आफ्नै शब्दमा वर्णन गर्नुहोस्, र AiCasso बाँकीको ख्याल गर्नेछ। सिर्जना गर्न रमाइलो गर्नुहोस्!</p>
 
 </body>
 </html>

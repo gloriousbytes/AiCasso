@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tips Penyuntingan Berpanduan Gambar</title>
+    <title>Tips Pengeditan Berbasis Gambar</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,31 +31,25 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img {
+            width: 100%;
             height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+            max-width: 100%;
         }
     </style>
 </head>
 
 <body>
 
-    <h2>Tips untuk Penyuntingan Berpanduan Gambar</h2>
-    <p>Fitur Penyuntingan Berpanduan Gambar di AiCasso memungkinkan Anda membuat perubahan pada gambar hanya dengan mendeskripsikan apa yang Anda inginkan. Apakah Anda ingin mengubah gaya, menyesuaikan suasana, atau mengubah bagian tertentu, AiCasso akan melakukannya untuk Anda tanpa perlu memilih atau melukis secara manual.</p>
+    <h2>Tips untuk Pengeditan Berbasis Gambar</h2>
+    <p>Fitur Pengeditan Berbasis Gambar di AiCasso memungkinkan Anda untuk membuat perubahan pada gambar hanya dengan mendeskripsikan apa yang Anda inginkan. Apakah Anda ingin mengubah gaya, menyesuaikan suasana hati, atau mengubah bagian tertentu, AiCasso akan menangani semuanya tanpa perlu Anda memilih atau melukis secara manual.</p>
 
-    <h3>Cara Kerjanya:</h3>
+    <h3>Bagaimana Cara Kerjanya:</h3>
 
     <div class="example">
         <strong>Gambar Awal:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CpnI7HqIAzcrMjmQb5_25yJilhxraZ80/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/startingimage1.jpg" alt="Gambar Awal">
         </div>
     </div>
 
@@ -64,37 +58,37 @@
         <p>Cukup ketik apa yang ingin Anda ubah, dan AiCasso akan menerapkan perubahan tersebut pada gambar.</p>
     </div>
 
-    <h3>Contoh Penyuntingan:</h3>
+    <h3>Contoh Pengeditan:</h3>
 
     <div class="example">
-        <strong>Contoh 1:</strong> "Jadikan dia berambut pirang."
+        <strong>Contoh 1:</strong> "Buat dia berambut pirang."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI2vE6dOcFxInjqzq1_mVru_nLCGFTaS/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/makeherblonde.jpg" alt="Contoh buat dia berambut pirang">
         </div>
         <p><em>Hasil:</em> AiCasso akan mengubah warna rambut orang tersebut menjadi pirang.</p>
     </div>
 
     <div class="example">
-        <strong>Contoh 2:</strong> "Jadikan malam, gunakan 50 langkah, skala panduan 1, dan skala panduan gambar 1."
+        <strong>Contoh 2:</strong> "Buat malam, gunakan 50 langkah, skala panduan 1, dan skala panduan gambar 1."
         <div class="example">
             <strong>Gambar Masukan:</strong>
             <div class="result">
-                <iframe src="https://drive.google.com/file/d/1PlJNkwIWrK3Uu_bq38te_dtqp2XBkW_e/preview"></iframe>
+                <img src="../../images/tutorials/imageguidededit/example2input.jpg" alt="Gambar Masukan Contoh 2">
             </div>
         </div>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11mjTtcBdI8T0cMcfQz6HEJ79xOhw81VG/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/example2result.jpg" alt="Gambar Hasil Contoh 2">
         </div>
-        <p><em>Hasil:</em> Gambar akan diubah menjadi pemandangan malam dengan penyesuaian khusus berdasarkan detail yang Anda berikan.</p>
+        <p><em>Hasil:</em> Gambar akan diubah menjadi pemandangan malam dengan penyesuaian spesifik berdasarkan detail yang Anda berikan.</p>
     </div>
 
     <h3>Opsi Tambahan</h3>
-    <p>Anda dapat menyempurnakan penyuntingan Anda menggunakan pengaturan opsional berikut:</p>
+    <p>Anda dapat menyempurnakan pengeditan Anda menggunakan pengaturan opsional ini:</p>
 
     <ul>
-        <li><strong>Skala Panduan Gambar:</strong> Ini mengontrol seberapa dekat gambar baru dengan gambar asli. Nilai yang lebih rendah berarti perubahan lebih halus, sedangkan nilai yang lebih tinggi membuat perubahan lebih menonjol. Anda dapat mengatur ini antara 1 dan 8.</li>
-        <li><strong>Langkah:</strong> Ini menentukan berapa banyak penyempurnaan yang akan dilakukan alat. Lebih banyak langkah berarti gambar akhir yang lebih halus dan lebih detail. Anda dapat memilih antara 1 dan 50 langkah, dengan 20 sebagai default.</li>
-        <li><strong>Skala Panduan:</strong> Ini mempengaruhi seberapa dekat AI mengikuti deskripsi Anda. Skala yang lebih rendah memberi AI lebih banyak kebebasan kreatif, sedangkan skala yang lebih tinggi membuatnya tetap dekat dengan apa yang Anda katakan. Anda dapat menyesuaikan ini antara 1 dan 20.</li>
+        <li><strong>Skala Panduan Gambar:</strong> Ini mengontrol seberapa dekat gambar baru dengan yang asli. Nilai yang lebih rendah berarti perubahan lebih halus, sementara nilai yang lebih tinggi membuatnya lebih mencolok. Anda dapat mengatur ini antara 1 dan 8.</li>
+        <li><strong>Langkah:</strong> Ini mengatur berapa banyak penyempurnaan yang akan dilakukan alat. Lebih banyak langkah berarti gambar akhir yang lebih halus dan lebih detail. Anda dapat memilih antara 1 dan 50 langkah, dengan 20 sebagai default.</li>
+        <li><strong>Skala Panduan:</strong> Ini mempengaruhi seberapa dekat AI mengikuti deskripsi Anda. Skala yang lebih rendah memberi AI lebih banyak kebebasan kreatif, sementara skala yang lebih tinggi membuatnya lebih dekat dengan apa yang Anda katakan. Anda dapat menyesuaikan ini antara 1 dan 20.</li>
     </ul>
 
 </body>

@@ -3,89 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kasvontuotannon ominaisuuden opas</title>
+    <title>Kasvokuvageneraattorin käyttöopas</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Varmistaa, että kuva ei ylitä säilöä */
+    height: auto;     /* Säilyttää kuvasuhteen */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
-    <h2>Opas kasvontuotannon ominaisuuden käyttöön</h2>
-    <p>Kasvontuotannon ominaisuus AiCasso:ssa on uskomattoman monipuolinen! Se mahdollistaa upeiden kuvien luomisen sisällyttämällä tietyn kasvokuvan erilaisiin hahmoihin tai tyyleihin. Olitpa sitten kuvitellut ritari, samurai tai minkä tahansa muun hahmon, AiCasso käyttää syötettyä kasvoa luodakseen kuvan, jossa tämä kasvokuva on integroitu pyydettyyn suunnitteluun.</p>
+    <h2>Kasvokuvageneraattorin käyttöopas</h2>
+    <p>Kasvokuvageneraattori AiCasso on uskomattoman monipuolinen! Se mahdollistaa upeiden kuvien luomisen yhdistämällä tietyn kasvokuvan erilaisiin hahmoihin tai tyyleihin. Olitpa sitten kuvitellut ritari, samurai tai minkä tahansa muun hahmon, AiCasso käyttää syötettyä kasvoa luodakseen kuvan, jossa kasvot on integroitu pyydettyyn muotoiluun.</p>
 
     <h3>Kuinka se toimii:</h3>
     
-    <div class="example">
-        <strong>Syötekuva:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
-        </div>
-        <strong>Kehoitus 1:</strong>
-        <p>"Realistinen ritari, käytä maksimi skaala"</p>
-        <strong>Tulos 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
-        </div>
-        <strong>Kehoitus 2:</strong>
-        <p>"Käytä chibi-tyyliä ja tee samurai, käytä oletusarvoja"</p>
-        <strong>Tulos 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
-        </div>
-        <strong>Kehoitus 3:</strong>
-        <p>"Samurai, käytä 31 denoising-vaihetta ja anime-tyyliä"</p>
-        <strong>Tulos 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Syötekuva:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/input.jpg" alt="Syötekuva">
     </div>
+    <strong>Kehoitus 1:</strong>
+    <p>"Realistinen ritari, käytä maksimi skaala"</p>
+    <strong>Tulos 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="Realistinen ritari">
+    </div>
+    <strong>Kehoitus 2:</strong>
+    <p>"Käytä chibi-tyyliä ja tee samurai, käytä oletusarvoja"</p>
+    <strong>Tulos 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="Chibi Samurai">
+    </div>
+    <strong>Kehoitus 3:</strong>
+    <p>"Samurai, käytä 31 denoising-vaihetta ja anime-tyyliä"</p>
+    <strong>Tulos 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="Anime Samurai">
+    </div>
+</div>
 
     <h3>Valinnaiset parametrit</h3>
     <p>Jos haluat lisätä hieman enemmän persoonallisuutta tai hallintaa luomiisi kuviin, tässä on joitakin vaihtoehtoja, joita voit säätää:</p>
 
     <ul>
-        <li><strong>Negatiivinen kehoitus:</strong> Tässä voit kertoa AiCasso:lle, mitä <em>et</em> halua nähdä kuvassa. Jos jätät tämän tyhjäksi, AiCasso keskittyy vain positiiviseen kehoitukseen.</li>
-        <li><strong>Denoising-vaiheiden määrä:</strong> Tämä säätelee, kuinka sileä ja hienostunut kuva näyttää. Voit valita 21, 31 tai 41 vaiheen välillä, 41 on oletusarvo. Enemmän vaiheita tarkoittaa puhtaampaa, hienostuneempaa kuvaa.</li>
-        <li><strong>Ohjausskaala:</strong> Tämä auttaa kuvaa pysymään uskollisena kuvauksellesi. Skaala vaihtelee 1:stä 20:een, 10 on oletusarvo. Korkeammat numerot tarkoittavat, että AiCasso pysyy lähempänä kehoitustasi.</li>
-        <li><strong>S-skaala:</strong> Tämä liittyy kasvojen rakenteeseen. Se on hieman teknistä, mutta käytännössä se säätää kasvorakenteen painoarvoa. Oletusarvo on 1.0, ja voit säätää sen 0.0:sta 2.0:aan.</li>
-        <li><strong>Tyyli:</strong> Haluatko antaa kuvallesi tietyn tunnelman? Voit valita tyylin, kuten sarjakuva, chibi, 3D, anime tai realistinen. Realistinen on oletusarvo, mutta voit vapaasti olla luova!</li>
+        <li><strong>Negatiivinen kehoitus:</strong> Tässä voit kertoa AiCassolle, mitä <em>et</em> halua nähdä kuvassa. Jos jätät tämän tyhjäksi, AiCasso keskittyy vain positiiviseen kehotukseen.</li>
+        <li><strong>Denoising-vaiheiden määrä:</strong> Tämä säätelee, kuinka sileä ja hienostunut kuva näyttää. Voit valita 21, 31 tai 41 vaiheen välillä, 41 on oletus. Enemmän vaiheita tarkoittaa puhtaampaa, hienostuneempaa kuvaa.</li>
+        <li><strong>Ohjausskaala:</strong> Tämä auttaa kuvaa pysymään uskollisena kuvauksellesi. Skaala vaihtelee 1:stä 20:een, 10 on oletus. Korkeammat numerot tarkoittavat, että AiCasso pysyy lähempänä kehotustasi.</li>
+        <li><strong>S-skaala:</strong> Tämä liittyy kasvojen rakenteeseen. Se on hieman teknistä, mutta käytännössä se säätää kasvorakenteen painoarvoa. Oletus on 1.0, ja voit valita arvot 0.0 - 2.0.</li>
+        <li><strong>Tyyli:</strong> Haluatko antaa kuvallesi tietyn tunnelman? Voit valita tyylin, kuten sarjakuva, chibi, 3D, anime tai realistinen. Realistinen on oletus, mutta voit olla luova!</li>
     </ul>
 
     <p>Ja muista, AiCasso on melko anteeksiantava. Sinun ei tarvitse olla kielioppivelho tai saada jokaista yksityiskohtaa täydelliseksi. Kuvaile vain, mitä haluat omilla sanoillasi, ja AiCasso hoitaa loput. Nauti luomisesta!</p>

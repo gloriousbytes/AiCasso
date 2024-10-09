@@ -31,16 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img {
+            width: 100%;
+            max-width: 400px;
             height: auto;
         }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        @media (max-width: 768px) {
+            .result img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -53,62 +53,66 @@
     <h3>Cómo Funciona:</h3>
     
     <div class="example">
-        <strong>Indicación:</strong>
-        <p>"Un gallo animado en 3D en un campo solo, comiendo y siendo feliz. Hazlo un video en formato retrato con 50 pasos de eliminación de ruido."</p>
+        <strong>Prompt:</strong>
+        <p>"Un gallo animado en 3D en un campo solo, comiendo y siendo feliz. Hazlo un video en retrato con 50 pasos de desruido."</p>
         <strong>Resultado:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/animated3d.gif" alt="Gallo Animado en 3D">
+            <noscript><img src="../../images/tutorials/texttovideo/animated3d.gif" alt="Gallo Animado en 3D"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Indicación:</strong>
-        <p>"Una caricatura de un gallo en un campo en dimensiones de paisaje."</p>
+        <strong>Prompt:</strong>
+        <p>"Un dibujo animado de un gallo en un campo en dimensiones de paisaje."</p>
         <strong>Resultado:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/cartoon.gif" alt="Gallo de Dibujo Animado">
+            <noscript><img src="../../images/tutorials/texttovideo/cartoon.gif" alt="Gallo de Dibujo Animado"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Indicación:</strong>
+        <strong>Prompt:</strong>
         <p>"Un gallo en un campo."</p>
         <strong>Resultado:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/default.gif" alt="Gallo Predeterminado">
+            <noscript><img src="../../images/tutorials/texttovideo/default.gif" alt="Gallo Predeterminado"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Indicación:</strong>
-        <p>"Un gallo que está solo en el campo. Dale un toque natural."</p>
+        <strong>Prompt:</strong>
+        <p>"Un gallo que está en el campo solo. Dale una sensación natural."</p>
         <strong>Resultado:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/natural.gif" alt="Gallo Natural">
+            <noscript><img src="../../images/tutorials/texttovideo/natural.gif" alt="Gallo Natural"></noscript>
         </div>
     </div>
 
     <h3>Opciones Adicionales</h3>
-    <p>¿Quieres ajustar tu video? Aquí hay algunas configuraciones con las que puedes jugar:</p>
+    <p>¿Quieres ajustar tu video? Aquí hay algunas configuraciones con las que puedes experimentar:</p>
 
     <ul>
-        <li><strong>Número de Cuadros:</strong> Elige cuántos cuadros (imágenes individuales) tendrá tu video. Puedes tener hasta 25 cuadros, con 16 como predeterminado.</li>
-        <li><strong>Número de Pasos de Eliminación de Ruido:</strong> Esto controla qué tan suave se ve tu video. Más pasos significan videos más suaves. Puedes configurar hasta 50 pasos, con 20 como predeterminado.</li>
-        <li><strong>Escala de Guía:</strong> Esto ayuda a que el video se adhiera estrechamente a tu descripción. Cuanto mayor sea el número, más sigue tu indicación. El rango es de 0 a 8, siendo 8 el predeterminado.</li>
-        <li><strong>Salto de Clip:</strong> Omite ciertas capas para un estilo de video diferente. Por defecto, no se omiten capas, pero puedes omitir hasta 2.</li>
-        <li><strong>Escalar Ancho y Alto:</strong> Puedes hacer tu video más grande ajustando la resolución. El predeterminado es 1024x1024 píxeles, pero puedes ajustarlo según tus necesidades.</li>
-        <li><strong>Fuerza de Escalado:</strong> Esto cambia cuánto se ajusta tu video al escalarlo. El predeterminado es 1, pero puedes ajustarlo para ver más diferencias.</li>
-        <li><strong>Escala de Guía de Escalado:</strong> Esto guía el proceso de escalado, con un rango de 0 a 8, y un predeterminado de 8.</li>
-        <li><strong>Pasos de Inferencia de Escalado:</strong> El número de pasos tomados para escalar el video. Más pasos hacen que el escalado sea más suave, con un máximo de 50 y un predeterminado de 20.</li>
-        <li><strong>Muestreo Mejorado:</strong> ¿Quieres un video más refinado? Actívalo. Está desactivado por defecto.</li>
-        <li><strong>Semilla de Muestreo Mejorado:</strong> Úsalo para generar el mismo video cada vez con muestreo mejorado. Es opcional y está desactivado por defecto.</li>
-        <li><strong>Cuadros por Segundo (FPS):</strong> Establece la velocidad de tu video. El predeterminado es 16 FPS, pero puedes ajustarlo hasta 16.</li>
+        <li><strong>Número de Fotogramas:</strong> Elige cuántos fotogramas (imágenes individuales) tendrá tu video. Puedes llegar hasta 25 fotogramas, siendo 16 el valor predeterminado.</li>
+        <li><strong>Número de Pasos de Desruido:</strong> Esto controla cuán suave se ve tu video. Más pasos significan videos más suaves. Puedes establecer hasta 50 pasos, siendo 20 el valor predeterminado.</li>
+        <li><strong>Escala de Guía:</strong> Esto ayuda a que el video se adhiera estrechamente a tu descripción. Cuanto mayor sea el número, más seguirá tu prompt. El rango es de 0 a 8, siendo 8 el valor predeterminado.</li>
+        <li><strong>Omitir Clips:</strong> Omite ciertas capas para un estilo de video diferente. Por defecto, no se omiten capas, pero puedes omitir hasta 2.</li>
+        <li><strong>Aumentar Ancho y Alto:</strong> Puedes hacer que tu video sea más grande ajustando la resolución. El valor predeterminado es 1024x1024 píxeles, pero puedes modificarlo según tus necesidades.</li>
+        <li><strong>Fuerza de Aumento:</strong> Esto cambia cuánto se ajusta tu video al aumentar su tamaño. El valor predeterminado es 1, pero puedes ajustarlo para ver más diferencias.</li>
+        <li><strong>Escala de Guía de Aumento:</strong> Esto guía el proceso de aumento, con un rango de 0 a 8, y un valor predeterminado de 8.</li>
+        <li><strong>Pasos de Inferencia de Aumento:</strong> El número de pasos tomados para aumentar el video. Más pasos hacen que el aumento sea más suave, con un máximo de 50 y un valor predeterminado de 20.</li>
+        <li><strong>Muestreo Mejorado:</strong> ¿Quieres un video más refinado? Activa esto. Está desactivado por defecto.</li>
+        <li><strong>Semilla de Muestreo Mejorado:</strong> Usa esto para generar el mismo video cada vez con muestreo mejorado. Es opcional y está desactivado por defecto.</li>
+        <li><strong>Fotogramas por Segundo (FPS):</strong> Establece la velocidad de tu video. El valor predeterminado es 16 FPS, pero puedes ajustarlo hasta 16.</li>
         <li><strong>Modelo de Video:</strong> Elige el estilo de tu video. Las opciones incluyen:
             <ul>
                 <li><strong>Predeterminado:</strong> Un modelo de video estándar.</li>
-                <li><strong>Caricatura:</strong> Un estilo de video caricaturesco.</li>
+                <li><strong>Dibujo Animado:</strong> Un estilo de video caricaturesco.</li>
                 <li><strong>Natural:</strong> Un estilo de video realista y natural.</li>
-                <li><strong>Animado 3D:</strong> Un estilo de video animado en 3D.</li>
+                <li><strong>Animado en 3D:</strong> Un estilo de video animado en 3D.</li>
             </ul>
         </li>
     </ul>

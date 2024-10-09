@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -40,39 +40,39 @@
 
 <body>
 
-    <h2>Opas Taustan Vaihto - Ominaisuuden Käyttöön</h2>
-    <p>Taustan vaihto -ominaisuus AiCasso:ssa on täydellinen, kun haluat vaihtaa kuvan taustaa. Olitpa sitten haluamassa vain poistaa taustan tai korvata sen jollain muulla, AiCasso tekee siitä todella helppoa. Sinun ei tarvitse huolehtia teknisistä asioista—kuvaile vain mitä haluat, ja AiCasso hoitaa loput.</p>
+    <h2>Opas Taustan Vaihto - Ominaisuuden Käyttämiseen</h2>
+    <p>Taustan vaihto -ominaisuus AiCasso:ssa on täydellinen, kun haluat vaihtaa kuvan taustan. Olitpa sitten haluamassa vain poistaa taustan tai vaihtaa sen johonkin muuhun, AiCasso tekee sen todella helpoksi. Sinun ei tarvitse huolehtia teknisistä asioista—kuvaile vain, mitä haluat, ja AiCasso hoitaa loput.</p>
 
     <h3>Kuinka Se Toimii:</h3>
     
     <div class="example">
         <strong>Syötekuva:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Syötekuva" loading="lazy">
         </div>
         <strong>Kehoitus 1:</strong>
         <p>"Poista tausta"</p>
         <strong>Tulos 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Tausta Poistettu Tulos" loading="lazy">
         </div>
         <strong>Kehoitus 2:</strong>
-        <p>"Korvaa tausta metsässä, älä vain poista sitä, alfa-matting pois päältä. Käytä etualan kynnystä 240, taustan kynnystä 20 ja erode-kokoa 5 alfa-mattingille."</p>
+        <p>"Vaihda tausta metsäksi, älä vain poista sitä, alpha-matting pois päältä. Käytä etualan kynnystä 240, taustan kynnystä 20 ja erode-kokoa 5 alpha-mattingille."</p>
         <strong>Tulos 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Vaihdettu Tausta Metsällä" loading="lazy">
         </div>
     </div>
 
     <h3>Valinnaiset Parametrit</h3>
-    <p>Jos haluat lisätä henkilökohtaista kosketusta tai hienosäätää tuloksia, tässä on muutama vaihtoehto, joilla voit leikkiä:</p>
+    <p>Jos haluat lisätä henkilökohtaisen kosketuksen tai hienosäätää tuloksia, tässä on muutama vaihtoehto, joilla voit leikkiä:</p>
 
     <ul>
-        <li><strong>Vain Poisto:</strong> Jos haluat vain poistaa taustan etkä korvata sitä millään, tämä on sinun vaihtoehtosi. Se on kuin puhtaalle liidulle painaminen.</li>
-        <li><strong>Alfa Matting:</strong> Tämä on hieno tapa sanoa "sulauta reunat." Kun otat tämän käyttöön, se auttaa tekemään kohteesi reunat sujuvammiksi ja vähemmän leikatuiksi. Oletusarvoisesti se on pois päältä.</li>
-        <li><strong>Alfa Matting Etualan Kynnys:</strong> Tämä säätelee, kuinka paljon pääkohteesta (kuten henkilöstä) pysyy näkyvissä käytettäessä alfa-mattingia. Oletusarvo on 240, ja voit säätää sitä saadaksesi reunat pehmeämmiksi tai terävämmiksi.</li>
-        <li><strong>Alfa Matting Taustan Kynnys:</strong> Tämä tekee saman kuin etualan kynnys, mutta taustalle. Oletusarvo on 20, ja se on kaikki täydellisen sekoituksen saamiseksi uuden taustan kanssa.</li>
-        <li><strong>Alfa Matting Erode Koko:</strong> Tämä auttaa kutistamaan reunoja hieman, jotta leikattu näyttää siistimmältä. Oletuskoko on 5, mutta voit säätää sitä saadaksesi haluamasi ilmeen.</li>
+        <li><strong>Vain Poisto:</strong> Jos haluat vain poistaa taustan etkä vaihtaa sitä mihinkään, tämä on sinun vaihtoehtosi. Se on kuin painaisi puhdasta taulua.</li>
+        <li><strong>Alpha Matting:</strong> Tämä on hieno tapa sanoa "sulauta reunat." Kun otat tämän käyttöön, se auttaa tekemään kohteesi reunat sujuvammiksi ja vähemmän leikatuiksi. Oletuksena se on pois päältä.</li>
+        <li><strong>Alpha Matting Etualan Kynnys:</strong> Tämä säätelee, kuinka paljon pääkohteesta (kuten henkilöstä) pysyy näkyvissä käytettäessä alpha mattingia. Oletus on 240, ja voit säätää sitä saadaksesi reunat pehmeämmiksi tai terävämmiksi.</li>
+        <li><strong>Alpha Matting Taustan Kynnys:</strong> Tämä tekee saman kuin etualan kynnys, mutta taustalle. Oletus on 20, ja se on kaikki täydellisen sekoituksen saamiseksi uuden taustan kanssa.</li>
+        <li><strong>Alpha Matting Erode Koko:</strong> Tämä auttaa kutistamaan reunoja hieman, jotta leikattu näyttää siistimmältä. Oletuskoko on 5, mutta voit säätää sitä saadaksesi juuri haluamasi ilmeen.</li>
     </ul>
 
     <p>Muista, että sinun ei tarvitse stressata kaiken täydelliseksi saamisesta. AiCasso on melko hyvä ymmärtämään, mitä tarkoitat, joten voit olla niin rento tai yksityiskohtainen kuin haluat. Hauskaa luomista!</p>

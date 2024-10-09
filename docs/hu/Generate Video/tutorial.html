@@ -31,16 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img {
+            width: 100%;
+            max-width: 400px;
             height: auto;
         }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        @media (max-width: 768px) {
+            .result img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -54,19 +54,21 @@
     
     <div class="example">
         <strong>Prompt:</strong>
-        <p>"Egy 3D animált kakas egy mezőn, teljesen egyedül, eszik és boldog. Készítsen belőle egy portré videót 50 zajcsökkentési lépéssel."</p>
+        <p>"Egy 3D animált kakas egy mezőn, teljesen egyedül, eszik és boldog. Készítsen egy portré videót 50 zajcsökkentési lépéssel."</p>
         <strong>Eredmény:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/animated3d.gif" alt="Animált 3D Kakas">
+            <noscript><img src="../../images/tutorials/texttovideo/animated3d.gif" alt="Animált 3D Kakas"></noscript>
         </div>
     </div>
 
     <div class="example">
         <strong>Prompt:</strong>
-        <p>"Egy kakas karikatúra egy mezőn tájképi méretekben."</p>
+        <p>"Egy kakas karikatúra egy mezőn, tájképi méretekben."</p>
         <strong>Eredmény:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/cartoon.gif" alt="Karikatúra Kakas">
+            <noscript><img src="../../images/tutorials/texttovideo/cartoon.gif" alt="Karikatúra Kakas"></noscript>
         </div>
     </div>
 
@@ -75,7 +77,8 @@
         <p>"Egy kakas egy mezőn."</p>
         <strong>Eredmény:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/default.gif" alt="Alap Kakas">
+            <noscript><img src="../../images/tutorials/texttovideo/default.gif" alt="Alap Kakas"></noscript>
         </div>
     </div>
 
@@ -84,7 +87,8 @@
         <p>"Egy kakas, aki teljesen egyedül van a mezőn. Adj neki természetes érzést."</p>
         <strong>Eredmény:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/natural.gif" alt="Természetes Kakas">
+            <noscript><img src="../../images/tutorials/texttovideo/natural.gif" alt="Természetes Kakas"></noscript>
         </div>
     </div>
 
@@ -93,22 +97,22 @@
 
     <ul>
         <li><strong>Képkockák Száma:</strong> Válassza ki, hány képkocka (egyedi kép) legyen a videójában. Maximum 25 képkockát választhat, az alapértelmezett 16.</li>
-        <li><strong>Zajcsökkentési Lépések Száma:</strong> Ez határozza meg, mennyire sima lesz a videója. Minél több lépés, annál simább a videó. Maximum 50 lépést állíthat be, az alapértelmezett 20.</li>
-        <li><strong>Irányítási Skála:</strong> Ez segít, hogy a videó szorosan kövesse a leírását. Minél magasabb a szám, annál inkább követi a promptját. A tartomány 0-tól 8-ig terjed, az alapértelmezett 8.</li>
-        <li><strong>Réteg Kihagyás:</strong> Kihagyhat bizonyos rétegeket egy másik videóstílus érdekében. Alapértelmezés szerint nincs kihagyott réteg, de maximum 2-t kihagyhat.</li>
+        <li><strong>Zajcsökkentési Lépések Száma:</strong> Ez határozza meg, hogy mennyire sima lesz a videója. Minél több lépés, annál simább a videó. Maximum 50 lépést állíthat be, az alapértelmezett 20.</li>
+        <li><strong>Irányítási Skála:</strong> Ez segít a videónak szorosan követni a leírását. Minél magasabb a szám, annál inkább követi a promptját. A tartomány 0-tól 8-ig terjed, az alapértelmezett 8.</li>
+        <li><strong>Réteg Átugrás:</strong> Ugrás bizonyos rétegekhez, hogy más videóstílust kapjon. Alapértelmezés szerint nem ugrik át rétegeket, de maximum 2-t átugorhat.</li>
         <li><strong>Felbontás Növelése Szélesség és Magasság:</strong> A felbontás módosításával nagyobbá teheti a videóját. Az alapértelmezett 1024x1024 pixel, de ezt az igényei szerint módosíthatja.</li>
-        <li><strong>Felbontás Növelés Erőssége:</strong> Ez változtatja meg, mennyire állítja be a videóját a felbontás növelésekor. Az alapértelmezett 1, de módosíthatja, hogy több különbséget lásson.</li>
-        <li><strong>Felbontás Növelés Irányítási Skála:</strong> Ez irányítja a felbontás növelési folyamatot, a tartomány 0-tól 8-ig terjed, és az alapértelmezett 8.</li>
-        <li><strong>Felbontás Növelés Lépések Száma:</strong> A videó felbontásának növeléséhez szükséges lépések száma. Minél több lépés, annál simább a felbontás növelése, maximum 50 és alapértelmezett 20.</li>
+        <li><strong>Felbontás Növelés Erőssége:</strong> Ez változtatja meg, mennyire állítja be a videóját, amikor felnagyítja. Az alapértelmezett 1, de módosíthatja, hogy több különbséget lásson.</li>
+        <li><strong>Felbontás Növelés Irányítási Skála:</strong> Ez irányítja a felnagyítási folyamatot, 0-tól 8-ig terjedő tartományban, alapértelmezett 8.</li>
+        <li><strong>Felbontás Növelés Lépések Száma:</strong> A felnagyításhoz szükséges lépések száma. Minél több lépés, annál simább a felnagyítás, maximum 50, alapértelmezett 20.</li>
         <li><strong>Fejlettebb Mintavételezés:</strong> Szeretne egy finomabb videót? Kapcsolja be ezt. Alapértelmezés szerint ki van kapcsolva.</li>
-        <li><strong>Fejlettebb Mintavételezés Mag:</strong> Ezt használhatja, hogy minden alkalommal ugyanazt a videót generálja a fejlettebb mintavételezéssel. Opcionális és alapértelmezés szerint ki van kapcsolva.</li>
-        <li><strong>Képkockák másodpercenként (FPS):</strong> Állítsa be a videó sebességét. Az alapértelmezett 16 FPS, de ezt 16-ra módosíthatja.</li>
+        <li><strong>Fejlettebb Mintavételezés Mag:</strong> Ezt használja, hogy minden alkalommal ugyanazt a videót generálja a fejlettebb mintavételezéssel. Opcionális és alapértelmezés szerint ki van kapcsolva.</li>
+        <li><strong>Képkockák másodpercenként (FPS):</strong> Állítsa be a videó sebességét. Az alapértelmezett 16 FPS, de ezt 16-ra állíthatja.</li>
         <li><strong>Videó Modell:</strong> Válassza ki a videó stílusát. Opciók közé tartozik:
             <ul>
                 <li><strong>Alapértelmezett:</strong> Egy standard videó modell.</li>
-                <li><strong>Karikatúra:</strong> Egy karikatúrás videóstílus.</li>
-                <li><strong>Természetes:</strong> Egy valósághű, természetes megjelenésű videóstílus.</li>
-                <li><strong>Animált 3D:</strong> Egy 3D animált videóstílus.</li>
+                <li><strong>Karikatúra:</strong> Egy karikatúra stílusú videó.</li>
+                <li><strong>Természetes:</strong> Egy valósághű, természetes megjelenésű videó stílus.</li>
+                <li><strong>Animált 3D:</strong> Egy 3D animált videó stílus.</li>
             </ul>
         </li>
     </ul>

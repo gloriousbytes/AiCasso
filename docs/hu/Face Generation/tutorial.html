@@ -6,89 +6,90 @@
     <title>Arc Generálás Funkció Útmutató</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Biztosítja, hogy a kép ne lépje túl a tartályt */
+    height: auto;     /* Megtartja az arányokat */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
     <h2>Útmutató az Arc Generálás Funkció Használatához</h2>
-    <p>Az Arc Generálás funkció az AiCasso-ban rendkívül sokoldalú! Lehetővé teszi, hogy lenyűgöző képeket készítsünk egy adott arc beépítésével különböző karakterekbe vagy stílusokba. Akár egy lovagot, szamurájt vagy bármilyen más karaktert képzelsz el, az AiCasso az input arccal generál egy képet, amelyben az arc integrálva van a kért dizájnba.</p>
+    <p>Az Arc Generálás funkció az AiCasso-ban hihetetlenül sokoldalú! Lehetővé teszi, hogy lenyűgöző képeket készítsünk egy adott arc beépítésével különböző karakterekbe vagy stílusokba. Akár egy lovagot, szamurájt, vagy bármilyen más karaktert képzelsz el, az AiCasso az input arccal generál egy képet, amelyben az arc be van építve a kért dizájnba.</p>
 
     <h3>Hogyan Működik:</h3>
     
-    <div class="example">
-        <strong>Bemeneti Kép:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
-        </div>
-        <strong>Prompt 1:</strong>
-        <p>"Egy valósághű lovag, használj maximális skálát"</p>
-        <strong>Eredmény 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
-        </div>
-        <strong>Prompt 2:</strong>
-        <p>"Használj chibi stílust és készíts egy szamurájt, használj alapértékeket"</p>
-        <strong>Eredmény 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
-        </div>
-        <strong>Prompt 3:</strong>
-        <p>"Egy szamuráj, használj 31 zajcsökkentési lépést, és anime stílust"</p>
-        <strong>Eredmény 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Bemeneti Kép:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/input.jpg" alt="Bemeneti Kép">
     </div>
+    <strong>Prompt 1:</strong>
+    <p>"Egy valósághű lovag, használj maximális skálát"</p>
+    <strong>Eredmény 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="Valósághű Lovag">
+    </div>
+    <strong>Prompt 2:</strong>
+    <p>"Használj chibi stílust és készíts egy szamurájt, használj alapértékeket"</p>
+    <strong>Eredmény 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="Chibi Szamuráj">
+    </div>
+    <strong>Prompt 3:</strong>
+    <p>"Egy szamuráj, használj 31 zajcsökkentő lépést, és anime stílust"</p>
+    <strong>Eredmény 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="Anime Szamuráj">
+    </div>
+</div>
 
     <h3>Opcionális Paraméterek</h3>
-    <p>Ha szeretnél egy kicsit több személyiséget vagy kontrollt adni a generált képeidhez, itt van néhány lehetőség, amit módosíthatsz:</p>
+    <p>Ha egy kicsit több személyiséget vagy kontrollt szeretnél adni a generált képeidnek, itt van néhány lehetőség, amit módosíthatsz:</p>
 
     <ul>
         <li><strong>Negatív Prompt:</strong> Itt mondhatod el az AiCasso-nak, hogy mit <em>nem</em> szeretnél látni a képen. Ha ezt üresen hagyod, az AiCasso csak a pozitív prompttal fog foglalkozni.</li>
-        <li><strong>A zajcsökkentési lépések száma:</strong> Ez szabályozza, hogy mennyire sima és kifinomult a kép. Választhatsz 21, 31 vagy 41 lépés között, a 41 az alapértelmezett. Minél több lépés, annál tisztább, csiszoltabb a kép.</li>
-        <li><strong>Irányítási Skála:</strong> Ez segít, hogy a kép hű maradjon a leírásodhoz. A skála 1-től 20-ig terjed, a 10 az alapértelmezett. A magasabb számok azt jelentik, hogy az AiCasso közelebb marad a promptodhoz.</li>
-        <li><strong>S Skála:</strong> Ez az arc szerkezetéről szól. Kicsit technikai, de lényegében az arc szerkezetének súlyát állítja be. Az alapértelmezett 1.0, és bárhova mehetsz 0.0-tól 2.0-ig.</li>
-        <li><strong>Stílus:</strong> Szeretnél egy specifikus hangulatot adni a képednek? Választhatsz olyan stílusok közül, mint a képregény, chibi, 3D, anime vagy valósághű. A valósághű az alapértelmezett, de bátran légy kreatív!</li>
+        <li><strong>Zajcsökkentő Lépések Száma:</strong> Ez szabályozza, hogy mennyire sima és finom a kép. Választhatsz 21, 31 vagy 41 lépés között, a 41 az alapértelmezett. Minél több lépés, annál tisztább, csiszoltabb a kép.</li>
+        <li><strong>Irányítási Skála:</strong> Ez segít a képnek hű maradni a leírásodhoz. A skála 1-től 20-ig terjed, a 10 az alapértelmezett. A magasabb számok azt jelentik, hogy az AiCasso közelebb marad a promptodhoz.</li>
+        <li><strong>S Skála:</strong> Ez az arc struktúrájáról szól. Kicsit technikai, de lényegében az arc struktúrájának súlyát állítja be. Az alapértelmezett 1.0, és bárhova mehetsz 0.0-tól 2.0-ig.</li>
+        <li><strong>Stílus:</strong> Szeretnél egy specifikus hangulatot adni a képednek? Választhatsz olyan stílust, mint a képregény, chibi, 3D, anime vagy valósághű. A valósághű az alapértelmezett, de bátran légy kreatív!</li>
     </ul>
 
-    <p>És ne feledd, az AiCasso elég megbocsátó. Nem kell nyelvtani varázslónak lenned, vagy minden részletet tökéletesen eltalálnod. Csak írd le, mit szeretnél a saját szavaiddal, és az AiCasso gondoskodik a többi részről. Élvezd a kreatív folyamatot!</p>
+    <p>És ne feledd, az AiCasso elég megbocsátó. Nem kell nyelvtani varázslónak lenned, vagy minden részletet tökéletesen megoldanod. Csak írd le, mit szeretnél a saját szavaiddal, és az AiCasso elintézi a többit. Jó szórakozást a kreatívkodáshoz!</p>
 
 </body>
 </html>

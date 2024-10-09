@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            max-width: 100%;
             height: auto;
+            object-fit: contain;
         }
         .iframe-container {
             display: flex;
@@ -48,45 +49,45 @@
 <body>
 
     <h2>画像から動画への機能の使い方ガイド</h2>
-    <p>AiCassoの画像から動画への機能を使えば、1枚の画像を動的な動画に変換できます。動画で見たい内容を説明するだけで、AiCassoが実現してくれます！</p>
+    <p>AiCassoの画像から動画への機能を使うと、1枚の画像を動的な動画に変換できます。動画で見たいことを説明するだけで、AiCassoが実現します！</p>
 
-    <h3>動作の仕組み:</h3>
+    <h3>仕組み：</h3>
     
     <div class="example">
-        <strong>入力画像:</strong>
+        <strong>入力画像：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/input.jpg" alt="入力画像" loading="lazy">
         </div>
-        <strong>プロンプト1:</strong>
-        <p>"公園のかわいい子犬"</p>
-        <strong>結果1:</strong>
+        <strong>プロンプト 1：</strong>
+        <p>"公園にいるかわいい子犬"</p>
+        <strong>結果 1：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppy.gif" alt="公園のかわいい子犬" loading="lazy">
         </div>
-        <strong>プロンプト2:</strong>
-        <p>"公園のかわいい子犬、最大FPS、最大フレーム、最大モーションを使用"</p>
-        <strong>結果2:</strong>
+        <strong>プロンプト 2：</strong>
+        <p>"公園にいるかわいい子犬、最大FPS、最大フレーム、最大の動きを使用"</p>
+        <strong>結果 2：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppymaxframes.gif" alt="最大FPSの公園の子犬" loading="lazy">
         </div>
     </div>
 
-    <h3>オプションパラメータ</h3>
-    <p>動画をより具体的にしたい場合、以下の設定を調整できます:</p>
+    <h3>オプションのパラメータ</h3>
+    <p>動画をより具体的にしたい場合は、以下の設定を調整できます：</p>
 
     <ul>
-        <li><strong>ネガティブプロンプト:</strong> 動画に含めたくない内容を説明します。空欄の場合、AiCassoはポジティブプロンプトに集中します。</li>
-        <li><strong>フレーム数:</strong> 動画に含めるフレーム（個々の画像）の数を選択します。最大25フレームまで選択可能で、デフォルトは16です。</li>
-        <li><strong>デノイジングステップ:</strong> 動画の滑らかさを制御します。ステップが多いほど、よりクリーンな動画になります。最大50ステップまで設定可能で、デフォルトは20です。</li>
-        <li><strong>ガイダンススケール:</strong> 動画が説明にどれだけ忠実であるかを助けます。範囲は1.0から8.0で、開始値と終了値を調整して動画の進化をガイドできます。</li>
-        <li><strong>モーション:</strong> 動画の動きの量を調整します。値が高いほどアクションが多くなります。範囲は0から127で、デフォルトは60です。</li>
-        <li><strong>ノイズ増強強度:</strong> 動画にノイズを追加して、よりテクスチャーのある外観にします。範囲は0から1で、デフォルトは0です。</li>
-        <li><strong>フレーム毎秒 (FPS):</strong> 動画の再生速度を設定します。デフォルトは16 FPSですが、最大16まで設定可能です。</li>
-        <li><strong>補間方法:</strong> フレームがどのようにブレンドされるかを選択します。デフォルトは「lerp」（線形補間）ですが、「slerp」（球面線形補間）も使用可能です。</li>
-        <li><strong>クリップスキップ:</strong> 異なる動画スタイルのために特定のレイヤーをスキップします。最大2レイヤーまでスキップ可能で、デフォルトの動作にするにはnullにします。</li>
+        <li><strong>ネガティブプロンプト：</strong>動画に*含めたくない*ことを説明します。空白のままにすると、AiCassoはポジティブプロンプトに集中します。</li>
+        <li><strong>フレーム数：</strong>動画に含めるフレーム（個々の画像）の数を選択します。最大25フレームまで選択でき、デフォルトは16です。</li>
+        <li><strong>ノイズ除去ステップ：</strong>動画の滑らかさを制御します。ステップが多いほど、動画はクリーンになります。最大50ステップまで設定でき、デフォルトは20です。</li>
+        <li><strong>ガイダンススケール：</strong>動画が説明にどれだけ忠実であるかを助けます。範囲は1.0から8.0で、開始値と終了値を調整して動画の進行をガイドできます。</li>
+        <li><strong>動き：</strong>動画の動きの量を調整します。値が高いほど、アクションが増えます。範囲は0から127で、デフォルトは60です。</li>
+        <li><strong>ノイズ増強強度：</strong>動画にノイズを加えて、よりテクスチャのある外観を与えます。範囲は0から1で、0がデフォルトです。</li>
+        <li><strong>フレーム毎秒（FPS）：</strong>動画の再生速度を設定します。デフォルトは16 FPSですが、より速い再生のために最大16まで設定できます。</li>
+        <li><strong>補間方法：</strong>フレームをどのようにブレンドするかを選択します。デフォルトは「lerp」（線形補間）ですが、異なる効果のために「slerp」（球面線形補間）を使用することもできます。</li>
+        <li><strong>クリップスキップ：</strong>異なる動画スタイルのために特定のレイヤーをスキップします。最大2レイヤーをスキップでき、デフォルトの動作のためにnullのままにすることもできます。</li>
     </ul>
 
-    <p>覚えておいてください、AiCassoはかなり賢いです！すべての詳細を完璧にする必要はなく、正しい文法を使う必要もありません。望むものを説明するだけで、AiCassoが残りを行います。動画作成を楽しんでください！</p>
+    <p>覚えておいてください、AiCassoは非常に賢いです！すべての詳細を完璧にする必要はなく、正しい文法を使う必要もありません。欲しいものを説明するだけで、AiCassoが残りを行います。動画作成を楽しんでください！</p>
 
 </body>
 </html>

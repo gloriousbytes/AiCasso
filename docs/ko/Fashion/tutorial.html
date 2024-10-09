@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -48,38 +49,38 @@
 <body>
 
     <h2>패션 생성 기능 사용 가이드</h2>
-    <p>AiCasso의 패션 생성 기능을 사용하면 셔츠, 드레스, 바지 등 특정 의상을 입힐 수 있습니다. 원하는 것을 설명하면 AiCasso가 이미지 속 인물에게 의상을 적용합니다.</p>
+    <p>AiCasso의 패션 생성 기능을 사용하면 셔츠, 드레스 또는 바지와 같은 특정 의상을 입힐 수 있습니다. 원하는 내용을 설명하면 AiCasso가 이미지 속 인물에게 의상을 적용하는 모습을 지켜볼 수 있습니다.</p>
 
     <h3>작동 방식:</h3>
     
     <div class="example">
         <strong>입력 1 - 인물 이미지:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 1.jpg" alt="인물 이미지">
         </div>
-        <strong>입력 2 - 의상 아이템:</strong>
+        <strong>입력 2 - 의류 아이템:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 2.jpg" alt="의류 아이템">
         </div>
         <strong>프롬프트:</strong>
         <p>"셔츠를 입은 남자"</p>
         <strong>결과:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+            <img src="../../images/tutorials/fashion/result.jpg" alt="결과 이미지">
         </div>
     </div>
 
     <h3>선택적 매개변수</h3>
-    <p>자신만의 스타일을 추가하거나 결과를 완벽하게 만들고 싶다면 다음 설정을 조정할 수 있습니다:</p>
+    <p>자신만의 스타일을 추가하거나 결과가 완벽하게 나오도록 하고 싶다면 다음 설정을 조정할 수 있습니다:</p>
 
     <ul>
-        <li><strong>부정 프롬프트:</strong> 이미지에 <em>원하지 않는</em> 것이 있다면 여기에 언급하세요. AiCasso가 생성하는 모든 것이 괜찮다면 비워 두세요.</li>
-        <li><strong>의상 유형:</strong> AiCasso에게 <em>상반신</em>, <em>하반신</em>, <em>드레스</em> 중 어디에 집중할지 알려주세요. 확실하지 않으면 기본값은 상반신입니다.</li>
-        <li><strong>디노이징 단계 수:</strong> 이미지의 매끄럽고 세련된 정도를 결정합니다. 21, 31, 41 단계 중 선택할 수 있으며, 기본값은 21입니다. 더 많은 단계는 일반적으로 더 정교한 외관을 의미합니다.</li>
-        <li><strong>가이드 스케일:</strong> 이미지가 설명에 얼마나 잘 맞는지를 결정합니다. 1에서 20까지 설정할 수 있으며, 기본값은 7입니다. 숫자가 높을수록 AiCasso가 프롬프트를 더 잘 따릅니다.</li>
+        <li><strong>부정적 프롬프트:</strong> 이미지에 <em>원하지 않는</em> 것이 있다면 여기에서 언급하세요. AiCasso가 생성하는 것에 괜찮다면 비워두세요.</li>
+        <li><strong>의류 유형:</strong> AiCasso에게 <em>상체</em>, <em>하체</em>, 또는 <em>드레스</em>에 집중하고 있는지 알려주세요. 확실하지 않다면 기본값은 상체입니다.</li>
+        <li><strong>노이즈 제거 단계 수:</strong> 이 설정은 이미지가 얼마나 매끄럽고 정교하게 보이는지를 결정합니다. 21, 31 또는 41 단계 중에서 선택할 수 있으며, 기본값은 21입니다. 더 많은 단계는 일반적으로 더 정제된 외관을 의미합니다.</li>
+        <li><strong>가이드 스케일:</strong> 이 설정은 이미지가 설명에 얼마나 밀접하게 맞춰지는지를 돕습니다. 1에서 20까지 설정할 수 있으며, 기본값은 7입니다. 숫자가 높을수록 AiCasso가 프롬프트를 더 밀접하게 따릅니다.</li>
     </ul>
 
-    <p>이 설정들은 선택 사항입니다! AiCasso는 매우 똑똑해서 모든 세부 사항을 완벽하게 맞추지 않아도 당신의 의도를 이해할 수 있습니다. 그냥 재미있게 즐기고 창의력을 발휘하세요!</p>
+    <p>이 설정은 선택 사항임을 기억하세요! AiCasso는 꽤 똑똑해서 모든 세부 사항이 완벽하지 않더라도 당신이 의미하는 바를 이해할 수 있습니다. 그냥 재미있게 놀고 창의력을 발휘하세요!</p>
 
 </body>
 </html>

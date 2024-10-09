@@ -31,16 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img {
+            width: 100%;
             height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+            max-width: 100%;
         }
     </style>
 </head>
@@ -48,53 +42,53 @@
 <body>
 
     <h2>图像引导编辑技巧</h2>
-    <p>AiCasso 的图像引导编辑功能让您只需描述想要的效果即可对图片进行更改。无论您想改变风格、调整氛围还是修改某些部分，AiCasso 都能为您处理，无需手动选择或绘制任何内容。</p>
+    <p>AiCasso中的图像引导编辑功能让您只需描述想要的内容即可对图片进行更改。无论您想改变风格、调整氛围，还是微调某些部分，AiCasso都会为您处理，无需手动选择或绘制任何内容。</p>
 
     <h3>工作原理：</h3>
 
     <div class="example">
         <strong>起始图像：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CpnI7HqIAzcrMjmQb5_25yJilhxraZ80/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/startingimage1.jpg" alt="起始图像">
         </div>
     </div>
 
     <div class="example">
         <strong>描述您的更改：</strong>
-        <p>只需输入您想要更改的内容，AiCasso 就会将这些更改应用到图像上。</p>
+        <p>只需输入您想要更改的内容，AiCasso将把这些更改应用到图像上。</p>
     </div>
 
-    <h3>编辑示例：</h3>
+    <h3>示例编辑：</h3>
 
     <div class="example">
         <strong>示例 1：</strong> "让她变成金发。"
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI2vE6dOcFxInjqzq1_mVru_nLCGFTaS/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/makeherblonde.jpg" alt="让她变成金发示例">
         </div>
-        <p><em>结果：</em> AiCasso 将把人物的发色更改为金色。</p>
+        <p><em>结果：</em> AiCasso将把这个人的发色改为金色。</p>
     </div>
 
     <div class="example">
-        <strong>示例 2：</strong> "让它变成夜晚，使用 50 步，指导比例为 1，图像指导比例为 1。"
+        <strong>示例 2：</strong> "让它变成夜晚，使用50步，指导比例为1，图像引导比例为1。"
         <div class="example">
             <strong>输入图像：</strong>
             <div class="result">
-                <iframe src="https://drive.google.com/file/d/1PlJNkwIWrK3Uu_bq38te_dtqp2XBkW_e/preview"></iframe>
+                <img src="../../images/tutorials/imageguidededit/example2input.jpg" alt="示例 2 输入图像">
             </div>
         </div>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11mjTtcBdI8T0cMcfQz6HEJ79xOhw81VG/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/example2result.jpg" alt="示例 2 结果图像">
         </div>
-        <p><em>结果：</em> 图像将被转换为夜景，并根据您提供的详细信息进行特定调整。</p>
+        <p><em>结果：</em> 图像将被转换为夜景，并根据您提供的细节进行特定调整。</p>
     </div>
 
-    <h3>附加选项</h3>
-    <p>您可以使用以下可选设置微调您的编辑：</p>
+    <h3>其他选项</h3>
+    <p>您可以使用以下可选设置来微调您的编辑：</p>
 
     <ul>
-        <li><strong>图像指导比例：</strong> 控制新图像与原始图像的贴合程度。较低的值意味着更微妙的变化，而较高的值则使变化更加显著。您可以在 1 到 8 之间设置。</li>
-        <li><strong>步骤：</strong> 设置工具将进行多少次细化。更多的步骤意味着更平滑和更详细的最终图像。您可以选择 1 到 50 步，默认值为 20。</li>
-        <li><strong>指导比例：</strong> 影响 AI 遵循您描述的程度。较低的比例给予 AI 更多的创作自由，而较高的比例则使其更紧密地遵循您的描述。您可以在 1 到 20 之间调整。</li>
+        <li><strong>图像引导比例：</strong> 这控制新图像与原始图像的贴合程度。较低的值意味着更微妙的变化，而较高的值则使变化更加明显。您可以将其设置在1到8之间。</li>
+        <li><strong>步骤：</strong> 这设置工具将进行多少次细化。更多的步骤意味着最终图像更平滑、更详细。您可以选择1到50步，默认值为20。</li>
+        <li><strong>指导比例：</strong> 这影响AI遵循您描述的程度。较低的比例给予AI更多的创造自由，而较高的比例则使其紧密遵循您的描述。您可以在1到20之间调整此值。</li>
     </ul>
 
 </body>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moninäkymäominaisuuden opas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        img, video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Opas moninäkymäominaisuuden käyttöön</h2>
+    <p>Moninäkymäominaisuus AiCassossa mahdollistaa objektin tarkastelun eri kulmista luomalla useita näkökulmia objektista kuvassasi. Tämä on erityisen hyödyllistä 3D-muotojen ymmärtämisessä tai tuotteiden esittelyssä. Tämä ominaisuus toimii parhaiten, kun objektilla ei ole taustaa, joten varmista, että poistat kaikki häiritsevät elementit optimaalisten tulosten saavuttamiseksi.</p>
+
+    <h3>Kuinka se toimii:</h3>
+    
+    <div class="example">
+        <strong>Syötekuva:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/input.jpg" alt="Syötekuva" loading="lazy">
+        </div>
+        <strong>Kehoitus:</strong>
+        <p>"Näytä tämä objekti useista näkökulmista"</p>
+        <strong>Tulos:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/result.jpg" alt="Tuloksen kuva" loading="lazy">
+        </div>
+    </div>
+
+    <h3>Vinkkejä parhaisiin tuloksiin</h3>
+    <p>Tässä on joitakin vinkkejä varmistaaksesi, että kuvasi onnistuu hyvin:</p>
+
+    <ul>
+        <li><strong>Objekti ilman taustaa:</strong> Moninäkymäominaisuus toimii parhaiten, kun kuvasi objekti on eristetty taustasta. Tämä mahdollistaa AiCasson keskittyvän pelkästään objektiin ja luomaan selkeitä näkökulmia.</li>
+        <li><strong>Hyvä valaistus:</strong> Varmista, että objektisi on hyvin valaistu syötekuvassa, sillä varjot ja epätasainen valaistus voivat vaikuttaa siihen, miltä objekti näyttää eri kulmista.</li>
+        <li><strong>Useita objekteja:</strong> Jos kuvassa on useampi kuin yksi objekti, yritä eristää se, jota haluat tarkastella eri kulmista, tai valitse yksinkertaisempi kuva, jossa on vain yksi keskeinen objekti.</li>
+    </ul>
+
+    <p>Kuten kaikki ominaisuudet AiCassossa, sinun ei tarvitse liikaa miettiä—kuvaile mitä haluat ja AiCasso hoitaa raskaan työn. Moninäkymäominaisuus on täydellinen tuote-esittelyihin, luoviin näyttelyihin ja muuhun!</p>
+
+</body>
+</html>

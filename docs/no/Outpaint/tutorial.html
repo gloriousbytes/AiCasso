@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
         .iframe-container {
@@ -48,28 +48,28 @@
 <body>
 
     <h2>Tips for å bruke Outpaint-funksjonen</h2>
-    <p>Outpaint-funksjonen i AiCasso lar deg utvide et bilde ved å legge til nye elementer rundt det eller forlenge det som allerede er der. Bare beskriv hva du ønsker, så tar AiCasso seg av resten.</p>
+    <p>Outpaint-funksjonen i AiCasso lar deg utvide et bilde ved å legge til nye elementer rundt det eller utvide det som allerede er der. Bare beskriv hva du ønsker, så tar AiCasso seg av resten.</p>
 
     <h3>Slik fungerer det:</h3>
     
     <div class="example">
         <strong>Startbilde:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/input.jpg" alt="Startbilde" loading="lazy">
         </div>
     </div>
 
     <div class="example">
         <strong>Beskriv endringen din:</strong>
-        <p>Bare skriv hva du ønsker å legge til eller utvide, så vil AiCasso bruke disse endringene. Du kan spesifisere retninger som venstre, høyre, opp eller ned, og til og med detaljer som å zoome ut eller panorere.</p>
+        <p>Bare skriv hva du vil legge til eller utvide, så vil AiCasso bruke disse endringene. Du kan spesifisere retninger som venstre, høyre, opp eller ned, og til og med detaljer som å zoome ut eller panorere.</p>
     </div>
 
-    <h3>Eksempler på redigeringer:</h3>
+    <h3>Eksempelredigeringer:</h3>
 
     <div class="example">
         <strong>Eksempel 1:</strong> "Legg til et isfjell til høyre med en oversettelsesfaktor på 0,4."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/iceberg.jpg" alt="Eksempel 1 - Isfjell" loading="lazy">
         </div>
         <p><em>Resultat:</em> AiCasso utvider bildet til høyre og legger til et isfjell, og holder det konsistent med det eksisterende landskapet.</p>
     </div>
@@ -77,9 +77,9 @@
     <div class="example">
         <strong>Eksempel 2:</strong> "Zoom ut, behold konsistensen av det mørke havet om natten."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/zoomout.jpg" alt="Eksempel 2 - Zoom Ut" loading="lazy">
         </div>
-        <p><em>Resultat:</em> Bildet zoomer ut, og avslører mer av det mørke havet, samtidig som det opprettholder atmosfæren i nattscenen.</p>
+        <p><em>Resultat:</em> Bildet zoomer ut, og avdekker mer av det mørke havet, samtidig som det opprettholder atmosfæren i nattscenen.</p>
     </div>
 
     <h3>Tilleggsalternativer</h3>
@@ -88,10 +88,10 @@
     <ul>
         <li><strong>Negativt prompt:</strong> Hvis det er noe spesifikt du ikke vil ha i bildet, kan du fortelle AiCasso her. For eksempel, du kan ønske å unngå å legge til bestemte farger eller objekter.</li>
         <li><strong>Gåtype:</strong> Dette bestemmer retningen bildet utvides i. Du kan velge mellom venstre, høyre, opp, ned eller bakover (som zoomer ut). For eksempel, for å panorere til høyre, velger du 'høyre'.</li>
-        <li><strong>Oversettelsesfaktor:</strong> Dette kontrollerer hvor mye bildet beveger seg med hvert steg når det utvides. En høyere verdi flytter bildet mer, og avslører mer av det nye innholdet. Standardverdien er 0,05, men du kan justere den fra 0 til 1.</li>
-        <li><strong>Bredde/Høyde oversettelse per steg:</strong> Disse kontrollerer hvor langt bildet beveger seg horisontalt (bredde) eller vertikalt (høyde) med hvert steg. Standardverdien er 32 piksler per steg, men du kan justere dette basert på hvor mye du ønsker at bildet skal flytte seg.</li>
+        <li><strong>Oversettelsesfaktor:</strong> Dette kontrollerer hvor mye bildet flytter seg med hvert steg når det utvides. En høyere verdi flytter bildet mer, og avdekker mer av det nye innholdet. Standard er 0,05, men du kan justere det fra 0 til 1.</li>
+        <li><strong>Bredde/Høyde oversettelse per steg:</strong> Disse kontrollerer hvor langt bildet flytter seg horisontalt (bredde) eller vertikalt (høyde) med hvert steg. Standard er 32 piksler per steg, men du kan justere dette basert på hvor mye du vil at bildet skal flytte seg.</li>
         <li><strong>Antall inferens- eller støyreduksjonstrinn:</strong> Dette bestemmer hvor mange justeringer AiCasso gjør for å få det endelige bildet. Flere trinn gir et jevnere resultat, med en standard på 20 trinn, men du kan gå opp til 50.</li>
-        <li><strong>Antall interpolasjonstrinn:</strong> Dette kontrollerer hvor jevnt overgangen skjer mellom to retninger i en enkelt utvidelse. Standardverdien er 60, men du kan øke den opp til 120 for jevnere overganger.</li>
+        <li><strong>Antall interpolasjonstrinn:</strong> Dette kontrollerer hvor jevnt overgangen skjer mellom to retninger i en enkelt utvidelse. Standard er 60, men du kan øke det opp til 120 for jevnere overganger.</li>
     </ul>
 
     <p>Husk, disse innstillingene er valgfrie. AiCasso er designet for å fungere godt med bare din naturlige språkbeskrivelse. Føl deg fri til å eksperimentere og se hva som fungerer best for bildet ditt!</p>

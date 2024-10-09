@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
         .iframe-container {
@@ -55,13 +55,13 @@
     <div class="example">
         <strong>Počiatočný obrázok:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/input.jpg" alt="Počiatočný obrázok" loading="lazy">
         </div>
     </div>
 
     <div class="example">
         <strong>Popíšte svoju zmenu:</strong>
-        <p>Jednoducho napíšte, čo chcete pridať alebo rozšíriť, a AiCasso tieto zmeny aplikuje. Môžete špecifikovať smer ako vľavo, vpravo, hore alebo dole, a dokonca aj detaily ako priblíženie alebo posun.</p>
+        <p>Jednoducho napíšte, čo chcete pridať alebo rozšíriť, a AiCasso tieto zmeny aplikuje. Môžete špecifikovať smer ako vľavo, vpravo, hore alebo dole, a dokonca aj detaily ako priblíženie alebo posúvanie.</p>
     </div>
 
     <h3>Príklady úprav:</h3>
@@ -69,15 +69,15 @@
     <div class="example">
         <strong>Príklad 1:</strong> "Pridajte ľadovec vpravo s faktorom prekladu 0.4."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/iceberg.jpg" alt="Príklad 1 - Ľadovec" loading="lazy">
         </div>
         <p><em>Výsledok:</em> AiCasso rozširuje obrázok doprava a pridáva ľadovec, pričom zachováva konzistenciu s existujúcou scenériou.</p>
     </div>
 
     <div class="example">
-        <strong>Príklad 2:</strong> "Priblížte, zachovajte konzistenciu tmavého mora v noci."
+        <strong>Príklad 2:</strong> "Priblížte sa, zachovajte konzistenciu tmavého mora v noci."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/zoomout.jpg" alt="Príklad 2 - Priblíženie" loading="lazy">
         </div>
         <p><em>Výsledok:</em> Obrázok sa priblíži, odhalí viac tmavého mora, pričom zachováva atmosféru nočnej scény.</p>
     </div>
@@ -86,11 +86,11 @@
     <p>Tu sú niektoré voliteľné nastavenia, ktoré môžete použiť na doladenie svojich úprav:</p>
 
     <ul>
-        <li><strong>Negatívny prompt:</strong> Ak je niečo konkrétne, čo nechcete mať na obrázku, môžete to povedať AiCasso tu. Napríklad, môžete sa chcieť vyhnúť pridávaniu určitých farieb alebo objektov.</li>
-        <li><strong>Typ chôdze:</strong> Toto určuje smer, ktorým sa obrázok rozširuje. Môžete si vybrať zľava, sprava, hore, dole alebo dozadu (čo priblíži). Napríklad, ak chcete posunúť doprava, vyberiete 'vpravo'.</li>
+        <li><strong>Negatívny prompt:</strong> Ak je niečo konkrétne, čo nechcete v obrázku, môžete to povedať AiCasso tu. Napríklad, môžete sa chcieť vyhnúť pridaniu určitých farieb alebo objektov.</li>
+        <li><strong>Typ chôdze:</strong> Toto určuje smer, ktorým sa obrázok rozširuje. Môžete si vybrať zľava, sprava, hore, dole alebo dozadu (čo znamená priblíženie). Napríklad, ak chcete posunúť doprava, vyberiete 'vpravo'.</li>
         <li><strong>Faktor prekladu:</strong> Toto ovláda, ako veľmi sa obrázok posúva s každým krokom pri rozširovaní. Vyššia hodnota posúva obrázok viac, odhaľujúc viac nového obsahu. Predvolené je 0.05, ale môžete to nastaviť od 0 do 1.</li>
-        <li><strong>Šírka/Výška preklad na krok:</strong> Tieto ovládajú, ako ďaleko sa obrázok posúva horizontálne (šírka) alebo vertikálne (výška) s každým krokom. Predvolené je 32 pixelov na krok, ale môžete to nastaviť podľa toho, ako veľmi chcete, aby sa obrázok posunul.</li>
-        <li><strong>Počet inferenčných alebo denoisingových krokov:</strong> Toto určuje, koľko úprav AiCasso vykoná, aby získal konečný obrázok. Viac krokov vedie k hladšiemu výsledku, s predvoleným počtom 20 krokov, ale môžete ísť až na 50.</li>
+        <li><strong>Šírka/Výška preklad na krok:</strong> Tieto ovládajú, ako ďaleko sa obrázok posúva horizontálne (šírka) alebo vertikálne (výška) s každým krokom. Predvolené je 32 pixelov na krok, ale môžete to nastaviť podľa toho, ako veľmi chcete, aby sa obrázok posúval.</li>
+        <li><strong>Počet inferenčných alebo denoisingových krokov:</strong> Toto určuje, koľko úprav AiCasso vykoná na získanie konečného obrázka. Viac krokov vedie k hladšiemu výsledku, s predvoleným počtom 20 krokov, ale môžete ísť až na 50.</li>
         <li><strong>Počet interpolácií:</strong> Toto ovláda, ako hladko prebieha prechod medzi dvoma smermi v jednom rozšírení. Predvolené je 60, ale môžete to zvýšiť až na 120 pre hladšie prechody.</li>
     </ul>
 

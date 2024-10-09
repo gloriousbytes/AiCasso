@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            max-width: 100%;
             height: auto;
+            object-fit: contain;
         }
         .iframe-container {
             display: flex;
@@ -48,45 +49,45 @@
 <body>
 
     <h2>የምስል ወደ ቪዲዮ ባለቤት መመሪያ</h2>
-    <p>በAiCasso ውስጥ የምስል ወደ ቪዲዮ ባለቤት ባለቤት የሚያደርግ አንድ ምስል ወደ ዳይናሚክ ቪዲዮ ይለዋወጣል። በቪዲዮዎ ውስጥ ምን እንደሚይዘው ይገልጹ፣ እና AiCasso ይደርሳል!</p>
+    <p>በAiCasso ውስጥ የምስል ወደ ቪዲዮ ባለቤት ባለቤት አንድ ምስል ወደ አንድ ዳይናሚክ ቪዲዮ ማድረግ ይችላል። በቪዲዮዎ ውስጥ ምን እንደሚያዩ ይገልጹ፣ እና AiCasso ይኖርባቸው ይደርሳል!</p>
 
     <h3>እንዴት ይሰራል:</h3>
     
     <div class="example">
         <strong>የገባ ምስል:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/input.jpg" alt="የገባ ምስል" loading="lazy">
         </div>
-        <strong>የትንቢት 1:</strong>
-        <p>"በፓርክ ውስጥ የሚገኝ ውብ ውሻ"</p>
+        <strong>የግዴታ 1:</strong>
+        <p>"በፓርክ ውስጥ የተወው ውሻ"</p>
         <strong>ውጤት 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppy.gif" alt="በፓርክ ውስጥ የተወው ውሻ" loading="lazy">
         </div>
-        <strong>የትንቢት 2:</strong>
-        <p>"በፓርክ ውስጥ የሚገኝ ውብ ውሻ፣ ከፍተኛ የFPS ፣ ከፍተኛ የፍርስራሽ እና ከፍተኛ እንቅስቃሴ ይጠቀሙ"</p>
+        <strong>የግዴታ 2:</strong>
+        <p>"በፓርክ ውስጥ የተወው ውሻ፣ ከፍተኛ የፍሬም ቁጥር ይጠቀሙ፣ ከፍተኛ የፍሬም ቁጥር እና ከፍተኛ እንቅስቃሴ"</p>
         <strong>ውጤት 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppymaxframes.gif" alt="በፓርክ ውስጥ ከፍተኛ የፍሬም ቁጥር ውሻ" loading="lazy">
         </div>
     </div>
 
-    <h3>አማራጭ የተመለከተ ዝርዝር</h3>
-    <p>በቪዲዮዎ ውስጥ በተመለከተ ዝርዝር ይቀይሩ፣ እነዚህ አንዳንድ ቅንብሮች ይቀይሩ:</p>
+    <h3>አማራጭ የተመለከተ መለኪያዎች</h3>
+    <p>በቪዲዮዎ ውስጥ በተመለከተ ዝርዝር ይፈልጋሉ ከሆነ፣ እነዚህ አንዳንድ ቅንብሮች ይችላሉ:</p>
 
     <ul>
-        <li><strong>አልባ የትንቢት:</strong> በቪዲዮው ውስጥ የማይፈልጉትን ይገልጹ። ከተያዘ ቢቀር እንደ አስተያየት ይቀይሩ።</li>
-        <li><strong>የፍርስራሽ ቁጥር:</strong> ቪዲዮዎ ውስጥ ምን ያነሱ ይምረጡ። እስከ 25 ፍርስራሽ ይምረጡ፣ 16 የተመለከተ ይሆናል።</li>
-        <li><strong>የድምፅ ደረጃ:</strong> ይህ ቪዲዮዎ የሚያስተዋውቅ ይቀይሩ። በተጨማሪ ደረጃ ይምረጡ፣ 20 የተመለከተ ይሆናል።</li>
-        <li><strong>የመመሪያ ደረጃ:</strong> ይህ ቪዲዮው ወደ መግለጫው ይቀይሩ። የተመለከተ ደረጃ 1.0 እስከ 8.0 እና የመጀመሪያ እና የመጨረሻ ዋጋዎች ይቀይሩ።</li>
-        <li><strong>እንቅስቃሴ:</strong> በቪዲዮዎ ውስጥ የሚኖር እንቅስቃሴ ይቀይሩ። ከፍተኛ ዋጋ ይህ ይህ ይሆናል። የተመለከተ ደረጃ 0 እስከ 127 እና 60 የተመለከተ ይሆናል።</li>
-        <li><strong>የድምፅ አውጪ ኃይል:</strong> ቪዲዮዎ ውስጥ ድምፅ ይጨምሩ። የተመለከተ ደረጃ 0 እስከ 1 እና 0 የተመለከተ ይሆናል።</li>
-        <li><strong>በሰከንድ ውስጥ የፍርስራሽ ቁጥር (FPS):</strong> ቪዲዮዎ የሚገኝ ይቀይሩ። የተመለከተ ይሆናል 16 FPS እና ወደ 16 ይሂዱ።</li>
-        <li><strong>የአንደኛ ዘዴ:</strong> የፍርስራሽ ይቀይሩ። የተመለከተ ይሆናል "lerp" (የተመለከተ ዘዴ) እና "slerp" (የስፔር የተመለከተ ዘዴ) ይጠቀሙ።</li>
-        <li><strong>የቅድሚያ እንደሚያወቅ:</strong> የተለያዩ የቪዲዮ አይነት ይቀይሩ። እንደ 2 ይቀይሩ፣ ወይም ወደ ወቅታዊ ይቀይሩ።</li>
+        <li><strong>አልባ የግዴታ:</strong> በቪዲዮው ውስጥ የማይፈልጉትን ይገልጹ። ባዶ ቢቀመጥ፣ AiCasso በአይነት የግዴታ ይተኛል።</li>
+        <li><strong>የፍሬም ቁጥር:</strong> ቪዲዮዎ ውስጥ ምን ያነሱ ይምረጡ። እስከ 25 ፍሬም ይምረጡ፣ 16 የተመለከተ ነው።</li>
+        <li><strong>የድምፅ ደረጃዎች:</strong> ይህ ቪዲዮዎ የምን ይታይ ይቀይር። በተጨማሪ የድምፅ ደረጃዎች ይቀይር። እስከ 50 ይቀይር፣ 20 የተመለከተ ነው።</li>
+        <li><strong>የመመሪያ መጠን:</strong> ይህ ቪዲዮው ወደ ዝርዝር ይገናኝ። የመመሪያ መጠን ከ1.0 እስከ 8.0 ነው፣ የመመሪያ ዋጋዎችን ይቀይር።</li>
+        <li><strong>እንቅስቃሴ:</strong> በቪዲዮው ውስጥ የምን እንቅስቃሴ ይቀይር። ከፍተኛ ዋጋ ይህ ይቀይር። ከ0 እስከ 127 ይቀይር፣ 60 የተመለከተ ነው።</li>
+        <li><strong>የድምፅ የማስተካከያ ኃይል:</strong> ቪዲዮው ውስጥ ድምፅ ይጨምር። ከ0 እስከ 1 ይቀይር፣ 0 የተመለከተ ነው።</li>
+        <li><strong>የፍሬም በሰከንድ (FPS):</strong> ቪዲዮው የምን ይገናኝ ይቀይር። የተመለከተ 16 FPS ነው፣ ነገር ግን ወደ 16 ይሂዱ።</li>
+        <li><strong>የአንደኛ መረጃ ዘዴ:</strong> የፍሬም ይቀይር። የተመለከተ የ"lerp" (የተመለከተ ዘዴ) ነው፣ ነገር ግን "slerp" (የአንደኛ ዘዴ) ይጠቀሙ።</li>
+        <li><strong>የክሊፕ ማለፍ:</strong> በቪዲዮው ውስጥ አንዳንድ የምስል ማለፍ ይቀይር። እስከ 2 ይምረጡ፣ ወይም ወደ ዋጋ ይቀይር።</li>
     </ul>
 
-    <p>እንደሚያውቁ፣ AiCasso በጣም ታላቅ ነው! የሚያስፈልግ ዝርዝር ይህ ይሆናል፣ ወይም ትክክለኛ የአይነት ይህ ይሆናል። የሚፈልጉትን ይገልጹ፣ እና AiCasso ይህ ይሆናል። ቪዲዮዎችዎን ማቀናበር ይደርሳሉ!</p>
+    <p>እንደምንም እንደ AiCasso በጣም ታላቅ ነው! የምን ዝርዝር ይቀይር ወይም የተመለከተ ግምት ይቀይር። የምን ይገልጹ፣ እና AiCasso ይህን ይደርሳል። ቪዲዮዎችዎን ማድረግ ይደርሳሉ!</p>
 
 </body>
 </html>

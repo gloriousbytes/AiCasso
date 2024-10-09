@@ -31,9 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -41,20 +48,20 @@
 <body>
 
     <h2>Umhlahlandlela Wokusebenzisa Isici Sokwandisa</h2>
-    <p>Isici sokwandisa ku-AiCasso sikhuluma ngokuqinisekisa ukuthi izithombe zakho zibonakala zinhle kakhulu. Uveza nje ukuthi ufuna kanjani ukuthuthukisa isithombe sakho, futhi i-AiCasso izobheka konke okunye. Kungakhathaliseki ukuthi uthuthukisa imininingwane noma unikeza isithombe sonke ukukhuphuka, kulula kakhulu ukusisebenzisa.</p>
+    <p>Isici sokwandisa ku-AiCasso sikhuluma ngokwenza izithombe zakho zibe ngcono. Uveza nje ukuthi ufuna kanjani ukuthuthukisa isithombe sakho, futhi i-AiCasso izobhekana nezinye izinto. Kungakhathaliseki ukuthi uthuthukisa imininingwane noma unikeza isithombe sonke ukwanda, kulula kakhulu ukusisebenzisa.</p>
 
-    <h3>Ukusebenza Kwesici:</h3>
+    <h3>Ukusebenza Kwayo:</h3>
     
     <div class="example">
         <strong>Isithombe Sokufaka:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="Isithombe Sokufaka" loading="lazy">
         </div>
-        <strong>Umusho:</strong>
-        <p>"Kwandisa izikhathi ezi-4, sebenzisa imodeli ye-Ultra Sharp"</p>
+        <strong>Imiyalo:</strong>
+        <p>"Kwandisa kathathu, sebenzisa imodeli ye-Ultra Sharp"</p>
         <strong>Umphumela:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="Isithombe Somphumela" loading="lazy">
         </div>
     </div>
 
@@ -62,20 +69,20 @@
     <p>Uma ufuna ukwengeza ukulawula okwengeziwe ngendlela isithombe sakho sithuthukiswa ngayo, nansi eminye imisebenzi ongayisebenzisa:</p>
 
     <ul>
-        <li><strong>Isikali:</strong> Lokhu kuwukuthi ungafuna kangakanani ukwandisa isithombe sakho. Ungakhetha isikali esivela ku-1 kuya ku-4, lapho u-4 engumsebenzi ojwayelekile. Ngamafuphi, izinombolo ezinkulu zisho isithombe esikhulu.</li>
-        <li><strong>Imodeli Yokwandisa:</strong> Lokhu kufana nokukhetha ifilitha yesithombe sakho, kodwa ikakhulukazi iyahlakanipha. Nansi eminye imisebenzi:
+        <li><strong>Isikali:</strong> Lokhu kuwukuthi ungafuna ukwandisa isithombe sakho kangakanani. Ungakhetha isikali esivela ku-1 kuya ku-4, lapho u-4 engumkhiqizo ojwayelekile. Ngamanye amazwi, izinombolo ezinkulu zisho isithombe esikhulu.</li>
+        <li><strong>Imodeli Yokwandisa:</strong> Lokhu kufana nokukhetha ifilitha yesithombe sakho, kodwa ikhuluma kakhulu. Nansi eminye imisebenzi:
             <ul>
-                <li><strong>Ukukhuphula Imininingwane Enkulu:</strong> Kuhle kakhulu uma uhamba eduze kwemisebenzi emincane.</li>
-                <li><strong>Ultra Sharp:</strong> Kwenzela isithombe sibe sobala futhi sibe nekhwalithi ephezulu.</li>
-                <li><strong>Anime Enhance:</strong> Kuhle kakhulu ezithombeni ze-anime, zenze zibe zicace futhi zibe nezinhlobonhlobo.</li>
-                <li><strong>Double Detail:</strong> Ikhuphula imininingwane kabili ngaphandle kokweqa.</li>
+                <li><strong>Ukukhuphula Imininingwane:</strong> Okungcono kakhulu uma ufuna ukugxila eminininingwaneni emincane.</li>
+                <li><strong>Ultra Sharp:</strong> Yenza isithombe sibe sobala futhi sibe nekhwalithi ephezulu.</li>
+                <li><strong>Anime Enhance:</strong> Kulungile ezithombeni ezinomoya we-anime, zenze zibe zicace futhi zikhangayo.</li>
+                <li><strong>Double Detail:</strong> Ikhuphula imininingwane ngaphandle kokweqa umkhawulo.</li>
                 <li><strong>General Boost:</strong> Inketho enhle yokujwayelekile yezithombe eziningi.</li>
             </ul>
         </li>
-        <li><strong>Face Enhance:</strong> Uma isithombe sakho sinezindawo zobuso, le nketho ingasiza ukwenza kube ngcono. Vula uma ufuna i-AiCasso igxile ekuthuthukiseni izici zobuso.</li>
+        <li><strong>Face Enhance:</strong> Uma isithombe sakho sinefayela, le nketho ingasiza ukwenza kube ngcono. Vula uma ufuna i-AiCasso igxile ekuthuthukiseni izici zobuso.</li>
     </ul>
 
-    <p>Khumbula, lezi zinketho ziwukukhetha! Awudingi ukuziphatha uma ungafuni. Chaza nje ukuthi ufuna ini, futhi i-AiCasso izothola indlela engcono yokwenza kube khona. Futhi ungakhathazeki ngokuba neziphakamiso eziphelele—i-AiCasso iyakuzwa!</p>
+    <p>Khumbula, lezi zinketho ziwukukhetha! Awudingi ukuzithinta uma ungafuni. Chaza nje ukuthi ufuna ini, futhi i-AiCasso izothola indlela engcono yokwenza kube khona. Futhi ungakhathazeki ngokuba phezulu ngamazwi akho—i-AiCasso iyakuqonda!</p>
 
 </body>
 </html>

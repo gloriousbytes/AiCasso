@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia da Funcionalidade de Substituição de Fundo</title>
+    <title>Guia da Função Substituir Fundo</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -40,27 +40,27 @@
 
 <body>
 
-    <h2>Guia para Usar a Funcionalidade de Substituição de Fundo</h2>
-    <p>A funcionalidade de Substituição de Fundo no AiCasso é perfeita para quando você deseja trocar o fundo da sua imagem. Seja para apenas remover o fundo ou substituí-lo por algo diferente, o AiCasso torna isso super fácil. Você não precisa se preocupar com questões técnicas—basta descrever o que você quer, e o AiCasso fará o resto.</p>
+    <h2>Guia para Usar a Função Substituir Fundo</h2>
+    <p>A função Substituir Fundo no AiCasso é perfeita para quando você deseja trocar o fundo da sua imagem. Seja para remover o fundo ou substituí-lo por outra coisa, o AiCasso torna isso super fácil. Você não precisa se preocupar com questões técnicas—basta descrever o que deseja, e o AiCasso fará o resto.</p>
 
     <h3>Como Funciona:</h3>
     
     <div class="example">
         <strong>Imagem de Entrada:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Imagem de Entrada" loading="lazy">
         </div>
         <strong>Prompt 1:</strong>
         <p>"Remover o fundo"</p>
         <strong>Resultado 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Resultado com Fundo Removido" loading="lazy">
         </div>
         <strong>Prompt 2:</strong>
-        <p>"Substituir o fundo por uma floresta, não apenas removê-lo, com a matização alfa desativada. Use um limiar de primeiro plano de 240, um limiar de fundo de 20 e um tamanho de erosão de 5 para a matização alfa."</p>
+        <p>"Substituir o fundo por uma floresta, não apenas removê-lo, com a matização alfa desativada. Use um limite de primeiro plano de 240, um limite de fundo de 20 e um tamanho de erosão de 5 para matização alfa."</p>
         <strong>Resultado 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Fundo Substituído por Floresta" loading="lazy">
         </div>
     </div>
 
@@ -68,14 +68,14 @@
     <p>Se você quiser adicionar um toque pessoal ou ajustar os resultados, aqui estão algumas opções com as quais você pode brincar:</p>
 
     <ul>
-        <li><strong>Apenas Remover:</strong> Se você só quer remover o fundo e não substituí-lo por nada, esta é a sua opção ideal. É como apertar um botão de limpar tudo.</li>
-        <li><strong>Matização Alfa:</strong> Esta é uma maneira sofisticada de dizer "misturar as bordas". Quando você ativa isso, ajuda a fazer com que as bordas do seu sujeito pareçam mais suaves e menos recortadas. Por padrão, está desativado.</li>
-        <li><strong>Limiar de Primeiro Plano da Matização Alfa:</strong> Isso controla quanto do sujeito principal (como uma pessoa) permanece visível ao usar a matização alfa. O padrão é 240, e você pode ajustá-lo para tornar as bordas mais suaves ou mais nítidas.</li>
-        <li><strong>Limiar de Fundo da Matização Alfa:</strong> Isso faz o mesmo que o limiar de primeiro plano, mas para o fundo. O padrão é 20, e é tudo sobre conseguir a mistura perfeita com o novo fundo.</li>
-        <li><strong>Tamanho de Erosão da Matização Alfa:</strong> Isso ajuda a encolher um pouco as bordas para que o recorte pareça mais limpo. O tamanho padrão é 5, mas você pode ajustá-lo para obter o visual exato que deseja.</li>
+        <li><strong>Remover Apenas:</strong> Se você deseja apenas remover o fundo e não substituí-lo por nada, esta é a sua opção. É como pressionar um botão de reiniciar.</li>
+        <li><strong>Matização Alfa:</strong> Esta é uma maneira elegante de dizer "misturar as bordas." Quando você ativa isso, ajuda a deixar as bordas do seu sujeito mais suaves e menos recortadas. Por padrão, está desativado.</li>
+        <li><strong>Limite de Primeiro Plano para Matização Alfa:</strong> Isso controla quanto do sujeito principal (como uma pessoa) permanece visível ao usar matização alfa. O padrão é 240, e você pode ajustá-lo para deixar as bordas mais suaves ou mais nítidas.</li>
+        <li><strong>Limite de Fundo para Matização Alfa:</strong> Isso faz o mesmo que o limite de primeiro plano, mas para o fundo. O padrão é 20, e tudo se resume a conseguir a mistura perfeita com o novo fundo.</li>
+        <li><strong>Tamanho de Erosão para Matização Alfa:</strong> Isso ajuda a reduzir um pouco as bordas para deixar o recorte mais limpo. O tamanho padrão é 5, mas você pode ajustá-lo para obter exatamente o visual que deseja.</li>
     </ul>
 
-    <p>Lembre-se, você não precisa se estressar para deixar tudo perfeito. O AiCasso é muito bom em entender o que você quer dizer, então sinta-se à vontade para ser tão casual ou detalhado quanto quiser. Feliz criação!</p>
+    <p>Lembre-se, você não precisa se estressar para que tudo fique perfeito. O AiCasso é bastante bom em entender o que você quer dizer, então sinta-se à vontade para ser tão casual ou detalhado quanto desejar. Boa criação!</p>
 
 </body>
 </html>

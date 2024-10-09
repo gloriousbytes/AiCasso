@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida alla Funzione Multi View</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        img, video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Guida all'Utilizzo della Funzione Multi View</h2>
+    <p>La funzione Multi View in AiCasso ti consente di visualizzare un oggetto da angolazioni diverse generando più prospettive dell'oggetto nella tua immagine. È particolarmente utile per avere una migliore comprensione delle forme 3D o per mostrare prodotti. Questa funzione funziona meglio quando l'oggetto non ha uno sfondo, quindi assicurati di rimuovere eventuali elementi di distrazione per risultati ottimali.</p>
+
+    <h3>Come Funziona:</h3>
+    
+    <div class="example">
+        <strong>Immagine di Input:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/input.jpg" alt="Immagine di Input" loading="lazy">
+        </div>
+        <strong>Richiesta:</strong>
+        <p>"Mostra questo oggetto da più prospettive"</p>
+        <strong>Risultato:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/result.jpg" alt="Immagine di Risultato" loading="lazy">
+        </div>
+    </div>
+
+    <h3>Consigli per i Migliori Risultati</h3>
+    <p>Ecco alcuni consigli per assicurarti che la tua immagine risulti ottima:</p>
+
+    <ul>
+        <li><strong>Oggetto Senza Sfondo:</strong> La funzione Multi View funziona meglio quando l'oggetto nella tua immagine è isolato dallo sfondo. Questo consente ad AiCasso di concentrarsi esclusivamente sull'oggetto e generare prospettive chiare.</li>
+        <li><strong>Buona Illuminazione:</strong> Assicurati che il tuo oggetto sia ben illuminato nell'immagine di input, poiché ombre e illuminazione irregolare possono influenzare l'aspetto dell'oggetto da angolazioni diverse.</li>
+        <li><strong>Oggetti Multipli:</strong> Se ci sono più oggetti nell'immagine, prova a isolare quello che desideri visualizzare da angolazioni diverse o scegli un'immagine più semplice con un solo oggetto focale.</li>
+    </ul>
+
+    <p>Proprio come tutte le funzioni in AiCasso, non è necessario pensarci troppo—descrivi ciò che desideri e AiCasso farà il lavoro duro. La funzione Multi View è perfetta per esposizioni di prodotti, showcase creativi e altro ancora!</p>
+
+</body>
+</html>

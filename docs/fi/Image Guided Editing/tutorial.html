@@ -31,16 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img {
+            width: 100%;
             height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+            max-width: 100%;
         }
     </style>
 </head>
@@ -48,19 +42,19 @@
 <body>
 
     <h2>Kuvapohjaiset Muokkausvinkit</h2>
-    <p>Kuvapohjaisen muokkauksen ominaisuus AiCasso-sovelluksessa antaa sinun tehdä muutoksia kuvaan pelkästään kuvaamalla, mitä haluat. Olipa kyseessä tyylin muuttaminen, tunnelman säätö tai tiettyjen osien hienosäätö, AiCasso hoitaa sen puolestasi ilman, että sinun tarvitsee valita tai maalata mitään manuaalisesti.</p>
+    <p>Kuvapohjainen muokkausominaisuus AiCasso:ssa antaa sinun tehdä muutoksia kuvaan pelkästään kuvaamalla, mitä haluat. Olipa kyseessä tyylin muuttaminen, tunnelman säätö tai tiettyjen osien hienosäätö, AiCasso hoitaa sen puolestasi ilman, että sinun tarvitsee valita tai maalata mitään manuaalisesti.</p>
 
     <h3>Kuinka se toimii:</h3>
 
     <div class="example">
         <strong>Aloituskuva:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CpnI7HqIAzcrMjmQb5_25yJilhxraZ80/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/startingimage1.jpg" alt="Aloituskuva">
         </div>
     </div>
 
     <div class="example">
-        <strong>Kuvaile muutoksesi:</strong>
+        <strong>Kuvaa Muutoksesi:</strong>
         <p>Kirjoita vain, mitä haluat muuttaa, ja AiCasso soveltaa näitä muutoksia kuvaan.</p>
     </div>
 
@@ -69,7 +63,7 @@
     <div class="example">
         <strong>Esimerkki 1:</strong> "Tee hänestä vaalea."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI2vE6dOcFxInjqzq1_mVru_nLCGFTaS/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/makeherblonde.jpg" alt="Tee hänestä vaalea esimerkki">
         </div>
         <p><em>Tulos:</em> AiCasso muuttaa henkilön hiusten värin vaaleaksi.</p>
     </div>
@@ -79,13 +73,13 @@
         <div class="example">
             <strong>Syöttökuva:</strong>
             <div class="result">
-                <iframe src="https://drive.google.com/file/d/1PlJNkwIWrK3Uu_bq38te_dtqp2XBkW_e/preview"></iframe>
+                <img src="../../images/tutorials/imageguidededit/example2input.jpg" alt="Esimerkki 2 Syöttökuva">
             </div>
         </div>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11mjTtcBdI8T0cMcfQz6HEJ79xOhw81VG/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/example2result.jpg" alt="Esimerkki 2 Tuloskuva">
         </div>
-        <p><em>Tulos:</em> Kuva muuttuu yömaisemaksi, jossa on erityisiä säätöjä antamiesi tietojen perusteella.</p>
+        <p><em>Tulos:</em> Kuva muuttuu yömaisemaksi, jossa on erityisiä säätöjä antamiesi yksityiskohtien perusteella.</p>
     </div>
 
     <h3>Lisäasetukset</h3>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मल्टी व्यू फीचर गाइड</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        img, video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>मल्टी व्यू फीचर का उपयोग करने के लिए गाइड</h2>
+    <p>AiCasso में मल्टी व्यू फीचर आपको अपने चित्र में वस्तु के विभिन्न कोणों से देखने की अनुमति देता है। यह विशेष रूप से 3D आकृतियों को बेहतर समझने या उत्पादों को प्रदर्शित करने के लिए उपयोगी है। यह फीचर तब सबसे अच्छा काम करता है जब वस्तु का कोई बैकग्राउंड न हो, इसलिए सुनिश्चित करें कि आप किसी भी ध्यान भंग करने वाले तत्वों को हटा दें ताकि परिणाम बेहतर हों।</p>
+
+    <h3>यह कैसे काम करता है:</h3>
+    
+    <div class="example">
+        <strong>इनपुट इमेज:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/input.jpg" alt="इनपुट इमेज" loading="lazy">
+        </div>
+        <strong>प्रॉम्प्ट:</strong>
+        <p>"इस वस्तु को कई दृष्टिकोणों से दिखाएं"</p>
+        <strong>परिणाम:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/result.jpg" alt="परिणाम इमेज" loading="lazy">
+        </div>
+    </div>
+
+    <h3>सर्वश्रेष्ठ परिणामों के लिए टिप्स</h3>
+    <p>यहां कुछ टिप्स दिए गए हैं ताकि आपकी इमेज शानदार बने:</p>
+
+    <ul>
+        <li><strong>बैकग्राउंड के बिना वस्तु:</strong> मल्टी व्यू फीचर तब सबसे अच्छा काम करता है जब आपकी इमेज में वस्तु बैकग्राउंड से अलग हो। इससे AiCasso को केवल वस्तु पर ध्यान केंद्रित करने और स्पष्ट दृष्टिकोण उत्पन्न करने की अनुमति मिलती है।</li>
+        <li><strong>अच्छी रोशनी:</strong> सुनिश्चित करें कि आपकी वस्तु इनपुट इमेज में अच्छी तरह से रोशनी में है, क्योंकि छायाएं और असमान रोशनी विभिन्न कोणों से वस्तु के दिखने पर प्रभाव डाल सकती हैं।</li>
+        <li><strong>कई वस्तुएं:</strong> यदि इमेज में एक से अधिक वस्तुएं हैं, तो कोशिश करें कि आप जिस वस्तु को विभिन्न कोणों से देखना चाहते हैं, उसे अलग करें या केवल एक फोकल वस्तु के साथ एक सरल इमेज चुनें।</li>
+    </ul>
+
+    <p>जैसे AiCasso में सभी फीचर्स के साथ, आपको इसे अधिक सोचने की आवश्यकता नहीं है—आप जो चाहते हैं उसका वर्णन करें और AiCasso कठिन काम करेगा। मल्टी व्यू फीचर उत्पाद प्रदर्शनों, रचनात्मक प्रदर्शनों और अधिक के लिए आदर्श है!</p>
+
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Headshot Özellik Rehberi</title>
+    <title>Başlık Özelliği Kılavuzu</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -47,41 +48,41 @@
 
 <body>
 
-    <h2>Headshot Özelliğini Kullanma Rehberi</h2>
-    <p>AiCasso'daki Headshot özelliği ile sadece ne istediğinizi tarif ederek harika ve benzersiz portreler oluşturabilirsiniz. İster huzurlu bir sahne, ister destansı bir savaşçı veya hayal gücünüzün ortaya çıkardığı başka bir şey isteyin, muhteşem görüntüler oluşturmak için mükemmeldir!</p>
+    <h2>Başlık Özelliğini Kullanma Kılavuzu</h2>
+    <p>AiCasso'daki Başlık özelliği ile istediğinizi basitçe tanımlayarak harika ve benzersiz portreler oluşturabilirsiniz. Huzurlu bir manzara, epik bir savaşçı veya hayal gücünüzün yarattığı başka bir şey olsun, muhteşem görüntüler oluşturmak için mükemmel!</p>
 
     <h3>Nasıl Çalışır:</h3>
     
     <div class="example">
-        <strong>Girdi Görüntüsü:</strong>
+        <strong>Giriş Resmi:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+            <img src="../../images/tutorials/headshot/input.jpg" alt="Giriş Resmi">
         </div>
-        <strong>İpucu 1:</strong>
+        <strong>İstek 1:</strong>
         <p>"Karda bir adam"</p>
         <strong>Sonuç 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+            <img src="../../images/tutorials/headshot/maninsnow.jpg" alt="Karda Adam Sonucu">
         </div>
-        <strong>İpucu 2:</strong>
-        <p>"Ormanda bir savaşçı, bunun %78'i kadar orta yüksek ölçek kullan"</p>
+        <strong>İstek 2:</strong>
+        <p>"Ormanda bir savaşçı, bunun %78'ine benzer orta yüksek ölçek kullan"</p>
         <strong>Sonuç 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+            <img src="../../images/tutorials/headshot/warrior.jpg" alt="Ormandaki Savaşçı Sonucu">
         </div>
     </div>
 
     <h3>Opsiyonel Parametreler</h3>
-    <p>Oluşturulan headshot'larınıza biraz daha stil veya kontrol eklemek ister misiniz? İşte ayarlayabileceğiniz bazı harika seçenekler:</p>
+    <p>Oluşturduğunuz başlıklara biraz daha stil veya kontrol eklemek mi istiyorsunuz? İşte ayarlayabileceğiniz bazı harika seçenekler:</p>
 
     <ul>
-        <li><strong>Negatif İpucu:</strong> Burada AiCasso'ya görüntüde <em>görmek istemediğiniz</em> şeyleri söyleyebilirsiniz. Örneğin, arka plan öğeleri istemiyorsanız, bunu burada belirtebilirsiniz. Bunu boş bırakırsanız, AiCasso sadece istediğiniz şeylere odaklanır.</li>
-        <li><strong>Gürültü Giderme Adım Sayısı:</strong> Bu, yüzün ne kadar pürüzsüz ve rafine göründüğünü kontrol eder. 21, 31 veya 41 adım arasında seçim yapabilirsiniz, varsayılan 41'dir. Daha fazla adım genellikle daha temiz, daha cilalı bir sonuç anlamına gelir.</li>
-        <li><strong>Rehberlik Ölçeği:</strong> Bu, AiCasso'ya tanımınıza sadık kalması için biraz ekstra itici güç vermek gibidir. Ölçek 1 ile 20 arasında değişir, varsayılan 10'dur. Daha yüksek sayılar, AiCasso'nun tarif ettiğiniz şeye daha yakın kalmasını sağlar.</li>
-        <li><strong>S Ölçeği:</strong> Bu, yüzün yapısını ayarlar. Biraz teknik bir konu, ancak esasen yüz hatlarının ne kadar güçlü veya yumuşak olduğunu ayarlar. Varsayılan 1.0'dır ve istediğiniz görünüme bağlı olarak 0.0 ile 2.0 arasında herhangi bir yere gidebilirsiniz.</li>
+        <li><strong>Olumsuz İstek:</strong> Bu, AiCasso'ya görüntüde <em>görmek istemediğiniz</em> şeyleri söyleyebileceğiniz yerdir. Örneğin, arka planda hiçbir öğe istemiyorsanız, bunu burada belirtebilirsiniz. Burası boş bırakılırsa, AiCasso sadece istediğiniz şeylere odaklanacaktır.</li>
+        <li><strong>Gürültü Giderme Adım Sayısı:</strong> Bu, yüzün ne kadar pürüzsüz ve rafine görüneceğini kontrol eder. 21, 31 veya 41 adım arasında seçim yapabilirsiniz, 41 varsayılandır. Daha fazla adım genellikle daha temiz, daha cilalı bir sonuç anlamına gelir.</li>
+        <li><strong>Rehberlik Ölçeği:</strong> Bu, AiCasso'ya tanımınıza sadık kalması için biraz ekstra itme vermek gibidir. Ölçek 1 ile 20 arasında değişir, 10 varsayılandır. Daha yüksek sayılar, AiCasso'nun tanımınıza daha yakın kalacağı anlamına gelir.</li>
+        <li><strong>S Ölçeği:</strong> Bu, yüzün yapısını ayarlar. Biraz teknik, ancak esasen yüz hatlarının ne kadar güçlü veya yumuşak olduğunu ayarlar. Varsayılan 1.0'dır ve istediğiniz görünüme bağlı olarak 0.0 ile 2.0 arasında herhangi bir yere gidebilirsiniz.</li>
     </ul>
 
-    <p>Unutmayın, bu parametreler tamamen isteğe bağlıdır. AiCasso oldukça hoşgörülüdür, bu yüzden süper hassas veya dilbilgisi açısından doğru olmanıza gerek yok. Sadece istediğinizi kendi kelimelerinizle tarif edin ve AiCasso sihri gerçekleştirsin. Headshot'larınızı oluştururken eğlenin!</p>
+    <p>Unutmayın, bu parametreler tamamen isteğe bağlıdır. AiCasso oldukça hoşgörülüdür, bu yüzden çok hassas veya dilbilgisel olarak doğru olmanıza gerek yok. Sadece istediğinizi kendi kelimelerinizle tanımlayın ve AiCasso sihrini yapacaktır. Başlıklarınızı oluştururken eğlenin!</p>
 
 </body>
 </html>

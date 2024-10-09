@@ -31,51 +31,58 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h2>Guide til brug af Super Resolution funktionen</h2>
-    <p>Super Resolution funktionen i AiCasso handler om at få dine billeder til at se endnu bedre ud. Du skal bare fortælle, hvordan du ønsker at forbedre dit billede, og AiCasso vil tage sig af resten. Uanset om du skærper detaljer eller giver hele billedet et løft, er det super nemt at bruge.</p>
+    <h2>Guide til at bruge Super Resolution funktionen</h2>
+    <p>Super Resolution funktionen i AiCasso handler om at få dine billeder til at se endnu bedre ud. Du skal bare fortælle, hvordan du vil forbedre dit billede, og AiCasso vil tage sig af resten. Uanset om du skærper detaljer eller giver hele billedet et løft, er det super nemt at bruge.</p>
 
     <h3>Sådan fungerer det:</h3>
     
     <div class="example">
         <strong>Inputbillede:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="Inputbillede" loading="lazy">
         </div>
         <strong>Prompt:</strong>
         <p>"Forstør det 4 gange, brug Ultra Sharp modellen"</p>
         <strong>Resultat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="Resultatbillede" loading="lazy">
         </div>
     </div>
 
     <h3>Valgfri parametre</h3>
-    <p>Hvis du ønsker at tilføje lidt mere kontrol over, hvordan dit billede forbedres, er her nogle ekstra muligheder, du kan lege med:</p>
+    <p>Hvis du vil have lidt mere kontrol over, hvordan dit billede forbedres, er her nogle ekstra muligheder, du kan lege med:</p>
 
     <ul>
-        <li><strong>Skala:</strong> Dette er, hvor meget du ønsker at forstørre dit billede. Du kan vælge en skala fra 1 til 4, hvor 4 er standard. Grundlæggende betyder større tal et større billede.</li>
-        <li><strong>Upscale Model:</strong> Dette er ligesom at vælge et filter til dit billede, men det er meget smartere. Her er mulighederne:
+        <li><strong>Skala:</strong> Dette er, hvor meget du vil forstørre dit billede. Du kan vælge en skala fra 1 til 4, hvor 4 er standard. Grundlæggende betyder større tal et større billede.</li>
+        <li><strong>Upscale Model:</strong> Dette er som at vælge et filter til dit billede, men det er meget smartere. Her er mulighederne:
             <ul>
                 <li><strong>Big Detail Boost:</strong> Bedst til at zoome ind på små detaljer.</li>
                 <li><strong>Ultra Sharp:</strong> Gør billedet super klart og skarpt.</li>
                 <li><strong>Anime Enhance:</strong> Perfekt til anime-stil billeder, der får dem til at se skarpe og livlige ud.</li>
                 <li><strong>Double Detail:</strong> Dobbler detaljerne uden at overdrive.</li>
-                <li><strong>General Boost:</strong> En god allround mulighed for de fleste billeder.</li>
+                <li><strong>General Boost:</strong> En god all-round mulighed for de fleste billeder.</li>
             </ul>
         </li>
-        <li><strong>Face Enhance:</strong> Hvis dit billede har et ansigt, kan denne mulighed hjælpe med at få det til at se endnu bedre ud. Tænd det bare, hvis du ønsker, at AiCasso skal fokusere på at forbedre ansigtstræk.</li>
+        <li><strong>Face Enhance:</strong> Hvis dit billede har et ansigt, kan denne mulighed hjælpe med at få det til at se endnu bedre ud. Tænd det bare, hvis du vil have AiCasso til at fokusere på at forbedre ansigtstræk.</li>
     </ul>
 
-    <p>Husk, disse muligheder er helt valgfri! Du behøver ikke at rode med dem, hvis du ikke vil. Bare beskriv, hvad du ønsker, og AiCasso vil finde den bedste måde at få det til at ske. Og vær ikke bekymret for at være perfekt med dine ord—AiCasso forstår dig!</p>
+    <p>Husk, disse muligheder er helt valgfrie! Du behøver ikke at rode med dem, hvis du ikke vil. Beskriv bare, hvad du ønsker, og AiCasso vil finde den bedste måde at få det til at ske. Og bekymr dig ikke om at være perfekt med dine ord—AiCasso forstår dig!</p>
 
 </body>
 </html>

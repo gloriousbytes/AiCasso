@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia de Recursos de Geração de Moda</title>
+    <title>Guia de Recursos da Geração de Moda</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -55,31 +56,31 @@
     <div class="example">
         <strong>Entrada 1 - Imagem da Pessoa:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 1.jpg" alt="Imagem da Pessoa">
         </div>
         <strong>Entrada 2 - Item de Vestuário:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 2.jpg" alt="Item de Vestuário">
         </div>
         <strong>Prompt:</strong>
-        <p>"Rapaz vestindo uma camisa"</p>
+        <p>"Rapaz usando uma camisa"</p>
         <strong>Resultado:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+            <img src="../../images/tutorials/fashion/result.jpg" alt="Imagem do Resultado">
         </div>
     </div>
 
     <h3>Parâmetros Opcionais</h3>
-    <p>Se você quiser adicionar seu próprio estilo ou garantir que o resultado esteja perfeito, pode ajustar estas configurações:</p>
+    <p>Se você quiser adicionar seu próprio estilo ou garantir que o resultado esteja exatamente como deseja, pode ajustar essas configurações:</p>
 
     <ul>
-        <li><strong>Prompt Negativo:</strong> Se há algo que você <em>não</em> quer na imagem, mencione aqui. Deixe em branco se estiver satisfeito com o que o AiCasso criar.</li>
-        <li><strong>Tipo de Roupa:</strong> Informe ao AiCasso se você está focando na <em>parte superior do corpo</em>, <em>parte inferior do corpo</em> ou <em>vestidos</em>. Se não tiver certeza, o padrão é a parte superior do corpo.</li>
-        <li><strong>Número de Etapas de Desnervação:</strong> Isso decide quão suave e polida a imagem parecerá. Você pode escolher entre 21, 31 ou 41 etapas, sendo 21 o padrão. Mais etapas geralmente significam um visual mais refinado.</li>
-        <li><strong>Escala de Orientação:</strong> Isso ajuda a imagem a seguir de perto sua descrição. Você pode definir de 1 a 20, sendo 7 o padrão. Números mais altos significam que o AiCasso seguirá seu prompt mais de perto.</li>
+        <li><strong>Prompt Negativo:</strong> Se houver algo que você <em>não</em> quer na imagem, mencione aqui. Deixe em branco se você estiver tranquilo com o que o AiCasso criar.</li>
+        <li><strong>Tipo de Tecido:</strong> Diga ao AiCasso se você está focando na <em>parte superior do corpo</em>, <em>parte inferior do corpo</em> ou <em>vestidos</em>. Se você não tiver certeza, o padrão é a parte superior do corpo.</li>
+        <li><strong>Número de Passos de Denoising:</strong> Isso decide quão suave e polida a imagem parece. Você pode escolher entre 21, 31 ou 41 passos, sendo 21 o padrão. Mais passos geralmente significam um visual mais refinado.</li>
+        <li><strong>Escala de Orientação:</strong> Isso ajuda a imagem a se manter próxima à sua descrição. Você pode definir de 1 a 20, sendo 7 o padrão. Números mais altos significam que o AiCasso seguirá seu prompt mais de perto.</li>
     </ul>
 
-    <p>Lembre-se, essas configurações são opcionais! O AiCasso é bastante inteligente e pode entender o que você quer, mesmo que não acerte todos os detalhes. Apenas divirta-se e deixe sua criatividade fluir!</p>
+    <p>Lembre-se, essas configurações são opcionais! O AiCasso é bastante inteligente e pode entender o que você quer, mesmo que você não acerte todos os detalhes. Apenas divirta-se e deixe sua criatividade fluir!</p>
 
 </body>
 </html>

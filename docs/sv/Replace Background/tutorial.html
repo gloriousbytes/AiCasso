@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide för att byta bakgrundsfunktion</title>
+    <title>Guide för att Byta Bakgrundsfunktion</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -40,39 +40,39 @@
 
 <body>
 
-    <h2>Guide för att använda funktionen för att byta bakgrund</h2>
-    <p>Funktionen för att byta bakgrund i AiCasso är perfekt när du vill byta ut bakgrunden i din bild. Oavsett om du bara vill ta bort bakgrunden eller ersätta den med något annat, gör AiCasso det superenkelt. Du behöver inte oroa dig för tekniska detaljer—beskriv bara vad du vill ha, så gör AiCasso resten.</p>
+    <h2>Guide för att Använda Byta Bakgrundsfunktion</h2>
+    <p>Byta Bakgrundsfunktionen i AiCasso är perfekt när du vill byta ut bakgrunden i din bild. Oavsett om du bara vill ta bort bakgrunden eller ersätta den med något annat, gör AiCasso det superenkelt. Du behöver inte oroa dig för tekniska detaljer—beskriv bara vad du vill, så gör AiCasso resten.</p>
 
     <h3>Så här fungerar det:</h3>
     
     <div class="example">
         <strong>Inmatningsbild:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Inmatningsbild" loading="lazy">
         </div>
         <strong>Prompt 1:</strong>
         <p>"Ta bort bakgrunden"</p>
         <strong>Resultat 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Bakgrund Borttagen Resultat" loading="lazy">
         </div>
         <strong>Prompt 2:</strong>
         <p>"Ersätt bakgrunden med en skog, inte bara ta bort den, med alfa-matting avstängd. Använd en förgrundströskel på 240, en bakgrundströskel på 20 och en eroderingsstorlek på 5 för alfa-matting."</p>
         <strong>Resultat 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Ersatt Bakgrund med Skog" loading="lazy">
         </div>
     </div>
 
-    <h3>Valfria parametrar</h3>
+    <h3>Valfria Parametrar</h3>
     <p>Om du vill lägga till en personlig touch eller finjustera resultaten, här är några alternativ du kan experimentera med:</p>
 
     <ul>
-        <li><strong>Ta bort endast:</strong> Om du bara vill ta bort bakgrunden och inte ersätta den med något, är detta ditt alternativ. Det är som att trycka på en ren tavla-knapp.</li>
-        <li><strong>Alfa-matting:</strong> Detta är ett fint sätt att säga "blanda kanterna." När du slår på detta hjälper det att göra kanterna på ditt motiv ser mjukare och mindre klippta ut. Som standard är det avstängt.</li>
-        <li><strong>Alfa-matting förgrundströskel:</strong> Detta kontrollerar hur mycket av huvudmotivet (som en person) förblir synligt när du använder alfa-matting. Standard är 240, och du kan justera det för att göra kanterna mjukare eller skarpare.</li>
-        <li><strong>Alfa-matting bakgrundströskel:</strong> Detta gör samma sak som förgrundströskeln men för bakgrunden. Standard är 20, och det handlar om att få den perfekta blandningen med den nya bakgrunden.</li>
-        <li><strong>Alfa-matting eroderingsstorlek:</strong> Detta hjälper till att krympa kanterna lite för att få klippningen att se renare ut. Standardstorleken är 5, men du kan justera den för att få det exakta utseendet du vill ha.</li>
+        <li><strong>Ta Bort Endast:</strong> Om du bara vill ta bort bakgrunden och inte ersätta den med något, är detta ditt bästa alternativ. Det är som att trycka på en ren tavla-knapp.</li>
+        <li><strong>Alfa-Matting:</strong> Detta är ett fint sätt att säga "blanda kanterna." När du slår på detta hjälper det till att göra kanterna på ditt motiv ser mjukare och mindre utklippta ut. Som standard är det avstängt.</li>
+        <li><strong>Alfa-Matting Förgrundströskel:</strong> Detta kontrollerar hur mycket av huvudmotivet (som en person) förblir synligt när du använder alfa-matting. Standard är 240, och du kan justera det för att göra kanterna mjukare eller skarpare.</li>
+        <li><strong>Alfa-Matting Bakgrundströskel:</strong> Detta gör samma sak som förgrundströskeln men för bakgrunden. Standard är 20, och det handlar om att få den perfekta blandningen med den nya bakgrunden.</li>
+        <li><strong>Alfa-Matting Eroderingsstorlek:</strong> Detta hjälper till att krympa kanterna lite för att få klippningen att se renare ut. Standardstorleken är 5, men du kan justera den för att få det exakta utseendet du vill ha.</li>
     </ul>
 
     <p>Kom ihåg, du behöver inte stressa över att få allt perfekt. AiCasso är ganska bra på att lista ut vad du menar, så känn dig fri att vara så avslappnad eller detaljerad som du vill. Lycka till med skapandet!</p>

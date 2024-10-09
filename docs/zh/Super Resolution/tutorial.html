@@ -31,51 +31,58 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h2>使用超分辨率功能指南</h2>
-    <p>AiCasso 的超分辨率功能旨在让您的图像看起来更好。您只需告诉它您希望如何增强图像，AiCasso 就会处理剩下的工作。无论是锐化细节还是提升整个图像，使用起来都非常简单。</p>
+    <h2>超分辨率功能使用指南</h2>
+    <p>AiCasso中的超分辨率功能旨在让您的图像看起来更好。您只需告诉它您希望如何增强图像，AiCasso将处理其余部分。无论您是想锐化细节还是整体提升图像，使用起来都非常简单。</p>
 
     <h3>工作原理：</h3>
     
     <div class="example">
         <strong>输入图像：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="输入图像" loading="lazy">
         </div>
         <strong>提示：</strong>
-        <p>“放大 4 倍，使用超锐模型”</p>
+        <p>"放大4倍，使用超清晰模型"</p>
         <strong>结果：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="结果图像" loading="lazy">
         </div>
     </div>
 
     <h3>可选参数</h3>
-    <p>如果您想对图像增强进行更多控制，这里有一些额外的选项供您选择：</p>
+    <p>如果您想对图像的增强方式有更多控制，这里有一些额外的选项可以尝试：</p>
 
     <ul>
-        <li><strong>缩放比例：</strong>这是您希望放大图像的程度。您可以选择从 1 到 4 的比例，4 是默认值。基本上，数字越大，图像越大。</li>
-        <li><strong>放大模型：</strong>这就像为您的图像选择滤镜，但它更智能。以下是选项：
+        <li><strong>缩放：</strong>这是您希望放大图像的程度。您可以选择1到4的缩放比例，4为默认值。基本上，数字越大，图像越大。</li>
+        <li><strong>放大模型：</strong>这就像为您的图像选择一个滤镜，但它更智能。以下是选项：
             <ul>
-                <li><strong>大细节增强：</strong>最适合放大微小细节。</li>
-                <li><strong>超锐：</strong>使图像超级清晰。</li>
+                <li><strong>细节增强：</strong>最适合放大微小细节。</li>
+                <li><strong>超清晰：</strong>使图像变得非常清晰和锐利。</li>
                 <li><strong>动漫增强：</strong>非常适合动漫风格的图像，使其看起来清晰而生动。</li>
-                <li><strong>双倍细节：</strong>在不夸张的情况下加倍细节。</li>
-                <li><strong>通用增强：</strong>适用于大多数图像的良好全能选项。</li>
+                <li><strong>双倍细节：</strong>在不失真的情况下双倍细节。</li>
+                <li><strong>通用增强：</strong>适合大多数图像的良好选择。</li>
             </ul>
         </li>
-        <li><strong>面部增强：</strong>如果您的图像中有面部，此选项可以帮助使其看起来更好。只需打开它，AiCasso 就会专注于增强面部特征。</li>
+        <li><strong>人脸增强：</strong>如果您的图像中有面孔，此选项可以帮助使其看起来更好。如果您希望AiCasso专注于增强面部特征，只需打开此选项即可。</li>
     </ul>
 
-    <p>记住，这些选项是完全可选的！如果您不想调整它们，可以不用理会。只需描述您想要的效果，AiCasso 就会找到最佳方式来实现它。并且不用担心措辞是否完美——AiCasso 能理解您的意思！</p>
+    <p>请记住，这些选项完全是可选的！如果您不想使用它们，可以不去碰它们。只需描述您想要的内容，AiCasso会找出最佳方法来实现它。别担心用词是否完美——AiCasso理解您！</p>
 
 </body>
 </html>

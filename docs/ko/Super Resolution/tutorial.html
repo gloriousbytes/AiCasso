@@ -31,9 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -41,41 +48,41 @@
 <body>
 
     <h2>슈퍼 해상도 기능 사용 가이드</h2>
-    <p>AiCasso의 슈퍼 해상도 기능은 이미지의 품질을 더욱 향상시키는 데 중점을 둡니다. 이미지 개선 방법을 지정하면 AiCasso가 나머지를 처리합니다. 세부 사항을 선명하게 하거나 전체 이미지를 향상시키고 싶을 때, 사용하기 매우 쉽습니다.</p>
+    <p>AiCasso의 슈퍼 해상도 기능은 이미지를 더욱 멋지게 만드는 것입니다. 이미지를 어떻게 향상시키고 싶은지 말하면 AiCasso가 나머지를 처리합니다. 세부 사항을 선명하게 하거나 전체 이미지를 향상시키는 것이든, 사용하기 매우 쉽습니다.</p>
 
     <h3>작동 방식:</h3>
     
     <div class="example">
         <strong>입력 이미지:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="입력 이미지" loading="lazy">
         </div>
         <strong>프롬프트:</strong>
-        <p>"4배로 업스케일하고, 울트라 샤프 모델 사용"</p>
+        <p>"4배로 확대하고, 울트라 샤프 모델을 사용하세요"</p>
         <strong>결과:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="결과 이미지" loading="lazy">
         </div>
     </div>
 
     <h3>선택적 매개변수</h3>
-    <p>이미지 개선에 대한 제어를 조금 더 추가하고 싶다면, 다음과 같은 추가 옵션을 사용할 수 있습니다:</p>
+    <p>이미지 향상에 대한 더 많은 제어를 원하신다면, 다음과 같은 추가 옵션을 사용할 수 있습니다:</p>
 
     <ul>
-        <li><strong>스케일:</strong> 이미지를 얼마나 확대할지 선택합니다. 1에서 4까지 선택할 수 있으며, 기본값은 4입니다. 숫자가 클수록 이미지가 커집니다.</li>
-        <li><strong>업스케일 모델:</strong> 이미지에 필터를 적용하는 것과 비슷하지만 훨씬 더 스마트합니다. 다음과 같은 옵션이 있습니다:
+        <li><strong>배율:</strong> 이미지를 얼마나 확대할지를 결정합니다. 1에서 4까지의 배율을 선택할 수 있으며, 기본값은 4입니다. 기본적으로 숫자가 클수록 이미지가 커집니다.</li>
+        <li><strong>업스케일 모델:</strong> 이미지를 위한 필터를 선택하는 것과 비슷하지만, 훨씬 더 스마트합니다. 옵션은 다음과 같습니다:
             <ul>
-                <li><strong>빅 디테일 부스트:</strong> 작은 세부 사항을 확대하는 데 적합합니다.</li>
-                <li><strong>울트라 샤프:</strong> 이미지를 매우 선명하고 또렷하게 만듭니다.</li>
-                <li><strong>애니메이션 향상:</strong> 애니메이션 스타일 이미지에 적합하며, 선명하고 생동감 있게 만듭니다.</li>
-                <li><strong>더블 디테일:</strong> 과하지 않게 세부 사항을 두 배로 늘립니다.</li>
-                <li><strong>일반 부스트:</strong> 대부분의 이미지에 적합한 전반적인 옵션입니다.</li>
+                <li><strong>세부 사항 강화:</strong> 작은 세부 사항을 확대하는 데 가장 적합합니다.</li>
+                <li><strong>울트라 샤프:</strong> 이미지를 매우 선명하고 깨끗하게 만듭니다.</li>
+                <li><strong>애니메이션 향상:</strong> 애니메이션 스타일의 이미지에 적합하며, 선명하고 생동감 있게 만듭니다.</li>
+                <li><strong>세부 사항 두 배:</strong> 과도하지 않게 세부 사항을 두 배로 늘립니다.</li>
+                <li><strong>일반 강화:</strong> 대부분의 이미지에 적합한 전반적인 옵션입니다.</li>
             </ul>
         </li>
-        <li><strong>얼굴 향상:</strong> 이미지에 얼굴이 포함된 경우, 이 옵션을 켜면 얼굴 특징을 더욱 향상시킬 수 있습니다.</li>
+        <li><strong>얼굴 향상:</strong> 이미지에 얼굴이 있는 경우, 이 옵션을 사용하면 더욱 좋게 보이게 할 수 있습니다. AiCasso가 얼굴 특징을 향상시키는 데 집중하도록 하려면 이 옵션을 켜세요.</li>
     </ul>
 
-    <p>이 옵션들은 전적으로 선택 사항입니다! 원하지 않으면 조정할 필요가 없습니다. 원하는 것을 설명하기만 하면 AiCasso가 최적의 방법을 찾아줍니다. 그리고 완벽한 설명을 하지 않아도 AiCasso는 당신을 이해합니다!</p>
+    <p>이 옵션들은 전적으로 선택 사항입니다! 원하지 않으면 건드릴 필요가 없습니다. 원하는 것을 설명하면 AiCasso가 최선의 방법을 찾아줄 것입니다. 그리고 당신의 말이 완벽하지 않아도 걱정하지 마세요—AiCasso는 당신을 이해합니다!</p>
 
 </body>
 </html>

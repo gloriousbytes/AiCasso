@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panduan Ciri Relighting</title>
+    <title>Panduan Ciri Pencahayaan Semula</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,12 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
         }
         .iframe-container {
             display: flex;
@@ -47,37 +50,37 @@
 
 <body>
 
-    <h2>Panduan Menggunakan Ciri Relighting</h2>
-    <p>Ciri Relighting dalam AiCasso sangat hebat! Ia membolehkan anda menukar pencahayaan dalam imej anda dengan hanya beberapa perkataan. Mahu matahari di belakang atau cahaya lembut dari sisi? Tiada masalah! Hanya gambarkan, dan AiCasso akan menguruskan selebihnya.</p>
+    <h2>Panduan Menggunakan Ciri Pencahayaan Semula</h2>
+    <p>Ciri Pencahayaan Semula dalam AiCasso sangat menarik! Ia membolehkan anda mengubah pencahayaan dalam gambar anda dengan hanya beberapa kata. Mahu matahari di belakang atau cahaya lembut dari sisi? Tiada masalah! Hanya terangkan, dan AiCasso akan menguruskan selebihnya.</p>
 
     <h3>Bagaimana Ia Berfungsi:</h3>
     
     <div class="example">
         <strong>Imej Input:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+            <img src="../../images/tutorials/relighting/input.jpg" alt="Imej Input" loading="lazy">
         </div>
         <strong>Prompt Digunakan:</strong>
-        <p>"Jadikan supaya matahari berada di belakang"</p>
+        <p>"Jadikan ia supaya matahari berada di belakang"</p>
         <strong>Hasil:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+            <img src="../../images/tutorials/relighting/result.jpg" alt="Hasil Pencahayaan Semula" loading="lazy">
         </div>
     </div>
 
-    <h3>Pelarasan Pilihan</h3>
-    <p>Jika anda berasa berani dan ingin menambah sedikit gaya pada relighting anda, berikut adalah beberapa perkara yang boleh anda laraskan:</p>
+    <h3>Penyetelan Pilihan</h3>
+    <p>Jika anda berasa berani dan ingin menambah sedikit gaya pada pencahayaan semula anda, berikut adalah beberapa perkara yang boleh anda ubah:</p>
 
     <ul>
-        <li><strong>Prompt Negatif:</strong> Mahu mengelakkan sesuatu? Anda boleh memberitahu AiCasso apa yang <em>tidak</em> perlu disertakan. Tetapi jangan risau, jika anda biarkan kosong, AiCasso hanya akan fokus pada apa yang anda mahukan.</li>
-        <li><strong>Arah Pencahayaan:</strong> Anda boleh menentukan dari mana cahaya harus datang—kiri, kanan, atas, bawah, atau tiada langsung. Secara lalai, cahaya datang dari kiri.</li>
-        <li><strong>Skala Panduan:</strong> Ini membantu AiCasso berpegang pada penerangan anda. Skala ini dari 1 hingga 20, dengan 7 sebagai lalai. Semakin tinggi nombor, semakin AiCasso berpegang pada prompt anda.</li>
-        <li><strong>Skala Resolusi Tinggi:</strong> Mahu imej anda menonjol? Ini mengawal kejelasan. Lalai adalah 1.5, tetapi anda boleh menetapkannya dari 1.0 hingga 2.0 untuk imej yang lebih jelas.</li>
-        <li><strong>Tahap Denoise:</strong> Terdapat dua tahap—resolusi rendah dan resolusi tinggi. Ini mengawal betapa licin atau terperinci imej akhir kelihatan. Anda boleh menetapkan tahap denoise rendah antara 0.0 dan 1.0 (lalai adalah 0.9) dan resolusi tinggi antara 0.0 dan 1.0 (lalai adalah 0.5).</li>
-        <li><strong>Bilangan Langkah:</strong> Ini adalah berapa banyak langkah yang diambil AiCasso untuk menggilap imej anda. Lalai adalah 50, tetapi anda boleh pergi dari 20 hingga 50 langkah.</li>
+        <li><strong>Prompt Negatif:</strong> Mahu mengelakkan sesuatu? Anda boleh memberitahu AiCasso apa yang <em>tidak</em> perlu disertakan. Tetapi jangan risau, jika anda biarkan ini kosong, AiCasso akan hanya memberi tumpuan kepada apa yang anda mahu.</li>
+        <li><strong>Arah Pencahayaan:</strong> Anda boleh menentukan dari mana cahaya sepatutnya datang—kiri, kanan, atas, bawah, atau bahkan tiada langsung. Secara lalai, cahaya datang dari sebelah kiri.</li>
+        <li><strong>Skala Panduan:</strong> Ini membantu AiCasso mematuhi penerangan anda. Skala ini bergerak dari 1 hingga 20, dengan 7 sebagai lalai. Semakin tinggi nombornya, semakin AiCasso mematuhi prompt anda.</li>
+        <li><strong>Skala Resolusi Tinggi:</strong> Mahu gambar anda menonjol? Ini mengawal kejelasan. Lalai adalah 1.5, tetapi anda boleh menetapkannya dari 1.0 hingga 2.0 untuk gambar yang lebih tajam.</li>
+        <li><strong>Tahap Denoise:</strong> Terdapat dua tahap—resolusi rendah dan resolusi tinggi. Ini mengawal seberapa halus atau terperinci gambar akhir kelihatan. Anda boleh menetapkan tahap denoise resolusi rendah antara 0.0 dan 1.0 (lalai adalah 0.9) dan resolusi tinggi antara 0.0 dan 1.0 (lalai adalah 0.5).</li>
+        <li><strong>Bilangan Langkah:</strong> Ini adalah berapa banyak langkah yang diambil oleh AiCasso untuk memperhalus gambar anda. Lalai adalah 50, tetapi anda boleh memilih dari 20 hingga 50 langkah.</li>
     </ul>
 
-    <p>Ingat, pelarasan ini adalah pilihan sepenuhnya! AiCasso cukup baik dalam memahami apa yang anda mahukan, jadi hanya gambarkan visi anda dengan kata-kata anda sendiri, dan ia akan melakukan keajaiban. Tidak perlu sempurna dengan tatabahasa atau butiran—hanya berseronok dan lihat apa yang anda boleh cipta!</p>
+    <p>Ingat, penyetelan ini adalah pilihan sepenuhnya! AiCasso cukup baik dalam menentukan apa yang anda mahu, jadi hanya terangkan visi anda dengan kata-kata anda sendiri, dan ia akan melakukan keajaiban. Tiada keperluan untuk sempurna dengan tatabahasa atau butiran—hanya berseronok dan lihat apa yang anda boleh cipta!</p>
 
 </body>
 </html>

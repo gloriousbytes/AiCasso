@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide de la Fonctionnalité Générer Vidéo</title>
+    <title>Guide de la Fonction Générer une Vidéo</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,81 +31,85 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img {
+            width: 100%;
+            max-width: 400px;
             height: auto;
         }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        @media (max-width: 768px) {
+            .result img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h2>Guide d'Utilisation de la Fonctionnalité Générer Vidéo</h2>
-    <p>La fonctionnalité Générer Vidéo dans AiCasso vous permet de créer des vidéos en décrivant simplement ce que vous souhaitez voir. Tapez simplement votre idée, et AiCasso la réalisera dans une vidéo !</p>
+    <h2>Guide d'utilisation de la fonction Générer une Vidéo</h2>
+    <p>La fonction Générer une Vidéo dans AiCasso vous permet de créer des vidéos en décrivant simplement ce que vous voulez voir. Il vous suffit de taper votre idée, et AiCasso la mettra en vie dans une vidéo !</p>
 
-    <h3>Comment ça marche :</h3>
+    <h3>Comment ça fonctionne :</h3>
     
     <div class="example">
-        <strong>Prompt :</strong>
+        <strong>Invite :</strong>
         <p>"Un coq animé en 3D dans un champ tout seul, mangeant et étant heureux. Faites-en une vidéo portrait avec 50 étapes de débruitage."</p>
         <strong>Résultat :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/animated3d.gif" alt="Coq Animé 3D">
+            <noscript><img src="../../images/tutorials/texttovideo/animated3d.gif" alt="Coq Animé 3D"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Prompt :</strong>
+        <strong>Invite :</strong>
         <p>"Un dessin animé d'un coq dans un champ en dimensions paysage."</p>
         <strong>Résultat :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/cartoon.gif" alt="Coq Dessin Animé">
+            <noscript><img src="../../images/tutorials/texttovideo/cartoon.gif" alt="Coq Dessin Animé"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Prompt :</strong>
+        <strong>Invite :</strong>
         <p>"Un coq dans un champ."</p>
         <strong>Résultat :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/default.gif" alt="Coq Par Défaut">
+            <noscript><img src="../../images/tutorials/texttovideo/default.gif" alt="Coq Par Défaut"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Prompt :</strong>
+        <strong>Invite :</strong>
         <p>"Un coq qui est dans le champ tout seul. Donnez-lui une ambiance naturelle."</p>
         <strong>Résultat :</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/natural.gif" alt="Coq Naturel">
+            <noscript><img src="../../images/tutorials/texttovideo/natural.gif" alt="Coq Naturel"></noscript>
         </div>
     </div>
 
     <h3>Options Supplémentaires</h3>
-    <p>Vous souhaitez peaufiner votre vidéo ? Voici quelques réglages avec lesquels vous pouvez jouer :</p>
+    <p>Vous souhaitez peaufiner votre vidéo ? Voici quelques paramètres avec lesquels vous pouvez jouer :</p>
 
     <ul>
-        <li><strong>Nombre d'Images :</strong> Choisissez combien d'images (images individuelles) votre vidéo aura. Vous pouvez aller jusqu'à 25 images, avec 16 par défaut.</li>
-        <li><strong>Nombre d'Étapes de Débruitage :</strong> Cela contrôle la fluidité de votre vidéo. Plus d'étapes signifient des vidéos plus fluides. Vous pouvez régler jusqu'à 50 étapes, avec 20 par défaut.</li>
-        <li><strong>Échelle de Guidance :</strong> Cela aide la vidéo à coller étroitement à votre description. Plus le nombre est élevé, plus elle suit votre prompt. La plage est de 0 à 8, avec 8 par défaut.</li>
-        <li><strong>Saut de Clip :</strong> Sautez certaines couches pour un style vidéo différent. Par défaut, aucune couche n'est sautée, mais vous pouvez en sauter jusqu'à 2.</li>
-        <li><strong>Largeur et Hauteur de Mise à l'Échelle :</strong> Vous pouvez agrandir votre vidéo en ajustant la résolution. Par défaut, elle est de 1024x1024 pixels, mais vous pouvez l'ajuster selon vos besoins.</li>
-        <li><strong>Force de Mise à l'Échelle :</strong> Cela change combien votre vidéo s'ajuste lorsqu'elle est mise à l'échelle. Le défaut est 1, mais vous pouvez l'ajuster pour voir plus de différences.</li>
-        <li><strong>Échelle de Guidance de Mise à l'Échelle :</strong> Cela guide le processus de mise à l'échelle, avec une plage de 0 à 8, et un défaut de 8.</li>
-        <li><strong>Étapes d'Inférence de Mise à l'Échelle :</strong> Le nombre d'étapes prises pour mettre à l'échelle la vidéo. Plus d'étapes rendent la mise à l'échelle plus fluide, avec un maximum de 50 et un défaut de 20.</li>
-        <li><strong>Échantillonnage Amélioré :</strong> Vous voulez une vidéo plus raffinée ? Activez cette option. Elle est désactivée par défaut.</li>
-        <li><strong>Graine d'Échantillonnage Amélioré :</strong> Utilisez ceci pour générer la même vidéo à chaque fois avec un échantillonnage amélioré. C'est optionnel et désactivé par défaut.</li>
-        <li><strong>Images par Seconde (FPS) :</strong> Réglez la vitesse de votre vidéo. Le défaut est de 16 FPS, mais vous pouvez l'ajuster jusqu'à 16.</li>
-        <li><strong>Modèle Vidéo :</strong> Choisissez le style de votre vidéo. Les options incluent :
+        <li><strong>Nombre de Cadres :</strong> Choisissez combien de cadres (images individuelles) votre vidéo aura. Vous pouvez aller jusqu'à 25 cadres, avec 16 comme valeur par défaut.</li>
+        <li><strong>Nombre d'Étapes de Débruitage :</strong> Cela contrôle la fluidité de votre vidéo. Plus il y a d'étapes, plus les vidéos sont fluides. Vous pouvez définir jusqu'à 50 étapes, avec 20 comme valeur par défaut.</li>
+        <li><strong>Échelle de Guidage :</strong> Cela aide la vidéo à coller de près à votre description. Plus le nombre est élevé, plus elle suit votre invite. La plage est de 0 à 8, avec 8 comme valeur par défaut.</li>
+        <li><strong>Clip Skip :</strong> Sauter certaines couches pour un style vidéo différent. Par défaut, aucune couche n'est sautée, mais vous pouvez en sauter jusqu'à 2.</li>
+        <li><strong>Agrandir Largeur et Hauteur :</strong> Vous pouvez agrandir votre vidéo en ajustant la résolution. La valeur par défaut est de 1024x1024 pixels, mais vous pouvez l'ajuster selon vos besoins.</li>
+        <li><strong>Force d'Agrandissement :</strong> Cela change la manière dont votre vidéo s'ajuste lorsqu'elle est agrandie. La valeur par défaut est 1, mais vous pouvez l'ajuster pour voir plus de différences.</li>
+        <li><strong>Échelle de Guidage d'Agrandissement :</strong> Cela guide le processus d'agrandissement, avec une plage de 0 à 8, et une valeur par défaut de 8.</li>
+        <li><strong>Étapes d'Inférence d'Agrandissement :</strong> Le nombre d'étapes prises pour agrandir la vidéo. Plus il y a d'étapes, plus l'agrandissement est fluide, avec un maximum de 50 et une valeur par défaut de 20.</li>
+        <li><strong>Échantillonnage Amélioré :</strong> Vous voulez une vidéo plus raffinée ? Activez cela. C'est désactivé par défaut.</li>
+        <li><strong>Graine d'Échantillonnage Améliorée :</strong> Utilisez ceci pour générer la même vidéo à chaque fois avec un échantillonnage amélioré. C'est optionnel et désactivé par défaut.</li>
+        <li><strong>Images par Seconde (IPS) :</strong> Définissez la vitesse de votre vidéo. La valeur par défaut est de 16 IPS, mais vous pouvez l'ajuster jusqu'à 16.</li>
+        <li><strong>Modèle de Vidéo :</strong> Choisissez le style de votre vidéo. Les options incluent :
             <ul>
-                <li><strong>Défaut :</strong> Un modèle vidéo standard.</li>
+                <li><strong>Par Défaut :</strong> Un modèle vidéo standard.</li>
                 <li><strong>Dessin Animé :</strong> Un style vidéo cartoon.</li>
                 <li><strong>Naturel :</strong> Un style vidéo réaliste et naturel.</li>
                 <li><strong>Animé 3D :</strong> Un style vidéo animé en 3D.</li>
@@ -113,7 +117,7 @@
         </li>
     </ul>
 
-    <p>Rappelez-vous, ces réglages sont optionnels. La fonctionnalité Générer Vidéo fonctionne très bien avec une simple description, alors n'hésitez pas à expérimenter et voir ce que vous pouvez créer !</p>
+    <p>Rappelez-vous, ces paramètres sont optionnels. La fonction Générer une Vidéo fonctionne très bien avec juste une simple description, alors n'hésitez pas à expérimenter et à voir ce que vous pouvez créer !</p>
 
 </body>
 </html>

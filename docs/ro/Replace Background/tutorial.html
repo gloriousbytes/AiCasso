@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -41,26 +41,26 @@
 <body>
 
     <h2>Ghid pentru Utilizarea Funcției de Înlocuire a Fundalului</h2>
-    <p>Funcția de Înlocuire a Fundalului în AiCasso este perfectă atunci când dorești să schimbi fundalul din imaginea ta. Fie că vrei doar să elimini fundalul sau să-l înlocuiești cu altceva, AiCasso face totul foarte simplu. Nu trebuie să te îngrijorezi de aspectele tehnice—doar descrie ce vrei, iar AiCasso va face restul.</p>
+    <p>Funcția de Înlocuire a Fundalului în AiCasso este perfectă pentru atunci când vrei să schimbi fundalul din imaginea ta. Fie că vrei doar să elimini fundalul sau să-l înlocuiești cu altceva, AiCasso face totul foarte simplu. Nu trebuie să-ți faci griji cu privire la aspectele tehnice—doar descrie ce vrei, iar AiCasso va face restul.</p>
 
     <h3>Cum Funcționează:</h3>
     
     <div class="example">
         <strong>Imagine de Intrare:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Imagine de Intrare" loading="lazy">
         </div>
         <strong>Prompt 1:</strong>
         <p>"Elimină fundalul"</p>
         <strong>Rezultatul 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Rezultatul Fundalului Eliminat" loading="lazy">
         </div>
         <strong>Prompt 2:</strong>
         <p>"Înlocuiește fundalul cu o pădure, nu doar elimină-l, cu matting alpha dezactivat. Folosește un prag de prim-plan de 240, un prag de fundal de 20 și o dimensiune de erodare de 5 pentru matting alpha."</p>
         <strong>Rezultatul 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Fundal Înlocuit cu Pădure" loading="lazy">
         </div>
     </div>
 
@@ -69,13 +69,13 @@
 
     <ul>
         <li><strong>Eliminare Doar:</strong> Dacă vrei doar să elimini fundalul și să nu-l înlocuiești cu nimic, aceasta este opțiunea ta preferată. E ca și cum ai apăsa un buton de curățare.</li>
-        <li><strong>Matting Alpha:</strong> Aceasta este o modalitate elegantă de a spune "amestecă marginile." Când activezi această opțiune, ajută la netezirea marginilor subiectului tău, făcându-le să arate mai puțin tăiate. Implicit, este dezactivată.</li>
+        <li><strong>Matting Alpha:</strong> Aceasta este o modalitate elegantă de a spune "amestecă marginile." Când activezi această opțiune, ajută la netezirea marginilor subiectului tău, făcându-le să pară mai puțin tăiate. Implicit, este dezactivată.</li>
         <li><strong>Prag de Prim-plan pentru Matting Alpha:</strong> Acesta controlează cât de mult din subiectul principal (cum ar fi o persoană) rămâne vizibil atunci când folosești matting alpha. Implicit, este 240, iar tu poți ajusta pentru a face marginile mai moi sau mai ascuțite.</li>
-        <li><strong>Prag de Fundal pentru Matting Alpha:</strong> Acesta face același lucru ca și pragul de prim-plan, dar pentru fundal. Implicit, este 20, și este totul despre obținerea amestecului perfect cu noul fundal.</li>
+        <li><strong>Prag de Fundal pentru Matting Alpha:</strong> Acesta face același lucru ca pragul de prim-plan, dar pentru fundal. Implicit, este 20, iar scopul este de a obține amestecul perfect cu noul fundal.</li>
         <li><strong>Dimensiunea de Erodare pentru Matting Alpha:</strong> Aceasta ajută la micșorarea marginilor pentru a face decupajul să arate mai curat. Dimensiunea implicită este 5, dar poți ajusta pentru a obține aspectul exact pe care îl dorești.</li>
     </ul>
 
-    <p>Ține minte, nu trebuie să te stresezi pentru a obține totul perfect. AiCasso este destul de bun la a înțelege ce vrei să spui, așa că simte-te liber să fii la fel de casual sau detaliat cum dorești. Distracție plăcută la creație!</p>
+    <p>Îți amintim, nu trebuie să te stresezi pentru a obține totul perfect. AiCasso este destul de bun la a înțelege ce vrei să spui, așa că nu ezita să fii la fel de relaxat sau detaliat cum dorești. Distracție plăcută la creație!</p>
 
 </body>
 </html>

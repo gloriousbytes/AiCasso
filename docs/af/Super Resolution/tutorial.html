@@ -31,9 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -46,20 +53,20 @@
     <h3>Hoe Dit Werk:</h3>
     
     <div class="example">
-        <strong>Invoebeeld:</strong>
+        <strong>Invoer Beeld:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="Invoer Beeld" loading="lazy">
         </div>
         <strong>Opdrag:</strong>
         <p>"Vergroot dit 4 keer, gebruik die Ultra Sharp model"</p>
         <strong>Resultaat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="Resultaat Beeld" loading="lazy">
         </div>
     </div>
 
     <h3>Opsionele Parameters</h3>
-    <pAs jy 'n bietjie meer beheer wil hê oor hoe jou beeld verbeter word, hier is 'n paar ekstra opsies waarmee jy kan speel:</p>
+    <pAs jy 'n bietjie meer beheer oor hoe jou beeld verbeter word, hier is 'n paar ekstra opsies waarmee jy kan speel:</p>
 
     <ul>
         <li><strong>Skaal:</strong> Dit is hoeveel jy jou beeld wil vergroot. Jy kan 'n skaal van 1 tot 4 kies, met 4 as die verstek. Basies, hoe groter die getal, hoe groter die beeld.</li>
@@ -68,14 +75,14 @@
                 <li><strong>Grote Detail Hupstoot:</strong> Beste vir inzoomen op klein besonderhede.</li>
                 <li><strong>Ultra Sharp:</strong> Maak die beeld super duidelik en skerp.</li>
                 <li><strong>Anime Verbeter:</strong> Perfek vir anime-styl beelde, wat hulle skerp en lewendig laat lyk.</li>
-                <li><strong>Dubbeldetail:</strong> Verdubbel die besonderhede sonder om oorboord te gaan.</li>
+                <li><strong>Dubbele Detail:</strong> Verdubbel die besonderhede sonder om oorboord te gaan.</li>
                 <li><strong>Algemene Hupstoot:</strong> 'n Goeie allround opsie vir die meeste beelde.</li>
             </ul>
         </li>
         <li><strong>Gesig Verbeter:</strong> As jou beeld 'n gesig het, kan hierdie opsie help om dit selfs beter te laat lyk. Skakel dit net aan as jy wil hê AiCasso moet fokus op die verbetering van gesigskenmerke.</li>
     </ul>
 
-    <p>Onthou, hierdie opsies is heeltemal opsioneel! Jy hoef nie daarmee te mors as jy nie wil nie. Beskryf net wat jy wil hê, en AiCasso sal die beste manier vind om dit te laat gebeur. En moenie bekommerd wees oor om perfek met jou woorde te wees nie—AiCasso verstaan jou!</p>
+    <p>Onthou, hierdie opsies is heeltemal opsioneel! Jy hoef nie daarmee te mors as jy nie wil nie. Beskryf net wat jy wil hê, en AiCasso sal die beste manier uitvind om dit te laat gebeur. En moenie bekommerd wees oor om perfek te wees met jou woorde nie—AiCasso verstaan jou!</p>
 
 </body>
 </html>

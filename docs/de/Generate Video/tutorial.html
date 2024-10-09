@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leitfaden zur Funktion "Video generieren"</title>
+    <title>Leitfaden zur Funktion Video generieren</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,79 +31,83 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img {
+            width: 100%;
+            max-width: 400px;
             height: auto;
         }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        @media (max-width: 768px) {
+            .result img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h2>Leitfaden zur Nutzung der Funktion "Video generieren"</h2>
-    <p>Mit der Funktion "Video generieren" in AiCasso können Sie Videos erstellen, indem Sie einfach beschreiben, was Sie sehen möchten. Geben Sie einfach Ihre Idee ein und AiCasso erweckt sie in einem Video zum Leben!</p>
+    <h2>Leitfaden zur Nutzung der Funktion Video generieren</h2>
+    <p>Die Funktion Video generieren in AiCasso ermöglicht es Ihnen, Videos zu erstellen, indem Sie einfach beschreiben, was Sie sehen möchten. Geben Sie einfach Ihre Idee ein, und AiCasso wird sie in einem Video zum Leben erwecken!</p>
 
     <h3>So funktioniert es:</h3>
     
     <div class="example">
-        <strong>Eingabe:</strong>
-        <p>"Ein 3D-animierter Hahn auf einem Feld ganz allein, der frisst und glücklich ist. Machen Sie daraus ein Hochformat-Video mit 50 Entrauschungsschritten."</p>
+        <strong>Prompt:</strong>
+        <p>"Ein 3D-animierter Hahn auf einem Feld ganz allein, der frisst und glücklich ist. Machen Sie es zu einem Porträtvideo mit 50 Denoising-Schritten."</p>
         <strong>Ergebnis:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/animated3d.gif" alt="Animierter 3D-Hahn">
+            <noscript><img src="../../images/tutorials/texttovideo/animated3d.gif" alt="Animierter 3D-Hahn"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Eingabe:</strong>
-        <p>"Ein Cartoon eines Hahns auf einem Feld in Querformat."</p>
+        <strong>Prompt:</strong>
+        <p>"Ein Cartoon von einem Hahn auf einem Feld im Querformat."</p>
         <strong>Ergebnis:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/cartoon.gif" alt="Cartoon-Hahn">
+            <noscript><img src="../../images/tutorials/texttovideo/cartoon.gif" alt="Cartoon-Hahn"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Eingabe:</strong>
+        <strong>Prompt:</strong>
         <p>"Ein Hahn auf einem Feld."</p>
         <strong>Ergebnis:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/default.gif" alt="Standard-Hahn">
+            <noscript><img src="../../images/tutorials/texttovideo/default.gif" alt="Standard-Hahn"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Eingabe:</strong>
+        <strong>Prompt:</strong>
         <p>"Ein Hahn, der ganz allein auf dem Feld ist. Geben Sie ihm ein natürliches Gefühl."</p>
         <strong>Ergebnis:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/natural.gif" alt="Natürlicher Hahn">
+            <noscript><img src="../../images/tutorials/texttovideo/natural.gif" alt="Natürlicher Hahn"></noscript>
         </div>
     </div>
 
     <h3>Zusätzliche Optionen</h3>
-    <p>Möchten Sie Ihr Video feinabstimmen? Hier sind einige Einstellungen, mit denen Sie experimentieren können:</p>
+    <p>Wollen Sie Ihr Video verfeinern? Hier sind einige Einstellungen, mit denen Sie experimentieren können:</p>
 
     <ul>
-        <li><strong>Anzahl der Frames:</strong> Wählen Sie, wie viele Frames (Einzelbilder) Ihr Video haben soll. Sie können bis zu 25 Frames wählen, wobei 16 der Standard ist.</li>
-        <li><strong>Anzahl der Entrauschungsschritte:</strong> Dies steuert, wie glatt Ihr Video aussieht. Mehr Schritte bedeuten glattere Videos. Sie können bis zu 50 Schritte einstellen, wobei 20 der Standard ist.</li>
-        <li><strong>Leitfaden-Skala:</strong> Dies hilft dem Video, sich eng an Ihre Beschreibung zu halten. Je höher die Zahl, desto mehr folgt es Ihrer Eingabe. Der Bereich liegt zwischen 0 und 8, wobei 8 der Standard ist.</li>
-        <li><strong>Clip-Skip:</strong> Überspringen Sie bestimmte Ebenen für einen anderen Videostil. Standardmäßig werden keine Ebenen übersprungen, aber Sie können bis zu 2 überspringen.</li>
-        <li><strong>Vergrößerung Breite und Höhe:</strong> Sie können Ihr Video vergrößern, indem Sie die Auflösung anpassen. Der Standard ist 1024x1024 Pixel, aber Sie können dies an Ihre Bedürfnisse anpassen.</li>
-        <li><strong>Vergrößerungsstärke:</strong> Dies ändert, wie stark Ihr Video beim Vergrößern angepasst wird. Der Standard ist 1, aber Sie können es anpassen, um mehr Unterschiede zu sehen.</li>
-        <li><strong>Vergrößerungs-Leitfaden-Skala:</strong> Dies leitet den Vergrößerungsprozess, mit einem Bereich von 0 bis 8 und einem Standard von 8.</li>
-        <li><strong>Vergrößerungs-Inferenzschritte:</strong> Die Anzahl der Schritte, die unternommen werden, um das Video zu vergrößern. Mehr Schritte sorgen für eine glattere Vergrößerung, mit einem Maximum von 50 und einem Standard von 20.</li>
-        <li><strong>Verbesserte Abtastung:</strong> Möchten Sie ein raffinierteres Video? Schalten Sie dies ein. Es ist standardmäßig ausgeschaltet.</li>
-        <li><strong>Verbesserte Abtastungs-Saat:</strong> Verwenden Sie dies, um jedes Mal dasselbe Video mit verbesserter Abtastung zu erzeugen. Es ist optional und standardmäßig ausgeschaltet.</li>
-        <li><strong>Bilder pro Sekunde (FPS):</strong> Stellen Sie die Geschwindigkeit Ihres Videos ein. Der Standard ist 16 FPS, aber Sie können es bis zu 16 anpassen.</li>
-        <li><strong>Videomodell:</strong> Wählen Sie den Stil Ihres Videos. Optionen umfassen:
+        <li><strong>Anzahl der Frames:</strong> Wählen Sie, wie viele Frames (einzelne Bilder) Ihr Video haben soll. Sie können bis zu 25 Frames wählen, wobei 16 der Standard ist.</li>
+        <li><strong>Anzahl der Denoising-Schritte:</strong> Dies steuert, wie glatt Ihr Video aussieht. Mehr Schritte bedeuten glattere Videos. Sie können bis zu 50 Schritte einstellen, wobei 20 der Standard ist.</li>
+        <li><strong>Guidance Scale:</strong> Dies hilft dem Video, eng an Ihrer Beschreibung zu bleiben. Je höher die Zahl, desto mehr folgt es Ihrem Prompt. Der Bereich reicht von 0 bis 8, wobei 8 der Standard ist.</li>
+        <li><strong>Clip Skip:</strong> Überspringen Sie bestimmte Ebenen für einen anderen Videostil. Standardmäßig werden keine Ebenen übersprungen, aber Sie können bis zu 2 überspringen.</li>
+        <li><strong>Upscale Breite und Höhe:</strong> Sie können Ihr Video größer machen, indem Sie die Auflösung anpassen. Der Standard ist 1024x1024 Pixel, aber Sie können dies an Ihre Bedürfnisse anpassen.</li>
+        <li><strong>Upscale Stärke:</strong> Dies ändert, wie stark Ihr Video beim Upscaling angepasst wird. Der Standard ist 1, aber Sie können es anpassen, um mehr Unterschiede zu sehen.</li>
+        <li><strong>Upscale Guidance Scale:</strong> Dies leitet den Upscaling-Prozess, mit einem Bereich von 0 bis 8 und einem Standard von 8.</li>
+        <li><strong>Upscale Inference Steps:</strong> Die Anzahl der Schritte, die unternommen werden, um das Video hochzuskalieren. Mehr Schritte sorgen für ein glatteres Upscaling, mit maximal 50 und einem Standard von 20.</li>
+        <li><strong>Verbessertes Sampling:</strong> Möchten Sie ein raffinierteres Video? Aktivieren Sie dies. Es ist standardmäßig deaktiviert.</li>
+        <li><strong>Verbessertes Sampling Seed:</strong> Verwenden Sie dies, um jedes Mal dasselbe Video mit verbessertem Sampling zu generieren. Es ist optional und standardmäßig deaktiviert.</li>
+        <li><strong>Frames pro Sekunde (FPS):</strong> Stellen Sie die Geschwindigkeit Ihres Videos ein. Der Standard ist 16 FPS, aber Sie können es bis zu 16 anpassen.</li>
+        <li><strong>Video Modell:</strong> Wählen Sie den Stil Ihres Videos. Optionen sind:
             <ul>
                 <li><strong>Standard:</strong> Ein Standard-Videomodell.</li>
                 <li><strong>Cartoon:</strong> Ein cartoonartiger Videostil.</li>
@@ -113,7 +117,7 @@
         </li>
     </ul>
 
-    <p>Denken Sie daran, dass diese Einstellungen optional sind. Die Funktion "Video generieren" funktioniert hervorragend mit nur einer einfachen Beschreibung, also experimentieren Sie ruhig und sehen Sie, was Sie erstellen können!</p>
+    <p>Denken Sie daran, dass diese Einstellungen optional sind. Die Funktion Video generieren funktioniert großartig mit nur einer einfachen Beschreibung, also fühlen Sie sich frei, zu experimentieren und zu sehen, was Sie erstellen können!</p>
 
 </body>
 </html>

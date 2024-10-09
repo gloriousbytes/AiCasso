@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>更换背景功能指南</title>
+    <title>替换背景功能指南</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -40,42 +40,42 @@
 
 <body>
 
-    <h2>使用更换背景功能指南</h2>
-    <p>AiCasso 的更换背景功能非常适合在您想要替换图像背景时使用。无论您只是想移除背景还是用其他东西替换它，AiCasso 都让这一过程变得非常简单。您无需担心技术问题——只需描述您想要的效果，AiCasso 会为您完成其余工作。</p>
+    <h2>使用替换背景功能指南</h2>
+    <p>AiCasso中的替换背景功能非常适合当您想要更换图像背景时。无论您是想要删除背景还是用其他东西替换它，AiCasso都能让这一切变得简单。您不需要担心技术细节——只需描述您想要的，AiCasso会完成其余的工作。</p>
 
     <h3>工作原理：</h3>
     
     <div class="example">
         <strong>输入图像：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="输入图像" loading="lazy">
         </div>
         <strong>提示 1：</strong>
-        <p>"移除背景"</p>
+        <p>"删除背景"</p>
         <strong>结果 1：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="背景已删除结果" loading="lazy">
         </div>
         <strong>提示 2：</strong>
-        <p>"将背景替换为森林，而不仅仅是移除它，禁用 alpha 抠图。使用前景阈值 240，背景阈值 20，alpha 抠图的侵蚀大小为 5。"</p>
+        <p>"将背景替换为森林，而不仅仅是删除它，关闭 alpha 合成。使用前景阈值 240，背景阈值 20，以及 alpha 合成的腐蚀大小 5。"</p>
         <strong>结果 2：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="用森林替换的背景" loading="lazy">
         </div>
     </div>
 
     <h3>可选参数</h3>
-    <p>如果您想添加个人风格或微调结果，这里有一些选项供您选择：</p>
+    <p>如果您想添加个人风格或微调结果，这里有一些您可以尝试的选项：</p>
 
     <ul>
-        <li><strong>仅移除：</strong>如果您只想移除背景而不替换任何东西，这是您的首选选项。就像按下一个清除按钮。</li>
-        <li><strong>Alpha 抠图：</strong>这是一种让边缘更平滑的高级方式。当您开启它时，它有助于使主体的边缘看起来更平滑而不那么生硬。默认情况下，它是关闭的。</li>
-        <li><strong>Alpha 抠图前景阈值：</strong>这控制了使用 alpha 抠图时主体（如人物）保留多少可见部分。默认值是 240，您可以调整它以使边缘更柔和或更锐利。</li>
-        <li><strong>Alpha 抠图背景阈值：</strong>这与前景阈值的作用相同，但针对背景。默认值是 20，旨在与新背景完美融合。</li>
-        <li><strong>Alpha 抠图侵蚀大小：</strong>这有助于稍微缩小边缘，使剪切效果更干净。默认大小是 5，但您可以调整它以获得所需的确切效果。</li>
+        <li><strong>仅删除：</strong>如果您只想删除背景而不替换任何东西，这是您的首选选项。这就像按下一个干净的重置按钮。</li>
+        <li><strong>Alpha 合成：</strong>这是一个花哨的说法，意思是“平滑边缘”。当您开启此功能时，它有助于使主题的边缘看起来更平滑，而不是生硬的切割。默认情况下，它是关闭的。</li>
+        <li><strong>Alpha 合成前景阈值：</strong>这控制在使用 alpha 合成时，主要主题（如人）保持可见的程度。默认值为 240，您可以调整它以使边缘更柔和或更锐利。</li>
+        <li><strong>Alpha 合成背景阈值：</strong>这与前景阈值的作用相同，但适用于背景。默认值为 20，旨在与新背景实现完美融合。</li>
+        <li><strong>Alpha 合成腐蚀大小：</strong>这有助于稍微缩小边缘，使切割看起来更干净。默认大小为 5，但您可以调整它以获得所需的确切效果。</li>
     </ul>
 
-    <p>记住，您不需要为达到完美而感到压力。AiCasso 非常擅长理解您的意思，所以您可以随意或详细地描述。祝您创作愉快！</p>
+    <p>请记住，您不需要担心一切都完美。AiCasso在理解您的意思方面相当不错，因此请随意保持随意或详细。祝您创作愉快！</p>
 
 </body>
 </html>

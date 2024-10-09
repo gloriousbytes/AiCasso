@@ -3,278 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vidokezo vya Kipengele cha Repaint</title>
+    <title>Vidokezo vya Kipengele cha Uchoraji Upya</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+         body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Inahakikisha picha haiwezi kupita mipaka ya kontena */
+    height: auto;     /* Inahifadhi uwiano wa picha */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
-    <h2>Vidokezo vya Kipengele cha Repaint</h2>
-    <p>Kutumia kipengele cha Inpaint katika AiCasso hukuruhusu kubadilisha maeneo maalum ya picha kwa kujaza au kubadilisha. Iwe unataka kuboresha picha iliyopo au kubadilisha kabisa sehemu fulani, AiCasso hufanya mchakato kuwa rahisi. Chagua tu maeneo unayotaka kubadilisha, toa maelekezo, na acha AiCasso ifanye uchawi wake.</p>
+    <h2>Vidokezo vya Kipengele cha Uchoraji Upya</h2>
+    <p>Kutumia kipengele cha Uchoraji ndani ya AiCasso kunakuruhusu kubadilisha maeneo maalum ya picha kwa kujaza au kubadilisha. Iwe unataka kuboresha picha iliyopo au kubadilisha kabisa sehemu fulani, AiCasso inafanya mchakato kuwa rahisi. Chagua tu maeneo unayotaka kubadilisha, toa maelekezo, na acha AiCasso ifanye uchawi wake.</p>
 
    <h3>Chaguzi:</h3>
 
     <div class="example">
         <strong>Nguvu:</strong>
-        <p>Chaguo la nguvu hudhibiti ni kiasi gani cha picha ya awali kinachobadilishwa na maelekezo. Inatoka 0 hadi 1. Thamani ya 0 inamaanisha picha ya awali inabadilishwa kidogo sana, wakati thamani ya 1 inamaanisha picha ya awali inabadilishwa karibu kabisa na maelezo mapya unayotoa. Fikiria kama jinsi 'nguvu' mabadiliko yako yatakavyokuwa.</p>
+        <p>Chaguo la nguvu linadhibiti kiwango ambacho picha ya asili inabadilishwa na maelekezo. Inatofautiana kutoka 0 hadi 1. Thamani ya 0 inamaanisha picha ya asili haijabadilishwa sana, wakati thamani ya 1 inamaanisha picha ya asili imebadilishwa karibu kabisa na maelezo mapya unayoyaelezea. Fikiria kama jinsi 'nguvu' ya mabadiliko yako itakavyokuwa.</p>
     </div>
 
     <div class="example">
         <strong>Boresha Mtindo:</strong>
-        <p>Chaguo la kuboresha mtindo hukuruhusu kuongeza mtindo maalum wa kisanii au wa kimaudhui kwenye maeneo yaliyobadilishwa. Unaweza kuchagua kutoka kwa aina mbalimbali za mitindo kama:</p>
+        <p>Chaguo la kuboresha mtindo linakuruhusu kuongeza mtindo maalum wa kisanii au wa kimada kwa maeneo yaliyobadilishwa. Unaweza kuchagua kutoka kwa mitindo mbalimbali kama:</p>
     </div>
 
-    <h3>Jinsi Inavyofanya Kazi:</h3>
+    <h3>Inavyofanya Kazi:</h3>
 
-    <div class="example">
-        <strong>Picha ya Kuingiza:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OzuoAKoYvwEW30ScvOjgX9lfe6VpbdNq/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Picha ya Kuingiza:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/inpain/input.jpg" alt="Picha ya Kuingiza">
     </div>
+</div>
 
-    <div class="example">
-        <strong>Paka Maeneo ya Kujazwa au Kubadilishwa:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1-PaOaaDEvMogYhFjiMjUztvsxhllTsQ3/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Paka Maeneo ya Kujazwa au Kubadilishwa:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/inpain/paintareas.jpg" alt="Paka Maeneo">
     </div>
+</div>
 
-    <h3>Mifano:</h3>
+<h3>Mifano:</h3>
 
-    <div class="example">
-        <strong>Maelekezo 1:</strong> "Picha ya paka ya kweli sana katika bustani."
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1BpTJPP7s5CJ-6Yk03s281K6ay6DQ-sFa/preview"></iframe>
-        </div>
-        <p><em>Matokeo:</em> AiCasso itazalisha paka ya kweli sana katika bustani, ikijaza maeneo yaliyopakwa kwa usahihi na textures na mwanga wa kweli.</p>
+<div class="example">
+    <strong>Maelekezo 1:</strong> "Picha ya hyper-realistic ya paka katika bustani."
+    <div class="result">
+        <img src="../../images/tutorials/inpain/catinthepark.jpg" alt="Paka wa hyper-realistic katika bustani">
     </div>
+    <p><em>Matokeo:</em> AiCasso itaunda paka wa hyper-realistic katika bustani, ikijaza maeneo yaliyopakwa rangi kwa urahisi na texture na mwangaza halisi.</p>
+</div>
 
-    <div class="example">
-        <strong>Maelekezo 2:</strong> "Paka katika bustani na mtindo wa kweli sana na nguvu ya 0.7."
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1USCGxNAf0iteIGn8Klp97HI-spTTiREW/preview"></iframe>
-        </div>
-        <p><em>Matokeo:</em> Hii itaunda paka ya kweli sana katika bustani, na nguvu ya marekebisho kuwekwa kwa 0.7, ikichanganya vipengele vipya kwa usahihi katika picha ya awali.</p>
+<div class="example">
+    <strong>Maelekezo 2:</strong> "Paka katika bustani akiwa na mtindo wa hyper-realistic na nguvu ya 0.7."
+    <div class="result">
+        <img src="../../images/tutorials/inpain/catintheparkstrength0.7.jpg" alt="Paka katika bustani nguvu 0.7">
     </div>
+    <p><em>Matokeo:</em> Hii itaunda paka wa hyper-realistic katika bustani, huku nguvu ya mabadiliko ikiwekwa kuwa 0.7, ikichanganya vipengele vipya kwa urahisi katika picha ya asili.</p>
+</div>
 
-  <h3>Boresha Mitindo</h3>
-<p>Hujui ni mtindo gani wa kuchagua? Usijali! Taja tu mtindo wowote unaokuja akilini, hata kama si sahihi kisarufi, na AiCasso itajua kutoka kwenye orodha ya Mitindo ya Kuboresha inayopatikana.</p>
+
+  <h3>Mitindo ya Kuboresha</h3>
+<p>Hujui ni mtindo gani uchague? Usijali! Taja tu mtindo wowote unaokuja akilini, hata kama si sahihi kisarufi, na AiCasso itajua kutoka kwenye orodha ya Mitindo ya Kuboresha inayopatikana.</p>
 
     <ul>
-        <li><strong>Chaguo la Kawaida:</strong> Mtindo wa usawa na wa kawaida bila ushawishi maalum wa kisanii.</li>
+        <li><strong>Default:</strong> Mtindo wa usawa na wa kawaida bila ushawishi maalum wa kisanii.</li>
         <li><strong>Boresha:</strong> Inaboresha kidogo maelezo na uzuri wa jumla.</li>
-        <li><strong>Cinematic Diva:</strong> Inaongeza athari ya sinema yenye tofauti kali za mwanga.</li>
-        <li><strong>Abstract Expressionism:</strong> Inasisitiza maumbo ya kielelezo na rangi za kupendeza.</li>
-        <li><strong>Academia:</strong> Inaongeza mguso wa kitaaluma na wa kiasili kwenye picha.</li>
-        <li><strong>Action Figure:</strong> Inazalisha picha na mtindo wa kupindukia na wa nguvu wa takwimu za hatua.</li>
-        <li><strong>Adorable 3D Character:</strong> Inazalisha wahusika wa 3D wa kupendeza, wa katuni.</li>
+        <li><strong>Cinematic Diva:</strong> Inaongeza athari ya kisiasa, kama filamu, yenye tofauti kubwa za mwangaza.</li>
+        <li><strong>Abstract Expressionism:</strong> Inasisitiza fomu za kiabstrakti na madoido ya rangi angavu.</li>
+        <li><strong>Academia:</strong> Inaongeza mguso wa kitaaluma na wa kiasili kwa picha.</li>
+        <li><strong>Action Figure:</strong> Inaunda picha zenye mtindo wa kupita kiasi na wa nguvu wa vichwa vya vitendo.</li>
+        <li><strong>Adorable 3D Character:</strong> Inazalisha wahusika wa 3D wa kupendeza, kama katuni.</li>
         <li><strong>Adorable Kawaii:</strong> Inasisitiza mtindo wa kupendeza na wa kuvutia wa utamaduni wa Kawaii.</li>
         <li><strong>Art Deco:</strong> Inatumia mtindo wa kijiometri na wa mapambo wa kipindi cha Art Deco.</li>
-        <li><strong>Art Nouveau:</strong> Inaongeza mistari inayotiririka na vipengele vinavyoongozwa na asili, kawaida ya Art Nouveau.</li>
-        <li><strong>Astral Aura:</strong> Inaunda anga ya kimuujiza na ya ulimwengu mwingine.</li>
-        <li><strong>Avant Garde:</strong> Inalenga maonyesho ya kisanii ya ubunifu na ya majaribio.</li>
-        <li><strong>Baroque:</strong> Inatumia mtindo wa kisanii, wa kina, na wa kifahari wa enzi ya Baroque.</li>
-        <li><strong>Bauhaus Style Poster:</strong> Inadhihirisha kanuni za muundo wa minimalist na wa kazi wa Bauhaus.</li>
+        <li><strong>Art Nouveau:</strong> Inaongeza mistari inayotiririka na vipengele vya asili, vya kawaida vya Art Nouveau.</li>
+        <li><strong>Astral Aura:</strong> Inaunda mazingira ya kichawi na yasiyo ya kawaida.</li>
+        <li><strong>Avant Garde:</strong> Inazingatia maonyesho ya kisanii ya ubunifu na ya majaribio.</li>
+        <li><strong>Baroque:</strong> Inatumia mtindo wa kisiasa, wa kina, na wa kupambanua wa enzi ya Baroque.</li>
+        <li><strong>Bauhaus Style Poster:</strong> Inawakilisha kanuni za muundo wa minimalist na wa kazi za Bauhaus.</li>
         <li><strong>Blueprint Schematic Drawing:</strong> Inazalisha picha zinazofanana na michoro ya kiufundi.</li>
-        <li><strong>Caricature:</strong> Inazalisha picha za kupindukia, za katuni.</li>
-        <li><strong>Cel-Shaded Art:</strong> Inatumia rangi za gorofa, zenye ujasiri zinazojulikana kwa uhuishaji wa cel-shaded.</li>
-        <li><strong>Character Design Sheet:</strong> Inalenga miundo safi na wazi ya wahusika inayofaa kwa uhuishaji.</li>
-        <li><strong>Classicism Art:</strong> Inafanana na mtindo wa kisanii na wa kiideali wa Antiquity ya Klasiki.</li>
-        <li><strong>Color Field Painting:</strong> Inaonyesha maeneo makubwa ya rangi moja ili kuunda ndege ya rangi.</li>
-        <li><strong>Colored Pencil Art:</strong> Inafanana na muundo na mwonekano wa michoro ya penseli za rangi.</li>
-        <li><strong>Conceptual Art:</strong> Inapendelea mawazo na dhana juu ya wasiwasi wa uzuri au wa nyenzo.</li>
-        <li><strong>Constructivism:</strong> Inadhihirisha mtindo wa viwanda, wa kijiometri wa harakati ya Constructivist.</li>
-        <li><strong>Cubism:</strong> Inavunja vitu katika maumbo ya kijiometri na kuyawasilisha katika fomu za kielelezo.</li>
-        <li><strong>Dadaism:</strong> Inasisitiza upuuzi, kutokuwa na mantiki, na uzuri wa kupinga sanaa.</li>
-        <li><strong>Dark Fantasy:</strong> Inaunda anga ya giza, ya gothic na vipengele vya kutisha.</li>
-        <li><strong>Dark Moody Atmosphere:</strong> Inatumia mwanga wa chini na kivuli kuunda hali ya hewa ya giza.</li>
-        <li><strong>DMT Art:</strong> Inaonyesha picha za kupendeza, za kisaikolojia zinazoongozwa na uzoefu wa DMT.</li>
-        <li><strong>Doodle Art:</strong> Inasisitiza mitindo ya kuchora ya kuchekesha na ya kucheza, mara nyingi ya kina na ya kina.</li>
-        <li><strong>Double Exposure:</strong> Inachanganya picha mbili kuwa moja, ikitoa athari ya kufikirika, ya tabaka.</li>
-        <li><strong>Dripping Paint Splatter:</strong> Inatumia rangi iliyomwagika na inayodondoka kuunda miundo ya nguvu na ya machafuko.</li>
-        <li><strong>Expressionism:</strong> Inapendelea maonyesho ya kihisia juu ya uwakilishi wa kweli, mara nyingi kwa kutumia rangi za ujasiri na fomu za kisanii.</li>
-        <li><strong>Faded Polaroid Photo:</strong> Inafanana na mwonekano wa zamani na wa kinasaba wa picha ya Polaroid iliyofifia.</li>
-        <li><strong>Fauvism:</strong> Inatumia rangi za kupendeza, zisizo za kawaida na kazi za brashi za ujasiri, zinazoongozwa na harakati ya Fauvist.</li>
-        <li><strong>Flat 2D:</strong> Inasisitiza miundo rahisi, ya gorofa na kivuli kidogo au kina, mara nyingi katika mtindo wa katuni.</li>
-        <li><strong>Fortnite Style:</strong> Inadhihirisha mtindo wa kisanii wa kupendeza, wa katuni unaojulikana kwa mchezo wa video wa Fortnite.</li>
-        <li><strong>Futurism:</strong> Inalenga harakati za nguvu, nishati, na taswira ya teknolojia za baadaye.</li>
-        <li><strong>Glitchcore:</strong> Inasisitiza makosa ya kidijitali na glitches kama mtindo wa kisanii, mara nyingi na picha zilizopotoka.</li>
-        <li><strong>Glo-Fi:</strong> Inatumia mwanga laini, unaong'aa kuunda anga ya ndoto, ya kimuujiza.</li>
-        <li><strong>Googie Style:</strong> Inadhihirisha mitindo ya muundo wa siku zijazo na wa Space Age wa katikati ya karne ya 20.</li>
-        <li><strong>Graffiti Art:</strong> Inatumia uzuri wa mitindo ya barabarani unaojulikana kwa graffiti na michoro za mijini.</li>
-        <li><strong>Harlem Renaissance Art:</strong> Inadhihirisha maonyesho ya kitamaduni na kisanii ya Harlem Renaissance.</li>
-        <li><strong>High Fashion:</strong> Inasisitiza uzuri wa kisasa, wa kifahari, na wa kisasa wa mitindo ya juu.</li>
-        <li><strong>Idyllic:</strong> Inaunda anga ya amani, tulivu, na mara nyingi ya mashambani.</li>
-        <li><strong>Impressionism:</strong> Inatumia kazi ya brashi huru na rangi za kupendeza ili kukamata athari za mwanga na anga.</li>
-        <li><strong>Infographic Drawing:</strong> Inasisitiza mipangilio wazi, ya kuvutia kwa macho kwa ajili ya kuwasilisha taarifa kwa njia ya picha.</li>
-        <li><strong>Ink Dripping Drawing:</strong> Inatumia wino kuunda athari za kioevu, zinazodondoka katika mchoro.</li>
-        <li><strong>Japanese Ink Drawing:</strong> Inafanana na mbinu za brashi za jadi na uzuri wa sanaa ya wino wa Kijapani.</li>
-        <li><strong>Knolling Photography:</strong> Inasisitiza mpangilio safi na uliopangwa wa vitu, mara nyingi hupigwa picha kutoka juu.</li>
-        <li><strong>Light Cheery Atmosphere:</strong> Inatumia rangi na mwanga mkali kuunda anga ya furaha na ya kuinua.</li>
-        <li><strong>Logo Design:</strong> Inalenga kuunda nembo safi, zinazotambulika na vipengele vya chapa.</li>
-        <li><strong>Luxurious Elegance:</strong> Inasisitiza uzuri na anasa, mara nyingi na textures na vifaa vya tajiri.</li>
-        <li><strong>Macro Photography:</strong> Inalenga picha za karibu sana, mara nyingi kufichua maelezo ya kina ambayo hayaonekani kwa macho ya kawaida.</li>
-        <li><strong>Mandala Art:</strong> Inaunda miundo ya kina, ya kielelezo inayotokana na miundo ya jadi ya mandala.</li>
-        <li><strong>Marker Drawing:</strong> Inafanana na mistari ya ujasiri, yenye rangi zinazojulikana kwa michoro za alama.</li>
-        <li><strong>Medievalism:</strong> Inadhihirisha uzuri wa sanaa na muundo wa kipindi cha Medieval.</li>
-        <li><strong>Minimalism:</strong> Inasisitiza urahisi na kupunguza fomu kwa vipengele vyao muhimu.</li>
-        <li><strong>Neo-Baroque:</strong> Inafufua mtindo wa kifahari, wa kisanii wa kipindi cha Baroque, na ushawishi wa kisasa.</li>
-        <li><strong>Neo-Byzantine:</strong> Inachanganya mtindo wa kisanii wa kidini wa Byzantine na vipengele vya kisasa.</li>
-        <li><strong>Neo-Futurism:</strong> Inalenga miundo ya siku zijazo, mara nyingi na uzuri wa kisasa, wa teknolojia ya juu.</li>
-        <li><strong>Neo-Impressionism:</strong> Inatumia nukta ndogo, tofauti za rangi kuunda picha, zinazoongozwa na harakati ya Neo-Impressionist.</li>
-        <li><strong>Neo-Rococo:</strong> Inafufua mtindo wa kisanii, wa mapambo wa kipindi cha Rococo, na twists za kisasa.</li>
-        <li><strong>Neoclassicism:</strong> Inafanana na uzuri wa sanaa na muundo wa Antiquity ya Klasiki, ikisisitiza maelewano na urahisi.</li>
-        <li><strong>Op Art:</strong> Inaunda udanganyifu wa macho na athari kupitia matumizi ya miundo ya kijiometri na tofauti.</li>
-        <li><strong>Ornate and Intricate:</strong> Inalenga miundo ya kina, ya kisanii yenye lengo la mapambo.</li>
-        <li><strong>Pencil Sketch Drawing:</strong> Inafanana na muundo na mwonekano wa michoro za penseli.</li>
-        <li><strong>Pop Art:</strong> Inatumia rangi za ujasiri na picha zinazoongozwa na utamaduni maarufu na vyombo vya habari vya umma.</li>
-        <li><strong>Rococo:</strong> Inadhihirisha mtindo wa kisanii, wa mapambo wa kipindi cha Rococo, na msisitizo wa wepesi na uzuri.</li>
-        <li><strong>Silhouette Art:</strong> Inatumia tofauti kali kati ya mwanga na kivuli kuunda picha za msingi za silhouette.</li>
-        <li><strong>Simple Vector Art:</strong> Inasisitiza maumbo safi, ya kijiometri na rangi za gorofa, zinazojulikana kwa sanaa ya vector.</li>
-        <li><strong>SketchUp:</strong> Inafanana na mwonekano na hisia za mifano ya 3D iliyoundwa kwa kutumia programu ya SketchUp.</li>
-        <li><strong>Steampunk:</strong> Inachanganya uzuri wa enzi ya Victoria na teknolojia inayotumia mvuke, ikitoa mtindo wa siku za nyuma.</li>
-        <li><strong>Surrealism:</strong> Inachanganya ukweli na picha za ndoto ili kuunda mandhari za kufikirika, za kimuujiza.</li>
-        <li><strong>Suprematism:</strong> Inalenga maumbo ya kijiometri ya msingi na palettes za rangi ndogo, zinazoongozwa na harakati ya Suprematist.</li>
-        <li><strong>Terragen:</strong> Inafanana na mandhari halisi, zinazozalishwa kwa kompyuta zilizoundwa kwa kutumia programu ya Terragen.</li>
-        <li><strong>Tranquil Relaxing Atmosphere:</strong> Inatumia rangi laini na picha za kutuliza kuunda mazingira ya amani na utulivu.</li>
-        <li><strong>Sticker Designs:</strong> Inalenga kuunda picha za kuchekesha, za katuni zinazofaa kwa stika.</li>
-        <li><strong>Vibrant Rim Light:</strong> Inasisitiza mwanga mkali, wa ukingo kuzunguka masomo ili kuunda athari ya kupendeza, ya kupendeza.</li>
-        <li><strong>Volumetric Lighting:</strong> Inatumia miale ya mwanga na athari za anga ili kuunda kina na mwelekeo.</li>
-        <li><strong>Watercolor:</strong> Inafanana na textures laini, zinazotiririka za michoro za rangi ya maji.</li>
-        <li><strong>Whimsical and Playful:</strong> Inalenga picha za kupendeza, za kufikiria, na mara nyingi za kuchekesha.</li>
-        <li><strong>Sharp:</strong> Inaboresha uwazi na ufafanuzi wa makali kwa mwonekano mkali zaidi.</li>
-        <li><strong>Masterpiece:</strong> Inasisitiza ubora wa juu, wa kina, na wa kisanii wa kisanii.</li>
-        <li><strong>Photograph:</strong> Inalenga ubora wa kweli na wa maisha kama wa picha.</li>
-        <li><strong>Negative:</strong> Inabadilisha rangi ili kuunda athari ya hasi ya picha.</li>
-        <li><strong>Ads - Advertising:</strong> Inalenga picha safi, za kitaalamu zinazofaa kwa matangazo.</li>
-        <li><strong>Ads - Automotive:</strong> Inaboresha mtindo wa kuona kwa matangazo ya magari yenye nguvu na yaliyosafishwa.</li>
-        <li><strong>Ads - Corporate:</strong> Inasisitiza muundo wa kisasa, wa kitaalamu unaofaa kwa mazingira ya kampuni.</li>
-        <li><strong>Ads - Fashion Editorial:</strong> Inasisitiza mwonekano wa mitindo ya juu, unaotumika katika majarida ya mitindo.</li>
-        <li><strong>Ads - Food Photography:</strong> Inaboresha picha kwa mwonekano wa kupendeza na wa kupendeza unaojulikana kwa upigaji picha wa chakula.</li>
-        <li><strong>Ads - Gourmet Food Photography:</strong> Inasisitiza uzuri wa kina, wa kina wa upigaji picha wa chakula cha gourmet.</li>
-        <li><strong>Ads - Luxury:</strong> Inalenga mtindo wa kifahari, wa hali ya juu unaofaa kwa bidhaa za kifahari.</li>
-        <li><strong>Ads - Real Estate:</strong> Inasisitiza picha safi na za kuvutia zinazojulikana kwa matangazo ya mali isiyohamishika.</li>
+        <li><strong>Caricature:</strong> Inaunda picha za kupita kiasi, za katuni.</li>
+        <li><strong>Cel-Shaded Art:</strong> Inatumia rangi za usawa, zenye nguvu za katuni za cel-shaded.</li>
+        <li><strong>Character Design Sheet:</strong> Inazingatia muundo safi na wazi wa wahusika unaofaa kwa uhuishaji.</li>
+        <li><strong>Classicism Art:</strong> Inakumbatia mtindo wa sanaa wa hali ya juu na wa kipekee wa Enzi ya Kale.</li>
+        <li><strong>Color Field Painting:</strong> Inajumuisha maeneo makubwa ya rangi moja ili kuunda uwanja wa rangi.</li>
+        <li><strong>Colored Pencil Art:</strong> Inafanana na texture na muonekano wa michoro ya penseli za rangi.</li>
+        <li><strong>Conceptual Art:</strong> Inazingatia mawazo na dhana zaidi kuliko wasifu wa kisanii au wa nyenzo.</li>
+        <li><strong>Constructivism:</strong> Inawakilisha mtindo wa viwanda, wa kijiometri wa harakati ya Constructivist.</li>
+        <li><strong>Cubism:</strong> Inavunja vitu kuwa katika sura za kijiometri na kuwasilisha katika fomu za kiabstrakti.</li>
+        <li><strong>Dadaism:</strong> Inasisitiza upuuzi, kutokuwa na mantiki, na aesthetics za anti-sanaa.</li>
+        <li><strong>Dark Fantasy:</strong> Inaunda mazingira ya giza, ya gothic yenye vipengele vya giza na vya kutisha.</li>
+        <li><strong>Dark Moody Atmosphere:</strong> Inatumia mwangaza wa chini na kivuli kuunda mazingira ya giza.</li>
+        <li><strong>DMT Art:</strong> Inajumuisha picha za rangi angavu, za psychedelic zinazohusiana na uzoefu wa DMT.</li>
+        <li><strong>Doodle Art:</strong> Inasisitiza mitindo ya uchoraji ya ajabu na ya kuchekesha, mara nyingi yenye maelezo mengi.</li>
+        <li><strong>Double Exposure:</strong> Inachanganya picha mbili kuwa moja, kuunda athari ya surreal, ya tabaka.</li>
+        <li><strong>Dripping Paint Splatter:</strong> Inatumia rangi iliyomwagika na kumwagika kuunda muundo wa nguvu na wa machafuko.</li>
+        <li><strong>Expressionism:</strong> Inazingatia kujieleza kihisia zaidi kuliko uwakilishi halisi, mara nyingi ikitumia rangi zenye nguvu na fomu za kisiasa.</li>
+        <li><strong>Faded Polaroid Photo:</strong> Inafanana na muonekano wa zamani na wa nostalgia wa picha ya Polaroid iliyofifia.</li>
+        <li><strong>Fauvism:</strong> Inatumia rangi angavu, zisizo za kawaida na uchoraji wenye nguvu, unaohusishwa na harakati ya Fauvist.</li>
+        <li><strong>Flat 2D:</strong> Inasisitiza muundo rahisi, wa gorofa wenye kivuli kidogo au kina, mara nyingi katika mtindo wa katuni.</li>
+        <li><strong>Fortnite Style:</strong> Inawakilisha mtindo wa sanaa wa rangi angavu, wa katuni unaojulikana na mchezo wa Fortnite.</li>
+        <li><strong>Futurism:</strong> Inazingatia mwendo wa nguvu, nishati, na uwasilishaji wa teknolojia za baadaye.</li>
+        <li><strong>Glitchcore:</strong> Inasisitiza makosa ya kidijitali na glitches kama mtindo wa kisanii, mara nyingi ikiwa na picha zilizopotoka.</li>
+        <li><strong>Glo-Fi:</strong> Inatumia mwangaza laini, unaong'ara kuunda mazingira ya ndoto, ya ethereal.</li>
+        <li><strong>Googie Style:</strong> Inawakilisha mitindo ya muundo wa kisasa na ya Enzi ya Anga ya katikati ya karne ya 20.</li>
+        <li><strong>Graffiti Art:</strong> Inatumia aesthetics za mitaani, zenye nguvu zinazojulikana na graffiti na mural za mijini.</li>
+        <li><strong>Harlem Renaissance Art:</strong> Inawakilisha maonyesho tajiri ya kitamaduni na kisanii ya Renaissance ya Harlem.</li>
+        <li><strong>High Fashion:</strong> Inasisitiza aesthetics za kisasa, za kisasa, na za avant-garde za mitindo ya juu.</li>
+        <li><strong>Idyllic:</strong> Inaunda mazingira ya amani, tulivu, na mara nyingi ya kijadi.</li>
+        <li><strong>Impressionism:</strong> Inatumia uchoraji wa huru na rangi angavu ili kukamata athari za mwangaza na mazingira.</li>
+        <li><strong>Infographic Drawing:</strong> Inasisitiza muundo wazi, wa kuvutia wa kuwasilisha habari kwa njia ya picha.</li>
+        <li><strong>Ink Dripping Drawing:</strong> Inatumia wino kuunda athari za kumwagika, zinazotiririka katika uchoraji.</li>
+        <li><strong>Japanese Ink Drawing:</strong> Inafanana na mbinu za jadi za kupiga rangi na aesthetics za sanaa ya wino ya Kijapani.</li>
+        <li><strong>Knolling Photography:</strong> Inasisitiza mpangilio safi na ulioandaliwa wa vitu, mara nyingi ikipigwa picha kutoka juu.</li>
+        <li><strong>Light Cheery Atmosphere:</strong> Inatumia rangi angavu na mwangaza kuunda mazingira ya furaha na ya kuinua moyo.</li>
+        <li><strong>Logo Design:</strong> Inazingatia kuunda nembo safi, zinazotambulika na vipengele vya chapa.</li>
+        <li><strong>Luxurious Elegance:</strong> Inasisitiza sophistication na anasa, mara nyingi ikiwa na texture na nyenzo tajiri.</li>
+        <li><strong>Macro Photography:</strong> Inazingatia picha za karibu sana, mara nyingi ikifunua maelezo ya kina yasiyoonekana kwa jicho la kawaida.</li>
+        <li><strong>Mandala Art:</strong> Inaunda mifumo ya kipekee, ya usawa iliyo na msukumo kutoka kwa michoro ya mandala ya jadi.</li>
+        <li><strong>Marker Drawing:</strong> Inafanana na mistari yenye nguvu, angavu na rangi zinazojulikana na michoro ya alama.</li>
+        <li><strong>Medievalism:</strong> Inawakilisha sanaa na aesthetics za muundo wa kipindi cha Kati.</li>
+        <li><strong>Minimalism:</strong> Inasisitiza urahisi na kupunguza fomu hadi vipengele vyao muhimu.</li>
+        <li><strong>Neo-Baroque:</strong> Inarejesha mtindo wa kifahari, wa kisiasa wa kipindi cha Baroque, ikiwa na ushawishi wa kisasa.</li>
+        <li><strong>Neo-Byzantine:</strong> Inachanganya mtindo wa sanaa ya kidini ya Byzantine na vipengele vya kisasa.</li>
+        <li><strong>Neo-Futurism:</strong> Inazingatia muundo wa kisasa, mara nyingi ikiwa na aesthetics za kisasa, za teknolojia ya juu.</li>
+        <li><strong>Neo-Impressionism:</strong> Inatumia alama ndogo, tofauti za rangi kuunda picha, ikitokana na harakati ya Neo-Impressionist.</li>
+        <li><strong>Neo-Rococo:</strong> Inarejesha mtindo wa kupambanua, wa mapambo wa kipindi cha Rococo, ikiwa na mabadiliko ya kisasa.</li>
+        <li><strong>Neoclassicism:</strong> Inakumbatia sanaa na aesthetics za muundo wa Kale, ikisisitiza usawa na urahisi.</li>
+        <li><strong>Op Art:</strong> Inaunda udanganyifu wa macho na athari kupitia matumizi ya mifumo ya kijiometri na tofauti.</li>
+        <li><strong>Ornate and Intricate:</strong> Inazingatia muundo wa kina, wa kupambanua wenye mkazo wa mapambo.</li>
+        <li><strong>Pencil Sketch Drawing:</strong> Inafanana na texture na muonekano wa michoro ya penseli.</li>
+        <li><strong>Pop Art:</strong> Inatumia rangi zenye nguvu na picha zinazohusishwa na utamaduni maarufu na vyombo vya habari.</li>
+        <li><strong>Rococo:</strong> Inawakilisha mtindo wa kupambanua, wa mapambo wa kipindi cha Rococo, ikisisitiza mwanga na uzuri.</li>
+        <li><strong>Silhouette Art:</strong> Inatumia tofauti kubwa kati ya mwangaza na kivuli kuunda picha za silhouette.</li>
+        <li><strong>Simple Vector Art:</strong> Inasisitiza sura safi, za kijiometri na rangi gorofa, zinazojulikana na sanaa ya vector.</li>
+        <li><strong>SketchUp:</strong> Inafanana na muonekano na hisia za mifano ya 3D iliyoundwa kwa kutumia programu ya SketchUp.</li>
+        <li><strong>Steampunk:</strong> Inachanganya aesthetics za enzi ya Victorian na teknolojia inayotumia mvuke, kuunda mtindo wa retro-futuristic.</li>
+        <li><strong>Surrealism:</strong> Inachanganya ukweli na picha za ndoto ili kuunda mandhari za surreal, za kufikirika.</li>
+        <li><strong>Suprematism:</strong> Inazingatia fomu za kijiometri za msingi na palettes za rangi zilizopunguzwa, ikitokana na harakati ya Suprematist.</li>
+        <li><strong>Terragen:</strong> Inafanana na mandhari halisi, zinazoundwa na kompyuta kwa kutumia programu ya Terragen.</li>
+        <li><strong>Tranquil Relaxing Atmosphere:</strong> Inatumia rangi laini na picha za kutuliza kuunda mazingira ya amani na tulivu.</li>
+        <li><strong>Sticker Designs:</strong> Inazingatia kuunda picha za kuchekesha, za katuni zinazofaa kwa stika.</li>
+        <li><strong>Vibrant Rim Light:</strong> Inasisitiza mwangaza mkali wa rim kuzunguka wahusika ili kuunda athari ya kuvutia, yenye nguvu.</li>
+        <li><strong>Volumetric Lighting:</strong> Inatumia miale ya mwangaza na athari za anga kuunda kina na vipimo.</li>
+        <li><strong>Watercolor:</strong> Inafanana na texture laini, zinazotiririka za picha za maji.</li>
+        <li><strong>Whimsical and Playful:</strong> Inazingatia picha za furaha, za kufikirika, na mara nyingi za ajabu.</li>
+        <li><strong>Sharp:</strong> Inaboresha uwazi na ufafanuzi wa pembeni kwa muonekano wa wazi zaidi.</li>
+        <li><strong>Masterpiece:</strong> Inasisitiza ubora wa juu, wa kina, na matokeo ya kisanii yaliyosafishwa.</li>
+        <li><strong>Photograph:</strong> Inalenga ubora wa picha halisi na wa maisha.</li>
+        <li><strong>Negative:</strong> Inabadilisha rangi ili kuunda athari ya picha hasi.</li>
+        <li><strong>Ads - Advertising:</strong> Inazingatia picha safi, za kitaalamu zinazofaa kwa matangazo.</li>
+        <li><strong>Ads - Automotive:</strong> Inaboresha mtindo wa picha kwa matangazo ya magari yenye nguvu na yaliyosafishwa.</li>
+        <li><strong>Ads - Corporate:</strong> Inasisitiza muundo safi, wa kitaalamu unaofaa kwa mazingira ya kampuni.</li>
+        <li><strong>Ads - Fashion Editorial:</strong> Inasisitiza muonekano wa kisasa, wa mitindo ya juu unaotumiwa katika wahariri wa mitindo.</li>
+        <li><strong>Ads - Food Photography:</strong> Inaboresha picha kwa muonekano wa kuvutia na wa kupendeza unaojulikana na picha za chakula.</li>
+        <li><strong>Ads - Gourmet Food Photography:</strong> Inasisitiza aesthetics tajiri, za kina za picha za chakula cha gourmet.</li>
+        <li><strong>Ads - Luxury:</strong> Inazingatia mtindo wa kifahari, wa juu unaofaa kwa chapa za anasa.</li>
+        <li><strong>Ads - Real Estate:</strong> Inasisitiza picha safi na za kukaribisha zinazojulikana na matangazo ya mali isiyohamishika.</li>
         <li><strong>Ads - Retail:</strong> Inasisitiza mtindo wa kuvutia, unaolenga watumiaji unaofaa kwa matangazo ya rejareja.</li>
-        <li><strong>Hyperrealism:</strong> Inalenga mtindo wa kuona wa kina sana, wa maisha kama.</li>
-        <li><strong>Pointillism:</strong> Inatumia nukta ndogo, tofauti za rangi kuunda picha, zinazoongozwa na harakati ya Pointillist.</li>
-        <li><strong>Psychedelic:</strong> Inasisitiza rangi za kupendeza na picha za kufikirika zinazoongozwa na sanaa ya kisaikolojia.</li>
-        <li><strong>Renaissance:</strong> Inadhihirisha mtindo wa kisanii, wa kiasili wa sanaa ya Renaissance.</li>
-        <li><strong>Typography:</strong> Inalenga matumizi ya ubunifu na ya kisanii ya maandishi na fonti.</li>
-        <li><strong>Futuristic Biomechanical:</strong> Inachanganya vipengele vya siku zijazo na vya kibaiolojia ili kuunda mtindo wa teknolojia ya juu, wa kikaboni.</li>
-        <li><strong>Futuristic Biomechanical Cyberpunk:</strong> Inachanganya uzuri wa kibaiolojia na wa cyberpunk kwa mwonekano wa giza, wa siku zijazo.</li>
-        <li><strong>Futuristic Cybernetic:</strong> Inalenga picha za teknolojia ya juu, za kibaiolojia.</li>
-        <li><strong>Futuristic Cybernetic Robot:</strong> Inasisitiza miundo ya roboti na ya kibaiolojia yenye makali ya siku zijazo.</li>
-        <li><strong>Futuristic Cyberpunk Cityscape:</strong> Inadhihirisha mandhari ya jiji yenye mwanga wa neon, ya giza inayojulikana kwa sanaa ya cyberpunk.</li>
-        <li><strong>Futuristic Sci-Fi:</strong> Inalenga uzuri wa siku zijazo na unaoongozwa na hadithi za sayansi.</li>
-        <li><strong>Futuristic Retro Cyberpunk:</strong> Inachanganya vipengele vya zamani na vya cyberpunk kwa mtindo wa kinasaba lakini wa siku zijazo.</li>
-        <li><strong>Futuristic Retro:</strong> Inachanganya picha za siku zijazo na vipengele vya muundo wa zamani.</li>
-        <li><strong>Futuristic Vaporwave:</strong> Inasisitiza picha za kinasaba, za kufikirika zinazojulikana kwa sanaa ya Vaporwave.</li>
-        <li><strong>Game Bubble:</strong> Inalenga uzuri wa kuchekesha, wa kupendeza unaoonekana katika michezo ya kawaida.</li>
-        <li><strong>Game Cyberpunk:</strong> Inachanganya vipengele vya muundo wa mchezo na uzuri wa cyberpunk.</li>
-        <li><strong>Game Fighting:</strong> Inadhihirisha mtindo wa nguvu, wa nguvu unaojulikana kwa michezo ya mapigano.</li>
-        <li><strong>Game GTA:</strong> Inafanana na mtindo wa jiji, wa mijini unaojulikana kwa michezo ya Grand Theft Auto.</li>
-        <li><strong>Game Mario:</strong> Inalenga mtindo wa kupendeza, wa katuni unaojulikana kwa michezo ya Mario.</li>
-        <li><strong>Game Minecraft:</strong> Inafanana na mtindo wa blocky, wa pixelated unaojulikana kwa Minecraft.</li>
-        <li><strong>Game Pokemon:</strong> Inadhihirisha mtindo wa kupendeza, unaoongozwa na anime unaojulikana kwa michezo ya Pokémon.</li>
-        <li><strong>Game Retro Arcade:</strong> Inasisitiza mtindo wa kinasaba, wa pixelated unaojulikana kwa michezo ya zamani ya arcade.</li>
-        <li><strong>Game RPG Fantasy:</strong> Inadhihirisha uzuri wa kina, unaoongozwa na hadithi za kufikirika unaojulikana kwa michezo ya RPG.</li>
-        <li><strong>Game Strategy:</strong> Inalenga muundo safi, wa kazi unaojulikana kwa michezo ya mkakati.</li>
-        <li><strong>Game Streetfighter:</strong> Inafanana na mtindo wa ujasiri, wa nguvu unaojulikana kwa michezo ya Street Fighter.</li>
-        <li><strong>Game Zelda:</strong> Inadhihirisha mtindo unaoongozwa na hadithi za kufikirika unaojulikana kwa michezo ya Zelda.</li>
-        <li><strong>Misc Architectural:</strong> Inalenga michoro safi, sahihi ya usanifu.</li>
-        <li><strong>Misc Disco:</strong> Inasisitiza uzuri wa mwanga wa neon unaojulikana kwa utamaduni wa disco.</li>
-        <li><strong>Misc Dreamscape:</strong> Inaunda mazingira ya kufikirika, ya ndoto.</li>
-        <li><strong>Misc Dystopian:</strong> Inadhihirisha picha za giza, za kutisha zinazojulikana kwa mipangilio ya dystopian.</li>
-        <li><strong>Misc Fairy Tale:</strong> Inasisitiza vipengele vya kufikirika, vya kichawi vinavyojulikana kwa hadithi za hadithi.</li>
-        <li><strong>Misc Gothic:</strong> Inadhihirisha mtindo wa giza, wa mapambo unaojulikana kwa sanaa na usanifu wa Gothic.</li>
-        <li><strong>Misc Grunge:</strong> Inasisitiza uzuri wa giza, wa kiasili unaojulikana kwa utamaduni wa grunge.</li>
-        <li><strong>Misc Horror:</strong> Inalenga picha za giza, za kutisha, na za kutisha zinazojulikana kwa kutisha.</li>
-        <li><strong>Misc Kawaii:</strong> Inadhihirisha mtindo wa kupendeza, wa kuvutia unaojulikana kwa utamaduni wa Kawaii.</li>
-        <li><strong>Misc Lovecraftian:</strong> Inasisitiza hofu ya giza, ya ulimwengu inayojulikana kwa hadithi za Lovecraftian.</li>
-        <li><strong>Misc Macabre:</strong> Inalenga mandhari ya giza, ya kutisha, na ya kutisha.</li>
-        <li><strong>Misc Manga:</strong> Inafanana na mtindo wa ujasiri, wa nguvu unaojulikana kwa manga.</li>
-        <li><strong>Misc Metropolis:</strong> Inadhihirisha uzuri wa kisasa, wa mijini unaojulikana kwa miji mikubwa ya kisasa.</li>
-        <li><strong>Misc Minimalist:</strong> Inasisitiza urahisi na kupunguza fomu kwa vipengele vyao muhimu.</li>
-        <li><strong>Misc Monochrome:</strong> Inalenga picha zilizoundwa kwa vivuli tofauti vya rangi moja.</li>
-        <li><strong>Misc Nautical:</strong> Inadhihirisha uzuri wa baharini unaojulikana kwa mandhari ya baharini.</li>
-        <li><strong>Misc Space:</strong> Inasisitiza picha za kimuujiza, za ulimwengu zinazojulikana kwa mipangilio ya nafasi.</li>
-        <li><strong>Misc Stained Glass:</strong> Inafanana na miundo ya kina, ya rangi inayojulikana kwa sanaa ya glasi ya rangi.</li>
-        <li><strong>Misc Techwear Fashion:</strong> Inalenga uzuri wa kisasa, wa kazi unaojulikana kwa mitindo ya techwear.</li>
-        <li><strong>Misc Tribal:</strong> Inadhihirisha uzuri wa kiasili, wa kitamaduni unaojulikana kwa sanaa ya kikabila.</li>
-        <li><strong>Misc Zentangle:</strong> Inasisitiza miundo ya kina, ya kurudia inayojulikana kwa sanaa ya Zentangle.</li>
-        <li><strong>Papercraft Collage:</strong> Inatumia karatasi iliyokatwa kuunda collages za tabaka, zenye muundo.</li>
-        <li><strong>Papercraft Flat Papercut:</strong> Inasisitiza miundo ya karatasi iliyokatwa, ya gorofa.</li>
-        <li><strong>Papercraft Kirigami:</strong> Inalenga miundo ya kina, iliyokunjwa inayojulikana kwa Kirigami.</li>
-        <li><strong>Papercraft Paper Mache:</strong> Inatumia karatasi mache kuunda fomu za muundo, za tatu-dimensional.</li>
-        <li><strong>Papercraft Paper Quilling:</strong> Inasisitiza miundo ya karatasi iliyoviringishwa, ya maridadi inayojulikana kwa quilling ya karatasi.</li>
+        <li><strong>Hyperrealism:</strong> Inalenga mtindo wa picha wa kina, wa maisha.</li>
+        <li><strong>Pointillism:</strong> Inatumia alama ndogo, tofauti za rangi kuunda picha, ikitokana na harakati ya Pointillist.</li>
+        <li><strong>Psychedelic:</strong> Inasisitiza rangi angavu na picha za surreal zinazohusishwa na sanaa ya psychedelic.</li>
+        <li><strong>Renaissance:</strong> Inawakilisha mtindo wa kisasa, wa kisasa wa sanaa ya Renaissance.</li>
+        <li><strong>Typography:</strong> Inazingatia matumizi ya ubunifu na kisanii ya maandiko na fonti.</li>
+        <li><strong>Futuristic Biomechanical:</strong> Inachanganya vipengele vya kisasa na vya biomechanical kuunda mtindo wa teknolojia ya juu, wa kikaboni.</li>
+        <li><strong>Futuristic Biomechanical Cyberpunk:</strong> Inachanganya aesthetics za biomechanical na cyberpunk kwa muonekano wa kisasa, wa kisasa.</li>
+        <li><strong>Futuristic Cybernetic:</strong> Inazingatia picha za kisasa, za cybernetic.</li>
+        <li><strong>Futuristic Cybernetic Robot:</strong> Inasisitiza muundo wa roboti na wa cybernetic wenye mtindo wa kisasa.</li>
+        <li><strong>Futuristic Cyberpunk Cityscape:</strong> Inawakilisha mandhari za mijini zenye giza, zinazong'ara za cyberpunk.</li>
+        <li><strong>Futuristic Sci-Fi:</strong> Inazingatia aesthetics za kisasa na za sayansi ya kufikirika.</li>
+        <li><strong>Futuristic Retro Cyberpunk:</strong> Inachanganya vipengele vya retro na cyberpunk kwa mtindo wa nostalgia lakini wa kisasa.</li>
+        <li><strong>Futuristic Retro:</strong> Inachanganya picha za kisasa na vipengele vya muundo wa zamani.</li>
+        <li><strong>Futuristic Vaporwave:</strong> Inasisitiza picha za nostalgia, za surreal zinazojulikana na sanaa ya Vaporwave.</li>
+        <li><strong>Game Bubble:</strong> Inazingatia aesthetics ya kuchekesha, ya bubbly inayojulikana katika michezo ya kawaida.</li>
+        <li><strong>Game Cyberpunk:</strong> Inachanganya vipengele vya muundo wa mchezo na aesthetics za cyberpunk.</li>
+        <li><strong>Game Fighting:</strong> Inawakilisha mtindo wa nguvu, wa kusisimua unaojulikana na michezo ya kupigana.</li>
+        <li><strong>Game GTA:</strong> Inafanana na mtindo wa giza, wa mijini unaojulikana na michezo ya Grand Theft Auto.</li>
+        <li><strong>Game Mario:</strong> Inazingatia mtindo wa rangi angavu, wa katuni unaojulikana na michezo ya Mario.</li>
+        <li><strong>Game Minecraft:</strong> Inafanana na mtindo wa blocky, wa pixel unaojulikana na Minecraft.</li>
+        <li><strong>Game Pokemon:</strong> Inawakilisha mtindo wa rangi angavu, wa anime unaojulikana na michezo ya Pokémon.</li>
+        <li><strong>Game Retro Arcade:</strong> Inasisitiza mtindo wa nostalgia, wa pixel unaojulikana na michezo ya zamani ya arcade.</li>
+        <li><strong>Game RPG Fantasy:</strong> Inawakilisha aesthetics za kina, zinazohusishwa na fantasy zinazojulikana na michezo ya RPG.</li>
+        <li><strong>Game Strategy:</strong> Inazingatia muundo safi, wa kazi unaojulikana na michezo ya mkakati.</li>
+        <li><strong>Game Streetfighter:</strong> Inafanana na mtindo wa nguvu, wa kusisimua unaojulikana na michezo ya Street Fighter.</li>
+        <li><strong>Game Zelda:</strong> Inawakilisha mtindo wa fantasy unaohusishwa na michezo ya Zelda.</li>
+        <li><strong>Misc Architectural:</strong> Inazingatia uchoraji safi, wa sahihi wa usanifu.</li>
+        <li><strong>Misc Disco:</strong> Inasisitiza aesthetics za rangi angavu, zinazong'ara zinazojulikana na utamaduni wa disco.</li>
+        <li><strong>Misc Dreamscape:</strong> Inaunda mazingira ya surreal, ya ndoto.</li>
+        <li><strong>Misc Dystopian:</strong> Inawakilisha picha za giza, za kukatisha tamaa zinazojulikana na mazingira ya dystopian.</li>
+        <li><strong>Misc Fairy Tale:</strong> Inasisitiza vipengele vya ajabu, vya kichawi vinavyotambulika na hadithi za hadithi.</li>
+        <li><strong>Misc Gothic:</strong> Inawakilisha mtindo wa giza, wa kupambanua unaojulikana na sanaa na usanifu wa Gothic.</li>
+        <li><strong>Misc Grunge:</strong> Inasisitiza aesthetics za giza, za asili zinazojulikana na utamaduni wa grunge.</li>
+        <li><strong>Misc Horror:</strong> Inazingatia picha za giza, za kutisha, na zisizofurahisha zinazojulikana na hofu.</li>
+        <li><strong>Misc Kawaii:</strong> Inawakilisha mtindo wa kupendeza, wa kuvutia unaojulikana na utamaduni wa Kawaii.</li>
+        <li><strong>Misc Lovecraftian:</strong> Inasisitiza hofu ya ajabu, ya cosmic inayojulikana na hadithi za Lovecraft.</li>
+        <li><strong>Misc Macabre:</strong> Inazingatia mada za giza, za kutisha, na zisizofurahisha.</li>
+        <li><strong>Misc Manga:</strong> Inafanana na mtindo wa nguvu, wa kusisimua unaojulikana na manga.</li>
+        <li><strong>Misc Metropolis:</strong> Inawakilisha aesthetics za kisasa, za mijini zinazojulikana na miji ya kisasa.</li>
+        <li><strong>Misc Minimalist:</strong> Inasisitiza urahisi na kupunguza fomu hadi vipengele vyao muhimu.</li>
+        <li><strong>Misc Monochrome:</strong> Inazingatia picha zinazoundwa kwa vivuli tofauti vya rangi moja.</li>
+        <li><strong>Misc Nautical:</strong> Inawakilisha aesthetics zinazohusiana na baharini zinazojulikana na mada za baharini.</li>
+        <li><strong>Misc Space:</strong> Inasisitiza picha kubwa, za ajabu zinazojulikana na mazingira ya anga.</li>
+        <li><strong>Misc Stained Glass:</strong> Inafanana na michoro ya rangi nyingi, za kupambanua zinazojulikana na sanaa ya glasi iliyotiwa rangi.</li>
+        <li><strong>Misc Techwear Fashion:</strong> Inazingatia aesthetics za kisasa, za kazi zinazojulikana na mitindo ya techwear.</li>
+        <li><strong>Misc Tribal:</strong> Inawakilisha aesthetics za kitamaduni, za nguvu zinazojulikana na sanaa ya kabila.</li>
+        <li><strong>Misc Zentangle:</strong> Inasisitiza mifumo ya kurudia, ya kina inayojulikana na sanaa ya Zentangle.</li>
+        <li><strong>Papercraft Collage:</strong> Inatumia karatasi iliyokatwa kuunda collages za tabaka, za texture.</li>
+        <li><strong>Papercraft Flat Papercut:</strong> Inasisitiza muundo wa gorofa, wa karatasi iliyokatwa.</li>
+        <li><strong>Papercraft Kirigami:</strong> Inazingatia muundo wa kipekee, wa kupinda unaojulikana na Kirigami.</li>
+        <li><strong>Papercraft Paper Mache:</strong> Inatumia karatasi ya mache kuunda fomu za texture, za tatu.</li>
+        <li><strong>Papercraft Paper Quilling:</strong> Inasisitiza muundo wa karatasi iliyovutwa, wa kupendeza unaojulikana na quilling ya karatasi.</li>
         <li><strong>Papercraft Papercut Collage:</strong> Inachanganya vipengele vya karatasi iliyokatwa kuunda collages za tabaka.</li>
-        <li><strong>Papercraft Papercut Shadow Box:</strong> Inatumia vipande vya karatasi vilivyokatwa kuunda masanduku ya kivuli ya tatu-dimensional.</li>
-        <li><strong>Papercraft Stacked Papercut:</strong> Inalenga miundo ya karatasi iliyopangwa, iliyopangwa.</li>
-        <li><strong>Papercraft Thick Layered Papercut:</strong> Inasisitiza mwonekano wa tabaka, wa dimensional unaojulikana kwa miundo ya karatasi iliyokatwa nene.</li>
-        <li><strong>Photo Alien:</strong> Inalenga picha za kufikirika, za kigeni.</li>
-        <li><strong>Photo Film Noir:</strong> Inasisitiza uzuri wa giza, wa giza unaojulikana kwa filamu noir.</li>
-        <li><strong>Photo Glamour:</strong> Inasisitiza mwonekano wa kisasa, wa mtindo unaojulikana kwa upigaji picha wa glamour.</li>
-        <li><strong>Photo HDR:</strong> Inatumia mwonekano wa juu wa mwanga (HDR) kuunda picha na anuwai ya mwanga na rangi.</li>
-        <li><strong>Photo iPhone Photographic:</strong> Inafanana na mtindo safi, wa kisasa unaojulikana kwa upigaji picha wa iPhone.</li>
-        <li><strong>Photo Long Exposure:</strong> Inatumia mwonekano wa muda mrefu kuunda athari za mwendo wa mwendo.</li>
-        <li><strong>Photo Neon Noir:</strong> Inachanganya mwanga wa neon na uzuri wa giza, wa giza wa noir.</li>
-        <li><strong>Photo Silhouette:</strong> Inalenga tofauti kali kati ya mwanga na kivuli kuunda picha za msingi za silhouette.</li>
-        <li><strong>Photo Tilt Shift:</strong> Inatumia athari za tilt-shift kuunda mwonekano wa miniaturized, wa toy-like.</li>
-        <li><strong>3D Model:</strong> Inalenga mwonekano safi, wa kina unaojulikana kwa mifano ya 3D.</li>
-        <li><strong>Analog Film:</strong> Inafanana na mwonekano wa nafaka, wa muundo unaojulikana kwa upigaji picha wa filamu ya analogi.</li>
-        <li><strong>Anime:</strong> Inasisitiza mtindo wa kupendeza, wa nguvu unaojulikana kwa anime.</li>
-        <li><strong>Cinematic:</strong> Inaunda athari ya sinema yenye nguvu na muundo wa nguvu.</li>
-        <li><strong>Comic Book:</strong> Inatumia mistari ya ujasiri na rangi za kupendeza zinazojulikana kwa sanaa ya vitabu vya katuni.</li>
-        <li><strong>Craft Clay:</strong> Inafanana na mwonekano wa muundo, wa mikono wa mifano ya udongo.</li>
-        <li><strong>Digital Art:</strong> Inalenga kazi safi, iliyosafishwa ya kisanii ya kidijitali.</li>
-        <li><strong>Fantasy Art:</strong> Inasisitiza picha za kina, za kufikirika zinazojulikana kwa sanaa ya kufikirika.</li>
-        <li><strong>Isometric:</strong> Inatumia mtazamo wa isometric kuunda mwonekano wa tatu-dimensional.</li>
-        <li><strong>Line Art:</strong> Inalenga mistari safi, safi kuunda michoro za kina.</li>
-        <li><strong>Low Poly:</strong> Inatumia mifano ya 3D ya poly ya chini kuunda mwonekano wa minimalist, wa kijiometri.</li>
-        <li><strong>Neonpunk:</strong> Inachanganya mwanga wa neon na uzuri wa cyberpunk.</li>
-        <li><strong>Origami:</strong> Inalenga miundo ya kina, iliyokunjwa inayojulikana kwa origami.</li>
-        <li><strong>Photographic:</strong> Inalenga picha za kweli, za maisha kama.</li>
-        <li><strong>Pixel Art:</strong> Inatumia miundo ya pixelated kuunda mwonekano wa kinasaba, unaoongozwa na mchezo wa video.</li>
-        <li><strong>Texture:</strong> Inalenga textures za kina, za kina ili kuongeza kina cha kuona.</li>
+        <li><strong>Papercraft Papercut Shadow Box:</strong> Inatumia karatasi za tabaka zilizokatwa kuunda masanduku ya kivuli ya tatu.</li>
+        <li><strong>Papercraft Stacked Papercut:</strong> Inazingatia muundo wa karatasi za tabaka, zilizopangwa.</li>
+        <li><strong>Papercraft Thick Layered Papercut:</strong> Inasisitiza muonekano wa tabaka, wa kina unaojulikana na muundo wa karatasi iliyokatwa paks.</li>
+        <li><strong>Photo Alien:</strong> Inazingatia picha za surreal, za kigeni.</li>
+        <li><strong>Photo Film Noir:</strong> Inasisitiza aesthetics za giza, za kukatisha tamaa zinazojulikana na filamu noir.</li>
+        <li><strong>Photo Glamour:</strong> Inasisitiza muonekano wa kisasa, wa mtindo unaojulikana na picha za glamour.</li>
+        <li><strong>Photo HDR:</strong> Inatumia kiwango cha juu cha mwangaza (HDR) kuunda picha zenye anuwai kubwa ya mwangaza na rangi.</li>
+        <li><strong>Photo iPhone Photographic:</strong> Inafanana na mtindo safi, wa kisasa unaojulikana na picha za iPhone.</li>
+        <li><strong>Photo Long Exposure:</strong> Inatumia mrefu wa mwangaza kuunda athari za mwendo, zilizofifia.</li>
+        <li><strong>Photo Neon Noir:</strong> Inachanganya mwangaza wa neon na aesthetics za giza, za kukatisha tamaa za noir.</li>
+        <li><strong>Photo Silhouette:</strong> Inazingatia tofauti kubwa kati ya mwangaza na kivuli kuunda picha za silhouette.</li>
+        <li><strong>Photo Tilt Shift:</strong> Inatumia athari za tilt-shift kuunda muonekano wa miniaturized, wa toy.</li>
+        <li><strong>3D Model:</strong> Inazingatia muonekano safi, wa kina unaojulikana na mifano ya 3D.</li>
+        <li><strong>Analog Film:</strong> Inafanana na muonekano wa nafaka, wa texture unaojulikana na picha za filamu za analog.</li>
+        <li><strong>Anime:</strong> Inasisitiza mtindo wa rangi angavu, wa kusisimua unaojulikana na anime.</li>
+        <li><strong>Cinematic:</strong> Inaunda athari ya kisiasa, kama filamu, yenye mwangaza na muundo mzuri.</li>
+        <li><strong>Comic Book:</strong> Inatumia mistari yenye nguvu na rangi angavu zinazojulikana na sanaa ya vitabu vya katuni.</li>
+        <li><strong>Craft Clay:</strong> Inafanana na muonekano wa texture, wa mikono wa mifano ya udongo.</li>
+        <li><strong>Digital Art:</strong> Inazingatia sanaa ya kidijitali safi, iliyosafishwa.</li>
+        <li><strong>Fantasy Art:</strong> Inasisitiza picha za kina, za kufikirika zinazojulikana na sanaa ya fantasy.</li>
+        <li><strong>Isometric:</strong> Inatumia mtazamo wa isometric kuunda muonekano wa tatu.</li>
+        <li><strong>Line Art:</strong> Inazingatia mistari safi, yenye uwazi kuunda michoro ya kina.</li>
+        <li><strong>Low Poly:</strong> Inatumia mifano ya 3D ya polygon ndogo kuunda muonekano wa minimalist, wa kijiometri.</li>
+        <li><strong>Neonpunk:</strong> Inachanganya mwangaza wa neon na aesthetics za giza za cyberpunk.</li>
+        <li><strong>Origami:</strong> Inazingatia muundo wa kipekee, wa kupinda unaojulikana na origami.</li>
+        <li><strong>Photographic:</strong> Inalenga picha halisi, za maisha.</li>
+        <li><strong>Pixel Art:</strong> Inatumia muundo wa pixel kuunda muonekano wa zamani, unaohusishwa na michezo ya video.</li>
+        <li><strong>Texture:</strong> Inazingatia texture tajiri, za kina ili kuboresha kina cha picha.</li>
     </ul>
 
 </body>

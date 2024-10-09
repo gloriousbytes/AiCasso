@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anleitung zur Funktion "Hintergrund ersetzen"</title>
+    <title>Leitfaden zur Funktion Hintergrund ersetzen</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -40,42 +40,42 @@
 
 <body>
 
-    <h2>Anleitung zur Nutzung der Funktion "Hintergrund ersetzen"</h2>
-    <p>Die Funktion "Hintergrund ersetzen" in AiCasso ist perfekt, wenn Sie den Hintergrund in Ihrem Bild austauschen möchten. Egal, ob Sie den Hintergrund nur entfernen oder durch etwas anderes ersetzen möchten, AiCasso macht es super einfach. Sie müssen sich keine Gedanken über technische Details machen – beschreiben Sie einfach, was Sie möchten, und AiCasso erledigt den Rest.</p>
+    <h2>Leitfaden zur Verwendung der Funktion Hintergrund ersetzen</h2>
+    <p>Die Funktion Hintergrund ersetzen in AiCasso ist perfekt, wenn Sie den Hintergrund Ihres Bildes austauschen möchten. Egal, ob Sie den Hintergrund nur entfernen oder durch etwas anderes ersetzen möchten, AiCasso macht es super einfach. Sie müssen sich keine Gedanken über technische Details machen – beschreiben Sie einfach, was Sie möchten, und AiCasso erledigt den Rest.</p>
 
-    <h3>Wie es funktioniert:</h3>
+    <h3>So funktioniert es:</h3>
     
     <div class="example">
         <strong>Eingabebild:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Eingabebild" loading="lazy">
         </div>
-        <strong>Eingabeaufforderung 1:</strong>
-        <p>"Den Hintergrund entfernen"</p>
+        <strong>Prompt 1:</strong>
+        <p>"Hintergrund entfernen"</p>
         <strong>Ergebnis 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Hintergrund entfernt Ergebnis" loading="lazy">
         </div>
-        <strong>Eingabeaufforderung 2:</strong>
-        <p>"Ersetze den Hintergrund durch einen Wald, nicht nur entfernen, mit deaktiviertem Alpha-Matting. Verwenden Sie einen Vordergrundschwellenwert von 240, einen Hintergrundschwellenwert von 20 und eine Erosionsgröße von 5 für das Alpha-Matting."</p>
+        <strong>Prompt 2:</strong>
+        <p>"Ersetze den Hintergrund durch einen Wald, nicht nur entfernen, mit deaktivierter Alphamatting. Verwende einen Vordergrundschwellenwert von 240, einen Hintergrundschwellenwert von 20 und eine Erodiergröße von 5 für das Alphamatting."</p>
         <strong>Ergebnis 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Hintergrund ersetzt durch Wald" loading="lazy">
         </div>
     </div>
 
     <h3>Optionale Parameter</h3>
-    <p>Wenn Sie eine persönliche Note hinzufügen oder die Ergebnisse feinabstimmen möchten, hier sind einige Optionen, mit denen Sie experimentieren können:</p>
+    <p>Wenn Sie eine persönliche Note hinzufügen oder die Ergebnisse verfeinern möchten, hier sind einige Optionen, mit denen Sie experimentieren können:</p>
 
     <ul>
-        <li><strong>Nur entfernen:</strong> Wenn Sie nur den Hintergrund entfernen und ihn nicht durch etwas anderes ersetzen möchten, ist dies Ihre bevorzugte Option. Es ist wie ein Neustart-Knopf.</li>
-        <li><strong>Alpha-Matting:</strong> Dies ist eine elegante Art zu sagen "die Kanten verblenden". Wenn Sie dies aktivieren, hilft es, die Kanten Ihres Motivs glatter und weniger ausgeschnitten aussehen zu lassen. Standardmäßig ist es deaktiviert.</li>
-        <li><strong>Alpha-Matting-Vordergrundschwellenwert:</strong> Dies steuert, wie viel vom Hauptmotiv (wie eine Person) sichtbar bleibt, wenn Alpha-Matting verwendet wird. Der Standardwert ist 240, und Sie können ihn anpassen, um die Kanten weicher oder schärfer zu machen.</li>
-        <li><strong>Alpha-Matting-Hintergrundschwellenwert:</strong> Dies funktioniert genauso wie der Vordergrundschwellenwert, jedoch für den Hintergrund. Der Standardwert ist 20, und es geht darum, die perfekte Mischung mit dem neuen Hintergrund zu erzielen.</li>
-        <li><strong>Alpha-Matting-Erosionsgröße:</strong> Dies hilft, die Kanten ein wenig zu verkleinern, um den Ausschnitt sauberer aussehen zu lassen. Die Standardgröße ist 5, aber Sie können sie anpassen, um den gewünschten Look zu erzielen.</li>
+        <li><strong>Nur Entfernen:</strong> Wenn Sie nur den Hintergrund entfernen und nichts ersetzen möchten, ist dies Ihre bevorzugte Option. Es ist wie das Drücken eines sauberen Neustart-Buttons.</li>
+        <li><strong>Alphamatting:</strong> Dies ist eine elegante Art zu sagen "die Kanten verwischen". Wenn Sie dies aktivieren, hilft es, die Kanten Ihres Objekts glatter und weniger ausgeschnitten aussehen zu lassen. Standardmäßig ist es deaktiviert.</li>
+        <li><strong>Alphamatting Vordergrundschwellenwert:</strong> Dies steuert, wie viel von dem Hauptobjekt (wie einer Person) sichtbar bleibt, wenn Sie Alphamatting verwenden. Der Standardwert ist 240, und Sie können ihn anpassen, um die Kanten weicher oder schärfer zu machen.</li>
+        <li><strong>Alphamatting Hintergrundschwellenwert:</strong> Dies funktioniert genauso wie der Vordergrundschwellenwert, jedoch für den Hintergrund. Der Standardwert ist 20, und es geht darum, die perfekte Mischung mit dem neuen Hintergrund zu erzielen.</li>
+        <li><strong>Alphamatting Erodiergröße:</strong> Dies hilft, die Kanten ein wenig zu verkleinern, um den Ausschnitt sauberer aussehen zu lassen. Die Standardgröße beträgt 5, aber Sie können sie anpassen, um das genaue Aussehen zu erzielen, das Sie möchten.</li>
     </ul>
 
-    <p>Denken Sie daran, dass Sie sich keine Sorgen machen müssen, alles perfekt zu machen. AiCasso ist ziemlich gut darin, zu verstehen, was Sie meinen, also fühlen Sie sich frei, so lässig oder detailliert zu sein, wie Sie möchten. Viel Spaß beim Erstellen!</p>
+    <p>Denken Sie daran, dass Sie sich keine Sorgen machen müssen, alles perfekt zu machen. AiCasso ist ziemlich gut darin, herauszufinden, was Sie meinen, also fühlen Sie sich frei, so lässig oder detailliert zu sein, wie Sie möchten. Viel Spaß beim Erstellen!</p>
 
 </body>
 </html>

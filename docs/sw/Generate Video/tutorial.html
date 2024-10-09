@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jinsi ya Kutumia Kipengele cha Kutengeneza Video</title>
+    <title>Mwongozo wa Kipengele cha Kuunda Video</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,89 +31,93 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img {
+            width: 100%;
+            max-width: 400px;
             height: auto;
         }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        @media (max-width: 768px) {
+            .result img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h2>Jinsi ya Kutumia Kipengele cha Kutengeneza Video</h2>
-    <p>Kipengele cha Kutengeneza Video katika AiCasso kinakuruhusu kutengeneza video kwa kuelezea tu unachotaka kuona. Andika tu wazo lako, na AiCasso italeta uhai katika video!</p>
+    <h2>Mwongozo wa Kutumia Kipengele cha Kuunda Video</h2>
+    <p>Kipengele cha Kuunda Video katika AiCasso kinakuruhusu kuunda video kwa kuelezea tu unachotaka kuona. Andika wazo lako, na AiCasso itakuletea maisha katika video!</p>
 
     <h3>Jinsi Inavyofanya Kazi:</h3>
     
     <div class="example">
-        <strong>Maelezo:</strong>
-        <p>"Jogoo wa 3D aliyechanganuliwa kwenye uwanja peke yake, akila na kuwa na furaha. Ifanye kuwa video ya picha na hatua 50 za kuondoa kelele."</p>
+        <strong>Maelekezo:</strong>
+        <p>"Kuku wa 3D anayehamasishwa katika uwanja peke yake, akila na kufurahia. Fanya iwe video ya picha ya portreti yenye hatua 50 za kupunguza kelele."</p>
         <strong>Matokeo:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/animated3d.gif" alt="Kuku wa 3D Anayehamasishwa">
+            <noscript><img src="../../images/tutorials/texttovideo/animated3d.gif" alt="Kuku wa 3D Anayehamasishwa"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Maelezo:</strong>
-        <p>"Katuni ya jogoo kwenye uwanja katika vipimo vya mandhari."</p>
+        <strong>Maelekezo:</strong>
+        <p>"Katuni ya kuku katika uwanja kwa vipimo vya mandhari."</p>
         <strong>Matokeo:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/cartoon.gif" alt="Kuku wa Katuni">
+            <noscript><img src="../../images/tutorials/texttovideo/cartoon.gif" alt="Kuku wa Katuni"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Maelezo:</strong>
-        <p>"Jogoo kwenye uwanja."</p>
+        <strong>Maelekezo:</strong>
+        <p>"Kuku katika uwanja."</p>
         <strong>Matokeo:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/default.gif" alt="Kuku wa Kawaida">
+            <noscript><img src="../../images/tutorials/texttovideo/default.gif" alt="Kuku wa Kawaida"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>Maelezo:</strong>
-        <p>"Jogoo ambaye yuko kwenye uwanja peke yake. Mpe hisia ya asili."</p>
+        <strong>Maelekezo:</strong>
+        <p>"Kuku ambaye yuko uwanjani peke yake. Mpe hisia za asili."</p>
         <strong>Matokeo:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/natural.gif" alt="Kuku wa Asili">
+            <noscript><img src="../../images/tutorials/texttovideo/natural.gif" alt="Kuku wa Asili"></noscript>
         </div>
     </div>
 
-    <h3>Chaguzi za Ziada</h3>
-    <p>Unataka kurekebisha video yako? Hapa kuna mipangilio unayoweza kucheza nayo:</p>
+    <h3>Chaguzi Zaidi</h3>
+    <p>Unataka kuboresha video yako? Hapa kuna mipangilio ambayo unaweza kucheza nayo:</p>
 
     <ul>
-        <li><strong>Idadi ya Fremu:</strong> Chagua ni fremu ngapi (picha za kibinafsi) video yako itakuwa nayo. Unaweza kufikia fremu 25, na 16 kama chaguo-msingi.</li>
-        <li><strong>Idadi ya Hatua za Kuondoa Kelele:</strong> Hii inadhibiti jinsi video yako inavyoonekana laini. Hatua zaidi zina maana video laini zaidi. Unaweza kuweka hadi hatua 50, na 20 kama chaguo-msingi.</li>
-        <li><strong>Skeli ya Mwongozo:</strong> Hii husaidia video kufuata kwa karibu maelezo yako. Nambari ya juu zaidi, inavyofuata maelezo yako. Kiwango ni 0 hadi 8, na 8 ikiwa chaguo-msingi.</li>
-        <li><strong>Ruka Klipu:</strong> Ruka tabaka fulani kwa mtindo tofauti wa video. Kwa chaguo-msingi, hakuna tabaka zinazopitishwa, lakini unaweza kuruka hadi 2.</li>
-        <li><strong>Upana na Urefu wa Kuongeza:</strong> Unaweza kufanya video yako kuwa kubwa kwa kurekebisha azimio. Chaguo-msingi ni pikseli 1024x1024, lakini unaweza kurekebisha hii ili kutoshea mahitaji yako.</li>
-        <li><strong>Nguvu ya Kuongeza:</strong> Hii inabadilisha jinsi video yako inavyorekebishwa inapoongezwa. Chaguo-msingi ni 1, lakini unaweza kuirekebisha ili kuona tofauti zaidi.</li>
-        <li><strong>Skeli ya Mwongozo wa Kuongeza:</strong> Hii inaongoza mchakato wa kuongeza, na kiwango kutoka 0 hadi 8, na chaguo-msingi ya 8.</li>
-        <li><strong>Hatua za Ufafanuzi wa Kuongeza:</strong> Idadi ya hatua zinazochukuliwa ili kuongeza video. Hatua zaidi hufanya kuongeza kuwa laini zaidi, na kiwango cha juu cha 50 na chaguo-msingi ya 20.</li>
-        <li><strong>Uchambuzi Ulioboreshwa:</strong> Unataka video iliyosafishwa zaidi? Washa hii. Imezimwa kwa chaguo-msingi.</li>
-        <li><strong>Mbegu ya Uchambuzi Ulioboreshwa:</strong> Tumia hii kuzalisha video sawa kila wakati na uchambuzi ulioboreshwa. Ni hiari na imezimwa kwa chaguo-msingi.</li>
-        <li><strong>Fremu kwa Sekunde (FPS):</strong> Weka kasi ya video yako. Chaguo-msingi ni 16 FPS, lakini unaweza kuirekebisha hadi 16.</li>
+        <li><strong>Idadi ya Picha:</strong> Chagua ni picha ngapi (picha za kibinafsi) video yako itakuwa nazo. Unaweza kufikia picha 25, huku 16 ikiwa ni ya kawaida.</li>
+        <li><strong>Idadi ya Hatua za Kupunguza Kelele:</strong> Hii inasimamia jinsi video yako inavyoonekana laini. Hatua zaidi zinamaanisha video laini zaidi. Unaweza kuweka hadi hatua 50, huku 20 ikiwa ni ya kawaida.</li>
+        <li><strong>Skeli ya Mwongozo:</strong> Hii inasaidia video kufuata maelezo yako kwa karibu. Nambari kubwa, ndivyo inavyofuata maelekezo yako zaidi. Mipangilio ni kutoka 0 hadi 8, huku 8 ikiwa ni ya kawaida.</li>
+        <li><strong>Kukosa Kichwa:</strong> Kosa tabaka fulani kwa mtindo tofauti wa video. Kwa kawaida, hakuna tabaka zinazokosa, lakini unaweza kukosa hadi 2.</li>
+        <li><strong>Upanuzi wa Upana na Urefu:</strong> Unaweza kufanya video yako iwe kubwa zaidi kwa kubadilisha azimio. Kawaida ni 1024x1024 pixels, lakini unaweza kubadilisha hili ili kukidhi mahitaji yako.</li>
+        <li><strong>Nguvu ya Upanuzi:</strong> Hii inabadilisha jinsi video yako inavyobadilika wakati wa kupanuliwa. Kawaida ni 1, lakini unaweza kubadilisha ili kuona tofauti zaidi.</li>
+        <li><strong>Skeli ya Mwongozo wa Upanuzi:</strong> Hii inaongoza mchakato wa kupanua, ikiwa na kiwango kutoka 0 hadi 8, na kiwango cha kawaida ni 8.</li>
+        <li><strong>Hatua za Ufafanuzi wa Upanuzi:</strong> Idadi ya hatua zinazochukuliwa kupanua video. Hatua zaidi zinaunda upanuzi laini zaidi, huku kiwango cha juu kikiwa 50 na kiwango cha kawaida kikiwa 20.</li>
+        <li><strong>Uboreshaji wa Sampuli:</strong> Unataka video iliyosafishwa zaidi? Washa hii. Imezimwa kwa kawaida.</li>
+        <li><strong>Mbegu ya Uboreshaji wa Sampuli:</strong> Tumia hii kuunda video sawa kila wakati kwa sampuli iliyoboreshwa. Ni hiari na imezimwa kwa kawaida.</li>
+        <li><strong>Picha kwa Sekunde (FPS):</strong> Weka kasi ya video yako. Kawaida ni 16 FPS, lakini unaweza kuibadilisha hadi 16.</li>
         <li><strong>Mfano wa Video:</strong> Chagua mtindo wa video yako. Chaguzi ni pamoja na:
             <ul>
-                <li><strong>Chaguo-msingi:</strong> Mfano wa video wa kawaida.</li>
+                <li><strong>Kawaida:</strong> Mfano wa video wa kawaida.</li>
                 <li><strong>Katuni:</strong> Mtindo wa video wa katuni.</li>
-                <li><strong>Asili:</strong> Mtindo wa video wa kweli, unaoonekana asili.</li>
-                <li><strong>Uhuishaji wa 3D:</strong> Mtindo wa video wa uhuishaji wa 3D.</li>
+                <li><strong>Asili:</strong> Mtindo wa video wa kweli, unaoonekana wa asili.</li>
+                <li><strong>3D Anayehamasishwa:</strong> Mtindo wa video wa 3D anayehamasishwa.</li>
             </ul>
         </li>
     </ul>
 
-    <p>Kumbuka, mipangilio hii ni hiari. Kipengele cha Kutengeneza Video hufanya kazi vizuri na maelezo rahisi tu, kwa hivyo jisikie huru kujaribu na kuona unachoweza kuunda!</p>
+    <p>Kumbuka, mipangilio hii ni hiari. Kipengele cha Kuunda Video kinafanya kazi vizuri na maelezo rahisi, hivyo jisikie huru kujaribu na kuona unachoweza kuunda!</p>
 
 </body>
 </html>

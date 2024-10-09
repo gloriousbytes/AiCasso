@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Herbeligtingsfunksie Gids</title>
+    <title>Herbeligting Kenmerk Gids</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,12 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
         }
         .iframe-container {
             display: flex;
@@ -47,34 +50,34 @@
 
 <body>
 
-    <h2>Gids vir die Gebruik van die Herbeligtingsfunksie</h2>
-    <p>Die Herbeligtingsfunksie in AiCasso is ongelooflik! Dit laat jou toe om die beligting in jou beelde met net 'n paar woorde te verander. Wil jy die son agter of 'n sagte lig van die kant? Geen probleem nie! Beskryf dit net, en AiCasso sal die res hanteer.</p>
+    <h2>Gids vir die Gebruik van die Herbeligting Kenmerk</h2>
+    <p>Die Herbeligting kenmerk in AiCasso is baie gaaf! Dit laat jou toe om die beligting in jou beelde met net 'n paar woorde te verander. Wil jy die son agter of 'n sagte lig van die kant? Geen probleem nie! Beskryf dit net, en AiCasso sal die res hanteer.</p>
 
     <h3>Hoe Dit Werk:</h3>
     
     <div class="example">
-        <strong>Invoebeeld:</strong>
+        <strong>Invoer Beeld:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+            <img src="../../images/tutorials/relighting/input.jpg" alt="Invoer Beeld" loading="lazy">
         </div>
-        <strong>Prompt Gebruik:</strong>
+        <strong>Prompt Gebruikt:</strong>
         <p>"Maak dit so dat die son agter is"</p>
         <strong>Resultaat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+            <img src="../../images/tutorials/relighting/result.jpg" alt="Herbeligting Resultaat" loading="lazy">
         </div>
     </div>
 
     <h3>Opsionele Aanpassings</h3>
-    <pAs jy avontuurlustig voel en 'n bietjie meer flair aan jou herbeligting wil voeg, hier is 'n paar dinge wat jy kan aanpas:</p>
+    <pAs jy avontuurlustig voel en 'n bietjie meer flair aan jou herbeligting wil toevoeg, hier is 'n paar dinge wat jy kan aanpas:</p>
 
     <ul>
-        <li><strong>Negatiewe Prompt:</strong> Wil jy iets vermy? Jy kan vir AiCasso sê wat <em>nie</em> ingesluit moet word nie. Maar moenie bekommerd wees nie, as jy dit leeg laat, sal AiCasso net fokus op wat jy wel wil hê.</li>
-        <li><strong>Beligtingsrigting:</strong> Jy kan spesifiseer waar die lig vandaan moet kom—links, regs, bo, onder, of selfs glad nie. Standaard kom die lig van links.</li>
+        <li><strong>Negatiewe Prompt:</strong> Wil jy iets vermy? Jy kan vir AiCasso sê wat <em>nie</em> ingesluit moet word. Maar moenie bekommerd wees nie, as jy dit leeg laat, sal AiCasso net fokus op wat jy wel wil hê.</li>
+        <li><strong>Beligting Rigting:</strong> Jy kan spesifiseer waar die lig vandaan moet kom—links, regs, bo, onder, of selfs glad nie. Standaard kom die lig van links.</li>
         <li><strong>Rigting Skaal:</strong> Dit help AiCasso om by jou beskrywing te hou. Die skaal gaan van 1 tot 20, met 7 as die standaard. Hoe hoër die nommer, hoe meer hou AiCasso by jou prompt.</li>
-        <li><strong>Hoë Resolusie Skaal:</strong> Wil jy hê jou beeld moet uitstaan? Dit beheer die duidelikheid. Die standaard is 1.5, maar jy kan dit van 1.0 tot 2.0 stel vir 'n helderder beeld.</li>
-        <li><strong>Denoise Vlakke:</strong> Daar is twee vlakke—lae resolusie en hoë resolusie. Hierdie beheer hoe glad of gedetailleerd die finale beeld lyk. Jy kan die lae-res denoise vlak tussen 0.0 en 1.0 stel (standaard is 0.9) en die hoë-res tussen 0.0 en 1.0 (standaard is 0.5).</li>
-        <li><strong>Aantal Stappe:</strong> Dit is hoeveel stappe AiCasso neem om jou beeld te polish. Die standaard is 50, maar jy kan van 20 tot 50 stappe gaan.</li>
+        <li><strong>Hoë Resolusie Skaal:</strong> Wil jy hê jou beeld moet uitstaan? Dit beheer die duidelikheid. Die standaard is 1.5, maar jy kan dit stel van 1.0 tot 2.0 vir 'n helderder beeld.</li>
+        <li><strong>Denoise Niveaus:</strong> Daar is twee vlakke—lae resolusie en hoë resolusie. Hierdie beheer hoe glad of gedetailleerd die finale beeld lyk. Jy kan die lae-res denoise vlak tussen 0.0 en 1.0 stel (standaard is 0.9) en die hoë-res tussen 0.0 en 1.0 (standaard is 0.5).</li>
+        <li><strong>Aantal Stappe:</strong> Dit is hoeveel stappe AiCasso neem om jou beeld te poliseer. Die standaard is 50, maar jy kan van 20 tot 50 stappe gaan.</li>
     </ul>
 
     <p>Onthou, hierdie aanpassings is heeltemal opsioneel! AiCasso is redelik goed om uit te vind wat jy wil hê, so beskryf net jou visie in jou eie woorde, en dit sal die magie doen. Geen behoefte om perfek te wees met grammatika of besonderhede nie—geniet dit net en kyk wat jy kan skep!</p>

@@ -31,9 +31,12 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
         }
         .iframe-container {
             display: flex;
@@ -48,36 +51,36 @@
 <body>
 
     <h2>Hướng Dẫn Sử Dụng Tính Năng Chiếu Sáng Lại</h2>
-    <p>Tính năng Chiếu Sáng Lại trong AiCasso thật tuyệt vời! Nó cho phép bạn thay đổi ánh sáng trong hình ảnh chỉ với vài từ. Muốn mặt trời ở phía sau hay ánh sáng mềm từ bên cạnh? Không vấn đề gì! Chỉ cần mô tả nó, và AiCasso sẽ lo phần còn lại.</p>
+    <p>Tính năng Chiếu Sáng Lại trong AiCasso thật tuyệt vời! Nó cho phép bạn thay đổi ánh sáng trong hình ảnh của bạn chỉ với một vài từ. Bạn muốn ánh nắng ở phía sau hay ánh sáng mềm từ bên cạnh? Không vấn đề gì! Chỉ cần mô tả nó, và AiCasso sẽ xử lý phần còn lại.</p>
 
     <h3>Cách Hoạt Động:</h3>
     
     <div class="example">
         <strong>Hình Ảnh Đầu Vào:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+            <img src="../../images/tutorials/relighting/input.jpg" alt="Hình Ảnh Đầu Vào" loading="lazy">
         </div>
-        <strong>Lời Nhắc Sử Dụng:</strong>
-        <p>"Làm cho mặt trời ở phía sau"</p>
+        <strong>Yêu Cầu Đã Sử Dụng:</strong>
+        <p>"Làm cho ánh nắng ở phía sau"</p>
         <strong>Kết Quả:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+            <img src="../../images/tutorials/relighting/result.jpg" alt="Kết Quả Chiếu Sáng Lại" loading="lazy">
         </div>
     </div>
 
-    <h3>Điều Chỉnh Tùy Chọn</h3>
-    <p>Nếu bạn muốn thêm một chút phong cách cho việc chiếu sáng lại, đây là một số điều bạn có thể điều chỉnh:</p>
+    <h3>Các Tùy Chọn Tùy Chỉnh</h3>
+    <p>Nếu bạn cảm thấy mạo hiểm và muốn thêm một chút phong cách cho việc chiếu sáng lại của mình, đây là một số điều bạn có thể tùy chỉnh:</p>
 
     <ul>
-        <li><strong>Lời Nhắc Tiêu Cực:</strong> Muốn tránh điều gì đó? Bạn có thể nói với AiCasso điều gì <em>không</em> nên bao gồm. Nhưng đừng lo, nếu bạn để trống phần này, AiCasso sẽ chỉ tập trung vào những gì bạn muốn.</li>
-        <li><strong>Hướng Ánh Sáng:</strong> Bạn có thể chỉ định ánh sáng nên đến từ đâu—trái, phải, trên, dưới, hoặc thậm chí không có. Mặc định, ánh sáng đến từ bên trái.</li>
-        <li><strong>Thang Hướng Dẫn:</strong> Điều này giúp AiCasso bám sát mô tả của bạn. Thang đo từ 1 đến 20, với 7 là mặc định. Số càng cao, AiCasso càng bám sát lời nhắc của bạn.</li>
-        <li><strong>Thang Độ Phân Giải Cao:</strong> Muốn hình ảnh của bạn nổi bật? Điều này kiểm soát độ rõ nét. Mặc định là 1.5, nhưng bạn có thể đặt từ 1.0 đến 2.0 để có hình ảnh sắc nét hơn.</li>
-        <li><strong>Mức Độ Khử Nhiễu:</strong> Có hai mức—độ phân giải thấp và cao. Chúng kiểm soát độ mịn hoặc chi tiết của hình ảnh cuối cùng. Bạn có thể đặt mức khử nhiễu độ phân giải thấp từ 0.0 đến 1.0 (mặc định là 0.9) và độ phân giải cao từ 0.0 đến 1.0 (mặc định là 0.5).</li>
-        <li><strong>Số Bước:</strong> Đây là số bước AiCasso thực hiện để hoàn thiện hình ảnh của bạn. Mặc định là 50, nhưng bạn có thể chọn từ 20 đến 50 bước.</li>
+        <li><strong>Yêu Cầu Tiêu Cực:</strong> Bạn muốn tránh điều gì đó? Bạn có thể nói với AiCasso điều <em>không</em> nên bao gồm. Nhưng đừng lo, nếu bạn để trống điều này, AiCasso sẽ chỉ tập trung vào những gì bạn muốn.</li>
+        <li><strong>Hướng Ánh Sáng:</strong> Bạn có thể chỉ định nơi ánh sáng nên đến từ—trái, phải, trên, dưới, hoặc thậm chí không có ánh sáng nào cả. Theo mặc định, ánh sáng đến từ bên trái.</li>
+        <li><strong>Thang Đo Hướng Dẫn:</strong> Điều này giúp AiCasso bám sát mô tả của bạn. Thang đo từ 1 đến 20, với 7 là mặc định. Số càng cao, AiCasso càng bám sát yêu cầu của bạn.</li>
+        <li><strong>Thang Đo Độ Phân Giải Cao:</strong> Bạn muốn hình ảnh của mình nổi bật? Điều này kiểm soát độ rõ nét. Mặc định là 1.5, nhưng bạn có thể đặt từ 1.0 đến 2.0 để có hình ảnh sắc nét hơn.</li>
+        <li><strong>Các Mức Giảm Nhiễu:</strong> Có hai mức—độ phân giải thấp và độ phân giải cao. Những điều này kiểm soát độ mượt mà hoặc chi tiết của hình ảnh cuối cùng. Bạn có thể đặt mức giảm nhiễu độ phân giải thấp từ 0.0 đến 1.0 (mặc định là 0.9) và độ phân giải cao từ 0.0 đến 1.0 (mặc định là 0.5).</li>
+        <li><strong>Số Bước:</strong> Đây là số bước mà AiCasso thực hiện để làm bóng hình ảnh của bạn. Mặc định là 50, nhưng bạn có thể chọn từ 20 đến 50 bước.</li>
     </ul>
 
-    <p>Nhớ rằng, những điều chỉnh này hoàn toàn tùy chọn! AiCasso khá giỏi trong việc hiểu bạn muốn gì, vì vậy chỉ cần mô tả tầm nhìn của bạn bằng từ ngữ của riêng bạn, và nó sẽ làm phép thuật. Không cần phải hoàn hảo với ngữ pháp hay chi tiết—chỉ cần vui vẻ và xem bạn có thể tạo ra gì!</p>
+    <p>Hãy nhớ, những tùy chỉnh này hoàn toàn là tùy chọn! AiCasso khá giỏi trong việc hiểu những gì bạn muốn, vì vậy chỉ cần mô tả tầm nhìn của bạn bằng từ ngữ của riêng bạn, và nó sẽ thực hiện phép thuật. Không cần phải hoàn hảo với ngữ pháp hay chi tiết—chỉ cần vui vẻ và xem bạn có thể tạo ra điều gì!</p>
 
 </body>
 </html>

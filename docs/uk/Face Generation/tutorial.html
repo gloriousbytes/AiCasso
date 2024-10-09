@@ -6,42 +6,43 @@
     <title>Посібник з функції генерації обличчя</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Забезпечує, щоб зображення не виходило за межі контейнера */
+    height: auto;     /* Зберігає співвідношення сторін */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
@@ -52,43 +53,43 @@
 
     <h3>Як це працює:</h3>
     
-    <div class="example">
-        <strong>Вхідне зображення:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
-        </div>
-        <strong>Запит 1:</strong>
-        <p>"Реалістичний лицар, використовуйте максимальний масштаб"</p>
-        <strong>Результат 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
-        </div>
-        <strong>Запит 2:</strong>
-        <p>"Використовуйте стиль чібі та створіть самурая, використовуйте значення за замовчуванням"</p>
-        <strong>Результат 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
-        </div>
-        <strong>Запит 3:</strong>
-        <p>"Самурай, використовуйте 31 крок денойзингу та стиль аніме"</p>
-        <strong>Результат 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Вхідне зображення:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/input.jpg" alt="Вхідне зображення">
     </div>
+    <strong>Запит 1:</strong>
+    <p>"Реалістичний лицар, використовуйте максимальний масштаб"</p>
+    <strong>Результат 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="Реалістичний лицар">
+    </div>
+    <strong>Запит 2:</strong>
+    <p>"Використовуйте стиль чібі та створіть самурая, використовуйте значення за замовчуванням"</p>
+    <strong>Результат 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="Чібі самурай">
+    </div>
+    <strong>Запит 3:</strong>
+    <p>"Самурай, використовуйте 31 крок денойзингу та стиль аніме"</p>
+    <strong>Результат 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="Аніме самурай">
+    </div>
+</div>
 
     <h3>Додаткові параметри</h3>
-    <p>Якщо ви хочете додати трохи більше особистості або контролю до ваших згенерованих зображень, ось кілька опцій, які ви можете налаштувати:</p>
+    <p>Якщо ви хочете додати трохи більше індивідуальності або контролю до ваших згенерованих зображень, ось кілька параметрів, які ви можете налаштувати:</p>
 
     <ul>
-        <li><strong>Негативний запит:</strong> Тут ви можете сказати AiCasso, що ви <em>не</em> хочете бачити на зображенні. Якщо ви залишите це поле порожнім, AiCasso просто зосередиться на позитивному запиті.</li>
+        <li><strong>Негативний запит:</strong> Тут ви можете вказати AiCasso, що ви <em>не</em> хочете бачити на зображенні. Якщо ви залишите це поле порожнім, AiCasso просто зосередиться на позитивному запиті.</li>
         <li><strong>Кількість кроків денойзингу:</strong> Це контролює, наскільки гладким і відшліфованим виглядає зображення. Ви можете вибрати між 21, 31 або 41 кроками, причому 41 є значенням за замовчуванням. Більше кроків означає чистіше, більш відшліфоване зображення.</li>
         <li><strong>Масштаб керівництва:</strong> Це допомагає зображенню залишатися вірним вашому опису. Масштаб варіюється від 1 до 20, причому 10 є значенням за замовчуванням. Вищі числа означають, що AiCasso буде дотримуватися вашого запиту ближче.</li>
-        <li><strong>S Масштаб:</strong> Це все про структуру обличчя. Це трохи технічне, але в основному це налаштовує вагу структури обличчя. Значення за замовчуванням - 1.0, і ви можете вибрати будь-яке значення від 0.0 до 2.0.</li>
-        <li><strong>Стиль:</strong> Хочете надати вашому зображенню певну атмосферу? Ви можете вибрати стиль, наприклад, комікс, чібі, 3D, аніме або реалістичний. Реалістичний - це значення за замовчуванням, але не соромтеся проявити креативність!</li>
+        <li><strong>S масштаб:</strong> Це стосується структури обличчя. Це трохи технічно, але в основному це регулює вагу структури обличчя. Значення за замовчуванням - 1.0, і ви можете вибрати будь-яке значення від 0.0 до 2.0.</li>
+        <li><strong>Стиль:</strong> Хочете надати вашому зображенню певну атмосферу? Ви можете вибрати стиль, наприклад, комікс, чібі, 3D, аніме або реалістичний. Реалістичний - це значення за замовчуванням, але не соромтеся бути креативними!</li>
     </ul>
 
-    <p>І пам'ятайте, AiCasso досить поблажливий. Вам не потрібно бути граматичним генієм або отримувати кожну деталь ідеальною. Просто опишіть, що ви хочете, своїми словами, і AiCasso подбає про решту. Насолоджуйтесь створенням!</p>
+    <p>І пам'ятайте, AiCasso досить поблажливий. Вам не потрібно бути майстром граматики або досягати ідеальної точності в кожній деталі. Просто опишіть, що ви хочете, своїми словами, і AiCasso подбає про решту. Насолоджуйтесь створенням!</p>
 
 </body>
 </html>

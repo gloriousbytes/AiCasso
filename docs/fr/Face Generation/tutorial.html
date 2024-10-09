@@ -3,89 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide de la Fonctionnalité de Génération de Visages</title>
+    <title>Guide de la Fonction de Génération de Visages</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Assure que l'image ne déborde pas du conteneur */
+    height: auto;     /* Garde le rapport d'aspect */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
-    <h2>Guide d'Utilisation de la Fonctionnalité de Génération de Visages</h2>
-    <p>La fonctionnalité de génération de visages dans AiCasso est incroyablement polyvalente ! Elle vous permet de créer des images époustouflantes en incorporant un visage spécifique dans divers personnages ou styles. Que vous imaginiez un chevalier, un samouraï ou tout autre personnage, AiCasso utilise le visage d'entrée pour générer une image avec ce visage intégré dans le design demandé.</p>
+    <h2>Guide d'Utilisation de la Fonction de Génération de Visages</h2>
+    <p>La fonction de Génération de Visages dans AiCasso est incroyablement polyvalente ! Elle vous permet de créer des images époustouflantes en intégrant un visage spécifique dans divers personnages ou styles. Que vous imaginiez un chevalier, un samouraï ou tout autre personnage, AiCasso utilise le visage d'entrée pour générer une image avec ce visage intégré dans le design demandé.</p>
 
-    <h3>Comment ça marche :</h3>
+    <h3>Comment ça fonctionne :</h3>
     
-    <div class="example">
-        <strong>Image d'entrée :</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
-        </div>
-        <strong>Prompt 1 :</strong>
-        <p>"Un chevalier réaliste, utiliser l'échelle maximale"</p>
-        <strong>Résultat 1 :</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
-        </div>
-        <strong>Prompt 2 :</strong>
-        <p>"Utiliser le style chibi et faire un samouraï, utiliser les valeurs par défaut"</p>
-        <strong>Résultat 2 :</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
-        </div>
-        <strong>Prompt 3 :</strong>
-        <p>"Un samouraï, utiliser 31 étapes de débruitage, et style anime"</p>
-        <strong>Résultat 3 :</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Image d'Entrée :</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/input.jpg" alt="Image d'Entrée">
     </div>
+    <strong>Invite 1 :</strong>
+    <p>"Un chevalier réaliste, utilisez l'échelle maximale"</p>
+    <strong>Résultat 1 :</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="Chevalier Réaliste">
+    </div>
+    <strong>Invite 2 :</strong>
+    <p>"Utilisez le style chibi et faites un samouraï, utilisez les valeurs par défaut"</p>
+    <strong>Résultat 2 :</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="Samouraï Chibi">
+    </div>
+    <strong>Invite 3 :</strong>
+    <p>"Un samouraï, utilisez 31 étapes de débruitage, et le style anime"</p>
+    <strong>Résultat 3 :</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="Samouraï Anime">
+    </div>
+</div>
 
     <h3>Paramètres Optionnels</h3>
     <p>Si vous souhaitez ajouter un peu plus de personnalité ou de contrôle à vos images générées, voici quelques options que vous pouvez ajuster :</p>
 
     <ul>
-        <li><strong>Prompt Négatif :</strong> C'est ici que vous pouvez dire à AiCasso ce que vous ne voulez <em>pas</em> voir dans l'image. Si vous laissez cela vide, AiCasso se concentrera uniquement sur le prompt positif.</li>
-        <li><strong>Nombre d'Étapes de Débruitage :</strong> Cela contrôle à quel point l'image est lisse et raffinée. Vous pouvez choisir entre 21, 31 ou 41 étapes, 41 étant la valeur par défaut. Plus d'étapes signifient une image plus propre et plus soignée.</li>
-        <li><strong>Échelle de Guidance :</strong> Cela aide l'image à rester fidèle à votre description. L'échelle varie de 1 à 20, 10 étant la valeur par défaut. Des nombres plus élevés signifient qu'AiCasso s'en tiendra plus étroitement à votre prompt.</li>
-        <li><strong>Échelle S :</strong> Cela concerne la structure du visage. C'est un peu technique, mais essentiellement, cela ajuste le poids de la structure du visage. La valeur par défaut est 1.0, et vous pouvez aller de 0.0 à 2.0.</li>
-        <li><strong>Style :</strong> Vous voulez donner une ambiance spécifique à votre image ? Vous pouvez choisir un style comme bande dessinée, chibi, 3D, anime ou réaliste. Réaliste est la valeur par défaut, mais n'hésitez pas à être créatif !</li>
+        <li><strong>Invite Négative :</strong> C'est ici que vous pouvez dire à AiCasso ce que vous <em>ne</em> voulez <em>pas</em> voir dans l'image. Si vous laissez cela vide, AiCasso se concentrera simplement sur l'invite positive.</li>
+        <li><strong>Nombre d'Étapes de Débruitage :</strong> Cela contrôle la douceur et le raffinement de l'image. Vous pouvez choisir entre 21, 31 ou 41 étapes, 41 étant la valeur par défaut. Plus il y a d'étapes, plus l'image est propre et polie.</li>
+        <li><strong>Échelle de Guidage :</strong> Cela aide l'image à rester fidèle à votre description. L'échelle varie de 1 à 20, avec 10 comme valeur par défaut. Des nombres plus élevés signifient qu'AiCasso s'en tiendra plus près de votre invite.</li>
+        <li><strong>Échelle S :</strong> Cela concerne la structure du visage. C'est un peu technique, mais essentiellement cela ajuste le poids de la structure du visage. La valeur par défaut est 1.0, et vous pouvez aller de 0.0 à 2.0.</li>
+        <li><strong>Style :</strong> Vous voulez donner à votre image une ambiance spécifique ? Vous pouvez choisir un style comme bande dessinée, chibi, 3D, anime ou réaliste. Réaliste est la valeur par défaut, mais n'hésitez pas à faire preuve de créativité !</li>
     </ul>
 
     <p>Et rappelez-vous, AiCasso est assez indulgent. Vous n'avez pas besoin d'être un expert en grammaire ou de rendre chaque détail parfait. Décrivez simplement ce que vous voulez avec vos propres mots, et AiCasso s'occupera du reste. Amusez-vous à créer !</p>

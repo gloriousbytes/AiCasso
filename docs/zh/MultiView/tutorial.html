@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多视图功能指南</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        img, video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>多视图功能使用指南</h2>
+    <p>AiCasso中的多视图功能允许您从不同角度查看对象，通过生成图像中对象的多个视角。这对于更好地理解3D形状或展示产品特别有用。当对象没有背景时，此功能效果最佳，因此请确保去除任何干扰元素以获得最佳效果。</p>
+
+    <h3>工作原理：</h3>
+    
+    <div class="example">
+        <strong>输入图像：</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/input.jpg" alt="输入图像" loading="lazy">
+        </div>
+        <strong>提示：</strong>
+        <p>"从多个角度展示这个对象"</p>
+        <strong>结果：</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/result.jpg" alt="结果图像" loading="lazy">
+        </div>
+    </div>
+
+    <h3>最佳效果提示</h3>
+    <p>以下是确保您的图像效果良好的几个提示：</p>
+
+    <ul>
+        <li><strong>无背景的对象：</strong>当图像中的对象与背景隔离时，多视图功能效果最佳。这使得AiCasso可以专注于对象并生成清晰的视角。</li>
+        <li><strong>良好的照明：</strong>确保输入图像中的对象光线充足，因为阴影和不均匀的照明可能会影响对象从不同角度的外观。</li>
+        <li><strong>多个对象：</strong>如果图像中有多个对象，请尝试隔离您想要从不同角度查看的对象，或选择一个只有一个焦点对象的简单图像。</li>
+    </ul>
+
+    <p>就像AiCasso中的所有功能一样，您不需要过多思考——描述您想要的，AiCasso将完成繁重的工作。多视图功能非常适合产品展示、创意展示等！</p>
+
+</body>
+</html>

@@ -3,278 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mẹo Tính Năng Repaint</title>
+    <title>Mẹo Tính Năng Vẽ Lại</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+         body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Đảm bảo hình ảnh không tràn ra ngoài khung */
+    height: auto;     /* Giữ tỷ lệ khung hình */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
-    <h2>Mẹo Tính Năng Repaint</h2>
-    <p>Sử dụng tính năng Inpaint trong AiCasso cho phép bạn chỉnh sửa các khu vực cụ thể của hình ảnh bằng cách điền hoặc thay thế chúng. Cho dù bạn muốn cải thiện một hình ảnh hiện có hay hoàn toàn thay đổi một số phần, AiCasso làm cho quá trình trở nên đơn giản. Chỉ cần chọn các khu vực bạn muốn thay đổi, cung cấp một gợi ý, và để AiCasso thực hiện phép thuật của mình.</p>
+    <h2>Mẹo Tính Năng Vẽ Lại</h2>
+    <p>Sử dụng tính năng Inpaint trong AiCasso cho phép bạn chỉnh sửa các khu vực cụ thể của một hình ảnh bằng cách lấp đầy hoặc thay thế chúng. Dù bạn muốn cải thiện một hình ảnh hiện có hay hoàn toàn thay đổi một số phần, AiCasso làm cho quá trình này trở nên đơn giản. Chỉ cần chọn các khu vực bạn muốn thay đổi, cung cấp một gợi ý, và để AiCasso thực hiện phép màu của nó.</p>
 
    <h3>Tùy chọn:</h3>
 
     <div class="example">
         <strong>Sức mạnh:</strong>
-        <p>Tùy chọn sức mạnh kiểm soát mức độ thay đổi của hình ảnh gốc bởi gợi ý. Nó dao động từ 0 đến 1. Giá trị 0 có nghĩa là hình ảnh gốc hầu như không bị thay đổi, trong khi giá trị 1 có nghĩa là hình ảnh gốc gần như hoàn toàn được thay thế bởi các chi tiết mới mà bạn mô tả. Hãy nghĩ về nó như mức độ 'mạnh' của các thay đổi của bạn.</p>
+        <p>Tùy chọn sức mạnh điều khiển mức độ thay đổi của hình ảnh gốc bởi gợi ý. Nó dao động từ 0 đến 1. Giá trị 0 có nghĩa là hình ảnh gốc hầu như không bị thay đổi, trong khi giá trị 1 có nghĩa là hình ảnh gốc gần như hoàn toàn bị thay thế bởi các chi tiết mới mà bạn mô tả. Hãy nghĩ về nó như là mức độ 'mạnh mẽ' của các thay đổi của bạn.</p>
     </div>
 
     <div class="example">
-        <strong>Tăng cường phong cách:</strong>
-        <p>Tùy chọn tăng cường phong cách cho phép bạn thêm một phong cách nghệ thuật hoặc chủ đề cụ thể vào các khu vực đã chỉnh sửa. Bạn có thể chọn từ nhiều phong cách khác nhau như:</p>
+        <strong>Cải thiện phong cách:</strong>
+        <p>Tùy chọn cải thiện phong cách cho phép bạn thêm một phong cách nghệ thuật hoặc chủ đề cụ thể vào các khu vực đã chỉnh sửa. Bạn có thể chọn từ nhiều phong cách khác nhau như:</p>
     </div>
 
     <h3>Cách hoạt động:</h3>
 
-    <div class="example">
-        <strong>Hình ảnh đầu vào:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OzuoAKoYvwEW30ScvOjgX9lfe6VpbdNq/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Hình ảnh đầu vào:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/inpain/input.jpg" alt="Hình ảnh đầu vào">
     </div>
+</div>
 
-    <div class="example">
-        <strong>Sơn các khu vực cần điền hoặc thay thế:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1-PaOaaDEvMogYhFjiMjUztvsxhllTsQ3/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Vẽ các khu vực cần lấp đầy hoặc thay thế:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/inpain/paintareas.jpg" alt="Vẽ các khu vực">
     </div>
+</div>
 
-    <h3>Ví dụ:</h3>
+<h3>Ví dụ:</h3>
 
-    <div class="example">
-        <strong>Gợi ý 1:</strong> "Một hình ảnh siêu thực của một con mèo trong công viên."
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1BpTJPP7s5CJ-6Yk03s281K6ay6DQ-sFa/preview"></iframe>
-        </div>
-        <p><em>Kết quả:</em> AiCasso sẽ tạo ra một con mèo siêu thực trong công viên, điền vào các khu vực đã sơn một cách liền mạch với kết cấu và ánh sáng thực tế.</p>
+<div class="example">
+    <strong>Gợi ý 1:</strong> "Một hình ảnh siêu thực của một con mèo trong công viên."
+    <div class="result">
+        <img src="../../images/tutorials/inpain/catinthepark.jpg" alt="Mèo siêu thực trong công viên">
     </div>
+    <p><em>Kết quả:</em> AiCasso sẽ tạo ra một con mèo siêu thực trong công viên, lấp đầy các khu vực đã vẽ một cách liền mạch với các kết cấu và ánh sáng thực tế.</p>
+</div>
 
-    <div class="example">
-        <strong>Gợi ý 2:</strong> "Một con mèo trong công viên với phong cách siêu thực và sức mạnh 0.7."
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1USCGxNAf0iteIGn8Klp97HI-spTTiREW/preview"></iframe>
-        </div>
-        <p><em>Kết quả:</em> Điều này sẽ tạo ra một con mèo siêu thực trong công viên, với sức mạnh chỉnh sửa được đặt ở mức 0.7, hòa trộn các yếu tố mới một cách mượt mà vào hình ảnh gốc.</p>
+<div class="example">
+    <strong>Gợi ý 2:</strong> "Một con mèo trong công viên với phong cách siêu thực và sức mạnh 0.7."
+    <div class="result">
+        <img src="../../images/tutorials/inpain/catintheparkstrength0.7.jpg" alt="Mèo trong công viên sức mạnh 0.7">
     </div>
+    <p><em>Kết quả:</em> Điều này sẽ tạo ra một con mèo siêu thực trong công viên, với sức mạnh chỉnh sửa được đặt ở mức 0.7, hòa trộn các yếu tố mới một cách mượt mà vào hình ảnh gốc.</p>
+</div>
 
-  <h3>Tăng cường phong cách</h3>
-<p>Không chắc chắn phong cách nào để chọn? Đừng lo lắng! Chỉ cần đề cập đến bất kỳ phong cách nào bạn nghĩ đến, ngay cả khi nó không đúng ngữ pháp, và AiCasso sẽ tìm ra từ danh sách các phong cách Tăng cường có sẵn.</p>
+  <h3>Các phong cách cải thiện</h3>
+<p>Không chắc phong cách nào để chọn? Đừng lo! Chỉ cần đề cập đến bất kỳ phong cách nào mà bạn nghĩ đến, ngay cả khi nó không đúng ngữ pháp, và AiCasso sẽ tìm ra từ danh sách các phong cách cải thiện có sẵn.</p>
 
     <ul>
-        <li><strong>Mặc định:</strong> Một phong cách cân bằng và trung tính mà không có ảnh hưởng nghệ thuật cụ thể nào.</li>
-        <li><strong>Tăng cường:</strong> Cải thiện nhẹ các chi tiết và thẩm mỹ tổng thể.</li>
-        <li><strong>Cinematic Diva:</strong> Thêm hiệu ứng kịch tính, giống như phim với độ tương phản ánh sáng mạnh.</li>
-        <li><strong>Biểu hiện trừu tượng:</strong> Nhấn mạnh các hình thức trừu tượng và màu sắc sống động.</li>
-        <li><strong>Học thuật:</strong> Thêm một nét học thuật và cổ điển vào hình ảnh.</li>
-        <li><strong>Hành động:</strong> Tạo ra các hình ảnh với phong cách phóng đại và động của các nhân vật hành động.</li>
-        <li><strong>Nhân vật 3D dễ thương:</strong> Tạo ra các nhân vật 3D dễ thương, hoạt hình.</li>
-        <li><strong>Kawaii dễ thương:</strong> Nhấn mạnh phong cách dễ thương và quyến rũ đặc trưng của văn hóa Kawaii.</li>
+        <li><strong>Mặc định:</strong> Một phong cách cân bằng và trung lập mà không có ảnh hưởng nghệ thuật cụ thể nào.</li>
+        <li><strong>Cải thiện:</strong> Cải thiện một chút chi tiết và thẩm mỹ tổng thể.</li>
+        <li><strong>Diva Điện ảnh:</strong> Thêm hiệu ứng kịch tính, giống như phim với các độ tương phản ánh sáng mạnh.</li>
+        <li><strong>Chủ nghĩa Biểu hiện Trừu tượng:</strong> Nhấn mạnh các hình thức trừu tượng và các mảng màu sống động.</li>
+        <li><strong>Học thuật:</strong> Thêm một nét cổ điển và học thuật vào hình ảnh.</li>
+        <li><strong>Nhân vật Hành động:</strong> Tạo ra hình ảnh với phong cách phóng đại và năng động của các nhân vật hành động.</li>
+        <li><strong>Nhân vật 3D Đáng yêu:</strong> Tạo ra các nhân vật 3D dễ thương, hoạt hình.</li>
+        <li><strong>Kawaii Đáng yêu:</strong> Nhấn mạnh phong cách dễ thương và quyến rũ điển hình của văn hóa Kawaii.</li>
         <li><strong>Art Deco:</strong> Sử dụng phong cách hình học và trang trí của thời kỳ Art Deco.</li>
-        <li><strong>Art Nouveau:</strong> Thêm các đường nét uốn lượn và các yếu tố lấy cảm hứng từ thiên nhiên, đặc trưng của Art Nouveau.</li>
-        <li><strong>Astral Aura:</strong> Tạo ra một bầu không khí huyền bí và khác thường.</li>
-        <li><strong>Avant Garde:</strong> Tập trung vào các biểu hiện nghệ thuật đổi mới và thử nghiệm.</li>
-        <li><strong>Baroque:</strong> Sử dụng phong cách kịch tính, chi tiết và phức tạp của thời kỳ Baroque.</li>
-        <li><strong>Poster phong cách Bauhaus:</strong> Phản ánh các nguyên tắc thiết kế tối giản và chức năng của Bauhaus.</li>
-        <li><strong>Bản vẽ sơ đồ:</strong> Tạo ra các hình ảnh giống như bản vẽ kỹ thuật.</li>
+        <li><strong>Art Nouveau:</strong> Thêm các đường nét uốn lượn và các yếu tố lấy cảm hứng từ thiên nhiên, điển hình của Art Nouveau.</li>
+        <li><strong>Aura Thiên thể:</strong> Tạo ra một bầu không khí huyền bí và khác thường.</li>
+        <li><strong>Tiên phong:</strong> Tập trung vào các biểu hiện nghệ thuật đổi mới và thử nghiệm.</li>
+        <li><strong>Baroque:</strong> Sử dụng phong cách kịch tính, chi tiết và công phu của thời kỳ Baroque.</li>
+        <li><strong>Áo Poster Phong cách Bauhaus:</strong> Phản ánh các nguyên tắc thiết kế tối giản và chức năng của Bauhaus.</li>
+        <li><strong>Vẽ Sơ đồ Bản vẽ:</strong> Tạo ra hình ảnh giống như các bản vẽ kỹ thuật.</li>
         <li><strong>Biếm họa:</strong> Tạo ra các chân dung phóng đại, hoạt hình.</li>
-        <li><strong>Art Cel-Shaded:</strong> Sử dụng các màu sắc đậm, phẳng đặc trưng của hoạt hình cel-shaded.</li>
-        <li><strong>Bảng thiết kế nhân vật:</strong> Tập trung vào các thiết kế nhân vật rõ ràng và sạch sẽ phù hợp cho hoạt hình.</li>
-        <li><strong>Classicism Art:</strong> Bắt chước phong cách nghệ thuật tinh tế và lý tưởng hóa của Cổ đại.</li>
-        <li><strong>Tranh trường màu:</strong> Đặc trưng bởi các khu vực lớn của một màu duy nhất để tạo ra một mặt phẳng màu phẳng.</li>
-        <li><strong>Art bút chì màu:</strong> Bắt chước kết cấu và diện mạo của các bản vẽ bút chì màu.</li>
-        <li><strong>Nghệ thuật khái niệm:</strong> Ưu tiên ý tưởng và khái niệm hơn các mối quan tâm thẩm mỹ hoặc vật chất.</li>
-        <li><strong>Constructivism:</strong> Phản ánh phong cách công nghiệp, hình học của phong trào Constructivist.</li>
-        <li><strong>Cubism:</strong> Phân chia các đối tượng thành các hình dạng hình học và trình bày chúng dưới dạng trừu tượng.</li>
-        <li><strong>Dadaism:</strong> Nhấn mạnh sự phi lý, phi lý và thẩm mỹ chống nghệ thuật.</li>
-        <li><strong>Dark Fantasy:</strong> Tạo ra một bầu không khí u ám, gothic với các yếu tố tối và kỳ lạ.</li>
-        <li><strong>Bầu không khí tối u ám:</strong> Sử dụng ánh sáng thấp và bóng tối để tạo ra một bầu không khí u ám.</li>
-        <li><strong>Art DMT:</strong> Đặc trưng bởi các hình ảnh sống động, ảo giác lấy cảm hứng từ trải nghiệm DMT.</li>
-        <li><strong>Art doodle:</strong> Nhấn mạnh các phong cách vẽ ngẫu hứng và vui tươi, thường phức tạp và chi tiết.</li>
-        <li><strong>Phơi sáng kép:</strong> Kết hợp hai hình ảnh thành một, tạo ra một hiệu ứng siêu thực, nhiều lớp.</li>
-        <li><strong>Vẽ sơn nhỏ giọt:</strong> Sử dụng sơn nhỏ giọt và văng để tạo ra các bố cục động và hỗn loạn.</li>
-        <li><strong>Expressionism:</strong> Ưu tiên biểu hiện cảm xúc hơn là đại diện thực tế, thường sử dụng màu sắc đậm và hình thức kịch tính.</li>
-        <li><strong>Ảnh Polaroid phai màu:</strong> Bắt chước diện mạo cũ kỹ và hoài cổ của một bức ảnh Polaroid phai màu.</li>
-        <li><strong>Fauvism:</strong> Sử dụng màu sắc sống động, không tự nhiên và nét vẽ đậm, lấy cảm hứng từ phong trào Fauvist.</li>
-        <li><strong>2D phẳng:</strong> Nhấn mạnh các thiết kế đơn giản, phẳng với ít đổ bóng hoặc độ sâu, thường theo phong cách hoạt hình.</li>
-        <li><strong>Phong cách Fortnite:</strong> Phản ánh phong cách nghệ thuật sống động, hoạt hình đặc trưng của trò chơi Fortnite.</li>
-        <li><strong>Futurism:</strong> Tập trung vào chuyển động động, năng lượng và mô tả các công nghệ tương lai.</li>
-        <li><strong>Glitchcore:</strong> Nhấn mạnh các lỗi kỹ thuật số và lỗi như một phong cách nghệ thuật, thường với hình ảnh bị biến dạng.</li>
-        <li><strong>Glo-Fi:</strong> Sử dụng ánh sáng mềm mại, phát sáng để tạo ra một bầu không khí mơ màng, huyền ảo.</li>
-        <li><strong>Phong cách Googie:</strong> Phản ánh các xu hướng thiết kế tương lai và Kỷ nguyên Không gian của giữa thế kỷ 20.</li>
-        <li><strong>Graffiti Art:</strong> Sử dụng thẩm mỹ phong cách đường phố sống động đặc trưng của graffiti và tranh tường đô thị.</li>
-        <li><strong>Art Phục hưng Harlem:</strong> Phản ánh các biểu hiện văn hóa và nghệ thuật phong phú của Phục hưng Harlem.</li>
-        <li><strong>Thời trang cao cấp:</strong> Nhấn mạnh thẩm mỹ bóng bẩy, tinh tế và tiên phong của thời trang cao cấp.</li>
-        <li><strong>Idyllic:</strong> Tạo ra một bầu không khí yên bình, thanh thản và thường là đồng quê.</li>
-        <li><strong>Impressionism:</strong> Sử dụng nét vẽ lỏng lẻo và màu sắc sống động để nắm bắt hiệu ứng của ánh sáng và bầu không khí.</li>
-        <li><strong>Bản vẽ infographic:</strong> Nhấn mạnh bố cục rõ ràng, hấp dẫn về mặt hình ảnh để trình bày thông tin một cách đồ họa.</li>
-        <li><strong>Vẽ mực nhỏ giọt:</strong> Sử dụng mực để tạo ra các hiệu ứng nhỏ giọt, lỏng trong một bản vẽ.</li>
-        <li><strong>Vẽ mực Nhật Bản:</strong> Bắt chước các kỹ thuật nét cọ truyền thống và thẩm mỹ của nghệ thuật mực Nhật Bản.</li>
-        <li><strong>Nhiếp ảnh Knolling:</strong> Nhấn mạnh sự sắp xếp gọn gàng và có tổ chức của các đối tượng, thường được chụp từ trên cao.</li>
-        <li><strong>Bầu không khí vui tươi nhẹ nhàng:</strong> Sử dụng màu sắc tươi sáng và ánh sáng để tạo ra một bầu không khí vui vẻ và nâng cao tinh thần.</li>
-        <li><strong>Thiết kế logo:</strong> Tập trung vào việc tạo ra các logo và yếu tố thương hiệu rõ ràng, dễ nhận biết.</li>
-        <li><strong>Sang trọng thanh lịch:</strong> Nhấn mạnh sự tinh tế và sang trọng, thường với kết cấu và vật liệu phong phú.</li>
-        <li><strong>Nhiếp ảnh macro:</strong> Tập trung vào các cận cảnh cực đoan, thường tiết lộ các chi tiết phức tạp không thể nhìn thấy bằng mắt thường.</li>
-        <li><strong>Art Mandala:</strong> Tạo ra các mẫu đối xứng, phức tạp lấy cảm hứng từ các thiết kế mandala truyền thống.</li>
-        <li><strong>Vẽ bút dạ:</strong> Bắt chước các đường nét và màu sắc đậm, sống động đặc trưng của các bản vẽ bút dạ.</li>
-        <li><strong>Medievalism:</strong> Phản ánh thẩm mỹ nghệ thuật và thiết kế của thời kỳ Trung cổ.</li>
-        <li><strong>Minimalism:</strong> Nhấn mạnh sự đơn giản và giảm các hình thức xuống các yếu tố cần thiết của chúng.</li>
-        <li><strong>Neo-Baroque:</strong> Hồi sinh phong cách xa hoa, kịch tính của thời kỳ Baroque, với ảnh hưởng hiện đại.</li>
-        <li><strong>Neo-Byzantine:</strong> Kết hợp phong cách nghệ thuật tôn giáo, trang trí công phu của Đế chế Byzantine với các yếu tố đương đại.</li>
-        <li><strong>Neo-Futurism:</strong> Tập trung vào các thiết kế tương lai, thường với thẩm mỹ công nghệ cao, bóng bẩy.</li>
-        <li><strong>Neo-Impressionism:</strong> Sử dụng các chấm màu nhỏ, riêng biệt để tạo ra hình ảnh, lấy cảm hứng từ phong trào Neo-Impressionist.</li>
-        <li><strong>Neo-Rococo:</strong> Hồi sinh phong cách trang trí công phu, trang trí của thời kỳ Rococo, với các biến tấu hiện đại.</li>
-        <li><strong>Neoclassicism:</strong> Bắt chước thẩm mỹ nghệ thuật và thiết kế của cổ đại, nhấn mạnh sự hài hòa và đơn giản.</li>
-        <li><strong>Op Art:</strong> Tạo ra các ảo giác quang học và hiệu ứng thông qua việc sử dụng các mẫu hình học và độ tương phản.</li>
-        <li><strong>Công phu và phức tạp:</strong> Tập trung vào các thiết kế rất chi tiết, công phu với sự tập trung vào trang trí.</li>
-        <li><strong>Vẽ phác thảo bút chì:</strong> Bắt chước kết cấu và diện mạo của các bản vẽ phác thảo bút chì.</li>
-        <li><strong>Pop Art:</strong> Sử dụng màu sắc đậm và hình ảnh lấy cảm hứng từ văn hóa đại chúng và truyền thông đại chúng.</li>
-        <li><strong>Rococo:</strong> Phản ánh phong cách nghệ thuật trang trí công phu, trang trí của thời kỳ Rococo, với sự nhấn mạnh vào sự nhẹ nhàng và thanh lịch.</li>
-        <li><strong>Art Silhouette:</strong> Sử dụng độ tương phản mạnh giữa ánh sáng và bóng tối để tạo ra các hình ảnh dựa trên bóng.</li>
-        <li><strong>Art vector đơn giản:</strong> Nhấn mạnh các hình dạng hình học rõ ràng và màu sắc phẳng, đặc trưng của nghệ thuật vector.</li>
-        <li><strong>SketchUp:</strong> Bắt chước diện mạo và cảm giác của các mô hình 3D được tạo bằng phần mềm SketchUp.</li>
-        <li><strong>Steampunk:</strong> Kết hợp thẩm mỹ thời kỳ Victoria với công nghệ chạy bằng hơi nước, tạo ra một phong cách tương lai cổ điển.</li>
-        <li><strong>Surrealism:</strong> Kết hợp thực tế và hình ảnh giống như giấc mơ để tạo ra các cảnh siêu thực, kỳ ảo.</li>
-        <li><strong>Suprematism:</strong> Tập trung vào các hình thức hình học cơ bản và bảng màu hạn chế, lấy cảm hứng từ phong trào Suprematist.</li>
-        <li><strong>Terragen:</strong> Bắt chước các cảnh quan thực tế, được tạo ra bằng máy tính được tạo ra bằng phần mềm Terragen.</li>
-        <li><strong>Bầu không khí thư giãn yên tĩnh:</strong> Sử dụng màu sắc nhẹ nhàng và hình ảnh êm dịu để tạo ra một môi trường yên bình và thanh thản.</li>
-        <li><strong>Thiết kế nhãn dán:</strong> Tập trung vào việc tạo ra các hình ảnh vui tươi, hoạt hình phù hợp cho nhãn dán.</li>
-        <li><strong>Ánh sáng viền sống động:</strong> Nhấn mạnh ánh sáng viền sáng xung quanh các đối tượng để tạo ra một hiệu ứng nổi bật, sống động.</li>
-        <li><strong>Ánh sáng thể tích:</strong> Sử dụng các chùm ánh sáng và hiệu ứng khí quyển để tạo ra độ sâu và chiều sâu.</li>
-        <li><strong>Màu nước:</strong> Bắt chước các kết cấu mềm mại, chảy của các bức tranh màu nước.</li>
-        <li><strong>Vui tươi và vui tươi:</strong> Tập trung vào hình ảnh nhẹ nhàng, giàu trí tưởng tượng và thường kỳ quặc.</li>
-        <li><strong>Sắc nét:</strong> Tăng cường độ rõ nét và định nghĩa cạnh cho một cái nhìn sắc nét hơn.</li>
-        <li><strong>Tác phẩm nghệ thuật:</strong> Nhấn mạnh đầu ra nghệ thuật chất lượng cao, chi tiết và đánh bóng.</li>
-        <li><strong>Ảnh:</strong> Nhắm đến chất lượng nhiếp ảnh thực tế và sống động.</li>
-        <li><strong>Tiêu cực:</strong> Đảo ngược màu sắc để tạo ra hiệu ứng âm bản nhiếp ảnh.</li>
+        <li><strong>Nghệ thuật Cel-Shaded:</strong> Sử dụng các màu sắc phẳng, đậm đặc trưng của hoạt hình cel-shaded.</li>
+        <li><strong>Bảng Thiết kế Nhân vật:</strong> Tập trung vào các thiết kế nhân vật sạch sẽ và rõ ràng phù hợp cho hoạt hình.</li>
+        <li><strong>Nghệ thuật Cổ điển:</strong> Bắt chước phong cách nghệ thuật tinh tế và lý tưởng của Thời kỳ Cổ điển.</li>
+        <li><strong>Tranh Lĩnh vực Màu:</strong> Đặc trưng với các khu vực lớn của màu đơn để tạo ra một mặt phẳng màu.</li>
+        <li><strong>Nghệ thuật Bút chì Màu:</strong> Bắt chước kết cấu và diện mạo của các bức tranh bằng bút chì màu.</li>
+        <li><strong>Nghệ thuật Khái niệm:</strong> Ưu tiên ý tưởng và khái niệm hơn là các mối quan tâm về thẩm mỹ hoặc vật chất.</li>
+        <li><strong>Chủ nghĩa Xây dựng:</strong> Phản ánh phong cách công nghiệp, hình học của phong trào Chủ nghĩa Xây dựng.</li>
+        <li><strong>Chủ nghĩa Lập thể:</strong> Phân tích các đối tượng thành các hình dạng hình học và trình bày chúng dưới dạng trừu tượng.</li>
+        <li><strong>Chủ nghĩa Dada:</strong> Nhấn mạnh sự vô lý, phi lý và thẩm mỹ chống nghệ thuật.</li>
+        <li><strong>Chủ nghĩa Huyền bí Tối:</strong> Tạo ra một bầu không khí u ám, gothic với các yếu tố tối tăm và kỳ quái.</li>
+        <li><strong>Bầu không khí Tối tăm:</strong> Sử dụng ánh sáng thấp và bóng tối để tạo ra một bầu không khí u ám.</li>
+        <li><strong>Nghệ thuật DMT:</strong> Đặc trưng với các hình ảnh sống động, tâm linh được lấy cảm hứng từ trải nghiệm DMT.</li>
+        <li><strong>Nghệ thuật Vẽ Doodle:</strong> Nhấn mạnh các phong cách vẽ ngẫu hứng và vui tươi, thường phức tạp và chi tiết.</li>
+        <li><strong>Phơi sáng Kép:</strong> Kết hợp hai hình ảnh thành một, tạo ra hiệu ứng siêu thực, nhiều lớp.</li>
+        <li><strong>Sơn nhỏ giọt:</strong> Sử dụng sơn nhỏ giọt và splatter để tạo ra các bố cục động và hỗn loạn.</li>
+        <li><strong>Chủ nghĩa Biểu hiện:</strong> Ưu tiên biểu hiện cảm xúc hơn là đại diện thực tế, thường sử dụng màu sắc đậm và hình thức kịch tính.</li>
+        <li><strong>Ảnh Polaroid Phai màu:</strong> Bắt chước vẻ ngoài cũ kỹ và hoài niệm của một bức ảnh Polaroid phai màu.</li>
+        <li><strong>Chủ nghĩa Fauvism:</strong> Sử dụng màu sắc sống động, không tự nhiên và nét cọ đậm, lấy cảm hứng từ phong trào Fauvist.</li>
+        <li><strong>Phẳng 2D:</strong> Nhấn mạnh các thiết kế đơn giản, phẳng với độ bóng hoặc độ sâu tối thiểu, thường theo phong cách hoạt hình.</li>
+        <li><strong>Phong cách Fortnite:</strong> Phản ánh phong cách nghệ thuật sống động, hoạt hình điển hình của trò chơi Fortnite.</li>
+        <li><strong>Chủ nghĩa Tương lai:</strong> Tập trung vào chuyển động động, năng lượng và sự mô tả của các công nghệ tương lai.</li>
+        <li><strong>Glitchcore:</strong> Nhấn mạnh các lỗi kỹ thuật số và sự cố như một phong cách nghệ thuật, thường với hình ảnh bị méo.</li>
+        <li><strong>Glo-Fi:</strong> Sử dụng ánh sáng mềm mại, phát sáng để tạo ra một bầu không khí mơ mộng, huyền ảo.</li>
+        <li><strong>Phong cách Googie:</strong> Phản ánh các xu hướng thiết kế tương lai và Thời kỳ Không gian giữa thế kỷ 20.</li>
+        <li><strong>Nghệ thuật Graffiti:</strong> Sử dụng thẩm mỹ sống động, phong cách đường phố điển hình của graffiti và bích họa đô thị.</li>
+        <li><strong>Nghệ thuật Thời kỳ Phục hưng Harlem:</strong> Phản ánh các biểu hiện văn hóa và nghệ thuật phong phú của Thời kỳ Phục hưng Harlem.</li>
+        <li><strong>Thời trang Cao cấp:</strong> Nhấn mạnh thẩm mỹ tinh tế, sang trọng và tiên phong của thời trang cao cấp.</li>
+        <li><strong>Idyllic:</strong> Tạo ra một bầu không khí yên bình, thanh thản và thường mang tính đồng quê.</li>
+        <li><strong>Ấn tượng:</strong> Sử dụng nét cọ lỏng và màu sắc sống động để nắm bắt các hiệu ứng ánh sáng và bầu không khí.</li>
+        <li><strong>Vẽ Thông tin:</strong> Nhấn mạnh các bố cục rõ ràng, hấp dẫn về mặt hình ảnh để trình bày thông tin một cách đồ họa.</li>
+        <li><strong>Vẽ Mực Nhỏ giọt:</strong> Sử dụng mực để tạo ra các hiệu ứng chảy, nhỏ giọt trong một bức tranh.</li>
+        <li><strong>Vẽ Mực Nhật Bản:</strong> Bắt chước các kỹ thuật và thẩm mỹ vẽ cọ truyền thống của nghệ thuật mực Nhật Bản.</li>
+        <li><strong>Chụp ảnh Knolling:</strong> Nhấn mạnh sự sắp xếp gọn gàng và có tổ chức của các đối tượng, thường được chụp từ trên cao.</li>
+        <li><strong>Bầu không khí Tươi sáng:</strong> Sử dụng màu sắc và ánh sáng sáng để tạo ra một bầu không khí vui vẻ và nâng cao tinh thần.</li>
+        <li><strong>Thiết kế Logo:</strong> Tập trung vào việc tạo ra các logo và yếu tố thương hiệu sạch sẽ, dễ nhận biết.</li>
+        <li><strong>Thanh lịch Sang trọng:</strong> Nhấn mạnh sự tinh tế và sang trọng, thường với các kết cấu và vật liệu phong phú.</li>
+        <li><strong>Chụp ảnh Macro:</strong> Tập trung vào các cận cảnh cực kỳ, thường tiết lộ các chi tiết phức tạp không nhìn thấy bằng mắt thường.</li>
+        <li><strong>Nghệ thuật Mandala:</strong> Tạo ra các mẫu đối xứng, phức tạp được lấy cảm hứng từ các thiết kế mandala truyền thống.</li>
+        <li><strong>Vẽ Bút đánh dấu:</strong> Bắt chước các đường nét và màu sắc đậm, sống động điển hình của các bức tranh bằng bút đánh dấu.</li>
+        <li><strong>Chủ nghĩa Trung cổ:</strong> Phản ánh nghệ thuật và thiết kế thẩm mỹ của thời kỳ Trung cổ.</li>
+        <li><strong>Chủ nghĩa Tối giản:</strong> Nhấn mạnh sự đơn giản và giảm thiểu các hình thức về các yếu tố thiết yếu của chúng.</li>
+        <li><strong>Chủ nghĩa Tân Baroque:</strong> Khôi phục phong cách xa hoa, kịch tính của thời kỳ Baroque, với các ảnh hưởng hiện đại.</li>
+        <li><strong>Chủ nghĩa Tân Byzantine:</strong> Kết hợp phong cách nghệ thuật tôn giáo, trang trí của Đế chế Byzantine với các yếu tố hiện đại.</li>
+        <li><strong>Chủ nghĩa Tân Tương lai:</strong> Tập trung vào các thiết kế tương lai, thường với thẩm mỹ cao cấp, công nghệ.</li>
+        <li><strong>Chủ nghĩa Tân Ấn tượng:</strong> Sử dụng các chấm màu nhỏ, rõ ràng để tạo ra hình ảnh, lấy cảm hứng từ phong trào Tân Ấn tượng.</li>
+        <li><strong>Chủ nghĩa Tân Rococo:</strong> Khôi phục phong cách trang trí, phức tạp của thời kỳ Rococo, với các biến tấu hiện đại.</li>
+        <li><strong>Chủ nghĩa Tân cổ điển:</strong> Bắt chước nghệ thuật và thiết kế thẩm mỹ của Thời kỳ Cổ điển, nhấn mạnh sự hài hòa và đơn giản.</li>
+        <li><strong>Nghệ thuật Ảo:</strong> Tạo ra ảo ảnh quang học và hiệu ứng thông qua việc sử dụng các mẫu hình học và độ tương phản.</li>
+        <li><strong>Trang trí và Phức tạp:</strong> Tập trung vào các thiết kế chi tiết, phức tạp với sự chú ý đến trang trí.</li>
+        <li><strong>Vẽ Phác thảo Bút chì:</strong> Bắt chước kết cấu và diện mạo của các phác thảo bằng bút chì.</li>
+        <li><strong>Nghệ thuật Pop:</strong> Sử dụng màu sắc đậm và hình ảnh lấy cảm hứng từ văn hóa đại chúng và truyền thông đại chúng.</li>
+        <li><strong>Rococo:</strong> Phản ánh phong cách nghệ thuật trang trí, phức tạp của thời kỳ Rococo, với sự nhấn mạnh vào sự nhẹ nhàng và thanh lịch.</li>
+        <li><strong>Nghệ thuật Silhouette:</strong> Sử dụng độ tương phản mạnh giữa ánh sáng và bóng tối để tạo ra hình ảnh dựa trên bóng.</li>
+        <li><strong>Nghệ thuật Vector Đơn giản:</strong> Nhấn mạnh các hình dạng hình học sạch sẽ và màu sắc phẳng, điển hình của nghệ thuật vector.</li>
+        <li><strong>SketchUp:</strong> Bắt chước vẻ ngoài và cảm giác của các mô hình 3D được tạo ra bằng phần mềm SketchUp.</li>
+        <li><strong>Steampunk:</strong> Kết hợp thẩm mỹ thời kỳ Victoria với công nghệ chạy bằng hơi nước, tạo ra một phong cách retro-tương lai.</li>
+        <li><strong>Chủ nghĩa Siêu thực:</strong> Kết hợp thực tế và hình ảnh giống như mơ để tạo ra các cảnh siêu thực, kỳ diệu.</li>
+        <li><strong>Chủ nghĩa Tối cao:</strong> Tập trung vào các hình thức hình học cơ bản và bảng màu hạn chế, lấy cảm hứng từ phong trào Chủ nghĩa Tối cao.</li>
+        <li><strong>Terragen:</strong> Bắt chước các cảnh quan thực tế, được tạo ra bằng phần mềm Terragen.</li>
+        <li><strong>Bầu không khí Yên tĩnh, Thư giãn:</strong> Sử dụng màu sắc mềm mại và hình ảnh nhẹ nhàng để tạo ra một môi trường yên bình và thanh thản.</li>
+        <li><strong>Thiết kế Nhãn dán:</strong> Tập trung vào việc tạo ra các hình ảnh vui tươi, hoạt hình phù hợp cho nhãn dán.</li>
+        <li><strong>Ánh sáng Rìa Sống động:</strong> Nhấn mạnh ánh sáng rìa sáng xung quanh các đối tượng để tạo ra hiệu ứng nổi bật, sống động.</li>
+        <li><strong>Ánh sáng Khối lượng:</strong> Sử dụng các tia sáng và hiệu ứng bầu không khí để tạo ra chiều sâu và kích thước.</li>
+        <li><strong>Vẽ Màu nước:</strong> Bắt chước các kết cấu mềm mại, chảy của các bức tranh màu nước.</li>
+        <li><strong>Vui tươi và Ngẫu hứng:</strong> Tập trung vào hình ảnh nhẹ nhàng, tưởng tượng và thường kỳ quặc.</li>
+        <li><strong>Sắc nét:</strong> Tăng cường độ rõ ràng và định nghĩa cạnh để có vẻ ngoài sắc nét hơn.</li>
+        <li><strong>Kiệt tác:</strong> Nhấn mạnh sản phẩm nghệ thuật chất lượng cao, chi tiết và được hoàn thiện.</li>
+        <li><strong>Ảnh:</strong> Nhắm đến chất lượng ảnh thực tế và sống động.</li>
+        <li><strong>Âm bản:</strong> Đảo ngược màu sắc để tạo ra hiệu ứng âm bản của ảnh.</li>
         <li><strong>Quảng cáo - Quảng cáo:</strong> Tập trung vào hình ảnh sạch sẽ, chuyên nghiệp phù hợp cho quảng cáo.</li>
-        <li><strong>Quảng cáo - Ô tô:</strong> Điều chỉnh phong cách hình ảnh cho quảng cáo ô tô động và đánh bóng.</li>
-        <li><strong>Quảng cáo - Doanh nghiệp:</strong> Nhấn mạnh thiết kế bóng bẩy, chuyên nghiệp phù hợp cho môi trường doanh nghiệp.</li>
-        <li><strong>Quảng cáo - Thời trang biên tập:</strong> Làm nổi bật diện mạo thời trang cao cấp, phong cách được sử dụng trong các biên tập thời trang.</li>
-        <li><strong>Quảng cáo - Nhiếp ảnh thực phẩm:</strong> Tối ưu hóa hình ảnh cho diện mạo sống động và hấp dẫn đặc trưng của nhiếp ảnh thực phẩm.</li>
-        <li><strong>Quảng cáo - Nhiếp ảnh thực phẩm cao cấp:</strong> Nhấn mạnh thẩm mỹ phong phú, chi tiết của nhiếp ảnh thực phẩm cao cấp.</li>
-        <li><strong>Quảng cáo - Sang trọng:</strong> Tập trung vào phong cách sang trọng, cao cấp phù hợp cho các thương hiệu sang trọng.</li>
-        <li><strong>Quảng cáo - Bất động sản:</strong> Làm nổi bật hình ảnh sạch sẽ và hấp dẫn đặc trưng của quảng cáo bất động sản.</li>
+        <li><strong>Quảng cáo - Ô tô:</strong> Tùy chỉnh phong cách hình ảnh cho quảng cáo ô tô năng động và bóng bẩy.</li>
+        <li><strong>Quảng cáo - Doanh nghiệp:</strong> Nhấn mạnh thiết kế tinh tế, chuyên nghiệp phù hợp cho các môi trường doanh nghiệp.</li>
+        <li><strong>Quảng cáo - Thời trang Biên tập:</strong> Nổi bật phong cách thời trang cao cấp, thời thượng được sử dụng trong các bài biên tập thời trang.</li>
+        <li><strong>Quảng cáo - Ảnh Thực phẩm:</strong> Tối ưu hóa hình ảnh cho vẻ ngoài sống động và hấp dẫn điển hình của ảnh thực phẩm.</li>
+        <li><strong>Quảng cáo - Ảnh Thực phẩm Cao cấp:</strong> Nhấn mạnh thẩm mỹ phong phú, chi tiết của ảnh thực phẩm cao cấp.</li>
+        <li><strong>Quảng cáo - Sang trọng:</strong> Tập trung vào phong cách xa hoa, cao cấp phù hợp cho các thương hiệu sang trọng.</li>
+        <li><strong>Quảng cáo - Bất động sản:</strong> Nổi bật hình ảnh sạch sẽ và hấp dẫn điển hình của quảng cáo bất động sản.</li>
         <li><strong>Quảng cáo - Bán lẻ:</strong> Nhấn mạnh phong cách hấp dẫn, tập trung vào người tiêu dùng phù hợp cho quảng cáo bán lẻ.</li>
-        <li><strong>Siêu thực:</strong> Cố gắng đạt được phong cách hình ảnh cực kỳ chi tiết, giống như cuộc sống.</li>
-        <li><strong>Pointillism:</strong> Sử dụng các chấm màu nhỏ, riêng biệt để tạo ra một hình ảnh, lấy cảm hứng từ phong trào Pointillist.</li>
-        <li><strong>Psychedelic:</strong> Nhấn mạnh màu sắc sống động và hình ảnh siêu thực lấy cảm hứng từ nghệ thuật psychedelic.</li>
-        <li><strong>Phục hưng:</strong> Phản ánh phong cách cổ điển, hài hòa của nghệ thuật Phục hưng.</li>
-        <li><strong>Typography:</strong> Tập trung vào việc sử dụng sáng tạo và nghệ thuật của văn bản và phông chữ.</li>
-        <li><strong>Futuristic Biomechanical:</strong> Kết hợp các yếu tố tương lai và cơ sinh học để tạo ra một phong cách công nghệ cao, hữu cơ.</li>
-        <li><strong>Futuristic Biomechanical Cyberpunk:</strong> Kết hợp thẩm mỹ cơ sinh học và cyberpunk cho một cái nhìn tương lai, sần sùi.</li>
-        <li><strong>Futuristic Cybernetic:</strong> Tập trung vào hình ảnh công nghệ cao, cybernetic.</li>
-        <li><strong>Futuristic Cybernetic Robot:</strong> Nhấn mạnh các thiết kế robot và cybernetic với một cạnh tương lai.</li>
-        <li><strong>Futuristic Cyberpunk Cityscape:</strong> Phản ánh các cảnh quan thành phố sần sùi, chiếu sáng neon đặc trưng của nghệ thuật cyberpunk.</li>
-        <li><strong>Futuristic Sci-Fi:</strong> Tập trung vào thẩm mỹ lấy cảm hứng từ tương lai và khoa học viễn tưởng.</li>
-        <li><strong>Futuristic Retro Cyberpunk:</strong> Kết hợp các yếu tố retro và cyberpunk cho một phong cách hoài cổ nhưng tương lai.</li>
-        <li><strong>Futuristic Retro:</strong> Kết hợp hình ảnh tương lai với các yếu tố thiết kế retro.</li>
-        <li><strong>Futuristic Vaporwave:</strong> Nhấn mạnh hình ảnh hoài cổ, siêu thực đặc trưng của nghệ thuật Vaporwave.</li>
-        <li><strong>Game Bubble:</strong> Tập trung vào một thẩm mỹ vui tươi, sủi bọt thường thấy trong các trò chơi thông thường.</li>
-        <li><strong>Game Cyberpunk:</strong> Kết hợp các yếu tố thiết kế trò chơi với thẩm mỹ cyberpunk.</li>
-        <li><strong>Game Fighting:</strong> Phản ánh phong cách động, mãnh liệt đặc trưng của các trò chơi chiến đấu.</li>
-        <li><strong>Game GTA:</strong> Bắt chước phong cách đô thị, sần sùi đặc trưng của các trò chơi Grand Theft Auto.</li>
-        <li><strong>Game Mario:</strong> Tập trung vào phong cách hoạt hình, sống động đặc trưng của các trò chơi Mario.</li>
-        <li><strong>Game Minecraft:</strong> Bắt chước phong cách khối, pixel đặc trưng của Minecraft.</li>
-        <li><strong>Game Pokemon:</strong> Phản ánh phong cách lấy cảm hứng từ anime, sống động đặc trưng của các trò chơi Pokémon.</li>
-        <li><strong>Game Retro Arcade:</strong> Nhấn mạnh phong cách pixel hoài cổ đặc trưng của các trò chơi arcade retro.</li>
-        <li><strong>Game RPG Fantasy:</strong> Phản ánh thẩm mỹ lấy cảm hứng từ fantasy, chi tiết đặc trưng của các trò chơi RPG.</li>
-        <li><strong>Game Strategy:</strong> Tập trung vào thiết kế sạch sẽ, chức năng đặc trưng của các trò chơi chiến lược.</li>
-        <li><strong>Game Streetfighter:</strong> Bắt chước phong cách đậm, động đặc trưng của các trò chơi Street Fighter.</li>
-        <li><strong>Game Zelda:</strong> Phản ánh phong cách lấy cảm hứng từ fantasy đặc trưng của các trò chơi Zelda.</li>
-        <li><strong>Misc Architectural:</strong> Tập trung vào các bản vẽ kiến trúc sạch sẽ, chính xác.</li>
-        <li><strong>Misc Disco:</strong> Nhấn mạnh thẩm mỹ chiếu sáng neon, sống động đặc trưng của văn hóa disco.</li>
-        <li><strong>Misc Dreamscape:</strong> Tạo ra các môi trường siêu thực, giống như giấc mơ.</li>
-        <li><strong>Misc Dystopian:</strong> Phản ánh hình ảnh sần sùi, ảm đạm đặc trưng của các bối cảnh dystopian.</li>
-        <li><strong>Misc Fairy Tale:</strong> Nhấn mạnh các yếu tố kỳ diệu, huyền diệu đặc trưng của truyện cổ tích.</li>
-        <li><strong>Misc Gothic:</strong> Phản ánh phong cách tối, trang trí công phu đặc trưng của nghệ thuật và kiến trúc Gothic.</li>
-        <li><strong>Misc Grunge:</strong> Nhấn mạnh thẩm mỹ sần sùi, thô đặc trưng của văn hóa grunge.</li>
-        <li><strong>Misc Horror:</strong> Tập trung vào hình ảnh tối, kỳ lạ và đáng sợ đặc trưng của kinh dị.</li>
-        <li><strong>Misc Kawaii:</strong> Phản ánh phong cách dễ thương, quyến rũ đặc trưng của văn hóa Kawaii.</li>
-        <li><strong>Misc Lovecraftian:</strong> Nhấn mạnh sự kỳ lạ, kinh dị vũ trụ đặc trưng của tiểu thuyết Lovecraftian.</li>
-        <li><strong>Misc Macabre:</strong> Tập trung vào các chủ đề tối, rùng rợn và đáng sợ.</li>
-        <li><strong>Misc Manga:</strong> Bắt chước phong cách đậm, động đặc trưng của manga.</li>
-        <li><strong>Misc Metropolis:</strong> Phản ánh thẩm mỹ đô thị, bóng bẩy đặc trưng của các đô thị hiện đại.</li>
-        <li><strong>Misc Minimalist:</strong> Nhấn mạnh sự đơn giản và giảm các hình thức xuống các yếu tố cần thiết của chúng.</li>
-        <li><strong>Misc Monochrome:</strong> Tập trung vào các hình ảnh được tạo ra trong các sắc thái khác nhau của một màu duy nhất.</li>
-        <li><strong>Misc Nautical:</strong> Phản ánh thẩm mỹ lấy cảm hứng từ hàng hải đặc trưng của các chủ đề hàng hải.</li>
-        <li><strong>Misc Space:</strong> Nhấn mạnh hình ảnh rộng lớn, khác thường đặc trưng của các bối cảnh không gian.</li>
-        <li><strong>Misc Stained Glass:</strong> Bắt chước các thiết kế phức tạp, đầy màu sắc đặc trưng của nghệ thuật kính màu.</li>
-        <li><strong>Misc Techwear Fashion:</strong> Tập trung vào thẩm mỹ tương lai, chức năng đặc trưng của thời trang techwear.</li>
-        <li><strong>Misc Tribal:</strong> Phản ánh thẩm mỹ văn hóa, đậm đặc trưng của nghệ thuật bộ lạc.</li>
-        <li><strong>Misc Zentangle:</strong> Nhấn mạnh các mẫu lặp đi lặp lại, phức tạp đặc trưng của nghệ thuật Zentangle.</li>
+        <li><strong>Chủ nghĩa Siêu thực:</strong> Cố gắng đạt được một phong cách hình ảnh cực kỳ chi tiết, sống động.</li>
+        <li><strong>Chủ nghĩa Điểm:</strong> Sử dụng các chấm màu nhỏ, rõ ràng để tạo ra một hình ảnh, lấy cảm hứng từ phong trào Chủ nghĩa Điểm.</li>
+        <li><strong>Huyền ảo:</strong> Nhấn mạnh màu sắc sống động và hình ảnh siêu thực lấy cảm hứng từ nghệ thuật huyền ảo.</li>
+        <li><strong>Thời kỳ Phục hưng:</strong> Phản ánh phong cách hài hòa, cổ điển của nghệ thuật Phục hưng.</li>
+        <li><strong>Kiểu chữ:</strong> Tập trung vào việc sử dụng sáng tạo và nghệ thuật của văn bản và phông chữ.</li>
+        <li><strong>Biomechanical Tương lai:</strong> Kết hợp các yếu tố tương lai và sinh học để tạo ra một phong cách cao cấp, hữu cơ.</li>
+        <li><strong>Cyberpunk Biomechanical Tương lai:</strong> Kết hợp thẩm mỹ sinh học và cyberpunk để tạo ra một phong cách tương lai thô ráp.</li>
+        <li><strong>Cybernetic Tương lai:</strong> Tập trung vào hình ảnh cao cấp, cybernetic.</li>
+        <li><strong>Robot Cybernetic Tương lai:</strong> Nhấn mạnh thiết kế robot và cybernetic với một phong cách tương lai.</li>
+        <li><strong>Cảnh quan Thành phố Cyberpunk Tương lai:</strong> Phản ánh các cảnh quan thành phố thô ráp, sáng neon điển hình của nghệ thuật cyberpunk.</li>
+        <li><strong>Thể loại Khoa học viễn tưởng Tương lai:</strong> Tập trung vào các thẩm mỹ lấy cảm hứng từ khoa học viễn tưởng và tương lai.</li>
+        <li><strong>Cyberpunk Retro Tương lai:</strong> Kết hợp các yếu tố retro và cyberpunk để tạo ra một phong cách vừa hoài niệm vừa tương lai.</li>
+        <li><strong>Retro Tương lai:</strong> Kết hợp hình ảnh tương lai với các yếu tố thiết kế retro.</li>
+        <li><strong>Vaporwave Tương lai:</strong> Nhấn mạnh hình ảnh hoài niệm, siêu thực điển hình của nghệ thuật Vaporwave.</li>
+        <li><strong>Bong bóng Trò chơi:</strong> Tập trung vào một thẩm mỹ vui tươi, bồng bềnh thường thấy trong các trò chơi bình thường.</li>
+        <li><strong>Cyberpunk Trò chơi:</strong> Kết hợp các yếu tố thiết kế trò chơi với thẩm mỹ cyberpunk.</li>
+        <li><strong>Trò chơi Đánh nhau:</strong> Phản ánh phong cách năng động, mãnh liệt điển hình của các trò chơi đánh nhau.</li>
+        <li><strong>Trò chơi GTA:</strong> Bắt chước phong cách thô ráp, đô thị điển hình của các trò chơi Grand Theft Auto.</li>
+        <li><strong>Trò chơi Mario:</strong> Tập trung vào phong cách sống động, hoạt hình điển hình của các trò chơi Mario.</li>
+        <li><strong>Trò chơi Minecraft:</strong> Bắt chước phong cách khối, pixel hóa điển hình của Minecraft.</li>
+        <li><strong>Trò chơi Pokémon:</strong> Phản ánh phong cách sống động, lấy cảm hứng từ anime điển hình của các trò chơi Pokémon.</li>
+        <li><strong>Trò chơi Arcade Retro:</strong> Nhấn mạnh phong cách pixel hóa, hoài niệm điển hình của các trò chơi arcade retro.</li>
+        <li><strong>Trò chơi RPG Fantasy:</strong> Phản ánh thẩm mỹ chi tiết, lấy cảm hứng từ fantasy điển hình của các trò chơi RPG.</li>
+        <li><strong>Trò chơi Chiến lược:</strong> Tập trung vào thiết kế sạch sẽ, chức năng điển hình của các trò chơi chiến lược.</li>
+        <li><strong>Trò chơi Streetfighter:</strong> Bắt chước phong cách mạnh mẽ, năng động điển hình của các trò chơi Street Fighter.</li>
+        <li><strong>Trò chơi Zelda:</strong> Phản ánh phong cách lấy cảm hứng từ fantasy điển hình của các trò chơi Zelda.</li>
+        <li><strong>Kiến trúc Khác:</strong> Tập trung vào các bản vẽ kiến trúc sạch sẽ, chính xác.</li>
+        <li><strong>Disco Khác:</strong> Nhấn mạnh thẩm mỹ sống động, sáng neon điển hình của văn hóa disco.</li>
+        <li><strong>Giấc mơ Khác:</strong> Tạo ra các môi trường siêu thực, giống như giấc mơ.</li>
+        <li><strong>Dystopian Khác:</strong> Phản ánh hình ảnh thô ráp, ảm đạm điển hình của các bối cảnh dystopian.</li>
+        <li><strong>Cổ tích Khác:</strong> Nhấn mạnh các yếu tố kỳ diệu, ngẫu hứng điển hình của cổ tích.</li>
+        <li><strong>Gothic Khác:</strong> Phản ánh phong cách tối tăm, trang trí điển hình của nghệ thuật và kiến trúc Gothic.</li>
+        <li><strong>Grunge Khác:</strong> Nhấn mạnh thẩm mỹ thô ráp, nguyên sơ điển hình của văn hóa grunge.</li>
+        <li><strong>Kinh dị Khác:</strong> Tập trung vào hình ảnh tối tăm, kỳ quái và khó chịu điển hình của kinh dị.</li>
+        <li><strong>Kawaii Khác:</strong> Phản ánh phong cách dễ thương, quyến rũ điển hình của văn hóa Kawaii.</li>
+        <li><strong>Lovecraftian Khác:</strong> Nhấn mạnh sự kỳ quái, kinh dị vũ trụ điển hình của tiểu thuyết Lovecraftian.</li>
+        <li><strong>Macabre Khác:</strong> Tập trung vào các chủ đề tối tăm, bệnh hoạn và khó chịu.</li>
+        <li><strong>Manga Khác:</strong> Bắt chước phong cách mạnh mẽ, năng động điển hình của manga.</li>
+        <li><strong>Metropolis Khác:</strong> Phản ánh thẩm mỹ hiện đại, đô thị điển hình của các thành phố hiện đại.</li>
+        <li><strong>Tối giản Khác:</strong> Nhấn mạnh sự đơn giản và giảm thiểu các hình thức về các yếu tố thiết yếu.</li>
+        <li><strong>Đơn sắc Khác:</strong> Tập trung vào các hình ảnh được tạo ra trong các sắc thái khác nhau của một màu duy nhất.</li>
+        <li><strong>Hàng hải Khác:</strong> Phản ánh thẩm mỹ lấy cảm hứng từ hàng hải điển hình của các chủ đề hàng hải.</li>
+        <li><strong>Không gian Khác:</strong> Nhấn mạnh hình ảnh rộng lớn, khác thường điển hình của các bối cảnh không gian.</li>
+        <li><strong>Kính màu Khác:</strong> Bắt chước các thiết kế phức tạp, đầy màu sắc điển hình của nghệ thuật kính màu.</li>
+        <li><strong>Thời trang Techwear Khác:</strong> Tập trung vào thẩm mỹ chức năng, tương lai điển hình của thời trang techwear.</li>
+        <li><strong>Bộ lạc Khác:</strong> Phản ánh thẩm mỹ văn hóa mạnh mẽ điển hình của nghệ thuật bộ lạc.</li>
+        <li><strong>Zentangle Khác:</strong> Nhấn mạnh các mẫu phức tạp, lặp đi lặp lại điển hình của nghệ thuật Zentangle.</li>
         <li><strong>Collage Papercraft:</strong> Sử dụng giấy cắt để tạo ra các collage nhiều lớp, có kết cấu.</li>
-        <li><strong>Flat Papercut Papercraft:</strong> Nhấn mạnh các thiết kế cắt giấy phẳng.</li>
-        <li><strong>Kirigami Papercraft:</strong> Tập trung vào các thiết kế gấp, phức tạp đặc trưng của Kirigami.</li>
-        <li><strong>Paper Mache Papercraft:</strong> Sử dụng giấy mache để tạo ra các hình thức ba chiều, có kết cấu.</li>
-        <li><strong>Paper Quilling Papercraft:</strong> Nhấn mạnh các thiết kế giấy cuộn, tinh tế đặc trưng của quilling giấy.</li>
-        <li><strong>Collage Papercut Papercraft:</strong> Kết hợp các yếu tố cắt giấy để tạo ra các collage nhiều lớp.</li>
-        <li><strong>Shadow Box Papercut Papercraft:</strong> Sử dụng các cắt giấy nhiều lớp để tạo ra các hộp bóng ba chiều.</li>
-        <li><strong>Stacked Papercut Papercraft:</strong> Tập trung vào các thiết kế giấy xếp chồng, nhiều lớp.</li>
-        <li><strong>Thick Layered Papercut Papercraft:</strong> Nhấn mạnh diện mạo nhiều lớp, có chiều sâu đặc trưng của các thiết kế cắt giấy dày.</li>
-        <li><strong>Photo Alien:</strong> Tập trung vào hình ảnh siêu thực, ngoài hành tinh.</li>
-        <li><strong>Photo Film Noir:</strong> Nhấn mạnh thẩm mỹ tối, u ám đặc trưng của phim noir.</li>
-        <li><strong>Photo Glamour:</strong> Làm nổi bật diện mạo bóng bẩy, phong cách đặc trưng của nhiếp ảnh glamour.</li>
-        <li><strong>Photo HDR:</strong> Sử dụng dải động cao (HDR) để tạo ra các hình ảnh với dải ánh sáng và màu sắc rộng.</li>
-        <li><strong>Photo iPhone Photographic:</strong> Bắt chước phong cách sạch sẽ, hiện đại đặc trưng của nhiếp ảnh iPhone.</li>
-        <li><strong>Photo Long Exposure:</strong> Sử dụng phơi sáng lâu để tạo ra các hiệu ứng động, mờ chuyển động.</li>
-        <li><strong>Photo Neon Noir:</strong> Kết hợp ánh sáng neon với thẩm mỹ tối, u ám của noir.</li>
-        <li><strong>Photo Silhouette:</strong> Tập trung vào độ tương phản mạnh giữa ánh sáng và bóng tối để tạo ra các hình ảnh dựa trên bóng.</li>
-        <li><strong>Photo Tilt Shift:</strong> Sử dụng hiệu ứng tilt-shift để tạo ra một diện mạo thu nhỏ, giống như đồ chơi.</li>
-        <li><strong>Mô hình 3D:</strong> Tập trung vào diện mạo sạch sẽ, chi tiết đặc trưng của các mô hình 3D.</li>
-        <li><strong>Analog Film:</strong> Bắt chước diện mạo hạt, có kết cấu đặc trưng của nhiếp ảnh phim analog.</li>
-        <li><strong>Anime:</strong> Nhấn mạnh phong cách sống động, động đặc trưng của anime.</li>
-        <li><strong>Cinematic:</strong> Tạo ra một hiệu ứng kịch tính, giống như phim với ánh sáng và bố cục mạnh mẽ.</li>
-        <li><strong>Comic Book:</strong> Sử dụng các đường nét đậm và màu sắc sống động đặc trưng của nghệ thuật truyện tranh.</li>
-        <li><strong>Craft Clay:</strong> Bắt chước diện mạo và cảm giác thủ công của các mô hình đất sét.</li>
-        <li><strong>Digital Art:</strong> Tập trung vào tác phẩm nghệ thuật kỹ thuật số sạch sẽ, đánh bóng.</li>
-        <li><strong>Fantasy Art:</strong> Nhấn mạnh hình ảnh chi tiết, giàu trí tưởng tượng đặc trưng của nghệ thuật fantasy.</li>
-        <li><strong>Isometric:</strong> Sử dụng phối cảnh isometric để tạo ra một diện mạo ba chiều.</li>
-        <li><strong>Line Art:</strong> Tập trung vào các đường nét rõ ràng, sắc nét để tạo ra các bản vẽ chi tiết.</li>
-        <li><strong>Low Poly:</strong> Sử dụng các mô hình 3D đa giác thấp để tạo ra một diện mạo tối giản, hình học.</li>
-        <li><strong>Neonpunk:</strong> Kết hợp ánh sáng neon với thẩm mỹ sần sùi của cyberpunk.</li>
-        <li><strong>Origami:</strong> Tập trung vào các thiết kế gấp, phức tạp đặc trưng của origami.</li>
-        <li><strong>Photographic:</strong> Nhắm đến hình ảnh thực tế, sống động.</li>
-        <li><strong>Pixel Art:</strong> Sử dụng các thiết kế pixel để tạo ra một diện mạo retro, lấy cảm hứng từ trò chơi điện tử.</li>
-        <li><strong>Kết cấu:</strong> Tập trung vào các kết cấu phong phú, chi tiết để tăng cường độ sâu hình ảnh.</li>
+        <li><strong>Giấy cắt phẳng Papercraft:</strong> Nhấn mạnh các thiết kế giấy cắt phẳng.</li>
+        <li><strong>Kirigami Papercraft:</strong> Tập trung vào các thiết kế phức tạp, gấp điển hình của Kirigami.</li>
+        <li><strong>Giấy mache Papercraft:</strong> Sử dụng giấy mache để tạo ra các hình dạng ba chiều có kết cấu.</li>
+        <li><strong>Quilling Giấy Papercraft:</strong> Nhấn mạnh các thiết kế giấy cuộn tinh tế, điển hình của quilling giấy.</li>
+        <li><strong>Collage Papercut Papercraft:</strong> Kết hợp các yếu tố giấy cắt để tạo ra các collage nhiều lớp.</li>
+        <li><strong>Hộp bóng Papercut Papercraft:</strong> Sử dụng các giấy cắt nhiều lớp để tạo ra các hộp bóng ba chiều.</li>
+        <li><strong>Giấy cắt xếp chồng Papercraft:</strong> Tập trung vào các thiết kế giấy xếp chồng nhiều lớp.</li>
+        <li><strong>Giấy cắt dày nhiều lớp Papercraft:</strong> Nhấn mạnh vẻ ngoài nhiều chiều, nhiều lớp điển hình của các thiết kế giấy cắt dày.</li>
+        <li><strong>Ảnh Alien:</strong> Tập trung vào hình ảnh siêu thực, ngoài hành tinh.</li>
+        <li><strong>Ảnh Noir:</strong> Nhấn mạnh thẩm mỹ tối tăm, u ám điển hình của phim noir.</li>
+        <li><strong>Ảnh Glamour:</strong> Nổi bật vẻ ngoài bóng bẩy, thời thượng điển hình của nhiếp ảnh glamour.</li>
+        <li><strong>Ảnh HDR:</strong> Sử dụng dải động cao (HDR) để tạo ra hình ảnh với một loạt ánh sáng và màu sắc.</li>
+        <li><strong>Ảnh Nhiếp ảnh iPhone:</strong> Bắt chước phong cách sạch sẽ, hiện đại điển hình của nhiếp ảnh iPhone.</li>
+        <li><strong>Ảnh Phơi sáng lâu:</strong> Sử dụng phơi sáng lâu để tạo ra các hiệu ứng động, mờ chuyển động.</li>
+        <li><strong>Ảnh Neon Noir:</strong> Kết hợp ánh sáng neon với thẩm mỹ tối tăm, u ám của noir.</li>
+        <li><strong>Ảnh Silhouette:</strong> Tập trung vào độ tương phản mạnh giữa ánh sáng và bóng tối để tạo ra hình ảnh dựa trên bóng.</li>
+        <li><strong>Ảnh Tilt Shift:</strong> Sử dụng hiệu ứng tilt-shift để tạo ra một cái nhìn thu nhỏ, giống như đồ chơi.</li>
+        <li><strong>Mô hình 3D:</strong> Tập trung vào vẻ ngoài sạch sẽ, chi tiết điển hình của các mô hình 3D.</li>
+        <li><strong>Phim Analog:</strong> Bắt chước vẻ ngoài hạt, có kết cấu điển hình của nhiếp ảnh phim analog.</li>
+        <li><strong>Anime:</strong> Nhấn mạnh phong cách sống động, năng động điển hình của anime.</li>
+        <li><strong>Điện ảnh:</strong> Tạo ra hiệu ứng kịch tính, giống như phim với ánh sáng và bố cục mạnh mẽ.</li>
+        <li><strong>Sách truyện tranh:</strong> Sử dụng các đường nét đậm và màu sắc sống động điển hình của nghệ thuật truyện tranh.</li>
+        <li><strong>Đất sét Thủ công:</strong> Bắt chước vẻ ngoài có kết cấu, thủ công của các mô hình đất sét.</li>
+        <li><strong>Nghệ thuật Kỹ thuật số:</strong> Tập trung vào các tác phẩm nghệ thuật kỹ thuật số sạch sẽ, bóng bẩy.</li>
+        <li><strong>Nghệ thuật Fantasy:</strong> Nhấn mạnh các hình ảnh chi tiết, tưởng tượng điển hình của nghệ thuật fantasy.</li>
+        <li><strong>Isometric:</strong> Sử dụng một góc nhìn isometric để tạo ra một cái nhìn ba chiều.</li>
+        <li><strong>Nghệ thuật Đường nét:</strong> Tập trung vào các đường nét sạch sẽ, sắc nét để tạo ra các bức tranh chi tiết.</li>
+        <li><strong>Low Poly:</strong> Sử dụng các mô hình 3D polygon thấp để tạo ra một cái nhìn tối giản, hình học.</li>
+        <li><strong>Neonpunk:</strong> Kết hợp ánh sáng neon với thẩm mỹ thô ráp của cyberpunk.</li>
+        <li><strong>Origami:</strong> Tập trung vào các thiết kế phức tạp, gấp điển hình của origami.</li>
+        <li><strong>Nhiếp ảnh:</strong> Nhắm đến hình ảnh thực tế, sống động.</li>
+        <li><strong>Nghệ thuật Pixel:</strong> Sử dụng các thiết kế pixel hóa để tạo ra một cái nhìn retro, lấy cảm hứng từ video game.</li>
+        <li><strong>Kết cấu:</strong> Tập trung vào các kết cấu phong phú, chi tiết để tăng cường chiều sâu hình ảnh.</li>
     </ul>
 
 </body>

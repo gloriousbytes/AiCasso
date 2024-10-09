@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ръководство за функцията Мултивизия</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        img, video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Ръководство за използване на функцията Мултивизия</h2>
+    <p>Функцията Мултивизия в AiCasso ви позволява да видите обект от различни ъгли, генерирайки множество перспективи на обекта в изображението ви. Тя е особено полезна за по-добро разбиране на 3D форми или представяне на продукти. Тази функция работи най-добре, когато обектът няма фон, така че се уверете, че сте премахнали всякакви разсейващи елементи за оптимални резултати.</p>
+
+    <h3>Как работи:</h3>
+    
+    <div class="example">
+        <strong>Входно изображение:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/input.jpg" alt="Входно изображение" loading="lazy">
+        </div>
+        <strong>Подсказка:</strong>
+        <p>"Покажи този обект от множество перспективи"</p>
+        <strong>Резултат:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/result.jpg" alt="Резултатно изображение" loading="lazy">
+        </div>
+    </div>
+
+    <h3>Съвети за най-добри резултати</h3>
+    <p>Ето няколко съвета, за да се уверите, че изображението ви ще бъде страхотно:</p>
+
+    <ul>
+        <li><strong>Обект без фон:</strong> Функцията Мултивизия работи най-добре, когато обектът в изображението ви е изолиран от фона. Това позволява на AiCasso да се фокусира само върху обекта и да генерира ясни перспективи.</li>
+        <li><strong>Добро осветление:</strong> Уверете се, че обектът ви е добре осветен в входното изображение, тъй като сенките и неравномерното осветление могат да повлияят на начина, по който обектът изглежда от различни ъгли.</li>
+        <li><strong>Множество обекти:</strong> Ако в изображението има повече от един обект, опитайте да изолирате този, който искате да видите от различни ъгли, или изберете по-просто изображение с един фокален обект.</li>
+    </ul>
+
+    <p>Както всички функции в AiCasso, не е нужно да се притеснявате прекалено - опишете какво искате и AiCasso ще свърши трудната работа. Функцията Мултивизия е перфектна за представяне на продукти, креативни демонстрации и още!</p>
+
+</body>
+</html>

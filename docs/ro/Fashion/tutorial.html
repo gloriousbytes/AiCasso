@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -48,29 +49,29 @@
 <body>
 
     <h2>Ghid pentru Utilizarea Funcției Fashion Generation</h2>
-    <p>Funcția Fashion Generation din AiCasso îți permite să îmbraci pe cineva într-o ținută specifică, cum ar fi o cămașă, o rochie sau o pereche de pantaloni. Pur și simplu descrie ce dorești și urmărește cum AiCasso aplică articolul de îmbrăcăminte persoanei din imagine.</p>
+    <p>Funcția Fashion Generation din AiCasso îți permite să îmbraci pe cineva într-o ținută specifică, cum ar fi o cămașă, o rochie sau o pereche de pantaloni. Pur și simplu descrie ce vrei și urmărește cum AiCasso aplică articolul de îmbrăcăminte persoanei din imagine.</p>
 
     <h3>Cum Funcționează:</h3>
     
     <div class="example">
         <strong>Input 1 - Imaginea Persoanei:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 1.jpg" alt="Imaginea Persoanei">
         </div>
         <strong>Input 2 - Articolul de Îmbrăcăminte:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 2.jpg" alt="Articolul de Îmbrăcăminte">
         </div>
         <strong>Prompt:</strong>
         <p>"Băiat îmbrăcat într-o cămașă"</p>
         <strong>Rezultatul:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+            <img src="../../images/tutorials/fashion/result.jpg" alt="Imaginea Rezultat">
         </div>
     </div>
 
     <h3>Parametrii Opționali</h3>
-    <p>Dacă dorești să adaugi propriul stil sau să te asiguri că rezultatul este exact așa cum vrei, poți ajusta aceste setări:</p>
+    <p>Dacă vrei să adaugi propriul stil sau să te asiguri că rezultatul este exact așa cum îți dorești, poți ajusta aceste setări:</p>
 
     <ul>
         <li><strong>Prompt Negativ:</strong> Dacă există ceva ce <em>nu</em> vrei în imagine, menționează-l aici. Lasă-l gol dacă ești de acord cu orice propune AiCasso.</li>

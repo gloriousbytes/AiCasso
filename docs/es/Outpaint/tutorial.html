@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consejos para la Función de Outpaint</title>
+    <title>Consejos para la Función Outpaint</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
         .iframe-container {
@@ -47,21 +47,21 @@
 
 <body>
 
-    <h2>Consejos para Usar la Función de Outpaint</h2>
-    <p>La función de Outpaint en AiCasso te permite expandir una imagen añadiendo nuevos elementos alrededor de ella o extendiendo lo que ya está allí. Simplemente describe lo que quieres, y AiCasso se encargará del resto.</p>
+    <h2>Consejos para Usar la Función Outpaint</h2>
+    <p>La función Outpaint en AiCasso te permite expandir una imagen añadiendo nuevos elementos a su alrededor o extendiendo lo que ya está presente. Simplemente describe lo que deseas, y AiCasso se encargará del resto.</p>
 
     <h3>Cómo Funciona:</h3>
     
     <div class="example">
         <strong>Imagen Inicial:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/input.jpg" alt="Imagen Inicial" loading="lazy">
         </div>
     </div>
 
     <div class="example">
         <strong>Describe Tu Cambio:</strong>
-        <p>Simplemente escribe lo que quieres añadir o expandir, y AiCasso aplicará esos cambios. Puedes especificar direcciones como izquierda, derecha, arriba o abajo, e incluso detalles como alejar o desplazar.</p>
+        <p>Simplemente escribe lo que deseas añadir o expandir, y AiCasso aplicará esos cambios. Puedes especificar direcciones como izquierda, derecha, arriba o abajo, e incluso detalles como alejar la vista o desplazar.</p>
     </div>
 
     <h3>Ejemplos de Ediciones:</h3>
@@ -69,15 +69,15 @@
     <div class="example">
         <strong>Ejemplo 1:</strong> "Añadir un iceberg a la derecha usando un factor de traducción de 0.4."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/iceberg.jpg" alt="Ejemplo 1 - Iceberg" loading="lazy">
         </div>
-        <p><em>Resultado:</em> AiCasso expande la imagen hacia la derecha y añade un iceberg, manteniéndolo consistente con el paisaje existente.</p>
+        <p><em>Resultado:</em> AiCasso expande la imagen hacia la derecha y añade un iceberg, manteniendo la coherencia con el paisaje existente.</p>
     </div>
 
     <div class="example">
-        <strong>Ejemplo 2:</strong> "Alejar, mantener la consistencia del mar oscuro por la noche."
+        <strong>Ejemplo 2:</strong> "Alejar la vista, manteniendo la coherencia del mar oscuro por la noche."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/zoomout.jpg" alt="Ejemplo 2 - Alejar" loading="lazy">
         </div>
         <p><em>Resultado:</em> La imagen se aleja, revelando más del mar oscuro, mientras mantiene la atmósfera de la escena nocturna.</p>
     </div>
@@ -86,11 +86,11 @@
     <p>Aquí hay algunas configuraciones opcionales que puedes usar para ajustar tus ediciones:</p>
 
     <ul>
-        <li><strong>Indicación Negativa:</strong> Si hay algo específico que no quieres en la imagen, puedes decírselo a AiCasso aquí. Por ejemplo, podrías querer evitar añadir ciertos colores u objetos.</li>
-        <li><strong>Tipo de Desplazamiento:</strong> Esto decide la dirección en la que se expande la imagen. Puedes elegir entre izquierda, derecha, arriba, abajo o hacia atrás (que aleja). Por ejemplo, para desplazar hacia la derecha, seleccionarías 'derecha'.</li>
-        <li><strong>Factor de Traducción:</strong> Esto controla cuánto se mueve la imagen con cada paso al expandir. Un valor más alto mueve más la imagen, revelando más del nuevo contenido. El valor predeterminado es 0.05, pero puedes ajustarlo de 0 a 1.</li>
-        <li><strong>Traducción de Ancho/Alto por Paso:</strong> Estos controlan cuánto se mueve la imagen horizontalmente (ancho) o verticalmente (alto) con cada paso. El valor predeterminado es 32 píxeles por paso, pero puedes ajustarlo según cuánto quieras que se desplace la imagen.</li>
-        <li><strong>Número de Pasos de Inferencia o Desenfoque:</strong> Esto determina cuántos ajustes hace AiCasso para obtener la imagen final. Más pasos conducen a un resultado más suave, con un valor predeterminado de 20 pasos, pero puedes llegar hasta 50.</li>
+        <li><strong>Prompt Negativo:</strong> Si hay algo específico que no deseas en la imagen, puedes decírselo a AiCasso aquí. Por ejemplo, podrías querer evitar añadir ciertos colores u objetos.</li>
+        <li><strong>Tipo de Caminata:</strong> Esto decide la dirección en la que se expande la imagen. Puedes elegir entre izquierda, derecha, arriba, abajo o hacia atrás (que aleja la vista). Por ejemplo, para desplazar a la derecha, seleccionarías 'derecha'.</li>
+        <li><strong>Factor de Traducción:</strong> Esto controla cuánto se mueve la imagen con cada paso al expandirse. Un valor más alto mueve más la imagen, revelando más contenido nuevo. El valor predeterminado es 0.05, pero puedes ajustarlo de 0 a 1.</li>
+        <li><strong>Traducción de Ancho/Altura por Paso:</strong> Estos controlan cuánto se mueve la imagen horizontalmente (ancho) o verticalmente (altura) con cada paso. El valor predeterminado es 32 píxeles por paso, pero puedes ajustar esto según cuánto desees que se desplace la imagen.</li>
+        <li><strong>Número de Pasos de Inferencia o Denoising:</strong> Esto determina cuántos ajustes realiza AiCasso para obtener la imagen final. Más pasos conducen a un resultado más suave, con un predeterminado de 20 pasos, pero puedes llegar hasta 50.</li>
         <li><strong>Número de Pasos de Interpolación:</strong> Esto controla cuán suavemente ocurre la transición entre dos direcciones en una sola expansión. El valor predeterminado es 60, pero puedes aumentarlo hasta 120 para transiciones más suaves.</li>
     </ul>
 

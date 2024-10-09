@@ -3,92 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guida alla Funzione di Generazione Volti</title>
+    <title>Guida alla Funzione di Generazione di Volti</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Assicura che l'immagine non superi il contenitore */
+    height: auto;     /* Mantiene il rapporto d'aspetto */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
-    <h2>Guida all'Uso della Funzione di Generazione Volti</h2>
-    <p>La funzione di Generazione Volti in AiCasso è incredibilmente versatile! Ti permette di creare immagini straordinarie incorporando un volto specifico in vari personaggi o stili. Che tu stia immaginando un cavaliere, un samurai o qualsiasi altro personaggio, AiCasso utilizza il volto di input per generare un'immagine con quel volto integrato nel design richiesto.</p>
+    <h2>Guida all'Uso della Funzione di Generazione di Volti</h2>
+    <p>La funzione di Generazione di Volti in AiCasso è incredibilmente versatile! Ti consente di creare immagini straordinarie incorporando un volto specifico in vari personaggi o stili. Che tu stia immaginando un cavaliere, un samurai o qualsiasi altro personaggio, AiCasso utilizza il volto di input per generare un'immagine con quel volto integrato nel design richiesto.</p>
 
     <h3>Come Funziona:</h3>
     
-    <div class="example">
-        <strong>Immagine di Input:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
-        </div>
-        <strong>Prompt 1:</strong>
-        <p>"Un cavaliere realistico, usa scala massima"</p>
-        <strong>Risultato 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
-        </div>
-        <strong>Prompt 2:</strong>
-        <p>"Usa lo stile chibi e crea un samurai, usa i valori predefiniti"</p>
-        <strong>Risultato 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
-        </div>
-        <strong>Prompt 3:</strong>
-        <p>"Un samurai, usa 31 passaggi di denoising e stile anime"</p>
-        <strong>Risultato 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Immagine di Input:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/input.jpg" alt="Immagine di Input">
     </div>
+    <strong>Prompt 1:</strong>
+    <p>"Un cavaliere realistico, usa la scala massima"</p>
+    <strong>Risultato 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="Cavaliere Realistico">
+    </div>
+    <strong>Prompt 2:</strong>
+    <p>"Usa lo stile chibi e crea un samurai, usa i valori predefiniti"</p>
+    <strong>Risultato 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="Samurai Chibi">
+    </div>
+    <strong>Prompt 3:</strong>
+    <p>"Un samurai, usa 31 passaggi di denoising e stile anime"</p>
+    <strong>Risultato 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="Samurai Anime">
+    </div>
+</div>
 
     <h3>Parametri Opzionali</h3>
     <p>Se vuoi aggiungere un po' più di personalità o controllo alle tue immagini generate, ecco alcune opzioni che puoi modificare:</p>
 
     <ul>
-        <li><strong>Prompt Negativo:</strong> Qui puoi dire ad AiCasso cosa <em>non</em> vuoi vedere nell'immagine. Se lasci questo campo vuoto, AiCasso si concentrerà solo sul prompt positivo.</li>
-        <li><strong>Numero di Passaggi di Denoising:</strong> Questo controlla quanto l'immagine appare liscia e raffinata. Puoi scegliere tra 21, 31 o 41 passaggi, con 41 come predefinito. Più passaggi significano un'immagine più pulita e levigata.</li>
-        <li><strong>Scala di Guida:</strong> Aiuta l'immagine a rimanere fedele alla tua descrizione. La scala varia da 1 a 20, con 10 come predefinito. Numeri più alti significano che AiCasso si atterrà più strettamente al tuo prompt.</li>
-        <li><strong>Scala S:</strong> Riguarda la struttura del volto. È un po' tecnico, ma essenzialmente regola il peso della struttura del volto. Il predefinito è 1.0, e puoi andare da 0.0 a 2.0.</li>
+        <li><strong>Prompt Negativo:</strong> Qui puoi dire ad AiCasso cosa <em>non</em> vuoi vedere nell'immagine. Se lo lasci vuoto, AiCasso si concentrerà solo sul prompt positivo.</li>
+        <li><strong>Numero di Passaggi di Denoising:</strong> Questo controlla quanto liscia e raffinata appare l'immagine. Puoi scegliere tra 21, 31 o 41 passaggi, con 41 come predefinito. Più passaggi significano un'immagine più pulita e lucida.</li>
+        <li><strong>Scala di Guida:</strong> Questo aiuta l'immagine a rimanere fedele alla tua descrizione. La scala va da 1 a 20, con 10 come predefinito. Numeri più alti significano che AiCasso si attiene più da vicino al tuo prompt.</li>
+        <li><strong>Scala S:</strong> Questo riguarda la struttura del volto. È un po' tecnico, ma fondamentalmente regola il peso della struttura del volto. Il predefinito è 1.0, e puoi andare da 0.0 a 2.0.</li>
         <li><strong>Stile:</strong> Vuoi dare alla tua immagine un'atmosfera specifica? Puoi scegliere uno stile come fumetto, chibi, 3D, anime o realistico. Realistico è il predefinito, ma sentiti libero di essere creativo!</li>
     </ul>
 
-    <p>E ricorda, AiCasso è piuttosto indulgente. Non devi essere un mago della grammatica o ottenere ogni dettaglio perfetto. Basta descrivere ciò che vuoi con le tue parole, e AiCasso si occuperà del resto. Buona creazione!</p>
+    <p>E ricorda, AiCasso è piuttosto indulgente. Non devi essere un mago della grammatica o ottenere ogni dettaglio perfetto. Descrivi semplicemente ciò che vuoi con le tue parole, e AiCasso si occuperà del resto. Buon divertimento nella creazione!</p>
 
 </body>
 </html>

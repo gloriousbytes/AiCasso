@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consigli per la Modifica Guidata dalle Immagini</title>
+    <title>Consigli per la Modifica Guidata da Immagine</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,37 +31,31 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img {
+            width: 100%;
             height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+            max-width: 100%;
         }
     </style>
 </head>
 
 <body>
 
-    <h2>Consigli per la Modifica Guidata dalle Immagini</h2>
-    <p>La funzione di Modifica Guidata dalle Immagini in AiCasso ti permette di apportare modifiche a un'immagine semplicemente descrivendo ciò che desideri. Che tu voglia cambiare lo stile, regolare l'atmosfera o modificare alcune parti, AiCasso se ne occuperà per te senza bisogno di selezionare o dipingere manualmente nulla.</p>
+    <h2>Consigli per la Modifica Guidata da Immagine</h2>
+    <p>La funzione di Modifica Guidata da Immagine in AiCasso ti consente di apportare modifiche a un'immagine semplicemente descrivendo ciò che desideri. Che tu voglia cambiare lo stile, regolare l'umore o modificare alcune parti, AiCasso si occuperà di tutto senza bisogno che tu selezioni o dipinga manualmente nulla.</p>
 
     <h3>Come Funziona:</h3>
 
     <div class="example">
-        <strong>Immagine Iniziale:</strong>
+        <strong>Immagine di Partenza:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CpnI7HqIAzcrMjmQb5_25yJilhxraZ80/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/startingimage1.jpg" alt="Immagine di Partenza">
         </div>
     </div>
 
     <div class="example">
-        <strong>Descrivi il Tuo Cambiamento:</strong>
-        <p>Basta digitare ciò che vuoi cambiare e AiCasso applicherà quelle modifiche all'immagine.</p>
+        <strong>Descrivi la Tua Modifica:</strong>
+        <p>Basta digitare ciò che desideri cambiare, e AiCasso applicherà quelle modifiche all'immagine.</p>
     </div>
 
     <h3>Esempi di Modifiche:</h3>
@@ -69,21 +63,21 @@
     <div class="example">
         <strong>Esempio 1:</strong> "Falla bionda."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI2vE6dOcFxInjqzq1_mVru_nLCGFTaS/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/makeherblonde.jpg" alt="Esempio Falla Bionda">
         </div>
         <p><em>Risultato:</em> AiCasso cambierà il colore dei capelli della persona in biondo.</p>
     </div>
 
     <div class="example">
-        <strong>Esempio 2:</strong> "Fai che sia notte, usa 50 passi, una scala di guida di 1 e una scala di guida dell'immagine di 1."
+        <strong>Esempio 2:</strong> "Fallo di notte, usa 50 passaggi, una scala di guida di 1 e una scala di guida dell'immagine di 1."
         <div class="example">
             <strong>Immagine di Input:</strong>
             <div class="result">
-                <iframe src="https://drive.google.com/file/d/1PlJNkwIWrK3Uu_bq38te_dtqp2XBkW_e/preview"></iframe>
+                <img src="../../images/tutorials/imageguidededit/example2input.jpg" alt="Immagine di Input Esempio 2">
             </div>
         </div>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11mjTtcBdI8T0cMcfQz6HEJ79xOhw81VG/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/example2result.jpg" alt="Immagine di Risultato Esempio 2">
         </div>
         <p><em>Risultato:</em> L'immagine sarà trasformata in una scena notturna con aggiustamenti specifici basati sui dettagli forniti.</p>
     </div>
@@ -92,9 +86,9 @@
     <p>Puoi perfezionare le tue modifiche utilizzando queste impostazioni opzionali:</p>
 
     <ul>
-        <li><strong>Scala di Guida dell'Immagine:</strong> Questo controlla quanto la nuova immagine si attiene all'originale. Un valore più basso significa che le modifiche sono più sottili, mentre un valore più alto le fa risaltare di più. Puoi impostarlo tra 1 e 8.</li>
-        <li><strong>Passi:</strong> Questo imposta quanti affinamenti lo strumento farà. Più passi significano un'immagine finale più fluida e dettagliata. Puoi scegliere tra 1 e 50 passi, con 20 come predefinito.</li>
-        <li><strong>Scala di Guida:</strong> Questo influisce su quanto l'IA segue la tua descrizione. Una scala più bassa dà all'IA più libertà creativa, mentre una scala più alta la fa aderire strettamente a ciò che hai detto. Puoi regolare questo tra 1 e 20.</li>
+        <li><strong>Scala di Guida dell'Immagine:</strong> Questo controlla quanto il nuovo immagine si attiene all'originale. Un valore più basso significa che le modifiche sono più sottili, mentre un valore più alto le fa risaltare di più. Puoi impostare questo valore tra 1 e 8.</li>
+        <li><strong>Passaggi:</strong> Questo imposta quanti perfezionamenti lo strumento effettuerà. Più passaggi significano un'immagine finale più fluida e dettagliata. Puoi scegliere tra 1 e 50 passaggi, con 20 come valore predefinito.</li>
+        <li><strong>Scala di Guida:</strong> Questo influisce su quanto l'IA segue la tua descrizione. Una scala più bassa dà all'IA maggiore libertà creativa, mentre una scala più alta la costringe a seguire da vicino ciò che hai detto. Puoi regolare questo valore tra 1 e 20.</li>
     </ul>
 
 </body>

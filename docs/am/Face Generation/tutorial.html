@@ -3,92 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>የፊት መፍጠር ባለቤት መመሪያ</title>
+    <title>የፊት ማመንጨት ባህሪ መመሪያ</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Ensures the image doesn't overflow the container */
+    height: auto;     /* Keeps the aspect ratio */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
-    <h2>የፊት መፍጠር ባለቤት መመሪያ</h2>
-    <p>በAiCasso ውስጥ የፊት መፍጠር ባለቤት በጣም ውስን ነው! ይህ የተወሰነ ፊት ወደ በርካታ ባለቤት ወይም አይነት ውስጥ የተወሰነ የምስል መፍጠር ይፈቅዳል። እንደ ወንጌል ወይም ሳሙራይ ወይም ሌላ ባለቤት ይህ የተወሰነ ፊት ወደ የተጠየቀው ዲዛይን ውስጥ ይወዳድር።</p>
+    <h2>የፊት ማመንጨት ባህሪን መጠቀም መመሪያ</h2>
+    <p>በAiCasso ውስጥ የፊት ማመንጨት ባህሪ እጅግ ተለዋዋጭ ነው! በተለይ የሚለካቸውን ፊቶች በተለያዩ ተዋናይነቶች ወይም ቅጥ ውስጥ በመጠቀም ድንቅ ምስሎችን ማመንጨት ይችላል። ወታደር፣ ሳሚራይ፣ ወይም ሌላ ተዋናይ የምትምሰል ሁሉ፣ AiCasso የሚገባውን ፊት በመጠቀም በተጠየቀው እንዲሁ ውስጥ ፊቱን የተያያዘ ምስል ይፈጥራል።</p>
 
-    <h3>እንዴት ይሰራል:</h3>
+    <h3>እንዴት እንደሚሰራ:</h3>
     
-    <div class="example">
-        <strong>የገባ ምስል:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
-        </div>
-        <strong>የተነሳ 1:</strong>
-        <p>"አንድ የእውነተኛ ወንጌል፣ እባኮትን ከመጠን በላይ ይጠቀሙ"</p>
-        <strong>ውጤት 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
-        </div>
-        <strong>የተነሳ 2:</strong>
-        <p>"የቺቢ አይነት ይጠቀሙ እና አንድ ሳሙራይ ይሠሩ፣ የአማርኛ እንደ ወቅታዊ ይጠቀሙ"</p>
-        <strong>ውጤት 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
-        </div>
-        <strong>የተነሳ 3:</strong>
-        <p>"አንድ ሳሙራይ፣ 31 የዳንን ደረጃዎች ይጠቀሙ እና የአንደኛ አይነት"</p>
-        <strong>ውጤት 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>የገቢ ምስል:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/input.jpg" alt="የገቢ ምስል">
     </div>
+    <strong>መነሻ 1:</strong>
+    <p>"እውነተኛ ወታደር፣ ከፍተኛ መጠን ይጠቀሙ"</p>
+    <strong>ውጤት 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="እውነተኛ ወታደር">
+    </div>
+    <strong>መነሻ 2:</strong>
+    <p>"የቺቢ ቅጥ ይጠቀሙ እና ሳሚራይ አድርጉ፣ ነባር እሴቶችን ይጠቀሙ"</p>
+    <strong>ውጤት 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="ቺቢ ሳሚራይ">
+    </div>
+    <strong>መነሻ 3:</strong>
+    <p>"ሳሚራይ፣ 31 የአንጻር ደረጃዎችን ይጠቀሙ፣ እና የአኒሜ ቅጥ"</p>
+    <strong>ውጤት 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="አኒሜ ሳሚራይ">
+    </div>
+</div>
 
-    <h3>አማራጭ የማስተካከያ አቀማመጦች</h3>
-    <p>የተመለከተ ምስልዎች ላይ በጥቂት ገጽታ ወይም ቁጥጥር ለመጨመር እንደሚፈልጉ እነዚህ አንዳንድ አማራጭ ናቸው:</p>
+    <h3>አማራጭ መለኪያዎች</h3>
+    <p>ትንሽ የግል ባህሪ ወይም ተጎናጽፎ የተሰራ ምስል ከፈለጉ እነሆ እንዲህ አማራጮችን ማስተካከል ይችላሉ:</p>
 
     <ul>
-        <li><strong>አስቀድሞ የተነሳ ይህ ነው:</strong> ይህ የምስል ውስጥ የማይፈልጉትን ይነግሩ። ይህን ከተወሰነ ይቅርታ ይቀርባል።</li>
-        <li><strong>የዳንን ደረጃዎች ብዛት:</strong> ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። 21፣ 31 ወይም 41 ደረጃዎች ይምረጡ፣ 41 የተመለከተ ነው። በተጨማሪ ደረጃዎች የተወሰነ ይቀርባል።</li>
-        <li><strong>መመሪያ ደረጃ:</strong> ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። ደረጃዎች 1 እስከ 20 ይምረጡ፣ 10 የተመለከተ ነው። ከአንደኛ ወይም ወይም ይምረጡ።</li>
-        <li><strong>S ደረጃ:</strong> ይህ የፊት አይነት ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። የተመለከተ 1.0 ነው፣ 0.0 እስከ 2.0 ይምረጡ።</li>
-        <li><strong>አይነት:</strong> የምስልዎች ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። የኮሚክ፣ የቺቢ፣ 3D፣ የአንደኛ ወይም የእውነተኛ ይምረጡ። የእውነተኛ የተመለከተ ነው፣ ነገር ግን ወደ ፈጣሪ ይምረጡ!</li>
+        <li><strong>አልፎ አልፎ መነሻ:</strong> በእዚህ አካባቢ ምስል ውስጥ ማየት ያልፈለጉትን ለAiCasso ማሳወቅ ይችላሉ። ይህን ባዶ ብቋሉ ብቋሉ AiCasso በአዎንታዊ መነሻ ላይ ብቻ ያተኮራል።</li>
+        <li><strong>የአንጻር ደረጃዎች ብዛት:</strong> ምስሉ ምንም እንደሆነ ምስሉ እንዴት እንደሚመለከት ይቆጣጠራል። በ21፣ 31፣ 41 ደረጃዎች መካከል ማምረጥ ይችላሉ፣ ነባር 41 ነው። በጣም ብዙ ደረጃዎች ጥሩ እና የተሻለ ምስል ያመነጫሉ።</li>
+        <li><strong>መመሪያ መጠን:</strong> ምስሉ ለመግለጽዎ እውነተኛ እንዲሆን ይረዳል። መጠኑ ከ1 እስከ 20 ይሄዳል፣ ነባር 10 ነው። ከፍተኛ ቁጥሮች ማለት AiCasso ከመነሻዎ ጋር ይቀራል።</li>
+        <li><strong>S መጠን:</strong> በፊቱ አወዳድሮች ላይ ነው። ትንሽ ቴክኒካል ነው፣ ነገር ግን በተመሳሳይ የፊቱ አወዳድሮች ክብደትን ያስተካክላል። ነባር 1.0 ነው፣ ከ0.0 እስከ 2.0 መካከል መሄድ ይችላሉ።</li>
+        <li><strong>ቅጥ:</strong> ለምስልዎ የተወሰነ ስሜት መስጠት ይፈልጋሉ? የኮሚክ፣ ቺቢ፣ 3D፣ አኒሜ፣ ወይም እውነተኛ ያለው ቅጥ መምረጥ ይችላሉ። እውነተኛ ነባር ነው፣ ነገር ግን ፈጣሪ ይሁኑ!</li>
     </ul>
 
-    <p>እና አስታውሱ፣ AiCasso በጣም ይቅርታ ነው። አንድ የአማርኛ ወይም የሚሰጥ ይምረጡ። የምንም ዝርዝር ይቀርባል። የምንም ዝርዝር ይቀርባል። ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል። ይህ የምስል ውስጥ የሚታይ ድምፅ እና የተወሰነ ይቀርባል።</p>
+    <p>እና አስታውሱ፣ AiCasso እጅግ ይቅር ባለማድረግ ነው። የአስተምህሮች አስተዋፅኦ ወይም ዝርዝር ማንኛውንም መግለጽ አያስፈልግም። የሚፈልጉትን በራስዎ ቃላት ብቻ ይግለጹ፣ እና AiCasso ቀሪውን ያደርጋል። መፈጠር ይወዱ!</p>
 
 </body>
 </html>

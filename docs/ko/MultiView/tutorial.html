@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다중 보기 기능 가이드</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        img, video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>다중 보기 기능 사용 가이드</h2>
+    <p>AiCasso의 다중 보기 기능은 이미지에서 객체의 여러 관점을 생성하여 다양한 각도에서 객체를 볼 수 있게 해줍니다. 이는 3D 형태를 더 잘 이해하거나 제품을 보여주는 데 특히 유용합니다. 이 기능은 객체에 배경이 없을 때 가장 잘 작동하므로 최적의 결과를 위해 방해 요소를 제거하는 것이 좋습니다.</p>
+
+    <h3>작동 방식:</h3>
+    
+    <div class="example">
+        <strong>입력 이미지:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/input.jpg" alt="입력 이미지" loading="lazy">
+        </div>
+        <strong>프롬프트:</strong>
+        <p>"이 객체를 여러 관점에서 보여줘"</p>
+        <strong>결과:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/result.jpg" alt="결과 이미지" loading="lazy">
+        </div>
+    </div>
+
+    <h3>최고의 결과를 위한 팁</h3>
+    <p>이미지가 잘 나오도록 하기 위한 몇 가지 팁입니다:</p>
+
+    <ul>
+        <li><strong>배경 없는 객체:</strong> 다중 보기 기능은 이미지의 객체가 배경에서 격리되어 있을 때 가장 잘 작동합니다. 이렇게 하면 AiCasso가 객체에만 집중하고 명확한 관점을 생성할 수 있습니다.</li>
+        <li><strong>좋은 조명:</strong> 입력 이미지에서 객체가 잘 조명되어 있는지 확인하세요. 그림자와 고르지 않은 조명은 다양한 각도에서 객체의 모습에 영향을 줄 수 있습니다.</li>
+        <li><strong>여러 객체:</strong> 이미지에 여러 객체가 있는 경우, 다양한 각도에서 보고 싶은 객체를 격리하거나 하나의 초점 객체만 있는 간단한 이미지를 선택하세요.</li>
+    </ul>
+
+    <p>AiCasso의 모든 기능과 마찬가지로 너무 고민할 필요는 없습니다—원하는 것을 설명하면 AiCasso가 어려운 작업을 수행합니다. 다중 보기 기능은 제품 전시, 창의적인 쇼케이스 등에 완벽합니다!</p>
+
+</body>
+</html>

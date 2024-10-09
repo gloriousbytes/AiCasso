@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ファッション生成機能ガイド</title>
+    <title>ファッションジェネレーション機能ガイド</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -47,39 +48,39 @@
 
 <body>
 
-    <h2>ファッション生成機能の使い方ガイド</h2>
-    <p>AiCassoのファッション生成機能を使えば、シャツやドレス、パンツなど特定の衣装を着せることができます。希望する衣装を説明するだけで、AiCassoが画像の人物にその衣装を適用します。</p>
+    <h2>ファッションジェネレーション機能の使い方ガイド</h2>
+    <p>AiCassoのファッションジェネレーション機能を使うと、シャツ、ドレス、パンツなどの特定の服装を誰かに着せることができます。欲しい服装を説明するだけで、AiCassoが画像内の人物にその服を適用する様子を見守ってください。</p>
 
     <h3>仕組み:</h3>
     
     <div class="example">
-        <strong>入力1 - 人物画像:</strong>
+        <strong>入力 1 - 人物画像:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 1.jpg" alt="人物画像">
         </div>
-        <strong>入力2 - 衣装アイテム:</strong>
+        <strong>入力 2 - 衣服アイテム:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 2.jpg" alt="衣服アイテム">
         </div>
         <strong>プロンプト:</strong>
-        <p>"シャツを着た男性"</p>
+        <p>"シャツを着た男"</p>
         <strong>結果:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+            <img src="../../images/tutorials/fashion/result.jpg" alt="結果画像">
         </div>
     </div>
 
-    <h3>オプションパラメータ</h3>
-    <p>自分のスタイルを追加したり、結果を完璧にしたい場合は、以下の設定を調整できます:</p>
+    <h3>オプションのパラメータ</h3>
+    <p>自分のスタイルを追加したり、結果がちょうど良いことを確認したい場合は、これらの設定を調整できます:</p>
 
     <ul>
-        <li><strong>ネガティブプロンプト:</strong> 画像に<em>入れたくない</em>ものがある場合はここに記載してください。特にない場合は空白のままで大丈夫です。</li>
-        <li><strong>衣装タイプ:</strong> AiCassoに<em>上半身</em>、<em>下半身</em>、または<em>ドレス</em>に焦点を当てるかどうかを伝えてください。特に指定がない場合は上半身がデフォルトです。</li>
-        <li><strong>ノイズ除去ステップ数:</strong> 画像の滑らかさや仕上がりを決定します。21、31、41ステップから選べ、デフォルトは21です。ステップ数が多いほど洗練された見た目になります。</li>
-        <li><strong>ガイダンススケール:</strong> 画像が説明にどれだけ忠実であるかを調整します。1から20まで設定でき、デフォルトは7です。数値が高いほどプロンプトに忠実になります。</li>
+        <li><strong>ネガティブプロンプト:</strong> 画像に<em>含めたくない</em>ものがある場合は、ここに記載してください。AiCassoが生成するもので問題ない場合は空白のままにしてください。</li>
+        <li><strong>布の種類:</strong> AiCassoに<em>上半身</em>、<em>下半身</em>、または<em>ドレス</em>に焦点を当てているかを伝えてください。わからない場合は、デフォルトで上半身になります。</li>
+        <li><strong>デノイジングステップの数:</strong> これは画像がどれだけ滑らかで洗練されているかを決定します。21、31、または41ステップの中から選択でき、デフォルトは21です。ステップが多いほど、通常はより洗練された外観になります。</li>
+        <li><strong>ガイダンススケール:</strong> これは画像があなたの説明にどれだけ密接に従うかを助けます。1から20の範囲で設定でき、デフォルトは7です。数値が高いほど、AiCassoはあなたのプロンプトにより密接に従います。</li>
     </ul>
 
-    <p>これらの設定はオプションです！AiCassoは非常に賢く、細部が完璧でなくても意図を理解します。楽しんで創造力を発揮してください！</p>
+    <p>これらの設定はオプションであることを忘れないでください！AiCassoはかなり賢く、すべての詳細が完璧でなくてもあなたの意図を理解できます。楽しんで、あなたの創造性を発揮してください！</p>
 
 </body>
 </html>

@@ -3,278 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>គន្លឹះលើមុខងារ Repaint</title>
+    <title>គន្លឹះលើកស្នាមពណ៌</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+         body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* ធានាថារូបភាពមិនលេចចេញពីកុងតឺន័រ */
+    height: auto;     /* រក្សាទម្រង់សមាសភាព */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
-    <h2>គន្លឹះលើមុខងារ Repaint</h2>
-    <p>ការប្រើប្រាស់មុខងារ Inpaint នៅក្នុង AiCasso អនុញ្ញាតឱ្យអ្នកកែប្រែតំបន់ជាក់លាក់មួយនៃរូបភាពដោយការបំពេញឬជំនួសវា។ មិនថាអ្នកចង់បង្កើនរូបភាពដែលមានស្រាប់ឬកែប្រែផ្នែកជាក់លាក់មួយទេ AiCasso ធ្វើឱ្យដំណើរការនេះក្លាយជារឿងងាយស្រួល។ គ្រាន់តែជ្រើសរើសតំបន់ដែលអ្នកចង់ប្តូរ ផ្តល់ជូននូវការបញ្ជូន ហើយអនុញ្ញាតឱ្យ AiCasso ធ្វើអោយវាធ្វើការល្អ។</p>
+    <h2>គន្លឹះលើកស្នាមពណ៌</h2>
+    <p>ការប្រើប្រាស់មុខងារ Inpaint នៅក្នុង AiCasso អនុញ្ញាតឱ្យអ្នកកែប្រែតំបន់ជាក់លាក់នៃរូបភាពដោយការបំពេញឬជំនួសវា។ មិនថាអ្នកចង់បង្កើនរូបភាពដែលមានស្រាប់ឬកែប្រែផ្នែកជាក់លាក់ណាមួយទេ AiCasso ធ្វើឱ្យដំណើរការនេះក្លាយជារឿងងាយស្រួល។ គ្រាន់តែជ្រើសរើសតំបន់ដែលអ្នកចង់ប្តូរ ផ្តល់នូវការបញ្ជូន ហើយអនុញ្ញាតឱ្យ AiCasso ធ្វើអោយវាធ្វើការល្អ។</p>
 
-   <h3>ជម្រើស៖</h3>
+   <h3>ជម្រើស:</h3>
 
     <div class="example">
-        <strong>កម្លាំង៖</strong>
-        <p>ជម្រើសកម្លាំងគ្រប់គ្រងថាតើរូបភាពដើមត្រូវបានប្តូរប៉ុន្មានដោយការបញ្ជូន។ វាមានចន្លោះពី ០ ដល់ ១។ តម្លៃ ០ មានន័យថារូបភាពដើមត្រូវបានកែប្រែតិចតួច ខណៈពេលដែលតម្លៃ ១ មានន័យថារូបភាពដើមត្រូវបានជំនួសដោយព័ត៌មានថ្មីដែលអ្នកពិពណ៌នាដោយប្រហែល។ គិតពីវាថាជាកម្លាំងដែលអ្នកកែប្រែ។</p>
+        <strong>កម្លាំង:</strong>
+        <p>ជម្រើសកម្លាំងគ្រប់គ្រងពីរបៀបដែលរូបភាពដើមត្រូវបានប្តូរដោយការបញ្ជូន។ វាមានចន្លោះពី 0 ដល់ 1។ តម្លៃ 0 មានន័យថារូបភាពដើមត្រូវបានកែប្រែតិចតួច ខណៈពេលដែលតម្លៃ 1 មានន័យថារូបភាពដើមត្រូវបានជំនួសដោយព័ត៌មានថ្មីដែលអ្នកពិពណ៌នាដោយស្ទើរតែពេញលេញ។ គិតពីវាថាជាកម្លាំងដែលអ្នកកែប្រែ។</p>
     </div>
 
     <div class="example">
-        <strong>បង្កើនស្ទីល៖</strong>
+        <strong>បង្កើនស្ទីល:</strong>
         <p>ជម្រើសបង្កើនស្ទីលអនុញ្ញាតឱ្យអ្នកបន្ថែមស្ទីលសិល្បៈឬប្រធានបទជាក់លាក់ទៅតំបន់ដែលបានកែប្រែ។ អ្នកអាចជ្រើសរើសពីស្ទីលជាច្រើនដូចជា៖</p>
     </div>
 
-    <h3>វាធ្វើការយ៉ាងដូចម្តេច៖</h3>
+    <h3>វាធ្វើការយ៉ាងដូចម្តេច:</h3>
 
-    <div class="example">
-        <strong>រូបភាពបញ្ចូល៖</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OzuoAKoYvwEW30ScvOjgX9lfe6VpbdNq/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>រូបភាពបញ្ចូល:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/inpain/input.jpg" alt="រូបភាពបញ្ចូល">
     </div>
+</div>
 
-    <div class="example">
-        <strong>គូរតំបន់ដែលត្រូវបានបំពេញឬជំនួស៖</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1-PaOaaDEvMogYhFjiMjUztvsxhllTsQ3/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>គូសតំបន់ដែលត្រូវបានបំពេញឬជំនួស:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/inpain/paintareas.jpg" alt="គូសតំបន់">
     </div>
+</div>
 
-    <h3>ឧទាហរណ៍៖</h3>
+<h3>ឧទាហរណ៍:</h3>
 
-    <div class="example">
-        <strong>ការបញ្ជូន ១៖</strong> "រូបភាពដែលមានភាពជាក់លាក់ខ្ពស់នៃឆ្មាននៅក្នុងសួន។"
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1BpTJPP7s5CJ-6Yk03s281K6ay6DQ-sFa/preview"></iframe>
-        </div>
-        <p><em>លទ្ធផល៖</em> AiCasso នឹងបង្កើតឆ្មានដែលមានភាពជាក់លាក់ខ្ពស់នៅក្នុងសួន បំពេញតំបន់ដែលគូរដោយគ្មានការលំបាកជាមួយនឹងអត្ថបទនិងពន្លឺដែលមានភាពជាក់លាក់។</p>
+<div class="example">
+    <strong>ការបញ្ជូន 1:</strong> "រូបភាពដែលមានភាពជាក់លាក់ខ្ពស់នៃឆ្មាននៅក្នុងសួន។"
+    <div class="result">
+        <img src="../../images/tutorials/inpain/catinthepark.jpg" alt="ឆ្មានដែលមានភាពជាក់លាក់ខ្ពស់នៅក្នុងសួន">
     </div>
+    <p><em>លទ្ធផល:</em> AiCasso នឹងបង្កើតឆ្មានដែលមានភាពជាក់លាក់ខ្ពស់នៅក្នុងសួន បំពេញតំបន់ដែលគូសដោយគ្មានការលំបាកជាមួយនឹងអត្ថបទនិងពន្លឺដែលមានភាពជាក់លាក់។</p>
+</div>
 
-    <div class="example">
-        <strong>ការបញ្ជូន ២៖</strong> "ឆ្មាននៅក្នុងសួនដែលមានស្ទីលជាក់លាក់ខ្ពស់ និងកម្លាំង ០.៧។"
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1USCGxNAf0iteIGn8Klp97HI-spTTiREW/preview"></iframe>
-        </div>
-        <p><em>លទ្ធផល៖</em> នេះនឹងបង្កើតឆ្មានដែលមានភាពជាក់លាក់ខ្ពស់នៅក្នុងសួន ជាមួយនឹងកម្លាំងកែប្រែដែលបានកំណត់ទៅ ០.៧ បញ្ចូលធាតុថ្មីដោយរលូនទៅក្នុងរូបភាពដើម។</p>
+<div class="example">
+    <strong>ការបញ្ជូន 2:</strong> "ឆ្មាននៅក្នុងសួនដែលមានស្ទីលជាក់លាក់ខ្ពស់ និងកម្លាំង 0.7។"
+    <div class="result">
+        <img src="../../images/tutorials/inpain/catintheparkstrength0.7.jpg" alt="ឆ្មាននៅក្នុងសួនកម្លាំង 0.7">
     </div>
+    <p><em>លទ្ធផល:</em> នេះនឹងបង្កើតឆ្មានដែលមានភាពជាក់លាក់ខ្ពស់នៅក្នុងសួន ដែលកម្លាំងកែប្រែបានកំណត់ទៅ 0.7 បញ្ចូលធាតុថ្មីៗចូលទៅក្នុងរូបភាពដើមយ៉ាងរលូន។</p>
+</div>
 
   <h3>បង្កើនស្ទីល</h3>
-<p>មិនប្រាកដថាតើស្ទីលណាដែលត្រូវជ្រើសរើសទេ? កុំបារម្ភ! គ្រាន់តែអះអាងពីស្ទីលណាមួយដែលចូលចិត្ត ទោះបីវាមិនត្រឹមត្រូវផងដែរ ហើយ AiCasso នឹងស្វែងរកវាពីបញ្ជីស្ទីលបង្កើនដែលមានស្រាប់។</p>
+<p>មិនប្រាកដថាស្ទីលណាដែលត្រូវជ្រើសរើសទេ? កុំបារម្ភ! គ្រាន់តែអះអាងពីស្ទីលណាមួយដែលចូលចិត្ត ទោះបីវាមិនត្រឹមត្រូវផងដែរ ហើយ AiCasso នឹងស្វែងរកវាពីបញ្ជីស្ទីលបង្កើនដែលមានស្រាប់។</p>
 
     <ul>
-        <li><strong>លំនាំដើម៖</strong> ស្ទីលដែលមានសមតុល្យ និងមិនមានឥទ្ធិពលសិល្បៈជាក់លាក់ណាមួយ។</li>
-        <li><strong>បង្កើន៖</strong> បង្កើនព័ត៌មានលម្អិត និងសម្រស់ទូទៅបន្តិច។</li>
-        <li><strong>ស្ត្រីស៊ីនេម៉ា៖</strong> បន្ថែមអត្ថប្រយោជន៍ដ៏រំភើប ដូចជាផ្លុំពន្លឺខ្លាំង។</li>
-        <li><strong>សិល្បៈអាបស្ត្រាក់៖</strong> ផ្តោតលើរាងអាបស្ត្រាក់ និងពណ៌ស្រស់ស្អាត។</li>
-        <li><strong>សិក្សា៖</strong> បន្ថែមអារម្មណ៍សិក្សា និងបែបផែនបុរាណទៅលើរូបភាព។</li>
-        <li><strong>រូបភាពសកម្មភាព៖</strong> បង្កើតរូបភាពជាមួយនឹងស្ទីលដែលមានភាពកើនឡើង និងសកម្មភាព។</li>
-        <li><strong>តួអង្គ 3D ដែលគួរឲ្យស្រលាញ់៖</strong> បង្កើតតួអង្គ 3D ដែលគួរឲ្យស្រលាញ់ និងគួរឲ្យចាប់អារម្មណ៍។</li>
-        <li><strong>Kawaii ដែលគួរឲ្យស្រលាញ់៖</strong> ផ្តោតលើស្ទីលគួរឲ្យស្រលាញ់ និងគួរឲ្យចាប់អារម្មណ៍ដែលមានលក្ខណៈពិសេសនៃវប្បធម៌ Kawaii។</li>
-        <li><strong>សិល្បៈ Art Deco៖</strong> ប្រើស្ទីលគណិតវិទ្យា និងតុបតែងនៃកាលបរិច្ឆេទ Art Deco។</li>
-        <li><strong>សិល្បៈ Art Nouveau៖</strong> បន្ថែមបន្ទាត់ដែលហូរនិងធាតុដែលបានបង្កើតពីធម្មជាតិ ដែលមានលក្ខណៈពិសេសនៃ Art Nouveau។</li>
-        <li><strong>អាថ៌កំបាំងអាស្រ័យ៖</strong> បង្កើតបរិយាកាសដែលមានអាថ៌កំបាំង និងមិនធម្មតា។</li>
-        <li><strong>Avant Garde៖</strong> ផ្តោតលើការបង្ហាញសិល្បៈដែលមានភាពច្នៃប្រឌិត និងសាកល្បង។</li>
-        <li><strong>Baroque៖</strong> ប្រើស្ទីលដែលមានភាពរំភើប ពិសេស និងលម្អិតនៃសម័យ Baroque។</li>
-        <li><strong>ប៉ូស្តែរដែលមានស្ទីល Bauhaus៖</strong> បង្ហាញពីគោលការណ៍រចនាដែលមានភាពអន្ដរាគមន៍ និងអនុវត្តន៍។</li>
-        <li><strong>គំនូសប្លង់៖</strong> បង្កើតរូបភាពដែលស្រដៀងនឹងប្លង់បច្ចេកទេស។</li>
-        <li><strong>ការការពារប្រមូលផ្តុំ៖</strong> បង្កើតរូបភាពដែលមានភាពរំភើប និងគួរឲ្យចាប់អារម្មណ៍។</li>
-        <li><strong>សិល្បៈ Cel-Shaded៖</strong> ប្រើពណ៌ធម្មតា និងខ្លាំងដែលមានលក្ខណៈពិសេសនៃការបង្ហាញ Cel-Shaded។</li>
-        <li><strong>សន្លឹករចនាតួអង្គ៖</strong> ផ្តោតលើការរចនាតួអង្គដែលមានភាពច្បាស់លាស់ និងសមស្របសម្រាប់ការបង្ហាញ។</li>
-        <li><strong>Classicism Art៖</strong> បង្កើតសិល្បៈដែលមានភាពល្អឥតខ្ចោះ និងគំនិតល្អនៃសិល្បៈបុរាណ។</li>
-        <li><strong>ការគូរពណ៌ដែន៖</strong> បង្ហាញពីតំបន់ធំៗនៃពណ៌តែមួយដើម្បីបង្កើតជាប្រភេទពណ៌។</li>
-        <li><strong>សិល្បៈក្រដាសពណ៌៖</strong> បង្កើតសំណុំនៃសិល្បៈដែលមានអត្ថបទនិងរូបភាព។</li>
-        <li><strong>សិល្បៈគំនិត៖</strong> ផ្តោតលើគំនិត និងគំនិតជាងការបង្ហាញសិល្បៈឬសម្ភារៈ។</li>
-        <li><strong>Constructivism៖</strong> បង្ហាញពីស្ទីលឧស្សាហកម្ម និងគណិតវិទ្យា។</li>
-        <li><strong>Cubism៖</strong> បំបែកវត្ថុទៅជារូបរាងគណិតវិទ្យា និងបង្ហាញវានៅក្នុងរូបរាងអាបស្ត្រាក់។</li>
-        <li><strong>Dadaism៖</strong> ផ្តោតលើភាពអាក្រក់ អារម្មណ៍ និងសិល្បៈដែលប្រឆាំង។</li>
-        <li><strong>Dark Fantasy៖</strong> បង្កើតបរិយាកាសដែលមានអារម្មណ៍ខ្មៅ និងអាក្រក់។</li>
-        <li><strong>Dark Moody Atmosphere៖</strong> ប្រើពន្លឺទាប និងស្រមោលដើម្បីបង្កើតបរិយាកាសដែលមានអារម្មណ៍ខ្មៅ។</li>
-        <li><strong>DMT Art៖</strong> បង្ហាញពីរូបភាពដែលមានពណ៌ស្រស់ស្អាត និងមានភាពច្នៃប្រឌិត។</li>
-        <li><strong>Doodle Art៖</strong> ផ្តោតលើស្ទីលគូរដែលមានភាពល្អិតល្អន់ និងសប្បាយ។</li>
-        <li><strong>Double Exposure៖</strong> បញ្ចូលរូបភាពពីរនៅក្នុងមួយ ដើម្បីបង្កើតអារម្មណ៍ដែលមានភាពអស្ចារ្យ។</li>
-        <li><strong>Dripping Paint Splatter៖</strong> ប្រើការច្រឡាយ និងការច្រាស់ដើម្បីបង្កើតសមាសភាពដែលមានភាពរំភើប។</li>
-        <li><strong>Expressionism៖</strong> ផ្តោតលើការបង្ហាញអារម្មណ៍ជាងការបង្ហាញយ៉ាងពិតប្រាកដ។</li>
-        <li><strong>Faded Polaroid Photo៖</strong> បង្កើតរូបភាពដែលមានអាយុ និងអារម្មណ៍នៃរូបភាព Polaroid ដែលបានលេចធ្លោ។</li>
-        <li><strong>Fauvism៖</strong> ប្រើពណ៌ស្រស់ស្អាត និងការគូរដែលមានភាពខ្លាំង។</li>
-        <li><strong>Flat 2D៖</strong> ផ្តោតលើការរចនាដែលមានភាពសាមញ្ញ និងមានភាពត្រង់។</li>
-        <li><strong>Fortnite Style៖</strong> បង្ហាញពីស្ទីលស្រស់ស្អាត និងមានភាពគួរឲ្យចាប់អារម្មណ៍។</li>
-        <li><strong>Futurism៖</strong> ផ្តោតលើចលនាដ៏មានភាពសកម្ម និងការបង្ហាញនៃបច្ចេកវិទ្យាថ្មី។</li>
-        <li><strong>Glitchcore៖</strong> ផ្តោតលើកំហុសឌីជីថល និងការបង្ហាញដែលមានភាពខុសគ្នា។</li>
-        <li><strong>Glo-Fi៖</strong> ប្រើពន្លឺទន់ និងភ្លឺសម្រាប់បង្កើតបរិយាកាសដែលមានភាពស្រស់ស្អាត។</li>
-        <li><strong>Googie Style៖</strong> បង្ហាញពីការរចនាថ្មីនិងសម័យអាកាស។</li>
-        <li><strong>Graffiti Art៖</strong> ប្រើស្ទីលដែលមានភាពស្រស់ស្អាតនិងសិល្បៈផ្លូវ។</li>
-        <li><strong>Harlem Renaissance Art៖</strong> បង្ហាញពីការបង្ហាញវប្បធម៌និងសិល្បៈ។</li>
-        <li><strong>High Fashion៖</strong> ផ្តោតលើសម្រស់ដែលមានភាពស្មុគស្មាញ។</li>
-        <li><strong>Idyllic៖</strong> បង្កើតបរិយាកាសដែលមានភាពស្ងប់ស្ងាត់ និងស្រស់ស្អាត។</li>
-        <li><strong>Impressionism៖</strong> ប្រើការគូរដែលមានភាពស្រាល និងពណ៌ស្រស់ស្អាត។</li>
-        <li><strong>Infographic Drawing៖</strong> ផ្តោតលើការបង្ហាញព័ត៌មានដោយមានភាពច្បាស់លាស់។</li>
-        <li><strong>Ink Dripping Drawing៖</strong> ប្រើអ៊ីងដើម្បីបង្កើតអារម្មណ៍ដែលមានភាពរំភើប។</li>
-        <li><strong>Japanese Ink Drawing៖</strong> បង្ហាញពីបច្ចេកទេសនិងសិល្បៈនៃការគូរដោយអ៊ីង។</li>
-        <li><strong>Knolling Photography៖</strong> ផ្តោតលើការរៀបចំដែលមានភាពស្អាត។</li>
-        <li><strong>Light Cheery Atmosphere៖</strong> ប្រើពណ៌ភ្លឺសម្រាប់បង្កើតបរិយាកាសដែលមានភាពសប្បាយ។</li>
-        <li><strong>Logo Design៖</strong> ផ្តោតលើការបង្កើតឡូហ្គូដែលមានភាពច្បាស់លាស់។</li>
-        <li><strong>Luxurious Elegance៖</strong> ផ្តោតលើភាពស្មុគស្មាញ និងភាពល្អឥតខ្ចោះ។</li>
-        <li><strong>Macro Photography៖</strong> ផ្តោតលើការថតរូបដែលមានភាពជិតស្និទ្ធ។</li>
-        <li><strong>Mandala Art៖</strong> បង្កើតគំរូដែលមានភាពស្មុគស្មាញ។</li>
-        <li><strong>Marker Drawing៖</strong> បង្ហាញពីការគូរដែលមានភាពខ្លាំង។</li>
-        <li><strong>Medievalism៖</strong> បង្ហាញពីសិល្បៈនិងការរចនានៃសម័យមធ្យម។</li>
-        <li><strong>Minimalism៖</strong> ផ្តោតលើភាពសាមញ្ញ និងការកាត់បន្ថយ។</li>
-        <li><strong>Neo-Baroque៖</strong> បង្កើតស្ទីលដែលមានភាពរំភើបនិងសម័យ Baroque។</li>
-        <li><strong>Neo-Byzantine៖</strong> បញ្ចូលសិល្បៈនិងធម្មជាតិ។</li>
-        <li><strong>Neo-Futurism៖</strong> ផ្តោតលើការរចនាថ្មី។</li>
-        <li><strong>Neo-Impressionism៖</strong> ប្រើពណ៌តូចៗដើម្បីបង្កើតរូបភាព។</li>
-        <li><strong>Neo-Rococo៖</strong> បង្កើតស្ទីលដែលមានភាពល្អឥតខ្ចោះ។</li>
-        <li><strong>Neoclassicism៖</strong> បង្ហាញពីសិល្បៈនិងការរចនានៃសម័យបុរាណ។</li>
-        <li><strong>Op Art៖</strong> បង្កើតភាពលេចធ្លោដោយប្រើគំរូគណិតវិទ្យា។</li>
-        <li><strong>Ornate and Intricate៖</strong> ផ្តោតលើការតុបតែងដែលមានភាពល្អឥតខ្ចោះ។</li>
-        <li><strong>Pencil Sketch Drawing៖</strong> បង្ហាញពីការគូរដែលមានភាពល្អិតល្អន់។</li>
-        <li><strong>Pop Art៖</strong> ប្រើពណ៌ខ្លាំងនិងរូបភាពដែលមានភាពស្រស់ស្អាត។</li>
-        <li><strong>Rococo៖</strong> បង្ហាញពីសិល្បៈដែលមានភាពល្អឥតខ្ចោះ។</li>
-        <li><strong>Silhouette Art៖</strong> ប្រើការប្រកួតប្រជែងរវាងពន្លឺនិងស្រមោល។</li>
-        <li><strong>Simple Vector Art៖</strong> ផ្តោតលើរូបរាងដែលមានភាពស្អាត។</li>
-        <li><strong>SketchUp៖</strong> បង្ហាញពីរូបភាព 3D ដែលមានភាពច្បាស់លាស់។</li>
-        <li><strong>Steampunk៖</strong> បញ្ចូលសិល្បៈនិងបច្ចេកវិទ្យា។</li>
-        <li><strong>Surrealism៖</strong> បញ្ចូលភាពពិតនិងភាពសុបិន្ត។</li>
-        <li><strong>Suprematism៖</strong> ផ្តោតលើរាងគណិតវិទ្យា។</li>
-        <li><strong>Terragen៖</strong> បង្កើតទេសភាពដែលមានភាពជាក់លាក់។</li>
-        <li><strong>Tranquil Relaxing Atmosphere៖</strong> ប្រើពណ៌ទន់សម្រាប់បង្កើតបរិយាកាសស្ងប់ស្ងាត់។</li>
-        <li><strong>Sticker Designs៖</strong> ផ្តោតលើការបង្កើតរូបភាពដែលមានភាពសប្បាយ។</li>
-        <li><strong>Vibrant Rim Light៖</strong> ផ្តោតលើពន្លឺដែលមានភាពភ្លឺសម្រាប់បង្កើតអារម្មណ៍។</li>
-        <li><strong>Volumetric Lighting៖</strong> ប្រើពន្លឺដើម្បីបង្កើតភាពជ្រៅ។</li>
-        <li><strong>Watercolor៖</strong> បង្កើតអារម្មណ៍ដែលមានភាពទន់។</li>
-        <li><strong>Whimsical and Playful៖</strong> ផ្តោតលើភាពសប្បាយនិងច្នៃប្រឌិត។</li>
-        <li><strong>Sharp៖</strong> បង្កើនភាពច្បាស់លាស់។</li>
-        <li><strong>Masterpiece៖</strong> ផ្តោតលើការបង្ហាញដែលមានគុណភាពខ្ពស់។</li>
-        <li><strong>Photograph៖</strong> មានគោលបំណងសម្រាប់ភាពជាក់លាក់។</li>
-        <li><strong>Negative៖</strong> បញ្ចូលពណ៌ដើម្បីបង្កើតអារម្មណ៍។</li>
-        <li><strong>Ads - Advertising៖</strong> ផ្តោតលើការបង្ហាញដែលមានភាពជាក់លាក់។</li>
-        <li><strong>Ads - Automotive៖</strong> បង្កើតស្ទីលសម្រាប់ការផ្សាយពាណិជ្ជកម្ម។</li>
-        <li><strong>Ads - Corporate៖</strong> ផ្តោតលើការរចនាដែលមានភាពជាក់លាក់។</li>
-        <li><strong>Ads - Fashion Editorial៖</strong> បង្ហាញពីស្ទីលដែលមានភាពស្រស់ស្អាត។</li>
-        <li><strong>Ads - Food Photography៖</strong> បង្កើតរូបភាពដែលមានភាពស្រស់ស្អាត។</li>
-        <li><strong>Ads - Gourmet Food Photography៖</strong> បង្ហាញពីសិល្បៈដែលមានភាពល្អឥតខ្ចោះ។</li>
-        <li><strong>Ads - Luxury៖</strong> ផ្តោតលើភាពល្អឥតខ្ចោះសម្រាប់ម៉ាក។</li>
-        <li><strong>Ads - Real Estate៖</strong> បង្ហាញពីភាពស្អាតនិងទាក់ទាញ។</li>
-        <li><strong>Ads - Retail៖</strong> ផ្តោតលើភាពទាក់ទាញសម្រាប់ការលក់។</li>
-        <li><strong>Hyperrealism៖</strong> មានគោលបំណងសម្រាប់ភាពជាក់លាក់។</li>
-        <li><strong>Pointillism៖</strong> ប្រើពណ៌តូចៗដើម្បីបង្កើតរូបភាព។</li>
-        <li><strong>Psychedelic៖</strong> ផ្តោតលើពណ៌ស្រស់ស្អាត។</li>
-        <li><strong>Renaissance៖</strong> បង្ហាញពីសិល្បៈដែលមានភាពសម្រស់។</li>
-        <li><strong>Typography៖</strong> ផ្តោតលើការប្រើប្រាស់អត្ថបទ។</li>
-        <li><strong>Futuristic Biomechanical៖</strong> បញ្ចូលធាតុដែលមានភាពស្មុគស្មាញ។</li>
-        <li><strong>Futuristic Biomechanical Cyberpunk៖</strong> បញ្ចូលសិល្បៈនិងបច្ចេកវិទ្យា។</li>
-        <li><strong>Futuristic Cybernetic៖</strong> ផ្តោតលើភាពខ្ពស់។</li>
-        <li><strong>Futuristic Cybernetic Robot៖</strong> បង្ហាញពីការរចនាដែលមានភាពខ្ពស់។</li>
-        <li><strong>Futuristic Cyberpunk Cityscape៖</strong> បង្ហាញពីទីក្រុងដែលមានភាពខ្ពស់។</li>
-        <li><strong>Futuristic Sci-Fi៖</strong> ផ្តោតលើសិល្បៈដែលមានភាពខ្ពស់។</li>
-        <li><strong>Futuristic Retro Cyberpunk៖</strong> បញ្ចូលសិល្បៈនិងបច្ចេកវិទ្យា។</li>
-        <li><strong>Futuristic Retro៖</strong> បញ្ចូលសិល្បៈនិងបច្ចេកវិទ្យា។</li>
-        <li><strong>Futuristic Vaporwave៖</strong> បង្ហាញពីភាពស្រស់ស្អាត។</li>
-        <li><strong>Game Bubble៖</strong> ផ្តោតលើស្ទីលដែលមានភាពសប្បាយ។</li>
-        <li><strong>Game Cyberpunk៖</strong> បញ្ចូលសិល្បៈនិងបច្ចេកវិទ្យា។</li>
-        <li><strong>Game Fighting៖</strong> បង្ហាញពីស្ទីលដែលមានភាពសកម្ម។</li>
-        <li><strong>Game GTA៖</strong> បង្ហាញពីស្ទីលដែលមានភាពខ្ពស់។</li>
-        <li><strong>Game Mario៖</strong> បង្ហាញពីស្ទីលដែលមានភាពស្រស់ស្អាត។</li>
-        <li><strong>Game Minecraft៖</strong> បង្ហាញពីស្ទីលដែលមានភាពខ្ពស់។</li>
-        <li><strong>Game Pokemon៖</strong> បង្ហាញពីស្ទីលដែលមានភាពស្រស់ស្អាត។</li>
-        <li><strong>Game Retro Arcade៖</strong> បង្ហាញពីស្ទីលដែលមានភាពស្រស់ស្អាត។</li>
-        <li><strong>Game RPG Fantasy៖</strong> បង្ហាញពីស្ទីលដែលមានភាពស្រស់ស្អាត។</li>
-        <li><strong>Game Strategy៖</strong> ផ្តោតលើការរចនាដែលមានភាពស្អាត។</li>
-        <li><strong>Game Streetfighter៖</strong> បង្ហាញពីស្ទីលដែលមានភាពសកម្ម។</li>
-        <li><strong>Game Zelda៖</strong> បង្ហាញពីស្ទីលដែលមានភាពស្រស់ស្អាត។</li>
-        <li><strong>Misc Architectural៖</strong> ផ្តោតលើការរចនាដែលមានភាពស្អាត។</li>
-        <li><strong>Misc Disco៖</strong> បង្ហាញពីស្ទីលដែលមានភាពស្រស់ស្អាត។</li>
-        <li><strong>Misc Dreamscape៖</strong> បង្កើតបរិយាកាសដែលមានភាពស្រស់ស្អាត។</li>
-        <li><strong>Misc Dystopian៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Misc Fairy Tale៖</strong> បង្ហាញពីភាពស្រស់ស្អាត។</li>
-        <li><strong>Misc Gothic៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Misc Grunge៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Misc Horror៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Misc Kawaii៖</strong> បង្ហាញពីភាពស្រស់ស្អាត។</li>
-        <li><strong>Misc Lovecraftian៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Misc Macabre៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Misc Manga៖</strong> បង្ហាញពីភាពស្រស់ស្អាត។</li>
-        <li><strong>Misc Metropolis៖</strong> បង្ហាញពីភាពស្រស់ស្អាត។</li>
-        <li><strong>Misc Minimalist៖</strong> ផ្តោតលើភាពសាមញ្ញ។</li>
-        <li><strong>Misc Monochrome៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Misc Nautical៖</strong> បង្ហាញពីភាពស្រស់ស្អាត។</li>
-        <li><strong>Misc Space៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Misc Stained Glass៖</strong> បង្ហាញពីភាពស្រស់ស្អាត។</li>
-        <li><strong>Misc Techwear Fashion៖</strong> បង្ហាញពីភាពស្រស់ស្អាត។</li>
-        <li><strong>Misc Tribal៖</strong> បង្ហាញពីភាពស្រស់ស្អាត។</li>
-        <li><strong>Misc Zentangle៖</strong> បង្ហាញពីភាពស្រស់ស្អាត។</li>
-        <li><strong>Papercraft Collage៖</strong> ប្រើក្រដាសកាត់ដើម្បីបង្កើតសំណុំ។</li>
-        <li><strong>Papercraft Flat Papercut៖</strong> បង្ហាញពីការកាត់ក្រដាស។</li>
-        <li><strong>Papercraft Kirigami៖</strong> បង្ហាញពីការកាត់ក្រដាស។</li>
-        <li><strong>Papercraft Paper Mache៖</strong> បង្កើតរូបភាពដែលមានភាពស្រស់ស្អាត។</li>
-        <li><strong>Papercraft Paper Quilling៖</strong> បង្ហាញពីការកាត់ក្រដាស។</li>
-        <li><strong>Papercraft Papercut Collage៖</strong> បង្កើតសំណុំដែលមានភាពស្រស់ស្អាត។</li>
-        <li><strong>Papercraft Papercut Shadow Box៖</strong> បង្កើតសំណុំដែលមានភាពស្រស់ស្អាត។</li>
-        <li><strong>Papercraft Stacked Papercut៖</strong> បង្កើតសំណុំដែលមានភាពស្រស់ស្អាត។</li>
-        <li><strong>Papercraft Thick Layered Papercut៖</strong> បង្កើតសំណុំដែលមានភាពស្រស់ស្អាត។</li>
-        <li><strong>Photo Alien៖</strong> បង្កើតរូបភាពដែលមានភាពស្រស់ស្អាត។</li>
-        <li><strong>Photo Film Noir៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Photo Glamour៖</strong> បង្ហាញពីភាពស្រស់ស្អាត។</li>
-        <li><strong>Photo HDR៖</strong> បង្ហាញពីភាពស្រស់ស្អាត។</li>
-        <li><strong>Photo iPhone Photographic៖</strong> បង្ហាញពីភាពស្រស់ស្អាត។</li>
-        <li><strong>Photo Long Exposure៖</strong> បង្ហាញពីភាពស្រស់ស្អាត។</li>
-        <li><strong>Photo Neon Noir៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Photo Silhouette៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Photo Tilt Shift៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>3D Model៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Analog Film៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Anime៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Cinematic៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Comic Book៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Craft Clay៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Digital Art៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Fantasy Art៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Isometric៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Line Art៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Low Poly៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Neonpunk៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Origami៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Photographic៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Pixel Art៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
-        <li><strong>Texture៖</strong> បង្ហាញពីភាពខ្មៅ។</li>
+        <li><strong>លំនាំដើម:</strong> ស្ទីលដែលមានសម្រួល និងមិនមានឥទ្ធិពលសិល្បៈជាក់លាក់ណាមួយ។</li>
+        <li><strong>បង្កើន:</strong> បង្កើនព័ត៌មានលម្អិត និងសម្រស់ទូទៅ។</li>
+        <li><strong>ស្ត្រីស៊ីនេម៉ា:</strong> បន្ថែមអត្ថប្រយោជន៍ដ៏រំភើប ដោយមានការប្រែប្រួលពន្លឺខ្លាំង។</li>
+        <li><strong>សិល្បៈបែបអាបស្ត្រាក់:</strong> ផ្តោតលើរូបរាងអាបស្ត្រាក់ និងពណ៌ដែលមានភាពភ្លឺភ្លឺ។</li>
+        <li><strong>សិក្សា:</strong> បន្ថែមអារម្មណ៍សិក្សា និងបែបផែនបុរាណទៅក្នុងរូបភាព។</li>
+        <li><strong>រូបភាពសកម្ម:</strong> បង្កើតរូបភាពជាមួយនឹងស្ទីលដែលមានភាពលើកទឹកចិត្ត និងសកម្មភាព។</li>
+        <li><strong>តួអង្គ 3D ដែលគួរឲ្យស្រលាញ់:</strong> បង្កើតតួអង្គ 3D ដែលគួរឲ្យស្រលាញ់ និងគួរឲ្យចាប់អារម្មណ៍។</li>
+        <li><strong>គួរឲ្យស្រលាញ់ Kawaii:</strong> ផ្តោតលើស្ទីលគួរឲ្យស្រលាញ់ និងគួរឲ្យចាប់អារម្មណ៍ដែលមានលក្ខណៈពិសេសនៃវប្បធម៌ Kawaii។</li>
+        <li><strong>សិល្បៈ Art Deco:</strong> ប្រើស្ទីលគណិតវិទ្យា និងសិល្បៈតុបតែងនៃអំឡុងពេល Art Deco។</li>
+        <li><strong>សិល្បៈ Art Nouveau:</strong> បន្ថែមបន្ទាត់ដែលហូរនិងធាតុដែលInspired by nature ដែលមានលក្ខណៈពិសេសនៃ Art Nouveau។</li>
+        <li><strong>អាថ៌កំបាំងអាស្រ័យ:</strong> បង្កើតបរិយាកាសដែលមានអារម្មណ៍អាថ៌កំបាំង និងមិនធម្មតា។</li>
+        <li><strong>Avant Garde:</strong> ផ្តោតលើការបង្ហាញសិល្បៈដែលច្នៃប្រឌិត និងអនុវត្តន៍។</li>
+        <li><strong>Baroque:</strong> ប្រើស្ទីលដែលមានភាពរំភើប ពិសេស និងលម្អិតនៃអំឡុងពេល Baroque។</li>
+        <li><strong>ប្លង់ស្ទីល Bauhaus:</strong> បង្ហាញពីគោលការណ៍រចនាដែលមានភាពសាមញ្ញ និងអនុវត្តន៍នៃ Bauhaus។</li>
+        <li><strong>គំនូសប្លង់សេដ្ឋកិច្ច:</strong> បង្កើតរូបភាពដែលស្រដៀងនឹងប្លង់បច្ចេកទេស។</li>
+        <li><strong>រូបភាពកំប្លែង:</strong> បង្កើតរូបភាពដែលមានភាពលើកទឹកចិត្ត និងគួរឲ្យស្រលាញ់។</li>
+        <li><strong>សិល្បៈ Cel-Shaded:</strong> ប្រើពណ៌ធំ និងខ្លាំងដែលមានលក្ខណៈពិសេសនៃការអាន Cel-Shaded។</li>
+        <li><strong>សន្លឹករចនាតួអង្គ:</strong> ផ្តោតលើការរចនាតួអង្គដែលស្អាត និងច្បាស់សមស្របសម្រាប់ការអាន។</li>
+        <li><strong>សិល្បៈ Classicism:</strong> បង្កើតសិល្បៈដែលមានភាពស្រស់ស្អាត និងគួរឲ្យចាប់អារម្មណ៍នៃ Classical Antiquity។</li>
+        <li><strong>គំនូស Color Field:</strong> មានតំបន់ធំៗនៃពណ៌តែមួយដើម្បីបង្កើតផ្ទៃពណ៌។</li>
+        <li><strong>គំនូសដោយប្រើក្រដាសពណ៌:</strong> បង្កើតអារម្មណ៍ និងរូបភាពដែលមានលក្ខណៈពិសេសនៃគំនូសក្រដាសពណ៌។</li>
+        <li><strong>សិល្បៈគំនិត:</strong> ផ្តោតលើគំនិត និងគំនិតលើការបង្ហាញសិល្បៈឬសម្ភារៈ។</li>
+        <li><strong>Constructivism:</strong> បង្ហាញពីស្ទីលឧស្សាហកម្ម និងគណិតវិទ្យា។</li>
+        <li><strong>Cubism:</strong> បំបែកវត្ថុទៅជារូបរាងគណិតវិទ្យា និងបង្ហាញវានៅក្នុងរូបរាងអាបស្ត្រាក់។</li>
+        <li><strong>Dadaism:</strong> ផ្តោតលើភាពអស្ចារ្យ អរូបី និងសិល្បៈប្រឆាំង។</li>
+        <li><strong>Dark Fantasy:</strong> បង្កើតបរិយាកាសដែលមានអារម្មណ៍អាថ៌កំបាំង និងអាក្រក់។</li>
+        <li><strong>Dark Moody Atmosphere:</strong> ប្រើពន្លឺទាប និងស្រមោលដើម្បីបង្កើតអារម្មណ៍ដែលមានអារម្មណ៍។</li>
+        <li><strong>DMT Art:</strong> មានរូបភាពដែលមានភាពភ្លឺភ្លឺ និងពណ៌ស៊ីកូឡា ដែលInspired by DMT experiences។</li>
+        <li><strong>Doodle Art:</strong> ផ្តោតលើស្ទីលគូសដែលមានភាពលើកទឹកចិត្ត និងល្អិតល្អន់។</li>
+        <li><strong>Double Exposure:</strong> បញ្ចូលរូបភាពពីរទៅក្នុងមួយ បង្កើតអារម្មណ៍ដែលមានភាពអស្ចារ្យ។</li>
+        <li><strong>Dripping Paint Splatter:</strong> ប្រើការលេច និងការបង្ហូរពណ៌ដើម្បីបង្កើតសមាសភាពដែលមានភាពលើកទឹកចិត្ត និងច្របូកច្របល់។</li>
+        <li><strong>Expressionism:</strong> ផ្តោតលើការបង្ហាញអារម្មណ៍លើការបង្ហាញដែលមានភាពជាក់លាក់។</li>
+        <li><strong>Faded Polaroid Photo:</strong> បង្កើតអារម្មណ៍ដែលមានអាយុ និងអារម្មណ៍នៃរូបថត Polaroid ដែលបានលេចចេញ។</li>
+        <li><strong>Fauvism:</strong> ប្រើពណ៌ដែលមានភាពភ្លឺភ្លឺ និងការគូសដែលមានភាពខ្លាំង។</li>
+        <li><strong>Flat 2D:</strong> ផ្តោតលើការរចនាដែលមានភាពសាមញ្ញ និងតិចតួច។</li>
+        <li><strong>Fortnite Style:</strong> បង្ហាញពីស្ទីលស៊ីនេម៉ាដែលមានភាពភ្លឺភ្លឺ។</li>
+        <li><strong>Futurism:</strong> ផ្តោតលើចលនាដែលមានភាពសកម្ម និងការបង្ហាញនៃបច្ចេកវិទ្យាថ្មី។</li>
+        <li><strong>Glitchcore:</strong> ផ្តោតលើកំហុសឌីជីថល និងការលេចចេញជាសិល្បៈ។</li>
+        <li><strong>Glo-Fi:</strong> ប្រើពន្លឺដែលមានភាពភ្លឺភ្លឺដើម្បីបង្កើតអារម្មណ៍ដែលមានភាពស្រស់ស្អាត។</li>
+        <li><strong>Googie Style:</strong> បង្ហាញពីការរចនាថ្មីនិងការរចនាដែលមានភាពទំនើប។</li>
+        <li><strong>Graffiti Art:</strong> ប្រើស្ទីលដែលមានភាពភ្លឺភ្លឺនិងសិល្បៈផ្លូវ។</li>
+        <li><strong>Harlem Renaissance Art:</strong> បង្ហាញពីការបង្ហាញវប្បធម៌និងសិល្បៈដែលមានភាពសម្បូរបែប។</li>
+        <li><strong>High Fashion:</strong> ផ្តោតលើសម្រួល និងភាពទំនើប។</li>
+        <li><strong>Idyllic:</strong> បង្កើតអារម្មណ៍ស្ងប់ស្ងាត់ និងស្រស់ស្អាត។</li>
+        <li><strong>Impressionism:</strong> ប្រើការគូសដែលមានភាពរលូន និងពណ៌ដែលមានភាពភ្លឺភ្លឺ។</li>
+        <li><strong>Infographic Drawing:</strong> ផ្តោតលើការបង្ហាញព័ត៌មានដោយមានភាពច្បាស់លាស់។</li>
+        <li><strong>Ink Dripping Drawing:</strong> ប្រើអ៊ីងដើម្បីបង្កើតអារម្មណ៍ដែលមានភាពរលូន។</li>
+        <li><strong>Japanese Ink Drawing:</strong> បង្កើតសិល្បៈដែលមានភាពស្រស់ស្អាតនៃការគូសអ៊ីងជប៉ុន។</li>
+        <li><strong>Knolling Photography:</strong> ផ្តោតលើការរៀបចំវត្ថុដែលមានភាពស្អាត។</li>
+        <li><strong>Light Cheery Atmosphere:</strong> ប្រើពណ៌ភ្លឺ និងពន្លឺដើម្បីបង្កើតអារម្មណ៍សប្បាយរីករាយ។</li>
+        <li><strong>Logo Design:</strong> ផ្តោតលើការបង្កើតឡូហ្គូដែលមានភាពស្អាត និងអាចចាប់អារម្មណ៍។</li>
+        <li><strong>Luxurious Elegance:</strong> ផ្តោតលើភាពស្រស់ស្អាត និងភាពសម្បូរ។</li>
+        <li><strong>Macro Photography:</strong> ផ្តោតលើការថតរូបជិតៗ ដែលបង្ហាញពីព័ត៌មានលម្អិត។</li>
+        <li><strong>Mandala Art:</strong> បង្កើតគំរូដែលមានភាពស្មុគស្មាញ និងសម្រួល។</li>
+        <li><strong>Marker Drawing:</strong> បង្កើតអារម្មណ៍ដែលមានភាពខ្លាំងនិងពណ៌ដែលមានភាពភ្លឺភ្លឺ។</li>
+        <li><strong>Medievalism:</strong> បង្ហាញពីសិល្បៈនិងការរចនានៃអំឡុងពេលមធ្យម។</li>
+        <li><strong>Minimalism:</strong> ផ្តោតលើភាពសាមញ្ញ និងការកាត់បន្ថយរូបរាង។</li>
+        <li><strong>Neo-Baroque:</strong> ធ្វើឡើងវិញនូវស្ទីលដែលមានភាពសម្បូរ និងរំភើប។</li>
+        <li><strong>Neo-Byzantine:</strong> បញ្ចូលសិល្បៈដែលមានភាពសម្បូរ និងសាសនាដែលមានភាពទំនើប។</li>
+        <li><strong>Neo-Futurism:</strong> ផ្តោតលើការរចនាថ្មីដែលមានភាពទំនើប។</li>
+        <li><strong>Neo-Impressionism:</strong> ប្រើពណ៌តូចៗដើម្បីបង្កើតរូបភាព។</li>
+        <li><strong>Neo-Rococo:</strong> ធ្វើឡើងវិញនូវស្ទីលដែលមានភាពសម្បូរ និងតុបតែង។</li>
+        <li><strong>Neoclassicism:</strong> បង្កើតសិល្បៈដែលមានភាពស្រស់ស្អាត និងសាមញ្ញ។</li>
+        <li><strong>Op Art:</strong> បង្កើតភាពលេចធ្លោ និងអារម្មណ៍តាមរយៈគំរូគណិតវិទ្យា។</li>
+        <li><strong>Ornate and Intricate:</strong> ផ្តោតលើការរចនាដែលមានភាពលម្អិត។</li>
+        <li><strong>Pencil Sketch Drawing:</strong> បង្កើតអារម្មណ៍នៃគំនូសដោយប្រើឧបករណ៍គូស។</li>
+        <li><strong>Pop Art:</strong> ប្រើពណ៌ខ្លាំង និងរូបភាពដែលInspired by វប្បធម៌ពេញនិយម។</li>
+        <li><strong>Rococo:</strong> បង្ហាញពីសិល្បៈដែលមានភាពសម្បូរ និងតុបតែង។</li>
+        <li><strong>Silhouette Art:</strong> ប្រើការប្រែប្រួលខ្លាំងរវាងពន្លឺនិងស្រមោល។</li>
+        <li><strong>Simple Vector Art:</strong> ផ្តោតលើរូបរាងគណិតវិទ្យា និងពណ៌សាមញ្ញ។</li>
+        <li><strong>SketchUp:</strong> បង្កើតអារម្មណ៍នៃម៉ូដែល 3D។</li>
+        <li><strong>Steampunk:</strong> បញ្ចូលសិល្បៈនៃអំឡុងពេលវិចិត្រសិល្បៈ។</li>
+        <li><strong>Surrealism:</strong> បញ្ចូលភាពជាក់លាក់និងអារម្មណ៍ដែលមានភាពអស្ចារ្យ។</li>
+        <li><strong>Suprematism:</strong> ផ្តោតលើរូបរាងគណិតវិទ្យា និងពណ៌តិច។</li>
+        <li><strong>Terragen:</strong> បង្កើតទេសភាពដែលមានភាពជាក់លាក់។</li>
+        <li><strong>Tranquil Relaxing Atmosphere:</strong> ប្រើពណ៌ទន់ និងរូបភាពដែលមានភាពស្ងប់ស្ងាត់។</li>
+        <li><strong>Sticker Designs:</strong> ផ្តោតលើការបង្កើតរូបភាពដែលមានភាពលើកទឹកចិត្ត។</li>
+        <li><strong>Vibrant Rim Light:</strong> ផ្តោតលើពន្លឺដែលមានភាពភ្លឺភ្លឺនៅជុំវិញវត្ថុ។</li>
+        <li><strong>Volumetric Lighting:</strong> ប្រើពន្លឺដើម្បីបង្កើតជម្រៅ និងវិមាត្រ។</li>
+        <li><strong>Watercolor:</strong> បង្កើតអារម្មណ៍នៃការគូសដោយប្រើទឹកពណ៌។</li>
+        <li><strong>Whimsical and Playful:</strong> ផ្តោតលើការគូសដែលមានភាពលើកទឹកចិត្ត។</li>
+        <li><strong>Sharp:</strong> បង្កើនភាពច្បាស់និងការបញ្ជាក់។</li>
+        <li><strong>Masterpiece:</strong> ផ្តោតលើការបង្កើតសិល្បៈដែលមានគុណភាពខ្ពស់។</li>
+        <li><strong>Photograph:</strong> មានគោលបំណងសម្រាប់គុណភាពរូបថតដែលមានភាពជាក់លាក់។</li>
+        <li><strong>Negative:</strong> ប្រែពណ៌ដើម្បីបង្កើតអារម្មណ៍រូបថតអវិជ្ជមាន។</li>
+        <li><strong>Ads - Advertising:</strong> ផ្តោតលើការបង្ហាញដែលមានភាពProfessional។</li>
+        <li><strong>Ads - Automotive:</strong> បង្កើតស្ទីលដែលមានភាពទំនើបសម្រាប់ការផ្សព្វផ្សាយរថយន្ត។</li>
+        <li><strong>Ads - Corporate:</strong> ផ្តោតលើការរចនាដែលមានភាពProfessional។</li>
+        <li><strong>Ads - Fashion Editorial:</strong> បង្ហាញពីរូបភាពដែលមានភាពទំនើប។</li>
+        <li><strong>Ads - Food Photography:</strong> បង្កើតរូបភាពដែលមានភាពស្រស់ស្អាតសម្រាប់ការថតរូបម្ហូប។</li>
+        <li><strong>Ads - Gourmet Food Photography:</strong> ផ្តោតលើការថតរូបម្ហូបដែលមានភាពសម្បូរ។</li>
+        <li><strong>Ads - Luxury:</strong> ផ្តោតលើស្ទីលដែលមានភាពសម្បូរ។</li>
+        <li><strong>Ads - Real Estate:</strong> បង្ហាញពីរូបភាពដែលមានភាពស្អាតសម្រាប់ការផ្សព្វផ្សាយអចលនទ្រព្យ។</li>
+        <li><strong>Ads - Retail:</strong> ផ្តោតលើការបង្ហាញដែលមានភាពទាក់ទាញសម្រាប់ការលក់រាយ។</li>
+        <li><strong>Hyperrealism:</strong> មានគោលបំណងសម្រាប់ស្ទីលដែលមានភាពជាក់លាក់ខ្ពស់។</li>
+        <li><strong>Pointillism:</strong> ប្រើពណ៌តូចៗដើម្បីបង្កើតរូបភាព។</li>
+        <li><strong>Psychedelic:</strong> ផ្តោតលើពណ៌ដែលមានភាពភ្លឺភ្លឺ។</li>
+        <li><strong>Renaissance:</strong> បង្ហាញពីស្ទីលដែលមានភាពស្រស់ស្អាតនៃសិល្បៈ Renaissance។</li>
+        <li><strong>Typography:</strong> ផ្តោតលើការប្រើប្រាស់អត្ថបទនិងអក្សរដោយមានភាពច្នៃប្រឌិត។</li>
+        <li><strong>Futuristic Biomechanical:</strong> បញ្ចូលធាតុដែលមានភាពទំនើប និងសារពើភ័ណ្ឌ។</li>
+        <li><strong>Futuristic Biomechanical Cyberpunk:</strong> បញ្ចូលសិល្បៈដែលមានភាពទំនើប និងCyberpunk។</li>
+        <li><strong>Futuristic Cybernetic:</strong> ផ្តោតលើការបង្ហាញដែលមានភាពទំនើប។</li>
+        <li><strong>Futuristic Cybernetic Robot:</strong> ផ្តោតលើការរចនារបស់រ៉ូបូត។</li>
+        <li><strong>Futuristic Cyberpunk Cityscape:</strong> បង្ហាញពីទីក្រុងដែលមានភាពទំនើប។</li>
+        <li><strong>Futuristic Sci-Fi:</strong> ផ្តោតលើសិល្បៈដែលInspired by វិទ្យាសាស្ត្រ។</li>
+        <li><strong>Futuristic Retro Cyberpunk:</strong> បញ្ចូលសិល្បៈដែលមានភាពទំនើប និងRetro។</li>
+        <li><strong>Futuristic Retro:</strong> បញ្ចូលសិល្បៈដែលមានភាពទំនើប និងRetro។</li>
+        <li><strong>Futuristic Vaporwave:</strong> ផ្តោតលើអារម្មណ៍ដែលមានភាពស្រស់ស្អាត។</li>
+        <li><strong>Game Bubble:</strong> ផ្តោតលើស្ទីលដែលមានភាពលើកទឹកចិត្ត។</li>
+        <li><strong>Game Cyberpunk:</strong> បញ្ចូលសិល្បៈដែលមានភាពCyberpunk។</li>
+        <li><strong>Game Fighting:</strong> បង្ហាញពីស្ទីលដែលមានភាពសកម្ម។</li>
+        <li><strong>Game GTA:</strong> បង្កើតអារម្មណ៍ដែលមានភាពUrban។</li>
+        <li><strong>Game Mario:</strong> បង្ហាញពីស្ទីលដែលមានភាពCartoonish។</li>
+        <li><strong>Game Minecraft:</strong> បង្កើតអារម្មណ៍ដែលមានភាពBlocky។</li>
+        <li><strong>Game Pokemon:</strong> បង្ហាញពីស្ទីលដែលInspired by Anime។</li>
+        <li><strong>Game Retro Arcade:</strong> បង្ហាញពីស្ទីលដែលមានភាពPixelated។</li>
+        <li><strong>Game RPG Fantasy:</strong> បង្ហាញពីស្ទីលដែលInspired by Fantasy។</li>
+        <li><strong>Game Strategy:</strong> ផ្តោតលើការរចនាដែលមានភាពFunctional។</li>
+        <li><strong>Game Streetfighter:</strong> បង្ហាញពីស្ទីលដែលមានភាពDynamic។</li>
+        <li><strong>Game Zelda:</strong> បង្ហាញពីស្ទីលដែលInspired by Fantasy។</li>
+        <li><strong>Misc Architectural:</strong> ផ្តោតលើការរចនាដែលមានភាពច្បាស់លាស់។</li>
+        <li><strong>Misc Disco:</strong> បង្ហាញពីស្ទីលដែលមានភាពភ្លឺភ្លឺ។</li>
+        <li><strong>Misc Dreamscape:</strong> បង្កើតបរិយាកាសដែលមានភាពអស្ចារ្យ។</li>
+        <li><strong>Misc Dystopian:</strong> បង្ហាញពីភាពដែលមានភាពអាក្រក់។</li>
+        <li><strong>Misc Fairy Tale:</strong> បង្ហាញពីអារម្មណ៍ដែលមានភាពអស្ចារ្យ។</li>
+        <li><strong>Misc Gothic:</strong> បង្ហាញពីសិល្បៈដែលមានភាពអស្ចារ្យ។</li>
+        <li><strong>Misc Grunge:</strong> បង្ហាញពីសិល្បៈដែលមានភាពអាក្រក់។</li>
+        <li><strong>Misc Horror:</strong> បង្ហាញពីអារម្មណ៍ដែលមានភាពអាក្រក់។</li>
+        <li><strong>Misc Kawaii:</strong> បង្ហាញពីស្ទីលដែលមានភាពគួរឲ្យស្រលាញ់។</li>
+        <li><strong>Misc Lovecraftian:</strong> បង្ហាញពីអារម្មណ៍ដែលមានភាពអាក្រក់។</li>
+        <li><strong>Misc Macabre:</strong> បង្ហាញពីអារម្មណ៍ដែលមានភាពអាក្រក់។</li>
+        <li><strong>Misc Manga:</strong> បង្ហាញពីស្ទីលដែលមានភាពDynamic។</li>
+        <li><strong>Misc Metropolis:</strong> បង្ហាញពីស្ទីលដែលមានភាពUrban។</li>
+        <li><strong>Misc Minimalist:</strong> ផ្តោតលើភាពសាមញ្ញ។</li>
+        <li><strong>Misc Monochrome:</strong> បង្ហាញពីរូបភាពដែលមានពណ៌តែមួយ។</li>
+        <li><strong>Misc Nautical:</strong> បង្ហាញពីស្ទីលដែលInspired by Maritime។</li>
+        <li><strong>Misc Space:</strong> បង្ហាញពីភាពដែលមានភាពអស្ចារ្យ។</li>
+        <li><strong>Misc Stained Glass:</strong> បង្ហាញពីសិល្បៈដែលមានភាពស្រស់ស្អាត។</li>
+        <li><strong>Misc Techwear Fashion:</strong> បង្ហាញពីស្ទីលដែលមានភាពទំនើប។</li>
+        <li><strong>Misc Tribal:</strong> បង្ហាញពីស្ទីលដែលមានភាពBold។</li>
+        <li><strong>Misc Zentangle:</strong> បង្ហាញពីគំរូដែលមានភាពស្មុគស្មាញ។</li>
+        <li><strong>Papercraft Collage:</strong> ប្រើក្រដាសកាត់ដើម្បីបង្កើតកូឡាដ។</li>
+        <li><strong>Papercraft Flat Papercut:</strong> បង្ហាញពីការរចនាក្រដាសកាត់។</li>
+        <li><strong>Papercraft Kirigami:</strong> បង្ហាញពីការរចនាដែលមានភាពស្មុគស្មាញ។</li>
+        <li><strong>Papercraft Paper Mache:</strong> ប្រើក្រដាស mache ដើម្បីបង្កើតរូបភាព។</li>
+        <li><strong>Papercraft Paper Quilling:</strong> បង្ហាញពីការរចនាក្រដាសដែលមានភាពស្រស់ស្អាត។</li>
+        <li><strong>Papercraft Papercut Collage:</strong> បង្កើតកូឡាដដែលមានក្រដាសកាត់។</li>
+        <li><strong>Papercraft Papercut Shadow Box:</strong> បង្កើតប្រអប់ដែលមានក្រដាសកាត់។</li>
+        <li><strong>Papercraft Stacked Papercut:</strong> បង្កើតការរចនាក្រដាសដែលមានភាពស្មុគស្មាញ។</li>
+        <li><strong>Papercraft Thick Layered Papercut:</strong> បង្កើតការរចនាក្រដាសដែលមានភាពស្មុគស្មាញ។</li>
+        <li><strong>Photo Alien:</strong> បង្ហាញពីរូបភាពដែលមានភាពអស្ចារ្យ។</li>
+        <li><strong>Photo Film Noir:</strong> បង្ហាញពីស្ទីលដែលមានភាពអាក្រក់។</li>
+        <li><strong>Photo Glamour:</strong> បង្ហាញពីរូបភាពដែលមានភាពស្រស់ស្អាត។</li>
+        <li><strong>Photo HDR:</strong> ប្រើការបង្ហាញដែលមានភាពច្បាស់លាស់។</li>
+        <li><strong>Photo iPhone Photographic:</strong> បង្ហាញពីស្ទីលដែលមានភាពទំនើប។</li>
+        <li><strong>Photo Long Exposure:</strong> ប្រើការបង្ហាញដែលមានភាពរលូន។</li>
+        <li><strong>Photo Neon Noir:</strong> បង្ហាញពីស្ទីលដែលមានភាពអាក្រក់។</li>
+        <li><strong>Photo Silhouette:</strong> បង្ហាញពីការប្រែប្រួលខ្លាំង។</li>
+        <li><strong>Photo Tilt Shift:</strong> ប្រើការបង្ហាញដែលមានភាពតូច។</li>
+        <li><strong>3D Model:</strong> បង្ហាញពីម៉ូដែល 3D ដែលមានភាពច្បាស់លាស់។</li>
+        <li><strong>Analog Film:</strong> បង្ហាញពីភាពដែលមានភាពស្រស់ស្អាត។</li>
+        <li><strong>Anime:</strong> បង្ហាញពីស្ទីលដែលមានភាពDynamic។</li>
+        <li><strong>Cinematic:</strong> បង្កើតអារម្មណ៍ដែលមានភាពរំភើប។</li>
+        <li><strong>Comic Book:</strong> ប្រើខ្សែបន្ទាត់ដែលមានភាពខ្លាំង។</li>
+        <li><strong>Craft Clay:</strong> បង្កើតអារម្មណ៍ដែលមានភាពស្រស់ស្អាត។</li>
+        <li><strong>Digital Art:</strong> ផ្តោតលើការបង្កើតសិល្បៈដែលមានភាពច្បាស់លាស់។</li>
+        <li><strong>Fantasy Art:</strong> បង្ហាញពីសិល្បៈដែលមានភាពស្រស់ស្អាត។</li>
+        <li><strong>Isometric:</strong> ប្រើការបង្ហាញដែលមានភាពត្រឹមត្រូវ។</li>
+        <li><strong>Line Art:</strong> បង្កើតការគូសដែលមានភាពច្បាស់លាស់។</li>
+        <li><strong>Low Poly:</strong> បង្កើតម៉ូដែល 3D ដែលមានភាពសាមញ្ញ។</li>
+        <li><strong>Neonpunk:</strong> បញ្ចូលសិល្បៈដែលមានភាពCyberpunk។</li>
+        <li><strong>Origami:</strong> បង្ហាញពីការរចនាដែលមានភាពស្មុគស្មាញ។</li>
+        <li><strong>Photographic:</strong> មានគោលបំណងសម្រាប់ភាពជាក់លាក់។</li>
+        <li><strong>Pixel Art:</strong> បង្កើតរូបភាពដែលមានភាពPixelated។</li>
+        <li><strong>Texture:</strong> ផ្តោតលើការបង្កើតអារម្មណ៍ដែលមានភាពស្រស់ស្អាត។</li>
     </ul>
 
 </body>

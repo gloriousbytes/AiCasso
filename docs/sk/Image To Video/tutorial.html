@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            max-width: 100%;
             height: auto;
+            object-fit: contain;
         }
         .iframe-container {
             display: flex;
@@ -55,19 +56,19 @@
     <div class="example">
         <strong>Vstupný obrázok:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/input.jpg" alt="Vstupný obrázok" loading="lazy">
         </div>
         <strong>Výzva 1:</strong>
         <p>"Roztomilý šteniatko v parku"</p>
         <strong>Výsledok 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppy.gif" alt="Roztomilé šteniatko v parku" loading="lazy">
         </div>
         <strong>Výzva 2:</strong>
-        <p>"Roztomilý šteniatko v parku, použite maximálne FPS, maximálne snímky a maximálny pohyb"</p>
+        <p>"Roztomilé šteniatko v parku, použite maximálne FPS, maximálne snímky a maximálny pohyb"</p>
         <strong>Výsledok 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppymaxframes.gif" alt="Maximálne FPS šteniatko v parku" loading="lazy">
         </div>
     </div>
 
@@ -76,14 +77,14 @@
 
     <ul>
         <li><strong>Negatívna výzva:</strong> Opíšte, čo *nechcete* vo videu. Ak je ponechané prázdne, AiCasso sa zameria len na pozitívnu výzvu.</li>
-        <li><strong>Počet snímok:</strong> Vyberte, koľko snímok (jednotlivých obrázkov) bude mať vaše video. Môžete si vybrať až 25 snímok, pričom 16 je predvolené.</li>
+        <li><strong>Počet snímok:</strong> Vyberte, koľko snímok (jednotlivých obrázkov) bude mať vaše video. Môžete vybrať až 25 snímok, pričom 16 je predvolené.</li>
         <li><strong>Kroky denoisingu:</strong> Toto ovláda, ako hladké vaše video vyzerá. Viac krokov znamená čistejšie video. Môžete nastaviť až 50 krokov, pričom 20 je predvolené.</li>
-        <li><strong>Škála usmernenia:</strong> Toto pomáha videu držať sa blízko vášho opisu. Rozsah je od 1.0 do 8.0 a môžete upraviť počiatočné a konečné hodnoty, aby ste usmernili, ako sa video vyvíja.</li>
+        <li><strong>Guidance Scale:</strong> Toto pomáha videu držať sa blízko vášho popisu. Rozsah je od 1.0 do 8.0 a môžete upraviť počiatočné a konečné hodnoty, aby ste nasmerovali, ako sa video vyvíja.</li>
         <li><strong>Pohyb:</strong> Upravte, koľko pohybu je vo vašom videu. Vyššia hodnota znamená viac akcie. Rozsah je od 0 do 127, pričom 60 je predvolené.</li>
-        <li><strong>Intenzita augmentácie šumu:</strong> Pridajte do svojho videa trochu šumu, aby ste mu dodali textúrovanejší vzhľad. Rozsah je od 0 do 1, pričom 0 je predvolené.</li>
+        <li><strong>Intenzita augmentácie šumu:</strong> Pridajte do svojho videa trochu šumu, aby ste mu dali textúrovanejší vzhľad. Rozsah je od 0 do 1, pričom 0 je predvolené.</li>
         <li><strong>Snímky za sekundu (FPS):</strong> Nastavte, ako rýchlo sa vaše video prehráva. Predvolené je 16 FPS, ale môžete ísť až na 16 pre rýchlejšie prehrávanie.</li>
         <li><strong>Metóda interpolácie:</strong> Vyberte, ako sa snímky kombinujú. Predvolené je "lerp" (lineárna interpolácia), ale môžete tiež použiť "slerp" (sférická lineárna interpolácia) pre rôzne efekty.</li>
-        <li><strong>Preskočiť klip:</strong> Preskočte určité vrstvy pre iný štýl videa. Môžete preskočiť až 2 vrstvy alebo to nechať prázdne pre predvolené správanie.</li>
+        <li><strong>Preskočenie klipu:</strong> Preskočte určité vrstvy pre iný štýl videa. Môžete preskočiť až 2 vrstvy alebo to nechať prázdne pre predvolené správanie.</li>
     </ul>
 
     <p>Nezabudnite, AiCasso je dosť inteligentný! Nemusíte mať každý detail dokonalý alebo používať správnu gramatiku. Stačí opísať, čo chcete, a AiCasso urobí zvyšok. Bavte sa pri vytváraní svojich videí!</p>

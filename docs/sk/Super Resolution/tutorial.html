@@ -31,30 +31,37 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h2>Príručka na používanie funkcie Super Resolution</h2>
-    <p>Funkcia Super Resolution v AiCasso je všetko o tom, aby vaše obrázky vyzerali ešte lepšie. Stačí povedať, ako chcete vylepšiť svoj obrázok, a AiCasso sa postará o zvyšok. Či už ostro zvýrazňujete detaily alebo dávate celému obrázku nový nádych, je to veľmi jednoduché.</p>
+    <h2>Príručka k používaniu funkcie Super Resolution</h2>
+    <p>Funkcia Super Resolution v AiCasso je všetko o tom, aby vaše obrázky vyzerali ešte lepšie. Stačí povedať, ako chcete vylepšiť svoj obrázok, a AiCasso sa postará o zvyšok. Či už ostro zvýrazňujete detaily alebo dávate celému obrázku nový nádych, je to veľmi jednoduché na používanie.</p>
 
     <h3>Ako to funguje:</h3>
     
     <div class="example">
         <strong>Vstupný obrázok:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="Vstupný obrázok" loading="lazy">
         </div>
-        <strong>Príkaz:</strong>
+        <strong>Pokyn:</strong>
         <p>"Zväčšiť 4-krát, použiť model Ultra Sharp"</p>
         <strong>Výsledok:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="Výsledný obrázok" loading="lazy">
         </div>
     </div>
 
@@ -69,13 +76,13 @@
                 <li><strong>Ultra Sharp:</strong> Robí obrázok super jasným a ostrým.</li>
                 <li><strong>Anime Enhance:</strong> Perfektné pre obrázky v anime štýle, robí ich ostrými a živými.</li>
                 <li><strong>Dvojnásobné detaily:</strong> Dvojnásobne zvýrazňuje detaily bez preháňania.</li>
-                <li><strong>Všeobecné zvýraznenie:</strong> Dobrá univerzálna možnosť pre väčšinu obrázkov.</li>
+                <li><strong>Všeobecné zvýraznenie:</strong> Dobrá všeobecná možnosť pre väčšinu obrázkov.</li>
             </ul>
         </li>
-        <li><strong>Zvýraznenie tváre:</strong> Ak váš obrázok obsahuje tvár, táto možnosť môže pomôcť, aby vyzerala ešte lepšie. Stačí ju zapnúť, ak chcete, aby sa AiCasso zameral na vylepšenie rysov tváre.</li>
+        <li><strong>Vylepšenie tváre:</strong> Ak váš obrázok obsahuje tvár, táto možnosť môže pomôcť, aby vyzerala ešte lepšie. Stačí ju zapnúť, ak chcete, aby sa AiCasso zameral na vylepšenie rysov tváre.</li>
     </ul>
 
-    <p>Nezabudnite, tieto možnosti sú úplne voliteľné! Nemusíte sa nimi zaoberať, ak nechcete. Stačí opísať, čo chcete, a AiCasso zistí najlepší spôsob, ako to uskutočniť. A nebojte sa byť dokonalí vo svojich slovách—AiCasso vám rozumie!</p>
+    <p>Nezabudnite, že tieto možnosti sú úplne voliteľné! Nemusíte sa nimi zaoberať, ak nechcete. Stačí opísať, čo chcete, a AiCasso zistí najlepší spôsob, ako to uskutočniť. A nebojte sa byť dokonalí vo svojich slovách—AiCasso vás rozumie!</p>
 
 </body>
 </html>

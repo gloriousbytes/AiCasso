@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
         .iframe-container {
@@ -48,28 +48,28 @@
 <body>
 
     <h2>Porady dotyczące korzystania z funkcji Outpaint</h2>
-    <p>Funkcja Outpaint w AiCasso pozwala na rozszerzenie obrazu poprzez dodawanie nowych elementów wokół niego lub wydłużanie tego, co już istnieje. Po prostu opisz, co chcesz, a AiCasso zajmie się resztą.</p>
+    <p>Funkcja Outpaint w AiCasso pozwala na rozszerzenie obrazu poprzez dodanie nowych elementów wokół niego lub rozszerzenie tego, co już istnieje. Po prostu opisz, co chcesz, a AiCasso zajmie się resztą.</p>
 
     <h3>Jak to działa:</h3>
     
     <div class="example">
-        <strong>Obraz początkowy:</strong>
+        <strong>Początkowy obraz:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/input.jpg" alt="Początkowy obraz" loading="lazy">
         </div>
     </div>
 
     <div class="example">
         <strong>Opisz swoją zmianę:</strong>
-        <p>Po prostu wpisz, co chcesz dodać lub rozszerzyć, a AiCasso zastosuje te zmiany. Możesz określić kierunki, takie jak lewo, prawo, w górę lub w dół, a nawet szczegóły, takie jak oddalanie lub przesuwanie.</p>
+        <p>Po prostu wpisz, co chcesz dodać lub rozszerzyć, a AiCasso zastosuje te zmiany. Możesz określić kierunki, takie jak lewo, prawo, góra lub dół, a nawet szczegóły, takie jak oddalanie lub przesuwanie.</p>
     </div>
 
-    <h3>Przykłady edycji:</h3>
+    <h3>Przykładowe edycje:</h3>
 
     <div class="example">
         <strong>Przykład 1:</strong> "Dodaj górę lodową po prawej stronie, używając współczynnika translacji 0.4."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/iceberg.jpg" alt="Przykład 1 - Góra lodowa" loading="lazy">
         </div>
         <p><em>Wynik:</em> AiCasso rozszerza obraz w prawo i dodaje górę lodową, zachowując spójność z istniejącym krajobrazem.</p>
     </div>
@@ -77,9 +77,9 @@
     <div class="example">
         <strong>Przykład 2:</strong> "Oddal, zachowując spójność ciemnego morza w nocy."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/zoomout.jpg" alt="Przykład 2 - Oddal" loading="lazy">
         </div>
-        <p><em>Wynik:</em> Obraz oddala się, ukazując więcej ciemnego morza, zachowując atmosferę nocnej scenerii.</p>
+        <p><em>Wynik:</em> Obraz oddala się, odsłaniając więcej ciemnego morza, zachowując atmosferę nocnej scenerii.</p>
     </div>
 
     <h3>Dodatkowe opcje</h3>
@@ -87,14 +87,14 @@
 
     <ul>
         <li><strong>Negatywny prompt:</strong> Jeśli jest coś konkretnego, czego nie chcesz w obrazie, możesz to powiedzieć AiCasso tutaj. Na przykład, możesz chcieć unikać dodawania określonych kolorów lub obiektów.</li>
-        <li><strong>Typ spaceru:</strong> To decyduje o kierunku, w którym obraz się rozszerza. Możesz wybierać spośród lewo, prawo, w górę, w dół lub do tyłu (co oddala). Na przykład, aby przesunąć w prawo, wybierz 'prawo'.</li>
-        <li><strong>Współczynnik translacji:</strong> To kontroluje, jak bardzo obraz przesuwa się z każdym krokiem podczas rozszerzania. Wyższa wartość przesuwa obraz bardziej, odsłaniając więcej nowej zawartości. Domyślnie wynosi 0.05, ale możesz dostosować to w zakresie od 0 do 1.</li>
-        <li><strong>Szerokość/Wysokość translacji na krok:</strong> Te ustawienia kontrolują, jak daleko obraz przesuwa się poziomo (szerokość) lub pionowo (wysokość) z każdym krokiem. Domyślnie wynosi 32 piksele na krok, ale możesz to dostosować w zależności od tego, jak bardzo chcesz, aby obraz się przesuwał.</li>
-        <li><strong>Liczba kroków inferencji lub denoisingu:</strong> To określa, ile poprawek AiCasso wprowadza, aby uzyskać ostateczny obraz. Więcej kroków prowadzi do gładszego wyniku, z domyślną wartością 20 kroków, ale możesz zwiększyć do 50.</li>
-        <li><strong>Liczba kroków interpolacji:</strong> To kontroluje, jak płynnie następuje przejście między dwoma kierunkami w jednym rozszerzeniu. Domyślnie wynosi 60, ale możesz zwiększyć do 120 dla gładszych przejść.</li>
+        <li><strong>Typ spaceru:</strong> To decyduje o kierunku, w którym obraz się rozszerza. Możesz wybierać spośród lewo, prawo, góra, dół lub do tyłu (co oddala). Na przykład, aby przesunąć w prawo, wybierz 'prawo'.</li>
+        <li><strong>Współczynnik translacji:</strong> To kontroluje, jak bardzo obraz przesuwa się z każdym krokiem podczas rozszerzania. Wyższa wartość przesuwa obraz bardziej, odsłaniając więcej nowej zawartości. Domyślnie wynosi 0.05, ale możesz dostosować to od 0 do 1.</li>
+        <li><strong>Translacja szerokości/wysokości na krok:</strong> Te ustawienia kontrolują, jak daleko obraz przesuwa się poziomo (szerokość) lub pionowo (wysokość) z każdym krokiem. Domyślnie wynosi 32 piksele na krok, ale możesz to dostosować w zależności od tego, jak bardzo chcesz, aby obraz się przesuwał.</li>
+        <li><strong>Liczba kroków inferencji lub denoisingu:</strong> To określa, ile poprawek AiCasso dokonuje, aby uzyskać ostateczny obraz. Więcej kroków prowadzi do gładszego wyniku, z domyślną wartością 20 kroków, ale możesz zwiększyć do 50.</li>
+        <li><strong>Liczba kroków interpolacji:</strong> To kontroluje, jak płynnie zachodzi przejście między dwoma kierunkami w jednym rozszerzeniu. Domyślnie wynosi 60, ale możesz zwiększyć do 120 dla płynniejszych przejść.</li>
     </ul>
 
-    <p>Pamiętaj, że te ustawienia są opcjonalne. AiCasso jest zaprojektowane tak, aby dobrze działać tylko z Twoim naturalnym opisem językowym. Śmiało eksperymentuj i sprawdź, co działa najlepiej dla Twojego obrazu!</p>
+    <p>Pamiętaj, że te ustawienia są opcjonalne. AiCasso jest zaprojektowane tak, aby dobrze działało tylko z Twoim naturalnym opisem. Śmiało eksperymentuj i sprawdź, co działa najlepiej dla Twojego obrazu!</p>
 
 </body>
 </html>

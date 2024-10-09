@@ -31,89 +31,93 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img {
+            width: 100%;
+            max-width: 400px;
             height: auto;
         }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        @media (max-width: 768px) {
+            .result img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h2>使用生成视频功能指南</h2>
-    <p>AiCasso 的生成视频功能让您只需描述您想看到的内容即可创建视频。只需输入您的想法，AiCasso 就会将其变为视频！</p>
+    <h2>生成视频功能使用指南</h2>
+    <p>AiCasso中的生成视频功能让您只需描述您想要看到的内容即可创建视频。只需输入您的想法，AiCasso将为您呈现视频！</p>
 
     <h3>工作原理：</h3>
     
     <div class="example">
         <strong>提示：</strong>
-        <p>"一个3D动画的公鸡在田野中独自一人，吃东西并感到快乐。制作一个50步去噪的纵向视频。"</p>
+        <p>"一只在田野中独自吃东西并快乐的3D动画公鸡。制作成一段具有50个去噪步骤的肖像视频。"</p>
         <strong>结果：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/animated3d.gif" alt="动画3D公鸡">
+            <noscript><img src="../../images/tutorials/texttovideo/animated3d.gif" alt="动画3D公鸡"></noscript>
         </div>
     </div>
 
     <div class="example">
         <strong>提示：</strong>
-        <p>"一个田野上的公鸡的卡通，横向尺寸。"</p>
+        <p>"一只在田野上的卡通公鸡，横向尺寸。"</p>
         <strong>结果：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/cartoon.gif" alt="卡通公鸡">
+            <noscript><img src="../../images/tutorials/texttovideo/cartoon.gif" alt="卡通公鸡"></noscript>
         </div>
     </div>
 
     <div class="example">
         <strong>提示：</strong>
-        <p>"田野上的一只公鸡。"</p>
+        <p>"一只在田野上的公鸡。"</p>
         <strong>结果：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/default.gif" alt="默认公鸡">
+            <noscript><img src="../../images/tutorials/texttovideo/default.gif" alt="默认公鸡"></noscript>
         </div>
     </div>
 
     <div class="example">
         <strong>提示：</strong>
-        <p>"一只独自在田野中的公鸡。给它一种自然的感觉。"</p>
+        <p>"一只独自在田野上的公鸡。给它一种自然的感觉。"</p>
         <strong>结果：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/natural.gif" alt="自然公鸡">
+            <noscript><img src="../../images/tutorials/texttovideo/natural.gif" alt="自然公鸡"></noscript>
         </div>
     </div>
 
     <h3>附加选项</h3>
-    <p>想要微调您的视频吗？以下是一些您可以调整的设置：</p>
+    <p>想要微调您的视频吗？以下是一些您可以尝试的设置：</p>
 
     <ul>
-        <li><strong>帧数：</strong>选择您的视频将有多少帧（单个图像）。您最多可以选择25帧，默认值为16帧。</li>
-        <li><strong>去噪步骤数：</strong>这控制视频的平滑度。更多步骤意味着更平滑的视频。您可以设置最多50步，默认值为20步。</li>
-        <li><strong>指导尺度：</strong>这有助于视频紧密贴合您的描述。数字越高，越符合您的提示。范围是0到8，默认值为8。</li>
-        <li><strong>剪辑跳过：</strong>跳过某些层以获得不同的视频风格。默认情况下，不跳过任何层，但您可以跳过最多2层。</li>
+        <li><strong>帧数：</strong>选择您的视频将包含多少帧（单个图像）。最多可以达到25帧，默认值为16。</li>
+        <li><strong>去噪步骤数：</strong>这控制视频的平滑度。更多的步骤意味着更平滑的视频。最多可以设置50步，默认值为20。</li>
+        <li><strong>引导比例：</strong>这有助于视频紧密贴合您的描述。数字越高，越能遵循您的提示。范围是0到8，默认值为8。</li>
+        <li><strong>跳过剪辑：</strong>跳过某些层以获得不同的视频风格。默认情况下，不跳过任何层，但您可以跳过最多2层。</li>
         <li><strong>放大宽度和高度：</strong>您可以通过调整分辨率来放大视频。默认值为1024x1024像素，但您可以根据需要进行调整。</li>
-        <li><strong>放大强度：</strong>这会改变视频在放大时的调整程度。默认值为1，但您可以调整以查看更多差异。</li>
-        <li><strong>放大指导尺度：</strong>这指导放大过程，范围从0到8，默认值为8。</li>
-        <li><strong>放大推理步骤：</strong>放大视频所需的步骤数。更多步骤使放大更平滑，最多50步，默认值为20步。</li>
-        <li><strong>改进采样：</strong>想要更精细的视频？打开此选项。默认情况下关闭。</li>
-        <li><strong>改进采样种子：</strong>使用此选项可以每次生成相同的视频，具有改进的采样。它是可选的，默认关闭。</li>
-        <li><strong>每秒帧数 (FPS)：</strong>设置视频的速度。默认值为16 FPS，但您可以调整到16。</li>
-        <li><strong>视频模型：</strong>选择您的视频风格。选项包括：
+        <li><strong>放大强度：</strong>这会改变视频放大时的调整程度。默认值为1，但您可以调整以查看更多差异。</li>
+        <li><strong>放大引导比例：</strong>这指导放大过程，范围从0到8，默认值为8。</li>
+        <li><strong>放大推理步骤：</strong>放大视频时所采取的步骤数。更多的步骤使放大更平滑，最多50步，默认值为20。</li>
+        <li><strong>改进采样：</strong>想要更精细的视频吗？打开此选项。默认情况下为关闭。</li>
+        <li><strong>改进采样种子：</strong>使用此选项生成每次都相同的视频，采用改进采样。可选，默认情况下为关闭。</li>
+        <li><strong>每秒帧数（FPS）：</strong>设置视频的速度。默认值为16 FPS，但您可以调整到16。</li>
+        <li><strong>视频模型：</strong>选择视频的风格。选项包括：
             <ul>
                 <li><strong>默认：</strong>标准视频模型。</li>
                 <li><strong>卡通：</strong>卡通风格的视频。</li>
-                <li><strong>自然：</strong>逼真、自然风格的视频。</li>
+                <li><strong>自然：</strong>现实自然风格的视频。</li>
                 <li><strong>动画3D：</strong>3D动画风格的视频。</li>
             </ul>
         </li>
     </ul>
 
-    <p>请记住，这些设置是可选的。生成视频功能只需简单描述即可正常工作，因此请随意尝试，看看您能创造出什么！</p>
+    <p>请记住，这些设置是可选的。生成视频功能仅凭简单描述也能很好地工作，因此请随意尝试，看看您能创造出什么！</p>
 
 </body>
 </html>

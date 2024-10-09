@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
         .iframe-container {
@@ -48,38 +48,38 @@
 <body>
 
     <h2>Tips voor het Gebruik van de Outpaint-functie</h2>
-    <p>De Outpaint-functie in AiCasso stelt je in staat om een afbeelding uit te breiden door nieuwe elementen toe te voegen of bestaande elementen te verlengen. Beschrijf gewoon wat je wilt, en AiCasso doet de rest.</p>
+    <p>De Outpaint-functie in AiCasso stelt je in staat om een afbeelding uit te breiden door nieuwe elementen eromheen toe te voegen of wat er al is uit te breiden. Beschrijf gewoon wat je wilt, en AiCasso zorgt voor de rest.</p>
 
     <h3>Hoe het Werkt:</h3>
     
     <div class="example">
-        <strong>Startafbeelding:</strong>
+        <strong>Beginafbeelding:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/input.jpg" alt="Beginafbeelding" loading="lazy">
         </div>
     </div>
 
     <div class="example">
         <strong>Beschrijf je Wijziging:</strong>
-        <p>Typ gewoon wat je wilt toevoegen of uitbreiden, en AiCasso past die wijzigingen toe. Je kunt richtingen specificeren zoals links, rechts, omhoog of omlaag, en zelfs details zoals uitzoomen of pannen.</p>
+        <p>Typ gewoon wat je wilt toevoegen of uitbreiden, en AiCasso past die wijzigingen toe. Je kunt richtingen specificeren zoals links, rechts, omhoog of omlaag, en zelfs details zoals inzoomen of pannen.</p>
     </div>
 
-    <h3>Voorbeeldbewerkingen:</h3>
+    <h3>Voorbeeld Bewerking:</h3>
 
     <div class="example">
-        <strong>Voorbeeld 1:</strong> "Voeg een ijsberg toe aan de rechterkant met een translatiefactor van 0,4."
+        <strong>Voorbeeld 1:</strong> "Voeg een ijsberg toe aan de rechterkant met een vertaalfactor van 0.4."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/iceberg.jpg" alt="Voorbeeld 1 - IJsberg" loading="lazy">
         </div>
-        <p><em>Resultaat:</em> AiCasso breidt de afbeelding uit naar rechts en voegt een ijsberg toe, in overeenstemming met het bestaande landschap.</p>
+        <p><em>Resultaat:</em> AiCasso breidt de afbeelding naar rechts uit en voegt een ijsberg toe, waarbij het consistent blijft met het bestaande landschap.</p>
     </div>
 
     <div class="example">
         <strong>Voorbeeld 2:</strong> "Zoom uit, behoud de consistentie van de donkere zee 's nachts."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/zoomout.jpg" alt="Voorbeeld 2 - Zoom Uit" loading="lazy">
         </div>
-        <p><em>Resultaat:</em> De afbeelding zoomt uit, waardoor meer van de donkere zee zichtbaar wordt, terwijl de sfeer van de nachtscène behouden blijft.</p>
+        <p><em>Resultaat:</em> De afbeelding zoomt uit, waardoor meer van de donkere zee zichtbaar wordt, terwijl de sfeer van de nachtelijke scène behouden blijft.</p>
     </div>
 
     <h3>Aanvullende Opties</h3>
@@ -87,14 +87,14 @@
 
     <ul>
         <li><strong>Negatieve Prompt:</strong> Als er iets specifieks is dat je niet in de afbeelding wilt, kun je dat hier aan AiCasso vertellen. Bijvoorbeeld, je wilt misschien bepaalde kleuren of objecten vermijden.</li>
-        <li><strong>Wandeltype:</strong> Dit bepaalt de richting waarin de afbeelding uitbreidt. Je kunt kiezen uit links, rechts, omhoog, omlaag of achteruit (wat uitzoomt). Bijvoorbeeld, om naar rechts te pannen, selecteer je 'rechts'.</li>
-        <li><strong>Translatiefactor:</strong> Dit bepaalt hoeveel de afbeelding beweegt bij elke stap tijdens het uitbreiden. Een hogere waarde beweegt de afbeelding meer, waardoor meer van de nieuwe inhoud zichtbaar wordt. De standaard is 0,05, maar je kunt het aanpassen van 0 tot 1.</li>
-        <li><strong>Breedte/Hoogte Translatie per Stap:</strong> Deze bepalen hoe ver de afbeelding horizontaal (breedte) of verticaal (hoogte) beweegt bij elke stap. De standaard is 32 pixels per stap, maar je kunt dit aanpassen op basis van hoeveel je de afbeelding wilt verschuiven.</li>
-        <li><strong>Aantal Inferentie- of Ontstoringsstappen:</strong> Dit bepaalt hoeveel aanpassingen AiCasso maakt om de uiteindelijke afbeelding te krijgen. Meer stappen leiden tot een vloeiender resultaat, met een standaard van 20 stappen, maar je kunt tot 50 gaan.</li>
-        <li><strong>Aantal Interpolatiestappen:</strong> Dit bepaalt hoe soepel de overgang gebeurt tussen twee richtingen in een enkele uitbreiding. De standaard is 60, maar je kunt het verhogen tot 120 voor soepelere overgangen.</li>
+        <li><strong>Loop Type:</strong> Dit bepaalt de richting waarin de afbeelding uitbreidt. Je kunt kiezen uit links, rechts, omhoog, omlaag of achteruit (wat uitzoomt). Om bijvoorbeeld naar rechts te pannen, kies je 'rechts'.</li>
+        <li><strong>Vertaalfactor:</strong> Dit controleert hoeveel de afbeelding beweegt met elke stap tijdens het uitbreiden. Een hogere waarde beweegt de afbeelding meer, waardoor er meer van de nieuwe inhoud zichtbaar wordt. De standaardwaarde is 0.05, maar je kunt deze aanpassen van 0 tot 1.</li>
+        <li><strong>Breedte/Hoogte Vertaling per Stap:</strong> Deze bepalen hoe ver de afbeelding horizontaal (breedte) of verticaal (hoogte) beweegt met elke stap. De standaardwaarde is 32 pixels per stap, maar je kunt dit aanpassen op basis van hoeveel je wilt dat de afbeelding verschuift.</li>
+        <li><strong>Aantal Inferentie- of Denoising-stappen:</strong> Dit bepaalt hoeveel aanpassingen AiCasso maakt om de uiteindelijke afbeelding te krijgen. Meer stappen leiden tot een vloeiender resultaat, met een standaard van 20 stappen, maar je kunt tot 50 gaan.</li>
+        <li><strong>Aantal Interpolatiestappen:</strong> Dit controleert hoe soepel de overgang plaatsvindt tussen twee richtingen in een enkele uitbreiding. De standaardwaarde is 60, maar je kunt deze verhogen tot 120 voor soepelere overgangen.</li>
     </ul>
 
-    <p>Onthoud dat deze instellingen optioneel zijn. AiCasso is ontworpen om goed te werken met alleen je natuurlijke taalbeschrijving. Voel je vrij om te experimenteren en te zien wat het beste werkt voor jouw afbeelding!</p>
+    <p>Vergeet niet dat deze instellingen optioneel zijn. AiCasso is ontworpen om goed te werken met alleen je natuurlijke taalsbeschrijving. Voel je vrij om te experimenteren en te zien wat het beste werkt voor jouw afbeelding!</p>
 
 </body>
 </html>

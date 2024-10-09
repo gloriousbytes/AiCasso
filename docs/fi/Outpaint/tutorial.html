@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
         .iframe-container {
@@ -55,34 +55,34 @@
     <div class="example">
         <strong>Aloituskuva:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/input.jpg" alt="Aloituskuva" loading="lazy">
         </div>
     </div>
 
     <div class="example">
         <strong>Kuvaile muutoksesi:</strong>
-        <p>Kirjoita vain, mitä haluat lisätä tai laajentaa, ja AiCasso soveltaa näitä muutoksia. Voit määrittää suuntia, kuten vasen, oikea, ylös tai alas, ja jopa yksityiskohtia, kuten zoomaaminen ulos tai panorointi.</p>
+        <p>Kirjoita vain, mitä haluat lisätä tai laajentaa, ja AiCasso soveltaa näitä muutoksia. Voit määrittää suuntia, kuten vasen, oikea, ylös tai alas, ja jopa yksityiskohtia, kuten zoomaamista ulos tai panorointia.</p>
     </div>
 
-    <h3 esimerkki muokkauksista:</h3>
+    <h3>Esimerkkimuokkaukset:</h3>
 
     <div class="example">
-        <strong>Esimerkki 1:</strong> "Lisää jäävuori oikealle käyttämällä käännöstekijää 0.4."
+        <strong>Esimerkki 1:</strong> "Lisää jäävuori oikealle käyttäen käännöstekijää 0.4."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/iceberg.jpg" alt="Esimerkki 1 - Jäävuori" loading="lazy">
         </div>
         <p><em>Tulos:</em> AiCasso laajentaa kuvaa oikealle ja lisää jäävuoren, pitäen sen johdonmukaisena olemassa olevan maiseman kanssa.</p>
     </div>
 
     <div class="example">
-        <strong>Esimerkki 2:</strong> "Zoomaa ulos, säilytä yön tumman meren johdonmukaisuus."
+        <strong>Esimerkki 2:</strong> "Zoomaa ulos, säilytä pimeän meren johdonmukaisuus yöllä."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/zoomout.jpg" alt="Esimerkki 2 - Zoomaa ulos" loading="lazy">
         </div>
-        <p><em>Tulos:</em> Kuva zoomaa ulos, paljastaen enemmän tummasta merestä, samalla kun se säilyttää yön tunnelman.</p>
+        <p><em>Tulos:</em> Kuva zoomaa ulos, paljastaen enemmän pimeästä merestä, samalla kun se säilyttää yön tunnelman.</p>
     </div>
 
-    <h3>Lisävaihtoehdot</h3>
+    <h3>Lisäasetukset</h3>
     <p>Tässä on joitakin valinnaisia asetuksia, joita voit käyttää muokkauksesi hienosäätämiseen:</p>
 
     <ul>
@@ -94,7 +94,7 @@
         <li><strong>Interpolaatioaskeleiden määrä:</strong> Tämä ohjaa, kuinka sujuvasti siirtyminen tapahtuu kahden suunnan välillä yhdessä laajennuksessa. Oletusarvo on 60, mutta voit nostaa sen jopa 120:een sujuvampia siirtymiä varten.</li>
     </ul>
 
-    <p>Muista, että nämä asetukset ovat valinnaisia. AiCasso on suunniteltu toimimaan hyvin vain luonnollisen kielen kuvauksesi kanssa. Kokeile rohkeasti ja katso, mikä toimii parhaiten kuvasi kanssa!</p>
+    <p>Muista, että nämä asetukset ovat valinnaisia. AiCasso on suunniteltu toimimaan hyvin pelkästään luonnollisen kielen kuvauksesi kanssa. Kokeile rohkeasti ja katso, mikä toimii parhaiten kuvasi kanssa!</p>
 
 </body>
 </html>

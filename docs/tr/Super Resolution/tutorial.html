@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Süper Çözünürlük Özellik Kılavuzu</title>
+    <title>Süper Çözünürlük Özelliği Kılavuzu</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,51 +31,58 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h2>Süper Çözünürlük Özelliği Kullanım Kılavuzu</h2>
-    <p>AiCasso'daki Süper Çözünürlük özelliği, görüntülerinizi daha da iyi hale getirmekle ilgilidir. Görüntünüzü nasıl iyileştirmek istediğinizi söyleyin, gerisini AiCasso halleder. İster detayları keskinleştirin ister tüm görüntüye bir destek verin, kullanımı çok kolaydır.</p>
+    <h2>Süper Çözünürlük Özelliğini Kullanma Kılavuzu</h2>
+    <p>AiCasso'daki Süper Çözünürlük özelliği, görüntülerinizi daha da iyi hale getirmekle ilgilidir. Görüntünüzü nasıl geliştirmek istediğinizi söylüyorsunuz ve AiCasso geri kalanını hallediyor. Detayları netleştirmek veya tüm görüntüyü güçlendirmek olsun, kullanımı son derece kolay.</p>
 
     <h3>Nasıl Çalışır:</h3>
     
     <div class="example">
-        <strong>Girdi Görüntüsü:</strong>
+        <strong>Giriş Görüntüsü:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="Giriş Görüntüsü" loading="lazy">
         </div>
-        <strong>Komut:</strong>
-        <p>"4 kat büyüt, Ultra Keskin modeli kullan"</p>
+        <strong>İstek:</strong>
+        <p>"Bunu 4 kat büyüt, Ultra Keskin modeli kullan"</p>
         <strong>Sonuç:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="Sonuç Görüntüsü" loading="lazy">
         </div>
     </div>
 
     <h3>Opsiyonel Parametreler</h3>
-    <p>Görüntünüzün nasıl iyileştirileceği üzerinde biraz daha kontrol sahibi olmak isterseniz, oynayabileceğiniz bazı ekstra seçenekler:</p>
+    <p>Görüntünüzün nasıl geliştirileceği üzerinde biraz daha kontrol eklemek istiyorsanız, oynayabileceğiniz bazı ekstra seçenekler burada:</p>
 
     <ul>
-        <li><strong>Ölçek:</strong> Görüntünüzü ne kadar büyütmek istediğinizdir. 1 ile 4 arasında bir ölçek seçebilirsiniz, varsayılan olarak 4'tür. Temelde, daha büyük sayılar daha büyük bir görüntü anlamına gelir.</li>
-        <li><strong>Yükseltme Modeli:</strong> Görüntünüz için bir filtre seçmek gibidir, ancak çok daha akıllıdır. İşte seçenekler:
+        <li><strong>Ölçek:</strong> Görüntünüzü ne kadar büyütmek istediğinizi belirtir. 1 ile 4 arasında bir ölçek seçebilirsiniz, 4 varsayılandır. Temelde, daha büyük sayılar daha büyük bir görüntü anlamına gelir.</li>
+        <li><strong>Büyütme Modeli:</strong> Bu, görüntünüz için bir filtre seçmek gibidir, ancak çok daha akıllıdır. İşte seçenekler:
             <ul>
                 <li><strong>Büyük Detay Artışı:</strong> Küçük detaylara yakınlaşmak için en iyisi.</li>
-                <li><strong>Ultra Keskin:</strong> Görüntüyü süper net ve keskin yapar.</li>
-                <li><strong>Anime İyileştirme:</strong> Anime tarzı görüntüler için mükemmel, onları keskin ve canlı hale getirir.</li>
+                <li><strong>Ultra Keskin:</strong> Görüntüyü süper net ve keskin hale getirir.</li>
+                <li><strong>Anime Geliştirme:</strong> Anime tarzı görüntüler için mükemmel, onları keskin ve canlı hale getirir.</li>
                 <li><strong>Çift Detay:</strong> Detayları abartmadan iki katına çıkarır.</li>
-                <li><strong>Genel Artış:</strong> Çoğu görüntü için iyi bir genel seçenektir.</li>
+                <li><strong>Genel Artış:</strong> Çoğu görüntü için iyi bir genel seçenek.</li>
             </ul>
         </li>
-        <li><strong>Yüz İyileştirme:</strong> Görüntünüzde bir yüz varsa, bu seçenek onu daha da iyi hale getirebilir. AiCasso'nun yüz özelliklerini iyileştirmeye odaklanmasını istiyorsanız, sadece açın.</li>
+        <li><strong>Yüz Geliştirme:</strong> Görüntünüzde bir yüz varsa, bu seçenek onu daha iyi hale getirmeye yardımcı olabilir. AiCasso'nun yüz özelliklerini geliştirmeye odaklanmasını istiyorsanız, bunu açın.</li>
     </ul>
 
-    <p>Unutmayın, bu seçenekler tamamen isteğe bağlıdır! İstemiyorsanız onlarla uğraşmanıza gerek yok. Sadece ne istediğinizi tarif edin, AiCasso en iyi şekilde gerçekleştirecektir. Ve kelimelerinizde mükemmel olma konusunda endişelenmeyin—AiCasso sizi anlar!</p>
+    <p>Unutmayın, bu seçenekler tamamen isteğe bağlıdır! İstemiyorsanız onlarla uğraşmak zorunda değilsiniz. Ne istediğinizi tarif edin, AiCasso en iyi şekilde bunu gerçekleştirecektir. Ve kelimelerinizle mükemmel olmanız gerektiği konusunda endişelenmeyin—AiCasso sizi anlıyor!</p>
 
 </body>
 </html>

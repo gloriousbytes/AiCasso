@@ -3,155 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>የመልክዓ ባህሪ መረጃዎች</title>
+    <title>መቀስቀስ ባህሪ ምክሮች</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+         body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Ensures the image doesn't overflow the container */
+    height: auto;     /* Keeps the aspect ratio */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
-    <h2>የመልክዓ ባህሪ መረጃዎች</h2>
-    <p>በAiCasso ውስጥ የInpaint ባህሪ የምስል ውስጥ የተወሰኑ አካባቢዎችን በመሙላት ወይም በመቀየር ለማሻሻል ይፈቅዳል። አሁን የምስል ውስጥ የሚያሻሻል ወይም በሙሉ የሚለወጥ አካባቢዎችን እንደሚፈልጉ ይምረጡ፣ የሚያስተዋውቁትን ይስጡ፣ እና AiCasso ይሰራል።</p>
+    <h2>መቀስቀስ ባህሪ ምክሮች</h2>
+    <p>በ AiCasso ውስጥ ያለውን እንኮላሽን ባህሪ በመጠቀም በአንድ ምስል ውስጥ ልዩ ልዩ አካባቢዎችን መሙላት ወይም መተካከል ይችላሉ። በስምምነት እና በተጨማሪ አካባቢዎች ላይ በቀላሉ ማለዳ ማከላከያ ሊያደርግ ይችላል። እባኮትን ልዩ ልዩ አካባቢዎችን ይምረጡ፣ ትእዛዝ ይስጡ እና AiCasso ያንተን ምሳሌዎች በቀላሉ ይታካል።</p>
 
    <h3>አማራጮች:</h3>
 
     <div class="example">
-        <strong>ኃይል:</strong>
-        <p>የኃይል አማራጭ የመነሻ ምስል በዚህ የሚለወጥ መጠን ይቆጣጠር። ከ0 እስከ 1 ይሆናል። የ0 ዋጋ የመነሻ ምስል በጣም ይለወጣል ወይም የ1 ዋጋ የመነሻ ምስል በጣም ይለወጣል ወይም የአዲስ ዝርዝሮች ይለወጣል። ይህን እንደ የምርጥ ወይም የሚለወጥ ይወዳድሩ።</p>
+        <strong>ጉልበት:</strong>
+        <p>የጉልበት አማራጭ ምን ያህል የመነሻ ምስል በትእዛዝ ተቀይሯል ትችል ያቀርባል። ከ 0 እስከ 1 ቆሻሻ ቀንበር ባለው ክልል ላይ እንደሚገኝ ቆሻሻ ምንትልሻውን የማነሻው ይተክበዋል። 0 የሚል ነው ትእዛዝ በሚሆነው ብልሹ እንደትእዛዙ ሆኖ የሚታይበት ነገር ይኖርበታል።</p>
     </div>
 
     <div class="example">
-        <strong>የማሻሻያ ቅኔ:</strong>
-        <p>የማሻሻያ ቅኔ የተለየ አርቲስቲክ ወይም የታሪክ ቅኔ ወይም የሚለወጥ አካባቢዎችን ይጨምር። ከበርካታ ቅኔዎች ይምረጡ።</p>
+        <strong>ስልክ ሁኔታ:</strong>
+        <p>የስልክ ሁኔታ አማራጭ በተለይ በባህሪያቸው ልዩ ቅጥ ይሁን ሕንፃ ስራት እንዲበረታ ያደርጋል።</p>
     </div>
 
-    <h3>እንዴት ይሰራል:</h3>
+    <h3>እንዴት እንደሚሰራ:</h3>
 
-    <div class="example">
-        <strong>የግብይት ምስል:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OzuoAKoYvwEW30ScvOjgX9lfe6VpbdNq/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>የመግቢያ ምስል:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/inpain/input.jpg" alt="Input Image">
     </div>
+</div>
 
-    <div class="example">
-        <strong>የሚሙሉ ወይም የሚቀየር አካባቢዎችን በማስታወቂያ ይሙሉ:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1-PaOaaDEvMogYhFjiMjUztvsxhllTsQ3/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>ምስል አካባቢዎችን መሙላት ወይም ማስተካከል:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/inpain/paintareas.jpg" alt="Paint the Areas">
     </div>
+</div>
 
-    <h3>ምሳሌዎች:</h3>
+<h3>ምሳሌዎች:</h3>
 
-    <div class="example">
-        <strong>የምርጥ 1:</strong> "በፓርክ ውስጥ የድንበር ምስል ይህ ይሆናል።"
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1BpTJPP7s5CJ-6Yk03s281K6ay6DQ-sFa/preview"></iframe>
-        </div>
-        <p><em>ውጤት:</em> AiCasso በፓርክ ውስጥ የድንበር ምስል ይፈጥራል፣ የተሳሳተ አካባቢዎችን በተወሰኑ ዝርዝሮች ይሙሉ።</p>
+<div class="example">
+    <strong>ትእዛዝ 1:</strong> "በፓርክ ላይ ያለው አንተን የተሻሻለ እይታዎች."
+    <div class="result">
+        <img src="../../images/tutorials/inpain/catinthepark.jpg" alt="Hyper-realistic cat in the park">
     </div>
+    <p><em>ውጤት:</em> AiCasso ወደአንድ ምስል በተባበሩት አካባቢዎች እና እንደሚሳለቡ የተለያዩ ምሳሌዎች ሆኖ ያቀርባል።</p>
+</div>
 
-    <div class="example">
-        <strong>የምርጥ 2:</strong> "በፓርክ ውስጥ የድንበር ወይም የማሻሻያ ቅኔ እና የኃይል 0.7 ይሆናል።"
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1USCGxNAf0iteIGn8Klp97HI-spTTiREW/preview"></iframe>
-        </div>
-        <p><em>ውጤት:</em> ይህ በፓርክ ውስጥ የድንበር ይፈጥራል፣ የማሻሻያ ኃይል 0.7 ይሆናል፣ አዲስ አካባቢዎችን በመነሻ ምስል ይሙሉ።</p>
+<div class="example">
+    <strong>ትእዛዝ 2:</strong> "አንተን በስትወይስ የተሻሻለ እይታና በጉልበት 0.7."
+    <div class="result">
+        <img src="../../images/tutorials/inpain/catintheparkstrength0.7.jpg" alt="Cat in the park strength 0.7">
     </div>
-
-  <h3>የማሻሻያ ቅኔዎች</h3>
-<p>የምርጥ ቅኔ ምን እንደሚሆን አልተረዳም? አይደለም! የሚያስተዋውቁትን ይግለጹ፣ ወይም የሚለወጥ ቅኔ ይግለጹ፣ እና AiCasso ይሰራል።</p>
-
-    <ul>
-        <li><strong>መደበኛ:</strong> የማንኛውም የማሻሻያ ቅኔ ይሆናል።</li>
-        <li><strong>የማሻሻያ:</strong> ዝርዝር ይሻሻል ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የሲኒማ:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የአብስትራክት እና የአብስትራክት ይሆናል።</li>
-        <li><strong>የአካዳሚያ:</strong> የትምህርት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የአክስዮን ፊገር:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የደህንነት 3D የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የደህንነት ካዋይ:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የአርት ዲኮ:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የአርት ኑቮ:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የአስትራል ኦራ:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የአቫንት ጋርድ:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የባሮክ:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የባውሃስ የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የምስል የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-        <li><strong>የዋርት የምስል:</strong> የድርጅት ወይም የማሻሻያ ይሆናል።</li>
-    </ul>
-
-</body>
-</html>
+    <p><em>ውጤት:</em> የጉልበት እይታዎች እንዲሆን አይታች እና በምነሻ ምስል ትእዛዝ በተቀናሉ እንደትምህርታች ምሳሌዎች ያቀርባል።</p>
+</div>
+  

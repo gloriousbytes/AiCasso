@@ -31,89 +31,93 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img {
+            width: 100%;
+            max-width: 400px;
             height: auto;
         }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        @media (max-width: 768px) {
+            .result img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h2>ቪዲዮ መነሻ መመሪያ እንዴት እንደሚሰራ</h2>
-    <p>በAiCasso ውስጥ የቪዲዮ መነሻ ባለቤት የሚሆን ቪዲዮዎችን በቀላሉ የምንዛሬ መግለጫ በመጻፍ ማስተናገድ ይችላሉ። እባኮትን እንደሚፈልጉት አስቀድሞ ይጻፉ፣ እና AiCasso ይዘው ቪዲዮ ይፈጥራል!</p>
+    <h2>ቪዲዮ መነሻ መመሪያ መግቢያ</h2>
+    <p>በAiCasso ውስጥ የቪዲዮ መነሻ ባለቤት የሚያደርግ ቪዲዮዎችን በቀላሉ ማስታወሻ ይፈጥሩ። እባኮትን እንደምን እንደሚያይዎት ይጻፉ፣ እና AiCasso ይህን ቪዲዮ ይወጣል!</p>
 
-    <h3>እንዴት እንደሚሰራ:</h3>
+    <h3>እንዴት ይሰራል:</h3>
     
     <div class="example">
-        <strong>መመሪያ:</strong>
-        <p>"በመስክ ውስጥ በራሱ የቆሞ 3D አንባሳ ይታይ፣ ይበላ እና ደስ ይላል። ይህን ቪዲዮ በ50 የድንጋይ ደረጃዎች ይህን ይህን ይደርስ።"</p>
+        <strong>የማስታወሻ:</strong>
+        <p>"በአንድ የሚኖር የ3D አንባሳ በመሬት ውስጥ ይበላ እና ደስ ይላል። ይህን ቪዲዮ በ50 የማስታወሻ ደረጃዎች ይዘው ይለውጡ።"</p>
         <strong>ውጤት:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/animated3d.gif" alt="የተነቀለ 3D አንባሳ">
+            <noscript><img src="../../images/tutorials/texttovideo/animated3d.gif" alt="የተነቀለ 3D አንባሳ"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>መመሪያ:</strong>
-        <p>"በመስክ ውስጥ የቆሞ አንባሳ የካርቱን ምስል ይይዙ።"</p>
+        <strong>የማስታወሻ:</strong>
+        <p>"በመሬት ውስጥ የአንባሳ ካርቱን ይዘው ይቀርባሉ።"</p>
         <strong>ውጤት:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/cartoon.gif" alt="ካርቱን አንባሳ">
+            <noscript><img src="../../images/tutorials/texttovideo/cartoon.gif" alt="ካርቱን አንባሳ"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>መመሪያ:</strong>
-        <p>"በመስክ ውስጥ የቆሞ አንባሳ።"</p>
+        <strong>የማስታወሻ:</strong>
+        <p>"በመሬት ውስጥ የአንባሳ ይቀመጣል።"</p>
         <strong>ውጤት:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/default.gif" alt="የተመለከተ አንባሳ">
+            <noscript><img src="../../images/tutorials/texttovideo/default.gif" alt="የተመለከተ አንባሳ"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>መመሪያ:</strong>
-        <p>"በመስክ ውስጥ በራሱ የቆሞ አንባሳ። ወደ እንደዚህ ይህን ይደርስ።"</p>
+        <strong>የማስታወሻ:</strong>
+        <p>"በመሬት ውስጥ የተነሱ አንባሳ ይቀመጣል። ወደ አስተዳደር ይወዳድሩ።"</p>
         <strong>ውጤት:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/natural.gif" alt="የተፈጥሮ አንባሳ">
+            <noscript><img src="../../images/tutorials/texttovideo/natural.gif" alt="የተፈጥሮ አንባሳ"></noscript>
         </div>
     </div>
 
     <h3>ተጨማሪ አማራጮች</h3>
-    <p>ቪዲዮዎትን ማሻሻያ ይፈልጋሉ? እነዚህ የሚገኙ ቅንብሮች ናቸው:</p>
+    <p>ቪዲዮዎትን ለመሻሻል ይፈልጋሉ? እነዚህ የሚያደርጉት ቅንብሮች ናቸው:</p>
 
     <ul>
-        <li><strong>የፎቶዎች ብዛት:</strong> ቪዲዮዎት የሚኖርበት የፎቶዎች ብዛት ይምረጡ። እስከ 25 ፎቶዎች ይሄዳሉ፣ 16 የተመለከተ ነው።</li>
-        <li><strong>የድንጋይ ደረጃዎች ብዛት:</strong> ይህ ቪዲዮዎት የሚለው የሚለው ይታይ። በተጨማሪ የድንጋይ ደረጃዎች ይሄዳሉ፣ 20 የተመለከተ ነው።</li>
-        <li><strong>መመሪያ ደረጃ:</strong> ይህ ቪዲዮዎት የሚለው የሚለው ይታይ። የተመለከተ ወደ 8 ይሄዳሉ፣ 8 የተመለከተ ነው።</li>
-        <li><strong>ክሊፕ እንደዚህ ይሄዳሉ:</strong> የተለያዩ የሚለው ይታይ። በተመለከተ ወደ 2 ይሄዳሉ።</li>
-        <li><strong>የማሻሻያ ወርድ እና ቁመት:</strong> የቪዲዮዎት ወርድ እና ቁመት ይሄዳሉ። የተመለከተ 1024x1024 ፒክሴል ነው፣ ነገር ግን ይሄዳሉ።</li>
-        <li><strong>የማሻሻያ ኃይል:</strong> ይህ ቪዲዮዎት የሚለው ይታይ። የተመለከተ 1 ነው፣ ይሄዳሉ።</li>
-        <li><strong>የማሻሻያ መመሪያ ደረጃ:</strong> ይህ የማሻሻያ ሂደት ይሄዳሉ። ወደ 0 እና 8 ይሄዳሉ፣ 8 የተመለከተ ነው።</li>
-        <li><strong>የማሻሻያ የማሻሻያ ደረጃዎች:</strong> የቪዲዮዎት ወደ 50 ይሄዳሉ፣ 20 የተመለከተ ነው።</li>
-        <li><strong>የተሻሻሻ ምርት:</strong> የቪዲዮዎት ወደ ይሄዳሉ። ይህ በተመለከተ ነው።</li>
-        <li><strong>የተሻሻሻ ምርት ድርጅት:</strong> ይህ የቪዲዮዎት ወደ ይሄዳሉ። ይህ በተመለከተ ነው።</li>
-        <li><strong>በሰከንድ የፎቶዎች ብዛት (FPS):</strong> የቪዲዮዎት ወደ ይሄዳሉ። የተመለከተ 16 FPS ነው፣ ይሄዳሉ።</li>
-        <li><strong>የቪዲዮ ሞዴል:</strong> የቪዲዮዎት ወደ ይሄዳሉ። አማራጮች ይህን ይይዙ።
+        <li><strong>የፍርስራሽ ቁጥር:</strong> ቪዲዮዎት ያለው የፍርስራሽ ቁጥር ይምረጡ። እርስዎ 25 ፍርስራሽ ይምረጡ፣ 16 የተመለከተ ነው።</li>
+        <li><strong>የማስታወሻ ደረጃዎች ቁጥር:</strong> ይህ ቪዲዮዎት የሚያሳይ ድምፅ ይቆጣጠር። በተጨማሪ ደረጃዎች ይምረጡ። እርስዎ 50 ደረጃዎች ይምረጡ፣ 20 የተመለከተ ነው።</li>
+        <li><strong>መመሪያ ደረጃ:</strong> ይህ ቪዲዮዎት ወደ መረጃዎት ይቆጣጠር። በላይ ቁጥር ይምረጡ፣ ወደ 0 እስከ 8 ይምረጡ፣ 8 የተመለከተ ነው።</li>
+        <li><strong>ክሊፕ ስክፕ:</strong> የተለያዩ የተወሰኑ የተወሰኑ ይቀርባሉ። በተመለከተ አንድ ይምረጡ፣ ነገር ግን 2 ይቀርባሉ።</li>
+        <li><strong>የማስታወሻ እና ከአንድ ወደ አንድ ይምረጡ:</strong> ቪዲዮዎትን በመሻሻል ይቀርባሉ። የተመለከተ 1024x1024 ፒክስል ነው፣ ነገር ግን ይምረጡ።</li>
+        <li><strong>የማስታወሻ ኃይል:</strong> ይህ ቪዲዮዎት ወደ አንድ ይምረጡ። የተመለከተ 1 ነው፣ ነገር ግን ይምረጡ።</li>
+        <li><strong>የማስታወሻ መመሪያ ደረጃ:</strong> ይህ ወደ አንድ ይምረጡ። ወደ 0 እስከ 8 ይምረጡ፣ 8 የተመለከተ ነው።</li>
+        <li><strong>የማስታወሻ የማስታወሻ ደረጃዎች:</strong> ይህ ወደ አንድ ይምረጡ። በተጨማሪ 50 ይምረጡ፣ 20 የተመለከተ ነው።</li>
+        <li><strong>የተሻሻለ ምርጥ ምርጥ:</strong> ይህ ወደ አንድ ይምረጡ። በተመለከተ ይምረጡ።</li>
+        <li><strong>የተሻሻለ ምርጥ የማስታወሻ:</strong> ይህ ወደ አንድ ይምረጡ። ይምረጡ።</li>
+        <li><strong>በሰከንድ የቪዲዮ ቁጥር (FPS):</strong> የቪዲዮዎት ፍጥነት ይምረጡ። የተመለከተ 16 FPS ነው፣ ነገር ግን ይምረጡ።</li>
+        <li><strong>የቪዲዮ ሞዴል:</strong> የቪዲዮዎት ዓይነት ይምረጡ። አማራጮች ይኖራሉ:
             <ul>
-                <li><strong>የተመለከተ:</strong> የተመለከተ የቪዲዮ ሞዴል።</li>
-                <li><strong>ካርቱን:</strong> የካርቱን የቪዲዮ ሞዴል።</li>
-                <li><strong>ተፈጥሯዊ:</strong> የተፈጥሯዊ የቪዲዮ ሞዴል።</li>
-                <li><strong>አንባሳ 3D:</strong> የአንባሳ 3D የቪዲዮ ሞዴል።</li>
+                <li><strong>የተመለከተ:</strong> የተመለከተ ቪዲዮ ሞዴል።</li>
+                <li><strong>ካርቱን:</strong> የካርቱን ቪዲዮ ዓይነት።</li>
+                <li><strong>የተፈጥሮ:</strong> የተፈጥሮ የቪዲዮ ዓይነት።</li>
+                <li><strong>የተነቀለ 3D:</strong> የ3D የተነቀለ ቪዲዮ ዓይነት።</li>
             </ul>
         </li>
     </ul>
 
-    <p>እባኮትን ይህ ቅንብሮች አማራጭ ናቸው። የቪዲዮ መነሻ ባለቤት በቀላሉ የሚሰራ እንደሚለው ይህን ይይዙ፣ እና ይህን ይይዙ።</p>
+    <p>እባኮትን ይህ ቅንብሮች አማራጭ ናቸው። የቪዲዮ መነሻ ባለቤት በቀላሉ ይሰራል፣ ስለዚህ ይቀርባሉ እና ይምረጡ!</p>
 
 </body>
 </html>

@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
         .iframe-container {
@@ -47,51 +47,51 @@
 
 <body>
 
-    <h2>Tips Menggunakan Fitur Outpaint</h2>
-    <p>Fitur Outpaint di AiCasso memungkinkan Anda memperluas gambar dengan menambahkan elemen baru di sekitarnya atau memperpanjang yang sudah ada. Cukup deskripsikan apa yang Anda inginkan, dan AiCasso akan mengurus sisanya.</p>
+    <h2>Tips untuk Menggunakan Fitur Outpaint</h2>
+    <p>Fitur Outpaint di AiCasso memungkinkan Anda untuk memperluas gambar dengan menambahkan elemen baru di sekitarnya atau memperpanjang apa yang sudah ada. Cukup deskripsikan apa yang Anda inginkan, dan AiCasso akan mengurus sisanya.</p>
 
-    <h3>Cara Kerjanya:</h3>
+    <h3>Bagaimana Cara Kerjanya:</h3>
     
     <div class="example">
         <strong>Gambar Awal:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/input.jpg" alt="Gambar Awal" loading="lazy">
         </div>
     </div>
 
     <div class="example">
         <strong>Deskripsikan Perubahan Anda:</strong>
-        <p>Cukup ketik apa yang ingin Anda tambahkan atau perluas, dan AiCasso akan menerapkan perubahan tersebut. Anda dapat menentukan arah seperti kiri, kanan, atas, atau bawah, dan bahkan detail seperti memperkecil atau menggeser.</p>
+        <p>Cukup ketik apa yang ingin Anda tambahkan atau perluas, dan AiCasso akan menerapkan perubahan tersebut. Anda dapat menentukan arah seperti kiri, kanan, atas, atau bawah, dan bahkan detail seperti memperbesar atau menggeser.</p>
     </div>
 
     <h3>Contoh Edit:</h3>
 
     <div class="example">
-        <strong>Contoh 1:</strong> "Tambahkan gunung es ke kanan dengan faktor translasi 0.4."
+        <strong>Contoh 1:</strong> "Tambahkan gunung es di sebelah kanan menggunakan faktor translasi 0.4."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/iceberg.jpg" alt="Contoh 1 - Gunung Es" loading="lazy">
         </div>
         <p><em>Hasil:</em> AiCasso memperluas gambar ke kanan dan menambahkan gunung es, menjaga konsistensi dengan pemandangan yang ada.</p>
     </div>
 
     <div class="example">
-        <strong>Contoh 2:</strong> "Perkecil, jaga konsistensi laut gelap di malam hari."
+        <strong>Contoh 2:</strong> "Perbesar, jaga konsistensi laut gelap di malam hari."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/zoomout.jpg" alt="Contoh 2 - Perbesar" loading="lazy">
         </div>
-        <p><em>Hasil:</em> Gambar diperkecil, memperlihatkan lebih banyak laut gelap, sambil mempertahankan suasana malam.</p>
+        <p><em>Hasil:</em> Gambar diperbesar, mengungkapkan lebih banyak laut gelap, sambil mempertahankan suasana malam.</p>
     </div>
 
     <h3>Opsi Tambahan</h3>
-    <p>Berikut adalah beberapa pengaturan opsional yang dapat Anda gunakan untuk menyempurnakan edit Anda:</p>
+    <p>Berikut adalah beberapa pengaturan opsional yang dapat Anda gunakan untuk menyempurnakan editan Anda:</p>
 
     <ul>
-        <li><strong>Prompt Negatif:</strong> Jika ada sesuatu yang spesifik yang tidak Anda inginkan dalam gambar, Anda dapat memberi tahu AiCasso di sini. Misalnya, Anda mungkin ingin menghindari penambahan warna atau objek tertentu.</li>
-        <li><strong>Jenis Gerakan:</strong> Ini menentukan arah di mana gambar diperluas. Anda dapat memilih dari kiri, kanan, atas, bawah, atau mundur (yang memperkecil). Misalnya, untuk menggeser ke kanan, Anda akan memilih 'kanan'.</li>
-        <li><strong>Faktor Translasi:</strong> Ini mengontrol seberapa banyak gambar bergerak dengan setiap langkah saat diperluas. Nilai yang lebih tinggi menggerakkan gambar lebih jauh, memperlihatkan lebih banyak konten baru. Defaultnya adalah 0.05, tetapi Anda dapat menyesuaikannya dari 0 hingga 1.</li>
-        <li><strong>Lebar/Tinggi Translasi per Langkah:</strong> Ini mengontrol seberapa jauh gambar bergerak secara horizontal (lebar) atau vertikal (tinggi) dengan setiap langkah. Defaultnya adalah 32 piksel per langkah, tetapi Anda dapat menyesuaikannya berdasarkan seberapa banyak Anda ingin gambar bergeser.</li>
-        <li><strong>Jumlah Langkah Inferensi atau Pengurangan Kebisingan:</strong> Ini menentukan berapa banyak penyesuaian yang dilakukan AiCasso untuk mendapatkan gambar akhir. Lebih banyak langkah menghasilkan hasil yang lebih halus, dengan default 20 langkah, tetapi Anda dapat meningkatkannya hingga 50.</li>
-        <li><strong>Jumlah Langkah Interpolasi:</strong> Ini mengontrol seberapa halus transisi terjadi antara dua arah dalam satu ekspansi. Defaultnya adalah 60, tetapi Anda dapat meningkatkannya hingga 120 untuk transisi yang lebih halus.</li>
+        <li><strong>Prompt Negatif:</strong> Jika ada sesuatu yang spesifik yang tidak Anda inginkan dalam gambar, Anda dapat memberi tahu AiCasso di sini. Misalnya, Anda mungkin ingin menghindari menambahkan warna atau objek tertentu.</li>
+        <li><strong>Jenis Pergerakan:</strong> Ini menentukan arah di mana gambar diperluas. Anda dapat memilih dari kiri, kanan, atas, bawah, atau mundur (yang memperbesar). Misalnya, untuk menggeser ke kanan, Anda akan memilih 'kanan'.</li>
+        <li><strong>Faktor Translasi:</strong> Ini mengontrol seberapa banyak gambar bergerak dengan setiap langkah saat diperluas. Nilai yang lebih tinggi menggerakkan gambar lebih banyak, mengungkapkan lebih banyak konten baru. Defaultnya adalah 0.05, tetapi Anda dapat menyesuaikannya dari 0 hingga 1.</li>
+        <li><strong>Translasi Lebar/Tinggi per Langkah:</strong> Ini mengontrol seberapa jauh gambar bergerak secara horizontal (lebar) atau vertikal (tinggi) dengan setiap langkah. Defaultnya adalah 32 piksel per langkah, tetapi Anda dapat menyesuaikan ini berdasarkan seberapa banyak Anda ingin gambar bergeser.</li>
+        <li><strong>Jumlah Langkah Inferensi atau Denoising:</strong> Ini menentukan berapa banyak penyesuaian yang dilakukan AiCasso untuk mendapatkan gambar akhir. Lebih banyak langkah menghasilkan hasil yang lebih halus, dengan default 20 langkah, tetapi Anda dapat meningkatkannya hingga 50.</li>
+        <li><strong>Jumlah Langkah Interpolasi:</strong> Ini mengontrol seberapa halus transisi terjadi antara dua arah dalam satu perluasan. Defaultnya adalah 60, tetapi Anda dapat meningkatkannya hingga 120 untuk transisi yang lebih halus.</li>
     </ul>
 
     <p>Ingat, pengaturan ini bersifat opsional. AiCasso dirancang untuk bekerja dengan baik hanya dengan deskripsi bahasa alami Anda. Jangan ragu untuk bereksperimen dan lihat apa yang paling cocok untuk gambar Anda!</p>

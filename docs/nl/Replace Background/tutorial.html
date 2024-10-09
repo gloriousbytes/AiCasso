@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Handleiding voor de Achtergrond Vervangen Functie</title>
+    <title>Handleiding voor de Functie Achtergrond Vervangen</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -40,42 +40,42 @@
 
 <body>
 
-    <h2>Handleiding voor het Gebruik van de Achtergrond Vervangen Functie</h2>
-    <p>De Achtergrond Vervangen functie in AiCasso is perfect voor wanneer je de achtergrond in je afbeelding wilt vervangen. Of je nu gewoon de achtergrond wilt verwijderen of deze wilt vervangen door iets anders, AiCasso maakt het super eenvoudig. Je hoeft je geen zorgen te maken over technische zaken—beschrijf gewoon wat je wilt, en AiCasso doet de rest.</p>
+    <h2>Handleiding voor het Gebruik van de Functie Achtergrond Vervangen</h2>
+    <p>De functie Achtergrond Vervangen in AiCasso is perfect wanneer je de achtergrond van je afbeelding wilt verwisselen. Of je nu gewoon de achtergrond wilt verwijderen of deze wilt vervangen door iets anders, AiCasso maakt het super eenvoudig. Je hoeft je geen zorgen te maken over technische zaken—beschrijf gewoon wat je wilt, en AiCasso doet de rest.</p>
 
-    <h3>Hoe het Werkt:</h3>
+    <h3>Hoe Het Werkt:</h3>
     
     <div class="example">
-        <strong>Invoerafbeelding:</strong>
+        <strong>Ingangsafbeelding:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Ingangsafbeelding" loading="lazy">
         </div>
         <strong>Prompt 1:</strong>
         <p>"Verwijder de achtergrond"</p>
         <strong>Resultaat 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Achtergrond Verwijderd Resultaat" loading="lazy">
         </div>
         <strong>Prompt 2:</strong>
-        <p>"Vervang de achtergrond door een bos, niet alleen verwijderen, met alpha matting uitgeschakeld. Gebruik een voorgrond drempel van 240, een achtergrond drempel van 20, en een erode grootte van 5 voor alpha matting."</p>
+        <p>"Vervang de achtergrond door een bos, niet alleen verwijderen, met alpha matting uitgeschakeld. Gebruik een foreground threshold van 240, een background threshold van 20, en een erode size van 5 voor alpha matting."</p>
         <strong>Resultaat 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Achtergrond Vervangen door Bos" loading="lazy">
         </div>
     </div>
 
     <h3>Optionele Parameters</h3>
-    <p>Als je een persoonlijke touch wilt toevoegen of de resultaten wilt verfijnen, zijn hier een paar opties waarmee je kunt spelen:</p>
+    <p>Als je een persoonlijke touch wilt toevoegen of de resultaten wilt verfijnen, zijn hier een paar opties waar je mee kunt experimenteren:</p>
 
     <ul>
-        <li><strong>Alleen Verwijderen:</strong> Als je alleen de achtergrond wilt verwijderen en deze niet wilt vervangen door iets anders, is dit je beste optie. Het is als het indrukken van een schone lei knop.</li>
-        <li><strong>Alpha Matting:</strong> Dit is een chique manier om te zeggen "meng de randen". Wanneer je dit inschakelt, helpt het de randen van je onderwerp er gladder en minder uitgesneden uit te laten zien. Standaard is het uitgeschakeld.</li>
-        <li><strong>Alpha Matting Voorgrond Drempel:</strong> Dit bepaalt hoeveel van het hoofdonderwerp (zoals een persoon) zichtbaar blijft bij het gebruik van alpha matting. De standaard is 240, en je kunt het aanpassen om de randen zachter of scherper te maken.</li>
-        <li><strong>Alpha Matting Achtergrond Drempel:</strong> Dit doet hetzelfde als de voorgrond drempel, maar dan voor de achtergrond. De standaard is 20, en het gaat allemaal om het perfecte mengsel met de nieuwe achtergrond.</li>
-        <li><strong>Alpha Matting Erode Grootte:</strong> Dit helpt de randen een beetje te verkleinen om de uitsnede er schoner uit te laten zien. De standaardgrootte is 5, maar je kunt het aanpassen om de exacte look te krijgen die je wilt.</li>
+        <li><strong>Alleen Verwijderen:</strong> Als je alleen de achtergrond wilt verwijderen en deze niet wilt vervangen door iets, is dit de optie voor jou. Het is alsof je op een schone lei knop drukt.</li>
+        <li><strong>Alpha Matting:</strong> Dit is een chique manier om "de randen te vervagen" te zeggen. Wanneer je dit inschakelt, helpt het om de randen van je onderwerp er gladder en minder uitgesneden uit te laten zien. Standaard is het uitgeschakeld.</li>
+        <li><strong>Alpha Matting Foreground Threshold:</strong> Dit regelt hoeveel van het hoofdonderwerp (zoals een persoon) zichtbaar blijft bij het gebruik van alpha matting. De standaardwaarde is 240, en je kunt het aanpassen om de randen zachter of scherper te maken.</li>
+        <li><strong>Alpha Matting Background Threshold:</strong> Dit doet hetzelfde als de foreground threshold, maar voor de achtergrond. De standaardwaarde is 20, en het draait allemaal om het krijgen van de perfecte mix met de nieuwe achtergrond.</li>
+        <li><strong>Alpha Matting Erode Size:</strong> Dit helpt om de randen een beetje te verkleinen zodat de uitsnede er schoner uitziet. De standaardgrootte is 5, maar je kunt het aanpassen om de exacte uitstraling te krijgen die je wilt.</li>
     </ul>
 
-    <p>Onthoud, je hoeft je geen zorgen te maken over het perfect krijgen van alles. AiCasso is behoorlijk goed in het begrijpen van wat je bedoelt, dus voel je vrij om zo casual of gedetailleerd te zijn als je wilt. Veel plezier met creëren!</p>
+    <p>Vergeet niet, je hoeft je geen zorgen te maken over het perfect krijgen van alles. AiCasso is behoorlijk goed in het begrijpen van wat je bedoelt, dus voel je vrij om zo casual of gedetailleerd te zijn als je wilt. Veel plezier met creëren!</p>
 
 </body>
 </html>

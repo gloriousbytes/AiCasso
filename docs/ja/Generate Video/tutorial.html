@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ビデオ生成機能ガイド</title>
+    <title>動画生成機能ガイド</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,89 +31,93 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img {
+            width: 100%;
+            max-width: 400px;
             height: auto;
         }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        @media (max-width: 768px) {
+            .result img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h2>ビデオ生成機能の使用ガイド</h2>
-    <p>AiCassoのビデオ生成機能を使用すると、見たいものを説明するだけでビデオを作成できます。アイデアを入力するだけで、AiCassoがそれをビデオで実現します！</p>
+    <h2>動画生成機能の使い方ガイド</h2>
+    <p>AiCassoの動画生成機能を使えば、見たいものを簡単に説明するだけで動画を作成できます。アイデアを入力するだけで、AiCassoがそれを動画にしてくれます！</p>
 
-    <h3>使用方法:</h3>
+    <h3>動作の仕組み：</h3>
     
     <div class="example">
-        <strong>プロンプト:</strong>
-        <p>"3Dアニメーションの雄鶏が一人でフィールドにいて、食べて幸せになっている。50のノイズ除去ステップでポートレートビデオにしてください。"</p>
-        <strong>結果:</strong>
+        <strong>プロンプト：</strong>
+        <p>"一人で野原にいる3Dアニメーションの鶏が、食べて幸せそうにしている。50のデノイジングステップでポートレート動画にして。" </p>
+        <strong>結果：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/animated3d.gif" alt="アニメーション3D鶏">
+            <noscript><img src="../../images/tutorials/texttovideo/animated3d.gif" alt="アニメーション3D鶏"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>プロンプト:</strong>
-        <p>"フィールドにいる雄鶏のカートゥーンを横長の寸法で。"</p>
-        <strong>結果:</strong>
+        <strong>プロンプト：</strong>
+        <p>"野原にいる鶏のカートゥーン、横長のサイズで。" </p>
+        <strong>結果：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/cartoon.gif" alt="カートゥーン鶏">
+            <noscript><img src="../../images/tutorials/texttovideo/cartoon.gif" alt="カートゥーン鶏"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>プロンプト:</strong>
-        <p>"フィールドにいる雄鶏。"</p>
-        <strong>結果:</strong>
+        <strong>プロンプト：</strong>
+        <p>"野原にいる鶏。" </p>
+        <strong>結果：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/default.gif" alt="デフォルト鶏">
+            <noscript><img src="../../images/tutorials/texttovideo/default.gif" alt="デフォルト鶏"></noscript>
         </div>
     </div>
 
     <div class="example">
-        <strong>プロンプト:</strong>
-        <p>"フィールドに一人でいる雄鶏。自然な感じを与えてください。"</p>
-        <strong>結果:</strong>
+        <strong>プロンプト：</strong>
+        <p>"一人で野原にいる鶏。自然な感じを与えて。" </p>
+        <strong>結果：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/natural.gif" alt="自然な鶏">
+            <noscript><img src="../../images/tutorials/texttovideo/natural.gif" alt="自然な鶏"></noscript>
         </div>
     </div>
 
     <h3>追加オプション</h3>
-    <p>ビデオを微調整したいですか？以下の設定を試してみてください：</p>
+    <p>動画を微調整したいですか？以下の設定を試してみてください：</p>
 
     <ul>
-        <li><strong>フレーム数:</strong> ビデオに含まれるフレーム（個々の画像）の数を選択します。最大25フレームまで可能で、デフォルトは16です。</li>
-        <li><strong>ノイズ除去ステップ数:</strong> ビデオの滑らかさを制御します。ステップが多いほど滑らかなビデオになります。最大50ステップまで設定可能で、デフォルトは20です。</li>
-        <li><strong>ガイダンススケール:</strong> ビデオが説明にどれだけ忠実であるかを助けます。数値が高いほどプロンプトに従います。範囲は0から8で、デフォルトは8です。</li>
-        <li><strong>クリップスキップ:</strong> 異なるビデオスタイルのために特定のレイヤーをスキップします。デフォルトではレイヤーはスキップされませんが、最大2つまでスキップできます。</li>
-        <li><strong>アップスケール幅と高さ:</strong> 解像度を調整してビデオを大きくできます。デフォルトは1024x1024ピクセルですが、ニーズに合わせて調整できます。</li>
-        <li><strong>アップスケール強度:</strong> アップスケール時のビデオの調整度合いを変更します。デフォルトは1ですが、調整して違いを確認できます。</li>
-        <li><strong>アップスケールガイダンススケール:</strong> アップスケールプロセスをガイドし、範囲は0から8で、デフォルトは8です。</li>
-        <li><strong>アップスケール推論ステップ:</strong> ビデオをアップスケールするために行われるステップ数。ステップが多いほど滑らかなアップスケールになります。最大50ステップで、デフォルトは20です。</li>
-        <li><strong>改良サンプリング:</strong> より洗練されたビデオを望む場合はこれをオンにします。デフォルトではオフです。</li>
-        <li><strong>改良サンプリングシード:</strong> 改良サンプリングで毎回同じビデオを生成するために使用します。オプションでデフォルトではオフです。</li>
-        <li><strong>フレーム毎秒 (FPS):</strong> ビデオの速度を設定します。デフォルトは16 FPSですが、最大16まで調整可能です。</li>
-        <li><strong>ビデオモデル:</strong> ビデオのスタイルを選択します。オプションには以下が含まれます：
+        <li><strong>フレーム数：</strong>動画に含まれるフレーム（個々の画像）の数を選択します。最大25フレームまで設定でき、デフォルトは16です。</li>
+        <li><strong>デノイジングステップ数：</strong>動画の滑らかさを制御します。ステップ数が多いほど、動画は滑らかになります。最大50ステップまで設定でき、デフォルトは20です。</li>
+        <li><strong>ガイダンススケール：</strong>動画が説明にどれだけ忠実であるかを助けます。数値が高いほど、プロンプトに従います。範囲は0から8で、デフォルトは8です。</li>
+        <li><strong>クリップスキップ：</strong>異なる動画スタイルのために特定のレイヤーをスキップします。デフォルトではレイヤーはスキップされませんが、最大2つまでスキップできます。</li>
+        <li><strong>アップスケール幅と高さ：</strong>解像度を調整することで動画を大きくできます。デフォルトは1024x1024ピクセルですが、ニーズに合わせて調整できます。</li>
+        <li><strong>アップスケール強度：</strong>アップスケール時に動画がどれだけ調整されるかを変更します。デフォルトは1ですが、より多くの違いを見たい場合は調整できます。</li>
+        <li><strong>アップスケールガイダンススケール：</strong>アップスケーリングプロセスをガイドします。範囲は0から8で、デフォルトは8です。</li>
+        <li><strong>アップスケール推論ステップ：</strong>動画をアップスケールするために取られるステップ数です。ステップ数が多いほど、滑らかなアップスケーリングになります。最大50ステップで、デフォルトは20です。</li>
+        <li><strong>改善されたサンプリング：</strong>より洗練された動画を希望しますか？これをオンにしてください。デフォルトではオフです。</li>
+        <li><strong>改善されたサンプリングシード：</strong>改善されたサンプリングで毎回同じ動画を生成するために使用します。オプションで、デフォルトではオフです。</li>
+        <li><strong>フレーム毎秒（FPS）：</strong>動画の速度を設定します。デフォルトは16 FPSですが、最大16まで調整できます。</li>
+        <li><strong>動画モデル：</strong>動画のスタイルを選択します。オプションには：
             <ul>
-                <li><strong>デフォルト:</strong> 標準のビデオモデル。</li>
-                <li><strong>カートゥーン:</strong> カートゥーン風のビデオスタイル。</li>
-                <li><strong>ナチュラル:</strong> リアルで自然な見た目のビデオスタイル。</li>
-                <li><strong>アニメーション3D:</strong> 3Dアニメーションのビデオスタイル。</li>
+                <li><strong>デフォルト：</strong>標準の動画モデル。</li>
+                <li><strong>カートゥーン：</strong>カートゥーン風の動画スタイル。</li>
+                <li><strong>自然：</strong>リアルで自然な見た目の動画スタイル。</li>
+                <li><strong>アニメーション3D：</strong>3Dアニメーションの動画スタイル。</li>
             </ul>
         </li>
     </ul>
 
-    <p>これらの設定はオプションです。ビデオ生成機能はシンプルな説明だけでも素晴らしい結果を出しますので、ぜひ実験して何が作れるか試してみてください！</p>
+    <p>これらの設定はオプションであることを忘れないでください。動画生成機能はシンプルな説明だけでも素晴らしい結果を出しますので、自由に試してみて、何を作成できるか見てみてください！</p>
 
 </body>
 </html>

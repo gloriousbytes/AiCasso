@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Handleiding voor de Video Genereren Functie</title>
+    <title>Handleiding voor het Genereren van Video's</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,42 +31,44 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img {
+            width: 100%;
+            max-width: 400px;
             height: auto;
         }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        @media (max-width: 768px) {
+            .result img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h2>Handleiding voor het Gebruik van de Video Genereren Functie</h2>
-    <p>Met de Video Genereren functie in AiCasso kun je video's maken door simpelweg te beschrijven wat je wilt zien. Typ je idee uit en AiCasso brengt het tot leven in een video!</p>
+    <h2>Handleiding voor het Gebruik van de Genereren Video Functie</h2>
+    <p>De Genereren Video functie in AiCasso stelt je in staat om video's te maken door simpelweg te beschrijven wat je wilt zien. Typ je idee uit en AiCasso brengt het tot leven in een video!</p>
 
-    <h3>Hoe het Werkt:</h3>
+    <h3>Hoe Het Werkt:</h3>
     
     <div class="example">
         <strong>Prompt:</strong>
-        <p>"Een 3D-geanimeerde haan in een veld helemaal alleen, etend en gelukkig. Maak er een portretvideo van met 50 denoising stappen."</p>
+        <p>"Een 3D geanimeerde haan in een veld helemaal alleen, aan het eten en gelukkig. Maak het een portretvideo met 50 denoising stappen."</p>
         <strong>Resultaat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/animated3d.gif" alt="Geanimeerde 3D Haan">
+            <noscript><img src="../../images/tutorials/texttovideo/animated3d.gif" alt="Geanimeerde 3D Haan"></noscript>
         </div>
     </div>
 
     <div class="example">
         <strong>Prompt:</strong>
-        <p>"Een cartoon van een haan op een veld in landschapsdimensies."</p>
+        <p>"Een cartoon van een haan op een veld in landschap dimensies."</p>
         <strong>Resultaat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/cartoon.gif" alt="Cartoon Haan">
+            <noscript><img src="../../images/tutorials/texttovideo/cartoon.gif" alt="Cartoon Haan"></noscript>
         </div>
     </div>
 
@@ -75,45 +77,47 @@
         <p>"Een haan op een veld."</p>
         <strong>Resultaat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/default.gif" alt="Standaard Haan">
+            <noscript><img src="../../images/tutorials/texttovideo/default.gif" alt="Standaard Haan"></noscript>
         </div>
     </div>
 
     <div class="example">
         <strong>Prompt:</strong>
-        <p>"Een haan die helemaal alleen in het veld is. Geef het een natuurlijke uitstraling."</p>
+        <p>"Een haan die helemaal alleen in het veld staat. Geef het een natuurlijke uitstraling."</p>
         <strong>Resultaat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/natural.gif" alt="Natuurlijke Haan">
+            <noscript><img src="../../images/tutorials/texttovideo/natural.gif" alt="Natuurlijke Haan"></noscript>
         </div>
     </div>
 
-    <h3>Extra Opties</h3>
-    <p>Wil je je video verfijnen? Hier zijn enkele instellingen waarmee je kunt spelen:</p>
+    <h3>Aanvullende Opties</h3>
+    <p>Wil je je video verfijnen? Hier zijn enkele instellingen waarmee je kunt experimenteren:</p>
 
     <ul>
-        <li><strong>Aantal Frames:</strong> Kies hoeveel frames (individuele beelden) je video zal hebben. Je kunt tot 25 frames gaan, met 16 als standaard.</li>
+        <li><strong>Aantal Frames:</strong> Kies hoeveel frames (individuele afbeeldingen) je video zal hebben. Je kunt tot 25 frames gaan, met 16 als standaard.</li>
         <li><strong>Aantal Denoising Stappen:</strong> Dit bepaalt hoe soepel je video eruitziet. Meer stappen betekenen soepelere video's. Je kunt tot 50 stappen instellen, met 20 als standaard.</li>
-        <li><strong>Guidance Scale:</strong> Dit helpt de video nauwkeurig aan je beschrijving te houden. Hoe hoger het getal, hoe meer het je prompt volgt. Het bereik is 0 tot 8, met 8 als standaard.</li>
-        <li><strong>Clip Skip:</strong> Sla bepaalde lagen over voor een andere videostijl. Standaard worden er geen lagen overgeslagen, maar je kunt tot 2 lagen overslaan.</li>
+        <li><strong>Guidance Scale:</strong> Dit helpt de video dicht bij je beschrijving te blijven. Hoe hoger het getal, hoe meer het je prompt volgt. Het bereik is 0 tot 8, met 8 als standaard.</li>
+        <li><strong>Clip Skip:</strong> Sla bepaalde lagen over voor een andere videostijl. Standaard worden er geen lagen overgeslagen, maar je kunt tot 2 overslaan.</li>
         <li><strong>Upscale Breedte en Hoogte:</strong> Je kunt je video groter maken door de resolutie aan te passen. De standaard is 1024x1024 pixels, maar je kunt dit aanpassen aan je behoeften.</li>
-        <li><strong>Upscale Sterkte:</strong> Dit verandert hoeveel je video aanpast bij het opschalen. De standaard is 1, maar je kunt het aanpassen om meer verschillen te zien.</li>
+        <li><strong>Upscale Sterkte:</strong> Dit verandert hoeveel je video zich aanpast wanneer deze wordt opgeschaald. De standaard is 1, maar je kunt het aanpassen om meer verschillen te zien.</li>
         <li><strong>Upscale Guidance Scale:</strong> Dit begeleidt het opschalingsproces, met een bereik van 0 tot 8, en een standaard van 8.</li>
         <li><strong>Upscale Inference Stappen:</strong> Het aantal stappen dat wordt genomen om de video op te schalen. Meer stappen zorgen voor soepelere opschaling, met een maximum van 50 en een standaard van 20.</li>
-        <li><strong>Verbeterde Sampling:</strong> Wil je een verfijndere video? Zet dit aan. Het is standaard uitgeschakeld.</li>
-        <li><strong>Verbeterde Sampling Seed:</strong> Gebruik dit om elke keer dezelfde video te genereren met verbeterde sampling. Het is optioneel en standaard uitgeschakeld.</li>
-        <li><strong>Frames per Seconde (FPS):</strong> Stel de snelheid van je video in. De standaard is 16 FPS, maar je kunt het aanpassen tot 16.</li>
-        <li><strong>Videomodel:</strong> Kies de stijl van je video. Opties zijn onder andere:
+        <li><strong>Verbeterde Sampling:</strong> Wil je een verfijndere video? Zet dit aan. Het is standaard uit.</li>
+        <li><strong>Verbeterde Sampling Seed:</strong> Gebruik dit om elke keer dezelfde video te genereren met verbeterde sampling. Het is optioneel en standaard uit.</li>
+        <li><strong>Frames per Seconde (FPS):</strong> Stel de snelheid van je video in. De standaard is 16 FPS, maar je kunt het tot 16 aanpassen.</li>
+        <li><strong>Video Model:</strong> Kies de stijl van je video. Opties zijn onder andere:
             <ul>
                 <li><strong>Standaard:</strong> Een standaard videomodel.</li>
                 <li><strong>Cartoon:</strong> Een cartoonachtige videostijl.</li>
-                <li><strong>Natuurlijk:</strong> Een realistische, natuurlijk uitziende videostijl.</li>
-                <li><strong>Geanimeerd 3D:</strong> Een 3D-geanimeerde videostijl.</li>
+                <li><strong>Natuurlijk:</strong> Een realistische, natuurlijk ogende videostijl.</li>
+                <li><strong>Geanimeerde 3D:</strong> Een 3D geanimeerde videostijl.</li>
             </ul>
         </li>
     </ul>
 
-    <p>Vergeet niet, deze instellingen zijn optioneel. De Video Genereren functie werkt prima met alleen een eenvoudige beschrijving, dus voel je vrij om te experimenteren en te zien wat je kunt creëren!</p>
+    <p>Vergeet niet, deze instellingen zijn optioneel. De Genereren Video functie werkt geweldig met alleen een eenvoudige beschrijving, dus voel je vrij om te experimenteren en te zien wat je kunt creëren!</p>
 
 </body>
 </html>

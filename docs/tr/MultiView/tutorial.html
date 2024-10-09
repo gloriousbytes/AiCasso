@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çoklu Görünüm Özelliği Rehberi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        img, video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Çoklu Görünüm Özelliğini Kullanma Rehberi</h2>
+    <p>AiCasso'daki Çoklu Görünüm özelliği, görüntünüzdeki bir nesneyi farklı açılardan görmenizi sağlar. Bu özellik, 3D şekilleri daha iyi anlamak veya ürünleri sergilemek için özellikle faydalıdır. Bu özellik, nesnenin arka planı olmadığında en iyi şekilde çalışır, bu nedenle en iyi sonuçlar için dikkat dağıtıcı unsurları kaldırdığınızdan emin olun.</p>
+
+    <h3>Nasıl Çalışır:</h3>
+    
+    <div class="example">
+        <strong>Giriş Görüntüsü:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/input.jpg" alt="Giriş Görüntüsü" loading="lazy">
+        </div>
+        <strong>İstek:</strong>
+        <p>"Bu nesneyi birden fazla açıdan göster"</p>
+        <strong>Sonuç:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/result.jpg" alt="Sonuç Görüntüsü" loading="lazy">
+        </div>
+    </div>
+
+    <h3>En İyi Sonuçlar İçin İpuçları</h3>
+    <p>Görüntünüzün harika görünmesini sağlamak için bazı ipuçları:</p>
+
+    <ul>
+        <li><strong>Arka Plansız Nesne:</strong> Çoklu Görünüm özelliği, görüntünüzdeki nesnenin arka plandan izole olduğu durumlarda en iyi şekilde çalışır. Bu, AiCasso'nun yalnızca nesneye odaklanmasını ve net perspektifler oluşturmasını sağlar.</li>
+        <li><strong>İyi Aydınlatma:</strong> Giriş görüntüsünde nesnenizin iyi aydınlatıldığından emin olun, çünkü gölgeler ve düzensiz aydınlatma, nesnenin farklı açılardan nasıl göründüğünü etkileyebilir.</li>
+        <li><strong>Birden Fazla Nesne:</strong> Görüntüde birden fazla nesne varsa, farklı açılardan görmek istediğiniz nesneyi izole etmeye çalışın veya sadece bir odak nesnesi olan daha basit bir görüntü seçin.</li>
+    </ul>
+
+    <p>AiCasso'daki tüm özelliklerde olduğu gibi, fazla düşünmenize gerek yok—ne istediğinizi tanımlayın ve AiCasso zor işi yapacaktır. Çoklu Görünüm özelliği, ürün sergileri, yaratıcı gösterimler ve daha fazlası için mükemmeldir!</p>
+
+</body>
+</html>

@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -41,41 +41,41 @@
 <body>
 
     <h2>Panduan Menggunakan Ciri Gantikan Latar Belakang</h2>
-    <p>Ciri Gantikan Latar Belakang dalam AiCasso adalah sempurna apabila anda ingin menukar latar belakang dalam imej anda. Sama ada anda hanya mahu menghapuskan latar belakang atau menggantikannya dengan sesuatu yang lain, AiCasso menjadikannya sangat mudah. Anda tidak perlu risau tentang perkara teknikal—hanya terangkan apa yang anda mahu, dan AiCasso akan melakukan selebihnya.</p>
+    <p>Ciri Gantikan Latar Belakang dalam AiCasso adalah sempurna apabila anda ingin menukar latar belakang dalam imej anda. Sama ada anda hanya ingin mengeluarkan latar belakang atau menggantikannya dengan sesuatu yang lain, AiCasso memudahkan proses ini. Anda tidak perlu risau tentang perkara teknikal—hanya terangkan apa yang anda mahu, dan AiCasso akan melakukan selebihnya.</p>
 
     <h3>Bagaimana Ia Berfungsi:</h3>
     
     <div class="example">
         <strong>Imej Input:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Imej Input" loading="lazy">
         </div>
         <strong>Prompt 1:</strong>
-        <p>"Hapuskan latar belakang"</p>
+        <p>"Keluarkan latar belakang"</p>
         <strong>Hasil 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Hasil Latar Belakang Dikeluarkan" loading="lazy">
         </div>
         <strong>Prompt 2:</strong>
-        <p>"Gantikan latar belakang dengan hutan, bukan hanya hapuskan, dengan pemadaman alpha dimatikan. Gunakan ambang latar depan 240, ambang latar belakang 20, dan saiz erosi 5 untuk pemadaman alpha."</p>
+        <p>"Gantikan latar belakang dengan hutan, bukan hanya mengeluarkannya, dengan alpha matting dinyahaktifkan. Gunakan ambang had depan 240, ambang had belakang 20, dan saiz erode 5 untuk alpha matting."</p>
         <strong>Hasil 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Latar Belakang Digantikan dengan Hutan" loading="lazy">
         </div>
     </div>
 
     <h3>Parameter Pilihan</h3>
-    <p>Jika anda ingin menambah sentuhan peribadi atau menyesuaikan hasilnya, berikut adalah beberapa pilihan yang boleh anda cuba:</p>
+    <p>Jika anda ingin menambah sentuhan peribadi atau menyesuaikan hasil, berikut adalah beberapa pilihan yang boleh anda cuba:</p>
 
     <ul>
-        <li><strong>Hapuskan Sahaja:</strong> Jika anda hanya mahu menghapuskan latar belakang dan tidak menggantikannya dengan apa-apa, ini adalah pilihan yang sesuai. Ia seperti menekan butang permulaan baru.</li>
-        <li><strong>Pemadaman Alpha:</strong> Ini adalah cara mewah untuk mengatakan "campurkan tepi." Apabila anda menghidupkannya, ia membantu menjadikan tepi subjek anda kelihatan lebih licin dan kurang terpotong. Secara lalai, ia dimatikan.</li>
-        <li><strong>Ambang Latar Depan Pemadaman Alpha:</strong> Ini mengawal berapa banyak subjek utama (seperti seseorang) kekal kelihatan apabila menggunakan pemadaman alpha. Lalai adalah 240, dan anda boleh menyesuaikannya untuk menjadikan tepi lebih lembut atau lebih tajam.</li>
-        <li><strong>Ambang Latar Belakang Pemadaman Alpha:</strong> Ini melakukan perkara yang sama seperti ambang latar depan tetapi untuk latar belakang. Lalai adalah 20, dan ia semua tentang mendapatkan campuran sempurna dengan latar belakang baru.</li>
-        <li><strong>Saiz Erosi Pemadaman Alpha:</strong> Ini membantu mengecilkan tepi sedikit untuk menjadikan potongan kelihatan lebih bersih. Saiz lalai adalah 5, tetapi anda boleh menyesuaikannya untuk mendapatkan rupa yang tepat yang anda inginkan.</li>
+        <li><strong>Hanya Keluarkan:</strong> Jika anda hanya ingin mengeluarkan latar belakang dan tidak menggantikannya dengan apa-apa, ini adalah pilihan yang sesuai. Ia seperti menekan butang bersih.</li>
+        <li><strong>Alpha Matting:</strong> Ini adalah cara yang canggih untuk mengatakan "campurkan tepi." Apabila anda menghidupkannya, ia membantu menjadikan tepi subjek anda kelihatan lebih licin dan kurang terputus. Secara lalai, ia dimatikan.</li>
+        <li><strong>Ambang Had Depan Alpha Matting:</strong> Ini mengawal berapa banyak subjek utama (seperti seseorang) yang kekal kelihatan semasa menggunakan alpha matting. Lalai adalah 240, dan anda boleh menyesuaikannya untuk menjadikan tepi lebih lembut atau lebih tajam.</li>
+        <li><strong>Ambang Had Belakang Alpha Matting:</strong> Ini melakukan perkara yang sama seperti ambang had depan tetapi untuk latar belakang. Lalai adalah 20, dan ia adalah tentang mendapatkan campuran yang sempurna dengan latar belakang baru.</li>
+        <li><strong>Saiz Erode Alpha Matting:</strong> Ini membantu mengecilkan tepi sedikit untuk menjadikan potongan kelihatan lebih bersih. Saiz lalai adalah 5, tetapi anda boleh mengubahnya untuk mendapatkan rupa yang tepat yang anda inginkan.</li>
     </ul>
 
-    <p>Ingat, anda tidak perlu risau tentang mendapatkan semuanya sempurna. AiCasso cukup baik dalam memahami apa yang anda maksudkan, jadi jangan ragu untuk menjadi santai atau terperinci seperti yang anda suka. Selamat mencipta!</p>
+    <p>Ingat, anda tidak perlu risau tentang mendapatkan semuanya sempurna. AiCasso cukup baik dalam memahami apa yang anda maksudkan, jadi jangan ragu untuk bersikap santai atau terperinci seperti yang anda suka. Selamat mencipta!</p>
 
 </body>
 </html>

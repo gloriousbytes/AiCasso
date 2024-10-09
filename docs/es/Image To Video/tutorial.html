@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            max-width: 100%;
             height: auto;
+            object-fit: contain;
         }
         .iframe-container {
             display: flex;
@@ -55,38 +56,38 @@
     <div class="example">
         <strong>Imagen de Entrada:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/input.jpg" alt="Imagen de Entrada" loading="lazy">
         </div>
         <strong>Prompt 1:</strong>
         <p>"Un cachorro lindo en el parque"</p>
         <strong>Resultado 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppy.gif" alt="Cachorro Lindo en el Parque" loading="lazy">
         </div>
         <strong>Prompt 2:</strong>
-        <p>"Un cachorro lindo en el parque, usa FPS máximo, máximo de cuadros y máximo movimiento"</p>
+        <p>"Un cachorro lindo en el parque, usa FPS máximos, marcos máximos y movimiento máximo"</p>
         <strong>Resultado 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppymaxframes.gif" alt="Cachorro en el Parque con FPS Máximos" loading="lazy">
         </div>
     </div>
 
     <h3>Parámetros Opcionales</h3>
-    <p>Si deseas ser más específico con tu video, aquí hay algunos ajustes que puedes modificar:</p>
+    <p>Si deseas ser más específico con tu video, aquí hay algunas configuraciones que puedes ajustar:</p>
 
     <ul>
-        <li><strong>Prompt Negativo:</strong> Describe lo que *no* quieres en el video. Si lo dejas vacío, AiCasso se enfocará solo en el prompt positivo.</li>
-        <li><strong>Número de Cuadros:</strong> Elige cuántos cuadros (imágenes individuales) tendrá tu video. Puedes seleccionar hasta 25 cuadros, siendo 16 el valor predeterminado.</li>
-        <li><strong>Pasos de Desenfoque:</strong> Esto controla qué tan suave se ve tu video. Más pasos significan un video más limpio. Puedes configurar hasta 50 pasos, con 20 como predeterminado.</li>
+        <li><strong>Prompt Negativo:</strong> Describe lo que *no* quieres en el video. Si se deja vacío, AiCasso solo se enfocará en el prompt positivo.</li>
+        <li><strong>Número de Marcos:</strong> Elige cuántos marcos (imágenes individuales) tendrá tu video. Puedes seleccionar hasta 25 marcos, siendo 16 el valor predeterminado.</li>
+        <li><strong>Pasos de Denoising:</strong> Esto controla cuán suave se ve tu video. Más pasos significan un video más limpio. Puedes establecer hasta 50 pasos, siendo 20 el valor predeterminado.</li>
         <li><strong>Escala de Guía:</strong> Esto ayuda a que el video se adhiera estrechamente a tu descripción. El rango es de 1.0 a 8.0, y puedes ajustar los valores de inicio y fin para guiar cómo evoluciona el video.</li>
-        <li><strong>Movimiento:</strong> Ajusta cuánto movimiento hay en tu video. Un valor más alto significa más acción. El rango es de 0 a 127, con 60 como predeterminado.</li>
-        <li><strong>Fuerza de Aumento de Ruido:</strong> Añade algo de ruido a tu video para darle un aspecto más texturizado. El rango es de 0 a 1, siendo 0 el valor predeterminado.</li>
-        <li><strong>Cuadros por Segundo (FPS):</strong> Configura qué tan rápido se reproduce tu video. El valor predeterminado es 16 FPS, pero puedes llegar hasta 16 para una reproducción más rápida.</li>
-        <li><strong>Método de Interpolación:</strong> Elige cómo se mezclan los cuadros. El predeterminado es "lerp" (interpolación lineal), pero también puedes usar "slerp" (interpolación lineal esférica) para diferentes efectos.</li>
-        <li><strong>Omisión de Cuadros:</strong> Omite ciertas capas para un estilo de video diferente. Puedes omitir hasta 2 capas, o dejarlo nulo para el comportamiento predeterminado.</li>
+        <li><strong>Movimiento:</strong> Ajusta cuánto movimiento hay en tu video. Un valor más alto significa más acción. El rango es de 0 a 127, siendo 60 el valor predeterminado.</li>
+        <li><strong>Fuerza de Aumento de Ruido:</strong> Agrega algo de ruido a tu video para darle un aspecto más texturizado. El rango es de 0 a 1, siendo 0 el valor predeterminado.</li>
+        <li><strong>Cuadros por Segundo (FPS):</strong> Establece qué tan rápido se reproduce tu video. El valor predeterminado es 16 FPS, pero puedes aumentar hasta 16 para una reproducción más rápida.</li>
+        <li><strong>Método de Interpolación:</strong> Elige cómo se mezclan los marcos. El valor predeterminado es "lerp" (interpolación lineal), pero también puedes usar "slerp" (interpolación lineal esférica) para diferentes efectos.</li>
+        <li><strong>Omitir Clip:</strong> Omitir ciertas capas para un estilo de video diferente. Puedes omitir hasta 2 capas, o dejarlo nulo para el comportamiento predeterminado.</li>
     </ul>
 
-    <p>Recuerda, ¡AiCasso es bastante inteligente! No tienes que ser perfecto en cada detalle o usar gramática correcta. Solo describe lo que quieres y AiCasso hará el resto. ¡Diviértete creando tus videos!</p>
+    <p>Recuerda, ¡AiCasso es bastante inteligente! No tienes que obtener cada detalle perfecto o usar gramática correcta. Solo describe lo que quieres, y AiCasso hará el resto. ¡Diviértete creando tus videos!</p>
 
 </body>
 </html>

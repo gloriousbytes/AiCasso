@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -41,41 +41,41 @@
 <body>
 
     <h2>Umhlahlandlela Wokusebenzisa Umsebenzi Wokutshintsha Umva</h2>
-    <p>Umsebenzi Wokutshintsha Umva kwi-AiCasso ulungile xa ufuna ukutshintsha umva kwi-sithombe sakho. Nokuba ufuna ukususa umva okanye ukutshintsha ngento ethile, i-AiCasso iyenza kube lula kakhulu. Awudingi ukukhathazeka ngezinto zobuchwepheshe—chaza nje oko ufuna, kwaye i-AiCasso izakwenza konke okunye.</p>
+    <p>Umsebenzi Wokutshintsha Umva kwi-AiCasso ulungile xa ufuna ukutshintsha umva kwi-sithombe sakho. Nokuba ufuna nje ukususa umva okanye ukutshintsha ngento ethile, i-AiCasso iyenza kube lula kakhulu. Awudingi ukukhathazeka ngezinto zobuchwepheshe—chaza nje ukuba ufuna ntoni, kwaye i-AiCasso izakwenza konke okunye.</p>
 
-    <h3>Ukwenza Kusebenza:</h3>
+    <h3>Ukwenza Kanjani:</h3>
     
     <div class="example">
-        <strong>Isithombe Esingaphakathi:</strong>
+        <strong>Umfanekiso Wokufaka:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Umfanekiso Wokufaka" loading="lazy">
         </div>
         <strong>Umphakamiso 1:</strong>
         <p>"Susa umva"</p>
         <strong>Umphumela 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Umphumela Wokususwa KweMva" loading="lazy">
         </div>
         <strong>Umphakamiso 2:</strong>
-        <p>"Tshintsha umva ngentaba, hayi ukususa kuphela, ngelixa i-alpha matting ivaliwe. Sebenzisa umda ophakathi kwe-240, umda wembali we-20, kunye nosayizi we-erode we-5 kwi-alpha matting."</p>
+        <p>"Tshintsha umva ngentaba, hayi nje ukususa, ngelixa i-alpha matting ivaliwe. Sebenzisa umda ophakathi we-240, umda wembali we-20, kunye nosayizi we-erode we-5 kwi-alpha matting."</p>
         <strong>Umphumela 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Umva Utshintshiwe NgeMithi" loading="lazy">
         </div>
     </div>
 
     <h3>Imigaqo Eyakhelwe Ngaphakathi</h3>
-    <p>Ukuba ufuna ukwengeza umphumo wakho okanye ukulungisa iimpumelelo, nantsi eminye imigaqo onokuyijolisa:</p>
+    <p>Ukuba ufuna ukwengeza umphumo ophakathi okanye ukulungisa imiphumo, nantsi eminye imigaqo onokuyijolisa:</p>
 
     <ul>
-        <li><strong>Susa Kuphela:</strong> Ukuba ufuna ukususa umva kuphela kwaye ungafuni ukuwutshintsha ngento, le yindlela yakho. Kufana nokucinezela inkinobho ye-slate ehlanzekileyo.</li>
-        <li><strong>Alpha Matting:</strong> Le yindlela yokuthetha "hamba neemphetho." Xa uyivula, iyanceda ukwenza iimphetho zomxholo wakho zibe mncane kwaye zingabi ne-cut-out. Ngokwenene, ivaliwe.</li>
-        <li><strong>Alpha Matting Foreground Threshold:</strong> Le ikhokela ukuba zingakanani iimpawu eziphambili (njengomntu) ezihlala zibonakala xa usebenzisa i-alpha matting. I-default yi-240, kwaye ungayilungisa ukuze ube neemphetho ezithambileyo okanye ezicacileyo.</li>
-        <li><strong>Alpha Matting Background Threshold:</strong> Le yenza okufanayo njengomda ophakathi kodwa kumva. I-default yi-20, kwaye ibaluleke kakhulu ukufumana umphumo ofanelekileyo nomva omtsha.</li>
-        <li><strong>Alpha Matting Erode Size:</strong> Le iyanceda ukunciphisa iimphetho kancinci ukuze i-cutout ibonakale ihlanzekile. Usayizi we-default ngu-5, kodwa ungawulungisa ukuze ufumane umphumo ofanelekileyo ofuna.</li>
+        <li><strong>Susa Ngokukodwa:</strong> Ukuba ufuna nje ukususa umva kwaye ungafuni ukuwutshintsha ngento, le yindlela yakho. Kufana nokucinezela inkinobho yokuhlamba.</li>
+        <li><strong>Alpha Matting:</strong> Le yindlela yokuthetha "hlanganisa imiphetho." Xa uyivula, iyanceda ukwenza imiphetho yesikhumbuzo sakho ibonakale icacile kwaye ingabi neziphumo. Ngokungagqibekanga, ivaliwe.</li>
+        <li><strong>Alpha Matting Foreground Threshold:</strong> Le ikhokela ukuba zingakanani izinto eziphambili (njengomntu) ezihlala zibonakala xa usebenzisa i-alpha matting. I-default yi-240, kwaye ungayilungisa ukuze wenze imiphetho ibonakale icacile okanye icacile.</li>
+        <li><strong>Alpha Matting Background Threshold:</strong> Le yenza okufanayo njengomda ophakathi kodwa kumva. I-default yi-20, kwaye ibalulekile ukufumana umphumo ofanelekileyo kunye nomva omtsha.</li>
+        <li><strong>Alpha Matting Erode Size:</strong> Le iyanceda ukunciphisa imiphetho kancinci ukuze umphumo ubonakale ucocekile. Usayizi we-default ngu-5, kodwa ungawulungisa ukuze ufumane umphumo ofunekayo.</li>
     </ul>
 
-    <p>Khumbula, awudingi ukukhathazeka ngokufumana yonke into ilungile. I-AiCasso ikhululekile ekufumaneni oko uthetha, ngoko ke uzive ukhululekile ukuba ube neendlela ezilula okanye ezinemininingwane. Uthando lokudala!</p>
+    <p>Khumbula, awudingi ukukhathazeka ngokufumana yonke into ilungile. I-AiCasso ikhululekile ekuqondeni ukuba uthetha ntoni, ngoko ke uzive ukhululekile ukuba ube neendlela ezilula okanye ezinemininingwane. Ube nemisebenzi emihle!</p>
 
 </body>
 </html>

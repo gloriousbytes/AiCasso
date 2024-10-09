@@ -31,9 +31,12 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
         }
         .iframe-container {
             display: flex;
@@ -48,36 +51,36 @@
 <body>
 
     <h2>Umhlahlandlela Wokusebenzisa Isici Sokukhanyisa Kabusha</h2>
-    <p>Isici sokukhanyisa kabusha ku-AiCasso sihle kakhulu! Sikusiza ukuthi ushintshe ukukhanya ezithombeni zakho ngezwi ezimbalwa. Ufuna ilanga emuva noma ukukhanya okuthambile ohlangothini? Akukho nkinga! Chaza nje, futhi i-AiCasso izobhekana nezinye izinto.</p>
+    <p>Isici sokukhanyisa kabusha ku-AiCasso sikhulu kakhulu! Sikusiza ukuthi ushintshe ukukhanya ezithombeni zakho ngezwi elilodwa noma amabili. Ufuna ilanga likhona ngemuva noma ukukhanya okuthambile ohlangothini? Akunankinga! Chaza nje, futhi i-AiCasso izophatha konke okunye.</p>
 
     <h3>Ukusebenza Kwayo:</h3>
     
     <div class="example">
         <strong>Isithombe Sokufaka:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+            <img src="../../images/tutorials/relighting/input.jpg" alt="Isithombe Sokufaka" loading="lazy">
         </div>
         <strong>Imiyalo Esisetshenzisiwe:</strong>
-        <p>"Yenza kube njalo ukuthi ilanga likhona emuva"</p>
+        <p>"Yenza kube njalo ukuthi ilanga likhona ngemuva"</p>
         <strong>Umphumela:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+            <img src="../../images/tutorials/relighting/result.jpg" alt="Umphumela Wokukhanyisa Kabusha" loading="lazy">
         </div>
     </div>
 
     <h3>Izinguquko Ezikhethwayo</h3>
-    <p>Uma uzizwa ungena emhlabeni omusha futhi ufuna ukwengeza okuthile okujabulisayo ekukhanyiseni kwakho, nansi eminye imicabango ongayiguqula:</p>
+    <p>Uma uzizwa ungena emhlabeni futhi ufuna ukwengeza okuthile okukhanyayo ekukhanyiseni kwakho, nansi eminye imicabango ongayiguqula:</p>
 
     <ul>
-        <li><strong>Imiyalo Engalungile:</strong> Ufuna ukugwema okuthile? Ungatshela i-AiCasso ukuthi <em>ungafaki</em> ini. Kodwa ungakhathazeki, uma uyishiya ingenalutho, i-AiCasso izogxila kulokho okufunayo.</li>
-        <li><strong>Umgomo Lokukhanya:</strong> Ungachaza ukuthi ukukhanya kufanele kuqhamuke kuphi—kwesokunxele, kwesokudla, phezulu, phansi, noma ngisho nakuwo wonke. Ngokujwayelekile, ukukhanya kuvela kwesokunxele.</li>
-        <li><strong>Isikali Sokuhola:</strong> Lokhu kusiza i-AiCasso ukuthi igcine incazelo yakho. Isikali sihamba ukusuka ku-1 kuya ku-20, lapho u-7 engowejwayelekile. Njengoba inombolo iphakama, i-AiCasso igcina kakhulu kumyalo wakho.</li>
-        <li><strong>Isikali Esiphezulu Sokuxilonga:</strong> Ufuna isithombe sakho sikhanye? Lokhu kulawula ukujula. Okujwayelekile ngu-1.5, kodwa ungakwenza kube phakathi kuka-1.0 no-2.0 ukuze uthole isithombe esicacile.</li>
-        <li><strong>Izinga Lokunciphisa Umsindo:</strong> Kukhona amazinga amabili—okuphansi nokuphakeme. Lokhu kulawula ukuthi isithombe sokugcina sibukeka kanjani. Ungasetha izinga lokunciphisa umsindo ophansi phakathi kuka-0.0 no-1.0 (okujwayelekile ngu-0.9) kanye nezinga eliphezulu phakathi kuka-0.0 no-1.0 (okujwayelekile ngu-0.5).</li>
-        <li><strong>Inani Lezinyathelo:</strong> Lokhu kuwukuthi zingaki izinyathelo i-AiCasso ezithatha ukuze ithuthukise isithombe sakho. Okujwayelekile ngu-50, kodwa ungahamba ukusuka ku-20 kuya ku-50 izinyathelo.</li>
+        <li><strong>Imiyalo Engalungile:</strong> Ufuna ukuvikela okuthile? Ungatshela i-AiCasso ukuthi <em>ungafaki</em> ini. Kodwa ungakhathazeki, uma uyishiya ingenalutho, i-AiCasso izogxila kulokho okufunayo.</li>
+        <li><strong>Umgomo Lokukhanya:</strong> Ungachaza ukuthi ukukhanya kufanele kuqhamuke kuphi—kwesobunxele, kwesokudla, phezulu, phansi, noma ngisho kungabi khona. Ngokuvamile, ukukhanya kuvela kwesobunxele.</li>
+        <li><strong>Isikali Sokuhola:</strong> Lokhu kusiza i-AiCasso ukuthi igcine incazelo yakho. Isikali sihamba kusuka ku-1 kuya ku-20, lapho u-7 engumkhawulo. Njengoba inombolo iphakama, i-AiCasso igcina incazelo yakho kakhulu.</li>
+        <li><strong>Isikali Esiphezulu Sokuxilonga:</strong> Ufuna isithombe sakho sikhanye? Lokhu kulawula ukujula. Umkhawulo ungama-1.5, kodwa ungawusetha kusuka ku-1.0 kuya ku-2.0 ukuze uthole isithombe esicacile.</li>
+        <li><strong>Izinga Lokunciphisa Umsindo:</strong> Kukhona amazinga amabili—okuphansi nokuphakeme. Lokhu kulawula ukuthi isithombe sokugcina sibe bushelelezi noma sibe nemininingwane. Ungasetha izinga lokunciphisa umsindo ophansi phakathi kuka-0.0 no-1.0 (umkhawulo ungama-0.9) kanye nezinga eliphezulu phakathi kuka-0.0 no-1.0 (umkhawulo ungama-0.5).</li>
+        <li><strong>Inani Lezinyathelo:</strong> Lokhu kuwukuthi zingaki izinyathelo i-AiCasso ezithatha ukuze ithuthukise isithombe sakho. Umkhawulo ungama-50, kodwa ungahamba kusuka ku-20 kuya ku-50 izinyathelo.</li>
     </ul>
 
-    <p>Khumbula, lezi zinguquko zikhululekile! I-AiCasso ikhululekile ekutholeni ukuthi ufisa ini, ngakho chaza umbono wakho ngezilimi zakho, futhi izokwenza um magic. Akudingeki ukuba ube negrama noma imininingwane ephelele—jabulani futhi ubone ukuthi ungakha ini!</p>
+    <p>Khumbula, lezi zinguquko zikhululekile ngokuphelele! I-AiCasso ikhululekile ekutholeni ukuthi ufisa ini, ngakho chaza nje umbono wakho ngamagama akho, futhi izokwenza um magic. Akudingeki ukuba ube ne-grammar ephelele noma imininingwane—jabulani nje futhi ubone ukuthi ungakha ini!</p>
 
 </body>
 </html>

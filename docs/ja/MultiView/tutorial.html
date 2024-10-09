@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マルチビュー機能ガイド</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        img, video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>マルチビュー機能の使い方ガイド</h2>
+    <p>AiCassoのマルチビュー機能を使用すると、画像内のオブジェクトを異なる角度から見ることができ、オブジェクトの複数の視点を生成します。これは、3D形状をよりよく理解したり、製品を紹介したりするのに特に便利です。この機能は、オブジェクトに背景がない場合に最も効果的に機能するため、最適な結果を得るために気を散らす要素を取り除いてください。</p>
+
+    <h3>動作原理：</h3>
+    
+    <div class="example">
+        <strong>入力画像：</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/input.jpg" alt="入力画像" loading="lazy">
+        </div>
+        <strong>プロンプト：</strong>
+        <p>"このオブジェクトを複数の視点から表示する"</p>
+        <strong>結果：</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/result.jpg" alt="結果画像" loading="lazy">
+        </div>
+    </div>
+
+    <h3>最高の結果を得るためのヒント</h3>
+    <p>画像が素晴らしい結果になるためのヒントをいくつか紹介します：</p>
+
+    <ul>
+        <li><strong>背景のないオブジェクト：</strong>マルチビュー機能は、画像内のオブジェクトが背景から孤立しているときに最も効果的に機能します。これにより、AiCassoはオブジェクトにのみ焦点を合わせ、明確な視点を生成できます。</li>
+        <li><strong>良好な照明：</strong>入力画像内のオブジェクトが十分に照明されていることを確認してください。影や不均一な照明は、異なる角度からオブジェクトがどのように見えるかに影響を与える可能性があります。</li>
+        <li><strong>複数のオブジェクト：</strong>画像内に複数のオブジェクトがある場合は、異なる角度から見るオブジェクトを孤立させるか、焦点を当てたオブジェクトが1つだけのシンプルな画像を選んでください。</li>
+    </ul>
+
+    <p>AiCassoのすべての機能と同様に、あまり考えすぎる必要はありません—欲しいものを説明すれば、AiCassoが難しい作業を行います。マルチビュー機能は、製品展示、クリエイティブなショーケースなどに最適です！</p>
+
+</body>
+</html>

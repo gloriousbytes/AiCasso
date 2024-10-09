@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panduan Ciri Imej ke Video</title>
+    <title>Panduan Ciri Gambar ke Video</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            max-width: 100%;
             height: auto;
+            object-fit: contain;
         }
         .iframe-container {
             display: flex;
@@ -47,46 +48,46 @@
 
 <body>
 
-    <h2>Panduan Menggunakan Ciri Imej ke Video</h2>
-    <p>Ciri Imej ke Video dalam AiCasso membolehkan anda menukar satu imej menjadi video dinamik. Hanya terangkan apa yang anda mahu lihat dalam video anda, dan AiCasso akan menjadikannya kenyataan!</p>
+    <h2>Panduan Menggunakan Ciri Gambar ke Video</h2>
+    <p>Ciri Gambar ke Video dalam AiCasso membolehkan anda menukar satu gambar menjadi video dinamik. Hanya terangkan apa yang anda ingin lihat dalam video anda, dan AiCasso akan merealisasikannya!</p>
 
     <h3>Bagaimana Ia Berfungsi:</h3>
     
     <div class="example">
-        <strong>Imej Input:</strong>
+        <strong>Gambar Input:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/input.jpg" alt="Gambar Input" loading="lazy">
         </div>
         <strong>Prompt 1:</strong>
         <p>"Anak anjing comel di taman"</p>
         <strong>Hasil 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppy.gif" alt="Anak Anjing Comel di Taman" loading="lazy">
         </div>
         <strong>Prompt 2:</strong>
         <p>"Anak anjing comel di taman, gunakan FPS maksimum, bingkai maksimum, dan gerakan maksimum"</p>
         <strong>Hasil 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppymaxframes.gif" alt="Anak Anjing dengan FPS Maksimum di Taman" loading="lazy">
         </div>
     </div>
 
     <h3>Parameter Pilihan</h3>
-    <p>Jika anda ingin mendapatkan lebih spesifik dengan video anda, berikut adalah beberapa tetapan yang boleh anda laraskan:</p>
+    <p>Jika anda ingin lebih spesifik dengan video anda, berikut adalah beberapa tetapan yang boleh anda laraskan:</p>
 
     <ul>
-        <li><strong>Prompt Negatif:</strong> Terangkan apa yang anda *tidak* mahu dalam video. Jika dibiarkan kosong, AiCasso hanya akan fokus pada prompt positif.</li>
-        <li><strong>Bilangan Bingkai:</strong> Pilih berapa banyak bingkai (imej individu) video anda akan ada. Anda boleh memilih sehingga 25 bingkai, dengan 16 sebagai lalai.</li>
-        <li><strong>Langkah Denoising:</strong> Ini mengawal betapa lancarnya video anda kelihatan. Lebih banyak langkah bermakna video yang lebih bersih. Anda boleh menetapkan sehingga 50 langkah, dengan 20 sebagai lalai.</li>
-        <li><strong>Skala Panduan:</strong> Ini membantu video menepati deskripsi anda. Julatnya adalah dari 1.0 hingga 8.0, dan anda boleh melaraskan nilai permulaan dan akhir untuk membimbing bagaimana video berkembang.</li>
-        <li><strong>Gerakan:</strong> Laraskan berapa banyak pergerakan dalam video anda. Nilai yang lebih tinggi bermakna lebih banyak aksi. Julatnya adalah dari 0 hingga 127, dengan 60 sebagai lalai.</li>
-        <li><strong>Kekuatan Augmentasi Bunyi:</strong> Tambahkan sedikit bunyi kepada video anda untuk memberikannya rupa yang lebih bertekstur. Julatnya adalah dari 0 hingga 1, dengan 0 sebagai lalai.</li>
-        <li><strong>Bingkai per Saat (FPS):</strong> Tetapkan seberapa cepat video anda dimainkan. Lalai adalah 16 FPS, tetapi anda boleh pergi sehingga 16 untuk main balik yang lebih cepat.</li>
-        <li><strong>Kaedah Interpolasi:</strong> Pilih bagaimana bingkai dicampur bersama. Lalai adalah "lerp" (interpolasi linear), tetapi anda juga boleh menggunakan "slerp" (interpolasi linear sfera) untuk kesan yang berbeza.</li>
-        <li><strong>Lompatan Klip:</strong> Langkau lapisan tertentu untuk gaya video yang berbeza. Anda boleh melangkau sehingga 2 lapisan, atau biarkan kosong untuk tingkah laku lalai.</li>
+        <li><strong>Prompt Negatif:</strong> Terangkan apa yang anda *tidak* mahu dalam video. Jika dibiarkan kosong, AiCasso hanya akan memberi tumpuan kepada prompt positif.</li>
+        <li><strong>Bilangan Bingkai:</strong> Pilih berapa banyak bingkai (gambar individu) yang akan ada dalam video anda. Anda boleh memilih sehingga 25 bingkai, dengan 16 sebagai lalai.</li>
+        <li><strong>Langkah Denoising:</strong> Ini mengawal seberapa lancar video anda kelihatan. Lebih banyak langkah bermakna video yang lebih bersih. Anda boleh menetapkan sehingga 50 langkah, dengan 20 sebagai lalai.</li>
+        <li><strong>Skala Panduan:</strong> Ini membantu video tetap dekat dengan penerangan anda. Julatnya adalah dari 1.0 hingga 8.0, dan anda boleh melaraskan nilai permulaan dan akhir untuk membimbing bagaimana video berkembang.</li>
+        <li><strong>Gerakan:</strong> Laraskan seberapa banyak pergerakan dalam video anda. Nilai yang lebih tinggi bermakna lebih banyak aksi. Julatnya adalah dari 0 hingga 127, dengan 60 sebagai lalai.</li>
+        <li><strong>Kekuatan Augmentasi Bunyi:</strong> Tambahkan sedikit bunyi pada video anda untuk memberikan penampilan yang lebih bertekstur. Julatnya adalah dari 0 hingga 1, dengan 0 sebagai lalai.</li>
+        <li><strong>Bingkai per Saat (FPS):</strong> Tetapkan seberapa cepat video anda dimainkan. Lalai adalah 16 FPS, tetapi anda boleh pergi sehingga 16 untuk main balik yang lebih pantas.</li>
+        <li><strong>Kaedah Interpolasi:</strong> Pilih bagaimana bingkai digabungkan. Lalai adalah "lerp" (interpolasi linear), tetapi anda juga boleh menggunakan "slerp" (interpolasi linear sfera) untuk kesan yang berbeza.</li>
+        <li><strong>Skip Klip:</strong> Langkau lapisan tertentu untuk gaya video yang berbeza. Anda boleh melangkau sehingga 2 lapisan, atau biarkan ia null untuk tingkah laku lalai.</li>
     </ul>
 
-    <p>Ingat, AiCasso cukup pintar! Anda tidak perlu mendapatkan setiap perincian dengan sempurna atau menggunakan tatabahasa yang betul. Hanya terangkan apa yang anda mahu, dan AiCasso akan melakukan selebihnya. Selamat mencipta video anda!</p>
+    <p>Ingat, AiCasso sangat pintar! Anda tidak perlu mendapatkan setiap butiran dengan sempurna atau menggunakan tatabahasa yang betul. Hanya terangkan apa yang anda mahu, dan AiCasso akan melakukan yang lain. Selamat mencipta video anda!</p>
 
 </body>
 </html>

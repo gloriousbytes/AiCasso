@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umhlahlandlela Wokusebenzisa Umsebenzi Wokuvula Umfanekiso Uya kwiVidiyo</title>
+    <title>Umhlahlandlela Wokusebenzisa Umsebenzi Wokuvula Umfanekiso Kuvidiyo</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            max-width: 100%;
             height: auto;
+            object-fit: contain;
         }
         .iframe-container {
             display: flex;
@@ -47,46 +48,46 @@
 
 <body>
 
-    <h2>Umhlahlandlela Wokusebenzisa Umsebenzi Wokuvula Umfanekiso Uya kwiVidiyo</h2>
-    <p>Umsebenzi Wokuvula Umfanekiso Uya kwiVidiyo kwi-AiCasso uvumela ukuba uguqule umfanekiso omnye ube yi vidiyo eguquguqukayo. Just chaza ukuba ufuna ukujolisa ntoni kwi vidiyo yakho, kwaye i-AiCasso iya kuyenza ibenjalo!</p>
+    <h2>Umhlahlandlela Wokusebenzisa Umsebenzi Wokuvula Umfanekiso Kuvidiyo</h2>
+    <p>Umsebenzi Wokuvula Umfanekiso Kuvidiyo kwi-AiCasso uvumela ukuba uguqule umfanekiso omnye ube yi-vidiyo eguquguqukayo. Just chaza ukuba ufuna ukujolisa ntoni kwi-vidiyo yakho, kwaye i-AiCasso izakuyenza ibe yinyani!</p>
 
     <h3>Ukwenza Kusebenza:</h3>
     
     <div class="example">
         <strong>Umfanekiso Wokufaka:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11D_AykVSxl7oU7Sri4KX6QzVgexKsbng/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/input.jpg" alt="Umfanekiso Wokufaka" loading="lazy">
         </div>
-        <strong>Isikhumbuzo 1:</strong>
-        <p>"Inja encinci emnandi epakini"</p>
-        <strong>Umphumo 1:</strong>
+        <strong>Umphakamiso 1:</strong>
+        <p>"Ipuppy emnandi epakini"</p>
+        <strong>Umphumela 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18gUmnZQAV68m2Bx1w4UDIzKQymDZDv_x/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppy.gif" alt="Ipuppy Emnandi Epakini" loading="lazy">
         </div>
-        <strong>Isikhumbuzo 2:</strong>
-        <p>"Inja encinci emnandi epakini, sebenzisa i-FPS ephezulu, iifreyimu eziphezulu, kunye nokuhamba okuphezulu"</p>
-        <strong>Umphumo 2:</strong>
+        <strong>Umphakamiso 2:</strong>
+        <p>"Ipuppy emnandi epakini, sebenzisa i-FPS ephezulu, iifreyimu eziphezulu, kunye nokunyakaza okuphezulu"</p>
+        <strong>Umphumela 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1k2wE9P7xQObcR01rbs5VMJ2JT-nVHRza/preview"></iframe>
+            <img src="../../images/tutorials/Image To Video/cutepuppymaxframes.gif" alt="Ipuppy Enemax FPS Epakini" loading="lazy">
         </div>
     </div>
 
     <h3>Izicwangciso Ezikhethwayo</h3>
-    <p>Ukuba ufuna ukucacisa ngakumbi kwi vidiyo yakho, nantsi eminye imigaqo onokuyilungisa:</p>
+    <p>Ukuba ufuna ukucacisa ngakumbi kwi-vidiyo yakho, nantsi eminye imigaqo onokuyilungisa:</p>
 
     <ul>
-        <li><strong>Isikhumbuzo Esingalunganga:</strong> Chaza ukuba ufuna ntoni *ungafuni* kwi vidiyo. Ukuba uyayishiya ingenanto, i-AiCasso iya kugxila kuphela kwisikhumbuzo esihle.</li>
-        <li><strong>Inani LeeFreyimu:</strong> Khetha ukuba zingaphi iifreyimu (imifanekiso eyahlukeneyo) eziza kuba kwi vidiyo yakho. Ungakhetha ukuya kwi-25 iifreyimu, kunye ne-16 iyimfuneko.</li>
-        <li><strong>Amanyathelo Okunciphisa Umsindo:</strong> Oku kulawula ukuba i vidiyo yakho ibukeka njani. Amanyathelo amaninzi akhokelela kwi vidiyo ehlanzekileyo. Ungaseta ukuya kumanyathelo angama-50, kunye ne-20 iyimfuneko.</li>
-        <li><strong>Umgama Wokukhuthaza:</strong> Oku kunceda i vidiyo ukuba ihlale ikhokelwa kumxholo wakho. Umgama uvela kwi-1.0 ukuya kwi-8.0, kwaye ungaguqula iindawo zokuqala nezokugqibela ukuze uqondise indlela i vidiyo eguquka ngayo.</li>
-        <li><strong>Ukuhamba:</strong> Lungisa ukuba kukhulu kangakanani ukuhamba kwi vidiyo yakho. Ixabiso eliphezulu lithetha umphumo omninzi. Umgama uvela kwi-0 ukuya kwi-127, kunye ne-60 iyimfuneko.</li>
-        <li><strong>Ubukhulu Bokwandisa Umsindo:</strong> Yongeza umsindo kwi vidiyo yakho ukuze ibukeke ibonakaliswe ngakumbi. Umgama uvela kwi-0 ukuya kwi-1, kunye ne-0 iyimfuneko.</li>
-        <li><strong>Freyimu Ngexesha (FPS):</strong> Setha ukuba i vidiyo yakho idlalwa ngokukhawuleza kangakanani. I-16 FPS iyimfuneko, kodwa ungaya ukuya kwi-16 ukuze udlale ngokukhawuleza.</li>
-        <li><strong>Indlela Yokuhlanganisa:</strong> Khetha indlela iifreyimu ezihlanganiswa ngayo. I-lerp (ukuhlanganiswa okujolise) iyimfuneko, kodwa ungasebenzisa "slerp" (ukuhlanganiswa okujolise kumjikelo) ukuze ufumane iimpembelelo ezahlukeneyo.</li>
-        <li><strong>Ukuphosa Iklip:</strong> Phosa iilayini ezithile ukuze ufumane isitayela se vidiyo esahlukeneyo. Ungaphosa ukuya kwi-2 iilayini, okanye uyishiye ingenanto ukuze ube nezenzo ezilungileyo.</li>
+        <li><strong>Umphakamiso Ongalunganga:</strong> Chaza ukuba ufuna ntoni *ungayifuni* kwi-vidiyo. Ukuba uyashiya ingenanto, i-AiCasso izakugxila kumphakamiso olungileyo.</li>
+        <li><strong>Inani LeeFreyimu:</strong> Khetha ukuba zingaphi iifreyimu (imifanekiso eyahlukeneyo) i-vidiyo yakho izakuba nazo. Ungakhetha ukuya kwi-25 iifreyimu, kunye ne-16 iyimigaqo yokuphosa.</li>
+        <li><strong>Iziqinisekiso Zokunciphisa Umsindo:</strong> Oku kulawula ukuba i-vidiyo yakho ibukeka njani. Iziqinisekiso ezininzi zithetha i-vidiyo ehlanzekileyo. Ungaseta ukuya kwi-50 iziqinisekiso, kunye ne-20 iyimigaqo yokuphosa.</li>
+        <li><strong>Umgangatho Wokukhuthaza:</strong> Oku kunceda i-vidiyo ukuba ihlale ikhululekile kumxholo wakho. Umda uvela kwi-1.0 ukuya kwi-8.0, kwaye ungayilungisa i-velu zokuqala nezokugqibela ukuze uqondise indlela i-vidiyo eguquka ngayo.</li>
+        <li><strong>Ukunyuka:</strong> Lungisa ukuba kukhulu kangakanani ukuhamba kwi-vidiyo yakho. Ivelu ephezulu ithetha umphakathi omninzi. Umda uvela kwi-0 ukuya kwi-127, kunye ne-60 iyimigaqo yokuphosa.</li>
+        <li><strong>Ubunzima Bokwandisa Umsindo:</strong> Yongeza umsindo kwi-vidiyo yakho ukuze uyinike umfanekiso ophucukileyo. Umda uvela kwi-0 ukuya kwi-1, kunye ne-0 iyimigaqo yokuphosa.</li>
+        <li><strong>Iifreyimu Ngomzuzu (FPS):</strong> Setha ukuba i-vidiyo yakho idlalwa ngokukhawuleza kangakanani. Imigaqo yokuphosa yi-16 FPS, kodwa ungaya kwi-16 ukuze udlale ngokukhawuleza.</li>
+        <li><strong>Indlela Yokuhlanganisa:</strong> Khetha indlela iifreyimu ezihlanganiswa ngayo. Imigaqo yokuphosa yi-"lerp" (ukuhlanganiswa komgca), kodwa ungasebenzisa "slerp" (ukuhlanganiswa komgca ophakathi) ukuze ufumane iimpembelelo ezahlukeneyo.</li>
+        <li><strong>Ukuphosa Iklip:</strong> Phosa iilayini ezithile ukuze ufumane isitayela sevidiyo esahlukeneyo. Ungaphosa ukuya kwi-2 iilayini, okanye uyishiye ingenanto ukuze ube nemigaqo yokuphosa.</li>
     </ul>
 
-    <p>Khumbula, i-AiCasso ikrelekrele! Awudingi ukucacisa yonke imixholo okanye usebenzise ulwimi oluchanekileyo. Just chaza ukuba ufuna ntoni, kwaye i-AiCasso iya kwenza okunye. Ube nomnqweno wokudala iividiyo zakho!</p>
+    <p>Khumbula, i-AiCasso ikrelekrele! Awudingi ukufumana yonke imixholo ilungile okanye usebenzise ulwimi oluchanekileyo. Just chaza ukuba ufuna ntoni, kwaye i-AiCasso izakwenza okunye. Ube nomnqweno wokudala iividiyo zakho!</p>
 
 </body>
 </html>

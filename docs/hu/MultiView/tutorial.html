@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi View Funkció Útmutató</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        img, video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Útmutató a Multi View Funkció Használatához</h2>
+    <p>A Multi View funkció az AiCasso-ban lehetővé teszi, hogy egy objektumot különböző szögekből nézzünk meg, az objektum több nézetének generálásával a képen. Különösen hasznos a 3D formák jobb megértéséhez vagy termékek bemutatásához. Ez a funkció a legjobban akkor működik, ha az objektumnak nincs háttér, ezért győződjön meg róla, hogy eltávolít minden zavaró elemet az optimális eredmények érdekében.</p>
+
+    <h3>Hogyan Működik:</h3>
+    
+    <div class="example">
+        <strong>Bemeneti Kép:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/input.jpg" alt="Bemeneti Kép" loading="lazy">
+        </div>
+        <strong>Prompt:</strong>
+        <p>"Mutasd ezt az objektumot több nézőpontból"</p>
+        <strong>Eredmény:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/result.jpg" alt="Eredmény Kép" loading="lazy">
+        </div>
+    </div>
+
+    <h3>Tippek a Legjobb Eredményekhez</h3>
+    <p>Itt van néhány tipp, hogy a képe nagyszerűen sikerüljön:</p>
+
+    <ul>
+        <li><strong>Háttér Nélküli Objektum:</strong> A Multi View funkció a legjobban akkor működik, ha az objektum a képen el van szigetelve a háttértől. Ez lehetővé teszi az AiCasso számára, hogy kizárólag az objektumra összpontosítson, és tiszta nézeteket generáljon.</li>
+        <li><strong>Jó Megvilágítás:</strong> Győződjön meg róla, hogy az objektum jól meg van világítva a bemeneti képen, mivel az árnyékok és egyenetlen világítás befolyásolhatják, hogy az objektum hogyan néz ki különböző szögekből.</li>
+        <li><strong>Több Objektum:</strong> Ha több objektum van a képen, próbálja meg elszigetelni azt, amelyet különböző szögekből szeretne látni, vagy válasszon egy egyszerűbb képet, amely csak egy fókuszált objektumot tartalmaz.</li>
+    </ul>
+
+    <pAkárcsak az AiCasso összes funkciója, ezt sem kell túlgondolni—csak írja le, mit szeretne, és az AiCasso elvégzi a nehéz munkát. A Multi View funkció tökéletes termékbemutatókhoz, kreatív kiállításokhoz és még sok máshoz!</p>
+
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Superresolutie Functiegids</title>
+    <title>Handleiding voor de Super Resolutie Functie</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,51 +31,58 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h2>Gids voor het Gebruik van de Superresolutie Functie</h2>
-    <p>De Superresolutie functie in AiCasso draait helemaal om het verbeteren van je afbeeldingen. Je geeft gewoon aan hoe je je afbeelding wilt verbeteren, en AiCasso doet de rest. Of je nu details wilt verscherpen of de hele afbeelding een boost wilt geven, het is super eenvoudig te gebruiken.</p>
+    <h2>Handleiding voor het Gebruik van de Super Resolutie Functie</h2>
+    <p>De Super Resolutie functie in AiCasso draait helemaal om het verbeteren van je afbeeldingen. Je vertelt gewoon hoe je je afbeelding wilt verbeteren, en AiCasso zorgt voor de rest. Of je nu details wilt verscherpen of de hele afbeelding een boost wilt geven, het is super eenvoudig te gebruiken.</p>
 
-    <h3>Hoe het Werkt:</h3>
+    <h3>Hoe Het Werkt:</h3>
     
     <div class="example">
-        <strong>Invoerafbeelding:</strong>
+        <strong>Ingangsafbeelding:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1fSdLANmOfRhemV6yIfZlhsNtlIkYQAzX/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/input.jpg" alt="Ingangsafbeelding" loading="lazy">
         </div>
         <strong>Prompt:</strong>
         <p>"Vergroot het 4 keer, gebruik het Ultra Sharp model"</p>
         <strong>Resultaat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IxXecXsSy5lxcjpNjiiI7s8tm_aQUHJF/preview"></iframe>
+            <img src="../../images/tutorials/superresolution/result.jpg" alt="Resultaat Afbeelding" loading="lazy">
         </div>
     </div>
 
     <h3>Optionele Parameters</h3>
-    <p>Als je wat meer controle wilt over hoe je afbeelding wordt verbeterd, zijn hier enkele extra opties waarmee je kunt spelen:</p>
+    <p>Als je wat meer controle wilt over hoe je afbeelding wordt verbeterd, zijn hier enkele extra opties waar je mee kunt spelen:</p>
 
     <ul>
-        <li><strong>Schaal:</strong> Dit is hoeveel je je afbeelding wilt vergroten. Je kunt een schaal kiezen van 1 tot 4, waarbij 4 de standaard is. Grotere getallen betekenen in feite een grotere afbeelding.</li>
-        <li><strong>Vergrootmodel:</strong> Dit is als het kiezen van een filter voor je afbeelding, maar dan veel slimmer. Hier zijn de opties:
+        <li><strong>Schaling:</strong> Dit is hoeveel je je afbeelding wilt vergroten. Je kunt een schaal kiezen van 1 tot 4, waarbij 4 de standaard is. Grotere getallen betekenen in feite een grotere afbeelding.</li>
+        <li><strong>Upscale Model:</strong> Dit is als het kiezen van een filter voor je afbeelding, maar het is veel slimmer. Hier zijn de opties:
             <ul>
-                <li><strong>Grote Detail Boost:</strong> Beste voor het inzoomen op kleine details.</li>
+                <li><strong>Grote Detailversterking:</strong> Het beste voor het inzoomen op kleine details.</li>
                 <li><strong>Ultra Sharp:</strong> Maakt de afbeelding super helder en scherp.</li>
-                <li><strong>Anime Verbeteren:</strong> Perfect voor anime-stijl afbeeldingen, waardoor ze er scherp en levendig uitzien.</li>
-                <li><strong>Dubbel Detail:</strong> Verdubbelt de details zonder te overdrijven.</li>
+                <li><strong>Anime Verbetering:</strong> Perfect voor anime-stijl afbeeldingen, waardoor ze scherp en levendig lijken.</li>
+                <li><strong>Dubbel Detail:</strong> Verdubbelt de details zonder overboord te gaan.</li>
                 <li><strong>Algemene Boost:</strong> Een goede allround optie voor de meeste afbeeldingen.</li>
             </ul>
         </li>
-        <li><strong>Gezichtsverbetering:</strong> Als je afbeelding een gezicht heeft, kan deze optie helpen om het er nog beter uit te laten zien. Zet het gewoon aan als je wilt dat AiCasso zich richt op het verbeteren van gezichtskenmerken.</li>
+        <li><strong>Gezicht Verbetering:</strong> Als je afbeelding een gezicht heeft, kan deze optie helpen om het er nog beter uit te laten zien. Zet het gewoon aan als je wilt dat AiCasso zich richt op het verbeteren van gezichtskenmerken.</li>
     </ul>
 
-    <p>Vergeet niet, deze opties zijn helemaal optioneel! Je hoeft er niet mee te rommelen als je dat niet wilt. Beschrijf gewoon wat je wilt, en AiCasso zal de beste manier vinden om het te laten gebeuren. En maak je geen zorgen over het perfect zijn met je woorden—AiCasso begrijpt je!</p>
+    <p>Vergeet niet, deze opties zijn volledig optioneel! Je hoeft er niet mee te rommelen als je dat niet wilt. Beschrijf gewoon wat je wilt, en AiCasso zal de beste manier vinden om het te laten gebeuren. En maak je geen zorgen over perfect zijn met je woorden—AiCasso begrijpt je!</p>
 
 </body>
 </html>

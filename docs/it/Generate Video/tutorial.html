@@ -31,60 +31,64 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img {
+            width: 100%;
+            max-width: 400px;
             height: auto;
         }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        @media (max-width: 768px) {
+            .result img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h2>Guida all'Uso della Funzione Genera Video</h2>
-    <p>La funzione Genera Video in AiCasso ti permette di creare video semplicemente descrivendo ciò che vuoi vedere. Basta digitare la tua idea e AiCasso la trasformerà in un video!</p>
+    <h2>Guida all'uso della funzione Genera Video</h2>
+    <p>La funzione Genera Video in AiCasso ti consente di creare video semplicemente descrivendo cosa vuoi vedere. Basta digitare la tua idea e AiCasso la porterà in vita in un video!</p>
 
     <h3>Come Funziona:</h3>
     
     <div class="example">
         <strong>Prompt:</strong>
-        <p>"Un gallo animato in 3D in un campo tutto da solo, che mangia ed è felice. Rendilo un video verticale con 50 passaggi di denoising."</p>
+        <p>"Un gallo animato in 3D in un campo tutto da solo, che mangia e si diverte. Fai un video in formato ritratto con 50 passaggi di denoising."</p>
         <strong>Risultato:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/animated3d.gif" alt="Gallo Animato 3D">
+            <noscript><img src="../../images/tutorials/texttovideo/animated3d.gif" alt="Gallo Animato 3D"></noscript>
         </div>
     </div>
 
     <div class="example">
         <strong>Prompt:</strong>
-        <p>"Un cartone animato di un gallo su un campo in dimensioni paesaggio."</p>
+        <p>"Un cartone di un gallo in un campo in dimensioni paesaggistiche."</p>
         <strong>Risultato:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/cartoon.gif" alt="Gallo Cartone">
+            <noscript><img src="../../images/tutorials/texttovideo/cartoon.gif" alt="Gallo Cartone"></noscript>
         </div>
     </div>
 
     <div class="example">
         <strong>Prompt:</strong>
-        <p>"Un gallo su un campo."</p>
+        <p>"Un gallo in un campo."</p>
         <strong>Risultato:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/default.gif" alt="Gallo Predefinito">
+            <noscript><img src="../../images/tutorials/texttovideo/default.gif" alt="Gallo Predefinito"></noscript>
         </div>
     </div>
 
     <div class="example">
         <strong>Prompt:</strong>
-        <p>"Un gallo che è nel campo tutto da solo. Dagli un aspetto naturale."</p>
+        <p>"Un gallo che si trova nel campo tutto da solo. Dagli una sensazione naturale."</p>
         <strong>Risultato:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/natural.gif" alt="Gallo Naturale">
+            <noscript><img src="../../images/tutorials/texttovideo/natural.gif" alt="Gallo Naturale"></noscript>
         </div>
     </div>
 
@@ -92,28 +96,28 @@
     <p>Vuoi perfezionare il tuo video? Ecco alcune impostazioni con cui puoi giocare:</p>
 
     <ul>
-        <li><strong>Numero di Fotogrammi:</strong> Scegli quanti fotogrammi (immagini individuali) avrà il tuo video. Puoi arrivare fino a 25 fotogrammi, con 16 come predefinito.</li>
+        <li><strong>Numero di Frame:</strong> Scegli quanti frame (immagini singole) avrà il tuo video. Puoi arrivare fino a 25 frame, con 16 come predefinito.</li>
         <li><strong>Numero di Passaggi di Denoising:</strong> Questo controlla quanto è fluido il tuo video. Più passaggi significano video più fluidi. Puoi impostare fino a 50 passaggi, con 20 come predefinito.</li>
-        <li><strong>Scala di Guida:</strong> Questo aiuta il video a seguire da vicino la tua descrizione. Più alto è il numero, più segue il tuo prompt. L'intervallo è da 0 a 8, con 8 come predefinito.</li>
-        <li><strong>Clip Skip:</strong> Salta alcuni livelli per uno stile video diverso. Di default, non vengono saltati livelli, ma puoi saltarne fino a 2.</li>
-        <li><strong>Ingrandisci Larghezza e Altezza:</strong> Puoi rendere il tuo video più grande regolando la risoluzione. Il predefinito è 1024x1024 pixel, ma puoi modificarlo per adattarlo alle tue esigenze.</li>
-        <li><strong>Forza di Ingrandimento:</strong> Questo cambia quanto il tuo video si adatta quando viene ingrandito. Il predefinito è 1, ma puoi regolarlo per vedere più differenze.</li>
-        <li><strong>Scala di Guida per Ingrandimento:</strong> Questo guida il processo di ingrandimento, con un intervallo da 0 a 8, e un predefinito di 8.</li>
-        <li><strong>Passaggi di Inferenza per Ingrandimento:</strong> Il numero di passaggi effettuati per ingrandire il video. Più passaggi rendono l'ingrandimento più fluido, con un massimo di 50 e un predefinito di 20.</li>
-        <li><strong>Campionamento Migliorato:</strong> Vuoi un video più raffinato? Attivalo. È disattivato per impostazione predefinita.</li>
-        <li><strong>Seme di Campionamento Migliorato:</strong> Usalo per generare lo stesso video ogni volta con campionamento migliorato. È opzionale e disattivato per impostazione predefinita.</li>
-        <li><strong>Fotogrammi al Secondo (FPS):</strong> Imposta la velocità del tuo video. Il predefinito è 16 FPS, ma puoi regolarlo fino a 16.</li>
+        <li><strong>Scala di Guida:</strong> Questo aiuta il video a rimanere vicino alla tua descrizione. Maggiore è il numero, più segue il tuo prompt. L'intervallo è da 0 a 8, con 8 come predefinito.</li>
+        <li><strong>Clip Skip:</strong> Salta determinati strati per uno stile video diverso. Per impostazione predefinita, nessuno strato viene saltato, ma puoi saltare fino a 2.</li>
+        <li><strong>Dimensione di Upscale Larghezza e Altezza:</strong> Puoi rendere il tuo video più grande regolando la risoluzione. Il predefinito è 1024x1024 pixel, ma puoi modificarlo per adattarlo alle tue esigenze.</li>
+        <li><strong>Forza di Upscale:</strong> Questo cambia quanto il tuo video si adatta quando viene ingrandito. Il predefinito è 1, ma puoi regolarlo per vedere più differenze.</li>
+        <li><strong>Scala di Guida di Upscale:</strong> Questo guida il processo di ingrandimento, con un intervallo da 0 a 8, e un predefinito di 8.</li>
+        <li><strong>Passaggi di Inferenza di Upscale:</strong> Il numero di passaggi effettuati per ingrandire il video. Più passaggi rendono l'ingrandimento più fluido, con un massimo di 50 e un predefinito di 20.</li>
+        <li><strong>Campionamento Migliorato:</strong> Vuoi un video più raffinato? Attiva questa opzione. È disattivata per impostazione predefinita.</li>
+        <li><strong>Seed di Campionamento Migliorato:</strong> Usa questo per generare lo stesso video ogni volta con campionamento migliorato. È facoltativo e disattivato per impostazione predefinita.</li>
+        <li><strong>Frame al Secondo (FPS):</strong> Imposta la velocità del tuo video. Il predefinito è 16 FPS, ma puoi regolarlo fino a 16.</li>
         <li><strong>Modello Video:</strong> Scegli lo stile del tuo video. Le opzioni includono:
             <ul>
                 <li><strong>Predefinito:</strong> Un modello video standard.</li>
-                <li><strong>Cartone Animato:</strong> Uno stile video cartoonesco.</li>
+                <li><strong>Cartone:</strong> Uno stile video cartonesco.</li>
                 <li><strong>Naturale:</strong> Uno stile video realistico e naturale.</li>
                 <li><strong>Animato 3D:</strong> Uno stile video animato in 3D.</li>
             </ul>
         </li>
     </ul>
 
-    <p>Ricorda, queste impostazioni sono opzionali. La funzione Genera Video funziona benissimo con una semplice descrizione, quindi sentiti libero di sperimentare e vedere cosa puoi creare!</p>
+    <p>Ricorda, queste impostazioni sono facoltative. La funzione Genera Video funziona benissimo anche con una semplice descrizione, quindi sentiti libero di sperimentare e vedere cosa puoi creare!</p>
 
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide til Relighting-funksjonen</title>
+    <title>Veiledning for Relighting-funksjonen</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,12 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
         }
         .iframe-container {
             display: flex;
@@ -47,21 +50,21 @@
 
 <body>
 
-    <h2>Guide til å bruke Relighting-funksjonen</h2>
-    <p>Relighting-funksjonen i AiCasso er superkul! Den lar deg endre belysningen i bildene dine med bare noen få ord. Vil du ha solen i bakgrunnen eller et mykt lys fra siden? Ingen problem! Bare beskriv det, så tar AiCasso seg av resten.</p>
+    <h2>Veiledning for bruk av Relighting-funksjonen</h2>
+    <p>Relighting-funksjonen i AiCasso er superkul! Den lar deg endre belysningen i bildene dine med bare noen få ord. Vil du ha solen i bakgrunnen eller et mykt lys fra siden? Ikke noe problem! Bare beskriv det, så tar AiCasso seg av resten.</p>
 
     <h3>Slik fungerer det:</h3>
     
     <div class="example">
-        <strong>Inngangsbilde:</strong>
+        <strong>Inngangsbildet:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+            <img src="../../images/tutorials/relighting/input.jpg" alt="Inngangsbildet" loading="lazy">
         </div>
         <strong>Brukt prompt:</strong>
         <p>"Gjør det slik at solen er i bakgrunnen"</p>
         <strong>Resultat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+            <img src="../../images/tutorials/relighting/result.jpg" alt="Relighting-resultat" loading="lazy">
         </div>
     </div>
 
@@ -69,15 +72,15 @@
     <p>Hvis du føler deg eventyrlysten og vil legge til litt mer stil i relighting-prosessen, her er noen ting du kan justere:</p>
 
     <ul>
-        <li><strong>Negativ prompt:</strong> Vil du unngå noe? Du kan fortelle AiCasso hva <em>ikke</em> skal inkluderes. Men ikke bekymre deg, hvis du lar dette stå tomt, vil AiCasso bare fokusere på det du ønsker.</li>
+        <li><strong>Negativ prompt:</strong> Vil du unngå noe? Du kan fortelle AiCasso hva <em>ikke</em> å inkludere. Men ikke bekymre deg, hvis du lar dette stå tomt, vil AiCasso bare fokusere på det du ønsker.</li>
         <li><strong>Belysningsretning:</strong> Du kan spesifisere hvor lyset skal komme fra—venstre, høyre, topp, bunn, eller til og med ingen i det hele tatt. Som standard kommer lyset fra venstre.</li>
-        <li><strong>Veiledningsskala:</strong> Dette hjelper AiCasso å holde seg til beskrivelsen din. Skalaen går fra 1 til 20, med 7 som standard. Jo høyere tall, jo mer holder AiCasso seg til prompten din.</li>
-        <li><strong>Høyoppløselig skala:</strong> Vil du at bildet ditt skal poppe? Dette kontrollerer klarheten. Standard er 1.5, men du kan sette den fra 1.0 til 2.0 for et skarpere bilde.</li>
-        <li><strong>Denoise-nivåer:</strong> Det er to nivåer—lavoppløselig og høyoppløselig. Disse kontrollerer hvor glatt eller detaljert det endelige bildet ser ut. Du kan sette lavoppløselig denoise-nivå mellom 0.0 og 1.0 (standard er 0.9) og høyoppløselig mellom 0.0 og 1.0 (standard er 0.5).</li>
+        <li><strong>Veiledningsskala:</strong> Dette hjelper AiCasso med å holde seg til beskrivelsen din. Skalaen går fra 1 til 20, med 7 som standard. Jo høyere tall, jo mer holder AiCasso seg til prompten din.</li>
+        <li><strong>Høyoppløsningsskala:</strong> Vil du at bildet ditt skal poppe? Dette kontrollerer klarheten. Standard er 1.5, men du kan sette den fra 1.0 til 2.0 for et skarpere bilde.</li>
+        <li><strong>Denoise-nivåer:</strong> Det er to nivåer—lavoppløsning og høyoppløsning. Disse kontrollerer hvor jevnt eller detaljert det endelige bildet ser ut. Du kan sette lavoppløsnings denoise-nivået mellom 0.0 og 1.0 (standard er 0.9) og høyoppløsnings mellom 0.0 og 1.0 (standard er 0.5).</li>
         <li><strong>Antall trinn:</strong> Dette er hvor mange trinn AiCasso tar for å polere bildet ditt. Standard er 50, men du kan gå fra 20 til 50 trinn.</li>
     </ul>
 
-    <p>Husk, disse justeringene er helt valgfrie! AiCasso er ganske flink til å finne ut hva du ønsker, så bare beskriv visjonen din med dine egne ord, så vil det gjøre magien. Ingen grunn til å være perfekt med grammatikk eller detaljer—bare ha det gøy og se hva du kan skape!</p>
+    <p>Husk, disse justeringene er helt valgfrie! AiCasso er ganske flink til å finne ut hva du ønsker, så bare beskriv visjonen din med dine egne ord, så vil det gjøre magien. Ingen grunn til å være perfekt med grammatikk eller detaljer—bare ha det gøy og se hva du kan lage!</p>
 
 </body>
 </html>

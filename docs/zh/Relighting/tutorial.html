@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>重新照明功能指南</title>
+    <title>重光特性指南</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,12 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
         }
         .iframe-container {
             display: flex;
@@ -47,37 +50,37 @@
 
 <body>
 
-    <h2>使用重新照明功能指南</h2>
-    <p>AiCasso 的重新照明功能非常酷！它可以让你只用几句话就改变图像中的光照。想要太阳在后面还是柔和的侧光？没问题！只需描述一下，AiCasso 就会处理剩下的事情。</p>
+    <h2>重光特性使用指南</h2>
+    <p>AiCasso中的重光特性非常酷！它让你只需几个词就能改变图像中的光线。想要阳光在背后还是侧面柔和的光？没问题！只需描述一下，AiCasso会处理剩下的。</p>
 
     <h3>工作原理：</h3>
     
     <div class="example">
         <strong>输入图像：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+            <img src="../../images/tutorials/relighting/input.jpg" alt="输入图像" loading="lazy">
         </div>
         <strong>使用的提示：</strong>
-        <p>“让太阳在后面”</p>
+        <p>"让阳光在背后"</p>
         <strong>结果：</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+            <img src="../../images/tutorials/relighting/result.jpg" alt="重光结果" loading="lazy">
         </div>
     </div>
 
     <h3>可选调整</h3>
-    <p>如果你想尝试一些更有趣的重新照明效果，这里有一些可以调整的选项：</p>
+    <p>如果你想要更具冒险精神，并想为你的重光添加一些风格，这里有一些可以调整的内容：</p>
 
     <ul>
-        <li><strong>负面提示：</strong>想要避免某些东西？你可以告诉 AiCasso 不要包含什么。但不用担心，如果你留空，AiCasso 只会关注你想要的内容。</li>
-        <li><strong>光照方向：</strong>你可以指定光线来自哪里——左、右、上、下，甚至没有光线。默认情况下，光线来自左侧。</li>
-        <li><strong>指导比例：</strong>这可以帮助 AiCasso 紧跟你的描述。比例从 1 到 20，默认是 7。数字越高，AiCasso 越会紧跟你的提示。</li>
-        <li><strong>高分辨率比例：</strong>想让你的图像更突出？这控制清晰度。默认是 1.5，但你可以设置为 1.0 到 2.0 之间以获得更清晰的图像。</li>
-        <li><strong>去噪水平：</strong>有两个级别——低分辨率和高分辨率。这些控制最终图像的平滑度或细节。你可以将低分辨率去噪水平设置为 0.0 到 1.0（默认是 0.9），高分辨率为 0.0 到 1.0（默认是 0.5）。</li>
-        <li><strong>步骤数量：</strong>这是 AiCasso 打磨图像所需的步骤数量。默认是 50，但你可以选择 20 到 50 步。</li>
+        <li><strong>负面提示：</strong>想要避免某些东西？你可以告诉AiCasso <em>不</em> 要包含什么。但别担心，如果你留空，AiCasso只会专注于你想要的内容。</li>
+        <li><strong>光线方向：</strong>你可以指定光线应该来自哪里——左、右、上、下，甚至完全没有。默认情况下，光线来自左侧。</li>
+        <li><strong>引导比例：</strong>这有助于AiCasso遵循你的描述。比例范围从1到20，默认值为7。数字越高，AiCasso越能遵循你的提示。</li>
+        <li><strong>高分辨率比例：</strong>想让你的图像更加生动？这控制清晰度。默认值为1.5，但你可以设置在1.0到2.0之间，以获得更清晰的图像。</li>
+        <li><strong>去噪级别：</strong>有两个级别——低分辨率和高分辨率。这些控制最终图像的平滑度或细节。你可以将低分辨率去噪级别设置在0.0到1.0之间（默认值为0.9），高分辨率在0.0到1.0之间（默认值为0.5）。</li>
+        <li><strong>步骤数量：</strong>这是AiCasso打磨图像所需的步骤数量。默认值为50，但你可以选择20到50步。</li>
     </ul>
 
-    <p>记住，这些调整完全是可选的！AiCasso 非常擅长理解你的需求，所以只需用自己的话描述你的愿景，它就会施展魔法。无需完美的语法或细节——尽情享受创作的乐趣吧！</p>
+    <p>记住，这些调整都是完全可选的！AiCasso在理解你想要什么方面相当不错，所以只需用你自己的话描述你的愿景，它就会施展魔法。无需在语法或细节上做到完美——尽情享受，看看你能创造出什么吧！</p>
 
 </body>
 </html>

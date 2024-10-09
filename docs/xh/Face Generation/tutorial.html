@@ -6,89 +6,90 @@
     <title>Umhlahlandlela Wokusebenzisa Umsebenzi Wokwakha Ubuso</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Qinisekisa ukuba umfanekiso awudluli kwi-container */
+    height: auto;     /* Gcina umfanekiso ulingana */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
     <h2>Umhlahlandlela Wokusebenzisa Umsebenzi Wokwakha Ubuso</h2>
-    <p>Umsebenzi Wokwakha Ubuso kwi-AiCasso unomsebenzi omkhulu! Uvumela ukuba udale imifanekiso emangalisayo ngokufaka ubuso obuthile kwiimpawu ezahlukeneyo okanye kwiisitayile. Nokuba ucinga ngenkosi, i-samurai, okanye nayiphi na enye impawu, i-AiCasso isebenzisa ubuso obufakiweyo ukuvelisa umfanekiso onobuso obuhlanganiswe kumyinge ofunwayo.</p>
+    <p>Umsebenzi Wokwakha Ubuso kwi-AiCasso unomsebenzi omkhulu! Uvumela ukuba udale imifanekiso emangalisayo ngokudibanisa ubuso obuthile kwiimpawu ezahlukeneyo okanye kwiindlela. Nokuba ucabanga ngenkosi, i-samurai, okanye nayiphi na enye impawu, i-AiCasso isebenzisa ubuso obufakiweyo ukudala umfanekiso onobuso obudityanisiweyo kumyinge ofunwayo.</p>
 
     <h3>Ukwenza Kusebenza:</h3>
     
-    <div class="example">
-        <strong>Umfanekiso Ofakiweyo:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
-        </div>
-        <strong>Isikhumbuzo 1:</strong>
-        <p>"Inkosana ebonakalayo, sebenzisa umgangatho ophezulu"</p>
-        <strong>Umphumo 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
-        </div>
-        <strong>Isikhumbuzo 2:</strong>
-        <p>"Sebenzisa isitayile se-chibi kwaye wenze i-samurai, sebenzisa iimeko ezisemgangathweni"</p>
-        <strong>Umphumo 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
-        </div>
-        <strong>Isikhumbuzo 3:</strong>
-        <p>"I-samurai, sebenzisa iinyathelo ezili-31 zokunciphisa, kunye nesitayile se-anime"</p>
-        <strong>Umphumo 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Umfanekiso Wokufaka:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/input.jpg" alt="Umfanekiso Wokufaka">
     </div>
+    <strong>Umnxeba 1:</strong>
+    <p>"Ikhonkco eliqhelekileyo, sebenzisa umda ophezulu"</p>
+    <strong>Umphumo 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="Ikhonkco Eliqhelekileyo">
+    </div>
+    <strong>Umnxeba 2:</strong>
+    <p>"Sebenzisa isitayela se-chibi kwaye wenze i-samurai, sebenzisa amaxabiso ajolise kwi-default"</p>
+    <strong>Umphumo 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="Chibi Samurai">
+    </div>
+    <strong>Umnxeba 3:</strong>
+    <p>"I-samurai, sebenzisa i-31 yeendlela zokunciphisa, kunye nesitayela se-anime"</p>
+    <strong>Umphumo 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="Anime Samurai">
+    </div>
+</div>
 
-    <h3>Iiparameter Ezikhethiweyo</h3>
-    <p>Ukuba ufuna ukwengeza umphefumlo ngakumbi okanye ulawulo kumifanekiso yakho eyenziweyo, nantsi eminye imigaqo onokuyilungisa:</p>
+    <h3>Imigaqo Eyakhelwe Ngaphakathi</h3>
+    <p>Ukuba ufuna ukwengeza umoya omncinci okanye ulawulo kumifanekiso yakho eyenziweyo, nantsi eminye imigaqo onokuyilungisa:</p>
 
     <ul>
-        <li><strong>Isikhumbuzo Esibi:</strong> Apha ungacacisa kwi-AiCasso ukuba yintoni ofuna <em>ungafuni</em> ukuyibona kumfanekiso. Ukuba uyayishiya le ndawo ingenanto, i-AiCasso iya kugxila kuphela kumyinge omhle.</li>
-        <li><strong>Inani LeeNyathelo Zokunciphisa:</strong> Oku kulawula ukuba umfanekiso ubonakala njani. Ungakhetha phakathi kwe-21, 31, okanye 41, kunye ne-41 iyimigaqo esisiseko. Iinyathelo ezithe vetshe ziza nomfanekiso ocacileyo, ophucukileyo.</li>
-        <li><strong>Umgama Wokukhuthaza:</strong> Oku kunceda umfanekiso uhlale uthembekile kumchazo wakho. Umgama ubalelwa ukusuka kwi-1 ukuya kwi-20, kunye ne-10 iyimigaqo esisiseko. Iinombolo eziphezulu zithetha ukuba i-AiCasso iya kugxila ngakumbi kumyinge wakho.</li>
-        <li><strong>Umgama S:</strong> Oku kukhankanya ngohlobo lobuso. Kukho ubuchwepheshe obuncinci, kodwa ngokubanzi kulungisa umthwalo wesakhiwo sobuso. Umgama osisiseko ngu-1.0, kwaye ungaya naphi na ukusuka kwi-0.0 ukuya kwi-2.0.</li>
-        <li><strong>Isitayile:</strong> Ufuna ukunika umfanekiso wakho umoya othile? Ungakhetha isitayile esifana ne-comic, chibi, 3D, anime, okanye esibonakalayo. Esibonakalayo iyimigaqo esisiseko, kodwa uzive ukhululekile ukuba ube neengcamango!</li>
+        <li><strong>Umnxeba Ongalunganga:</strong> Apha ungabhalela i-AiCasso ukuba yintoni <em>ongafuni</em> ukuyibona kumfanekiso. Ukuba uyayishiya ingapheli, i-AiCasso iya kugxila kumnxeba olungileyo kuphela.</li>
+        <li><strong>Inani LeeNtlobo Zokunciphisa:</strong> Oku kulawula ukuba umfanekiso ujongeka njani. Ungakhetha phakathi kwe-21, 31, okanye 41 yeendlela, kunye ne-41 iyimigaqo ejolise kwi-default. Iindlela ezininzi zithetha umfanekiso ococekileyo, ohlaziyiweyo.</li>
+        <li><strong>Umgca Wokukhuthaza:</strong> Oku kunceda umfanekiso uhlale uqinisekile kumchazo wakho. Umgca uqhagamshelwe ukusuka ku-1 ukuya ku-20, kunye ne-10 iyimigaqo ejolise kwi-default. Iinombolo eziphezulu zithetha ukuba i-AiCasso iya kugxila kakhulu kumnxeba wakho.</li>
+        <li><strong>Umgca S:</strong> Oku kukhankanya ukwakheka kobuso. Kukho ubuchwepheshe, kodwa ngokwenene kulungisa umthwalo wesakhiwo sobuso. I-default ngu-1.0, kwaye ungaya naphi na ukusuka ku-0.0 ukuya ku-2.0.</li>
+        <li><strong>Isitayela:</strong> Ufuna ukunika umfanekiso wakho umoya othile? Ungakhetha isitayela esifana ne-comic, chibi, 3D, anime, okanye eliqhelekileyo. Elijolise kwi-default, kodwa uzive ukhululekile ukwenza izinto zibe mnandi!</li>
     </ul>
 
-    <p>Futhi khumbula, i-AiCasso iyavuma kakhulu. Awudingi ukuba ngumlingani wombhalo okanye ufumane yonke imininingwane iphelele. Cacisa nje ukuba ufuna ntoni ngamagama akho, kwaye i-AiCasso iya kuthatha uxanduva lwezinye izinto. Jabulela ukudala!</p>
+    <p>Futhi khumbula, i-AiCasso iyavuma kakhulu. Awudingi ukuba ngumlingani wombhalo okanye ufumane yonke imininingwane ilungile. Just chaza oko ufisa ngamagama akho, kwaye i-AiCasso izakuthathela ingqalelo yonke into. Jabulela ukudala!</p>
 
 </body>
 </html>

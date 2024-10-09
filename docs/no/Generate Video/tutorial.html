@@ -31,16 +31,16 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img {
+            width: 100%;
+            max-width: 400px;
             height: auto;
         }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        @media (max-width: 768px) {
+            .result img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -54,10 +54,11 @@
     
     <div class="example">
         <strong>Prompt:</strong>
-        <p>"En 3D-animasjon av en hane på en eng helt alene, som spiser og er glad. Lag det til en portrettvideo med 50 avstøtningssteg."</p>
+        <p>"En 3D-animasjon av en hane på en eng helt alene, som spiser og er glad. Lag det til en portrettvideo med 50 avstøyningssteg."</p>
         <strong>Resultat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1XseeQSLLgiJSDFwwL87Z9MAs_GFlwIwV/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/animated3d.gif" alt="Animasjon av 3D Hane">
+            <noscript><img src="../../images/tutorials/texttovideo/animated3d.gif" alt="Animasjon av 3D Hane"></noscript>
         </div>
     </div>
 
@@ -66,7 +67,8 @@
         <p>"En tegneserie av en hane på en eng i landskapsdimensjoner."</p>
         <strong>Resultat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1FFfd-6x00XowJ37rQh-07F1OP8lF-EZv/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/cartoon.gif" alt="Tegneserie Hane">
+            <noscript><img src="../../images/tutorials/texttovideo/cartoon.gif" alt="Tegneserie Hane"></noscript>
         </div>
     </div>
 
@@ -75,7 +77,8 @@
         <p>"En hane på en eng."</p>
         <strong>Resultat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1lX-z_R8RdlcsQAEsfQcu2TKTBWusG5m_/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/default.gif" alt="Standard Hane">
+            <noscript><img src="../../images/tutorials/texttovideo/default.gif" alt="Standard Hane"></noscript>
         </div>
     </div>
 
@@ -84,7 +87,8 @@
         <p>"En hane som er på engen helt alene. Gi den en naturlig følelse."</p>
         <strong>Resultat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1sMcSsU5dBLHYrzA_sazhZ9vOwd8PS31Q/preview"></iframe>
+            <img loading="lazy" src="../../images/tutorials/texttovideo/natural.gif" alt="Naturlig Hane">
+            <noscript><img src="../../images/tutorials/texttovideo/natural.gif" alt="Naturlig Hane"></noscript>
         </div>
     </div>
 
@@ -92,22 +96,22 @@
     <p>Vil du finjustere videoen din? Her er noen innstillinger du kan leke med:</p>
 
     <ul>
-        <li><strong>Antall Rammer:</strong> Velg hvor mange rammer (enkeltbilder) videoen din skal ha. Du kan ha opptil 25 rammer, med 16 som standard.</li>
-        <li><strong>Antall Avstøtningssteg:</strong> Dette kontrollerer hvor jevn videoen din ser ut. Flere steg gir jevnere videoer. Du kan sette opptil 50 steg, med 20 som standard.</li>
+        <li><strong>Antall Rammer:</strong> Velg hvor mange rammer (enkeltbilder) videoen din skal ha. Du kan gå opp til 25 rammer, med 16 som standard.</li>
+        <li><strong>Antall Avstøyningssteg:</strong> Dette kontrollerer hvor jevn videoen din ser ut. Flere steg betyr jevnere videoer. Du kan sette opp til 50 steg, med 20 som standard.</li>
         <li><strong>Veiledningsskala:</strong> Dette hjelper videoen å holde seg nært beskrivelsen din. Jo høyere tall, jo mer følger den prompten din. Området er 0 til 8, med 8 som standard.</li>
         <li><strong>Klipp Hopp:</strong> Hopp over visse lag for en annen videostil. Som standard hoppes ingen lag over, men du kan hoppe over opptil 2.</li>
         <li><strong>Oppskalering Bredde og Høyde:</strong> Du kan gjøre videoen din større ved å justere oppløsningen. Standard er 1024x1024 piksler, men du kan justere dette for å passe dine behov.</li>
         <li><strong>Oppskalering Styrke:</strong> Dette endrer hvor mye videoen din justeres når den oppskaleres. Standard er 1, men du kan justere det for å se flere forskjeller.</li>
         <li><strong>Oppskalering Veiledningsskala:</strong> Dette veileder oppskaleringsprosessen, med et område fra 0 til 8, og en standard på 8.</li>
         <li><strong>Oppskalering Inference Steg:</strong> Antall steg som tas for å oppskalere videoen. Flere steg gir jevnere oppskalering, med et maksimum på 50 og en standard på 20.</li>
-        <li><strong>Forbedret Sampling:</strong> Ønsker du en mer raffinert video? Slå dette på. Det er av som standard.</li>
+        <li><strong>Forbedret Sampling:</strong> Vil du ha en mer raffinert video? Slå dette på. Det er av som standard.</li>
         <li><strong>Forbedret Sampling Frø:</strong> Bruk dette for å generere den samme videoen hver gang med forbedret sampling. Det er valgfritt og av som standard.</li>
         <li><strong>Rammer per Sekund (FPS):</strong> Sett hastigheten på videoen din. Standard er 16 FPS, men du kan justere det opp til 16.</li>
         <li><strong>Video Modell:</strong> Velg stilen på videoen din. Alternativer inkluderer:
             <ul>
                 <li><strong>Standard:</strong> En standard videomodell.</li>
                 <li><strong>Tegneserie:</strong> En tegneserieaktig videostil.</li>
-                <li><strong>Naturlig:</strong> En realistisk, naturlig utseende videostil.</li>
+                <li><strong>Naturlig:</strong> En realistisk, naturlig videostil.</li>
                 <li><strong>Animasjon 3D:</strong> En 3D-animasjonsvideostil.</li>
             </ul>
         </li>

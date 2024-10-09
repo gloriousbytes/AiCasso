@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -48,38 +49,38 @@
 <body>
 
     <h2>Guide til å bruke Fashion Generation-funksjonen</h2>
-    <p>Fashion Generation-funksjonen i AiCasso lar deg kle noen i et spesifikt antrekk, som en skjorte, kjole eller bukser. Beskriv enkelt hva du ønsker, og se AiCasso bruke klesplagget på personen i bildet.</p>
+    <p>Fashion Generation-funksjonen i AiCasso lar deg kle noen i et spesifikt antrekk, som en skjorte, kjole eller bukser. Bare beskriv hva du ønsker, og se AiCasso bruke klesplagget på personen i bildet.</p>
 
     <h3>Slik fungerer det:</h3>
     
     <div class="example">
-        <strong>Inndata 1 - Personbilde:</strong>
+        <strong>Input 1 - Personbilde:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 1.jpg" alt="Personbilde">
         </div>
-        <strong>Inndata 2 - Klesplagg:</strong>
+        <strong>Input 2 - Klesplagg:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 2.jpg" alt="Klesplagg">
         </div>
         <strong>Prompt:</strong>
         <p>"Gutt som har på seg en skjorte"</p>
         <strong>Resultat:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+            <img src="../../images/tutorials/fashion/result.jpg" alt="Resultatbilde">
         </div>
     </div>
 
     <h3>Valgfrie parametere</h3>
-    <p>Hvis du vil legge til din egen stil eller sørge for at resultatet blir akkurat riktig, kan du justere disse innstillingene:</p>
+    <p>Hvis du vil legge til din egen stil eller sørge for at resultatet blir akkurat slik du ønsker, kan du justere disse innstillingene:</p>
 
     <ul>
         <li><strong>Negativ prompt:</strong> Hvis det er noe du <em>ikke</em> vil ha i bildet, nevner du det her. La det stå tomt hvis du er fornøyd med hva AiCasso kommer opp med.</li>
-        <li><strong>Kles type:</strong> Fortell AiCasso om du fokuserer på <em>overkropp</em>, <em>underdel</em> eller <em>kjoler</em>. Hvis du er usikker, er standardinnstillingen overkropp.</li>
-        <li><strong>Antall avstøtingssteg:</strong> Dette avgjør hvor glatt og polert bildet ser ut. Du kan velge mellom 21, 31 eller 41 steg, med 21 som standard. Flere steg betyr vanligvis et mer raffinert utseende.</li>
+        <li><strong>Kleskategori:</strong> Fortell AiCasso om du fokuserer på <em>overkropp</em>, <em>underkropp</em> eller <em>kjoler</em>. Hvis du er usikker, er standardinnstillingen overkropp.</li>
+        <li><strong>Antall avstøtningssteg:</strong> Dette avgjør hvor glatt og polert bildet ser ut. Du kan velge mellom 21, 31 eller 41 steg, med 21 som standard. Flere steg betyr vanligvis et mer raffinert utseende.</li>
         <li><strong>Veiledningsskala:</strong> Dette hjelper bildet å holde seg nært beskrivelsen din. Du kan sette den fra 1 til 20, med 7 som standard. Høyere tall betyr at AiCasso vil følge prompten din mer nøye.</li>
     </ul>
 
-    <p>Husk, disse innstillingene er valgfrie! AiCasso er ganske smart og kan forstå hva du mener selv om du ikke får med deg hver detalj perfekt. Bare ha det gøy og la kreativiteten flyte!</p>
+    <p>Husk, disse innstillingene er valgfrie! AiCasso er ganske smart og kan finne ut hva du mener selv om du ikke får med deg hver detalj perfekt. Bare ha det gøy og la kreativiteten flyte!</p>
 
 </body>
 </html>

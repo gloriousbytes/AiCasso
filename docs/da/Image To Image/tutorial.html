@@ -31,9 +31,9 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
-            height: auto;
+        .result img {
+            max-width: 100%;  /* Sikrer at billedet ikke overskrider containeren */
+            height: auto;     /* Bevarer aspektforholdet */
         }
         .iframe-container {
             display: flex;
@@ -48,171 +48,171 @@
 <body>
 
     <h2>Guide til at Bruge Billede til Billede Funktion</h2>
-    <p>Billede til Billede-funktionen i AiCasso er en smart måde at tage et billede, du allerede har, og forvandle det til noget nyt. Det er som at give dit billede en makeover baseret på din egen beskrivelse!</p>
+    <p>Billede til Billede funktionen i AiCasso er en cool måde at tage et billede, du allerede har, og transformere det til noget nyt. Det er som at give dit billede en makeover baseret på din egen beskrivelse!</p>
 
     <h3>Sådan Fungerer Det:</h3>
     
-    <div class="example">
-        <strong>Inputbillede:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/14N7B-yT-d7Z4HGSlogD859D-JitVcq2_/preview"></iframe>
-        </div>
-        <strong>Prompt 1:</strong>
-        <p>"En sød hund, brug halvdelen af styrken"</p>
-        <strong>Resultat 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1g8GQ6cHuB2ntmBwafGgPWiJ3VHU2r7S5/preview"></iframe>
-        </div>
-        <strong>Prompt 2:</strong>
-        <p>"En sød 3D CGI kat med store øjne, brug 90% styrke, og brug 3D tegneseriestil"</p>
-        <strong>Resultat 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1IeR0SRrPwZi6nfAF9-1SdM6mj4EtyyfM/preview"></iframe>
-        </div>
-        <strong>Prompt 3:</strong>
-        <p>"En sort kat, gør den realistisk"</p>
-        <strong>Resultat 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1Ocmsoi89Pn5Un_iNg349FMdQZRQaCUBr/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Input Billede:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/input.jpg" style="max-width: 100%; height: auto;" alt="Input Billede">
     </div>
+    <strong>Prompt 1:</strong>
+    <p>"En sød hund, brug halvdelen af styrken"</p>
+    <strong>Resultat 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/cutedog.jpg" style="max-width: 100%; height: auto;" alt="Resultat 1">
+    </div>
+    <strong>Prompt 2:</strong>
+    <p>"En sød 3D CGI kat med store øjne, brug 90% styrke, og brug 3D tegneseriestil"</p>
+    <strong>Resultat 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/3dcgicat.jpg" style="max-width: 100%; height: auto;" alt="Resultat 2">
+    </div>
+    <strong>Prompt 3:</strong>
+    <p>"En sort kat, gør den realistisk"</p>
+    <strong>Resultat 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/Image to Image/blackcat.jpg" style="max-width: 100%; height: auto;" alt="Resultat 3">
+    </div>
+</div>
 
     <h3>Valgfri Parametre</h3>
-    <p>Hvis du vil tilføje dit eget twist til billedeforvandlingen, er her nogle valgfri indstillinger, du kan lege med. Men bare rolig—hvis du bare vil beskrive, hvad du ønsker, vil AiCasso klare opgaven uden at have brug for nogen af disse ekstra!</p>
+    <p>Hvis du vil tilføje dit eget twist til billede transformationen, her er nogle valgfri indstillinger, du kan lege med. Men bare rolig—hvis du bare vil beskrive, hvad du ønsker, vil AiCasso klare opgaven uden at have brug for nogen af disse ekstra!</p>
 
     <ul>
         <li><strong>Negativ Prompt:</strong> Hvis der er noget specifikt, du <em>ikke</em> ønsker i dit nye billede, kan du nævne det her. Men hvis du lader det stå tomt, er det også fint!</li>
-        <li><strong>Styrke:</strong> Dette styrer, hvor meget af det originale billede der bruges. Du kan gå fra 0.1 til 1.0. Jo lavere tallet er, jo mere vil dit billede bevare sit oprindelige udseende. Standard er 0.5, hvilket er en god balance.</li>
+        <li><strong>Styrke:</strong> Dette styrer, hvor meget af det originale billede der bruges. Du kan gå fra 0.1 til 1.0. Jo lavere tallet er, desto mere vil dit billede bevare sit oprindelige udseende. Standard er 0.5, hvilket er en god balance.</li>
         <li><strong>Forbedre Stil:</strong> Vil du give dit billede en specifik stemning? Vælg en stil som tegneserie, chibi, 3D, anime eller realistisk. Standard er realistisk, men føl dig fri til at udforske!</li>
     </ul>
 
     <p>Og hey, husk, du behøver ikke bekymre dig om at få alt perfekt. Bare beskriv, hvad du ønsker med dine egne ord, og AiCasso vil gøre resten. Hav det sjovt med at skabe!</p>
 <h3>Forbedre Stile</h3>
-<p>Er du ikke sikker på, hvilken stil du skal vælge? Bare rolig! Nævn blot en hvilken som helst stil, der kommer til at tænke på, selvom den ikke er grammatisk korrekt, og AiCasso vil finde ud af det fra listen over tilgængelige Forbedre Stile.</p>
+<p>Er du ikke sikker på, hvilken stil du skal vælge? Bare rolig! Nævn blot enhver stil, der kommer til at tænke på, selvom den ikke er grammatisk korrekt, og AiCasso vil finde ud af det fra listen over tilgængelige Forbedre Stile.</p>
 
     <ul>
         <li><strong>Standard:</strong> En afbalanceret og neutral stil uden nogen specifik kunstnerisk indflydelse.</li>
         <li><strong>Forbedre:</strong> Forbedrer let detaljer og den overordnede æstetik.</li>
-        <li><strong>Cinematisk Diva:</strong> Tilføjer en dramatisk, filmisk effekt med stærke lyskontraster.</li>
-        <li><strong>Abstrakt Ekspressionisme:</strong> Fremhæver abstrakte former og livlige farveklatter.</li>
-        <li><strong>Akademia:</strong> Tilføjer et lærdoms- og klassisk præg til billedet.</li>
-        <li><strong>Actionfigur:</strong> Genererer billeder med den overdrevne og dynamiske stil af actionfigurer.</li>
+        <li><strong>Cinematisk Diva:</strong> Tilføjer en dramatisk, filmagtig effekt med stærke lyskontraster.</li>
+        <li><strong>Abstrakt Ekspressionisme:</strong> Fremhæver abstrakte former og levende farvesprøjt.</li>
+        <li><strong>Akademia:</strong> Tilføjer et lærdommeligt og klassisk præg til billedet.</li>
+        <li><strong>Actionfigur:</strong> Genererer billeder med den overdrevede og dynamiske stil af actionfigurer.</li>
         <li><strong>Bedårende 3D Karakter:</strong> Producerer søde, tegneserieagtige 3D karakterer.</li>
-        <li><strong>Bedårende Kawaii:</strong> Fremhæver den søde og charmerende stil typisk for Kawaii-kultur.</li>
-        <li><strong>Art Deco:</strong> Bruger den geometriske og dekorative stil fra Art Deco-perioden.</li>
+        <li><strong>Bedårende Kawaii:</strong> Fremhæver den søde og charmerende stil typisk for Kawaii kultur.</li>
+        <li><strong>Art Deco:</strong> Bruger den geometriske og dekorative stil fra Art Deco perioden.</li>
         <li><strong>Art Nouveau:</strong> Tilføjer flydende linjer og naturinspirerede elementer, typisk for Art Nouveau.</li>
         <li><strong>Astral Aura:</strong> Skaber en mystisk og overjordisk atmosfære.</li>
         <li><strong>Avant Garde:</strong> Fokuserer på innovative og eksperimentelle kunstneriske udtryk.</li>
         <li><strong>Barok:</strong> Bruger den dramatiske, detaljerede og udsmykkede stil fra barokken.</li>
         <li><strong>Bauhaus Stil Plakat:</strong> Reflekterer de minimalistiske og funktionelle designprincipper fra Bauhaus.</li>
         <li><strong>Blueprint Schematic Drawing:</strong> Producerer billeder, der ligner tekniske blåtryk.</li>
-        <li><strong>Karikatur:</strong> Genererer overdrevne, tegneserieagtige portrætter.</li>
-        <li><strong>Cel-Shaded Kunst:</strong> Bruger de flade, klare farver, der er typiske for cel-shaded animation.</li>
+        <li><strong>Karikatur:</strong> Genererer overdrevede, tegneserieagtige portrætter.</li>
+        <li><strong>Cel-Shaded Kunst:</strong> Bruger de flade, stærke farver, der er typiske for cel-shaded animation.</li>
         <li><strong>Karakterdesign Ark:</strong> Fokuserer på rene og klare karakterdesigns, der er velegnede til animation.</li>
-        <li><strong>Klassicisme Kunst:</strong> Efterligner den raffinerede og idealiserede kunststil fra den klassiske antik.</li>
-        <li><strong>Farvefelt Maleri:</strong> Har store områder af en enkelt farve for at skabe en flad farveflade.</li>
+        <li><strong>Klassicisme Kunst:</strong> Efterligner den raffinerede og idealiserede kunststil fra klassisk antik.</li>
+        <li><strong>Farvefelt Maleri:</strong> Har store områder af enkeltfarve for at skabe en flad farveflade.</li>
         <li><strong>Farvet Blyant Kunst:</strong> Efterligner teksturen og udseendet af farvet blyant tegninger.</li>
         <li><strong>Konceptuel Kunst:</strong> Prioriterer ideer og koncepter over æstetiske eller materielle bekymringer.</li>
         <li><strong>Konstruktivisme:</strong> Reflekterer den industrielle, geometriske stil fra den konstruktivistiske bevægelse.</li>
         <li><strong>Kubisme:</strong> Nedbryder objekter til geometriske former og præsenterer dem i abstrakte former.</li>
         <li><strong>Dadaisme:</strong> Fremhæver absurditet, irrationalitet og anti-kunst æstetik.</li>
         <li><strong>Mørk Fantasi:</strong> Skaber en stemningsfuld, gotisk atmosfære med mørke og uhyggelige elementer.</li>
-        <li><strong>Mørk Stemning:</strong> Bruger lav belysning og skygge til at skabe en stemningsfuld ambiance.</li>
-        <li><strong>DMT Kunst:</strong> Har livlige, psykedeliske visuals inspireret af DMT oplevelser.</li>
-        <li><strong>Doodle Kunst:</strong> Fremhæver finurlige og legende tegneserier, ofte indviklede og detaljerede.</li>
+        <li><strong>Mørk Stemning:</strong> Bruger lav belysning og skygge for at skabe en stemningsfuld ambiance.</li>
+        <li><strong>DMT Kunst:</strong> Har levende, psykedeliske visuals inspireret af DMT oplevelser.</li>
+        <li><strong>Doodle Kunst:</strong> Fremhæver finurlige og legende tegneserier, ofte intrikate og detaljerede.</li>
         <li><strong>Dobbelt Eksponering:</strong> Kombinerer to billeder til ét, hvilket skaber en surrealistisk, lagdelt effekt.</li>
-        <li><strong>Dryppende Malingsplatter:</strong> Bruger splattet og dryppende maling til at skabe dynamiske og kaotiske kompositioner.</li>
-        <li><strong>Ekspressionisme:</strong> Prioriterer følelsesmæssig udtryk frem for realistisk repræsentation, ofte ved at bruge klare farver og dramatiske former.</li>
+        <li><strong>Dryppende Malingsplatter:</strong> Bruger splatter og dryppende maling til at skabe dynamiske og kaotiske kompositioner.</li>
+        <li><strong>Ekspressionisme:</strong> Prioriterer følelsesmæssig udtryk over realistisk repræsentation, ofte med brug af stærke farver og dramatiske former.</li>
         <li><strong>Fadede Polaroid Foto:</strong> Efterligner det ældede og nostalgiske udseende af et fadet Polaroid fotografi.</li>
-        <li><strong>Fauvisme:</strong> Bruger livlige, unaturlige farver og dristige penselstræk, inspireret af Fauvisme-bevægelsen.</li>
+        <li><strong>Fauvisme:</strong> Bruger levende, unaturlige farver og stærke penselstræk, inspireret af Fauvisme bevægelsen.</li>
         <li><strong>Flad 2D:</strong> Fremhæver enkle, flade designs med minimal skygge eller dybde, ofte i en tegneseriestil.</li>
-        <li><strong>Fortnite Stil:</strong> Reflekterer den livlige, tegneserieagtige kunststil, der er typisk for Fortnite videospillet.</li>
-        <li><strong>Futurisme:</strong> Fokuserer på dynamisk bevægelse, energi og skildringen af fremtidige teknologier.</li>
+        <li><strong>Fortnite Stil:</strong> Reflekterer den levende, tegneserieagtige kunststil, der er typisk for Fortnite videospillet.</li>
+        <li><strong>Futurisme:</strong> Fokuserer på dynamisk bevægelse, energi og skildring af fremtidige teknologier.</li>
         <li><strong>Glitchcore:</strong> Fremhæver digitale fejl og glitches som en kunstnerisk stil, ofte med forvrængede visuals.</li>
-        <li><strong>Glo-Fi:</strong> Bruger blødt, lysende lys til at skabe en drømmende, etereal atmosfære.</li>
+        <li><strong>Glo-Fi:</strong> Bruger bløde, lysende lys for at skabe en drømmende, etereal atmosfære.</li>
         <li><strong>Googie Stil:</strong> Reflekterer de futuristiske og Space Age designtrends fra midten af det 20. århundrede.</li>
-        <li><strong>Graffiti Kunst:</strong> Bruger de livlige, gade-stil æstetikker, der er typiske for graffiti og urbane vægmalerier.</li>
+        <li><strong>Graffiti Kunst:</strong> Bruger de levende, gade-stil æstetik, der er typisk for graffiti og urbane vægmalerier.</li>
         <li><strong>Harlem Renaissance Kunst:</strong> Reflekterer de rige kulturelle og kunstneriske udtryk fra Harlem Renaissance.</li>
-        <li><strong>High Fashion:</strong> Fremhæver de slanke, sofistikerede og avantgarde æstetikker fra high fashion.</li>
+        <li><strong>High Fashion:</strong> Fremhæver den slanke, sofistikerede og avantgarde æstetik af high fashion.</li>
         <li><strong>Idyllisk:</strong> Skaber en fredelig, rolig og ofte pastoral atmosfære.</li>
-        <li><strong>Impressionisme:</strong> Bruger løse penselstræk og livlige farver til at fange lys- og atmosfæreffekter.</li>
+        <li><strong>Impressionisme:</strong> Bruger løse penselstræk og levende farver til at fange lys- og atmosfære effekter.</li>
         <li><strong>Infografik Tegning:</strong> Fremhæver klare, visuelt tiltalende layouts til præsentation af information grafisk.</li>
         <li><strong>Blæk Dryppende Tegning:</strong> Bruger blæk til at skabe flydende, dryppende effekter i en tegning.</li>
-        <li><strong>Japansk Blæk Tegning:</strong> Efterligner de traditionelle penselstræk teknikker og æstetikker fra japansk blæk kunst.</li>
+        <li><strong>Japansk Blæk Tegning:</strong> Efterligner de traditionelle penselstræk teknikker og æstetik fra japansk blæk kunst.</li>
         <li><strong>Knolling Fotografi:</strong> Fremhæver den pæne og organiserede arrangement af objekter, ofte fotograferet ovenfra.</li>
-        <li><strong>Lys Glad Atmosfære:</strong> Bruger lyse farver og belysning til at skabe en glad og opløftende atmosfære.</li>
+        <li><strong>Lys Glad Atmosfære:</strong> Bruger lyse farver og belysning for at skabe en glad og opløftende atmosfære.</li>
         <li><strong>Logo Design:</strong> Fokuserer på at skabe rene, genkendelige logoer og branding elementer.</li>
-        <li><strong>Luxuriøs Elegance:</strong> Fremhæver sofistikation og luksus, ofte med rige teksturer og materialer.</li>
-        <li><strong>Makro Fotografi:</strong> Fokuserer på ekstrem nærbilleder, ofte afslørende indviklede detaljer, der ikke er synlige for det blotte øje.</li>
-        <li><strong>Mandala Kunst:</strong> Skaber indviklede, symmetriske mønstre inspireret af traditionelle mandala designs.</li>
-        <li><strong>Marker Tegning:</strong> Efterligner de dristige, livlige linjer og farver, der er typiske for marker tegninger.</li>
-        <li><strong>Middelalderlig:</strong> Reflekterer kunst- og designæstetikker fra middelalderen.</li>
+        <li><strong>Luxuriøs Elegance:</strong> Fremhæver sofistikering og luksus, ofte med rige teksturer og materialer.</li>
+        <li><strong>Makro Fotografi:</strong> Fokuserer på ekstrem nærbilleder, ofte afslørende intrikate detaljer, der ikke er synlige for det blotte øje.</li>
+        <li><strong>Mandala Kunst:</strong> Skaber intrikate, symmetriske mønstre inspireret af traditionelle mandala designs.</li>
+        <li><strong>Marker Tegning:</strong> Efterligner de stærke, levende linjer og farver, der er typiske for marker tegninger.</li>
+        <li><strong>Middelalderlig:</strong> Reflekterer kunst- og designæstetik fra middelalderen.</li>
         <li><strong>Minimalisme:</strong> Fremhæver enkelhed og reduktion af former til deres essentielle elementer.</li>
         <li><strong>Neo-Barok:</strong> Genoplive den overdådige, dramatiske stil fra barokken, med moderne indflydelser.</li>
         <li><strong>Neo-Byzantinsk:</strong> Kombinerer den udsmykkede, religiøse kunststil fra det Byzantinske Imperium med nutidige elementer.</li>
-        <li><strong>Neo-Futurisme:</strong> Fokuserer på futuristiske designs, ofte med slanke, højteknologiske æstetikker.</li>
+        <li><strong>Neo-Futurisme:</strong> Fokuserer på futuristiske designs, ofte med slanke, high-tech æstetik.</li>
         <li><strong>Neo-Impressionisme:</strong> Bruger små, distinkte prikker af farve til at skabe billeder, inspireret af den neo-impressionistiske bevægelse.</li>
-        <li><strong>Neo-Rokoko:</strong> Genoplive den udsmykkede, dekorative stil fra Rokoko-perioden, med moderne twists.</li>
-        <li><strong>Neoklassicisme:</strong> Efterligner kunst- og designæstetikker fra klassisk antik, med fokus på harmoni og enkelhed.</li>
+        <li><strong>Neo-Rokoko:</strong> Genoplive den udsmykkede, dekorative stil fra Rokoko perioden, med moderne twists.</li>
+        <li><strong>Neoklassicisme:</strong> Efterligner kunst- og designæstetik fra klassisk antik, med fokus på harmoni og enkelhed.</li>
         <li><strong>Op Kunst:</strong> Skaber optiske illusioner og effekter gennem brug af geometriske mønstre og kontraster.</li>
-        <li><strong>Udsmykket og Indviklet:</strong> Fokuserer på meget detaljerede, udsmykkede designs med fokus på dekoration.</li>
+        <li><strong>Udsmykket og Intrikat:</strong> Fokuserer på meget detaljerede, udsmykkede designs med fokus på dekoration.</li>
         <li><strong>Blyant Skitse Tegning:</strong> Efterligner teksturen og udseendet af blyantskitser.</li>
-        <li><strong>Pop Kunst:</strong> Bruger dristige farver og billeder inspireret af populærkultur og massemedier.</li>
-        <li><strong>Rokoko:</strong> Reflekterer den udsmykkede, dekorative kunststil fra Rokoko-perioden, med fokus på lethed og elegance.</li>
-        <li><strong>Silhuet Kunst:</strong> Bruger stærke kontraster mellem lys og skygge til at skabe dristige, silhuet-baserede billeder.</li>
+        <li><strong>Pop Kunst:</strong> Bruger stærke farver og billeder inspireret af populærkultur og massemedier.</li>
+        <li><strong>Rokoko:</strong> Reflekterer den udsmykkede, dekorative kunststil fra Rokoko perioden, med fokus på lethed og elegance.</li>
+        <li><strong>Silhuet Kunst:</strong> Bruger stærke kontraster mellem lys og skygge for at skabe dristige, silhuet-baserede billeder.</li>
         <li><strong>Enkel Vektor Kunst:</strong> Fremhæver rene, geometriske former og flade farver, typisk for vektor kunst.</li>
-        <li><strong>SketchUp:</strong> Efterligner udseendet og følelsen af 3D-modeller lavet med SketchUp-software.</li>
-        <li><strong>Steampunk:</strong> Kombinerer victorianske æstetikker med dampdrevne teknologier, hvilket skaber en retro-futuristisk stil.</li>
+        <li><strong>SketchUp:</strong> Efterligner udseendet og følelsen af 3D modeller skabt med SketchUp software.</li>
+        <li><strong>Steampunk:</strong> Kombinerer victoriansk æstetik med dampdrevne teknologier, hvilket skaber en retro-futuristisk stil.</li>
         <li><strong>Surrealisme:</strong> Blander virkelighed og drømmeagtige billeder for at skabe surrealistiske, fantastiske scener.</li>
         <li><strong>Suprematisme:</strong> Fokuserer på grundlæggende geometriske former og begrænsede farvepaletter, inspireret af den suprematistiske bevægelse.</li>
-        <li><strong>Terragen:</strong> Efterligner de realistiske, computer-genererede landskaber skabt ved hjælp af Terragen-software.</li>
-        <li><strong>Rolig Afslappende Atmosfære:</strong> Bruger bløde farver og beroligende billeder til at skabe et fredeligt og roligt miljø.</li>
-        <li><strong>Klistermærke Designs:</strong> Fokuserer på at skabe legende, tegneserieagtige billeder, der er velegnede til klistermærker.</li>
-        <li><strong>Vibrant Rim Light:</strong> Fremhæver klart, rimlys omkring emner for at skabe en slående, livlig effekt.</li>
-        <li><strong>Volumetrisk Belysning:</strong> Bruger lysstråler og atmosfæriske effekter til at skabe dybde og dimension.</li>
+        <li><strong>Terragen:</strong> Efterligner de realistiske, computer-genererede landskaber skabt med Terragen software.</li>
+        <li><strong>Tranquil Afslappende Atmosfære:</strong> Bruger bløde farver og beroligende billeder for at skabe et fredeligt og roligt miljø.</li>
+        <li><strong>Sticker Designs:</strong> Fokuserer på at skabe legende, tegneserieagtige billeder velegnede til klistermærker.</li>
+        <li><strong>Vibrant Rim Light:</strong> Fremhæver lysende, kantlys omkring emner for at skabe en slående, levende effekt.</li>
+        <li><strong>Volumetrisk Belysning:</strong> Bruger lysstråler og atmosfæriske effekter for at skabe dybde og dimension.</li>
         <li><strong>Akvarel:</strong> Efterligner de bløde, flydende teksturer af akvarelmalerier.</li>
-        <li><strong>Finurlig og Legesyg:</strong> Fokuserer på lette, fantasifulde og ofte quirky billeder.</li>
+        <li><strong>Finurlig og Legende:</strong> Fokuserer på lette, fantasifulde og ofte quirky billeder.</li>
         <li><strong>Skarp:</strong> Forbedrer klarhed og kantdefinition for et skarpere udseende.</li>
         <li><strong>Mesterværk:</strong> Fremhæver høj kvalitet, detaljeret og poleret kunstnerisk output.</li>
-        <li><strong>Fotografi:</strong> Sigter mod en realistisk og livagtig fotografisk kvalitet.</li>
+        <li><strong>Fotografi:</strong> Stræber efter en realistisk og livagtig fotografisk kvalitet.</li>
         <li><strong>Negativ:</strong> Inverterer farver for at skabe en fotografisk negativ effekt.</li>
         <li><strong>Reklamer - Reklame:</strong> Fokuserer på rene, professionelle visuals velegnet til reklame.</li>
         <li><strong>Reklamer - Automobil:</strong> Tilpasser den visuelle stil til dynamisk og poleret bilreklame.</li>
-        <li><strong>Reklamer - Virksomhed:</strong> Fremhæver slank, professionel design velegnet til virksomhedsmiljøer.</li>
+        <li><strong>Reklamer - Virksomhed:</strong> Fremhæver slanke, professionelle designs velegnet til virksomhedsmiljøer.</li>
         <li><strong>Reklamer - Mode Editorial:</strong> Fremhæver det stilfulde, high-fashion look, der bruges i modeeditorials.</li>
-        <li><strong>Reklamer - Mad Fotografi:</strong> Optimerer billeder til det livlige og appetitlige udseende, der er typisk for madfotografi.</li>
-        <li><strong>Reklamer - Gourmet Mad Fotografi:</strong> Fremhæver de rige, detaljerede æstetikker af gourmet madfotografi.</li>
+        <li><strong>Reklamer - Madfotografi:</strong> Optimerer billeder til det levende og appetitlige look, der er typisk for madfotografi.</li>
+        <li><strong>Reklamer - Gourmet Madfotografi:</strong> Fremhæver de rige, detaljerede æstetikker af gourmet madfotografi.</li>
         <li><strong>Reklamer - Luksus:</strong> Fokuserer på den overdådige, high-end stil velegnet til luksusmærker.</li>
-        <li><strong>Reklamer - Ejendom:</strong> Fremhæver de rene og indbydende visuals, der er typiske for ejendomsmæssig reklame.</li>
+        <li><strong>Reklamer - Ejendom:</strong> Fremhæver de rene og indbydende visuals, der er typiske for ejendom reklame.</li>
         <li><strong>Reklamer - Detailhandel:</strong> Fremhæver den tiltalende, forbrugerfokuserede stil velegnet til detailhandel reklame.</li>
         <li><strong>Hyperrealisme:</strong> Stræber efter en ekstremt detaljeret, livagtig visuel stil.</li>
-        <li><strong>Pointillisme:</strong> Bruger små, distinkte prikker af farve til at skabe et billede, inspireret af pointillistbevælgelsen.</li>
-        <li><strong>Psykedelisk:</strong> Fremhæver livlige farver og surrealistiske visuals inspireret af psykedelisk kunst.</li>
-        <li><strong>Renaissance:</strong> Reflekterer den harmoniske, klassiske stil fra renæssancekunst.</li>
+        <li><strong>Pointillisme:</strong> Bruger små, distinkte prikker af farve til at skabe et billede, inspireret af pointillist bevægelsen.</li>
+        <li><strong>Psykedelisk:</strong> Fremhæver levende farver og surrealistiske visuals inspireret af psykedelisk kunst.</li>
+        <li><strong>Renaissance:</strong> Reflekterer den harmoniske, klassiske stil af renæssancekunst.</li>
         <li><strong>Typografi:</strong> Fokuserer på kreativ og kunstnerisk brug af tekst og skrifttyper.</li>
-        <li><strong>Futuristisk Biomekanisk:</strong> Kombinerer futuristiske og biomekaniske elementer for at skabe en høj-teknologisk, organisk stil.</li>
-        <li><strong>Futuristisk Biomekanisk Cyberpunk:</strong> Sammenfletter biomekaniske og cyberpunk æstetikker for et gritty, futuristisk look.</li>
-        <li><strong>Futuristisk Cybernetisk:</strong> Fokuserer på høj-teknologiske, cybernetiske visuals.</li>
+        <li><strong>Futuristisk Biomekanisk:</strong> Kombinerer futuristiske og biomekaniske elementer for at skabe en high-tech, organisk stil.</li>
+        <li><strong>Futuristisk Biomekanisk Cyberpunk:</strong> Fletter biomekaniske og cyberpunk æstetikker for et gritty, futuristisk look.</li>
+        <li><strong>Futuristisk Cybernetisk:</strong> Fokuserer på high-tech, cybernetiske visuals.</li>
         <li><strong>Futuristisk Cybernetisk Robot:</strong> Fremhæver robot- og cybernetiske designs med et futuristisk præg.</li>
         <li><strong>Futuristisk Cyberpunk Bylandskab:</strong> Reflekterer de gritty, neonlysede bylandskaber, der er typiske for cyberpunk kunst.</li>
         <li><strong>Futuristisk Sci-Fi:</strong> Fokuserer på futuristiske og science fiction-inspirerede æstetikker.</li>
         <li><strong>Futuristisk Retro Cyberpunk:</strong> Kombinerer retro og cyberpunk elementer for en nostalgisk, men futuristisk stil.</li>
-        <li><strong>Futuristisk Retro:</strong> Sammenfletter futuristiske visuals med retro designelementer.</li>
+        <li><strong>Futuristisk Retro:</strong> Fletter futuristiske visuals med retro designelementer.</li>
         <li><strong>Futuristisk Vaporwave:</strong> Fremhæver de nostalgiske, surrealistiske visuals, der er typiske for Vaporwave kunst.</li>
         <li><strong>Spil Boble:</strong> Fokuserer på en legende, boblet æstetik, der ofte ses i casual spil.</li>
-        <li><strong>Spil Cyberpunk:</strong> Sammenfletter spildesign elementer med cyberpunk æstetikker.</li>
+        <li><strong>Spil Cyberpunk:</strong> Fletter spildesign elementer med cyberpunk æstetik.</li>
         <li><strong>Spil Kamp:</strong> Reflekterer den dynamiske, intense stil, der er typisk for kampspil.</li>
         <li><strong>Spil GTA:</strong> Efterligner den gritty, urbane stil, der er typisk for Grand Theft Auto spil.</li>
-        <li><strong>Spil Mario:</strong> Fokuserer på den livlige, tegneserieagtige stil, der er typisk for Mario spil.</li>
+        <li><strong>Spil Mario:</strong> Fokuserer på den levende, tegneserieagtige stil, der er typisk for Mario spil.</li>
         <li><strong>Spil Minecraft:</strong> Efterligner den blokagtige, pixeliserede stil, der er typisk for Minecraft.</li>
-        <li><strong>Spil Pokemon:</strong> Reflekterer den livlige, anime-inspirerede stil, der er typisk for Pokémon spil.</li>
+        <li><strong>Spil Pokemon:</strong> Reflekterer den levende, anime-inspirerede stil, der er typisk for Pokémon spil.</li>
         <li><strong>Spil Retro Arkade:</strong> Fremhæver den nostalgiske, pixeliserede stil, der er typisk for retro arkadespil.</li>
         <li><strong>Spil RPG Fantasi:</strong> Reflekterer de detaljerede, fantasi-inspirerede æstetikker, der er typiske for RPG spil.</li>
         <li><strong>Spil Strategi:</strong> Fokuserer på det rene, funktionelle design, der er typisk for strategispil.</li>
         <li><strong>Spil Streetfighter:</strong> Efterligner den dristige, dynamiske stil, der er typisk for Street Fighter spil.</li>
         <li><strong>Spil Zelda:</strong> Reflekterer den fantasi-inspirerede stil, der er typisk for Zelda spil.</li>
         <li><strong>Diverse Arkitektonisk:</strong> Fokuserer på rene, præcise arkitektoniske gengivelser.</li>
-        <li><strong>Diverse Disco:</strong> Fremhæver de livlige, neonlysede æstetikker, der er typiske for disco kultur.</li>
+        <li><strong>Diverse Disco:</strong> Fremhæver de levende, neonlysede æstetikker, der er typiske for disco kultur.</li>
         <li><strong>Diverse Drømmescene:</strong> Skaber surrealistiske, drømmeagtige miljøer.</li>
         <li><strong>Diverse Dystopisk:</strong> Reflekterer de gritty, dystre visuals, der er typiske for dystopiske indstillinger.</li>
         <li><strong>Diverse Eventyr:</strong> Fremhæver de finurlige, magiske elementer, der er typiske for eventyr.</li>
@@ -220,50 +220,50 @@
         <li><strong>Diverse Grunge:</strong> Fremhæver de gritty, rå æstetikker, der er typiske for grunge kultur.</li>
         <li><strong>Diverse Horror:</strong> Fokuserer på mørke, uhyggelige og foruroligende visuals, der er typiske for horror.</li>
         <li><strong>Diverse Kawaii:</strong> Reflekterer den søde, charmerende stil, der er typisk for Kawaii kultur.</li>
-        <li><strong>Diverse Lovecraftian:</strong> Fremhæver den uhyggelige, kosmiske horror, der er typisk for Lovecraftiansk fiktion.</li>
+        <li><strong>Diverse Lovecraftiansk:</strong> Fremhæver den uhyggelige, kosmiske horror, der er typisk for Lovecraftiansk fiktion.</li>
         <li><strong>Diverse Makaber:</strong> Fokuserer på mørke, morbide og foruroligende temaer.</li>
         <li><strong>Diverse Manga:</strong> Efterligner den dristige, dynamiske stil, der er typisk for manga.</li>
-        <li><strong>Diverse Metropol:</strong> Reflekterer de slanke, urbane æstetikker, der er typiske for moderne metropoler.</li>
+        <li><strong>Diverse Metropol:</strong> Reflekterer den slanke, urbane æstetik, der er typisk for moderne metropoler.</li>
         <li><strong>Diverse Minimalistisk:</strong> Fremhæver enkelhed og reduktion af former til deres essentielle elementer.</li>
         <li><strong>Diverse Monokrom:</strong> Fokuserer på billeder skabt i varierende nuancer af en enkelt farve.</li>
         <li><strong>Diverse Nautisk:</strong> Reflekterer de maritime-inspirerede æstetikker, der er typiske for nautiske temaer.</li>
         <li><strong>Diverse Rum:</strong> Fremhæver de enorme, overjordiske visuals, der er typiske for rumindstillinger.</li>
-        <li><strong>Diverse Glasmaleri:</strong> Efterligner de indviklede, farverige designs, der er typiske for glasmaleri kunst.</li>
+        <li><strong>Diverse Glasmaleri:</strong> Efterligner de intrikate, farverige designs, der er typiske for glasmaleri kunst.</li>
         <li><strong>Diverse Techwear Mode:</strong> Fokuserer på de futuristiske, funktionelle æstetikker, der er typiske for techwear mode.</li>
         <li><strong>Diverse Tribal:</strong> Reflekterer de dristige, kulturelle æstetikker, der er typiske for tribal kunst.</li>
-        <li><strong>Diverse Zentangle:</strong> Fremhæver indviklede, repetitive mønstre, der er typiske for Zentangle kunst.</li>
+        <li><strong>Diverse Zentangle:</strong> Fremhæver intrikate, repetitive mønstre, der er typiske for Zentangle kunst.</li>
         <li><strong>Papercraft Collage:</strong> Bruger klippet papir til at skabe lagdelte, teksturerede collager.</li>
-        <li><strong>Papercraft Flad Papirkut:</strong> Fremhæver flade, klippede papirdesigns.</li>
-        <li><strong>Papercraft Kirigami:</strong> Fokuserer på de indviklede, foldede designs, der er typiske for Kirigami.</li>
-        <li><strong>Papercraft Papmaché:</strong> Bruger papmaché til at skabe teksturerede, tredimensionale former.</li>
-        <li><strong>Papercraft Papir Quilling:</strong> Fremhæver de delikate, rullede papirdesigns, der er typiske for papir quilling.</li>
-        <li><strong>Papercraft Papirkut Collage:</strong> Kombinerer klippede papir elementer til at skabe lagdelte collager.</li>
-        <li><strong>Papercraft Papirkut Skyggeboks:</strong> Bruger lagdelte papirkut til at skabe tredimensionale skydebokse.</li>
-        <li><strong>Papercraft Stacked Papirkut:</strong> Fokuserer på lagdelte, stablede papirdesigns.</li>
-        <li><strong>Papercraft Tykk Lagdelt Papirkut:</strong> Fremhæver det dimensionelle, lagdelte udseende, der er typisk for tykke papirkut designs.</li>
+        <li><strong>Papercraft Flad Papirkut:</strong> Fremhæver flade, klippede papir designs.</li>
+        <li><strong>Papercraft Kirigami:</strong> Fokuserer på de intrikate, foldede designs, der er typiske for Kirigami.</li>
+        <li><strong>Papercraft Papirmache:</strong> Bruger papirmache til at skabe teksturerede, tredimensionale former.</li>
+        <li><strong>Papercraft Papir Quilling:</strong> Fremhæver de delikate, rullede papir designs, der er typiske for papir quilling.</li>
+        <li><strong>Papercraft Papirkut Collage:</strong> Kombinerer klippede papir elementer for at skabe lagdelte collager.</li>
+        <li><strong>Papercraft Papirkut Skyggeboks:</strong> Bruger lagdelte papirkutter til at skabe tredimensionale skyggebokse.</li>
+        <li><strong>Papercraft Stacked Papirkut:</strong> Fokuserer på lagdelte, stablede papir designs.</li>
+        <li><strong>Papercraft Tykk Lagdelt Papirkut:</strong> Fremhæver det dimensionelle, lagdelte look, der er typisk for tykke papirkut designs.</li>
         <li><strong>Foto Alien:</strong> Fokuserer på surrealistiske, udenjordiske visuals.</li>
         <li><strong>Foto Film Noir:</strong> Fremhæver de mørke, stemningsfulde æstetikker, der er typiske for film noir.</li>
-        <li><strong>Foto Glamour:</strong> Fremhæver det polerede, stilfulde look, der er typisk for glamourfotografi.</li>
+        <li><strong>Foto Glamour:</strong> Fremhæver det polerede, stilfulde look, der er typisk for glamour fotografi.</li>
         <li><strong>Foto HDR:</strong> Bruger høj dynamisk rækkevidde (HDR) til at skabe billeder med et bredt lys- og farvespektrum.</li>
-        <li><strong>Foto iPhone Fotografisk:</strong> Efterligner det rene, moderne look, der er typisk for iPhone fotografi.</li>
-        <li><strong>Foto Lang Eksponering:</strong> Bruger lang eksponering til at skabe dynamiske, bevægelsesudtværede effekter.</li>
+        <li><strong>Foto iPhone Fotografisk:</strong> Efterligner den rene, moderne stil, der er typisk for iPhone fotografi.</li>
+        <li><strong>Foto Lang Eksponering:</strong> Bruger lang eksponering til at skabe dynamiske, bevægelsesslørede effekter.</li>
         <li><strong>Foto Neon Noir:</strong> Kombinerer neonlys med de mørke, stemningsfulde æstetikker fra noir.</li>
         <li><strong>Foto Silhuet:</strong> Fokuserer på stærke kontraster mellem lys og skygge for at skabe silhuet-baserede billeder.</li>
         <li><strong>Foto Tilt Shift:</strong> Bruger tilt-shift effekter til at skabe et miniaturiseret, legetøjsagtigt look.</li>
-        <li><strong>3D Model:</strong> Fokuserer på det rene, detaljerede look, der er typisk for 3D-modeller.</li>
+        <li><strong>3D Model:</strong> Fokuserer på det rene, detaljerede look, der er typisk for 3D modeller.</li>
         <li><strong>Analog Film:</strong> Efterligner det kornede, teksturerede look, der er typisk for analog filmfotografi.</li>
-        <li><strong>Anime:</strong> Fremhæver den livlige, dynamiske stil, der er typisk for anime.</li>
-        <li><strong>Cinematisk:</strong> Skaber en dramatisk, filmisk effekt med stærk belysning og kompositioner.</li>
-        <li><strong>Tegneserie:</strong> Bruger dristige linjer og livlige farver, der er typiske for tegneserie kunst.</li>
+        <li><strong>Anime:</strong> Fremhæver den levende, dynamiske stil, der er typisk for anime.</li>
+        <li><strong>Cinematisk:</strong> Skaber en dramatisk, filmagtig effekt med stærk belysning og kompositioner.</li>
+        <li><strong>Tegneserie:</strong> Bruger stærke linjer og levende farver, der er typiske for tegneserie kunst.</li>
         <li><strong>Håndværk Ler:</strong> Efterligner det teksturerede, håndlavede look af ler modeller.</li>
         <li><strong>Digital Kunst:</strong> Fokuserer på ren, poleret digital kunst.</li>
         <li><strong>Fantasi Kunst:</strong> Fremhæver de detaljerede, fantasifulde visuals, der er typiske for fantasikunst.</li>
         <li><strong>Isometrisk:</strong> Bruger en isometrisk perspektiv til at skabe et tredimensionelt look.</li>
-        <li><strong>Linje Kunst:</strong> Fokuserer på rene, klare linjer for at skabe detaljerede tegninger.</li>
-        <li><strong>Lav Poly:</strong> Bruger lav-polygone 3D-modeller til at skabe et minimalistisk, geometrisk look.</li>
+        <li><strong>Linje Kunst:</strong> Fokuserer på rene, skarpe linjer for at skabe detaljerede tegninger.</li>
+        <li><strong>Lav Poly:</strong> Bruger lav-polygone 3D modeller til at skabe et minimalistisk, geometrisk look.</li>
         <li><strong>Neonpunk:</strong> Kombinerer neonlys med de gritty æstetikker fra cyberpunk.</li>
-        <li><strong>Origami:</strong> Fokuserer på de indviklede, foldede designs, der er typiske for origami.</li>
-        <li><strong>Fotografisk:</strong> Sigter mod realistiske, livagtige visuals.</li>
+        <li><strong>Origami:</strong> Fokuserer på de intrikate, foldede designs, der er typiske for origami.</li>
+        <li><strong>Fotografisk:</strong> Stræber efter realistiske, livagtige visuals.</li>
         <li><strong>Pixel Kunst:</strong> Bruger pixeliserede designs til at skabe et retro, videospil-inspireret look.</li>
         <li><strong>Tekstur:</strong> Fokuserer på rige, detaljerede teksturer for at forbedre visuel dybde.</li>
     </ul>

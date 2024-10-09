@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মাল্টি ভিউ ফিচার গাইড</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #555;
+        }
+        .example {
+            margin-bottom: 30px;
+        }
+        .result {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        img, video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            img, video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>মাল্টি ভিউ ফিচার ব্যবহারের গাইড</h2>
+    <p>AiCasso-তে মাল্টি ভিউ ফিচার আপনাকে আপনার ছবির মধ্যে একটি বস্তুকে বিভিন্ন কোণ থেকে দেখতে দেয়, যা বস্তুর একাধিক দৃষ্টিকোণ তৈরি করে। এটি 3D আকৃতির আরও ভাল বোঝাপড়া বা পণ্যের প্রদর্শনের জন্য বিশেষভাবে উপকারী। এই ফিচারটি সবচেয়ে ভাল কাজ করে যখন বস্তুর পেছনে কোনো ব্যাকগ্রাউন্ড না থাকে, তাই সর্বোত্তম ফলাফলের জন্য বিভ্রান্তিকর উপাদানগুলি সরিয়ে ফেলতে নিশ্চিত হন।</p>
+
+    <h3>এটি কিভাবে কাজ করে:</h3>
+    
+    <div class="example">
+        <strong>ইনপুট ছবি:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/input.jpg" alt="ইনপুট ছবি" loading="lazy">
+        </div>
+        <strong>প্রম্পট:</strong>
+        <p>"এই বস্তুকে একাধিক দৃষ্টিকোণ থেকে দেখান"</p>
+        <strong>ফলাফল:</strong>
+        <div class="result">
+            <img src="../../images/tutorials/multiview/result.jpg" alt="ফলাফল ছবি" loading="lazy">
+        </div>
+    </div>
+
+    <h3>সর্বোত্তম ফলাফলের জন্য টিপস</h3>
+    <p>আপনার ছবিটি দুর্দান্ত হতে নিশ্চিত করার জন্য এখানে কিছু টিপস:</p>
+
+    <ul>
+        <li><strong>ব্যাকগ্রাউন্ড ছাড়া বস্তুর ছবি:</strong> মাল্টি ভিউ ফিচারটি সবচেয়ে ভাল কাজ করে যখন আপনার ছবির বস্তুটি ব্যাকগ্রাউন্ড থেকে বিচ্ছিন্ন থাকে। এটি AiCasso-কে শুধুমাত্র বস্তুর উপর মনোযোগ কেন্দ্রীভূত করতে দেয় এবং পরিষ্কার দৃষ্টিকোণ তৈরি করে।</li>
+        <li><strong>ভাল আলো:</strong> নিশ্চিত করুন যে ইনপুট ছবিতে আপনার বস্তুটি ভালভাবে আলোকিত, কারণ ছায়া এবং অসম আলো বিভিন্ন কোণ থেকে বস্তুর চেহারাকে প্রভাবিত করতে পারে।</li>
+        <li><strong>একাধিক বস্তুর ছবি:</strong> যদি ছবিতে একাধিক বস্তু থাকে, তবে আপনি যে বস্তুকে বিভিন্ন কোণ থেকে দেখতে চান সেটিকে বিচ্ছিন্ন করার চেষ্টা করুন বা একটি সহজ ছবি বেছে নিন যেখানে শুধুমাত্র একটি ফোকাল বস্তু রয়েছে।</li>
+    </ul>
+
+    <p>AiCasso-তে সমস্ত ফিচারের মতো, আপনাকে বেশি চিন্তা করতে হবে না—আপনি যা চান তা বর্ণনা করুন এবং AiCasso কঠিন কাজটি করবে। মাল্টি ভিউ ফিচারটি পণ্য প্রদর্শন, সৃজনশীল প্রদর্শনী এবং আরও অনেক কিছুর জন্য নিখুঁত!</p>
+
+</body>
+</html>

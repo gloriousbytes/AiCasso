@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hướng Dẫn Tính Năng Chụp Chân Dung</title>
+    <title>Hướng Dẫn Tính Năng Chân Dung</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -47,41 +48,41 @@
 
 <body>
 
-    <h2>Hướng Dẫn Sử Dụng Tính Năng Chụp Chân Dung</h2>
-    <p>Với tính năng Chụp Chân Dung trong AiCasso, bạn có thể tạo ra những bức chân dung tuyệt vời và độc đáo chỉ bằng cách mô tả những gì bạn muốn. Nó hoàn hảo để tạo ra những hình ảnh tuyệt đẹp dù bạn muốn một cảnh yên bình, một chiến binh hùng vĩ, hay bất cứ điều gì khác mà trí tưởng tượng của bạn tạo ra!</p>
+    <h2>Hướng Dẫn Sử Dụng Tính Năng Chân Dung</h2>
+    <p>Với tính năng Chân Dung trong AiCasso, bạn có thể tạo ra những bức chân dung tuyệt đẹp và độc đáo chỉ bằng cách mô tả những gì bạn muốn. Nó hoàn hảo cho việc tạo ra những hình ảnh ấn tượng, cho dù bạn muốn một cảnh yên bình, một chiến binh hùng mạnh, hay bất cứ điều gì mà trí tưởng tượng của bạn nghĩ ra!</p>
 
-    <h3>Cách Hoạt Động:</h3>
+    <h3>Cách Thức Hoạt Động:</h3>
     
     <div class="example">
         <strong>Hình Ảnh Đầu Vào:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+            <img src="../../images/tutorials/headshot/input.jpg" alt="Hình Ảnh Đầu Vào">
         </div>
-        <strong>Lời Nhắc 1:</strong>
+        <strong>Đề Xuất 1:</strong>
         <p>"Một người đàn ông trong tuyết"</p>
         <strong>Kết Quả 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+            <img src="../../images/tutorials/headshot/maninsnow.jpg" alt="Kết Quả Người Đàn Ông Trong Tuyết">
         </div>
-        <strong>Lời Nhắc 2:</strong>
+        <strong>Đề Xuất 2:</strong>
         <p>"Một chiến binh trong rừng, sử dụng tỷ lệ trung bình cao như 78% của cái này"</p>
         <strong>Kết Quả 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+            <img src="../../images/tutorials/headshot/warrior.jpg" alt="Kết Quả Chiến Binh Trong Rừng">
         </div>
     </div>
 
-    <h3>Tham Số Tùy Chọn</h3>
-    <p>Muốn thêm một chút phong cách hoặc kiểm soát cho các bức chân dung được tạo ra của bạn? Dưới đây là một số tùy chọn thú vị bạn có thể điều chỉnh:</p>
+    <h3>Các Tham Số Tùy Chọn</h3>
+    <p>Bạn muốn thêm một chút phong cách hoặc kiểm soát nhiều hơn cho các bức chân dung được tạo ra? Dưới đây là một số tùy chọn thú vị mà bạn có thể điều chỉnh:</p>
 
     <ul>
-        <li><strong>Lời Nhắc Tiêu Cực:</strong> Đây là nơi bạn có thể nói với AiCasso những gì bạn <em>không</em> muốn thấy trong hình ảnh. Ví dụ, nếu bạn không muốn bất kỳ yếu tố nền nào, bạn có thể đề cập đến điều đó ở đây. Nếu bạn để trống, AiCasso sẽ chỉ tập trung vào những gì bạn muốn.</li>
-        <li><strong>Số Bước Khử Nhiễu:</strong> Điều này kiểm soát mức độ mịn màng và tinh tế của khuôn mặt. Bạn có thể chọn giữa 21, 31 hoặc 41 bước, với 41 là mặc định. Nhiều bước thường có nghĩa là kết quả sạch hơn, tinh tế hơn.</li>
-        <li><strong>Thang Hướng Dẫn:</strong> Đây giống như việc cho AiCasso một chút động lực để giữ đúng với mô tả của bạn. Thang đo từ 1 đến 20, với 10 là mặc định. Số cao hơn có nghĩa là AiCasso sẽ bám sát hơn với những gì bạn mô tả.</li>
-        <li><strong>Thang S:</strong> Điều chỉnh cấu trúc của khuôn mặt. Nó hơi kỹ thuật, nhưng về cơ bản nó điều chỉnh mức độ mạnh mẽ hoặc mềm mại của các đặc điểm khuôn mặt. Mặc định là 1.0, và bạn có thể điều chỉnh từ 0.0 đến 2.0 tùy thuộc vào vẻ ngoài bạn muốn.</li>
+        <li><strong>Đề Xuất Tiêu Cực:</strong> Đây là nơi bạn có thể nói với AiCasso những gì bạn <em>không</em> muốn thấy trong hình ảnh. Ví dụ, nếu bạn không muốn có bất kỳ yếu tố nền nào, bạn có thể đề cập điều đó ở đây. Nếu bạn để trống, AiCasso sẽ chỉ tập trung vào những gì bạn muốn.</li>
+        <li><strong>Số Bước Giảm Nhiễu:</strong> Điều này kiểm soát độ mượt mà và tinh tế của khuôn mặt. Bạn có thể chọn giữa 21, 31 hoặc 41 bước, với 41 là mặc định. Nhiều bước thường có nghĩa là kết quả sạch hơn, bóng bẩy hơn.</li>
+        <li><strong>Tỷ Lệ Hướng Dẫn:</strong> Điều này giống như việc cho AiCasso một chút đẩy thêm để giữ đúng với mô tả của bạn. Tỷ lệ này dao động từ 1 đến 20, với 10 là mặc định. Số cao hơn có nghĩa là AiCasso sẽ bám sát hơn vào những gì bạn mô tả.</li>
+        <li><strong>Tỷ Lệ S:</strong> Điều này điều chỉnh cấu trúc của khuôn mặt. Nó hơi kỹ thuật, nhưng về cơ bản nó điều chỉnh độ mạnh hoặc mềm mại của các đặc điểm khuôn mặt. Mặc định là 1.0, và bạn có thể điều chỉnh từ 0.0 đến 2.0 tùy thuộc vào vẻ ngoài mà bạn đang hướng tới.</li>
     </ul>
 
-    <p>Nhớ rằng, các tham số này hoàn toàn là tùy chọn. AiCasso khá dễ chịu, vì vậy bạn không cần phải quá chính xác hoặc đúng ngữ pháp. Chỉ cần mô tả những gì bạn muốn theo cách của riêng bạn, và AiCasso sẽ làm phép thuật. Chúc bạn vui vẻ khi tạo ra các bức chân dung của mình!</p>
+    <p>Hãy nhớ rằng, những tham số này hoàn toàn là tùy chọn. AiCasso khá dễ tính, vì vậy bạn không cần phải chính xác tuyệt đối hoặc đúng ngữ pháp. Chỉ cần mô tả những gì bạn muốn bằng từ ngữ của riêng bạn, và AiCasso sẽ làm phép thuật. Chúc bạn vui vẻ khi tạo ra các bức chân dung của mình!</p>
 
 </body>
 </html>

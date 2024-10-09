@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Görüntü Yönlendirmeli Düzenleme İpuçları</title>
+    <title>Görüntü Rehberli Düzenleme İpuçları</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,37 +31,31 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img {
+            width: 100%;
             height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+            max-width: 100%;
         }
     </style>
 </head>
 
 <body>
 
-    <h2>Görüntü Yönlendirmeli Düzenleme İpuçları</h2>
-    <p>AiCasso'daki Görüntü Yönlendirmeli Düzenleme özelliği, sadece ne istediğinizi tarif ederek bir resimde değişiklik yapmanıza olanak tanır. İster stili değiştirmek, ister ruh halini ayarlamak, ister belirli bölümleri düzeltmek isteyin, AiCasso bunu sizin için manuel olarak bir şey seçmenize veya boyamanıza gerek kalmadan halleder.</p>
+    <h2>Görüntü Rehberli Düzenleme İpuçları</h2>
+    <p>AiCasso'daki Görüntü Rehberli Düzenleme özelliği, istediğiniz değişiklikleri sadece tarif ederek bir resimde değişiklik yapmanızı sağlar. Tarzı değiştirmek, ruh halini ayarlamak veya belirli kısımları ince ayar yapmak istiyorsanız, AiCasso bunu sizin için manuel olarak bir şey seçmenize veya boyamanıza gerek kalmadan halledecektir.</p>
 
     <h3>Nasıl Çalışır:</h3>
 
     <div class="example">
         <strong>Başlangıç Görüntüsü:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CpnI7HqIAzcrMjmQb5_25yJilhxraZ80/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/startingimage1.jpg" alt="Başlangıç Görüntüsü">
         </div>
     </div>
 
     <div class="example">
         <strong>Değişikliğinizi Tanımlayın:</strong>
-        <p>Sadece neyi değiştirmek istediğinizi yazın ve AiCasso bu değişiklikleri görüntüye uygulasın.</p>
+        <p>Değiştirmek istediğinizi yazın, AiCasso bu değişiklikleri görüntüye uygulayacaktır.</p>
     </div>
 
     <h3>Örnek Düzenlemeler:</h3>
@@ -69,32 +63,32 @@
     <div class="example">
         <strong>Örnek 1:</strong> "Onu sarışın yap."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI2vE6dOcFxInjqzq1_mVru_nLCGFTaS/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/makeherblonde.jpg" alt="Onu sarışın yap örneği">
         </div>
-        <p><em>Sonuç:</em> AiCasso, kişinin saç rengini sarıya dönüştürecek.</p>
+        <p><em>Sonuç:</em> AiCasso, kişinin saç rengini sarışın yapacaktır.</p>
     </div>
 
     <div class="example">
-        <strong>Örnek 2:</strong> "Gece yap, 50 adım kullan, bir rehberlik ölçeği ve bir görüntü rehberlik ölçeği kullan."
+        <strong>Örnek 2:</strong> "Gece yap, 50 adım kullan, rehberlik ölçeği 1 ve görüntü rehberlik ölçeği 1."
         <div class="example">
             <strong>Girdi Görüntüsü:</strong>
             <div class="result">
-                <iframe src="https://drive.google.com/file/d/1PlJNkwIWrK3Uu_bq38te_dtqp2XBkW_e/preview"></iframe>
+                <img src="../../images/tutorials/imageguidededit/example2input.jpg" alt="Örnek 2 Girdi Görüntüsü">
             </div>
         </div>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11mjTtcBdI8T0cMcfQz6HEJ79xOhw81VG/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/example2result.jpg" alt="Örnek 2 Sonuç Görüntüsü">
         </div>
-        <p><em>Sonuç:</em> Görüntü, sağladığınız ayrıntılara göre belirli ayarlamalarla bir gece sahnesine dönüştürülecek.</p>
+        <p><em>Sonuç:</em> Görüntü, sağladığınız detaylara dayalı olarak belirli ayarlamalarla gece manzarasına dönüştürülecektir.</p>
     </div>
 
     <h3>Ek Seçenekler</h3>
     <p>Düzenlemelerinizi bu isteğe bağlı ayarlarla ince ayar yapabilirsiniz:</p>
 
     <ul>
-        <li><strong>Görüntü Rehberlik Ölçeği:</strong> Bu, yeni görüntünün orijinaline ne kadar yakın kalacağını kontrol eder. Daha düşük bir değer, değişikliklerin daha ince olduğu anlamına gelirken, daha yüksek bir değer onları daha belirgin hale getirir. Bunu 1 ile 8 arasında ayarlayabilirsiniz.</li>
-        <li><strong>Adımlar:</strong> Bu, aracın kaç tane iyileştirme yapacağını ayarlar. Daha fazla adım, daha pürüzsüz ve daha ayrıntılı bir son görüntü anlamına gelir. 1 ile 50 adım arasında seçim yapabilirsiniz, varsayılan olarak 20'dir.</li>
-        <li><strong>Rehberlik Ölçeği:</strong> Bu, AI'nın açıklamanızı ne kadar yakından takip edeceğini etkiler. Daha düşük bir ölçek, AI'ya daha fazla yaratıcı özgürlük verirken, daha yüksek bir ölçek, söylediklerinize sıkı sıkıya bağlı kalmasını sağlar. Bunu 1 ile 20 arasında ayarlayabilirsiniz.</li>
+        <li><strong>Görüntü Rehberlik Ölçeği:</strong> Bu, yeni görüntünün orijinaline ne kadar yakın kalacağını kontrol eder. Daha düşük bir değer, değişikliklerin daha ince olmasını sağlarken, daha yüksek bir değer bunların daha belirgin olmasını sağlar. Bunu 1 ile 8 arasında ayarlayabilirsiniz.</li>
+        <li><strong>Adımlar:</strong> Bu, aracın ne kadar çok iyileştirme yapacağını belirler. Daha fazla adım, daha pürüzsüz ve daha detaylı bir son görüntü anlamına gelir. 1 ile 50 adım arasında seçim yapabilirsiniz, varsayılan değer 20'dir.</li>
+        <li><strong>Rehberlik Ölçeği:</strong> Bu, yapay zekanın tanımınıza ne kadar yakın takip edeceğini etkiler. Daha düşük bir ölçek, yapay zekaya daha fazla yaratıcılık özgürlüğü verirken, daha yüksek bir ölçek, söylediklerinize daha sıkı bir şekilde bağlı kalmasını sağlar. Bunu 1 ile 20 arasında ayarlayabilirsiniz.</li>
     </ul>
 
 </body>

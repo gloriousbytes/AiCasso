@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -41,26 +41,26 @@
 <body>
 
     <h2>Tilmaamaha Isticmaalka Astaanta Bedelka Asalka</h2>
-    <p>Astaanta Bedelka Asalka ee AiCasso waxay ku habboon tahay marka aad rabto inaad bedesho asalka sawirkaaga. Haddii aad rabto inaad kaliya ka saarto asalka ama aad ku beddesho wax kale, AiCasso waxay ka dhigeysaa mid aad u fudud. Ma waxaad ka walwalsan tahay arrimaha farsamada—kaliya sharax waxa aad rabto, AiCasso waxay qaban doontaa intaas oo dhan.</p>
+    <p>Astaanta Bedelka Asalka ee AiCasso waxay ku habboon tahay markaad rabto inaad bedesho asalka sawirkaaga. Haddii aad rabto inaad kaliya ka saarto asalka ama aad ku beddesho wax kale, AiCasso waxay ka dhigeysaa mid aad u fudud. Ma waxaad ka walwalsan tahay arrimaha farsamada—kaliya sharax waxa aad rabto, AiCasso-na waxay qaban doontaa inta kale.</p>
 
     <h3>Sida Ay U Shaqeyso:</h3>
     
     <div class="example">
         <strong>Sawirka Gelinta:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Sawirka Gelinta" loading="lazy">
         </div>
         <strong>Dalabka 1:</strong>
         <p>"Ka saar asalka"</p>
         <strong>Natiijada 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Natiijada Asalka La Saarey" loading="lazy">
         </div>
         <strong>Dalabka 2:</strong>
-        <p>"Beddel asalka kaynta, kaliya ma ahan in la saaro, iyadoo alpha matting la damiyay. Isticmaal xadka hore ee 240, xadka asalka ee 20, iyo cabbirka erode ee 5 ee alpha matting."</p>
+        <p>"Bedel asalka kaynta, kaliya ma ahan in la saaro, iyadoo alpha matting la daminayo. Isticmaal xadka hore ee 240, xadka asalka ee 20, iyo cabbirka erode ee 5 ee alpha matting."</p>
         <strong>Natiijada 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Asalka La Bedelay oo leh Kayn" loading="lazy">
         </div>
     </div>
 
@@ -68,14 +68,14 @@
     <p:Haddii aad rabto inaad ku darto taabasho shakhsiyeed ama aad hagaajiso natiijooyinka, halkan waxaa ku yaal dhowr ikhtiyaar oo aad ku ciyaari karto:</p>
 
     <ul>
-        <li><strong>Kaliya Ka Saar:</strong> Haddii aad kaliya rabto inaad ka saarto asalka oo aadan rabin inaad ku beddesho wax kale, tani waa ikhtiyaarkaaga. Waxay la mid tahay inaad riixdo badhanka nadiifka ah.</li>
-        <li><strong>Alpha Matting:</strong> Tani waa habka casriga ah ee lagu yiraahdo "ku milan geesaha." Marka aad tan shido, waxay ka caawisaa in geesaha mawduucaaga ay u muuqdaan kuwo siman oo aan la jarin. Si caadi ah, waa la damiyay.</li>
-        <li><strong>Xadka Hore ee Alpha Matting:</strong> Tani waxay xakameysaa inta ka mid ah mawduuca ugu weyn (sida qof) ee muuqda marka la isticmaalayo alpha matting. Caadi ahaan waa 240, waana inaad hagaajisaa si aad u sameyso geesaha midab leh ama midab leh.</li>
-        <li><strong>Xadka Asalka ee Alpha Matting:</strong> Tani waxay la mid tahay xadka hore laakiin waxay ku saabsan tahay asalka. Caadi ahaan waa 20, waxaana la xiriira helitaanka isku dhafka saxda ah ee asalka cusub.</li>
-        <li><strong>Cabbirka Erode ee Alpha Matting:</strong> Tani waxay ka caawisaa in geesaha la yareeyo si loo sameeyo muuqaal nadiif ah. Cabbirka caadiga ah waa 5, laakiin waxaad hagaajin kartaa si aad u hesho muuqaalka saxda ah ee aad rabto.</li>
+        <li><strong>Kaliya Ka Saar:</strong> Haddii aad kaliya rabto inaad ka saarto asalka oo aadan rabin inaad ku beddesho wax, tani waa ikhtiyaarkaaga. Waxay la mid tahay inaad riixdo badhanka nadiifka ah.</li>
+        <li><strong>Alpha Matting:</strong> Tani waa hab casri ah oo lagu sheegay "ku milan geesaha." Marka aad tan shido, waxay ka caawisaa in geesaha mawduucaaga ay u muuqdaan kuwo siman oo aan la jarin. Asal ahaan, waa la damiyey.</li>
+        <li><strong>Xadka Hore ee Alpha Matting:</strong> Tani waxay xakameysaa inta ka mid ah mawduuca ugu weyn (sida qof) ee muuqda marka la isticmaalayo alpha matting. Asal ahaan waa 240, waana inaad hagaajisaa si aad u samayso geesaha midab leh ama midab leh.</li>
+        <li><strong>Xadka Asalka ee Alpha Matting:</strong> Tani waxay la mid tahay xadka hore laakiin waxay quseysaa asalka. Asal ahaan waa 20, waxaana loo baahan yahay in la helo isku dhafka saxda ah ee asalka cusub.</li>
+        <li><strong>Cabbirka Erode ee Alpha Matting:</strong> Tani waxay ka caawisaa in la yareeyo geesaha si loo sameeyo muuqaalka goynta mid nadiif ah. Cabbirka asal ahaan waa 5, laakiin waxaad hagaajin kartaa si aad u hesho muuqaalka saxda ah ee aad rabto.</li>
     </ul>
 
-    <p>Xusuusnow, ma waxaad u baahantahay inaad ka walwasho inaad wax walba si sax ah u hesho. AiCasso waxay si fiican u fahantaa waxa aad ula jeedo, markaa xor ayaad u tahay inaad noqoto mid aan rasmi ahayn ama faahfaahsan sida aad jeceshahay. Farxad abuur!</p>
+    <p>Xusuusnow, ma waxaad u baahan tahay inaad ka walwasho inaad wax walba si fiican u hesho. AiCasso waxay si fiican u fahantaa waxa aad ka wado, markaa xor ayaad u tahay inaad noqoto mid caadi ah ama faahfaahsan sida aad jeceshahay. Farxad ku abuur!</p>
 
 </body>
 </html>

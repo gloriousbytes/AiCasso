@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
         .iframe-container {
@@ -48,53 +48,53 @@
 <body>
 
     <h2>Iingcebiso zokusebenzisa iMisebenzi ye-Outpaint</h2>
-    <p>IMisebenzi ye-Outpaint kwi-AiCasso ikuvumela ukuba wandise umfanekiso ngokongeza izinto ezintsha ezikufutshane nawo okanye ukwandisa oko kusemfanekisweni. Just chaza into ofuna ukuyongeza, kwaye i-AiCasso izakuthatha yonke into.</p>
+    <p>Isebenza ye-Outpaint kwi-AiCasso ikuvumela ukuba wandise umfanekiso ngokongeza izinto ezintsha ezikufutshane nawo okanye ukwandisa oko sekukhona. Chaza nje oko ufisa ukukwenza, kwaye i-AiCasso izakujolise kwi ezinye izinto.</p>
 
     <h3>Indlela Isebenza Ngayo:</h3>
     
     <div class="example">
         <strong>Umfanekiso Oqalisayo:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1KIZOyXhXybW8vsTgOWRQzoBhapiXd7cX/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/input.jpg" alt="Umfanekiso Oqalisayo" loading="lazy">
         </div>
     </div>
 
     <div class="example">
         <strong>Chaza Utshintsho Lwakho:</strong>
-        <p>Just bhala into ofuna ukuyongeza okanye ukuyanda, kwaye i-AiCasso izakwenza la mtshintsho. Ungacacisa iindlela ezifana nokhohlo, ukuphuma, phezulu, okanye phantsi, kwaye nokuba neenkcukacha ezifana nokuphosa ngaphandle okanye ukunyakaza.</p>
+        <p>Faka nje oko ufisa ukukongeza okanye ukwandisa, kwaye i-AiCasso izakwenza la mtshintsho. Ungachaza iindlela ezifana nokhohlo, nokunene, phezulu, okanye phantsi, kunye neenkcukacha ezifana nokuphosa ngaphandle okanye ukunyakaza.</p>
     </div>
 
-    <h3>Uhlolo lweMisebenzi:</h3>
+    <h3>Umzekelo Wokuhlela:</h3>
 
     <div class="example">
-        <strong>Uhlolo 1:</strong> "Yongeza i-iceberg ngasekunene usebenzisa umphumo wokuhumusha we-0.4."
+        <strong>Umzekelo 1:</strong> "Yongeza i-iceberg ngasekunene usebenzisa umphumo wokuhumusha we-0.4."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1dP_hHQZVuhoSIFVZ2nH5EQ21Y7qHhpHb/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/iceberg.jpg" alt="Umzekelo 1 - Iceberg" loading="lazy">
         </div>
-        <p><em>Umphumo:</em> I-AiCasso iyanda umfanekiso ngasekunene kwaye ifaka i-iceberg, igcina umfanekiso ucocekile kunye nemifanekiso esele ikhona.</p>
+        <p><em>Umphumo:</em> I-AiCasso iyandisa umfanekiso ngasekunene kwaye ifaka i-iceberg, igcina umgangatho ofanayo nezinto ezikhoyo.</p>
     </div>
 
     <div class="example">
-        <strong>Uhlolo 2:</strong> "Phosa ngaphandle, gcina ukuhambelana kolwandle olumnyama ebusuku."
+        <strong>Umzekelo 2:</strong> "Phosa ngaphandle, gcina umgangatho wamanzi amnyama ebusuku."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1j_7e5U0O9YE8TEPvH6SS5CyjS5gwG2qd/preview"></iframe>
+            <img src="../../images/tutorials/outpaint/zoomout.jpg" alt="Umzekelo 2 - Phosa Phakathi" loading="lazy">
         </div>
-        <p><em>Umphumo:</em> Umfanekiso uphosa ngaphandle, uveza ngakumbi kolwandle olumnyama, ngelixa ugcina umoya wombukiso wobusuku.</p>
+        <p><em>Umphumo:</em> Umfanekiso uphosa ngaphandle, uveza ngakumbi amanzi amnyama, ngelixa ugcina umoya wombukiso wobusuku.</p>
     </div>
 
     <h3>Ophumelele Kakhulu</h3>
     <p>Nantsi eminye imigaqo yokukhetha onokuyisebenzisa ukuze ulungiselele iinguqulelo zakho:</p>
 
     <ul>
-        <li><strong>Umphumo Ongalunganga:</strong> Ukuba kukho into ethile ongafuni ukuba ibekho kumfanekiso, ungayixelela i-AiCasso apha. Umzekelo, ungafuna ukugwema ukufaka imibala ethile okanye izinto.</li>
-        <li><strong>Uhlobo Lokuhamba:</strong> Oku kukhetha indlela umfanekiso oya kuyo. Ungakhetha phakathi kokhohlo, ukuphuma, phezulu, phantsi, okanye emuva (okuphosa ngaphandle). Umzekelo, ukuze uhambise ngasekunene, ungakhetha 'ekunene'.</li>
-        <li><strong>Umphumo Wokuhumusha:</strong> Oku kulawula ukuba umfanekiso uhamba kangakanani ngexesha ngalinye lokwandisa. Umphumo ophakamileyo uhambisa umfanekiso ngakumbi, uveza ngakumbi umxholo omtsha. Umphumo ophakathi ngu-0.05, kodwa ungawulungisa ukusuka ku-0 ukuya ku-1.</li>
-        <li><strong>Ububanzi/Ukuphakama kokuhumusha ngexesha ngalinye:</strong> Le migaqo ilawula ukuba umfanekiso uhamba kangakanani ngokwe-horizontal (ububanzi) okanye ngokwe-vertical (ukuphakama) ngexesha ngalinye. Umphumo ophakathi ngu-32 pixels ngexesha ngalinye, kodwa ungawulungisa ngokusekelwe kumgangatho ofuna umfanekiso uhambise.</li>
-        <li><strong>Inani leziNtu okanye iDenoising Steps:</strong> Oku kukhetha ukuba zingaphi iinguqulelo i-AiCasso eyenza ukuze ifumane umfanekiso wokugqibela. Iingxaki ezininzi zikhokelela kumphumo omhle, umphumo ophakathi ngu-20 steps, kodwa ungaya ukuya kwi-50.</li>
-        <li><strong>Inani leziNtu zeInterpolation:</strong> Oku kulawula ukuba umphumo uhamba njani phakathi kweendlela ezimbini kwi-expansion enye. Umphumo ophakathi ngu-60, kodwa ungawuphakamisa ukuya kwi-120 ukuze ube neziqhamo ezithambileyo.</li>
+        <li><strong>Ukuphosa Okungafunekiyo:</strong> Ukuba kukho into ethile ongafuni ukuba ibekho kumfanekiso, ungayixelela i-AiCasso apha. Umzekelo, ungafuna ukugwema ukufaka imibala ethile okanye izinto.</li>
+        <li><strong>Uhlobo Lokuhamba:</strong> Oku kukhetha indlela umfanekiso oya kuyo. Ungakhetha phakathi kokhohlo, nokunene, phezulu, phantsi, okanye emuva (okuphosa ngaphandle). Umzekelo, ukuze uhamba ngasekunene, ungakhetha 'nokunene'.</li>
+        <li><strong>Umphumo Wokuhumusha:</strong> Oku kulawula ukuba umfanekiso uhamba kangakanani ngexesha ngalinye lokwandisa. I-akhawunti ephezulu iyahambisa umfanekiso ngakumbi, ivula ngakumbi umxholo omtsha. I-default ngu-0.05, kodwa ungayilungisa ukusuka ku-0 ukuya ku-1.</li>
+        <li><strong>Ububanzi/Uphakama Lokuhumusha ngexesha ngalinye:</strong> Le migaqo ilawula ukuba umfanekiso uhamba kangakanani ngokuqhubekayo (ububanzi) okanye ngokuqhubekayo (uphakama) ngexesha ngalinye. I-default ngu-32 pixels ngexesha ngalinye, kodwa ungayilungisa ngokuxhomekeka kumgangatho ofuna umfanekiso ukuba uhambise.</li>
+        <li><strong>Inani leMisebenzi yokucacisa okanye yokunciphisa:</strong> Oku kukhankanya ukuba zingaphi iinguqulelo i-AiCasso eyenza ukuze ifumane umfanekiso wokugqibela. Iingxaki ezininzi zikhokelela kumphumo opholileyo, kunye ne-default ye-20 steps, kodwa ungaya ukuya kwi-50.</li>
+        <li><strong>Inani leMisebenzi yokuhlanganisa:</strong> Oku kulawula ukuba umphumo uhamba njani phakathi kweendlela ezimbini kumjikelo omnye. I-default ngu-60, kodwa ungayandisa ukuya kwi-120 ukuze ube neengxaki ezipholileyo.</li>
     </ul>
 
-    <p>Khumbula, le migaqo ikhethwayo. I-AiCasso yenzelwe ukusebenza kakuhle kuphela ngencoko yakho yemvelo. Zive ukungena kwaye ubone ukuba yintoni efanelekileyo kumfanekiso wakho!</p>
+    <p>Khumbula, le migaqo ikhethiweyo. I-AiCasso ikwazile ukusebenza kakuhle ngokuchaza kwakho kwemvelo. Ziveze ukuba uzame kwaye ubone ukuba yintoni esebenza kakuhle kumfanekiso wakho!</p>
 
 </body>
 </html>

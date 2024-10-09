@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -48,40 +49,40 @@
 <body>
 
     <h2>Guía para Usar la Función de Retrato</h2>
-    <p>Con la función de Retrato en AiCasso, puedes crear retratos increíbles y únicos simplemente describiendo lo que deseas. ¡Es perfecto para hacer imágenes impresionantes, ya sea que quieras una escena serena, un guerrero épico o cualquier otra cosa que tu imaginación pueda crear!</p>
+    <p>Con la función de Retrato en AiCasso, puedes crear retratos asombrosos y únicos simplemente describiendo lo que deseas. ¡Es perfecta para hacer imágenes impresionantes, ya sea que quieras una escena serena, un guerrero épico o cualquier otra cosa que tu imaginación pueda conjurar!</p>
 
     <h3>Cómo Funciona:</h3>
     
     <div class="example">
         <strong>Imagen de Entrada:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+            <img src="../../images/tutorials/headshot/input.jpg" alt="Imagen de Entrada">
         </div>
-        <strong>Indicación 1:</strong>
+        <strong>Prompt 1:</strong>
         <p>"Un hombre en la nieve"</p>
         <strong>Resultado 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+            <img src="../../images/tutorials/headshot/maninsnow.jpg" alt="Resultado Hombre en la Nieve">
         </div>
-        <strong>Indicación 2:</strong>
+        <strong>Prompt 2:</strong>
         <p>"Un guerrero en el bosque, usa una escala media alta como el 78% de esto"</p>
         <strong>Resultado 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+            <img src="../../images/tutorials/headshot/warrior.jpg" alt="Resultado Guerrero en el Bosque">
         </div>
     </div>
 
     <h3>Parámetros Opcionales</h3>
-    <p>¿Quieres añadir un poco más de estilo o control a tus retratos generados? Aquí tienes algunas opciones geniales que puedes ajustar:</p>
+    <p>¿Quieres añadir un poco más de estilo o control a tus retratos generados? Aquí hay algunas opciones interesantes que puedes ajustar:</p>
 
     <ul>
-        <li><strong>Indicación Negativa:</strong> Aquí puedes decirle a AiCasso lo que <em>no</em> quieres ver en la imagen. Por ejemplo, si no quieres elementos de fondo, puedes mencionarlo aquí. Si dejas esto en blanco, AiCasso se centrará solo en lo que deseas.</li>
-        <li><strong>Número de Pasos de Desenfoque:</strong> Esto controla cuán suave y refinado se ve el rostro. Puedes elegir entre 21, 31 o 41 pasos, siendo 41 el predeterminado. Más pasos generalmente significan un resultado más limpio y pulido.</li>
-        <li><strong>Escala de Guía:</strong> Esto es como darle a AiCasso un pequeño empujón extra para que se mantenga fiel a tu descripción. La escala varía de 1 a 20, siendo 10 el valor predeterminado. Números más altos significan que AiCasso se apegará más a lo que describes.</li>
-        <li><strong>Escala S:</strong> Esto ajusta la estructura del rostro. Es un poco técnico, pero esencialmente modifica cuán fuertes o suaves son los rasgos faciales. El valor predeterminado es 1.0, y puedes ir de 0.0 a 2.0 dependiendo del aspecto que buscas.</li>
+        <li><strong>Prompt Negativo:</strong> Aquí es donde puedes decirle a AiCasso lo que <em>no</em> quieres ver en la imagen. Por ejemplo, si no quieres elementos de fondo, puedes mencionarlo aquí. Si dejas esto en blanco, AiCasso se enfocará solo en lo que sí quieres.</li>
+        <li><strong>Número de Pasos de Denoising:</strong> Esto controla cuán suave y refinada se ve la cara. Puedes elegir entre 21, 31 o 41 pasos, siendo 41 el valor por defecto. Más pasos generalmente significan un resultado más limpio y pulido.</li>
+        <li><strong>Escala de Guía:</strong> Esto es como darle a AiCasso un pequeño empujón extra para que se mantenga fiel a tu descripción. La escala varía de 1 a 20, siendo 10 el valor por defecto. Números más altos significan que AiCasso se ajustará más a lo que describes.</li>
+        <li><strong>Escala S:</strong> Esto ajusta la estructura de la cara. Es un poco técnico, pero esencialmente modifica cuán fuertes o suaves son las características faciales. El valor por defecto es 1.0, y puedes ir desde 0.0 hasta 2.0 dependiendo del aspecto que estés buscando.</li>
     </ul>
 
-    <p>Recuerda, estos parámetros son totalmente opcionales. AiCasso es bastante flexible, así que no tienes que ser súper preciso o gramaticalmente correcto. Solo describe lo que quieres con tus propias palabras, y AiCasso hará la magia. ¡Diviértete creando tus retratos!</p>
+    <p>Recuerda, estos parámetros son totalmente opcionales. AiCasso es bastante indulgente, así que no tienes que ser super preciso o gramaticalmente correcto. Simplemente describe lo que quieres con tus propias palabras, y AiCasso hará la magia. ¡Diviértete creando tus retratos!</p>
 
 </body>
 </html>

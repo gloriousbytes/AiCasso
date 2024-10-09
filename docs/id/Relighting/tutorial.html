@@ -31,9 +31,12 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        .result img, .result video {
+            width: 100%;
             height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
         }
         .iframe-container {
             display: flex;
@@ -48,36 +51,36 @@
 <body>
 
     <h2>Panduan Menggunakan Fitur Relighting</h2>
-    <p>Fitur Relighting di AiCasso sangat keren! Ini memungkinkan Anda mengubah pencahayaan dalam gambar Anda hanya dengan beberapa kata. Ingin matahari di belakang atau cahaya lembut dari samping? Tidak masalah! Cukup deskripsikan, dan AiCasso akan mengurus sisanya.</p>
+    <p>Fitur Relighting di AiCasso sangat keren! Ini memungkinkan Anda mengubah pencahayaan dalam gambar Anda hanya dengan beberapa kata. Ingin matahari di belakang atau cahaya lembut dari samping? Tidak masalah! Cukup deskripsikan, dan AiCasso akan menangani sisanya.</p>
 
-    <h3>Cara Kerjanya:</h3>
+    <h3>Bagaimana Cara Kerjanya:</h3>
     
     <div class="example">
-        <strong>Gambar Input:</strong>
+        <strong>Gambar Masukan:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/18GC57LtPreCaGEZgJkdgfIu3EFZA3OdB/preview"></iframe>
+            <img src="../../images/tutorials/relighting/input.jpg" alt="Gambar Masukan" loading="lazy">
         </div>
         <strong>Prompt yang Digunakan:</strong>
         <p>"Buat agar matahari berada di belakang"</p>
         <strong>Hasil:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1L6-o9QSPg6X9LrNVpRxrtc6WFaK0jsch/preview"></iframe>
+            <img src="../../images/tutorials/relighting/result.jpg" alt="Hasil Relighting" loading="lazy">
         </div>
     </div>
 
     <h3>Penyesuaian Opsional</h3>
-    <p>Jika Anda merasa berani dan ingin menambahkan sedikit lebih banyak gaya pada relighting Anda, berikut beberapa hal yang dapat Anda sesuaikan:</p>
+    <p>Jika Anda merasa berani dan ingin menambahkan sedikit lebih banyak gaya pada relighting Anda, berikut adalah beberapa hal yang dapat Anda sesuaikan:</p>
 
     <ul>
-        <li><strong>Prompt Negatif:</strong> Ingin menghindari sesuatu? Anda dapat memberi tahu AiCasso apa yang <em>tidak</em> ingin disertakan. Tapi jangan khawatir, jika Anda membiarkannya kosong, AiCasso akan fokus pada apa yang Anda inginkan.</li>
+        <li><strong>Prompt Negatif:</strong> Ingin menghindari sesuatu? Anda dapat memberi tahu AiCasso apa yang <em>tidak</em> ingin Anda sertakan. Tapi jangan khawatir, jika Anda membiarkannya kosong, AiCasso hanya akan fokus pada apa yang Anda inginkan.</li>
         <li><strong>Arah Pencahayaan:</strong> Anda dapat menentukan dari mana cahaya harus datang—kiri, kanan, atas, bawah, atau bahkan tidak ada sama sekali. Secara default, cahaya datang dari kiri.</li>
-        <li><strong>Skala Panduan:</strong> Ini membantu AiCasso tetap berpegang pada deskripsi Anda. Skala berkisar dari 1 hingga 20, dengan 7 sebagai default. Semakin tinggi angkanya, semakin AiCasso berpegang pada prompt Anda.</li>
-        <li><strong>Skala Resolusi Tinggi:</strong> Ingin gambar Anda menonjol? Ini mengontrol kejelasan. Defaultnya adalah 1.5, tetapi Anda dapat mengaturnya dari 1.0 hingga 2.0 untuk gambar yang lebih tajam.</li>
-        <li><strong>Tingkat Denoise:</strong> Ada dua tingkat—resolusi rendah dan resolusi tinggi. Ini mengontrol seberapa halus atau detail tampilan akhir gambar. Anda dapat mengatur tingkat denoise resolusi rendah antara 0.0 dan 1.0 (default adalah 0.9) dan resolusi tinggi antara 0.0 dan 1.0 (default adalah 0.5).</li>
-        <li><strong>Jumlah Langkah:</strong> Ini adalah berapa banyak langkah yang diambil AiCasso untuk memoles gambar Anda. Defaultnya adalah 50, tetapi Anda dapat memilih dari 20 hingga 50 langkah.</li>
+        <li><strong>Skala Panduan:</strong> Ini membantu AiCasso tetap pada deskripsi Anda. Skala berkisar dari 1 hingga 20, dengan 7 sebagai default. Semakin tinggi angkanya, semakin AiCasso mengikuti prompt Anda.</li>
+        <li><strong>Skala Resolusi Tinggi:</strong> Ingin gambar Anda menonjol? Ini mengontrol kejernihan. Defaultnya adalah 1.5, tetapi Anda dapat mengaturnya dari 1.0 hingga 2.0 untuk gambar yang lebih tajam.</li>
+        <li><strong>Tingkat Denoise:</strong> Ada dua tingkat—resolusi rendah dan resolusi tinggi. Ini mengontrol seberapa halus atau detail tampilan gambar akhir. Anda dapat mengatur tingkat denoise resolusi rendah antara 0.0 dan 1.0 (default adalah 0.9) dan resolusi tinggi antara 0.0 dan 1.0 (default adalah 0.5).</li>
+        <li><strong>Jumlah Langkah:</strong> Ini adalah berapa banyak langkah yang diambil AiCasso untuk memperhalus gambar Anda. Defaultnya adalah 50, tetapi Anda dapat memilih dari 20 hingga 50 langkah.</li>
     </ul>
 
-    <p>Ingat, penyesuaian ini sepenuhnya opsional! AiCasso cukup baik dalam memahami apa yang Anda inginkan, jadi cukup deskripsikan visi Anda dengan kata-kata Anda sendiri, dan itu akan melakukan keajaiban. Tidak perlu sempurna dengan tata bahasa atau detail—cukup bersenang-senang dan lihat apa yang dapat Anda ciptakan!</p>
+    <p>Ingat, penyesuaian ini sepenuhnya opsional! AiCasso cukup baik dalam menentukan apa yang Anda inginkan, jadi cukup deskripsikan visi Anda dengan kata-kata Anda sendiri, dan itu akan melakukan keajaiban. Tidak perlu sempurna dalam tata bahasa atau detail—nikmati saja dan lihat apa yang dapat Anda ciptakan!</p>
 
 </body>
 </html>

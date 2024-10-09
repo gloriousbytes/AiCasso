@@ -3,278 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ပြန်ဆင်ခြင်း အင်္ဂါရပ် အကြံပြုချက်များ</title>
+    <title>ပြန်လည်ဆေးခြင်း အင်္ဂါရပ် အကြံပြုချက်များ</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+         body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Ensures the image doesn't overflow the container */
+    height: auto;     /* Keeps the aspect ratio */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
-    <h2>ပြန်ဆင်ခြင်း အင်္ဂါရပ် အကြံပြုချက်များ</h2>
-    <p>AiCasso တွင် Inpaint အင်္ဂါရပ်ကို အသုံးပြုခြင်းသည် ပုံတစ်ပုံ၏ အထူးနေရာများကို ဖြည့်စွက်ခြင်း သို့မဟုတ် အစားထိုးခြင်းဖြင့် ပြင်ဆင်နိုင်သည်။ သင်သည် ရှိပြီးသား ပုံကို တိုးတက်စေလိုပါက သို့မဟုတ် အပိုင်းအချို့ကို အပြောင်းအလဲ လုပ်လိုပါက AiCasso သည် လုပ်ငန်းစဉ်ကို ရိုးရှင်းစေသည်။ သင်ပြောင်းလဲလိုသော နေရာများကို ရွေးချယ်ပြီး အကြောင်းအရာတစ်ခု ပေးပါ၊ AiCasso သည် ၎င်း၏ မက်ဂျစ်ကို လုပ်ဆောင်ပါလိမ့်မည်။</p>
+    <h2>ပြန်လည်ဆေးခြင်း အင်္ဂါရပ် အကြံပြုချက်များ</h2>
+    <p>AiCasso တွင် Inpaint အင်္ဂါရပ်ကို အသုံးပြုခြင်းဖြင့် ဓာတ်ပုံတစ်ပုံ၏ အထူးနေရာများကို ဖြည့်စွက်ခြင်း သို့မဟုတ် အစားထိုးခြင်းဖြင့် ပြင်ဆင်နိုင်သည်။ သင်သည် ရှိပြီးသား ဓာတ်ပုံကို တိုးတက်စေလိုပါက သို့မဟုတ် အချို့သော အပိုင်းများကို အပြောင်းအလဲ လုပ်လိုပါက AiCasso သည် လုပ်ငန်းစဉ်ကို ရိုးရှင်းစေသည်။ သင်ပြောင်းလဲလိုသော နေရာများကို ရွေးချယ်ပြီး၊ အကြောင်းအရာတစ်ခုကို ပေးပါ၊ AiCasso သည် ၎င်း၏ မာဂျစ်ကို လုပ်ဆောင်ပါလိမ့်မည်။</p>
 
    <h3>ရွေးချယ်စရာများ:</h3>
 
     <div class="example">
         <strong>အားသာချက်:</strong>
-        <p>အားသာချက်ရွေးချယ်မှုသည် အကြောင်းအရာမှ ပြောင်းလဲမှုကို ထိန်းချုပ်သည်။ ၎င်းသည် 0 မှ 1 အထိ ရှိသည်။ 0 သည် မူရင်းပုံကို အနည်းငယ်သာ ပြောင်းလဲသည်ကို ဆိုလိုပြီး 1 သည် မူရင်းပုံကို သင်ဖော်ပြသော အသစ်သော အသေးစိတ်များဖြင့် အပြောင်းအလဲ လုပ်ထားသည်ကို ဆိုလိုသည်။ သင်၏ ပြောင်းလဲမှုများသည် 'အားသာ' ဖြစ်မည်ကို စဉ်းစားပါ။</p>
+        <p>အားသာချက်ရွေးချယ်မှုသည် အကြောင်းအရာဖြင့် ပြောင်းလဲသော မူရင်းဓာတ်ပုံ၏ အရေအတွက်ကို ထိန်းချုပ်သည်။ ၎င်းသည် 0 မှ 1 အထိ ရှိသည်။ 0 သည် မူရင်းဓာတ်ပုံကို အနည်းငယ်သာ ပြောင်းလဲသည်ကို ဆိုလိုပြီး၊ 1 သည် မူရင်းဓာတ်ပုံကို သင်ဖော်ပြသော အသစ်သော အသေးစိတ်များဖြင့် အပြောင်းအလဲ လုပ်ထားသည်ကို ဆိုလိုသည်။ သင်၏ ပြောင်းလဲမှုများသည် 'အားသာ' ဖြစ်မည်ဟု စဉ်းစားပါ။</p>
     </div>
 
     <div class="example">
         <strong>စတိုင် တိုးတက်စေခြင်း:</strong>
-        <p>စတိုင် တိုးတက်စေခြင်းရွေးချယ်မှုသည် ပြင်ဆင်ထားသော နေရာများတွင် အထူး အနုပညာ သို့မဟုတ် သီအိုရီစတိုင်တစ်ခု ထည့်သွင်းရန် ခွင့်ပြုသည်။ သင်သည် အမျိုးမျိုးသော စတိုင်များမှ ရွေးချယ်နိုင်သည်။</p>
+        <p>စတိုင် တိုးတက်စေခြင်းရွေးချယ်မှုသည် ပြင်ဆင်ထားသော နေရာများတွင် အထူးအနုပညာ သို့မဟုတ် သီအိုရီစတိုင်ကို ထည့်သွင်းရန် ခွင့်ပြုသည်။ သင်သည် အမျိုးမျိုးသော စတိုင်များမှ ရွေးချယ်နိုင်သည်။</p>
     </div>
 
-    <h3>ဒါက ဘယ်လိုလုပ်သလဲ:</h3>
+    <h3>၎င်းသည် မည်သို့ အလုပ်လုပ်ပါသလဲ:</h3>
 
-    <div class="example">
-        <strong>အထွေထွေ ပုံ:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OzuoAKoYvwEW30ScvOjgX9lfe6VpbdNq/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>အထွေထွေဓာတ်ပုံ:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/inpain/input.jpg" alt="Input Image">
     </div>
+</div>
 
-    <div class="example">
-        <strong>ဖြည့်စွက်ရန် သို့မဟုတ် အစားထိုးရန် နေရာများကို ဆေးဆွဲပါ:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1-PaOaaDEvMogYhFjiMjUztvsxhllTsQ3/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>ဖြည့်စွက်ရန် သို့မဟုတ် အစားထိုးရန် နေရာများကို ဆေးခြင်း:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/inpain/paintareas.jpg" alt="Paint the Areas">
     </div>
+</div>
 
-    <h3>ဥပမာများ:</h3>
+<h3>ဥပမာများ:</h3>
 
-    <div class="example">
-        <strong>အကြောင်းအရာ ၁:</strong> "ဥယျာဉ်တွင် ကြောင်တစ်ကောင်၏ အထူးအထင်ရှားသော ပုံ။"
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1BpTJPP7s5CJ-6Yk03s281K6ay6DQ-sFa/preview"></iframe>
-        </div>
-        <p><em>ရလဒ်:</em> AiCasso သည် ဥယျာဉ်တွင် အထူးအထင်ရှားသော ကြောင်တစ်ကောင်ကို ဖန်တီးပြီး ဆေးဆွဲထားသော နေရာများကို သဘာဝအတိုင်း အဆင်ပြေစွာ ဖြည့်စွက်ပါလိမ့်မည်။</p>
+<div class="example">
+    <strong>အကြောင်းအရာ ၁:</strong> "ဥယျာဉ်ထဲတွင် ကြောင်တစ်ကောင်၏ အထူးအထင်ရှားသော ဓာတ်ပုံ။"
+    <div class="result">
+        <img src="../../images/tutorials/inpain/catinthepark.jpg" alt="Hyper-realistic cat in the park">
     </div>
+    <p><em>ရလဒ်:</em> AiCasso သည် ဥယျာဉ်ထဲတွင် အထူးအထင်ရှားသော ကြောင်တစ်ကောင်ကို ဖန်တီးပြီး၊ ဆေးထားသော နေရာများကို သဘာဝအရည်အသွေးနှင့် အလင်းရောင်ဖြင့် ပြည့်စုံစွာ ဖြည့်စွက်ပါလိမ့်မည်။</p>
+</div>
 
-    <div class="example">
-        <strong>အကြောင်းအရာ ၂:</strong> "ဥယျာဉ်တွင် ကြောင်တစ်ကောင်ကို အထူးအထင်ရှားသော စတိုင်နှင့် 0.7 အားသာချက်ဖြင့်။"
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1USCGxNAf0iteIGn8Klp97HI-spTTiREW/preview"></iframe>
-        </div>
-        <p><em>ရလဒ်:</em> ၎င်းသည် 0.7 အားသာချက်ဖြင့် အထူးအထင်ရှားသော ကြောင်တစ်ကောင်ကို ဥယျာဉ်တွင် ဖန်တီးပြီး အသစ်သော အစိတ်အပိုင်းများကို မူရင်းပုံနှင့် အဆင်ပြေစွာ ပေါင်းစပ်ပါလိမ့်မည်။</p>
+<div class="example">
+    <strong>အကြောင်းအရာ ၂:</strong> "ဥယျာဉ်ထဲတွင် အထူးအထင်ရှားသော စတိုင်နှင့် 0.7 အားသာချက်ရှိ ကြောင်တစ်ကောင်။"
+    <div class="result">
+        <img src="../../images/tutorials/inpain/catintheparkstrength0.7.jpg" alt="Cat in the park strength 0.7">
     </div>
+    <p><em>ရလဒ်:</em> ၎င်းသည် အထူးအထင်ရှားသော ကြောင်တစ်ကောင်ကို ဖန်တီးပြီး၊ ပြောင်းလဲမှုအားသာချက်ကို 0.7 သတ်မှတ်ထားပြီး၊ အသစ်သော အစိတ်အပိုင်းများကို မူရင်းဓာတ်ပုံနှင့် ပေါင်းစပ်ထားသည်။</p>
+</div>
 
-  <h3>စတိုင်များ တိုးတက်စေခြင်း</h3>
-<p>ဘယ်စတိုင်ကို ရွေးချယ်ရမလဲဆိုတာ မသိပါလား? စိတ်မပူပါနဲ့! သင်စဉ်းစားမိသော စတိုင်ကို ဖျော်ဖြေရန် ပြောပါ၊ သင်၏ စာလုံးပေါင်းမှန်ကန်မှုမရှိပါကလည်း AiCasso သည် ရရှိနိုင်သော စတိုင်များစာရင်းမှ ၎င်းကို ရှာဖွေပါလိမ့်မည်။</p>
+  <h3>စတိုင် တိုးတက်စေခြင်းများ</h3>
+<p>ဘယ်စတိုင်ကို ရွေးချယ်ရမည်ကို မသိပါလား? စိတ်မပူပါနဲ့! သင်စဉ်းစားသော စတိုင်ကို ဖျော်ဖြေရန် လိုအပ်သည်၊ သင်၏ စကားလုံးများသည် သင်၏ စကားလုံးများကို မမှန်ကန်ပါကလည်း AiCasso သည် ရရှိနိုင်သော စတိုင်များစာရင်းမှ ၎င်းကို ရှာဖွေပါလိမ့်မည်။</p>
 
     <ul>
-        <li><strong>အခြေခံ:</strong> အထူးအနုပညာ သက်ရောက်မှုမရှိဘဲ အညီအမျှနှင့် အလယ်အလတ်စတိုင်။</li>
-        <li><strong>တိုးတက်စေခြင်း:</strong> အသေးစိတ်များနှင့် စုစုပေါင်း အလှအပများကို အနည်းငယ် တိုးတက်စေသည်။</li>
-        <li><strong>ရုပ်ရှင် Diva:</strong> အလင်းထွက်မှုများနှင့် အထူးအထင်ရှားသော အကျိုးသက်ရောက်မှုများကို ထည့်သွင်းသည်။</li>
-        <li><strong>အထူးအထင်ရှားသော အထွေထွေ အနုပညာ:</strong> အထူးအထင်ရှားသော ပုံစံများနှင့် အရောင်များကို အထူးအထင်ရှားစွာ ဖျော်ဖြေရန် အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>ပညာရေး:</strong> ပုံကို ပညာရေးနှင့် အထူးအထင်ရှားသော အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>အရေးအသားပုံ:</strong> အရေးအသားပုံများ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>ချစ်စရာ 3D ဇာတ်ကောင်:</strong> ချစ်စရာ၊ ကာတွန်းစတိုင် 3D ဇာတ်ကောင်များကို ဖန်တီးသည်။</li>
-        <li><strong>ချစ်စရာ Kawaii:</strong> Kawaii ယဉ်ကျေးမှု၏ ချစ်စရာနှင့် ဆွဲဆောင်မှုရှိသော စတိုင်ကို အထူးအထင်ရှားစွာ ဖျော်ဖြေရန်။</li>
-        <li><strong>အနုပညာ Deco:</strong> အနုပညာ Deco ကာလ၏ အထူးအထင်ရှားသော အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>အနုပညာ Nouveau:</strong> အနုပညာ Nouveau ၏ သဘာဝအရင်းအမြစ်များနှင့် လှပသော အကြောင်းအရာများကို ထည့်သွင်းသည်။</li>
-        <li><strong>အာကာသ Aura:</strong> သဘာဝအထူးအထင်ရှားသော အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Avant Garde:</strong> အထူးအထင်ရှားသော အနုပညာဖျော်ဖြေရန် အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Baroque:</strong> Baroque ကာလ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Bauhaus စတိုင် ပိုစတာ:</strong> Bauhaus ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Blueprint Schematic Drawing:</strong> နည်းပညာဆိုင်ရာ အကြောင်းအရာများကို ဖန်တီးသည်။</li>
-        <li><strong>Caricature:</strong> အထူးအထင်ရှားသော ပုံများကို ဖန်တီးသည်။</li>
-        <li><strong>Cel-Shaded Art:</strong> Cel-shaded animation ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Character Design Sheet:</strong> Animation အတွက် သန့်ရှင်းသော ဇာတ်ကောင်ဒီဇိုင်းများကို ဖန်တီးသည်။</li>
-        <li><strong>Classicism Art:</strong> Classical Antiquity ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Color Field Painting:</strong> အရောင်တစ်ခုတည်းဖြင့် အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Colored Pencil Art:</strong> Colored pencil drawings ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Conceptual Art:</strong> အတွေးအခေါ်များကို အထူးအထင်ရှားစွာ ဖျော်ဖြေရန်။</li>
-        <li><strong>Constructivism:</strong> Constructivist movement ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Cubism:</strong> အရာများကို အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Dadaism:</strong> အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Dark Fantasy:</strong> အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Dark Moody Atmosphere:</strong> အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>DMT Art:</strong> DMT experiences ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Doodle Art:</strong> Whimsical နှင့် playful drawing styles ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Double Exposure:</strong> အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Dripping Paint Splatter:</strong> Dynamic နှင့် chaotic compositions ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Expressionism:</strong> Emotional expression ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Faded Polaroid Photo:</strong> Faded Polaroid photograph ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Fauvism:</strong> Fauvist movement ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Flat 2D:</strong> Simple, flat designs ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Fortnite Style:</strong> Fortnite video game ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Futurism:</strong> Dynamic movement ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Glitchcore:</strong> Digital errors ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Glo-Fi:</strong> Soft, glowing lighting ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Googie Style:</strong> Futuristic and Space Age design ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Graffiti Art:</strong> Street-style aesthetics ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Harlem Renaissance Art:</strong> Harlem Renaissance ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>High Fashion:</strong> High fashion ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Idyllic:</strong> Peaceful, serene atmosphere ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Impressionism:</strong> Loose brushwork ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Infographic Drawing:</strong> Clear, visually appealing layouts ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Ink Dripping Drawing:</strong> Fluid, dripping effects ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Japanese Ink Drawing:</strong> Japanese ink art ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Knolling Photography:</strong> Neat and organized arrangement ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Light Cheery Atmosphere:</strong> Bright colors and lighting ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Logo Design:</strong> Clean, recognizable logos ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Luxurious Elegance:</strong> Sophistication and luxury ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Macro Photography:</strong> Extreme close-ups ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Mandala Art:</strong> Intricate, symmetrical patterns ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Marker Drawing:</strong> Bold, vibrant lines ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Medievalism:</strong> Medieval period ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Minimalism:</strong> Simplicity ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Neo-Baroque:</strong> Baroque period ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Neo-Byzantine:</strong> Byzantine Empire ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Neo-Futurism:</strong> Futuristic designs ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Neo-Impressionism:</strong> Neo-Impressionist movement ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Neo-Rococo:</strong> Rococo period ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Neoclassicism:</strong> Classical antiquity ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Op Art:</strong> Optical illusions ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Ornate and Intricate:</strong> Highly detailed designs ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Pencil Sketch Drawing:</strong> Pencil sketches ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Pop Art:</strong> Popular culture ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Rococo:</strong> Rococo period ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Silhouette Art:</strong> Strong contrasts ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Simple Vector Art:</strong> Clean, geometric shapes ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>SketchUp:</strong> 3D models ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Steampunk:</strong> Victorian-era aesthetics ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Surrealism:</strong> Reality and dream-like imagery ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Suprematism:</strong> Basic geometric forms ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Terragen:</strong> Realistic landscapes ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Tranquil Relaxing Atmosphere:</strong> Soft colors ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Sticker Designs:</strong> Playful images ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Vibrant Rim Light:</strong> Bright lighting ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Volumetric Lighting:</strong> Light beams ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Watercolor:</strong> Soft textures ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Whimsical and Playful:</strong> Lighthearted imagery ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Sharp:</strong> Clarity and edge definition ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Masterpiece:</strong> High-quality artistic output ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Photograph:</strong> Realistic photographic quality ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Negative:</strong> Inverts colors ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Ads - Advertising:</strong> Clean visuals ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Ads - Automotive:</strong> Dynamic automotive advertising ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Ads - Corporate:</strong> Professional design ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Ads - Fashion Editorial:</strong> High-fashion look ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Ads - Food Photography:</strong> Vibrant food photography ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Ads - Gourmet Food Photography:</strong> Rich food photography ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Ads - Luxury:</strong> Opulent style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Ads - Real Estate:</strong> Clean visuals ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Ads - Retail:</strong> Consumer-focused style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Hyperrealism:</strong> Extremely detailed visuals ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Pointillism:</strong> Small dots of color ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Psychedelic:</strong> Vivid colors ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Renaissance:</strong> Harmonious style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Typography:</strong> Creative use of text ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Futuristic Biomechanical:</strong> High-tech style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Futuristic Biomechanical Cyberpunk:</strong> Gritty style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Futuristic Cybernetic:</strong> High-tech visuals ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Futuristic Cybernetic Robot:</strong> Robotic designs ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Futuristic Cyberpunk Cityscape:</strong> Neon-lit cityscapes ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Futuristic Sci-Fi:</strong> Science fiction aesthetics ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Futuristic Retro Cyberpunk:</strong> Nostalgic style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Futuristic Retro:</strong> Retro design elements ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Futuristic Vaporwave:</strong> Nostalgic visuals ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Game Bubble:</strong> Playful aesthetic ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Game Cyberpunk:</strong> Game design elements ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Game Fighting:</strong> Dynamic style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Game GTA:</strong> Urban style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Game Mario:</strong> Cartoonish style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Game Minecraft:</strong> Blocky style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Game Pokemon:</strong> Anime-inspired style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Game Retro Arcade:</strong> Nostalgic style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Game RPG Fantasy:</strong> Fantasy-inspired aesthetics ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Game Strategy:</strong> Clean design ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Game Streetfighter:</strong> Dynamic style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Game Zelda:</strong> Fantasy-inspired style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Architectural:</strong> Clean architectural renderings ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Disco:</strong> Neon-lit aesthetics ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Dreamscape:</strong> Surreal environments ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Dystopian:</strong> Gritty visuals ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Fairy Tale:</strong> Whimsical elements ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Gothic:</strong> Dark style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Grunge:</strong> Gritty aesthetics ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Horror:</strong> Dark visuals ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Kawaii:</strong> Cute style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Lovecraftian:</strong> Cosmic horror ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Macabre:</strong> Dark themes ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Manga:</strong> Bold style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Metropolis:</strong> Urban aesthetics ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Minimalist:</strong> Simplicity ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Monochrome:</strong> Single color shades ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Nautical:</strong> Maritime-inspired aesthetics ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Space:</strong> Otherworldly visuals ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Stained Glass:</strong> Colorful designs ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Techwear Fashion:</strong> Futuristic aesthetics ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Tribal:</strong> Cultural aesthetics ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Misc Zentangle:</strong> Repetitive patterns ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Papercraft Collage:</strong> Layered collages ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Papercraft Flat Papercut:</strong> Flat designs ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Papercraft Kirigami:</strong> Folded designs ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Papercraft Paper Mache:</strong> Textured forms ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Papercraft Paper Quilling:</strong> Rolled paper designs ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Papercraft Papercut Collage:</strong> Layered collages ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Papercraft Papercut Shadow Box:</strong> Three-dimensional shadow boxes ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Papercraft Stacked Papercut:</strong> Layered designs ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Papercraft Thick Layered Papercut:</strong> Dimensional designs ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Photo Alien:</strong> Surreal visuals ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Photo Film Noir:</strong> Dark aesthetics ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Photo Glamour:</strong> Polished look ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Photo HDR:</strong> Wide range of light ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Photo iPhone Photographic:</strong> Modern style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Photo Long Exposure:</strong> Dynamic effects ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Photo Neon Noir:</strong> Neon lighting ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Photo Silhouette:</strong> Silhouette-based images ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Photo Tilt Shift:</strong> Miniaturized look ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>3D Model:</strong> Clean look ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Analog Film:</strong> Grainy look ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Anime:</strong> Vibrant style ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Cinematic:</strong> Dramatic effect ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Comic Book:</strong> Bold lines ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Craft Clay:</strong> Textured look ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Digital Art:</strong> Polished artwork ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Fantasy Art:</strong> Imaginative visuals ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Isometric:</strong> Three-dimensional look ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Line Art:</strong> Clean lines ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Low Poly:</strong> Minimalist look ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Neonpunk:</strong> Neon lighting ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Origami:</strong> Folded designs ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Photographic:</strong> Life-like visuals ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Pixel Art:</strong> Retro look ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
-        <li><strong>Texture:</strong> Detailed textures ၏ အထူးအထင်ရှားသော အနုပညာ။</li>
+        <li><strong>မူလ:</strong> အထူးအနုပညာ သက်ရောက်မှုမရှိသော သဘာဝနှင့် အလွန်လျှင်လျှင်သော စတိုင်။</li>
+        <li><strong>တိုးတက်စေခြင်း:</strong> အသေးစိတ်များနှင့် အထွေထွေ အလှအပကို အနည်းငယ် တိုးတက်စေသည်။</li>
+        <li><strong>ရုပ်ရှင် Diva:</strong> အလင်းရောင် အထွေထွေ အထင်ရှားမှုများနှင့် အထူးအထင်ရှားသော ရုပ်ရှင်လို အကျိုးသက်ရောက်မှုကို ထည့်သွင်းသည်။</li>
+        <li><strong>အထွေထွေ အထင်ရှားမှု:</strong> အထွေထွေ ပုံစံများနှင့် အရောင်များကို အထူးအထင်ရှားစေသည်။</li>
+        <li><strong>သင်္ချိုင်း:</strong> ဓာတ်ပုံကို အထူးအထင်ရှားစေသည်။</li>
+        <li><strong>အကောင့်အရောင်:</strong> အထူးအထင်ရှားစေသော အရောင်များနှင့် အလှအပကို ဖန်တီးသည်။</li>
+        <li><strong>အချစ် 3D ဇာတ်ကောင်:</strong> ချစ်စရာ၊ ကာတွန်းလို 3D ဇာတ်ကောင်များကို ဖန်တီးသည်။</li>
+        <li><strong>ချစ်စရာ Kawaii:</strong> Kawaii ယဉ်ကျေးမှု၏ ချစ်စရာနှင့် ဆွဲဆောင်မှုကို အထူးအထင်ရှားစေသည်။</li>
+        <li><strong>အနုပညာ Deco:</strong> အနုပညာ Deco ကာလ၏ ဂျီအိုမက်ထစ်နှင့် အလှဆင်မှုကို အသုံးပြုသည်။</li>
+        <li><strong>အနုပညာ Nouveau:</strong> အနုပညာ Nouveau ၏ သဘာဝအရောင်နှင့် သဘာဝအရောင်များကို ထည့်သွင်းသည်။</li>
+        <li><strong>အာကာသ Aura:</strong> မျှော်လင့်ချက်နှင့် အခြားအရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Avant Garde:</strong> အနုပညာဖန်တီးမှုများကို အထူးအထင်ရှားစေသည်။</li>
+        <li><strong>Baroque:</strong> Baroque ကာလ၏ အထူးအထင်ရှားစေသော အနုပညာကို အသုံးပြုသည်။</li>
+        <li><strong>Bauhaus Style Poster:</strong> Bauhaus ၏ မူလနှင့် လုပ်ဆောင်မှုကို ဖျော်ဖြေရန် အသုံးပြုသည်။</li>
+        <li><strong>Blueprint Schematic Drawing:</strong> နည်းပညာဆိုင်ရာ အစီအစဉ်များကို ဖန်တီးသည်။</li>
+        <li><strong>Caricature:</strong> အထူးအထင်ရှားစေသော ပုံရိပ်များကို ဖန်တီးသည်။</li>
+        <li><strong>Cel-Shaded Art:</strong> Cel-shaded animation ၏ အရောင်များကို အသုံးပြုသည်။</li>
+        <li><strong>Character Design Sheet:</strong> Animation အတွက် သင့်လျော်သော ဇာတ်ကောင်ဒီဇိုင်းများကို ဖန်တီးသည်။</li>
+        <li><strong>Classicism Art:</strong> Classical Antiquity ၏ အနုပညာစတိုင်ကို ဖန်တီးသည်။</li>
+        <li><strong>Color Field Painting:</strong> အရောင်တစ်ခုတည်းဖြင့် ပုံဖော်သည်။</li>
+        <li><strong>Colored Pencil Art:</strong> ရောင်စုံခဲတံများ၏ အရည်အသွေးကို ဖန်တီးသည်။</li>
+        <li><strong>Conceptual Art:</strong> အတွေးအခေါ်များကို အဓိပ္ပါယ်ထားသည်။</li>
+        <li><strong>Constructivism:</strong> Constructivist movement ၏ အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Cubism:</strong> အရာများကို ဂျီအိုမက်ထစ်ပုံစံများသို့ ခွဲခြမ်းသည်။</li>
+        <li><strong>Dadaism:</strong> အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Dark Fantasy:</strong> အမှောင်နှင့် အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Dark Moody Atmosphere:</strong> အမှောင်နှင့် အလင်းရောင်ကို အသုံးပြုသည်။</li>
+        <li><strong>DMT Art:</strong> DMT အတွေ့အကြုံများမှ အထူးအထင်ရှားစေသော ဓာတ်ပုံများကို ဖန်တီးသည်။</li>
+        <li><strong>Doodle Art:</strong> အထူးအထင်ရှားစေသော ပုံဆွဲခြင်းများကို ဖန်တီးသည်။</li>
+        <li><strong>Double Exposure:</strong> ဓာတ်ပုံနှစ်ပုံကို ပေါင်းစပ်သည်။</li>
+        <li><strong>Dripping Paint Splatter:</strong> အရောင်များကို ဖန်တီးသည်။</li>
+        <li><strong>Expressionism:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Faded Polaroid Photo:</strong> Polaroid ဓာတ်ပုံ၏ အရောင်ကို ဖန်တီးသည်။</li>
+        <li><strong>Fauvism:</strong> အထူးအထင်ရှားစေသော အရောင်များကို အသုံးပြုသည်။</li>
+        <li><strong>Flat 2D:</strong> ရိုးရှင်းသော ဒီဇိုင်းများကို ဖန်တီးသည်။</li>
+        <li><strong>Fortnite Style:</strong> Fortnite ဂိမ်း၏ အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Futurism:</strong> အနာဂတ်နည်းပညာများကို ဖန်တီးသည်။</li>
+        <li><strong>Glitchcore:</strong> ဒစ်ဂျစ်တယ် အမှားများကို အနုပညာစတိုင်အဖြစ် အသုံးပြုသည်။</li>
+        <li><strong>Glo-Fi:</strong> အထူးအထင်ရှားစေသော အလင်းရောင်ကို အသုံးပြုသည်။</li>
+        <li><strong>Googie Style:</strong> 20 ရာစု၏ အနာဂတ်ဒီဇိုင်းကို ဖန်တီးသည်။</li>
+        <li><strong>Graffiti Art:</strong> အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Harlem Renaissance Art:</strong> Harlem Renaissance ၏ အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>High Fashion:</strong> အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Idyllic:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Impressionism:</strong> အလင်းနှင့် အထွေထွေ အထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Infographic Drawing:</strong> အချက်အလက်များကို ဖန်တီးသည်။</li>
+        <li><strong>Ink Dripping Drawing:</strong> အရောင်များကို ဖန်တီးသည်။</li>
+        <li><strong>Japanese Ink Drawing:</strong> ဂျပန်အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Knolling Photography:</strong> အရာများကို အထူးအထင်ရှားစေသည်။</li>
+        <li><strong>Light Cheery Atmosphere:</strong> အလင်းရောင်များကို အသုံးပြုသည်။</li>
+        <li><strong>Logo Design:</strong> အထူးအထင်ရှားစေသော အမှတ်အသားများကို ဖန်တီးသည်။</li>
+        <li><strong>Luxurious Elegance:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Macro Photography:</strong> အထူးအထင်ရှားစေသော ဓာတ်ပုံများကို ဖန်တီးသည်။</li>
+        <li><strong>Mandala Art:</strong> Mandala ၏ အထူးအထင်ရှားစေသော ပုံစံများကို ဖန်တီးသည်။</li>
+        <li><strong>Marker Drawing:</strong> အထူးအထင်ရှားစေသော ပုံဆွဲခြင်းများကို ဖန်တီးသည်။</li>
+        <li><strong>Medievalism:</strong> Medieval ၏ အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Minimalism:</strong> ရိုးရှင်းမှုကို အထူးအထင်ရှားစေသည်။</li>
+        <li><strong>Neo-Baroque:</strong> Baroque ၏ အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Neo-Byzantine:</strong> Byzantine ၏ အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Neo-Futurism:</strong> အနာဂတ်ဒီဇိုင်းများကို ဖန်တီးသည်။</li>
+        <li><strong>Neo-Impressionism:</strong> Impressionist movement ၏ အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Neo-Rococo:</strong> Rococo ၏ အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Neoclassicism:</strong> Classical antiquity ၏ အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Op Art:</strong> အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Ornate and Intricate:</strong> အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Pencil Sketch Drawing:</strong> အထူးအထင်ရှားစေသော ပုံဆွဲခြင်းများကို ဖန်တီးသည်။</li>
+        <li><strong>Pop Art:</strong> အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Rococo:</strong> Rococo ၏ အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Silhouette Art:</strong> အထူးအထင်ရှားစေသော ပုံများကို ဖန်တီးသည်။</li>
+        <li><strong>Simple Vector Art:</strong> အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>SketchUp:</strong> SketchUp ၏ အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Steampunk:</strong> Victorian ၏ အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Surrealism:</strong> အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Suprematism:</strong> Suprematist movement ၏ အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Terragen:</strong> Terragen ၏ အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Tranquil Relaxing Atmosphere:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Sticker Designs:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Vibrant Rim Light:</strong> အထူးအထင်ရှားစေသော အလင်းရောင်ကို ဖန်တီးသည်။</li>
+        <li><strong>Volumetric Lighting:</strong> အထူးအထင်ရှားစေသော အလင်းရောင်ကို ဖန်တီးသည်။</li>
+        <li><strong>Watercolor:</strong> အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Whimsical and Playful:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Sharp:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Masterpiece:</strong> အထူးအထင်ရှားစေသော အနုပညာကို ဖန်တီးသည်။</li>
+        <li><strong>Photograph:</strong> အထူးအထင်ရှားစေသော ဓာတ်ပုံကို ဖန်တီးသည်။</li>
+        <li><strong>Negative:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Ads - Advertising:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Ads - Automotive:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Ads - Corporate:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Ads - Fashion Editorial:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Ads - Food Photography:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Ads - Gourmet Food Photography:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Ads - Luxury:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Ads - Real Estate:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Ads - Retail:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Hyperrealism:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Pointillism:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Psychedelic:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Renaissance:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Typography:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Futuristic Biomechanical:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Futuristic Biomechanical Cyberpunk:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Futuristic Cybernetic:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Futuristic Cybernetic Robot:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Futuristic Cyberpunk Cityscape:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Futuristic Sci-Fi:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Futuristic Retro Cyberpunk:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Futuristic Retro:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Futuristic Vaporwave:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Game Bubble:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Game Cyberpunk:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Game Fighting:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Game GTA:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Game Mario:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Game Minecraft:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Game Pokemon:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Game Retro Arcade:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Game RPG Fantasy:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Game Strategy:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Game Streetfighter:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Game Zelda:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Architectural:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Disco:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Dreamscape:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Dystopian:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Fairy Tale:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Gothic:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Grunge:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Horror:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Kawaii:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Lovecraftian:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Macabre:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Manga:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Metropolis:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Minimalist:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Monochrome:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Nautical:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Space:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Stained Glass:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Techwear Fashion:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Tribal:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Misc Zentangle:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Papercraft Collage:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Papercraft Flat Papercut:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Papercraft Kirigami:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Papercraft Paper Mache:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Papercraft Paper Quilling:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Papercraft Papercut Collage:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Papercraft Papercut Shadow Box:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Papercraft Stacked Papercut:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Papercraft Thick Layered Papercut:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Photo Alien:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Photo Film Noir:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Photo Glamour:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Photo HDR:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Photo iPhone Photographic:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Photo Long Exposure:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Photo Neon Noir:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Photo Silhouette:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Photo Tilt Shift:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>3D Model:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Analog Film:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Anime:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Cinematic:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Comic Book:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Craft Clay:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Digital Art:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Fantasy Art:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Isometric:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Line Art:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Low Poly:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Neonpunk:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Origami:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Photographic:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Pixel Art:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
+        <li><strong>Texture:</strong> အထူးအထင်ရှားစေသော အရာများကို ဖန်တီးသည်။</li>
     </ul>
 
 </body>

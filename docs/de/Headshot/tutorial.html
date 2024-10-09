@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -48,26 +49,26 @@
 <body>
 
     <h2>Leitfaden zur Verwendung der Headshot-Funktion</h2>
-    <p>Mit der Headshot-Funktion in AiCasso können Sie erstaunliche und einzigartige Porträts erstellen, indem Sie einfach beschreiben, was Sie möchten. Es ist perfekt, um atemberaubende Bilder zu erstellen, egal ob Sie eine ruhige Szene, einen epischen Krieger oder etwas anderes, das Ihre Fantasie hervorbringt, wünschen!</p>
+    <p>Mit der Headshot-Funktion in AiCasso können Sie erstaunliche und einzigartige Porträts erstellen, indem Sie einfach beschreiben, was Sie möchten. Es ist perfekt, um atemberaubende Bilder zu erstellen, egal ob Sie eine friedliche Szene, einen epischen Krieger oder alles andere, was Ihre Vorstellungskraft heraufbeschwört, möchten!</p>
 
-    <h3>Wie es funktioniert:</h3>
+    <h3>So funktioniert es:</h3>
     
     <div class="example">
         <strong>Eingabebild:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+            <img src="../../images/tutorials/headshot/input.jpg" alt="Eingabebild">
         </div>
-        <strong>Eingabeaufforderung 1:</strong>
+        <strong>Prompt 1:</strong>
         <p>"Ein Mann im Schnee"</p>
         <strong>Ergebnis 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+            <img src="../../images/tutorials/headshot/maninsnow.jpg" alt="Mann im Schnee Ergebnis">
         </div>
-        <strong>Eingabeaufforderung 2:</strong>
+        <strong>Prompt 2:</strong>
         <p>"Ein Krieger im Wald, verwende eine mittelhohe Skala wie 78% davon"</p>
         <strong>Ergebnis 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+            <img src="../../images/tutorials/headshot/warrior.jpg" alt="Krieger im Wald Ergebnis">
         </div>
     </div>
 
@@ -75,13 +76,13 @@
     <p>Möchten Sie Ihren generierten Headshots etwas mehr Flair oder Kontrolle hinzufügen? Hier sind einige coole Optionen, die Sie anpassen können:</p>
 
     <ul>
-        <li><strong>Negativer Prompt:</strong> Hier können Sie AiCasso mitteilen, was Sie <em>nicht</em> im Bild sehen möchten. Zum Beispiel, wenn Sie keine Hintergrundelemente möchten, können Sie das hier erwähnen. Wenn Sie dies leer lassen, konzentriert sich AiCasso nur auf das, was Sie möchten.</li>
-        <li><strong>Anzahl der Entrauschungsschritte:</strong> Dies steuert, wie glatt und raffiniert das Gesicht aussieht. Sie können zwischen 21, 31 oder 41 Schritten wählen, wobei 41 der Standard ist. Mehr Schritte bedeuten in der Regel ein saubereres, polierteres Ergebnis.</li>
-        <li><strong>Leitfaden-Skala:</strong> Dies ist wie ein kleiner zusätzlicher Schub für AiCasso, um Ihrer Beschreibung treu zu bleiben. Die Skala reicht von 1 bis 20, wobei 10 der Standard ist. Höhere Zahlen bedeuten, dass AiCasso näher an dem bleibt, was Sie beschreiben.</li>
-        <li><strong>S-Skala:</strong> Dies passt die Struktur des Gesichts an. Es ist etwas technisch, aber im Wesentlichen wird damit angepasst, wie stark oder weich die Gesichtszüge sind. Der Standard ist 1.0, und Sie können je nach gewünschtem Aussehen von 0.0 bis 2.0 gehen.</li>
+        <li><strong>Negativer Prompt:</strong> Hier können Sie AiCasso mitteilen, was Sie <em>nicht</em> im Bild sehen möchten. Wenn Sie beispielsweise keine Hintergrundelemente möchten, können Sie das hier erwähnen. Wenn Sie dies leer lassen, konzentriert sich AiCasso einfach auf das, was Sie möchten.</li>
+        <li><strong>Anzahl der Denoising-Schritte:</strong> Dies steuert, wie glatt und raffiniert das Gesicht aussieht. Sie können zwischen 21, 31 oder 41 Schritten wählen, wobei 41 der Standard ist. Mehr Schritte bedeuten in der Regel ein saubereres, polierteres Ergebnis.</li>
+        <li><strong>Guidance Scale:</strong> Dies ist wie ein kleiner zusätzlicher Schub für AiCasso, um Ihrer Beschreibung treu zu bleiben. Die Skala reicht von 1 bis 20, wobei 10 der Standard ist. Höhere Zahlen bedeuten, dass AiCasso näher an dem bleibt, was Sie beschreiben.</li>
+        <li><strong>S-Skala:</strong> Dies passt die Struktur des Gesichts an. Es ist ein bisschen technisch, aber im Grunde wird damit eingestellt, wie stark oder weich die Gesichtszüge sind. Der Standardwert ist 1.0, und Sie können von 0.0 bis 2.0 gehen, je nach dem Look, den Sie anstreben.</li>
     </ul>
 
-    <p>Denken Sie daran, dass diese Parameter völlig optional sind. AiCasso ist ziemlich nachsichtig, sodass Sie nicht super präzise oder grammatikalisch korrekt sein müssen. Beschreiben Sie einfach in Ihren eigenen Worten, was Sie möchten, und AiCasso wird die Magie vollbringen. Viel Spaß beim Erstellen Ihrer Headshots!</p>
+    <p>Denken Sie daran, dass diese Parameter völlig optional sind. AiCasso ist ziemlich nachsichtig, sodass Sie nicht super präzise oder grammatikalisch korrekt sein müssen. Beschreiben Sie einfach, was Sie möchten, in Ihren eigenen Worten, und AiCasso wird die Magie tun. Viel Spaß beim Erstellen Ihrer Headshots!</p>
 
 </body>
 </html>

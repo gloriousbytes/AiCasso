@@ -31,16 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img {
+            width: 100%;
             height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
+            max-width: 100%;
         }
     </style>
 </head>
@@ -48,14 +42,14 @@
 <body>
 
     <h2>טיפים לעריכה מונחית תמונה</h2>
-    <p>תכונת העריכה המונחית תמונה ב-AiCasso מאפשרת לך לבצע שינויים בתמונה פשוט על ידי תיאור מה שאתה רוצה. בין אם אתה רוצה לשנות את הסגנון, להתאים את האווירה או לשנות חלקים מסוימים, AiCasso יטפל בזה עבורך מבלי שתצטרך לבחור או לצבוע שום דבר באופן ידני.</p>
+    <p>תכונת העריכה המונחית תמונה ב-AiCasso מאפשרת לך לבצע שינויים בתמונה פשוט על ידי תיאור מה אתה רוצה. בין אם אתה רוצה לשנות את הסגנון, להתאים את האווירה או לשנות חלקים מסוימים, AiCasso יטפל בזה עבורך מבלי שתצטרך לבחור או לצבוע משהו באופן ידני.</p>
 
     <h3>איך זה עובד:</h3>
 
     <div class="example">
         <strong>תמונה התחלתית:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CpnI7HqIAzcrMjmQb5_25yJilhxraZ80/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/startingimage1.jpg" alt="תמונה התחלתית">
         </div>
     </div>
 
@@ -69,32 +63,32 @@
     <div class="example">
         <strong>דוגמה 1:</strong> "עשה אותה בלונדינית."
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI2vE6dOcFxInjqzq1_mVru_nLCGFTaS/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/makeherblonde.jpg" alt="דוגמה לעשות אותה בלונדינית">
         </div>
         <p><em>תוצאה:</em> AiCasso ישנה את צבע השיער של האדם לבלונד.</p>
     </div>
 
     <div class="example">
-        <strong>דוגמה 2:</strong> "עשה את זה לילה, השתמש ב-50 צעדים, בסולם הנחיה של 1, ובסולם הנחיה לתמונה של 1."
+        <strong>דוגמה 2:</strong> "עשה את זה לילה, השתמש ב-50 צעדים, בסקאלת הנחיה של 1, ובסקאלת הנחיה של תמונה של 1."
         <div class="example">
             <strong>תמונה קלט:</strong>
             <div class="result">
-                <iframe src="https://drive.google.com/file/d/1PlJNkwIWrK3Uu_bq38te_dtqp2XBkW_e/preview"></iframe>
+                <img src="../../images/tutorials/imageguidededit/example2input.jpg" alt="דוגמת קלט 2">
             </div>
         </div>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/11mjTtcBdI8T0cMcfQz6HEJ79xOhw81VG/preview"></iframe>
+            <img src="../../images/tutorials/imageguidededit/example2result.jpg" alt="דוגמת תוצאה 2">
         </div>
-        <p><em>תוצאה:</em> התמונה תומר לסצנה לילית עם התאמות ספציפיות על סמך הפרטים שסיפקת.</p>
+        <p><em>תוצאה:</em> התמונה תומר לתמונת לילה עם התאמות ספציפיות על סמך הפרטים שסיפקת.</p>
     </div>
 
     <h3>אפשרויות נוספות</h3>
     <p>אתה יכול לדייק את העריכות שלך באמצעות ההגדרות האופציונליות הללו:</p>
 
     <ul>
-        <li><strong>סולם הנחיה לתמונה:</strong> זה שולט כמה קרוב התמונה החדשה נשארת למקור. ערך נמוך יותר פירושו שהשינויים יותר עדינים, בעוד שערך גבוה יותר גורם להם לבלוט יותר. אתה יכול לקבוע את זה בין 1 ל-8.</li>
-        <li><strong>צעדים:</strong> זה קובע כמה שיפורים הכלי יבצע. יותר צעדים פירושם תמונה סופית חלקה ומפורטת יותר. אתה יכול לבחור בין 1 ל-50 צעדים, כאשר 20 הוא ברירת המחדל.</li>
-        <li><strong>סולם הנחיה:</strong> זה משפיע על כמה קרוב ה-AI עוקב אחרי התיאור שלך. סולם נמוך נותן ל-AI יותר חופש יצירתי, בעוד שסולם גבוה יותר גורם לו להיצמד למה שאמרת. אתה יכול להתאים את זה בין 1 ל-20.</li>
+        <li><strong>סקאלת הנחיה לתמונה:</strong> זה שולט עד כמה התמונה החדשה תדבק במקור. ערך נמוך יותר פירושו שהשינויים יותר עדינים, בעוד שערך גבוה יותר גורם להם לבלוט יותר. אתה יכול לקבוע זאת בין 1 ל-8.</li>
+        <li><strong>צעדים:</strong> זה קובע כמה שיפורים הכלי יבצע. יותר צעדים פירושם תמונה סופית חלקה ומפורטת יותר. אתה יכול לבחור בין 1 ל-50 צעדים, עם 20 כברירת מחדל.</li>
+        <li><strong>סקאלת הנחיה:</strong> זה משפיע על עד כמה ה-AI עוקב אחרי התיאור שלך. סקאלה נמוכה נותנת ל-AI יותר חופש יצירתי, בעוד סקאלה גבוהה גורמת לו להיצמד למה שאמרת. אתה יכול להתאים זאת בין 1 ל-20.</li>
     </ul>
 
 </body>

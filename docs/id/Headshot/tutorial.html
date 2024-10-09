@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -48,40 +49,40 @@
 <body>
 
     <h2>Panduan Menggunakan Fitur Headshot</h2>
-    <p>Dengan fitur Headshot di AiCasso, Anda dapat membuat potret yang menakjubkan dan unik hanya dengan mendeskripsikan apa yang Anda inginkan. Ini sempurna untuk membuat gambar yang menakjubkan apakah Anda menginginkan pemandangan yang tenang, seorang pejuang epik, atau apa pun yang dibayangkan oleh imajinasi Anda!</p>
+    <p>Dengan fitur Headshot di AiCasso, Anda dapat membuat potret yang menakjubkan dan unik hanya dengan mendeskripsikan apa yang Anda inginkan. Ini sempurna untuk membuat gambar yang menakjubkan, apakah Anda menginginkan pemandangan yang tenang, seorang pejuang epik, atau apa pun yang dibayangkan oleh imajinasi Anda!</p>
 
-    <h3>Cara Kerjanya:</h3>
+    <h3>Bagaimana Cara Kerjanya:</h3>
     
     <div class="example">
-        <strong>Gambar Input:</strong>
+        <strong>Gambar Masukan:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+            <img src="../../images/tutorials/headshot/input.jpg" alt="Gambar Masukan">
         </div>
         <strong>Prompt 1:</strong>
         <p>"Seorang pria di salju"</p>
         <strong>Hasil 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+            <img src="../../images/tutorials/headshot/maninsnow.jpg" alt="Hasil Pria di Salju">
         </div>
         <strong>Prompt 2:</strong>
-        <p>"Seorang pejuang di hutan, gunakan skala menengah tinggi seperti 78% dari ini"</p>
+        <p>"Seorang pejuang di hutan, gunakan skala medium tinggi seperti 78% dari ini"</p>
         <strong>Hasil 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+            <img src="../../images/tutorials/headshot/warrior.jpg" alt="Hasil Pejuang di Hutan">
         </div>
     </div>
 
     <h3>Parameter Opsional</h3>
-    <p>Ingin menambahkan sedikit lebih banyak gaya atau kontrol pada headshot yang dihasilkan? Berikut beberapa opsi keren yang dapat Anda sesuaikan:</p>
+    <p>Ingin menambahkan sedikit lebih banyak gaya atau kontrol pada headshot yang dihasilkan? Berikut adalah beberapa opsi keren yang dapat Anda sesuaikan:</p>
 
     <ul>
-        <li><strong>Prompt Negatif:</strong> Di sini Anda dapat memberi tahu AiCasso apa yang <em>tidak</em> ingin Anda lihat dalam gambar. Misalnya, jika Anda tidak ingin elemen latar belakang, Anda dapat menyebutkannya di sini. Jika Anda membiarkan ini kosong, AiCasso hanya akan fokus pada apa yang Anda inginkan.</li>
-        <li><strong>Jumlah Langkah Denoising:</strong> Ini mengontrol seberapa halus dan halus tampilan wajah. Anda dapat memilih antara 21, 31, atau 41 langkah, dengan 41 sebagai default. Lebih banyak langkah biasanya berarti hasil yang lebih bersih dan lebih halus.</li>
-        <li><strong>Skala Panduan:</strong> Ini seperti memberi AiCasso dorongan ekstra untuk tetap setia pada deskripsi Anda. Skala berkisar dari 1 hingga 20, dengan 10 sebagai default. Angka yang lebih tinggi berarti AiCasso akan lebih dekat dengan apa yang Anda gambarkan.</li>
-        <li><strong>Skala S:</strong> Ini menyesuaikan struktur wajah. Ini agak teknis, tetapi pada dasarnya ini mengubah seberapa kuat atau lembut fitur wajahnya. Defaultnya adalah 1.0, dan Anda dapat pergi ke mana saja dari 0.0 hingga 2.0 tergantung pada tampilan yang Anda inginkan.</li>
+        <li><strong>Prompt Negatif:</strong> Di sini Anda dapat memberi tahu AiCasso apa yang <em>tidak</em> ingin Anda lihat dalam gambar. Misalnya, jika Anda tidak ingin ada elemen latar belakang, Anda dapat menyebutkannya di sini. Jika Anda membiarkannya kosong, AiCasso hanya akan fokus pada apa yang Anda inginkan.</li>
+        <li><strong>Jumlah Langkah Denoising:</strong> Ini mengontrol seberapa halus dan terperinci wajah terlihat. Anda dapat memilih antara 21, 31, atau 41 langkah, dengan 41 sebagai default. Lebih banyak langkah biasanya berarti hasil yang lebih bersih dan lebih halus.</li>
+        <li><strong>Skala Panduan:</strong> Ini seperti memberikan AiCasso sedikit dorongan ekstra untuk tetap setia pada deskripsi Anda. Skala berkisar dari 1 hingga 20, dengan 10 sebagai default. Angka yang lebih tinggi berarti AiCasso akan lebih mendekati apa yang Anda deskripsikan.</li>
+        <li><strong>Skala S:</strong> Ini menyesuaikan struktur wajah. Ini sedikit teknis, tetapi pada dasarnya mengubah seberapa kuat atau lembut fitur wajah. Defaultnya adalah 1.0, dan Anda dapat memilih dari 0.0 hingga 2.0 tergantung pada tampilan yang Anda inginkan.</li>
     </ul>
 
-    <p>Ingat, parameter ini sepenuhnya opsional. AiCasso cukup pemaaf, jadi Anda tidak perlu terlalu tepat atau benar secara tata bahasa. Cukup deskripsikan apa yang Anda inginkan dengan kata-kata Anda sendiri, dan AiCasso akan melakukan keajaiban. Selamat bersenang-senang membuat headshot Anda!</p>
+    <p>Ingat, parameter ini sepenuhnya opsional. AiCasso cukup toleran, jadi Anda tidak perlu sangat tepat atau benar secara tata bahasa. Cukup deskripsikan apa yang Anda inginkan dengan kata-kata Anda sendiri, dan AiCasso akan melakukan keajaiban. Selamat bersenang-senang membuat headshot Anda!</p>
 
 </body>
 </html>

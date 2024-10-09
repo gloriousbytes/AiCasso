@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -48,40 +49,40 @@
 <body>
 
     <h2>Panduan Menggunakan Ciri Headshot</h2>
-    <p>Dengan ciri Headshot dalam AiCasso, anda boleh mencipta potret yang menakjubkan dan unik hanya dengan menggambarkan apa yang anda inginkan. Ia sesuai untuk membuat imej yang menakjubkan sama ada anda mahukan pemandangan yang tenang, seorang pahlawan epik, atau apa sahaja yang anda bayangkan!</p>
+    <p>Dengan ciri Headshot dalam AiCasso, anda boleh mencipta potret yang menakjubkan dan unik hanya dengan menerangkan apa yang anda inginkan. Ia sempurna untuk menghasilkan imej yang menakjubkan sama ada anda mahukan pemandangan yang tenang, seorang pejuang epik, atau apa sahaja yang terlintas dalam imaginasi anda!</p>
 
     <h3>Bagaimana Ia Berfungsi:</h3>
     
     <div class="example">
         <strong>Imej Input:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1_Q5Cl1SgTzt8KS_JwLBDz8oFhh-C4SuQ/preview"></iframe>
+            <img src="../../images/tutorials/headshot/input.jpg" alt="Imej Input">
         </div>
         <strong>Prompt 1:</strong>
-        <p>"Seorang lelaki dalam salji"</p>
+        <p>"Seorang lelaki di dalam salji"</p>
         <strong>Hasil 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1BBW2n871_FsjzNJXDIH-qzzcvXRaMWr9/preview"></iframe>
+            <img src="../../images/tutorials/headshot/maninsnow.jpg" alt="Lelaki di Dalam Salji Hasil">
         </div>
         <strong>Prompt 2:</strong>
-        <p>"Seorang pahlawan di dalam hutan, gunakan skala sederhana tinggi seperti 78% ini"</p>
+        <p>"Seorang pejuang di dalam hutan, gunakan skala sederhana tinggi seperti 78% daripada ini"</p>
         <strong>Hasil 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1bcMXpi_KxDKRAFd48FEvYReyxliSXdM1/preview"></iframe>
+            <img src="../../images/tutorials/headshot/warrior.jpg" alt="Pejuang di Dalam Hutan Hasil">
         </div>
     </div>
 
     <h3>Parameter Pilihan</h3>
-    <p>Ingin menambah sedikit gaya atau kawalan kepada headshot yang dihasilkan? Berikut adalah beberapa pilihan menarik yang boleh anda ubah suai:</p>
+    <p>Ingin menambah sedikit gaya atau kawalan pada headshot yang dihasilkan? Berikut adalah beberapa pilihan menarik yang boleh anda ubah:</p>
 
     <ul>
-        <li><strong>Prompt Negatif:</strong> Di sini anda boleh memberitahu AiCasso apa yang anda <em>tidak</em> mahu lihat dalam imej. Sebagai contoh, jika anda tidak mahu sebarang elemen latar belakang, anda boleh nyatakan di sini. Jika anda biarkan kosong, AiCasso akan fokus pada apa yang anda mahukan.</li>
-        <li><strong>Bilangan Langkah Denoising:</strong> Ini mengawal betapa licin dan halus wajah kelihatan. Anda boleh memilih antara 21, 31, atau 41 langkah, dengan 41 sebagai lalai. Lebih banyak langkah biasanya bermakna hasil yang lebih bersih dan lebih kemas.</li>
-        <li><strong>Skala Panduan:</strong> Ini seperti memberi AiCasso sedikit dorongan tambahan untuk kekal setia kepada penerangan anda. Skala berkisar dari 1 hingga 20, dengan 10 sebagai lalai. Nombor yang lebih tinggi bermakna AiCasso akan lebih menepati apa yang anda gambarkan.</li>
-        <li><strong>Skala S:</strong> Ini menyesuaikan struktur wajah. Ia agak teknikal, tetapi pada dasarnya ia mengubah betapa kuat atau lembut ciri-ciri wajah. Lalai adalah 1.0, dan anda boleh pergi dari 0.0 hingga 2.0 bergantung pada rupa yang anda inginkan.</li>
+        <li><strong>Prompt Negatif:</strong> Di sini anda boleh memberitahu AiCasso apa yang anda <em>tidak</em> mahu lihat dalam imej. Contohnya, jika anda tidak mahu sebarang elemen latar belakang, anda boleh menyebutnya di sini. Jika anda membiarkannya kosong, AiCasso hanya akan memberi tumpuan kepada apa yang anda inginkan.</li>
+        <li><strong>Bilangan Langkah Denoising:</strong> Ini mengawal seberapa licin dan halus wajah kelihatan. Anda boleh memilih antara 21, 31, atau 41 langkah, dengan 41 sebagai lalai. Lebih banyak langkah biasanya bermaksud hasil yang lebih bersih dan lebih halus.</li>
+        <li><strong>Skala Panduan:</strong> Ini seperti memberikan AiCasso sedikit dorongan tambahan untuk tetap setia kepada penerangan anda. Skala ini berkisar dari 1 hingga 20, dengan 10 sebagai lalai. Nombor yang lebih tinggi bermaksud AiCasso akan lebih dekat dengan apa yang anda terangkan.</li>
+        <li><strong>Skala S:</strong> Ini menyesuaikan struktur wajah. Ia agak teknikal, tetapi pada dasarnya ia mengubah seberapa kuat atau lembut ciri wajah. Lalai adalah 1.0, dan anda boleh pergi dari 0.0 hingga 2.0 bergantung pada penampilan yang anda inginkan.</li>
     </ul>
 
-    <p>Ingat, parameter ini adalah pilihan sepenuhnya. AiCasso agak pemaaf, jadi anda tidak perlu terlalu tepat atau betul dari segi tatabahasa. Hanya gambarkan apa yang anda mahu dengan kata-kata anda sendiri, dan AiCasso akan melakukan keajaiban. Selamat mencipta headshot anda!</p>
+    <p>Ingat, parameter ini adalah pilihan sepenuhnya. AiCasso cukup toleran, jadi anda tidak perlu terlalu tepat atau betul dari segi tatabahasa. Hanya terangkan apa yang anda inginkan dengan kata-kata anda sendiri, dan AiCasso akan melakukan keajaiban. Selamat mencipta headshot anda!</p>
 
 </body>
 </html>

@@ -31,8 +31,8 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
-            width: 80%;
+        img, video {
+            max-width: 100%;
             height: auto;
         }
     </style>
@@ -48,31 +48,31 @@
     <div class="example">
         <strong>Input Billede:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zmSF9mQTxBD4fW322ogCpF_vpC0zpmWc/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/input.jpg" alt="Input Billede" loading="lazy">
         </div>
         <strong>Prompt 1:</strong>
         <p>"Fjern baggrunden"</p>
         <strong>Resultat 1:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1zhHcndb8DTM8zSgsGYECtfbsPsfK3-oZ/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/removedbgg.jpg" alt="Baggrund Fjernet Resultat" loading="lazy">
         </div>
         <strong>Prompt 2:</strong>
-        <p>"Erstat baggrunden med en skov, ikke bare fjern den, med alpha matting deaktiveret. Brug en forgrunds tærskel på 240, en baggrunds tærskel på 20, og en erode størrelse på 5 til alpha matting."</p>
+        <p>"Erstat baggrunden med en skov, ikke bare fjern den, med alpha matting deaktiveret. Brug en forgrunds tærskel på 240, en baggrunds tærskel på 20, og en erode størrelse på 5 for alpha matting."</p>
         <strong>Resultat 2:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1LfR43nG9QU--T-QjjBb_Se8kDiXWnxWf/preview"></iframe>
+            <img src="../../images/tutorials/replacebackground/forest.jpg" alt="Erstattet Baggrund med Skov" loading="lazy">
         </div>
     </div>
 
     <h3>Valgfri Parametre</h3>
-    <p>Hvis du ønsker at tilføje et personligt præg eller finjustere resultaterne, er her nogle muligheder, du kan lege med:</p>
+    <p>Hvis du ønsker at tilføje et personligt præg eller finjustere resultaterne, er her et par muligheder, du kan lege med:</p>
 
     <ul>
         <li><strong>Kun Fjern:</strong> Hvis du bare vil fjerne baggrunden og ikke erstatte den med noget, er dette din go-to mulighed. Det er som at trykke på en ren tavle knap.</li>
-        <li><strong>Alpha Matting:</strong> Dette er en fancy måde at sige "blande kanterne." Når du tænder for dette, hjælper det med at gøre kanterne af dit emne glattere og mindre udskåret. Som standard er det slået fra.</li>
+        <li><strong>Alpha Matting:</strong> Dette er en fancy måde at sige "blende kanterne." Når du tænder for dette, hjælper det med at gøre kanterne af dit emne mere glatte og mindre klippede. Som standard er det slået fra.</li>
         <li><strong>Alpha Matting Forgrunds Tærskel:</strong> Dette styrer, hvor meget af hovedemnet (som en person) forbliver synligt, når du bruger alpha matting. Standard er 240, og du kan justere det for at gøre kanterne blødere eller skarpere.</li>
         <li><strong>Alpha Matting Baggrunds Tærskel:</strong> Dette gør det samme som forgrunds tærsklen, men for baggrunden. Standard er 20, og det handler om at få den perfekte blanding med den nye baggrund.</li>
-        <li><strong>Alpha Matting Erode Størrelse:</strong> Dette hjælper med at reducere kanterne lidt for at gøre udskæringen renere. Standardstørrelsen er 5, men du kan justere det for at få det præcise udseende, du ønsker.</li>
+        <li><strong>Alpha Matting Erode Størrelse:</strong> Dette hjælper med at reducere kanterne lidt for at få udskæringen til at se renere ud. Standardstørrelsen er 5, men du kan justere det for at få det præcise udseende, du ønsker.</li>
     </ul>
 
     <p>Husk, du behøver ikke at stresse over at få alt perfekt. AiCasso er ret god til at finde ud af, hvad du mener, så føl dig fri til at være så afslappet eller detaljeret, som du vil. God fornøjelse med at skabe!</p>

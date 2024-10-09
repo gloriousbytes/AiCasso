@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Przewodnik po funkcji Fashion Generation</title>
+    <title>Przewodnik po funkcji Generacji Mody</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -31,9 +31,10 @@
             border: 1px solid #ccc;
             padding: 5px;
         }
-        .result iframe {
+        .result img {
             width: 80%;
             height: auto;
+            max-width: 100%;
         }
         .iframe-container {
             display: flex;
@@ -47,25 +48,25 @@
 
 <body>
 
-    <h2>Przewodnik po korzystaniu z funkcji Fashion Generation</h2>
-    <p>Funkcja Fashion Generation w AiCasso pozwala na ubranie kogoś w określony strój, taki jak koszula, sukienka czy spodnie. Po prostu opisz, co chcesz, a AiCasso zastosuje element odzieży do osoby na zdjęciu.</p>
+    <h2>Przewodnik po korzystaniu z funkcji Generacji Mody</h2>
+    <p>Funkcja Generacji Mody w AiCasso pozwala na ubranie kogoś w konkretny strój, taki jak koszula, sukienka czy spodnie. Po prostu opisz, co chcesz, a AiCasso zastosuje element odzieży do osoby na zdjęciu.</p>
 
     <h3>Jak to działa:</h3>
     
     <div class="example">
         <strong>Wejście 1 - Obraz osoby:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1CwAK39VPv2ZOgcO6uara6Qj8wphoYkSP/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 1.jpg" alt="Obraz osoby">
         </div>
         <strong>Wejście 2 - Element odzieży:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pjOiq0Z88YWlHy_QITPs83UVE9nF_I7_/preview"></iframe>
+            <img src="../../images/tutorials/fashion/input 2.jpg" alt="Element odzieży">
         </div>
         <strong>Podpowiedź:</strong>
         <p>"Facet w koszuli"</p>
         <strong>Wynik:</strong>
         <div class="result">
-            <iframe src="https://drive.google.com/file/d/1pOEmpI_anFDNE0ZAhIq4m9Y6ZjOtERoU/preview"></iframe>
+            <img src="../../images/tutorials/fashion/result.jpg" alt="Obraz wyniku">
         </div>
     </div>
 
@@ -73,13 +74,13 @@
     <p>Jeśli chcesz dodać swój własny styl lub upewnić się, że wynik jest idealny, możesz dostosować te ustawienia:</p>
 
     <ul>
-        <li><strong>Negatywna podpowiedź:</strong> Jeśli jest coś, czego <em>nie</em> chcesz w obrazie, po prostu wspomnij o tym tutaj. Zostaw puste, jeśli akceptujesz to, co AiCasso wymyśli.</li>
+        <li><strong>Negatywna podpowiedź:</strong> Jeśli jest coś, czego <em>nie</em> chcesz na obrazie, po prostu wspomnij o tym tutaj. Zostaw puste, jeśli nie masz nic przeciwko temu, co wymyśli AiCasso.</li>
         <li><strong>Typ tkaniny:</strong> Powiedz AiCasso, czy koncentrujesz się na <em>górnej części ciała</em>, <em>dolnej części ciała</em> czy <em>sukienkach</em>. Jeśli nie jesteś pewien, domyślnie ustawione jest na górną część ciała.</li>
         <li><strong>Liczba kroków denoisingu:</strong> To decyduje o tym, jak gładki i dopracowany wygląda obraz. Możesz wybrać między 21, 31 lub 41 krokami, przy czym 21 to domyślna wartość. Więcej kroków zazwyczaj oznacza bardziej wyrafinowany wygląd.</li>
         <li><strong>Skala prowadzenia:</strong> To pomaga obrazowi ściśle trzymać się twojego opisu. Możesz ustawić ją od 1 do 20, przy czym 7 to wartość domyślna. Wyższe liczby oznaczają, że AiCasso będzie ściślej podążać za twoją podpowiedzią.</li>
     </ul>
 
-    <p>Pamiętaj, że te ustawienia są opcjonalne! AiCasso jest dość inteligentny i potrafi zrozumieć, co masz na myśli, nawet jeśli nie dopracujesz każdego szczegółu. Po prostu baw się dobrze i pozwól swojej kreatywności płynąć!</p>
+    <p>Pamiętaj, że te ustawienia są opcjonalne! AiCasso jest dość inteligentny i potrafi zrozumieć, co masz na myśli, nawet jeśli nie podasz wszystkich szczegółów idealnie. Po prostu baw się dobrze i pozwól swojej kreatywności płynąć!</p>
 
 </body>
 </html>

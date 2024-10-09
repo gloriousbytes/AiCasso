@@ -6,89 +6,90 @@
     <title>Ghid pentru Funcția de Generare a Feței</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 10px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #555;
-        }
-        .example {
-            margin-bottom: 30px;
-        }
-        .result {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        .result iframe {
-            width: 80%;
-            height: auto;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+     body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+.example {
+    margin-bottom: 30px;
+}
+.result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.result img {
+    max-width: 100%;  /* Asigură-te că imaginea nu depășește containerul */
+    height: auto;     /* Menține raportul de aspect */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
 </head>
 
 <body>
 
     <h2>Ghid pentru Utilizarea Funcției de Generare a Feței</h2>
-    <p>Funcția de Generare a Feței în AiCasso este incredibil de versatilă! Aceasta îți permite să creezi imagini uimitoare prin încorporarea unei fețe specifice în diverse personaje sau stiluri. Indiferent dacă îți imaginezi un cavaler, un samurai sau orice alt personaj, AiCasso folosește fața introdusă pentru a genera o imagine cu acea față integrată în designul solicitat.</p>
+    <p>Funcția de Generare a Feței în AiCasso este incredibil de versatilă! Aceasta îți permite să creezi imagini uimitoare prin integrarea unei fețe specifice în diferite personaje sau stiluri. Indiferent dacă îți imaginezi un cavaler, un samurai sau orice alt personaj, AiCasso folosește fața introdusă pentru a genera o imagine cu acea față integrată în designul solicitat.</p>
 
     <h3>Cum Funcționează:</h3>
     
-    <div class="example">
-        <strong>Imagine de Intrare:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1OM0oUMqcuJxo6VjOkqVKKKRK6GPx7Qo0/preview"></iframe>
-        </div>
-        <strong>Prompt 1:</strong>
-        <p>"Un cavaler realist, folosește scala maximă"</p>
-        <strong>Rezultatul 1:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/18EB2Bg4_F5VFdN-wswToJDtv2V_L5itC/preview"></iframe>
-        </div>
-        <strong>Prompt 2:</strong>
-        <p>"Folosește stilul chibi și fă un samurai, folosește valorile implicite"</p>
-        <strong>Rezultatul 2:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1JZi80cbtUZhRD_JP7SyRwyaFyqWajU6f/preview"></iframe>
-        </div>
-        <strong>Prompt 3:</strong>
-        <p>"Un samurai, folosește 31 de pași de denoising și stil anime"</p>
-        <strong>Rezultatul 3:</strong>
-        <div class="result">
-            <iframe src="https://drive.google.com/file/d/1cI-DQ5zGtYtJUYqtOb3sEzB6XI2EqEE9/preview"></iframe>
-        </div>
+<div class="example">
+    <strong>Imagine de Intrare:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/input.jpg" alt="Imagine de Intrare">
     </div>
+    <strong>Prompt 1:</strong>
+    <p>"Un cavaler realist, folosește scala maximă"</p>
+    <strong>Rezultatul 1:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/realistic.jpg" alt="Cavaler Realist">
+    </div>
+    <strong>Prompt 2:</strong>
+    <p>"Folosește stilul chibi și fă un samurai, folosește valorile implicite"</p>
+    <strong>Rezultatul 2:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/chibi.jpg" alt="Samurai Chibi">
+    </div>
+    <strong>Prompt 3:</strong>
+    <p>"Un samurai, folosește 31 de pași de denoising și stil anime"</p>
+    <strong>Rezultatul 3:</strong>
+    <div class="result">
+        <img src="../../images/tutorials/facegen/anime.jpg" alt="Samurai Anime">
+    </div>
+</div>
 
     <h3>Parametrii Opționali</h3>
-    <p>Dacă vrei să adaugi un pic mai multă personalitate sau control imaginilor generate, iată câteva opțiuni pe care le poți ajusta:</p>
+    <p>Dacă vrei să adaugi un pic mai multă personalitate sau control imaginilor tale generate, iată câteva opțiuni pe care le poți ajusta:</p>
 
     <ul>
-        <li><strong>Prompt Negativ:</strong> Aici poți spune lui AiCasso ce <em>nu</em> vrei să vezi în imagine. Dacă lași acest câmp gol, AiCasso se va concentra doar pe promptul pozitiv.</li>
+        <li><strong>Prompt Negativ:</strong> Aici poți spune AiCasso ce <em>nu</em> vrei să vezi în imagine. Dacă lași acest câmp gol, AiCasso se va concentra doar pe promptul pozitiv.</li>
         <li><strong>Numărul de Pași de Denoising:</strong> Acesta controlează cât de netedă și rafinată arată imaginea. Poți alege între 21, 31 sau 41 de pași, cu 41 fiind valoarea implicită. Mai mulți pași înseamnă o imagine mai curată și mai finisată.</li>
-        <li><strong>Scala de Ghidare:</strong> Aceasta ajută imaginea să rămână fidelă descrierii tale. Scala variază de la 1 la 20, cu 10 fiind valoarea implicită. Numerele mai mari înseamnă că AiCasso va respecta mai aproape promptul tău.</li>
+        <li><strong>Scala de Ghidare:</strong> Aceasta ajută imaginea să rămână fidelă descrierii tale. Scala variază de la 1 la 20, cu 10 fiind valoarea implicită. Numerele mai mari înseamnă că AiCasso va respecta mai mult promptul tău.</li>
         <li><strong>Scala S:</strong> Aceasta se referă la structura feței. Este un pic tehnică, dar esențialmente ajustează greutatea structurii feței. Valoarea implicită este 1.0, iar tu poți merge de la 0.0 la 2.0.</li>
-        <li><strong>Stil:</strong> Vrei să oferi imaginii tale o vibrație specifică? Poți alege un stil precum comic, chibi, 3D, anime sau realist. Realist este valoarea implicită, dar nu ezita să fii creativ!</li>
+        <li><strong>Stil:</strong> Vrei să oferi imaginii tale o vibrație specifică? Poți alege un stil precum comic, chibi, 3D, anime sau realist. Realist este stilul implicit, dar nu ezita să fii creativ!</li>
     </ul>
 
-    <p>Și amintește-ți, AiCasso este destul de iertător. Nu trebuie să fii un vrăjitor al gramaticii sau să obții fiecare detaliu perfect. Doar descrie ce vrei în cuvintele tale, iar AiCasso se va ocupa de restul. Distracție plăcută la creație!</p>
+    <p>Și amintește-ți, AiCasso este destul de iertător. Nu trebuie să fii un magician al gramaticii sau să obții fiecare detaliu perfect. Doar descrie ce vrei în cuvintele tale, iar AiCasso se va ocupa de restul. Distracție plăcută la creație!</p>
 
 </body>
 </html>
