@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Privacy Policy for AiCasso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AiCasso</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,45 +22,39 @@
             font-size: 3em;
         }
         header p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin-top: 10px;
+            opacity: 0.95;
         }
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
-            padding: 0 20px;
+            padding: 0 20px 40px;
             background-color: #fff;
         }
-        main p {
-            font-size: 1.1em;
+        h2 {
+            margin-top: 0;
+            padding-top: 32px;
+            color: #3a3f44;
+        }
+        p {
+            font-size: 1.05em;
             line-height: 1.8;
-        }
-        ol {
-            counter-reset: item;
-            list-style-type: none;
-            padding-left: 0;
-        }
-        ol > li {
-            counter-increment: item;
-            margin-bottom: 30px;
-        }
-        ol > li::before {
-            content: counter(item) ". ";
-            font-weight: bold;
-            font-size: 1.2em;
-            color: #3a3f44;
-        }
-        ol li strong {
-            font-size: 1.2em;
-            color: #3a3f44;
         }
         ul {
             list-style-type: disc;
-            margin-left: 20px;
+            margin-left: 22px;
             margin-top: 10px;
         }
         ul li {
             margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .note {
+            background: #f7f7f7;
+            border-left: 4px solid #3a3f44;
+            padding: 14px 16px;
+            margin: 18px 0;
         }
         a {
             color: #3a3f44;
@@ -71,7 +66,7 @@
         hr {
             border: none;
             border-top: 1px solid #ddd;
-            margin: 40px 0;
+            margin: 34px 0;
         }
         footer {
             text-align: center;
@@ -86,66 +81,106 @@
             main {
                 margin: 20px auto;
             }
-            ol > li::before {
-                font-size: 1em;
-            }
-            ol li strong {
-                font-size: 1em;
-            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Privacy Policy for AiCasso</h1>
-        <p><strong>Effective Date:</strong> September 13, 2024</p>
+        <h1>Privacy Policy</h1>
+        <p><strong>App:</strong> AiCasso</p>
+        <p><strong>Effective Date:</strong> December 17, 2025</p>
     </header>
+
     <main>
-        <p>At AiCasso, your privacy is our priority. This Privacy Policy outlines how we handle the information you provide when using our application.</p>
-        <ol>
-            <li><strong>Information We Collect</strong>
-                <ul>
-                    <li><strong>Input Images:</strong> We collect the images you upload to AiCasso solely to provide our services.</li>
-                    <li><strong>Face Data:</strong> If you upload an image containing faces, we process facial features to generate customized images based on user-selected features. This face data is extracted from your uploaded images and used solely for the purpose of image generation.</li>
-                </ul>
-            </li>
-            <li><strong>How We Use Your Information</strong>
-                <ul>
-                    <li><strong>Service Provision:</strong> The input images, including any face data, are used exclusively to perform the functionalities offered by AiCasso. This includes generating new images based on the features you select.</li>
-                </ul>
-            </li>
-            <li><strong>Data Retention</strong>
-                <ul>
-                    <li><strong>Immediate Deletion of Uploaded Images:</strong> All input images are deleted immediately after they have been processed and their intended purpose is fulfilled.</li>
-                    <li><strong>Temporary Storage of Generated Images:</strong> Generated images are stored in our cloud service and are available to the user for 24 hours. These images are automatically deleted after this period.</li>
-                    <li><strong>Cloud Storage Management:</strong> Our cloud storage is cleared every 24 hours to ensure that no residual data remains.</li>
-                </ul>
-            </li>
-            <li><strong>Data Sharing</strong>
-                <ul>
-                    <li><strong>No Third-Party Sharing:</strong> We do not share, sell, or disclose your images, face data, or any personal data to third parties. All data processing is handled internally within AiCasso.</li>
-                </ul>
-            </li>
-            <li><strong>Security Measures</strong>
-                <ul>
-                    <li><strong>Data Protection:</strong> We employ industry-standard security measures to protect your images and face data during processing and while stored in our cloud services.</li>
-                </ul>
-            </li>
-            <li><strong>Changes to This Privacy Policy</strong>
-                <ul>
-                    <li><strong>Policy Updates:</strong> We may update this Privacy Policy from time to time. Any changes will be reflected with an updated effective date.</li>
-                </ul>
-            </li>
-            <li><strong>Contact Us</strong>
-                <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
-                <p>Email: <a href="mailto:gloriousbytes@gmail.com">gloriousbytes@gmail.com</a></p>
-            </li>
-        </ol>
+        <p>
+            This Privacy Policy explains what information AiCasso collects and processes, how it is used, and the choices you have.
+            AiCasso is primarily an AI creation app, and it also includes optional social features such as public feed posts, comments, likes, and follows.
+        </p>
+
+        <div class="note">
+            <p><strong>Important:</strong> Your sign-in email address is not displayed publicly in the app. AiCasso assigns a system-generated username and profile image for your public profile.</p>
+        </div>
+
+        <h2>1) Information We Collect</h2>
+        <p>We collect information you provide, information generated by your use of the app, and information needed to operate optional social features.</p>
+        <ul>
+            <li><strong>Account and identifiers:</strong> If you sign in with Google or Apple, we receive an account identifier from the provider and may also receive your email address and name (depending on what the provider shares). We store a system-generated username for your public profile.</li>
+            <li><strong>Country/region (derived from device locale):</strong> When you sign in, the app sends a country code and region derived from your device locale settings. We store this to support regional experiences and operations.</li>
+            <li><strong>AI inputs and outputs:</strong> Prompts and media you provide (for example, images you upload) as well as content the app generates for you (images, audio, video, and related metadata such as mode/settings).</li>
+            <li><strong>Public content (optional):</strong> If you choose to participate in the community feed, we store and display your posts (AI-generated media created in the app), along with limited associated information such as a prompt shown to others (sanitized for public display), timestamps, and engagement counts.</li>
+            <li><strong>Comments and replies (optional):</strong> If you comment, we store the comment text, the post/comment it relates to, timestamps, and basic engagement data (likes, reply counts).</li>
+            <li><strong>Social interactions (optional):</strong> Likes, follows, and related relationship/engagement data used to power these features.</li>
+            <li><strong>Reports and blocks (optional):</strong> If you report content or users, we store the report details you submit (reason and optional details) and what was reported. If you block/unblock a user, we store information needed to apply that preference in the app and to support abuse prevention.</li>
+            <li><strong>Purchases and rewards:</strong> Subscription status and receipt/transaction information needed to validate purchases, plus points/reward status (including rewards earned via ads where applicable).</li>
+            <li><strong>Push notifications (optional):</strong> If you allow push notifications, we use OneSignal to deliver notifications. OneSignal assigns a device identifier and we may associate it with your AiCasso account identifier to deliver account-specific notifications.</li>
+            <li><strong>Crash reports (optional):</strong> If you choose to send a crash report, it may include app version, device model/OS, error details, and a stack trace to help us diagnose issues.</li>
+            <li><strong>Advertising (optional):</strong> If the app displays ads, the ad provider may collect information as part of ad delivery and measurement. See “Third-Party Services” below.</li>
+        </ul>
+
+        <h2>2) How We Use Information</h2>
+        <ul>
+            <li><strong>Provide the service:</strong> Generate content, sync your creations across devices when you sign in, and display your library.</li>
+            <li><strong>Enable social features (optional):</strong> Publish posts, show your public profile (system-generated username/profile image), enable comments, likes, and follows.</li>
+            <li><strong>Safety and integrity:</strong> Enforce our Terms of Service and Community Guidelines, process reports, apply blocks, and take action on abuse (for example, suspensions or bans).</li>
+            <li><strong>Payments and rewards:</strong> Validate purchases/subscriptions and manage points/rewards.</li>
+            <li><strong>Notifications:</strong> Send notifications about relevant app activity (for example, interactions with your posts or comments) if you opt in.</li>
+            <li><strong>Support and reliability:</strong> Respond to support requests and investigate crashes and performance issues.</li>
+        </ul>
+
+        <h2>3) When Information Is Shared</h2>
+        <p>AiCasso shares information in the following ways:</p>
+        <ul>
+            <li><strong>Public sharing (within the app):</strong> If you post or comment, your system-generated username and profile image, your posts, and your comments are visible to other users of the app. The prompt shown on feed posts is sanitized for public display (for example, removing emails, phone numbers, and URLs).</li>
+            <li><strong>Service providers (processors):</strong> We use third-party services to operate the app (for example, sign-in, push notifications, cloud hosting/storage, ads, and AI generation providers). These providers process information on our behalf to provide their services.</li>
+            <li><strong>Legal and safety:</strong> We may disclose information if required by law or if needed to protect users, prevent abuse, or respond to lawful requests.</li>
+        </ul>
+
+        <h2>4) Third-Party Services</h2>
+        <p>AiCasso integrates with the following categories of third-party services:</p>
+        <ul>
+            <li><strong>Sign-in providers:</strong> Google Sign-In and Sign in with Apple.</li>
+            <li><strong>Push notifications:</strong> OneSignal.</li>
+            <li><strong>Advertising:</strong> Google AdMob (if ads are shown in your build).</li>
+            <li><strong>AI processing providers:</strong> We use external AI providers to generate and transform content (for example, image generation and face-related features). These providers process the prompts and media you submit for generation.</li>
+            <li><strong>Infrastructure:</strong> Our backend uses cloud services to store app data and media and to operate the community feed.</li>
+        </ul>
+        <p>
+            Third-party services may have their own privacy policies. If you use these services through AiCasso, their terms and policies may also apply.
+        </p>
+
+        <h2>5) Data Retention</h2>
+        <ul>
+            <li><strong>Public posts:</strong> Content you publish to the feed is retained until you delete it, you delete your account, or we remove it for safety or policy reasons.</li>
+            <li><strong>Comments and related activity:</strong> Comments and related engagement data are retained to operate the community features, unless removed for safety reasons or deleted as part of account deletion.</li>
+            <li><strong>Private creations and uploads:</strong> Media and generations that are not posted publicly may be deleted automatically as part of our cleanup processes (for example, after a limited retention window or when upstream media URLs are no longer accessible).</li>
+            <li><strong>Reports and moderation logs:</strong> Reports and moderation-related records may be retained as needed for safety, abuse prevention, and auditing.</li>
+            <li><strong>Crash logs:</strong> Crash reports are retained for debugging and reliability improvements.</li>
+        </ul>
+
+        <h2>6) Your Choices</h2>
+        <ul>
+            <li><strong>Optional social participation:</strong> You can use AiCasso without posting to the feed. Posting and commenting are optional.</li>
+            <li><strong>Reporting and blocking:</strong> You can report posts, comments, and users, and you can block other users.</li>
+            <li><strong>Push notifications:</strong> You can enable or disable notifications in your device settings.</li>
+            <li><strong>Account deletion:</strong> You can initiate account deletion in-app (Settings → Delete account). If you can’t access the app, contact support and we will assist.</li>
+        </ul>
+
+        <h2>7) Security</h2>
+        <p>We use reasonable administrative, technical, and physical safeguards designed to protect information. No system can be guaranteed to be 100% secure.</p>
+
+        <h2>8) Contact Us</h2>
+        <p>If you have questions about this Privacy Policy or your data, contact:</p>
+        <p>
+            Email: <a href="mailto:support@aicassoapp.com">support@aicassoapp.com</a><br>
+            Website: <a href="https://www.aicassoapp.com">https://www.aicassoapp.com</a>
+        </p>
+
         <hr>
-        <p>By using AiCasso, you agree to the terms outlined in this Privacy Policy.</p>
+        <p>By using AiCasso, you agree to this Privacy Policy.</p>
     </main>
+
     <footer>
-        &copy; 2024 AiCasso. All rights reserved.
+        &copy; 2025 AiCasso. All rights reserved.
     </footer>
 </body>
 </html>
