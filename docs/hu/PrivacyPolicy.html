@@ -2,7 +2,8 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <title>Adatvédelmi Nyilatkozat az AiCasso számára</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adatvédelmi szabályzat – AiCasso</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,45 +22,39 @@
             font-size: 3em;
         }
         header p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin-top: 10px;
+            opacity: 0.95;
         }
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
-            padding: 0 20px;
+            padding: 0 20px 40px;
             background-color: #fff;
         }
-        main p {
-            font-size: 1.1em;
+        h2 {
+            margin-top: 0;
+            padding-top: 32px;
+            color: #3a3f44;
+        }
+        p {
+            font-size: 1.05em;
             line-height: 1.8;
-        }
-        ol {
-            counter-reset: item;
-            list-style-type: none;
-            padding-left: 0;
-        }
-        ol > li {
-            counter-increment: item;
-            margin-bottom: 30px;
-        }
-        ol > li::before {
-            content: counter(item) ". ";
-            font-weight: bold;
-            font-size: 1.2em;
-            color: #3a3f44;
-        }
-        ol li strong {
-            font-size: 1.2em;
-            color: #3a3f44;
         }
         ul {
             list-style-type: disc;
-            margin-left: 20px;
+            margin-left: 22px;
             margin-top: 10px;
         }
         ul li {
             margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .note {
+            background: #f7f7f7;
+            border-left: 4px solid #3a3f44;
+            padding: 14px 16px;
+            margin: 18px 0;
         }
         a {
             color: #3a3f44;
@@ -71,7 +66,7 @@
         hr {
             border: none;
             border-top: 1px solid #ddd;
-            margin: 40px 0;
+            margin: 34px 0;
         }
         footer {
             text-align: center;
@@ -86,66 +81,100 @@
             main {
                 margin: 20px auto;
             }
-            ol > li::before {
-                font-size: 1em;
-            }
-            ol li strong {
-                font-size: 1em;
-            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Adatvédelmi Nyilatkozat az AiCasso számára</h1>
-        <p><strong>Hatálybalépés dátuma:</strong> 2024. szeptember 13.</p>
-    </header>
-    <main>
-        <p>Az AiCasso-nál az Ön adatainak védelme a prioritásunk. Ez az Adatvédelmi Nyilatkozat ismerteti, hogyan kezeljük az Ön által megadott információkat az alkalmazásunk használata során.</p>
-        <ol>
-            <li><strong>Gyűjtött Információk</strong>
-                <ul>
-                    <li><strong>Bemeneti Képek:</strong> Az AiCasso-hoz feltöltött képeket kizárólag szolgáltatásaink nyújtására gyűjtjük.</li>
-                    <li><strong>Arcadatok:</strong> Ha olyan képet tölt fel, amely arcokat tartalmaz, feldolgozzuk az arcfunkciókat, hogy testreszabott képeket generáljunk a felhasználó által kiválasztott jellemzők alapján. Ezek az arcadatok az Ön által feltöltött képekből származnak, és kizárólag a képgenerálás céljára használjuk fel őket.</li>
-                </ul>
-            </li>
-            <li><strong>Hogyan Használjuk Az Ön Információit</strong>
-                <ul>
-                    <li><strong>Szolgáltatás Nyújtás:</strong> A bemeneti képeket, beleértve az arcadatokat is, kizárólag az AiCasso által kínált funkciók végrehajtására használjuk. Ez magában foglalja az új képek generálását az Ön által kiválasztott jellemzők alapján.</li>
-                </ul>
-            </li>
-            <li><strong>Adatmegőrzés</strong>
-                <ul>
-                    <li><strong>A Feltöltött Képek Azonnali Törlése:</strong> Minden bemeneti képet azonnal törlünk, miután feldolgoztuk őket, és a tervezett céljukat teljesítették.</li>
-                    <li><strong>A Generált Képek Ideiglenes Tárolása:</strong> A generált képeket a felhőszolgáltatásunkban tároljuk, és a felhasználó számára 24 órán keresztül elérhetők. Ezek a képek automatikusan törlődnek ezen időszak után.</li>
-                    <li><strong>Pehő Tárolás Kezelése:</strong> A felhő tárolónkat 24 óránként töröljük, hogy biztosítsuk, hogy ne maradjon hátra maradék adat.</li>
-                </ul>
-            </li>
-            <li><strong>Adatmegosztás</strong>
-                <ul>
-                    <li><strong>Nincs Harmadik Fél Átadás:</strong> Nem osztjuk meg, nem adjuk el, és nem hozzuk nyilvánosságra az Ön képeit, arcadatait vagy bármilyen személyes adatát harmadik feleknek. Minden adatfeldolgozás belsőleg, az AiCasso-n belül történik.</li>
-                </ul>
-            </li>
-            <li><strong>Biztonsági Intézkedések</strong>
-                <ul>
-                    <li><strong>Adatvédelem:</strong> Iparági szabványoknak megfelelő biztonsági intézkedéseket alkalmazunk az Ön képeinek és arcadatainak védelme érdekében a feldolgozás során és a felhőszolgáltatásainkban való tároláskor.</li>
-                </ul>
-            </li>
-            <li><strong>Az Adatvédelmi Nyilatkozat Módosításai</strong>
-                <ul>
-                    <li><strong>Politikai Frissítések:</strong> Időről időre frissíthetjük ezt az Adatvédelmi Nyilatkozatot. Bármilyen változás az új hatálybalépési dátummal lesz érvényesítve.</li>
-                </ul>
-            </li>
-            <li><strong>Kapcsolatfelvétel</strong>
-                <p>Ha bármilyen kérdése vagy aggálya van ezzel az Adatvédelmi Nyilatkozattal kapcsolatban, kérjük, lépjen kapcsolatba velünk a következő címen:</p>
-                <p>Email: <a href="mailto:gloriousbytes@gmail.com">gloriousbytes@gmail.com</a></p>
-            </li>
-        </ol>
+    <header><h1>Adatvédelmi irányelvek</h1>
+        <p><strong>Alkalmazás:</strong> AiCasso</p>
+        <p><strong>Hatálybalépés dátuma:</strong> 2025. december 17.</p></header>
+
+    <main><p>
+            Ez az adatvédelmi szabályzat elmagyarázza, hogy az AiCasso milyen információkat gyűjt és dolgoz fel, hogyan használja fel azokat, és milyen választási lehetőségei vannak.
+            Az AiCasso elsősorban mesterséges intelligencia-készítő alkalmazás, és opcionális közösségi funkciókat is tartalmaz, például nyilvános hírfolyam-bejegyzéseket, megjegyzéseket, kedveléseket és követéseket.
+        </p>
+
+        <div class="note">
+            <p><strong>Fontos:</strong> Bejelentkezési e-mail címe nem jelenik meg nyilvánosan az alkalmazásban. Az AiCasso rendszer által generált felhasználónevet és profilképet rendel a nyilvános profiljához.</p>
+        </div>
+
+        <h2>1) Az általunk gyűjtött információk</h2>
+        <p>Az Ön által megadott információkat, az alkalmazás Ön által generált információkat, valamint az opcionális közösségi funkciók működtetéséhez szükséges információkat gyűjtjük.</p>
+        <ul>
+            <li><strong>Fiók és azonosítók:</strong> Ha a Google-lal vagy az Apple-lel jelentkezik be, kapunk egy fiókazonosítót a szolgáltatótól, valamint az Ön e-mail címét és nevét is megkaphatjuk (attól függően, hogy a szolgáltató mit oszt meg). Nyilvános profiljához rendszer által generált felhasználónevet tárolunk.</li>
+            <li><strong>Ország/régió (az eszköz területi beállításaiból származtatva):</strong> Amikor bejelentkezik, az alkalmazás országkódot és régiót küld, amely az eszköz ország-beállításaiból származik. Ezt a regionális tapasztalatok és műveletek támogatása érdekében tároljuk.</li>
+            <li><strong>AI bemenetek és kimenetek:</strong> az Ön által biztosított kérések és média (például az Ön által feltöltött képek), valamint az alkalmazás által az Ön számára generált tartalom (képek, hangok, videók és kapcsolódó metaadatok, például mód/beállítások).</li>
+            <li><strong>Nyilvános tartalom (opcionális):</strong> Ha úgy dönt, hogy részt vesz a közösségi hírfolyamban, tároljuk és megjelenítjük bejegyzéseit (az alkalmazásban létrehozott mesterséges intelligencia által generált média), valamint a korlátozott kapcsolódó információkat, például a másoknak megjelenített üzeneteket (megtisztítva a nyilvános megjelenítéshez), időbélyegeket és elköteleződéseket.</li>
+            <li><strong>Megjegyzések és válaszok (nem kötelező):</strong> Ha megjegyzést ír, tároljuk a megjegyzés szövegét, a hozzá tartozó bejegyzést/megjegyzést, az időbélyegeket és az alapvető elköteleződési adatokat (tetszésnyilvánítások, válaszok száma).</li>
+            <li><strong>Társas interakciók (nem kötelező):</strong> Kedvelések, követések és kapcsolódó kapcsolati/elköteleződési adatok, amelyek e funkciók működtetésére szolgálnak.</li>
+            <li><strong>Jelentések és blokkolások (opcionális):</strong> Ha tartalmat vagy felhasználókat jelent be, tároljuk az Ön által elküldött jelentés részleteit (ok és opcionális részletek), valamint a jelentett adatokat. Ha letilt/felold egy felhasználót, tároljuk az alkalmazásban a preferencia alkalmazásához és a visszaélések megelőzéséhez szükséges információkat.</li>
+            <li><strong>Vásárlások és jutalmak:</strong> Az előfizetés állapota és a nyugta/tranzakció adatai, amelyek a vásárlások érvényesítéséhez szükségesek, plusz pontok/jutalmak állapota (beleértve a hirdetésekkel szerzett jutalmakat is, ha vannak).</li>
+            <li><strong>Leküldéses értesítések (opcionális):</strong> Ha engedélyezi a push értesítéseket, a OneSignal segítségével küldjük el az értesítéseket. A OneSignal hozzárendel egy eszközazonosítót, és társíthatjuk azt az Ön AiCasso-fiókjának azonosítójával, hogy fiókspecifikus értesítéseket küldhessünk.</li>
+            <li><strong>Rosszjelentések (opcionális):</strong> Ha úgy dönt, hogy hibajelentést küld, az tartalmazhatja az alkalmazás verzióját, az eszköz modelljét/OS-ét, a hiba részleteit és a veremkövetést, amely segít a problémák diagnosztizálásában.</li>
+            <li><strong>Hirdetés (opcionális):</strong> Ha az alkalmazás hirdetéseket jelenít meg, a hirdetésszolgáltató információkat gyűjthet a hirdetésmegjelenítés és -mérés részeként. Lásd alább a „Harmadik féltől származó szolgáltatások” című részt.</li>
+        </ul>
+
+        <h2>2) Hogyan használjuk fel az információkat</h2>
+        <ul>
+            <li><strong>A szolgáltatás nyújtása:</strong> Tartalom létrehozása, alkotásainak szinkronizálása az eszközök között, amikor bejelentkezik, és megjelenítheti könyvtárát.</li>
+            <li><strong>Közösségi funkciók engedélyezése (opcionális):</strong> Tegyen közzé bejegyzéseket, mutassa meg nyilvános profilját (a rendszer által generált felhasználónév/profilkép), engedélyezze a megjegyzéseket, kedveléseket és követéseket.</li>
+            <li><strong>Biztonság és integritás:</strong> Érvényesítse Általános Szerződési Feltételeinket és közösségi irányelveinket, dolgozzon fel jelentéseket, alkalmazzon letiltásokat, és tegyen lépéseket a visszaélések (például felfüggesztések vagy kitiltások) esetén.</li>
+            <li><strong>Kifizetések és jutalmak:</strong> Érvényesítse a vásárlásokat/előfizetéseket, és kezelje a pontokat/jutalmakat.</li>
+            <li><strong>Értesítések:</strong> Ha engedélyezi, értesítéseket küldhet a releváns alkalmazástevékenységekről (például a bejegyzéseivel vagy megjegyzéseivel való interakciókról).</li>
+            <li><strong>Támogatás és megbízhatóság:</strong> Válaszoljon a támogatási kérésekre, és vizsgálja ki az összeomlásokat és a teljesítményproblémákat.</li>
+        </ul>
+
+        <h2>3) Amikor megosztják az információkat</h2>
+        <p>Az AiCasso a következő módokon oszt meg információkat:</p>
+        <ul>
+            <li><strong>Nyilvános megosztás (az alkalmazáson belül):</strong> Ha közzétesz vagy megjegyzést tesz, a rendszer által generált felhasználóneved és profilképed, bejegyzéseid és megjegyzéseid láthatók az alkalmazás többi felhasználója számára. A hírcsatorna bejegyzésein megjelenő értesítést megtisztítottuk a nyilvános megjelenítés érdekében (például e-mailek, telefonszámok és URL-ek eltávolítása érdekében).</li>
+            <li><strong>Szolgáltatók (feldolgozók):</strong> Harmadik féltől származó szolgáltatásokat használunk az alkalmazás működtetéséhez (például bejelentkezés, push értesítések, felhőalapú tárhely/tárhely, hirdetések és mesterséges intelligencia-generáló szolgáltatók). Ezek a szolgáltatók a mi nevünkben dolgoznak fel információkat szolgáltatásaik nyújtása érdekében.</li>
+            <li><strong>Jogi és biztonság:</strong> Felfedhetünk információkat, ha azt törvény írja elő, vagy ha ez szükséges a felhasználók védelméhez, a visszaélések megelőzéséhez vagy a jogszerű kérések megválaszolásához.</li>
+        </ul>
+
+        <h2>4) Harmadik féltől származó szolgáltatások</h2>
+        <p>Az AiCasso a harmadik féltől származó szolgáltatások következő kategóriáival integrálható:</p>
+        <ul>
+            <li><strong>Bejelentkezési szolgáltatók:</strong> Google bejelentkezés és bejelentkezés az Apple-lel.</li>
+            <li><strong>Push értesítések:</strong> OneSignal.</li>
+            <li><strong>Hirdetés:</strong> Google AdMob (ha hirdetések jelennek meg a buildben).</li>
+            <li><strong>AI-feldolgozó szolgáltatók:</strong> Külső mesterségesintelligencia-szolgáltatókat használunk a tartalom generálására és átalakítására (például képgenerálásra és arccal kapcsolatos szolgáltatásokra). Ezek a szolgáltatók feldolgozzák az Ön által elküldött üzeneteket és adathordozókat generálás céljából.</li>
+            <li><strong>Infrastruktúra:</strong> Háttérrendszerünk felhőszolgáltatásokat használ az alkalmazásadatok és a média tárolására, valamint a közösségi hírfolyam működtetésére.</li>
+        </ul>
+        <p>
+            A harmadik felek szolgáltatásai saját adatvédelmi szabályzattal rendelkezhetnek. Ha ezeket a szolgáltatásokat az AiCasson keresztül használja, akkor azok feltételei és szabályzatai is érvényesek lehetnek.
+        </p>
+
+        <h2>5) Adatmegőrzés</h2>
+        <ul>
+            <li><strong>Nyilvános bejegyzések:</strong> A hírfolyamban közzétett tartalmat a rendszer mindaddig megőrzi, amíg nem törli, törli a fiókját, vagy amíg biztonsági vagy irányelvi okokból eltávolítjuk.</li>
+            <li><strong>Megjegyzések és kapcsolódó tevékenységek:</strong> A megjegyzéseket és a kapcsolódó elköteleződési adatokat a közösségi funkciók működtetése érdekében őrzik meg, kivéve, ha biztonsági okokból eltávolítják őket, vagy a fiók törlése során nem törlik őket.</li>
+            <li><strong>Privát alkotások és feltöltések:</strong> A nem nyilvánosan közzétett médiákat és generációkat a tisztítási folyamataink részeként automatikusan törölhetjük (például egy korlátozott megőrzési időszak után, vagy amikor a felsőbb szintű média URL-jei már nem érhetők el).</li>
+            <li><strong>Jelentések és moderálási naplók:</strong> A jelentések és a moderálással kapcsolatos rekordok szükség szerint megőrizhetők a biztonság, a visszaélések megelőzése és az auditálás érdekében.</li>
+            <li><strong>Összeomlási naplók:</strong> A rendszer megőrzi az összeomlási jelentéseket a hibakeresés és a megbízhatóság javítása érdekében.</li>
+        </ul>
+
+        <h2>6) Az Ön választása</h2>
+        <ul>
+            <li><strong>Opcionális társadalmi részvétel:</strong> Az AiCassót anélkül is használhatja, hogy közzéteszi a hírfolyamban. A közzététel és a megjegyzés nem kötelező.</li>
+            <li><strong>Jelentés és blokkolás:</strong> Bejelentheti a bejegyzéseket, megjegyzéseket és felhasználókat, valamint letilthat más felhasználókat.</li>
+            <li><strong>Push értesítések:</strong> Az értesítéseket az eszköz beállításaiban engedélyezheti vagy letilthatja.</li>
+            <li><strong>Fiók törlése:</strong> Az alkalmazáson belül kezdeményezheti a fiók törlését (Beállítások → Fiók törlése). Ha nem tudja elérni az alkalmazást, lépjen kapcsolatba az ügyfélszolgálattal, és mi segítünk.</li>
+        </ul>
+
+        <h2>7) Biztonság</h2>
+        <p>Az információk védelme érdekében ésszerű adminisztratív, műszaki és fizikai biztosítékokat alkalmazunk. Egyetlen rendszer sem garantált 100%-os biztonságban.</p>
+
+        <h2>8) Lépjen kapcsolatba velünk</h2>
+        <p>Ha kérdése van a jelen Adatvédelmi irányelvekkel vagy adataival kapcsolatban, lépjen kapcsolatba a következővel:</p>
+        <p>
+            E-mail: <a href="mailto:support@aicassoapp.com">support@aicassoapp.com</a><br>
+            Webhely: <a href="https://www.aicassoapp.com">https://www.aicassoapp.com</a>
+        </p>
+
         <hr>
-        <p>Az AiCasso használatával Ön elfogadja az ebben az Adatvédelmi Nyilatkozatban foglalt feltételeket.</p>
-    </main>
-    <footer>
-        &copy; 2024 AiCasso. Minden jog fenntartva.
-    </footer>
+        <p>Az AiCasso használatával Ön elfogadja a jelen Adatvédelmi szabályzatot.</p></main>
+
+    <footer>© 2025 AiCasso. Minden jog fenntartva.</footer>
 </body>
 </html>

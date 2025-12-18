@@ -2,7 +2,8 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Informativa sulla Privacy per AiCasso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informativa sulla privacy - AiCasso</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,45 +22,39 @@
             font-size: 3em;
         }
         header p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin-top: 10px;
+            opacity: 0.95;
         }
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
-            padding: 0 20px;
+            padding: 0 20px 40px;
             background-color: #fff;
         }
-        main p {
-            font-size: 1.1em;
+        h2 {
+            margin-top: 0;
+            padding-top: 32px;
+            color: #3a3f44;
+        }
+        p {
+            font-size: 1.05em;
             line-height: 1.8;
-        }
-        ol {
-            counter-reset: item;
-            list-style-type: none;
-            padding-left: 0;
-        }
-        ol > li {
-            counter-increment: item;
-            margin-bottom: 30px;
-        }
-        ol > li::before {
-            content: counter(item) ". ";
-            font-weight: bold;
-            font-size: 1.2em;
-            color: #3a3f44;
-        }
-        ol li strong {
-            font-size: 1.2em;
-            color: #3a3f44;
         }
         ul {
             list-style-type: disc;
-            margin-left: 20px;
+            margin-left: 22px;
             margin-top: 10px;
         }
         ul li {
             margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .note {
+            background: #f7f7f7;
+            border-left: 4px solid #3a3f44;
+            padding: 14px 16px;
+            margin: 18px 0;
         }
         a {
             color: #3a3f44;
@@ -71,7 +66,7 @@
         hr {
             border: none;
             border-top: 1px solid #ddd;
-            margin: 40px 0;
+            margin: 34px 0;
         }
         footer {
             text-align: center;
@@ -86,66 +81,100 @@
             main {
                 margin: 20px auto;
             }
-            ol > li::before {
-                font-size: 1em;
-            }
-            ol li strong {
-                font-size: 1em;
-            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Informativa sulla Privacy per AiCasso</h1>
-        <p><strong>Data di Efficacia:</strong> 13 settembre 2024</p>
-    </header>
-    <main>
-        <p>Presso AiCasso, la tua privacy è la nostra priorità. Questa Informativa sulla Privacy descrive come gestiamo le informazioni che fornisci quando utilizzi la nostra applicazione.</p>
-        <ol>
-            <li><strong>Informazioni che Raccogliamo</strong>
-                <ul>
-                    <li><strong>Immagini Caricate:</strong> Raccogliamo le immagini che carichi su AiCasso esclusivamente per fornire i nostri servizi.</li>
-                    <li><strong>Dati Facciali:</strong> Se carichi un'immagine contenente volti, elaboriamo le caratteristiche facciali per generare immagini personalizzate in base alle caratteristiche selezionate dall'utente. Questi dati facciali vengono estratti dalle tue immagini caricate e utilizzati esclusivamente per la generazione delle immagini.</li>
-                </ul>
-            </li>
-            <li><strong>Come Utilizziamo le Tue Informazioni</strong>
-                <ul>
-                    <li><strong>Fornitura del Servizio:</strong> Le immagini caricate, inclusi i dati facciali, vengono utilizzate esclusivamente per eseguire le funzionalità offerte da AiCasso. Questo include la generazione di nuove immagini in base alle caratteristiche che selezioni.</li>
-                </ul>
-            </li>
-            <li><strong>Conservazione dei Dati</strong>
-                <ul>
-                    <li><strong>Eliminazione Immediata delle Immagini Caricate:</strong> Tutte le immagini caricate vengono eliminate immediatamente dopo essere state elaborate e dopo che il loro scopo è stato soddisfatto.</li>
-                    <li><strong>Archiviazione Temporanea delle Immagini Generate:</strong> Le immagini generate vengono memorizzate nel nostro servizio cloud e sono disponibili per l'utente per 24 ore. Queste immagini vengono eliminate automaticamente dopo questo periodo.</li>
-                    <li><strong>Gestione dell'Archiviazione Cloud:</strong> Il nostro archiviazione cloud viene svuotata ogni 24 ore per garantire che non rimangano dati residui.</li>
-                </ul>
-            </li>
-            <li><strong>Condivisione dei Dati</strong>
-                <ul>
-                    <li><strong>Nessuna Condivisione con Terzi:</strong> Non condividiamo, vendiamo o divulghiamo le tue immagini, dati facciali o qualsiasi dato personale a terzi. Tutti i processi di dati vengono gestiti internamente all'interno di AiCasso.</li>
-                </ul>
-            </li>
-            <li><strong>Misure di Sicurezza</strong>
-                <ul>
-                    <li><strong>Protezione dei Dati:</strong> Adottiamo misure di sicurezza standard del settore per proteggere le tue immagini e i dati facciali durante l'elaborazione e mentre sono memorizzati nei nostri servizi cloud.</li>
-                </ul>
-            </li>
-            <li><strong>Modifiche a Questa Informativa sulla Privacy</strong>
-                <ul>
-                    <li><strong>Aggiornamenti della Politica:</strong> Potremmo aggiornare questa Informativa sulla Privacy di tanto in tanto. Eventuali modifiche saranno riflesse con una data di efficacia aggiornata.</li>
-                </ul>
-            </li>
-            <li><strong>Contattaci</strong>
-                <p>Se hai domande o preoccupazioni riguardo a questa Informativa sulla Privacy, ti preghiamo di contattarci a:</p>
-                <p>Email: <a href="mailto:gloriousbytes@gmail.com">gloriousbytes@gmail.com</a></p>
-            </li>
-        </ol>
+    <header><h1>Informativa sulla privacy</h1>
+        <p><strong>App:</strong> AiCasso</p>
+        <p><strong>Data di entrata in vigore:</strong> 17 dicembre 2025</p></header>
+
+    <main><p>
+            La presente Informativa sulla privacy spiega quali informazioni AiCasso raccoglie ed elabora, come vengono utilizzate e le scelte a tua disposizione.
+            AiCasso è principalmente un'app per la creazione di intelligenza artificiale e include anche funzionalità social opzionali come post di feed pubblici, commenti, Mi piace e follow.
+        </p>
+
+        <div class="nota">
+            <p><strong>Importante:</strong> il tuo indirizzo email di accesso non viene visualizzato pubblicamente nell'app. AiCasso assegna un nome utente e un'immagine del profilo generati dal sistema per il tuo profilo pubblico.</p>
+        </div>
+
+        <h2>1) Informazioni che raccogliamo</h2>
+        <p>Raccogliamo le informazioni fornite, le informazioni generate dal tuo utilizzo dell'app e le informazioni necessarie per gestire funzionalità social opzionali.</p>
+        <ul>
+            <li><strong>Account e identificatori:</strong> se accedi con Google o Apple, riceviamo un identificatore dell'account dal provider e potremmo anche ricevere il tuo indirizzo email e il tuo nome (a seconda di ciò che il provider condivide). Memorizziamo un nome utente generato dal sistema per il tuo profilo pubblico.</li>
+            <li><strong>Paese/regione (derivato dalle impostazioni locali del dispositivo):</strong> quando accedi, l'app invia un codice paese e una regione derivati dalle impostazioni locali del tuo dispositivo. Li archiviamo per supportare le esperienze e le operazioni regionali.</li>
+            <li><strong>Ingressi e output AI:</strong> suggerimenti e contenuti multimediali forniti (ad esempio, immagini caricate), nonché contenuti generati dall'app per te (immagini, audio, video e metadati correlati come modalità/impostazioni).</li>
+            <li><strong>Contenuti pubblici (facoltativo):</strong> se scegli di partecipare al feed della community, memorizziamo e visualizziamo i tuoi post (media generati dall'intelligenza artificiale creati nell'app), insieme a informazioni associate limitate come un messaggio mostrato ad altri (ripulito per la visualizzazione pubblica), timestamp e conteggi del coinvolgimento.</li>
+            <li><strong>Commenti e risposte (facoltativo):</strong> se commenti, memorizziamo il testo del commento, il post/commento a cui si riferisce, i timestamp e i dati di base sul coinvolgimento (Mi piace, conteggio delle risposte).</li>
+            <li><strong>Interazioni social (facoltativo):</strong> Mi piace, follower e dati relativi a relazioni/coinvolgimenti utilizzati per alimentare queste funzionalità.</li>
+            <li><strong>Segnalazioni e blocchi (facoltativo):</strong> se segnali contenuti o utenti, memorizziamo i dettagli della segnalazione che invii (motivo e dettagli facoltativi) e cosa è stato segnalato. Se blocchi/sblocchi un utente, memorizziamo le informazioni necessarie per applicare tale preferenza nell'app e per supportare la prevenzione degli abusi.</li>
+            <li><strong>Acquisti e premi:</strong> stato dell'abbonamento e informazioni su ricevute/transazioni necessarie per convalidare gli acquisti, oltre allo stato dei punti/premi (inclusi i premi guadagnati tramite annunci, ove applicabile).</li>
+            <li><strong>Notifiche push (facoltativo):</strong> se consenti le notifiche push, utilizziamo OneSignal per inviare le notifiche. OneSignal assegna un identificatore del dispositivo e potremmo associarlo all'identificatore del tuo account AiCasso per inviare notifiche specifiche dell'account.</li>
+            <li><strong>Rapporti sugli arresti anomali (facoltativo):</strong> se scegli di inviare un rapporto sugli arresti anomali, potrebbe includere la versione dell'app, il modello/sistema operativo del dispositivo, i dettagli dell'errore e un'analisi dello stack per aiutarci a diagnosticare i problemi.</li>
+            <li><strong>Pubblicità (facoltativo):</strong> se l'app visualizza annunci, il fornitore di annunci può raccogliere informazioni come parte della pubblicazione e della misurazione degli annunci. Consulta la sezione "Servizi di terze parti" di seguito.</li>
+        </ul>
+
+        <h2>2) Come utilizziamo le informazioni</h2>
+        <ul>
+            <li><strong>Fornisci il servizio:</strong> genera contenuti, sincronizza le tue creazioni su tutti i dispositivi quando accedi e visualizza la tua libreria.</li>
+            <li><strong>Abilita le funzionalità social (facoltativo):</strong> pubblica post, mostra il tuo profilo pubblico (nome utente/immagine del profilo generati dal sistema), attiva commenti, Mi piace e segui.</li>
+            <li><strong>Sicurezza e integrità:</strong> applica i nostri Termini di servizio e le Linee guida della community, elabora le segnalazioni, applica blocchi e intraprendi azioni in caso di abusi (ad esempio sospensioni o divieti).</li>
+            <li><strong>Pagamenti e premi:</strong> convalida acquisti/abbonamenti e gestisci punti/premi.</li>
+            <li><strong>Notifiche:</strong> invia notifiche sulle attività pertinenti dell'app (ad esempio, interazioni con i tuoi post o commenti) se attivi.</li>
+            <li><strong>Supporto e affidabilità:</strong> rispondi alle richieste di supporto ed esamina arresti anomali e problemi di prestazioni.</li>
+        </ul>
+
+        <h2>3) Quando le informazioni vengono condivise</h2>
+        <p>AiCasso condivide le informazioni nei seguenti modi:</p>
+        <ul>
+            <li><strong>Condivisione pubblica (all'interno dell'app):</strong> se pubblichi o commenti, il nome utente e l'immagine del profilo generati dal sistema, i tuoi post e i tuoi commenti saranno visibili agli altri utenti dell'app. La richiesta mostrata nei post del feed è stata ripulita per la visualizzazione pubblica (ad esempio, rimuovendo email, numeri di telefono e URL).</li>
+            <li><strong>Fornitori di servizi (processori):</strong> utilizziamo servizi di terze parti per gestire l'app (ad esempio, accesso, notifiche push, hosting/archiviazione nel cloud, annunci e fornitori di generazione di intelligenza artificiale). Questi fornitori elaborano le informazioni per nostro conto per fornire i loro servizi.</li>
+            <li><strong>Note legali e sicurezza:</strong> potremmo divulgare informazioni se richiesto dalla legge o se necessario per proteggere gli utenti, prevenire abusi o rispondere a richieste legittime.</li>
+        </ul>
+
+        <h2>4) Servizi di terze parti</h2>
+        <p>AiCasso si integra con le seguenti categorie di servizi di terze parti:</p>
+        <ul>
+            <li><strong>Fornitori di accesso:</strong> Accedi con Google e Accedi con Apple.</li>
+            <li><strong>Notifiche push:</strong> OneSignal.</li>
+            <li><strong>Pubblicità:</strong> Google AdMob (se nella tua build vengono visualizzati annunci).</li>
+            <li><strong>Fornitori di elaborazione IA:</strong> utilizziamo fornitori esterni di IA per generare e trasformare contenuti (ad esempio, generazione di immagini e funzionalità relative al volto). Questi fornitori elaborano le richieste e i contenuti multimediali inviati per la generazione.</li>
+            <li><strong>Infrastruttura:</strong> il nostro backend utilizza servizi cloud per archiviare dati e contenuti multimediali delle app e per gestire il feed della community.</li>
+        </ul>
+        <p>
+            I servizi di terze parti potrebbero avere le proprie politiche sulla privacy. Se utilizzi questi servizi tramite AiCasso, potrebbero applicarsi anche i relativi termini e politiche.
+        </p>
+
+        <h2>5) Conservazione dei dati</h2>
+        <ul>
+            <li><strong>Post pubblici:</strong> i contenuti che pubblichi nel feed vengono conservati finché non li elimini, elimini il tuo account o finché non li rimuoviamo per motivi di sicurezza o norme.</li>
+            <li><strong>Commenti e attività correlate:</strong> i commenti e i relativi dati sul coinvolgimento vengono conservati per il funzionamento delle funzionalità della community, a meno che non vengano rimossi per motivi di sicurezza o eliminati come parte dell'eliminazione dell'account.</li>
+            <li><strong>Creazioni e caricamenti privati:</strong> i media e le generazioni che non vengono pubblicati pubblicamente potrebbero essere eliminati automaticamente come parte dei nostri processi di pulizia (ad esempio, dopo un periodo di conservazione limitato o quando gli URL dei media upstream non sono più accessibili).</li>
+            <li><strong>Rapporti e registri di moderazione:</strong> i rapporti e i registri relativi alla moderazione possono essere conservati secondo necessità per motivi di sicurezza, prevenzione degli abusi e controllo.</li>
+            <li><strong>Registri degli arresti anomali:</strong> i rapporti sugli arresti anomali vengono conservati per il debug e il miglioramento dell'affidabilità.</li>
+        </ul>
+
+        <h2>6) Le tue scelte</h2>
+        <ul>
+            <li><strong>Partecipazione social facoltativa:</strong> puoi utilizzare AiCasso senza pubblicare post nel feed. Pubblicare e commentare è facoltativo.</li>
+            <li><strong>Segnalazione e blocco:</strong> puoi segnalare post, commenti e utenti, nonché bloccare altri utenti.</li>
+            <li><strong>Notifiche push:</strong> puoi abilitare o disabilitare le notifiche nelle impostazioni del tuo dispositivo.</li>
+            <li><strong>Cancellazione dell'account:</strong> puoi avviare la cancellazione dell'account in-app (Impostazioni → Elimina account). Se non riesci ad accedere all'app, contatta l'assistenza e ti aiuteremo.</li>
+        </ul>
+
+        <h2>7) Sicurezza</h2>
+        <p>Utilizziamo ragionevoli misure di sicurezza amministrative, tecniche e fisiche progettate per proteggere le informazioni. Nessun sistema può essere garantito sicuro al 100%.</p>
+
+        <h2>8) Contattaci</h2>
+        <p>Se hai domande sulla presente Informativa sulla privacy o sui tuoi dati, contatta:</p>
+        <p>
+            E-mail: <a href="mailto:support@aicassoapp.com">support@aicassoapp.com</a><br>
+            Sito web: <a href="https://www.aicassoapp.com">https://www.aicassoapp.com</a>
+        </p>
+
         <hr>
-        <p>Utilizzando AiCasso, accetti i termini descritti in questa Informativa sulla Privacy.</p>
-    </main>
-    <footer>
-        &copy; 2024 AiCasso. Tutti i diritti riservati.
-    </footer>
+        <p>Utilizzando AiCasso, accetti la presente Informativa sulla privacy.</p></main>
+
+    <footer>© 2025 AiCasso. Tutti i diritti riservati.</footer>
 </body>
 </html>

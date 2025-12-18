@@ -2,7 +2,8 @@
 <html lang="so">
 <head>
     <meta charset="UTF-8">
-    <title>Sharciyada Asturnaanta ee AiCasso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siyaasadda Qarsoonnimada - AiCasso</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,45 +22,39 @@
             font-size: 3em;
         }
         header p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin-top: 10px;
+            opacity: 0.95;
         }
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
-            padding: 0 20px;
+            padding: 0 20px 40px;
             background-color: #fff;
         }
-        main p {
-            font-size: 1.1em;
+        h2 {
+            margin-top: 0;
+            padding-top: 32px;
+            color: #3a3f44;
+        }
+        p {
+            font-size: 1.05em;
             line-height: 1.8;
-        }
-        ol {
-            counter-reset: item;
-            list-style-type: none;
-            padding-left: 0;
-        }
-        ol > li {
-            counter-increment: item;
-            margin-bottom: 30px;
-        }
-        ol > li::before {
-            content: counter(item) ". ";
-            font-weight: bold;
-            font-size: 1.2em;
-            color: #3a3f44;
-        }
-        ol li strong {
-            font-size: 1.2em;
-            color: #3a3f44;
         }
         ul {
             list-style-type: disc;
-            margin-left: 20px;
+            margin-left: 22px;
             margin-top: 10px;
         }
         ul li {
             margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .note {
+            background: #f7f7f7;
+            border-left: 4px solid #3a3f44;
+            padding: 14px 16px;
+            margin: 18px 0;
         }
         a {
             color: #3a3f44;
@@ -71,7 +66,7 @@
         hr {
             border: none;
             border-top: 1px solid #ddd;
-            margin: 40px 0;
+            margin: 34px 0;
         }
         footer {
             text-align: center;
@@ -86,66 +81,100 @@
             main {
                 margin: 20px auto;
             }
-            ol > li::before {
-                font-size: 1em;
-            }
-            ol li strong {
-                font-size: 1em;
-            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Sharciyada Asturnaanta ee AiCasso</h1>
-        <p><strong>Taariikhda Dhaqan-galka:</strong> Sebtembar 13, 2024</p>
-    </header>
-    <main>
-        <p>AiCasso, asturnaantaada waa mudnaanteena. Sharciyadan asturnaanta waxay qeexayaan sida aan u maareyno macluumaadka aad bixiso markaad isticmaalayso barnaamijkeena.</p>
-        <ol>
-            <li><strong>Macluumaadka Aan Ururinno</strong>
-                <ul>
-                    <li><strong>Sawirada Gelinta:</strong> Waxaan ururinaynaa sawirada aad ku shubanayso AiCasso si kaliya ah si aan u bixino adeegyada aan hayno.</li>
-                    <li><strong>Macluumaadka Wajiga:</strong> Haddii aad ku shubto sawir ka kooban wajiyo, waxaan ka shaqeyneynaa astaamaha wajiga si aan u abuurno sawirro gaar ah oo ku saleysan astaamaha aad doorato. Macluumaadkan wajiga waxaa laga soo saaraa sawirada aad ku shubtay waxaana loo isticmaalaa kaliya ujeedada abuurista sawirada.</li>
-                </ul>
-            </li>
-            <li><strong>Sida Aan U Isticmaalno Macluumaadkaaga</strong>
-                <ul>
-                    <li><strong>Bixinta Adeegga:</strong> Sawirada gelinta, oo ay ku jiraan macluumaadka wajiga, waxaa loo isticmaalaa si gaar ah si loo fuliyo hawlaha ay bixiso AiCasso. Tani waxay ka mid tahay abuurista sawirro cusub oo ku saleysan astaamaha aad doorato.</li>
-                </ul>
-            </li>
-            <li><strong>Haynta Macluumaadka</strong>
-                <ul>
-                    <li><strong>Si Degdeg ah U Tirtirida Sawirada La Geliyo:</strong> Dhammaan sawirada gelinta waxaa si degdeg ah loo tirtiraa ka dib markii la farsameeyo oo ujeedadoodii la fuliyo.</li>
-                    <li><strong>Kaydinta Ku Meel Gaarka ah ee Sawirada La Abuuray:</strong> Sawirada la abuuray waxaa lagu kaydiyaa adeegga daruurteena waxaana laga heli karaa isticmaalaha muddo 24 saacadood ah. Sawirradan si otomaatig ah ayaa loo tirtiraa ka dib muddadan.</li>
-                    <li><strong>Maareynta Kaydinta Daruuriga:</strong> Kaydinta daruurteena waxaa la nadiifiyaa 24 saac kasta si loo hubiyo in aanay jirin wax macluumaad ah oo haray.</li>
-                </ul>
-            </li>
-            <li><strong>Wadaagista Macluumaadka</strong>
-                <ul>
-                    <li><strong>Ma Jirto Wadaagista Qaybaha Saddexaad:</strong> Ma wadaagno, ma iibino, ama ma shaacino sawiradaada, macluumaadka wajiga, ama wax macluumaad shakhsiyeed ah oo ku saabsan dhinacyada saddexaad. Dhammaan habka macluumaadka waxaa si gudaha ah u maareeya AiCasso.</li>
-                </ul>
-            </li>
-            <li><strong>Tallaabooyinka Amniga</strong>
-                <ul>
-                    <li><strong>Badbaadinta Macluumaadka:</strong> Waxaan isticmaalnaa tallaabooyin amni oo heerka warshadaha ah si aan u ilaalino sawiradaada iyo macluumaadka wajiga inta lagu jiro farsamaynta iyo inta lagu kaydiyo adeegyada daruurteena.</li>
-                </ul>
-            </li>
-            <li><strong>Isbeddelada Sharciyadan Asturnaanta</strong>
-                <ul>
-                    <li><strong>Casriyeynta Siyaasadda:</strong> Waxaan casriyeyn karnaa sharciyadan asturnaanta mararka qaar. Isbeddel kasta waxaa lagu muujin doonaa taariikhda dhaqan-galka ee la cusbooneysiiyay.</li>
-                </ul>
-            </li>
-            <li><strong>Nala Soo Xiriir</strong>
-                <p>Haddii aad qabto su'aalo ama walaacyo ku saabsan sharciyadan asturnaanta, fadlan nala soo xiriir:</p>
-                <p>Email: <a href="mailto:gloriousbytes@gmail.com">gloriousbytes@gmail.com</a></p>
-            </li>
-        </ol>
+    <header><h1>Siyaasadda Gaarka ahaanshaha</h1>
+        <p><strong>App:</strong>AiCasso</p>
+        <p><strong>Taariikhda Dhaqan-galka ah:</strong>Diisambar 17, 2025</p></header>
+
+    <main><p>
+            Qaanuunka Arrimaha Khaaska ah wuxuu sharxayaa macluumaadka AiCasso ururiyo iyo habraacyada, sida loo isticmaalo, iyo doorashooyinka aad haysato.
+            AiCasso ugu horrayn waa abka hal-abuurka AI, waxaana sidoo kale ku jira astaamo bulsheed oo ikhtiyaari ah sida qoraallada quudinta dadweynaha, faallooyinka, kuwa jecel, iyo raacitaanka.
+        </p>
+
+        <div class="note">
+            Muhim AiCasso waxay ku meelaysaa magaca isticmaalaha habaysan iyo sawirka astaanta guud ee boggaaga guud.</p>
+        </div>
+
+        <h2>1) Macluumaadka aanu ururino</h2>
+        <p>Waxa aanu ururinaynaa macluumaadka aad bixiso, macluumaadka laga keenay isticmaalkaaga abka, iyo macluumaadka loo baahan yahay si loogu shaqeeyo sifooyinka bulsheed ee ikhtiyaarka ah.</p>
+        <ul>
+            <li><strong>Akoonka iyo aqoonsiga:</strong> Haddii aad ku soo gasho Google ama Apple, waxaanu ka helnaa aqoonsi bixiyaha waxaana laga yaabaa inaan helno cinwaanka iimaylka iyo magacaaga (waxay kuxirantahay waxa bixiyaha la wadaago). Waxa aanu ku kaydinay isticmaaleha nidaamka soo saaray astaanta guud ee boggaaga guud.</li>
+            <li><strong>Waddanka/gobolka (oo ka soo jeeda aaladda deegaanka):</strong> Marka aad soo gasho, abka waxa uu soo dirayaa koodka waddanka iyo gobolka laga soo qaatay dejinta qalabkaaga deegaanka. Waxaan u kaydinnaa tan si aan u taageerno khibradaha iyo hawlgallada gobolka.</li>
+            <li><strong>Ai galinta iyo soo saarista:</strong> Dalabyada iyo warbaahinta aad bixiso (tusaale, sawirada aad soo gelisay) iyo sidoo kale macluumaadka uu appku kuu soo saaro (sawir, maqal, muuqaal, iyo xogta badan ee la xidhiidha sida qaabka/settings)</li>
+            <li><strong>Nuxurka guud (ikhtiyaarka):</strong> Haddii aad doorato inaad ka qaybgasho quudinta bulshada, waxaanu kaydinaynaa oo aanu soo bandhigaynaa qoraaladaada (warbaahinta AI-abuuray ee ku dhex jirta abka), oo ay la socoto macluumaadka xaddidan ee la xidhiidha sida degdega ah ee loo tuso dadka kale (oo loo nadiifiyey soo bandhigida dadweynaha), staamamka wakhtiyada, iyo ka qaybgalka ayaa la tiriyaa.</li>
+            <li><strong>Faallo iyo jawaabo (ikhtiyaar):</strong> Haddii aad faallo ka bixiso, waxaanu kaydinaynaa qoraalka faallooyinka, boostada/ faallooyinka ay la xidhiidho, timestamps, iyo xogta aasaasiga ah ee ka-qaybgalka (jecel, jawaabtu waa la tiriyaa).</li>
+            <li><strong>Isdhexgalka bulshada (ikhtiyaar):</strong> Jeceshahay, raacaa, iyo xogta xiriirka/ka-qaybgalka ee la xiriira ee loo isticmaalo in lagu xoojiyo sifooyinkan.</li>
+            <li><strong>Warbixinaha iyo xannibaadaha (ikhtiyaar):</strong> Haddii aad ka warbixiso nuxurka ama isticmaalayaasha, waxaanu kaydinaynaa tafaasiisha warbixinta ee aad soo gudbisay (sababta iyo tafaasiisha ikhtiyaariga ah) iyo waxa la soo sheegay. Haddii aad xannibto/furto isticmaale, waxaanu ku kaydinaynaa macluumaadka loo baahan yahay si doorashadaas loogu dabaqo abka iyo taageeridda ka hortagga xadgudubka.</li>
+            <li><strong>Iibka iyo abaal-marinnada:</strong> Heerka is-diiwaangelinta iyo rasiidka/macluumaadka macaamilka ee loo baahan yahay si loo ansixiyo wax iibsiga, iyo heerka abaal-marinta (ay ku jiraan abaal-marinnada lagu kasbado xayeysiisyada halka ay khusayso).</li>
+            <li><strong>Riix ogeysiisyada (ikhtiyaar):</strong> Haddii aad ogolaato ogeysiisyada riixida, waxaan isticmaalnaa OneSignal si aan u gaarsiino ogeysiisyada. OneSignal waxay u xilsaartaa aqoonsiga aaladda waxaana laga yaabaa inaan ku xidhno aqoonsigaaga koontadaada AiCasso si aan u keeno ogeysiisyada koontada gaarka ah.</li>
+            <li><strong>Warbixinnada shilalka (ikhtiyaar):</strong> Haddii aad dooratid inaad dirto warbixinta shilka, waxa ku jiri kara nooca abka, nooca aaladda/OS, tafaasiisha khaladka, iyo raad-raac si ay nooga caawiso inaan ogaanno arrimaha.</li>
+            <li><strong>Xayeysiiska (ikhtiyaar):</strong> Haddii abku soo bandhigo xayaysiisyada, bixiyaha xayaysiisku waxa uu ururin karaa macluumaadka qayb ka mid ah gaadhsiinta xayaysiiska iyo cabbiraadda. Hoos ka eeg "Adeegyada Xisbiga Saddexaad"</li>
+        </ul>
+
+        <h2>2) Sida aan u isticmaalno macluumaadka </h2>
+        <ul>
+            <li><strong>Sii adeega:</strong>Samee macluumaadka, ku xidh halabuuradaada qalabka marka aad soo gasho, oo muuji maktabadaada.</li>
+            <li><strong>Kor u yeel astaamaha bulshada (ikhtiyaar):</strong>Daabac qoraallada, tus astaantaada guud (magaca-isticmaalka/ sawirka astaanta guud ee nidaamka-soo-saaray), awood faallooyinka, jecel, oo raac.</li>
+            <li><strong>Amniga iyo sharafta
+            <li><strong>lacag-bixinaha iyo abaal-marinnada:</strong> Xaqiiji iibsiyada/ku-qorista oo maamul dhibcaha/abaalmarinta.</li>
+            <li><strong>Ogaysiisyada:</strong> Soo dir ogeysiisyada ku saabsan waxqabadka abka ee khuseeya (tusaale, isdhexgalka qoraaladaada ama faallooyinka) haddii aad doorato.</li>
+            <li><strong>Taageerada iyo Kalsoonida:</strong>Ka jawaab codsiyada taageerada oo baar shilalka iyo arrimaha waxqabadka.</li>
+        </ul>
+
+        <h2>3) Marka Macluumaadka La Wadaago </h2>
+        <p>AiCasso waxa ay xogta u wadaagtaa siyaabaha soo socda:</p>
+        <ul>
+            <li><strong>Qaybsiga guud (appka dhexdiisa):</strong> Haddii aad dhejiso ama faallo ka bixiso, nidaamkaaga uu soo saaray isticmaalehaaga iyo sawirka astaantaada, qoraalladaada, iyo faallooyinkaaga waxa ay arki karaan isticmaalayaasha kale ee abka. Dakhliga lagu muujiyey qoraalada quudinta ayaa loo nadiifiyey si loo soo bandhigo dadweynaha (tusaale, meesha laga saaray iimaylada, lambarrada telefoonka, iyo URLs)</li>
+            <li><strong>Bixiyeyaasha adeegga (processors):</strong>Waxaan u isticmaalnaa adeegyada dhinac saddexaad si aan ugu hawlgalno abka (tusaale ahaan, gelida, ogeysiisyada riixida, martigelinta daruuraha/kaydinta, xayeysiisyada, iyo bixiyeyaasha jiilka AI). Bixiyeyaashani waxay habeeyaan macluumaadka annaga oo wakiil ka ah si ay u bixiyaan adeegyadooda.</li>
+            <li><strong>Sharciga iyo badbaadada:</strong> Waxa laga yaabaa in aanu siino macluumaadka haddii uu sharcigu u baahan yahay ama haddii loo baahdo si loo ilaaliyo isticmaalayaasha, looga hortago xadgudubka, ama looga jawaabo codsiyada sharciga ah.</li>
+        </ul>
+
+        <h2>4) Adeegyada Qaybta Saddexaad </h2>
+        <p>AiCasso waxa ay ku biirtaa qaybaha soo socda ee adeegyada dhinac saddexaad:</p>
+        <ul>
+            <li><strong>Bixiyeyaasha saxeexa:</strong> Google-ku gal oo ku gal Apple.</li>
+            <li><strong>Riix ogeysiisyada:</strong>OneSignal.</li>
+            <li><strong>Xayeysiiska:</strong> Google AdMob (haddii xayaysiisyada lagu muujiyo dhismahaaga)</li>
+            <li><strong>Bixiyeyaasha habaynta AI:</strong>Waxaan isticmaalnaa bixiyeyaasha AI dibadda si aan u soo saarno oo u beddelno nuxurka (tusaale, abuurista sawirka iyo astaamaha la xiriira wejiga). Bixiyeyaashani waxay habeeyaan dardargelinta iyo warbaahinta aad soo gudbiso jiilka.</li>
+            <li><strong>Kaabayaasha dhaqaalaha:</strong>Dib-u-dhiskayadu waxa ay adeegsadaan adeegyada daruuraha si ay u kaydiyaan xogta abka iyo warbaahinta iyo in ay ku shaqeeyaan quudinta bulshada.</li>
+        </ul>
+        <p>
+            Adeegyada qolo saddexaad waxay yeelan karaan siyaasadahooda gaarka ah. Haddii aad isticmaasho adeegyadan iyada oo loo marayo AiCasso, shuruudahooda iyo siyaasadahooda ayaa sidoo kale lagu dabaqi karaa.
+        </p>
+
+        <h2>5) Haynta xogta </h2>
+        <ul>
+            <li><strong>Qodobbada Dadweynaha:</strong> Macluumaadka aad ku daabacdo quudinta waa la hayaa ilaa aad tirtirto, aad tirtirto akoonkaaga, ama aanu ka saarno sababo badbaado ama siyaasad.</li>
+            <li><strong>Faallo iyo hawlo la xidhiidha:</strong>Faallooyinka iyo xogta ka-qaybgalka ee la xidhiidha waa loo hayaa si ay ugu shaqeeyaan astaamaha bulshada, ilaa laga saaro sababo badbaado ama aan la tirtirin iyada oo qayb ka ah tirtirka akoontiga.</li>
+            <li><strong>Abuuritaanka gaarka ah iyo soo gelinta:</strong>Warbaahinta iyo jiilasha aan si guud loo soo dhejin waxa laga yaabaa in si toos ah loo tirtiro iyada oo qayb ka ah hababka nadiifinta (tusaale, ka dib daaqad hayn xaddidan ama marka URL-yada warbaahinta sare aan la heli karin).</li>
+            <li><strong>Warbixinnada iyo diiwaannada dhexdhexaadinta:</strong> Warbixinnada iyo diiwaannada dhexdhexaadinta la xidhiidha waa la hayn karaa marka loo baahdo badbaadada, ka hortagga xadgudubka, iyo hanti-dhawrka.</li>
+            <li><strong>Diiwaannada shilalka:</strong>Warbixinnada shilalka ayaa loo hayaa hagaajinta khaladka iyo isku halaynta.</li>
+        </ul>
+
+        <h2>6) Doorashadaada </h2>
+        <ul>
+            <li><strong>Ka qaybqaadashada bulsheed ee ikhtiyaarka ah:</strong> Waxaad isticmaali kartaa AiCasso adoon dhajin quudinta. Ku dhajinta iyo faallooyinka waa ikhtiyaari.</li>
+            <li><strong>ka warbixinta iyo xannibidda:</strong> Waxaad ka warbixin kartaa qoraallada, faallooyinka, iyo isticmaalayaasha, waxaadna xannibi kartaa isticmaaleyaasha kale.</li>
+            <li><strong>Riix ogeysiisyada:</strong> Waxaad awood u siin kartaa ama dami kartaa ogeysiisyada ku jira setinka qalabkaaga.</li>
+            <li><strong>Akoonka tirtirka:</strong> Waxaad bilaabi kartaa tirtirka akoontiga app-ka (Settings → Delete Account). Haddii aadan geli karin abka, la xiriir taageerada waana ku caawin doonnaa.</li>
+        </ul>
+
+        <h2>7) Amniga </h2>
+        Waxaan isticmaalnaa ilaalin macquul ah oo maamul, farsamo, iyo jireed loogu talagalay in lagu ilaaliyo macluumaadka. Ma jiro nidaam la dammaanad qaadi karo inuu 100% ammaan yahay.</p>
+
+        <h2>8) Nala soo xidhiidh</h2>
+        <p>Haddii aad wax su'aalo ah ka qabto siyaasaddan khaaska ah ama xogtaada, la xidhiidh:</p>
+        <p>
+            Iimayl: <a href="mailto:support@aicassoapp.com">support@aicassoapp.com</a><br>
+            Websaydh: <a href="https://www.aicassoapp.com">https://www.aicassoapp.com</a>
+        </p>
+
         <hr>
-        <p>Adigoo isticmaalaya AiCasso, waxaad oggolaatay shuruudaha ku qeexan sharciyadan asturnaanta.</p>
-    </main>
-    <footer>
-        &copy; 2024 AiCasso. Xuquuqda oo dhan waa la ilaaliyay.
-    </footer>
+        <p>Adiga oo isticmaalaya AiCasso, waxaad ogolaatay siyaasadan khaaska ah.</p></main>
+
+    <footer>© 2025 AiCasso. Dhammaan xuquuqaha way xifdiyeen</footer>
 </body>
 </html>

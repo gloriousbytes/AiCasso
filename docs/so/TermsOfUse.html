@@ -2,7 +2,8 @@
 <html lang="so">
 <head>
     <meta charset="UTF-8">
-    <title>Shuruudaha Isticmaalka ee AiCasso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuruudaha Adeegga - AiCasso</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,45 +22,39 @@
             font-size: 3em;
         }
         header p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin-top: 10px;
+            opacity: 0.95;
         }
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
-            padding: 0 20px;
+            padding: 0 20px 40px;
             background-color: #fff;
         }
-        main p {
-            font-size: 1.1em;
+        h2 {
+            margin-top: 0;
+            padding-top: 32px;
+            color: #3a3f44;
+        }
+        p {
+            font-size: 1.05em;
             line-height: 1.8;
-        }
-        ol {
-            counter-reset: item;
-            list-style-type: none;
-            padding-left: 0;
-        }
-        ol > li {
-            counter-increment: item;
-            margin-bottom: 30px;
-        }
-        ol > li::before {
-            content: counter(item) ". ";
-            font-weight: bold;
-            font-size: 1.2em;
-            color: #3a3f44;
-        }
-        ol li strong {
-            font-size: 1.2em;
-            color: #3a3f44;
         }
         ul {
             list-style-type: disc;
-            margin-left: 20px;
+            margin-left: 22px;
             margin-top: 10px;
         }
         ul li {
             margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .note {
+            background: #f7f7f7;
+            border-left: 4px solid #3a3f44;
+            padding: 14px 16px;
+            margin: 18px 0;
         }
         a {
             color: #3a3f44;
@@ -71,7 +66,7 @@
         hr {
             border: none;
             border-top: 1px solid #ddd;
-            margin: 40px 0;
+            margin: 34px 0;
         }
         footer {
             text-align: center;
@@ -86,107 +81,112 @@
             main {
                 margin: 20px auto;
             }
-            ol > li::before {
-                font-size: 1em;
-            }
-            ol li strong {
-                font-size: 1em;
-            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Shuruudaha Isticmaalka ee AiCasso</h1>
-        <p><strong>Taariikhda Dhaqan-galka:</strong> Sebtembar 13, 2024</p>
-    </header>
-    <main>
-        <p>Ku soo dhawoow AiCasso, abuuraha sawirada ku shaqeeya AI. Adigoo galaya ama isticmaalaya codsigeena, waxaad ku raacsan tahay inaad u hoggaansanto oo aad ku xiran tahay Shuruudaha Isticmaalka ee hoos ku qoran.</p>
-        <ol>
-            <li><strong>Qaadashada Shuruudaha</strong>
-                <ul>
-                    <li>Adigoo isticmaalaya AiCasso, waxaad ku raacsan tahay Shuruudahan Isticmaalka iyo Siyaasadda Asturnaanta. Haddii aadan ku raacsanayn, fadlan ha isticmaalin adeegyadaheena.</li>
-                </ul>
-            </li>
-            <li><strong>Isticmaalka Codsiga</strong>
-                <ul>
-                    <li>Waxaad u isticmaali kartaa AiCasso ujeeddooyin sharci ah iyo si waafaqsan Shuruudahan.</li>
-                    <li>Waxaad ku raacsan tahay inaadan isticmaalin codsiga si kasta oo dhaawac u geysan karta ama u dhaawici karta codsiga ama ku faragelin karta isticmaalka dhinac kale.</li>
-                </ul>
-            </li>
-            <li><strong>Waxyaabaha Ay Isticmaaleyaashu Abuuraan</strong>
-                <ul>
-                    <li>Adiga ayaa mas'uul ka ah sawirada aad abuurto iyo cawaaqibka ka dhasha wadaagidooda.</li>
-                    <li>Waxaad matalaysaa oo aad dammaanad qaadaysaa inaad leedahay ama aad haysato xuquuqda iyo ogolaanshaha lagama maarmaanka ah si aad u isticmaasho oo aad u qaybiso waxyaabaha aad abuurto.</li>
-                    <li>Waxaad haynaysaa dhammaan xuquuqda lahaansho ee sawirada aad ku abuurto AiCasso.</li>
-                </ul>
-            </li>
-            <li><strong>Tilmaamaha Mawduuca</strong>
-                <ul>
-                    <li>Waxaad ku raacsan tahay inaadan abuurin ama wadaagin waxyaabo:</li>
-                    <ul>
-                        <li>Sharci darro ah, waxyeello leh, hanjabaad ah, xadgudub ah, dhibaatayn ah, iftiimin ah, xadgudub ah, ama ku xadgudubaya asturnaanta qof kale.</li>
-                        <li>Ku xadgudubaya wax kasta oo patent, calaamad ganacsi, sir ganacsi, xuquuqda daabacaadda, ama xuquuqda kale ee lahaansho ee dhinac kasta.</li>
-                        <li>Kor u qaadaya hawlaha sharci darro ah ama dhaqanka xadgudubka ah, hanjabaad ah, iftiimin ah, ama xadgudub ah.</li>
-                    </ul>
-                    <li>Waxaan xaq u leenahay inaan dib u eegno, kormeero, oo aan ka saaro waxyaabaha ku xadgudbay Shuruudahan.</li>
-                </ul>
-            </li>
-            <li><strong>Xaquuqda Hantida Maskaxda</strong>
-                <ul>
-                    <li>Dhammaan waxyaabaha, sifooyinka, iyo hawlaha AiCasso waa hantida gaarka ah ee AiCasso iyo shatiyadiisa.</li>
-                    <li>Waxaad heshay liisanka xadidan si aad u isticmaasho codsiga ujeeddooyin shakhsi ah, aan ganacsi ahayn.</li>
-                </ul>
-            </li>
-            <li><strong>Hawlaha La Mamnuucay</strong>
-                <ul>
-                    <li>Waxaad ku raacsan tahay inaadan:</li>
-                    <ul>
-                        <li>Wax ka beddelin, kala furin, decompile, ama dib u naqshadaynin qayb ka mid ah codsiga.</li>
-                        <li>Isticmaal codsiga ujeeddo sharci darro ah ama aan la oggolayn.</li>
-                        <li>Kor u qaadista ama abuurista waxyaabo sharci darro ah, ama ku xadgudubaya xuquuqda dhinac saddexaad.</li>
-                        <li>Ka gudubto waxyaabaha aan u isticmaalno si aan u xakameyno ama u xadidno gelitaanka codsiga.</li>
-                    </ul>
-                </ul>
-            </li>
-            <li><strong>Joojinta Akoonka</strong>
-                <ul>
-                    <li>Waxaan xaq u leenahay inaan joojino ama aan hakino gelitaankaaga AiCasso anagoo go'aan gaar ah, iyada oo aan ogeysiis lahayn, sababtoo ah dhaqanka aan u aragno inuu ku xadgudbay Shuruudahan ama waxyeello u geysanaya isticmaaleyaasha kale ama dhinacyada saddexaad.</li>
-                    <li>Haddii akoonkaaga la joojiyo sababtoo ah ku xadgudubka Shuruudahan, ma awoodi doontid inaad dib u diiwaangeliso adeegyadaheena.</li>
-                </ul>
-            </li>
-            <li><strong>Ka-dhaafid</strong>
-                <ul>
-                    <li>AiCasso waxaa la bixiyay "sida ay tahay" iyada oo aan wax dammaanad ah la bixin.</li>
-                    <li>Ma dammaanad qaadeyno in codsiga uu noqon doono mid khalad la'aan ah ama aan kala go' lahayn.</li>
-                </ul>
-            </li>
-            <li><strong>Xadidaadda Mas'uuliyadda</strong>
-                <ul>
-                    <li>Marna AiCasso ma noqon doonto mas'uul ka ah waxyeellooyin aan toos ahayn, dhacdooyin, khaas ah, ama cawaaqib ah oo ka dhasha isticmaalkaaga codsiga.</li>
-                </ul>
-            </li>
-            <li><strong>Sharciga Maamula</strong>
-                <ul>
-                    <li>Shuruudahan Isticmaalka waxaa maamula oo lagu fasiraa shuruucda khuseeya gobolkaaga.</li>
-                </ul>
-            </li>
-            <li><strong>Isbeddelada Shuruudaha</strong>
-                <ul>
-                    <li>Waxaan dib u cusbooneysiin karnaa Shuruudahan Isticmaalka waqti ka waqti. Isbeddelada waxay dhaqan galayaan isla markiiba marka la daabaco.</li>
-                    <li>Isticmaalkaaga sii socda ee AiCasso ka dib isbeddel kasta wuxuu muujinayaa aqbalaaddaada Shuruudaha cusub.</li>
-                </ul>
-            </li>
-            <li><strong>Macluumaadka Xiriirka</strong>
-                <p>Haddii aad qabto su'aalo ku saabsan Shuruudahan Isticmaalka, fadlan nala soo xiriir:</p>
-                <p>Email: <a href="mailto:gloriousbytes@gmail.com">gloriousbytes@gmail.com</a></p>
-            </li>
-        </ol>
+    <header><h1>Shuruudaha Adeegga</h1>
+        <p><strong>App:</strong>AiCasso</p>
+        <p><strong>Taariikhda Dhaqan-galka ah:</strong>Diisambar 17, 2025</p></header>
+
+    <main><p>
+            Shuruudaha Adeegga ("Shuruudaha") ayaa xukuma isticmaalkaaga AiCasso ("App") iyo adeegyada la xidhiidha (wadajir, "Adeegga").
+            Markaad gasho ama adeegsato Adeegga, waxaad ogolaatay Shuruudahan iyo <a href="./PrivacyPolicy.html">Siyaasadda Qarsoonnimada</a>.
+        </p>
+
+        <div class="note">
+            <p><strong>UGC Ogeysiis:</strong> AiCasso waxa ku jira ikhtiyaarka ikhtiyaarka ah ee isticmaaluhu soo saaray sifooyin ka kooban (posts, comments, likes, follow). Si loo ilaaliyo badbaadada bulshada, waxaanu bixinaa ka warbixinta gudaha abka iyo xannibaadda isticmaalaha waxaana laga yaabaa in la dhaqangeliyo Shuruudahan iyada oo loo marayo tallaabooyinka dhexdhexaadinta.</p>
+        </div>
+
+        <h2>1) Adeegga </h2>
+        <p>
+            AiCasso ugu horrayn waa barnaamij abuurka AI. Waxaad u soo saari kartaa nuxurka isticmaalkaaga gaarka ah.
+            Waxa kale oo aad dooran kartaa in aad la wadaagto hal-abuurka AI ay soo saartay quudinta bulshada oo aad la falgasho isticmaalayaasha kale iyada oo loo marayo faallooyin, jecel, iyo raac.
+            Ka qayb qaadashada quudinta bulshada waa ikhtiyaari.
+        </p>
+
+        <h2>2) Koontada iyo Gelida </h2>
+        <ul>
+            <li><strong>Galid ikhtiyaari ah:</strong> Astaamaha qaar ayaa la isticmaali karaa iyada oo aan la soo gelin
+            <li><strong>Sxiix-gal saddexaad:</strong>Waanu taageernaa Gelitaanka Google oo la gal Apple. Isticmaalkaaga adeegyadaas sidoo kale waxay ku xiran tahay shuruudaha iyo siyaasadaha.</li>
+            <li><strong>Badhanka guud:</strong> AiCasso waxa ay ku shubtaa magaca isticmaale ee nidaamka soo saaray iyo sawirka astaanta kaas oo lagu tusi karo isticmaalayaasha kale quudinta iyo faallooyinka. Ciwaanka iimaylka galitaanka si guud looguma muujin abka.</li>
+        </ul>
+
+        <h2>3) Nuxurka Isticmaalaha iyo Quudinta Bulshada </h2>
+        <p>
+            "Content User" waxa ku jira macluumaadka aad soo gudbiso ama aad ka diyaariso adeega, sida dardargelinta, warbaahinta la soo galiyay, wax soo saarka, qoraalada, faallooyinka, iyo jawaabaha.
+        </p>
+        <ul>
+            Qoraalada quudinta-kaliya ee <li><strong>AI-kaliya:</strong> quudinta bulshada waxaa loogu talagalay wadaaga hal-abuurka AI ay soo saartay abka. Lama ogola in si toos ah loo soo geliyo warbaahinta aan sabab lahayn quudinta dadweynaha.</li>
+            <li><strong>Muuqaalka:</strong> Haddii aad dhejiso ama faallo ka bixiso, macluumaadkaaga iyo magacaaga isticmaale/muuqalka ee nidaamkaagu waxa laga yaabaa inay u muuqdaan isticmaaleyaasha kale ee abka.</li>
+            Masuuliyadaada
+            <li><strong>Xuquuqda wax gelinta
+        </ul>
+
+        <h2>4) Tilmaamaha Bulshada (Waxay ka kooban tahay Mamnuuc) </h2>
+        <p>Waxaad ogolaatay inaadan abuurin, dhejin, ama aadan wadaagin macluumaadka isticmaalaha ee la diidi karo ama waxyeelada leh, oo ay ku jiraan waxa ku jira:</p>
+        <ul>
+            <li>Waa sharci-darro, kor u qaada dhaqdhaqaaqa sharci-darrada ah, ama ku xad-gudbi sharciyada lagu dabaqi karo.</li>
+            <li>Hanjabaa, dhibaa, cagajugleeyo, ama dhiirigeliya rabshadaha ama is-waxyeelaynta.</li>
+            <li>Waxa ku jira hadal nacayb ama takoorid lala beegsanayo kooxaha la ilaaliyo.</li>
+            <li>Waxa ku jira waxyaabo galmo ah oo ay ku lug leeyihiin kuwa aan qaan-gaarin ama wax kasta oo ku saabsan xadgudubka galmada ee ubadka (tani waa mamnuuc).</li>
+            <li>Waxay ka kooban tahay sawiro aan la isku raacsanayn ama ka faa'iidaysi galmo.</li>
+            <li>Waxay ku xad gudubtaa xuquuqda lahaanshaha garaadka (xuquuqda daabacaada, calaamada ganacsiga) ama xuquuqaha kale ee qolo saddexaad.</li>
+            <li>Waxay ka kooban tahay xogta gaarka ah ee ku saabsan kuwa kale fasax la'aan (tusaale, doxxing)</li>
+            <li>Waa spam, khiyaano, ama loogu talagalay in lagu maamulo ka qaybgalka (tusaale, faallooyin soo noqnoqda, khiyaamo)</li>
+            <li>Waxay iska dhigaa qof kale ama ku marin habaabisaa aqoonsigaaga.</li>
+        </ul>
+
+        <h2>5) Warbixinta, Joojinta, iyo dhexdhexaadinta </h2>
+        <ul>
+            <li><strong>ka warbixinta:</strong> Appku waxa uu bixiyaa agabka gudaha abka si loogu gudbiyo qoraalada, faallooyinka, iyo isticmaalayaasha. Warbixinada waa dib loo eegi karaa oo loo isticmaali karaa in tallaabo laga qaado.</li>
+            <li><strong>Blocking:</strong> Appku waxa uu bixiyaa awood uu ku xannibo isticmaaleyaasha kale, taas oo kaa caawinaysa in aad iska ilaaliso is-dhexgalka iyo waxyaabaha aan loo baahnayn.</li>
+            <li><strong>Sandhaynta:</strong> Waxa laga yaabaa in aanu isticmaalno ilaalin macquul ah iyo jeegaga si aanu u yaraynno waxyaabaha la diidan yahay iyo xadgudubka.</li>
+            <li><strong>Fulin:</strong> Waxaa laga yaabaa inaan meesha ka saarno ama xaddidno gelitaanka macluumaadka, qarino macluumaadka, xaddidno sifooyinka, laalno xisaabaadka, ama aan mamnuucno akoonnada haddii aan aaminsanahay in Shuruudahan lagu xadgudbay ama si aan u ilaalino isticmaalayaasha iyo Adeegga.</li>
+        </ul>
+
+        <h2>6) Ruqsad aad siisay AiCasso</h2>
+        <p>
+            Waxaad haysataa lahaanshaha macluumaadkaaga isticmaale sida adiga iyo AiCasso.
+            Si kastaba ha ahaatee, si aad u shaqeyso Adeegga, waxaad siisay AiCasso aduunkoo dhan, aan gaar ahayn, shatiga royalty-free si ay u marti galiso, u kaydiso, u soo saarto, habayso, u soo bandhigto, una qaybiso macluumaadkaaga isticmaale:
+            (a) in lagu siiyo adeega adiga, iyo (b) haddii aad doorato inaad ku dhejiso quudinta ama faallooyinka, si aad nuxurkaas uga dhigto mid ay heli karaan isticmaalayaasha kale ee Adeegga.
+            Shatigani waxa uu dhamaanayaa marka aad tirtirto macluumaadka isticmaalaha ama akoonkaaga, marka laga reebo ilaa xadka macluumaadka lala wadaagay dadka kale waana in lagu hayaa sababo badbaado, sharci ama hawleed dartood.
+        </p>
+
+        <h2>7) Adeegyada Qaybta Saddexaad </h2>
+        <p>
+            Adeeggu waxa uu la midoobi karaa adeegyada dhinac saddexaad (tusaale ahaan, bixiyayaasha saxeexa, ogeysiisyada riixa, xayaysiinta, iyo bixiyeyaasha habaynta AI).
+            Dhinacyadan saddexaad waxay yeelan karaan shuruudo u gaar ah iyo siyaasadahooda gaarka ah.
+        </p>
+
+        <h2>8) Afeef </h2>
+        <ul>
+            <li>Adeegga waxa loo bixiyaa "sida uu yahay" iyo "sida la heli karo" </li>
+            <li>Wax-soo-saarka AI wuxuu noqon karaa lama filaan, khalad, ama la mid ah wax-soo-saarka isticmaaleyaasha kale.</li>
+            Ma dammaanad qaadayno hawlgal aan kala go' lahayn ama khalad la'aan ah.</li>
+        </ul>
+
+        <h2>9) Xadaynta Masuuliyadda </h2>
+        <p>
+            Ilaa inta ugu badan ee sharcigu ogol yahay, AiCasso mas'uul kama noqon doonto si dadban, shil ah, gaar ah, cawaaqib xumo, ama khasaare ciqaabeed oo ka dhasha ama la xidhiidha isticmaalkaaga Adeegga.
+        </p>
+
+        <h2>10) Isbeddellada Shuruudahan </h2>
+        <p>
+            Waxaa laga yaabaa inaan cusboonaysiinno Shuruudahan waqti ka waqti. Haddi aanu samayno isbedelo wax ku ool ah, waxaanu cusboonaysiin doonaa taariikhda dhaqan galka ah waxaana laga yaabaa inaan ku bixino ogeysiis dheeraad ah abka dhexdiisa.
+            Isticmaalkaaga joogtada ah ee Adeegga ka dib isbeddelada ayaa noqda mid waxtar leh macnaheedu waa inaad aqbashay Shuruudaha la cusboonaysiiyay.
+        </p>
+
+        <h2>11) La xidhiidh </h2>
+        <p>Haddii aad hayso su'aalo ku saabsan Shuruudahan, ama aad rabto inaad ka warbixiso arrimaha u baahan taageerada, la xidhiidh:</p>
+        <p>
+            Iimayl: <a href="mailto:support@aicassoapp.com">support@aicassoapp.com</a><br>
+            Websaydh: <a href="https://www.aicassoapp.com">https://www.aicassoapp.com</a>
+        </p>
+
         <hr>
-        <p>Adigoo isticmaalaya AiCasso, waxaad qiraysaa inaad akhriday, fahantay, oo aad ku raacsan tahay inaad ku xiran tahay Shuruudahan Isticmaalka.</p>
-    </main>
-    <footer>
-        &copy; 2024 AiCasso. Xuquuqda oo dhan waa la ilaaliyaa.
-    </footer>
+        <p>Adiga oo isticmaalaya AiCasso, waxaad qiraysaa inaad akhriday, fahantay, oo aad ogolaatay in lagu xidho Shuruudahan.</p></main>
+
+    <footer>© 2025 AiCasso. Dhammaan xuquuqaha way xifdiyeen</footer>
 </body>
 </html>

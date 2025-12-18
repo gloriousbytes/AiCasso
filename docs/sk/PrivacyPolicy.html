@@ -2,7 +2,8 @@
 <html lang="sk">
 <head>
     <meta charset="UTF-8">
-    <title>Zásady ochrany osobných údajov pre AiCasso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zásady ochrany osobných údajov – AiCasso</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,45 +22,39 @@
             font-size: 3em;
         }
         header p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin-top: 10px;
+            opacity: 0.95;
         }
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
-            padding: 0 20px;
+            padding: 0 20px 40px;
             background-color: #fff;
         }
-        main p {
-            font-size: 1.1em;
+        h2 {
+            margin-top: 0;
+            padding-top: 32px;
+            color: #3a3f44;
+        }
+        p {
+            font-size: 1.05em;
             line-height: 1.8;
-        }
-        ol {
-            counter-reset: item;
-            list-style-type: none;
-            padding-left: 0;
-        }
-        ol > li {
-            counter-increment: item;
-            margin-bottom: 30px;
-        }
-        ol > li::before {
-            content: counter(item) ". ";
-            font-weight: bold;
-            font-size: 1.2em;
-            color: #3a3f44;
-        }
-        ol li strong {
-            font-size: 1.2em;
-            color: #3a3f44;
         }
         ul {
             list-style-type: disc;
-            margin-left: 20px;
+            margin-left: 22px;
             margin-top: 10px;
         }
         ul li {
             margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .note {
+            background: #f7f7f7;
+            border-left: 4px solid #3a3f44;
+            padding: 14px 16px;
+            margin: 18px 0;
         }
         a {
             color: #3a3f44;
@@ -71,7 +66,7 @@
         hr {
             border: none;
             border-top: 1px solid #ddd;
-            margin: 40px 0;
+            margin: 34px 0;
         }
         footer {
             text-align: center;
@@ -86,66 +81,100 @@
             main {
                 margin: 20px auto;
             }
-            ol > li::before {
-                font-size: 1em;
-            }
-            ol li strong {
-                font-size: 1em;
-            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Zásady ochrany osobných údajov pre AiCasso</h1>
-        <p><strong>Účinnosť od:</strong> 13. september 2024</p>
-    </header>
-    <main>
-        <p>V AiCasso je vaša ochrana osobných údajov našou prioritou. Tieto Zásady ochrany osobných údajov popisujú, ako zaobchádzame s informáciami, ktoré poskytujete pri používaní našej aplikácie.</p>
-        <ol>
-            <li><strong>Informácie, ktoré zbierame</strong>
-                <ul>
-                    <li><strong>Vstupné obrázky:</strong> Zbierame obrázky, ktoré nahráte do AiCasso, výhradne na poskytovanie našich služieb.</li>
-                    <li><strong>Údaje o tvárach:</strong> Ak nahráte obrázok obsahujúci tváre, spracovávame rysy tváre na generovanie prispôsobených obrázkov na základe funkcií vybraných používateľom. Tieto údaje o tvárach sú extrahované z vašich nahratých obrázkov a používajú sa výhradne na účel generovania obrázkov.</li>
-                </ul>
-            </li>
-            <li><strong>Spôsob, akým používame vaše informácie</strong>
-                <ul>
-                    <li><strong>Poskytovanie služieb:</strong> Vstupné obrázky, vrátane akýchkoľvek údajov o tvárach, sa používajú výhradne na vykonávanie funkcií ponúkaných AiCasso. To zahŕňa generovanie nových obrázkov na základe funkcií, ktoré si vyberiete.</li>
-                </ul>
-            </li>
-            <li><strong>Uchovávanie údajov</strong>
-                <ul>
-                    <li><strong>Okamžité vymazanie nahratých obrázkov:</strong> Všetky vstupné obrázky sú okamžite vymazané po ich spracovaní a splnení ich zamýšľaného účelu.</li>
-                    <li><strong>Dočasné uloženie generovaných obrázkov:</strong> Generované obrázky sú uložené v našej cloudovej službe a sú používateľovi k dispozícii po dobu 24 hodín. Tieto obrázky sú automaticky vymazané po uplynutí tejto doby.</li>
-                    <li><strong>Správa cloudového úložiska:</strong> Naše cloudové úložisko sa čistí každých 24 hodín, aby sa zabezpečilo, že nezostanú žiadne zvyškové údaje.</li>
-                </ul>
-            </li>
-            <li><strong>Zdieľanie údajov</strong>
-                <ul>
-                    <li><strong>Žiadne zdieľanie s tretími stranami:</strong> Nezdieľame, nepredávame ani nezverejňujeme vaše obrázky, údaje o tvárach ani žiadne osobné údaje tretím stranám. Všetky spracovania údajov sú vykonávané interne v rámci AiCasso.</li>
-                </ul>
-            </li>
-            <li><strong>Bezpečnostné opatrenia</strong>
-                <ul>
-                    <li><strong>Ochrana údajov:</strong> Používame bezpečnostné opatrenia štandardu odvetvia na ochranu vašich obrázkov a údajov o tvárach počas spracovania a počas ich uloženia v našich cloudových službách.</li>
-                </ul>
-            </li>
-            <li><strong>Zmeny týchto zásad ochrany osobných údajov</strong>
-                <ul>
-                    <li><strong>Aktualizácie politiky:</strong> Tieto Zásady ochrany osobných údajov môžeme čas od času aktualizovať. Akékoľvek zmeny budú odrážať aktualizovaný dátum účinnosti.</li>
-                </ul>
-            </li>
-            <li><strong>Kontaktujte nás</strong>
-                <p>Ak máte akékoľvek otázky alebo obavy týkajúce sa týchto Zásad ochrany osobných údajov, kontaktujte nás prosím na:</p>
-                <p>Email: <a href="mailto:gloriousbytes@gmail.com">gloriousbytes@gmail.com</a></p>
-            </li>
-        </ol>
+    <header><h1>Zásady ochrany osobných údajov</h1>
+        <p><strong>Aplikácia:</strong> AiCasso</p>
+        <p><strong>Dátum účinnosti:</strong> 17. december 2025</p></header>
+
+    <main><p>
+            Tieto zásady ochrany osobných údajov vysvetľujú, aké informácie AiCasso zhromažďuje a spracováva, ako sa používajú a aké máte možnosti.
+            AiCasso je primárne aplikácia na vytváranie AI a obsahuje aj voliteľné sociálne funkcie, ako sú verejné príspevky, komentáre, hodnotenia Páči sa mi a sledovanie.
+        </p>
+
+        <div class="note">
+            <p><strong>Dôležité:</strong> Vaša prihlasovacia e-mailová adresa sa v aplikácii nezobrazuje verejne. AiCasso priradí vášmu verejnému profilu používateľské meno a profilový obrázok vygenerované systémom.</p>
+        </div>
+
+        <h2>1) Informácie, ktoré zhromažďujeme</h2>
+        <p>Zhromažďujeme informácie, ktoré nám poskytnete, informácie generované používaním aplikácie a informácie potrebné na prevádzku voliteľných sociálnych funkcií.</p>
+        <ul>
+            <li><strong>Účet a identifikátory:</strong> Ak sa prihlásite pomocou Google alebo Apple, dostaneme od poskytovateľa identifikátor účtu a môžeme tiež dostať vašu e-mailovú adresu a meno (v závislosti od zdieľania poskytovateľa). Pre váš verejný profil ukladáme systémom vygenerované používateľské meno.</li>
+            <li><strong>Krajina/región (odvodené z miestneho nastavenia zariadenia):</strong> Keď sa prihlásite, aplikácia odošle kód krajiny a región odvodený od miestnych nastavení vášho zariadenia. Ukladáme to na podporu regionálnych skúseností a operácií.</li>
+            <li><strong>Vstupy a výstupy AI:</strong> Výzvy a médiá, ktoré poskytnete (napríklad obrázky, ktoré nahráte), ako aj obsah, ktorý pre vás aplikácia vytvorí (obrázky, zvuk, video a súvisiace metadáta, ako napríklad režim/nastavenia).</li>
+            <li><strong>Verejný obsah (voliteľné):</strong> Ak sa rozhodnete zúčastniť sa na informačnom kanáli komunity, uložíme a zobrazíme vaše príspevky (médiá generované AI vytvorené v aplikácii) spolu s obmedzenými súvisiacimi informáciami, ako sú napríklad výzvy zobrazené ostatným (upravené na verejné zobrazenie), časové pečiatky a počty interakcií.</li>
+            <li><strong>Komentáre a odpovede (voliteľné):</strong> Ak komentujete, ukladáme text komentára, príspevok/komentár, ktorého sa týka, časové pečiatky a základné údaje o interakcii (páči sa mi, počet odpovedí).</li>
+            <li><strong>Sociálne interakcie (voliteľné):</strong> Označenia páči sa mi, sledovanie a súvisiace údaje o vzťahoch/interakciách používané na podporu týchto funkcií.</li>
+            <li><strong>Hlásenia a blokovania (voliteľné):</strong> Ak nahlásite obsah alebo používateľov, uložíme podrobnosti hlásenia, ktoré odošlete (dôvod a voliteľné podrobnosti) a to, čo bolo nahlásené. Ak zablokujete/odblokujete používateľa, uložíme informácie potrebné na použitie tejto preferencie v aplikácii a na podporu prevencie zneužitia.</li>
+            <li><strong>Nákupy a odmeny:</strong> Stav predplatného a informácie o potvrdení/transakcii potrebné na overenie nákupov, plus body/stav odmien (vrátane odmien získaných prostredníctvom reklám, ak sú k dispozícii).</li>
+            <li><strong>Upozornenia push (voliteľné):</strong> Ak povolíte upozornenia push, na doručovanie upozornení používame službu OneSignal. OneSignal priradí identifikátor zariadenia a môžeme ho priradiť k vášmu identifikátoru účtu AiCasso, aby sme mohli doručovať upozornenia špecifické pre daný účet.</li>
+            <li><strong>Správy o zlyhaní (voliteľné):</strong> Ak sa rozhodnete odoslať hlásenie o zlyhaní, môže obsahovať verziu aplikácie, model zariadenia/OS, podrobnosti o chybe a sledovanie zásobníka, ktoré nám pomôžu diagnostikovať problémy.</li>
+            <li><strong>Reklama (voliteľné):</strong> Ak aplikácia zobrazuje reklamy, poskytovateľ reklamy môže zhromažďovať informácie ako súčasť zobrazovania reklám a merania. Pozrite si časť „Služby tretích strán“ nižšie.</li>
+        </ul>
+
+        <h2>2) Ako používame informácie</h2>
+        <ul>
+            <li><strong>Poskytujte službu:</strong> Generujte obsah, synchronizujte svoje výtvory medzi zariadeniami, keď sa prihlásite, a zobrazte svoju knižnicu.</li>
+            <li><strong>Povolenie sociálnych funkcií (voliteľné):</strong> Zverejňujte príspevky, zobrazujte svoj verejný profil (systémom vygenerované používateľské meno/profilový obrázok), povoľte komentáre, hodnotenia Páči sa mi a sledovanie.</li>
+            <li><strong>Bezpečnosť a integrita:</strong> Presadzujte naše Zmluvné podmienky a Pokyny pre komunitu, spracovávajte hlásenia, uplatňujte bloky a podnikajte kroky v prípade zneužitia (napríklad pozastavenia alebo zákazy).</li>
+            <li><strong>Platby a odmeny:</strong> Overujte nákupy/predplatné a spravujte body/odmeny.</li>
+            <li><strong>Upozornenia:</strong> Ak sa prihlásite, odosielajte upozornenia na relevantnú aktivitu v aplikácii (napríklad interakcie s vašimi príspevkami alebo komentármi).</li>
+            <li><strong>Podpora a spoľahlivosť:</strong> odpovedajte na žiadosti o podporu a skúmajte zlyhania a problémy s výkonom.</li>
+        </ul>
+
+        <h2>3) Keď sa informácie zdieľajú</h2>
+        <p>AiCasso zdieľa informácie nasledujúcimi spôsobmi:</p>
+        <ul>
+            <li><strong>Verejné zdieľanie (v rámci aplikácie):</strong> Ak uverejníte príspevok alebo komentár, vaše používateľské meno a profilový obrázok vygenerované systémom, vaše príspevky a komentáre budú viditeľné pre ostatných používateľov aplikácie. Výzva zobrazená v príspevkoch informačného kanála je upravená na verejné zobrazenie (napríklad odstránenie e-mailov, telefónnych čísel a adries URL).</li>
+            <li><strong>Poskytovatelia služieb (procesory):</strong> Na prevádzkovanie aplikácie používame služby tretích strán (napríklad prihlásenie, upozornenia push, cloud hosting/úložisko, reklamy a poskytovatelia generovania AI). Títo poskytovatelia spracúvajú informácie v našom mene, aby mohli poskytovať svoje služby.</li>
+            <li><strong>Právne a bezpečnostné:</strong> Informácie môžeme zverejniť, ak to vyžaduje zákon alebo ak je to potrebné na ochranu používateľov, zabránenie zneužitiu alebo reakciu na zákonné žiadosti.</li>
+        </ul>
+
+        <h2>4) Služby tretích strán</h2>
+        <p>AiCasso sa integruje s nasledujúcimi kategóriami služieb tretích strán:</p>
+        <ul>
+            <li><strong>Poskytovatelia prihlásenia:</strong> Prihlásenie cez Google a prihlásenie pomocou Apple.</li>
+            <li><strong>Upozornenia push:</strong> OneSignal.</li>
+            <li><strong>Reklama:</strong> Google AdMob (ak sa reklamy zobrazujú vo vašej zostave).</li>
+            <li><strong>Poskytovatelia spracovania AI:</strong> Na generovanie a transformáciu obsahu (napríklad generovanie obrázkov a funkcie súvisiace s tvárou) používame externých poskytovateľov AI. Títo poskytovatelia spracovávajú výzvy a médiá, ktoré odošlete na generovanie.</li>
+            <li><strong>Infraštruktúra:</strong> Náš backend využíva cloudové služby na ukladanie údajov aplikácií a médií a na prevádzku komunitného informačného kanála.</li>
+        </ul>
+        <p>
+            Služby tretích strán môžu mať svoje vlastné zásady ochrany osobných údajov. Ak používate tieto služby prostredníctvom AiCasso, môžu sa na ne vzťahovať aj ich podmienky a zásady.
+        </p>
+
+        <h2>5) Uchovávanie údajov</h2>
+        <ul>
+            <li><strong>Verejné príspevky:</strong> Obsah, ktorý zverejníte v informačnom kanáli, sa uchová, kým ho neodstránite, neodstránite svoj účet alebo kým ho neodstránime z bezpečnostných dôvodov alebo z dôvodov pravidiel.</li>
+            <li><strong>Komentáre a súvisiaca aktivita:</strong> Komentáre a súvisiace údaje o interakciách sa uchovávajú na fungovanie funkcií komunity, pokiaľ nie sú odstránené z bezpečnostných dôvodov alebo odstránené v rámci odstránenia účtu.</li>
+            <li><strong>Súkromné výtvory a nahrávania:</strong> Médiá a generácie, ktoré nie sú zverejnené, môžu byť automaticky odstránené v rámci našich procesov čistenia (napríklad po obmedzenom období uchovávania alebo keď už nie sú dostupné adresy URL upstreamových médií).</li>
+            <li><strong>Hlásenia a denníky moderovania:</strong> hlásenia a záznamy súvisiace s moderovaním sa môžu uchovávať podľa potreby z dôvodu bezpečnosti, prevencie zneužitia a kontroly.</li>
+            <li><strong>Denníky zlyhaní:</strong> Správy o zlyhaní sa uchovávajú na účely ladenia a vylepšenia spoľahlivosti.</li>
+        </ul>
+
+        <h2>6) Vaše voľby</h2>
+        <ul>
+            <li><strong>Voliteľná účasť na sociálnych sieťach:</strong> AiCasso môžete používať bez toho, aby ste ich uverejnili v informačnom kanáli. Uverejňovanie príspevkov a komentárov sú voliteľné.</li>
+            <li><strong>Nahlasovanie a blokovanie:</strong> Môžete nahlasovať príspevky, komentáre a používateľov a môžete blokovať ostatných používateľov.</li>
+            <li><strong>Upozornenia push:</strong> Upozornenia môžete povoliť alebo zakázať v nastaveniach zariadenia.</li>
+            <li><strong>Odstránenie účtu:</strong> Odstránenie účtu môžete spustiť v aplikácii (Nastavenia → Odstrániť účet). Ak nemáte prístup k aplikácii, kontaktujte podporu a my vám pomôžeme.</li>
+        </ul>
+
+        <h2>7) Zabezpečenie</h2>
+        <p>Používame primerané administratívne, technické a fyzické záruky určené na ochranu informácií. Žiadny systém nemôže zaručiť 100% bezpečnosť.</p>
+
+        <h2>8) Kontaktujte nás</h2>
+        <p>Ak máte otázky týkajúce sa týchto Zásad ochrany osobných údajov alebo vašich údajov, kontaktujte:</p>
+        <p>
+            E-mail: <a href="mailto:support@aicassoapp.com">support@aicassoapp.com</a><br>
+            Webové stránky: <a href="https://www.aicassoapp.com">https://www.aicassoapp.com</a>
+        </p>
+
         <hr>
-        <p>Používaním AiCasso súhlasíte s podmienkami uvedenými v týchto Zásadách ochrany osobných údajov.</p>
-    </main>
-    <footer>
-        &copy; 2024 AiCasso. Všetky práva vyhradené.
-    </footer>
+        <p>Používaním AiCasso súhlasíte s týmito Zásadami ochrany osobných údajov.</p></main>
+
+    <footer>© 2025 AiCasso. Všetky práva vyhradené.</footer>
 </body>
 </html>

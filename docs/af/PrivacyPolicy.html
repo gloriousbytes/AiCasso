@@ -2,7 +2,8 @@
 <html lang="af">
 <head>
     <meta charset="UTF-8">
-    <title>Privaatheidsbeleid vir AiCasso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privaatheidsbeleid - AiCasso</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,45 +22,39 @@
             font-size: 3em;
         }
         header p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin-top: 10px;
+            opacity: 0.95;
         }
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
-            padding: 0 20px;
+            padding: 0 20px 40px;
             background-color: #fff;
         }
-        main p {
-            font-size: 1.1em;
+        h2 {
+            margin-top: 0;
+            padding-top: 32px;
+            color: #3a3f44;
+        }
+        p {
+            font-size: 1.05em;
             line-height: 1.8;
-        }
-        ol {
-            counter-reset: item;
-            list-style-type: none;
-            padding-left: 0;
-        }
-        ol > li {
-            counter-increment: item;
-            margin-bottom: 30px;
-        }
-        ol > li::before {
-            content: counter(item) ". ";
-            font-weight: bold;
-            font-size: 1.2em;
-            color: #3a3f44;
-        }
-        ol li strong {
-            font-size: 1.2em;
-            color: #3a3f44;
         }
         ul {
             list-style-type: disc;
-            margin-left: 20px;
+            margin-left: 22px;
             margin-top: 10px;
         }
         ul li {
             margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .note {
+            background: #f7f7f7;
+            border-left: 4px solid #3a3f44;
+            padding: 14px 16px;
+            margin: 18px 0;
         }
         a {
             color: #3a3f44;
@@ -71,7 +66,7 @@
         hr {
             border: none;
             border-top: 1px solid #ddd;
-            margin: 40px 0;
+            margin: 34px 0;
         }
         footer {
             text-align: center;
@@ -86,66 +81,100 @@
             main {
                 margin: 20px auto;
             }
-            ol > li::before {
-                font-size: 1em;
-            }
-            ol li strong {
-                font-size: 1em;
-            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Privaatheidsbeleid vir AiCasso</h1>
-        <p><strong>Effektiewe Datum:</strong> 13 September 2024</p>
-    </header>
-    <main>
-        <p>By AiCasso is jou privaatheid ons prioriteit. Hierdie Privaatheidsbeleid uiteensettings hoe ons die inligting wat jy verskaf wanneer jy ons aansoek gebruik, hanteer.</p>
-        <ol>
-            <li><strong>Inligting wat ons versamel</strong>
-                <ul>
-                    <li><strong>Invoerbeelde:</strong> Ons versamel die beelde wat jy na AiCasso oplaai slegs om ons dienste te lewer.</li>
-                    <li><strong>Gesigsdata:</strong> As jy 'n beeld met gesigte oplaai, verwerk ons gesigskenmerke om pasgemaakte beelde te genereer gebaseer op gebruiker-geselecteerde kenmerke. Hierdie gesigsdata word uit jou opgelaaide beelde onttrek en slegs gebruik vir die doel van beeldgenerasie.</li>
-                </ul>
-            </li>
-            <li><strong>Hoe ons jou inligting gebruik</strong>
-                <ul>
-                    <li><strong>Dienste lewer:</strong> Die invoerbeelde, insluitend enige gesigsdata, word eksklusief gebruik om die funksies wat deur AiCasso aangebied word, uit te voer. Dit sluit die generasie van nuwe beelde in gebaseer op die kenmerke wat jy kies.</li>
-                </ul>
-            </li>
-            <li><strong>Data-bewaring</strong>
-                <ul>
-                    <li><strong>Onmiddellike verwydering van opgelaaide beelde:</strong> Alle invoerbeelde word onmiddellik verwyder nadat hulle verwerk is en hul beoogde doel bereik is.</li>
-                    <li><strong>Tydelike stoor van gegenereerde beelde:</strong> Gegenereerde beelde word in ons wolkdienste gestoor en is vir 24 uur beskikbaar vir die gebruiker. Hierdie beelde word outomaties verwyder na hierdie periode.</li>
-                    <li><strong>Wolkberging bestuur:</strong> Ons wolkberging word elke 24 uur skoongemaak om te verseker dat daar geen oorblywende data oorbly nie.</li>
-                </ul>
-            </li>
-            <li><strong>Data-deling</strong>
-                <ul>
-                    <li><strong>Geen derdeparty-deling:</strong> Ons deel, verkoop of openbaar nie jou beelde, gesigsdata of enige persoonlike data aan derde partye nie. Alle dataverwerking word intern binne AiCasso hanteer.</li>
-                </ul>
-            </li>
-            <li><strong>Veiligheidsmaatreëls</strong>
-                <ul>
-                    <li><strong>Data-beskerming:</strong> Ons gebruik bedryfstandaard veiligheidsmaatreëls om jou beelde en gesigsdata te beskerm tydens verwerking en terwyl dit in ons wolkdienste gestoor word.</li>
-                </ul>
-            </li>
-            <li><strong>Veranderinge aan hierdie Privaatheidsbeleid</strong>
-                <ul>
-                    <li><strong>Beleid-opdaterings:</strong> Ons mag hierdie Privaatheidsbeleid van tyd tot tyd opdateer. Enige veranderinge sal weerspieël word met 'n opgedateerde effektiewe datum.</li>
-                </ul>
-            </li>
-            <li><strong>Kontak ons</strong>
-                <p>As jy enige vrae of bekommernisse oor hierdie Privaatheidsbeleid het, kontak ons asseblief by:</p>
-                <p>E-pos: <a href="mailto:gloriousbytes@gmail.com">gloriousbytes@gmail.com</a></p>
-            </li>
-        </ol>
+    <header><h1>Privaatheidsbeleid</h1>
+        <p><strong>Toepassing:</strong> AiCasso</p>
+        <p><strong>Inwerkingtredingsdatum:</strong> 17 Desember 2025</p></header>
+
+    <main><p>
+            Hierdie Privaatheidsbeleid verduidelik watter inligting AiCasso insamel en verwerk, hoe dit gebruik word en die keuses wat jy het.
+            AiCasso is hoofsaaklik 'n KI-skeppingsprogram, en dit bevat ook opsionele sosiale kenmerke soos publieke voerplasings, opmerkings, hou van en volg.
+        </p>
+
+        <div class="note">
+            <p><strong>Belangrik:</strong> Jou aanmeld-e-posadres word nie publiek in die toepassing vertoon nie. AiCasso ken 'n stelselgegenereerde gebruikernaam en profielprent vir jou publieke profiel toe.</p>
+        </div>
+
+        <h2>1) Inligting wat ons versamel</h2>
+        <p>Ons samel inligting in wat jy verskaf, inligting wat gegenereer word deur jou gebruik van die toepassing, en inligting wat nodig is om opsionele sosiale kenmerke te bedryf.</p>
+        <ul>
+            <li><strong>Rekening en identifiseerders:</strong> As jy met Google of Apple aanmeld, ontvang ons 'n rekeningidentifiseerder van die verskaffer en kan ons ook jou e-posadres en naam ontvang (na gelang van wat die verskaffer deel). Ons stoor 'n stelselgegenereerde gebruikernaam vir jou publieke profiel.</li>
+            <li><strong>Land/streek (afgelei van toestellokaal):</strong> Wanneer jy aanmeld, stuur die program 'n landkode en streek afgelei van jou toestel se plekinstellings. Ons stoor dit om streekervarings en -bedrywighede te ondersteun.</li>
+            <li><strong>KI-insette en -uitsette:</strong> Vrae en media wat jy verskaf (byvoorbeeld prente wat jy oplaai) sowel as inhoud wat die program vir jou genereer (prente, oudio, video en verwante metadata soos modus/instellings).</li>
+            <li><strong>Publieke inhoud (opsioneel):</strong> As jy kies om aan die gemeenskapstroom deel te neem, stoor en vertoon ons jou plasings (KI-gegenereerde media wat in die toepassing geskep is), saam met beperkte geassosieerde inligting soos 'n aansporing wat aan ander gewys word (gesiniseer vir publieke vertoon), tydstempels en betrokkenheidtellings.</li>
+            <li><strong>Opmerkings en antwoorde (opsioneel):</strong> As jy opmerkings maak, stoor ons die opmerkingteks, die plasing/opmerking waarmee dit verband hou, tydstempels en basiese betrokkenheiddata (laaiks, antwoorde tel).</li>
+            <li><strong>Sosiale interaksies (opsioneel):</strong> Hou van, volg en verwante verhoudings-/betrokkenheiddata wat gebruik word om hierdie kenmerke aan te dryf.</li>
+            <li><strong>Verslae en blokkasies (opsioneel):</strong> As jy inhoud of gebruikers rapporteer, stoor ons die verslagbesonderhede wat jy indien (rede en opsionele besonderhede) en wat gerapporteer is. As jy 'n gebruiker blokkeer/deblokkeer, stoor ons inligting wat nodig is om daardie voorkeur in die toepassing toe te pas en om misbruikvoorkoming te ondersteun.</li>
+            <li><strong>Aankope en belonings:</strong> Intekeningstatus en kwitansie-/transaksie-inligting wat nodig is om aankope te valideer, plus punte/beloningstatus (insluitend belonings verdien deur advertensies waar van toepassing).</li>
+            <li><strong>Stootkennisgewings (opsioneel):</strong> As jy stootkennisgewings toelaat, gebruik ons OneSignal om kennisgewings te lewer. OneSignal ken 'n toestelidentifiseerder toe en ons kan dit met jou AiCasso-rekeningidentifiseerder assosieer om rekeningspesifieke kennisgewings te lewer.</li>
+            <li><strong>Omvalverslae (opsioneel):</strong> As jy kies om 'n omvalverslag te stuur, kan dit programweergawe, toestelmodel/bedryfstelsel, foutbesonderhede en 'n stapelspoor insluit om ons te help om kwessies te diagnoseer.</li>
+            <li><strong>Advertering (opsioneel):</strong> As die program advertensies vertoon, kan die advertensieverskaffer inligting insamel as deel van advertensielewering en meting. Sien “Derdepartydienste” hieronder.</li>
+        </ul>
+
+        <h2>2) Hoe ons inligting gebruik</h2>
+        <ul>
+            <li><strong>Verskaf die diens:</strong> Genereer inhoud, sinkroniseer jou skeppings oor toestelle heen wanneer jy aanmeld, en vertoon jou biblioteek.</li>
+            <li><strong>Aktiveer sosiale kenmerke (opsioneel):</strong> Publiseer plasings, wys jou publieke profiel (stelselgegenereerde gebruikernaam/profielprent), aktiveer opmerkings, laaiks en volg.</li>
+            <li><strong>Veiligheid en integriteit:</strong> Dwing ons diensbepalings en gemeenskapsriglyne af, verwerk verslae, pas blokkasies toe en neem stappe teen misbruik (byvoorbeeld skorsings of verbod).</li>
+            <li><strong>Betalings en belonings:</strong> Bevestig aankope/intekeninge en bestuur punte/belonings.</li>
+            <li><strong>Kennisgewings:</strong> Stuur kennisgewings oor relevante programaktiwiteit (byvoorbeeld interaksies met jou plasings of opmerkings) as jy intekening aanvaar.</li>
+            <li><strong>Ondersteuning en betroubaarheid:</strong> Reageer op ondersteuningsversoeke en ondersoek omvalle en werkverrigtingkwessies.</li>
+        </ul>
+
+        <h2>3) Wanneer inligting gedeel word</h2>
+        <p>AiCasso deel inligting op die volgende maniere:</p>
+        <ul>
+            <li><strong>Publieke deling (binne die toepassing):</strong> As jy plaas of opmerkings maak, is jou stelselgegenereerde gebruikernaam en profielprent, jou plasings en jou opmerkings sigbaar vir ander gebruikers van die toepassing. Die boodskap wat op voerplasings gewys word, word ontsmet vir publieke vertoning (byvoorbeeld die verwydering van e-posse, telefoonnommers en URL's).</li>
+            <li><strong>Diensverskaffers (verwerkers):</strong> Ons gebruik derdepartydienste om die toepassing te bedryf (byvoorbeeld aanmelding, stootkennisgewings, wolkgasheer/berging, advertensies en KI-generasieverskaffers). Hierdie verskaffers verwerk inligting namens ons om hul dienste te verskaf.</li>
+            <li><strong>Reg en veiligheid:</strong> Ons kan inligting bekend maak indien wetgewing vereis of indien nodig om gebruikers te beskerm, misbruik te voorkom of op wettige versoeke te reageer.</li>
+        </ul>
+
+        <h2>4) Derdepartydienste</h2>
+        <p>AiCasso integreer met die volgende kategorieë van derdepartydienste:</p>
+        <ul>
+            <li><strong>Aanmeldverskaffers:</strong> Google Meld aan en meld aan met Apple.</li>
+            <li><strong>Drukkennisgewings:</strong> OneSignal.</li>
+            <li><strong>Advertering:</strong> Google AdMob (as advertensies in jou gebou gewys word).</li>
+            <li><strong>KI-verwerkingsverskaffers:</strong> Ons gebruik eksterne KI-verskaffers om inhoud te genereer en te transformeer (byvoorbeeld beeldgenerering en gesigverwante kenmerke). Hierdie verskaffers verwerk die aansporings en media wat jy indien vir generering.</li>
+            <li><strong>Infrastruktuur:</strong> Ons agterplaas gebruik wolkdienste om programdata en media te stoor en om die gemeenskapvoer te bedryf.</li>
+        </ul>
+        <p>
+            Derdepartydienste kan hul eie privaatheidsbeleide hê. As jy hierdie dienste deur AiCasso gebruik, kan hul bepalings en beleid ook van toepassing wees.
+        </p>
+
+        <h2>5) Databehoud</h2>
+        <ul>
+            <li><strong>Publieke plasings:</strong> Inhoud wat jy na die stroom publiseer, word behou totdat jy dit uitvee, jy jou rekening uitvee, of ons dit om veiligheids- of beleidsredes verwyder.</li>
+            <li><strong>Kommentaar en verwante aktiwiteit:</strong> Opmerkings en verwante betrokkenheiddata word behou om die gemeenskapkenmerke te bedryf, tensy dit om veiligheidsredes verwyder word of as deel van rekeninguitvee uitgevee word.</li>
+            <li><strong>Private skeppings en oplaaie:</strong> Media en generasies wat nie publiek geplaas word nie, kan outomaties uitgevee word as deel van ons opruimingsprosesse (byvoorbeeld na 'n beperkte behoudvenster of wanneer stroomop media-URL'e nie meer toeganklik is nie).</li>
+            <li><strong>Verslae en modereringsloglêers:</strong> Verslae en modereringsverwante rekords kan behou word soos nodig vir veiligheid, voorkoming van misbruik en ouditering.</li>
+            <li><strong>Omvalloglêers:</strong> Omvalverslae word behou vir ontfouting en betroubaarheidverbeterings.</li>
+        </ul>
+
+        <h2>6) Jou keuses</h2>
+        <ul>
+            <li><strong>Opsionele sosiale deelname:</strong> Jy kan AiCasso gebruik sonder om na die stroom te plaas. Plaas en kommentaar is opsioneel.</li>
+            <li><strong>Rapporteer en blokkering:</strong> Jy kan plasings, opmerkings en gebruikers rapporteer, en jy kan ander gebruikers blokkeer.</li>
+            <li><strong>Stootkennisgewings:</strong> Jy kan kennisgewings in jou toestelinstellings aktiveer of deaktiveer.</li>
+            <li><strong>Rekeninguitvee:</strong> Jy kan rekeninguitvee in-program begin (Instellings → Vee rekening uit). As jy nie toegang tot die toepassing het nie, kontak steundiens en ons sal help.</li>
+        </ul>
+
+        <h2>7) Sekuriteit</h2>
+        <p>Ons gebruik redelike administratiewe, tegniese en fisiese maatreëls wat ontwerp is om inligting te beskerm. Geen stelsel kan gewaarborg word om 100% veilig te wees nie.</p>
+
+        <h2>8) Kontak ons</h2>
+        <p>As jy vrae het oor hierdie Privaatheidsbeleid of jou data, kontak:</p>
+        <p>
+            E-pos: <a href="mailto:support@aicassoapp.com">support@aicassoapp.com</a><br>
+            Webwerf: <a href="https://www.aicassoapp.com">https://www.aicassoapp.com</a>
+        </p>
+
         <hr>
-        <p>Deur AiCasso te gebruik, stem jy in tot die voorwaardes uiteengesit in hierdie Privaatheidsbeleid.</p>
-    </main>
-    <footer>
-        &copy; 2024 AiCasso. Alle regte voorbehou.
-    </footer>
+        <p>Deur AiCasso te gebruik, stem jy in tot hierdie Privaatheidsbeleid.</p></main>
+
+    <footer>© 2025 AiCasso. Alle regte voorbehou.</footer>
 </body>
 </html>

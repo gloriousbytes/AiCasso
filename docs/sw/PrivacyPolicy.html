@@ -2,7 +2,8 @@
 <html lang="sw">
 <head>
     <meta charset="UTF-8">
-    <title>Sera ya Faragha kwa AiCasso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sera ya Faragha - AiCasso</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,45 +22,39 @@
             font-size: 3em;
         }
         header p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin-top: 10px;
+            opacity: 0.95;
         }
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
-            padding: 0 20px;
+            padding: 0 20px 40px;
             background-color: #fff;
         }
-        main p {
-            font-size: 1.1em;
+        h2 {
+            margin-top: 0;
+            padding-top: 32px;
+            color: #3a3f44;
+        }
+        p {
+            font-size: 1.05em;
             line-height: 1.8;
-        }
-        ol {
-            counter-reset: item;
-            list-style-type: none;
-            padding-left: 0;
-        }
-        ol > li {
-            counter-increment: item;
-            margin-bottom: 30px;
-        }
-        ol > li::before {
-            content: counter(item) ". ";
-            font-weight: bold;
-            font-size: 1.2em;
-            color: #3a3f44;
-        }
-        ol li strong {
-            font-size: 1.2em;
-            color: #3a3f44;
         }
         ul {
             list-style-type: disc;
-            margin-left: 20px;
+            margin-left: 22px;
             margin-top: 10px;
         }
         ul li {
             margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .note {
+            background: #f7f7f7;
+            border-left: 4px solid #3a3f44;
+            padding: 14px 16px;
+            margin: 18px 0;
         }
         a {
             color: #3a3f44;
@@ -71,7 +66,7 @@
         hr {
             border: none;
             border-top: 1px solid #ddd;
-            margin: 40px 0;
+            margin: 34px 0;
         }
         footer {
             text-align: center;
@@ -86,66 +81,100 @@
             main {
                 margin: 20px auto;
             }
-            ol > li::before {
-                font-size: 1em;
-            }
-            ol li strong {
-                font-size: 1em;
-            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Sera ya Faragha kwa AiCasso</h1>
-        <p><strong>Tarehe ya Kuanza:</strong> Septemba 13, 2024</p>
-    </header>
-    <main>
-        <p>Katika AiCasso, faragha yako ni kipaumbele chetu. Sera hii ya faragha inaelezea jinsi tunavyoshughulikia taarifa unazotoa unapokuwa ukitumia programu yetu.</p>
-        <ol>
-            <li><strong>Taarifa Tunazokusanya</strong>
-                <ul>
-                    <li><strong>Picha za Ingizo:</strong> Tunakusanya picha unazopakia kwenye AiCasso kwa ajili ya kutoa huduma zetu pekee.</li>
-                    <li><strong>Taarifa za Uso:</strong> Ikiwa unapakua picha zenye nyuso, tunachakata sifa za uso ili kuunda picha zilizobinafsishwa kulingana na sifa zilizochaguliwa na mtumiaji. Taarifa hii ya uso inachukuliwa kutoka kwa picha zako zilizopakuliwa na inatumika pekee kwa ajili ya uzalishaji wa picha.</li>
-                </ul>
-            </li>
-            <li><strong>Jinsi Tunavyotumia Taarifa Zako</strong>
-                <ul>
-                    <li><strong>Kutoa Huduma:</strong> Picha za ingizo, ikiwa ni pamoja na taarifa zozote za uso, zinatumika pekee kutekeleza kazi zinazotolewa na AiCasso. Hii inajumuisha kuunda picha mpya kulingana na sifa unazochagua.</li>
-                </ul>
-            </li>
-            <li><strong>Uhifadhi wa Taarifa</strong>
-                <ul>
-                    <li><strong>Kuondolewa Mara Moja kwa Picha Zilizopakuliwa:</strong> Picha zote za ingizo zinaondolewa mara moja baada ya kuchakatwa na kusudi lao kutimizwa.</li>
-                    <li><strong>Uhifadhi wa Muda wa Picha Zilizoundwa:</strong> Picha zilizoundwa zinahifadhiwa katika huduma yetu ya wingu na zinapatikana kwa mtumiaji kwa masaa 24. Picha hizi zinaondolewa kiotomatiki baada ya kipindi hiki.</li>
-                    <li><strong>Usimamizi wa Uhifadhi wa Wingu:</strong> Uhifadhi wetu wa wingu unafutwa kila masaa 24 ili kuhakikisha kuwa hakuna data iliyobaki.</li>
-                </ul>
-            </li>
-            <li><strong>Shiriki Taarifa</strong>
-                <ul>
-                    <li><strong>Hakuna Kushiriki na Watu wa Tatu:</strong> Hatushiriki, hatuuzi, wala kufichua picha zako, taarifa za uso, au taarifa zozote za kibinafsi kwa watu wa tatu. Usindikaji wote wa data unashughulikiwa ndani ya AiCasso.</li>
-                </ul>
-            </li>
-            <li><strong>Hatua za Usalama</strong>
-                <ul>
-                    <li><strong>Ulinzi wa Taarifa:</strong> Tunatumia hatua za usalama za viwango vya tasnia kulinda picha zako na taarifa za uso wakati wa usindikaji na wakati zinahifadhiwa katika huduma zetu za wingu.</li>
-                </ul>
-            </li>
-            <li><strong>Mabadiliko ya Sera hii ya Faragha</strong>
-                <ul>
-                    <li><strong>Masasisho ya Sera:</strong> Tunaweza kuboresha sera hii ya faragha mara kwa mara. Mabadiliko yoyote yataonyeshwa kwa tarehe mpya ya kuanza.</li>
-                </ul>
-            </li>
-            <li><strong>Wasiliana Nasi</strong>
-                <p>Ili kuwa na maswali au wasiwasi kuhusu sera hii ya faragha, tafadhali wasiliana nasi kupitia:</p>
-                <p>Barua pepe: <a href="mailto:gloriousbytes@gmail.com">gloriousbytes@gmail.com</a></p>
-            </li>
-        </ol>
+    <header><h1>Sera ya Faragha</h1>
+        <p><strong>Programu:</strong> AiCasso</p>
+        <p><strong>Tarehe ya Kutumika:</strong> Desemba 17, 2025</p></header>
+
+    <main><p>
+            Sera hii ya Faragha inaeleza ni taarifa gani AiCasso inakusanya na kuchakata, jinsi inavyotumiwa, na chaguo ulizonazo.
+            AiCasso kimsingi ni programu ya uundaji wa AI, na pia inajumuisha vipengele vya hiari vya kijamii kama vile machapisho ya mipasho ya umma, maoni, zinazopendwa na zinazofuata.
+        </ p>
+
+        <div class="note">
+            <p><strong>Muhimu:</strong> Anwani yako ya barua pepe ya kuingia haionyeshwa hadharani katika programu. AiCasso inapeana jina la mtumiaji na picha ya wasifu inayozalishwa na mfumo kwa wasifu wako wa umma.</p>
+        </ div>
+
+        <h2>1) Taarifa Tunazokusanya</h2>
+        <p>Tunakusanya maelezo unayotoa, maelezo yanayotokana na matumizi yako ya programu na maelezo yanayohitajika ili kutumia vipengele vya hiari vya kijamii.</p>
+        <ul>
+            <li><strong>Akaunti na vitambulisho:</strong> Ukiingia ukitumia Google au Apple, tunapokea kitambulisho cha akaunti kutoka kwa mtoa huduma na tunaweza pia kupokea barua pepe na jina lako (kulingana na kile mtoa huduma anashiriki). Tunahifadhi jina la mtumiaji linalotokana na mfumo kwa wasifu wako wa umma.</li>
+            <li><strong>Nchi/eneo (linalotokana na lugha ya kifaa):</strong> Unapoingia, programu hutuma msimbo wa nchi na eneo linalotokana na mipangilio ya eneo la kifaa chako. Tunahifadhi hii ili kusaidia uzoefu na uendeshaji wa eneo.</li>
+            <li><strong>Ingizo na matokeo ya AI:</strong> Vidokezo na maudhui unayotoa (kwa mfano, picha unazopakia) pamoja na maudhui ambayo programu inakuza kwa ajili yako (picha, sauti, video, na metadata zinazohusiana kama vile hali/mipangilio).</li>
+            <li><strong>Maudhui ya umma (hiari):</strong> Ukichagua kushiriki katika mipasho ya jumuiya, tunahifadhi na kuonyesha machapisho yako (midia zinazozalishwa na AI zilizoundwa katika programu), pamoja na maelezo machache yanayohusiana kama vile kidokezo kinachoonyeshwa kwa wengine (imeidhinishwa ili kuonyeshwa hadharani), mihuri ya nyakati na hesabu za ushiriki.</li>
+            <li><strong>Maoni na majibu (hiari):</strong> Ukitoa maoni, tunahifadhi maandishi ya maoni, chapisho/maoni yanayohusiana nayo, mihuri ya muda, na data ya msingi ya ushiriki (anapenda, hesabu za majibu).</li>
+            <li><strong>Maingiliano ya kijamii (hiari):</strong> Vipendwa, vinavyofuata, na data inayohusiana ya uhusiano/ushiriki inayotumika kuendesha vipengele hivi.</li>
+            <li><strong>Ripoti na vizuizi (si lazima):</strong> Ukiripoti maudhui au watumiaji, tunahifadhi maelezo ya ripoti unayowasilisha (sababu na maelezo ya hiari) na kile kilichoripotiwa. Ukimzuia/kumfungulia mtumiaji, tunahifadhi maelezo yanayohitajika ili kutumia mapendeleo hayo katika programu na kusaidia kuzuia matumizi mabaya.</li>
+            <li><strong>Ununuzi na zawadi:</strong>Hali ya usajili na taarifa ya risiti/muamala inahitajika ili kuthibitisha ununuzi, pamoja na pointi/hali ya zawadi (ikiwa ni pamoja na zawadi zinazopatikana kupitia matangazo inapohitajika).</li>
+            <li><strong>Arifa kutoka kwa programu (hiari):</strong> Ukiruhusu arifa zinazotumwa na programu hata wakati huitumii, tunatumia OneSignal kuwasilisha arifa. OneSignal hukabidhi kitambulisho cha kifaa na tunaweza kukihusisha na kitambulisho cha akaunti yako ya AiCasso ili kuwasilisha arifa mahususi za akaunti.</li>
+            <li><strong>Ripoti za kuacha kufanya kazi (si lazima):</strong> Ukichagua kutuma ripoti ya kuacha kufanya kazi, inaweza kujumuisha toleo la programu, muundo wa kifaa/OS, maelezo ya hitilafu na ufuatiliaji wa rafu ili kutusaidia kutambua matatizo.</li>
+            <li><strong>Utangazaji (hiari):</strong> Ikiwa programu inaonyesha matangazo, mtoa huduma wa tangazo anaweza kukusanya maelezo kama sehemu ya uwasilishaji wa tangazo na kipimo. Tazama “Huduma za Watu Wengine” hapa chini.</li>
+        </ul>
+
+        <h2>2) Jinsi Tunavyotumia Taarifa</h2>
+        <ul>
+            <li><strong>Toa huduma:</strong> Tengeneza maudhui, sawazisha ubunifu wako kwenye vifaa vyote unapoingia, na uonyeshe maktaba yako.</li>
+            <li><strong>Washa vipengele vya kijamii (hiari):</strong> Chapisha machapisho, onyesha wasifu wako wa umma (jina la mtumiaji/picha ya wasifu inayozalishwa na mfumo), wezesha maoni, zinazopendwa na zinazofuata.</li>
+            <li><strong>Usalama na uadilifu:</strong> Tekeleza Sheria na Masharti na Miongozo yetu ya Jumuiya, kushughulikia ripoti, kutumia vizuizi na kuchukua hatua dhidi ya matumizi mabaya (kwa mfano, kusimamishwa au kupiga marufuku).</li>
+            <li><strong>Malipo na zawadi:</strong> Thibitisha ununuzi/usajili na udhibiti pointi/zawadi.</li>
+            <li><strong>Arifa:</strong> Tuma arifa kuhusu shughuli husika ya programu (kwa mfano, mwingiliano na machapisho au maoni yako) ukichagua kuingia.</li>
+            <li><strong>Usaidizi na kutegemewa:</strong> Jibu maombi ya usaidizi na uchunguze matatizo ya kuacha kufanya kazi na utendakazi.</li>
+        </ul>
+
+        <h2>3) Wakati Taarifa Inashirikiwa</h2>
+        <p>AiCasso hushiriki maelezo kwa njia zifuatazo:</p>
+        <ul>
+            <li><strong>Kushiriki kwa umma (ndani ya programu):</strong> Ukichapisha au kutoa maoni, jina lako la mtumiaji na picha ya wasifu iliyozalishwa na mfumo, machapisho yako na maoni yako yanaonekana kwa watumiaji wengine wa programu. Kidokezo kinachoonyeshwa kwenye machapisho ya mipasho husafishwa ili kuonyeshwa hadharani (kwa mfano, kuondoa barua pepe, nambari za simu na URL).</li>
+            <li><strong>Watoa huduma (wachakataji):</strong> Tunatumia huduma za wahusika wengine kuendesha programu (kwa mfano, kuingia, arifa zinazotumwa na programu hata wakati huitumii, kupangisha/hifadhi kwenye wingu, matangazo na watoa huduma wa kuzalisha AI). Watoa huduma hawa huchakata taarifa kwa niaba yetu ili kutoa huduma zao.</li>
+            <li><strong>Kisheria na usalama:</strong> Tunaweza kufichua taarifa ikihitajika kisheria au ikihitajika ili kulinda watumiaji, kuzuia matumizi mabaya, au kujibu maombi halali.</li>
+        </ul>
+
+        <h2>4) Huduma za Watu Wengine</h2>
+        <p>AiCasso inaunganishwa na kategoria zifuatazo za huduma za watu wengine:</p>
+        <ul>
+            <li><strong>Watoa huduma za kuingia:</strong> Ingia kwa Kutumia Google na Ingia kwa kutumia Apple.</li>
+            <li><strong>Arifa zinazotumwa na programu hata wakati huitumii:</strong> OneSignal.</li>
+            <li><strong>Utangazaji:</strong> Google AdMob (ikiwa matangazo yanaonyeshwa kwenye muundo wako).</li>
+            <li><strong>Watoa huduma za usindikaji wa AI:</strong> Tunatumia watoa huduma wa nje wa AI ili kuzalisha na kubadilisha maudhui (kwa mfano, kuunda picha na vipengele vinavyohusiana na uso). Watoa huduma hawa huchakata vidokezo na maudhui unayowasilisha kwa ajili ya uzalishaji.</li>
+            <li><strong>Miundombinu:</strong> Mazingira yetu ya nyuma hutumia huduma za wingu kuhifadhi data ya programu na midia na kuendesha mipasho ya jumuiya.</li>
+        </ul>
+        <p>
+            Huduma za watu wengine zinaweza kuwa na sera zao za faragha. Ukitumia huduma hizi kupitia AiCasso, sheria na masharti yao yanaweza pia kutumika.
+        </ p>
+
+        <h2>5) Uhifadhi wa Data</h2>
+        <ul>
+            <li><strong>Machapisho ya umma:</strong> Maudhui unayochapisha kwenye mipasho huhifadhiwa hadi uifute, ufute akaunti yako, au tuiondoe kwa sababu za usalama au sera.</li>
+            <li><strong>Maoni na shughuli zinazohusiana:</strong> Maoni na data ya ushiriki inayohusiana huhifadhiwa ili kuendesha vipengele vya jumuiya, isipokuwa kama kuondolewa kwa sababu za usalama au kufutwa kama sehemu ya kufuta akaunti.</li>
+            <li><strong>Ubunifu na upakiaji wa Kibinafsi:</strong> Vyombo vya habari na vizazi ambavyo havijachapishwa hadharani vinaweza kufutwa kiotomatiki kama sehemu ya michakato yetu ya kusafisha (kwa mfano, baada ya muda mfupi wa kuhifadhi au wakati URL za midia ya juu hazipatikani tena).</li>
+            <li><strong>Kumbukumbu na ripoti za udhibiti:</strong> Ripoti na rekodi zinazohusiana na udhibiti zinaweza kuhifadhiwa inavyohitajika kwa usalama, kuzuia matumizi mabaya na ukaguzi.</li>
+            <li><strong>Kumbukumbu za kuacha kufanya kazi:</strong> Ripoti za kuacha kufanya kazi huhifadhiwa kwa ajili ya utatuzi na maboresho ya kutegemewa.</li>
+        </ul>
+
+        <h2>6) Chaguo Zako</h2>
+        <ul>
+            <li><strong>Ushiriki wa hiari wa kijamii:</strong> Unaweza kutumia AiCasso bila kuchapisha kwenye mipasho. Kuchapisha na kutoa maoni ni hiari.</li>
+            <li><strong>Kuripoti na kuzuia:</strong> Unaweza kuripoti machapisho, maoni, na watumiaji, na unaweza kuzuia watumiaji wengine.</li>
+            <li><strong>Arifa kutoka kwa programu:</strong> Unaweza kuwezesha au kuzima arifa katika mipangilio ya kifaa chako.</li>
+            <li><strong>Kufuta akaunti:</strong> Unaweza kuanzisha kufuta akaunti ndani ya programu (Mipangilio → Futa akaunti). Ikiwa huwezi kufikia programu, wasiliana na usaidizi na tutakusaidia.</li>
+        </ul>
+
+        <h2>7) Usalama</h2>
+        <p>Tunatumia ulinzi unaofaa wa kiutawala, kiufundi na kimwili iliyoundwa kulinda maelezo. Hakuna mfumo unaweza kuhakikishiwa kuwa salama 100%.</p>
+
+        <h2>8) Wasiliana Nasi</h2>
+        <p>Ikiwa una maswali kuhusu Sera hii ya Faragha au data yako, wasiliana na:</p>
+        <p>
+            Barua pepe: <a href="mailto:support@aicassoapp.com">support@aicassoapp.com</a><br>
+            Tovuti: <a href="https://www.aicassoapp.com">https://www.aicassoapp.com</a>
+        </ p>
+
         <hr>
-        <p>Kwa kutumia AiCasso, unakubali masharti yaliyoainishwa katika sera hii ya faragha.</p>
-    </main>
-    <footer>
-        &copy; 2024 AiCasso. Haki zote zimehifadhiwa.
-    </footer>
+        <p>Kwa kutumia AiCasso, unakubali Sera hii ya Faragha.</p></main>
+
+    <footer>© 2025 AiCasso. Haki zote zimehifadhiwa.</footer>
 </body>
 </html>

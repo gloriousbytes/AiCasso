@@ -2,7 +2,8 @@
 <html lang="xh">
 <head>
     <meta charset="UTF-8">
-    <title>Umgaqo-nkqubo Wobumfihlo we-AiCasso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ipolisi Engezinto Eziyimfihlo - iAiCasso</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,45 +22,39 @@
             font-size: 3em;
         }
         header p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin-top: 10px;
+            opacity: 0.95;
         }
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
-            padding: 0 20px;
+            padding: 0 20px 40px;
             background-color: #fff;
         }
-        main p {
-            font-size: 1.1em;
+        h2 {
+            margin-top: 0;
+            padding-top: 32px;
+            color: #3a3f44;
+        }
+        p {
+            font-size: 1.05em;
             line-height: 1.8;
-        }
-        ol {
-            counter-reset: item;
-            list-style-type: none;
-            padding-left: 0;
-        }
-        ol > li {
-            counter-increment: item;
-            margin-bottom: 30px;
-        }
-        ol > li::before {
-            content: counter(item) ". ";
-            font-weight: bold;
-            font-size: 1.2em;
-            color: #3a3f44;
-        }
-        ol li strong {
-            font-size: 1.2em;
-            color: #3a3f44;
         }
         ul {
             list-style-type: disc;
-            margin-left: 20px;
+            margin-left: 22px;
             margin-top: 10px;
         }
         ul li {
             margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .note {
+            background: #f7f7f7;
+            border-left: 4px solid #3a3f44;
+            padding: 14px 16px;
+            margin: 18px 0;
         }
         a {
             color: #3a3f44;
@@ -71,7 +66,7 @@
         hr {
             border: none;
             border-top: 1px solid #ddd;
-            margin: 40px 0;
+            margin: 34px 0;
         }
         footer {
             text-align: center;
@@ -86,66 +81,99 @@
             main {
                 margin: 20px auto;
             }
-            ol > li::before {
-                font-size: 1em;
-            }
-            ol li strong {
-                font-size: 1em;
-            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Umgaqo-nkqubo Wobumfihlo we-AiCasso</h1>
-        <p><strong>Umhla Wokusebenza:</strong> Septemba 13, 2024</p>
-    </header>
-    <main>
-        <p>Kwa-AiCasso, ubume bethu busemva kokhuseleko lwakho. Lo mgqaliselo wobumfihlo uchaza indlela esijolise ngayo kwiinkcukacha ozinikezayo xa usebenzisa usetyenziso lwethu.</p>
-        <ol>
-            <li><strong>Inkcazelo Esiyiqokelelayo</strong>
-                <ul>
-                    <li><strong>Imifanekiso Eyenzelwe:</strong> Siqokelela imifanekiso oyilayishayo kwi-AiCasso kuphela ukuze sinikeze iinkonzo zethu.</li>
-                    <li><strong>Idatha YeMilo:</strong> Ukuba uyilayisha imifanekiso equlethe imilo, sihlela iimpawu zomlilo ukuze sivelise imifanekiso eyenziwe ngokwezifiso ngokusekelwe kwiimpawu ezikhethiweyo ngumsebenzisi. Le datha yeMilo ikhutshwa kwimifanekiso oyilayishayo kwaye isetyenziselwa kuphela injongo yokwenziwa kwemifanekiso.</li>
-                </ul>
-            </li>
-            <li><strong>Indlela Esisebenzisa Ngayo Iinkcukacha Zakho</strong>
-                <ul>
-                    <li><strong>Ukubonelela Ngemisebenzi:</strong> Imifanekiso eyenzelwe, kubandakanywa nayiphi na idatha yeMilo, isetyenziselwa kuphela ukwenza imisebenzi enikezelwa yi-AiCasso. Oku kubandakanya ukuvelisa imifanekiso emitsha ngokusekelwe kwiimpawu ozikhethayo.</li>
-                </ul>
-            </li>
-            <li><strong>Ukugcina Idatha</strong>
-                <ul>
-                    <li><strong>Ukususa Ngexesha Elimfutshane Imifanekiso Eyilayishwayo:</strong> Zonke imifanekiso ezilayishwayo ziyasuswa ngokukhawuleza emva kokuba zisebenze kwaye injongo yazo igqityiwe.</li>
-                    <li><strong>Ukugcina Ngexesha Elimfutshane Imifanekiso Ezenziweyo:</strong> Imifanekiso ezenziweyo igcinwa kwiinkonzo zethu ze-cloud kwaye iyafumaneka kumsebenzisi kwiiyure ezingama-24. Le mifanekiso iyasuswa ngokuzenzekelayo emva kwale nxalenye.</li>
-                    <li><strong>Ulawulo LweMifanekiso ye-Cloud:</strong> I-cloud yethu iyacocwa rhoqo kwiiyure ezingama-24 ukuqinisekisa ukuba akukho datha esele isalayo ihleli.</li>
-                </ul>
-            </li>
-            <li><strong>Ukwabelana Ngolwazi</strong>
-                <ul>
-                    <li><strong>Akukho Ukwabelana Nezithathu:</strong> Asabelani, asithengisi, okanye sithumele imifanekiso yakho, idatha yeMilo, okanye nayiphi na idatha yomntu kumathathu. Zonke iinkcukacha zisebenza ngaphakathi kwi-AiCasso.</li>
-                </ul>
-            </li>
-            <li><strong>Imilinganiselo Yokhuseleko</strong>
-                <ul>
-                    <li><strong>Ukhuseleko Lwedatha:</strong> Sisebenzisa imilinganiselo yokhuseleko eyamkelwe kwiindustri ukuze siqinisekise ukhuseleko lwemifanekiso yakho kunye nedatha yeMilo ngexesha lokuphumeza nasekugcineni kwiinkonzo zethu ze-cloud.</li>
-                </ul>
-            </li>
-            <li><strong>Utshintsho Kule Migaqo-nkqubo Wobumfihlo</strong>
-                <ul>
-                    <li><strong>Uhlaziyo LweMigaqo-nkqubo:</strong> Singahlaziya le migaqo-nkqubo wobumfihlo ngexesha. Nawuphi na utshintsho luza kuboniswa ngomhla omtsha wokusebenza.</li>
-                </ul>
-            </li>
-            <li><strong>Qhagamshelana Nathi</strong>
-                <p>Ukuba unayo nayiphi na imibuzo okanye ukhathazekile ngale migaqo-nkqubo wobumfihlo, nceda uqhagamshelane nathi kwi:</p>
-                <p>Imeyile: <a href="mailto:gloriousbytes@gmail.com">gloriousbytes@gmail.com</a></p>
-            </li>
-        </ol>
+    <header><h1>Umgaqo-nkqubo Wabucala</h1>
+        <p><strong>I-App</strong> AiCasso</p>
+        <p><strong>Umhla osebenzeyo:</strong> Disemba 17, 2025</p></header>
+
+    <main><p>
+            Le Polisi Engezinto Eziyimfihlo icacisa ukuba yeyiphi inkcazelo eqokelelwa nguAiCasso neenkqubo zayo, indlela esetyenziswa ngayo nezinto onokukhetha kuzo. IAiCasso ngokuyintloko yi-app yokwenziwa kweAI, ibe ikwaquka nezinto zokuncokola ezinganyanzelekanga ezifana neepowusti zikawonke-wonke, izimvo, izinto ezithandwayo nezilandelayo.
+        </p>
+
+        <div class="note">
+            <p><strong>Ebalulekileyo</strong> Idilesi yakho ye-imeyile yokungena ayiboniswa ngumntu wonke kwi-app. IAiCasso ifaka igama lomsebenzisi elenziwe yinkqubo nefoto yeprofayile yeprofayile yakho ebonwa ngumntu wonke.</p>
+        </div>
+
+        <h2>Inkcazelo Esiyiqokelelayo</h2>
+        <p>Siqokelela inkcazelo oyifakayo, inkcazelo eyenziwe kukusebenzisa kwakho i-app, nenkcazelo efunekayo ukuze sisebenzise izinto zentlalo ezinganyanzelekanga.</p>
+        <ul>
+            <li><strong>Iakhawunti nezazisi:</strong> Ukuba ungena kwiakhawunti yakho ngoGoogle okanye ngo-Apple, sifumana isazisi se-akhawunti esivela kumboneleli ibe sisenokufumana idilesi yakho ye-imeyile negama lakho (kuxhomekeka kwinto eyabelwa ngumboneleli). Sigcina igama lomsebenzisi elenziwe yinkqubo kwiprofayile yakho ebonwa ngumntu wonke.</li>
+            <li><strong>Ilizwe/ummandla (ovela kwindawo yesixhobo):</strong> Xa ungena, i-app ithumela ikhowudi yelizwe nengingqi evela kwiisetingi zendawo ekuyo isixhobo sakho. Siyayigcina le nto ukuze sixhase izinto ezinokonwatyelwa zengingqi nezinto ezenziwayo.</li>
+            <li><strong>Igalelo neziphumo zeAI:</strong> Izikhuthazo nemidiya oyifakayo (ngokomzekelo, iifoto ozifakayo) kunye nomxholo i-app ekuvelisela wona (imifanekiso, iaudio, ividiyo, kunye nemethadatha enxulumene noko efana nemowudi/iisetingi).</li>
+            <li><strong>Izinto zikawonke-wonke (akunyanzelekanga):</strong> Ukuba ukhetha ukuthatha inxaxheba kwisondlo sabantu basekuhlaleni, siyazigcina size sizibonise iipowusti zakho (imithombo yeendaba eyenziwe ngeAI eyenziwe kwi-app), kunye nenkcazelo enento yokwenza nokunciphisa umda njengokukhawuleza okuboniswe kwabanye (okuncitshiswa iintsholongwane ukuze kuboniswe esidlangalaleni), izitampu zexesha, kunye nezibalo zokuzibandakanya.</li>
+            <li><strong>Izimvo neempendulo (akunyanzelekanga):</strong> Ukuba ufaka izimvo, sigcina isicatshulwa sezimvo, ipowusti/izimvo ezidibene nazo, izitampu zexesha, kunye nedatha yokuzibandakanya esisiseko (ukuthandwa, ukubalwa kweempendulo).</li>
+            <li><strong>Ukusebenzisana nabantu (akunyanzelekanga):</strong> Ukuthandwa, ukulandelwa, kunye nedatha yobudlelwane/yokuzibandakanya enxulumene nayo esetyenziselwa ukulawula ezi zinto.</li>
+            <li><strong>Iingxelo kunye neebhloko (akunyanzelekanga):</strong> Ukuba uxela izinto ezikhoyo okanye abasebenzisi, sigcina iinkcukacha zengxelo oyifakileyo (isizathu kunye neenkcukacha ezinganyanzelekanga) nezinto ezixeliweyo. Ukuba uyamvala okanye uyamvala umntu oyisebenzisayo, sigcina inkcazelo efunekayo ukuze sisebenzise loo nto uyikhethayo kwi-app nokuxhasa ukuthintela ukuxhatshazwa.</li>
+            <li><strong>Ukuthenga nemivuzo:</strong> Imeko yokubhalisa kunye nenkcazelo yerisithi/yemali engenayo nephumileyo efunekayo ukuze kuqinisekiswe ukuthengwa kwezinto, kunye namanqaku okanye imeko yomvuzo (kuquka nemivuzo efunyenwe ngeentengiso apho kusebenza khona).</li>
+            <li><strong>Imiyalezo ye-app (ayinyanzelekanga):</strong> Ukuba uyayivumela imiyalezo ye-app, sisebenzisa i-OneSignal ukuze sithumele imiyalezo. I-OneSignal ifaka isazisi sezixhobo ibe sisenokusidibanisa nesazisi seakhawunti yakho yeAiCasso ukuze sithumele imiyalezo ethile yeakhawunti.</li>
+            <li><strong>Iingxelo zengozi (akunyanzelekanga):</strong> Ukuba ukhetha ukuthumela ingxelo yengozi, isenokuquka uhlobo lwe-app, imodeli yesixhobo/i-OS, iinkcukacha zemposiso, kunye nomkhondo wemfumba ukusinceda sifumane iingxaki.</li>
+            <li><strong>Intengiso (akunyanzelekanga):</strong> Ukuba i-app ibonisa iintengiso, umboneleli ngeentengiso usenokuqokelela inkcazelo njengenxalenye yokuhambisa nokulinganisa iintengiso. Jonga “Iinkonzo Zomnye Umntu” apha ngezantsi.</li>
+        </ul>
+
+        <h2>2) Indlela Esisebenzisa Ngayo Inkcazelo</h2>
+        <ul>
+            <li><strong>Nikezela ngenkonzo:</strong> Yenza izinto ezifakiweyo, dibanisa izinto ozenzileyo kwizixhobo xa ungena uze ubonise ilayibrari yakho.</li>
+            <li><strong>Yenza izinto zokuncokola zisebenze (akunyanzelekanga):</strong> Papasha izinto ozifakileyo, veza iprofayile yakho ebonwa ngumntu wonke (igama lomsebenzisi/ifoto yeprofayile eyenziwe yinkqubo), vumela izimvo, izinto ozithandayo nezilandelayo.</li>
+            <li><strong>Ukhuseleko nokuthembeka:</strong> Sebenzisa Imimiselo yethu Yenkonzo Nezikhokelo Zentsapho, iingxelo zenkqubo, ukusebenzisa iibhloko, nokuthatha amanyathelo ngokuxhatshazwa (ngokomzekelo, ukunqumamiswa okanye ukuvalwa).</li>
+            <li><strong>Ukubhatala nemivuzo:</strong> Qinisekisa ukuthenga/ukubhalisa uze ulawule amanqaku/umvuzo.</li>
+            <li><strong>Izaziso</strong> Thumela imiyalezo ngezinto ezenziwayo kwi-app (ngokomzekelo, ukusebenzisana neepowusti zakho okanye izimvo) ukuba ukhetha ukungena.</li>
+            <li><strong>Inkxaso nokuthembeka:</strong> Phendula izicelo zoncedo uze uphande ngeengozi nangeengxaki zendlela oqhuba ngayo.</li>
+        </ul>
+
+        <h2>3) Xa Ulwazi Lwabelwana Ngalo</h2>
+        <p>UAiCasso wabelana ngenkcazelo ngezi ndlela zilandelayo:</p>
+        <ul>
+            <li><strong>Ukwabelana esidlangalaleni (kwi-app):</strong> Ukuba ufaka okanye uphawule, igama lakho lomsebenzisi elenziwe yinkqubo kunye nefoto yeprofayile, iiposti zakho, kunye nezimvo zakho ziyabonakala kwabanye abantu abasebenzisa i-app. Umyalelo oboniswe kwiipowusti zezondlo uncitshiswa iintsholongwane ukuze uboniswe ngumntu wonke (ngokomzekelo, ukususa ii-imeyile, iinombolo zefowuni nee-URL).</li>
+            <li><strong>Ababoneleli ngeenkonzo (abaprosesa):</strong> Sisebenzisa iinkonzo zezinye iinkampani ukuze sisebenzise i-app (ngokomzekelo, ukungena kwiakhawunti, imiyalezo ye-app, ukwamkela iindwendwe efini/ukugcinwa, iintengiso, kunye nabanikezeli ngemveliso yeAI). Aba banikezeli ngeenkonzo basebenzisa inkcazelo egameni lethu ukuze banikezele ngeenkonzo zabo.</li>
+            <li><strong>Umthetho nokhuseleko:</strong> Sinokuyichaza inkcazelo ukuba iyafuneka ngokomthetho okanye ukuba iyafuneka ukuze sikhusele abantu abayisebenzisayo, siphephe ukuxhatshazwa, okanye siphendule izicelo ezisemthethweni.</li>
+        </ul>
+
+        <h2>4) Iinkonzo Zomnye Umntu</h2>
+        <p>IAiCasso idityaniswa nezi ndidi zilandelayo zeenkonzo zezinye iinkampani:</p>
+        <ul>
+            <li><strong>Ababoneleli ngeakhawunti:</strong> Ngena kwiakhawunti ka-Google uze ungene nge-Apple.</li>
+            <li><strong>Izaziso zokuTyhala</strong> I-OneSignal.</li>
+            <li><strong>Intengiso</strong> UGoogle AdMob (ukuba iintengiso ziboniswa kwisakhiwo sakho).</li>
+            <li><strong>Ababoneleli nge-AI:</strong> Sisebenzisa ababoneleli ngeAI bangaphandle ukuze sivelise size sitshintshe izinto (ngokomzekelo, ukuveliswa kweefoto nezinto ezinento yokwenza nobuso). Aba banikezeli basebenzisa imiyalelo kunye namajelo osasazo owafakayo kwisizukulwana.</li>
+            <li><strong>Izibonelelo.</strong> I-backend yethu isebenzisa iinkonzo zelifu ukuze igcine inkcazelo ye-app namajelo eendaba ize isebenzise ukutya kwentsapho.</li>
+        </ul>
+        <p>
+            Iinkonzo zezinye iinkampani zisenokuba neepolisi zazo eziyimfihlo. Ukuba usebenzisa ezi nkonzo ngeAiCasso, imimiselo neepolisi zazo zisenokusebenza.
+        </p>
+
+        <h2>5) Ukugcinwa kwedatha</h2>
+        <ul>
+            <li><strong>Iiposti zikawonke-wonke:</strong> Izinto ozipapashayo kwi-feed ziyagcinwa de uyicime, uyicime iakhawunti yakho okanye siyisuse ngenxa yezizathu zokhuseleko okanye zepolisi.</li>
+            <li><strong>Izimvo nezinto ezenziwayo ezinxulumene noko:</strong> Izimvo nenkcazelo yokuzibandakanya enento yokwenza nazo zigcinwa ukuze zisebenzise izinto zentsapho, ngaphandle kokuba zisusiwe ngenxa yezizathu zokhuseleko okanye zicinywe njengenxalenye yokucinywa kweakhawunti.</li>
+            <li><strong>Izinto ozenzileyo nezinto ozifakileyo zabucala:</strong> Amajelo eendaba nezizukulwana ezingafakwanga esidlangalaleni zisenokucinywa ngokuzenzekelayo njengenxalenye yeenkqubo zethu zokucoca (ngokomzekelo, emva kwexesha elilinganiselweyo lokugcina okanye xa ii-URL zamajelo eendaba aphezulu zingasafikeleleki).</li>
+            <li><strong>Iingxelo kunye neelog zokumodareyitha:</strong> Iingxelo kunye neerekhodi ezinento yokwenza nokumodareyitha zinokugcinwa njengoko kufuneka ukuze kukhuseleke, kuthintelwe ukuxhatshazwa, kunye nophicotho-zincwadi.</li>
+            <li><strong>Iingxelo zengozi:</strong> Iingxelo zengozi zigcinwa ukuze kuphuculwe ukulungisa ingozi nokuthembeka.</li>
+        </ul>
+
+        <h2>6) Izinto Ozikhethayo</h2>
+        <ul>
+            <li><strong>Ukuthatha inxaxheba kwezentlalo ngokuzithandela:</strong> Ungasebenzisa iAiCasso ngaphandle kokuthumela kwi-feed. Akunyanzelekanga ukuba upapashe uze ufake izimvo.</li>
+            <li><strong>Ukuxela nokuvala:</strong> Ungaxela izinto ozifakileyo, izimvo, nabantu abazisebenzisayo, kwaye ungavimba abanye abantu abazisebenzisayo.</li>
+            <li><strong>Izaziso zokuTyhala</strong> Ungayenza isebenze okanye uyenze ingasebenzi imiyalezo kwiisetingi zesixhobo sakho.</li>
+            <li><strong>Ukucinywa kweakhawunti:</strong> Ungaqalisa ukucima iakhawunti kwi-app (Iisetingi → Cima iakhawunti). Ukuba awukwazi ukungena kwi-app, qhakamshelana noncedo kwaye siza kukunceda.</li>
+        </ul>
+
+        <h2>7) Ukhuseleko</h2>
+        <p>Sisebenzisa izinto ezifanelekileyo zokulawula, ezobuchwephesha nezokukhusela umzimba ezenzelwe ukukhusela inkcazelo. Ayikho inkqubo enokuqinisekiswa ukuba ikhuselekile nge-100%.</p>
+
+        <h2>8) Qhakamshelana Nathi</h2>
+        <p>Ukuba unemibuzo ngale Polisi Engezinto Eziyimfihlo okanye ngenkcazelo yakho, qhagamshelana:</p>
+        <p>
+            I-imeyile <a href="mailto:support@aicassoapp.com">support@aicassoapp.com</a><br>
+            I-Website <a href="https://www.aicassoapp.com">https://www.aicassoapp.com</a>
+        </p>
+
         <hr>
-        <p>Ngokusebenzisa i-AiCasso, uyavuma kumgaqo-nkqubo oboniswe kule migaqo-nkqubo wobumfihlo.</p>
-    </main>
-    <footer>
-        &copy; 2024 AiCasso. Onke amalungelo agciniwe.
-    </footer>
+        <p>Ngokusebenzisa iAiCasso, uyavumelana nale Polisi Engezinto Eziyimfihlo.</p></main>
+
+    <footer>© 2025 AiCasso. Onke amalungelo agciniwe.</footer>
 </body>
 </html>

@@ -2,7 +2,8 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <title>Käyttöehdot AiCassolle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palveluehdot - AiCasso</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,45 +22,39 @@
             font-size: 3em;
         }
         header p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin-top: 10px;
+            opacity: 0.95;
         }
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
-            padding: 0 20px;
+            padding: 0 20px 40px;
             background-color: #fff;
         }
-        main p {
-            font-size: 1.1em;
+        h2 {
+            margin-top: 0;
+            padding-top: 32px;
+            color: #3a3f44;
+        }
+        p {
+            font-size: 1.05em;
             line-height: 1.8;
-        }
-        ol {
-            counter-reset: item;
-            list-style-type: none;
-            padding-left: 0;
-        }
-        ol > li {
-            counter-increment: item;
-            margin-bottom: 30px;
-        }
-        ol > li::before {
-            content: counter(item) ". ";
-            font-weight: bold;
-            font-size: 1.2em;
-            color: #3a3f44;
-        }
-        ol li strong {
-            font-size: 1.2em;
-            color: #3a3f44;
         }
         ul {
             list-style-type: disc;
-            margin-left: 20px;
+            margin-left: 22px;
             margin-top: 10px;
         }
         ul li {
             margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .note {
+            background: #f7f7f7;
+            border-left: 4px solid #3a3f44;
+            padding: 14px 16px;
+            margin: 18px 0;
         }
         a {
             color: #3a3f44;
@@ -71,7 +66,7 @@
         hr {
             border: none;
             border-top: 1px solid #ddd;
-            margin: 40px 0;
+            margin: 34px 0;
         }
         footer {
             text-align: center;
@@ -86,107 +81,112 @@
             main {
                 margin: 20px auto;
             }
-            ol > li::before {
-                font-size: 1em;
-            }
-            ol li strong {
-                font-size: 1em;
-            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Käyttöehdot AiCassolle</h1>
-        <p><strong>Voimaantulo:</strong> 13. syyskuuta 2024</p>
-    </header>
-    <main>
-        <p>Tervetuloa AiCassoon, tekoälypohjaiseen kuvageneraattoriin. Käyttämällä sovellustamme hyväksyt noudattavasi seuraavia käyttöehtoja.</p>
-        <ol>
-            <li><strong>Ehtojen hyväksyminen</strong>
-                <ul>
-                    <li>Käyttämällä AiCassoa hyväksyt nämä käyttöehdot ja tietosuojakäytännömme. Jos et hyväksy, älä käytä palvelujamme.</li>
-                </ul>
-            </li>
-            <li><strong>Sovelluksen käyttö</strong>
-                <ul>
-                    <li>Voit käyttää AiCassoa laillisiin tarkoituksiin ja näiden ehtojen mukaisesti.</li>
-                    <li>Hyväksyt, ettet käytä sovellusta millään tavalla, joka voisi vahingoittaa tai heikentää sovellusta tai häiritä muiden käyttöä.</li>
-                </ul>
-            </li>
-            <li><strong>Käyttäjien luoma sisältö</strong>
-                <ul>
-                    <li>Olet täysin vastuussa luomistasi kuvista ja niiden jakamisen seurauksista.</li>
-                    <li>Vakuutat ja takaat, että omistat tai sinulla on tarvittavat oikeudet ja luvat käyttää ja jakaa luomaasi sisältöä.</li>
-                    <li>Säilytät kaikki omistusoikeudet AiCassolla luomiisi kuviin.</li>
-                </ul>
-            </li>
-            <li><strong>Sisältöohjeet</strong>
-                <ul>
-                    <li>Hyväksyt, ettet luo tai jaa sisältöä, joka:</li>
-                    <ul>
-                        <li>On laitonta, vahingollista, uhkaavaa, loukkaavaa, ahdistelevaa, herjaavaa, vulgaaria, obsceni tai toisen yksityisyyttä loukkaavaa.</li>
-                        <li>Rikkoo minkään osapuolen patenttia, tavaramerkkiä, liikesalaisuutta, tekijänoikeutta tai muita omaisuusoikeuksia.</li>
-                        <li>Edistää laittomia toimintoja tai käyttäytymistä, joka on loukkaavaa, uhkaavaa, obsceni tai herjaavaa.</li>
-                    </ul>
-                    <li>Pidätämme oikeuden tarkistaa, valvoa ja poistaa kaiken sisällön, joka rikkoo näitä ehtoja.</li>
-                </ul>
-            </li>
-            <li><strong>Immateriaalioikeudet</strong>
-                <ul>
-                    <li>Kaikki AiCasson sisältö, ominaisuudet ja toiminnot ovat AiCasson ja sen lisenssinantajien yksinomaista omaisuutta.</li>
-                    <li>Saat rajoitetun lisenssin käyttää sovellusta henkilökohtaiseen, ei-kaupalliseen käyttöön.</li>
-                </ul>
-            </li>
-            <li><strong>Kielletyt toiminnot</strong>
-                <ul>
-                    <li>Hyväksyt, ettet:</li>
-                    <ul>
-                        <li>Muokkaa, purkaa, dekompiloida tai käännä mitään osaa sovelluksesta.</li>
-                        <li>Käytä sovellusta mihinkään laittomaan tai valtuuttamattomaan tarkoitukseen.</li>
-                        <li>Lataa tai luo mitään sisältöä, joka on laitonta tai rikkoo kolmansien osapuolten oikeuksia.</li>
-                        <li>Ohita mitään toimenpiteitä, joita saatamme käyttää estääksemme tai rajoittaaksemme pääsyä sovellukseen.</li>
-                    </ul>
-                </ul>
-            </li>
-            <li><strong>Tilin lopettaminen</strong>
-                <ul>
-                    <li>Pidätämme oikeuden lopettaa tai keskeyttää pääsysi AiCassoon oman harkintamme mukaan, ilman ennakkoilmoitusta, käyttäytymisestä, jonka uskomme rikkovan näitä ehtoja tai olevan haitallista muille käyttäjille tai kolmansille osapuolille.</li>
-                    <li>Jos tilisi lopetetaan näiden ehtojen rikkomisen vuoksi, et voi rekisteröityä uudelleen palveluihimme.</li>
-                </ul>
-            </li>
-            <li><strong>Vastuuvapauslausekkeet</strong>
-                <ul>
-                    <li>AiCasso tarjotaan "sellaisena kuin se on" ilman minkäänlaisia takuita.</li>
-                    <li>Emme takaa, että sovellus olisi virheetön tai keskeytymätön.</li>
-                </ul>
-            </li>
-            <li><strong>Vastuun rajoitus</strong>
-                <ul>
-                    <li>Missään tapauksessa AiCasso ei ole vastuussa mistään epäsuorista, satunnaisista, erityisistä tai seuraamuksellisista vahingoista, jotka johtuvat sovelluksen käytöstäsi.</li>
-                </ul>
-            </li>
-            <li><strong>Hallintaoikeus</strong>
-                <ul>
-                    <li>Nämä käyttöehdot ovat voimassa ja niitä tulkitaan voimassa olevien lakien mukaisesti omassa lainkäyttöalueessasi.</li>
-                </ul>
-            </li>
-            <li><strong>Muutos ehdot</strong>
-                <ul>
-                    <li>Voimme päivittää näitä käyttöehtoja aika ajoin. Muutokset tulevat voimaan heti julkaisemisen jälkeen.</li>
-                    <li>Jatkamalla AiCasson käyttöä minkä tahansa muutoksen jälkeen hyväksyt uudet ehdot.</li>
-                </ul>
-            </li>
-            <li><strong>Yhteystiedot</strong>
-                <p>Jos sinulla on kysymyksiä näistä käyttöehdoista, ota meihin yhteyttä:</p>
-                <p>Sähköposti: <a href="mailto:gloriousbytes@gmail.com">gloriousbytes@gmail.com</a></p>
-            </li>
-        </ol>
+    <header><h1>Käyttöehdot</h1>
+        <p><strong>Sovellus:</strong> AiCasso</p>
+        <p><strong>Voimaantulopäivä:</strong> 17. joulukuuta 2025</p></header>
+
+    <main><p>
+            Nämä Palveluehdot ("Ehdot") säätelevät AiCasson ("Sovellus") ja siihen liittyvien palvelujen (yhdessä "Palvelu") käyttöä.
+            Käyttämällä palvelua tai käyttämällä palvelua hyväksyt nämä ehdot ja <a href="./PrivacyPolicy.html">tietosuojakäytäntömme</a>.
+        </p>
+
+        <div class="note">
+            <p><strong>UGC-huomautus:</strong> AiCasso sisältää valinnaisia käyttäjien luomia sisältöominaisuuksia (viestit, kommentit, tykkäykset, seurannat). Auttaaksemme pitämään yhteisön turvassa tarjoamme sovelluksen sisäisiä raportteja ja käyttäjien estoja ja voimme valvoa näiden ehtojen noudattamista valvontatoimilla.</p>
+        </div>
+
+        <h2>1) Palvelu</h2>
+        <p>
+            AiCasso on ensisijaisesti tekoälyn luomissovellus. Voit luoda sisältöä henkilökohtaiseen käyttöön.
+            Voit myös jakaa tekoälyn luomia luomuksia yhteisön syötteeseen ja olla vuorovaikutuksessa muiden käyttäjien kanssa kommenttien, tykkäämisen ja seuraamisen kautta.
+            Yhteisösyötteeseen osallistuminen on vapaaehtoista.
+        </p>
+
+        <h2>2) Tilit ja sisäänkirjautuminen</h2>
+        <ul>
+            <li><strong>Valinnainen kirjautuminen:</strong> Joitakin ominaisuuksia voidaan käyttää ilman sisäänkirjautumista. Sinun on ehkä kirjauduttava sisään, jotta voit synkronoida tietoja eri laitteiden välillä ja käyttää sosiaalisia ominaisuuksia.</li>
+            <li><strong>Kolmannen osapuolen kirjautuminen:</strong> Tuemme Google-sisäänkirjautumista ja Applen kautta kirjautumista. Näiden palvelujen käyttöäsi koskevat myös niiden ehdot ja käytännöt.</li>
+            <li><strong>Julkinen profiili:</strong> AiCasso määrittää järjestelmän luoman käyttäjänimen ja profiilikuvan, jotka voidaan näyttää muille käyttäjille syötteessä ja kommenteissa. Kirjautumissähköpostiosoitettasi ei näytetä julkisesti sovelluksessa.</li>
+        </ul>
+
+        <h2>3) Käyttäjäsisältö ja yhteisön syöte</h2>
+        <p>
+            "Käyttäjäsisältö" sisältää sisällön, jonka lähetät tai annat saataville Palvelun kautta, kuten kehotteet, ladatut mediat, luodut tulokset, viestit, kommentit ja vastaukset.
+        </p>
+        <ul>
+            <li><strong>Vain tekoälyn syöteviestit:</strong> Yhteisön syöte on tarkoitettu sovelluksessa tuotettujen tekoälyn luomien luomusten jakamiseen. Mielivaltaisen median lataaminen suoraan julkiseen syötteeseen ei ole sallittua.</li>
+            <li><strong>Näkyvyys:</strong> Jos julkaiset tai kommentoit, sisältösi ja järjestelmän luoma käyttäjätunnuksesi/profiilikuvasi voivat näkyä muille sovelluksen käyttäjille.</li>
+            <li><strong>Vastuusi:</strong> Olet vastuussa käyttäjäsisällöstäsi ja vuorovaikutuksestasi muiden kanssa.</li>
+            <li><strong>Oikeudet syötteisiin:</strong> Sinulla on oltava tarvittavat oikeudet ja luvat käyttääksesi mitä tahansa lataamaasi tai lähettämääsi tekstiä, kuvia, ääntä tai videota (mukaan lukien kuvissa esiintyvien ihmisten luvat tarvittaessa).</li>
+        </ul>
+
+        <h2>4) Yhteisön säännöt (sopiva sisältö kielletty)</h2>
+        <p>Sitoudut olemaan luomatta, julkaisematta tai jakamatta sopimatonta tai haitallista Käyttäjäsisältöä, mukaan lukien sisältö, joka:</p>
+        <ul>
+            <li>On laitonta, edistää laitonta toimintaa tai rikkoo sovellettavia lakeja.</li>
+            <li>Uhkaa, ahdistelee, kiusaa tai rohkaisee väkivaltaan tai itsensä vahingoittamiseen.</li>
+            <li>Sisältää suojeltuihin ryhmiin kohdistettua vihapuhetta tai syrjintää.</li>
+            <li>Sisältää seksuaalista sisältöä, johon liittyy alaikäisiä, tai mitä tahansa materiaalia lasten seksuaalisesta hyväksikäytöstä (tämä on ehdottomasti kielletty).</li>
+            <li>Sisältää ei-suostumaista intiimejä kuvia tai seksuaalista hyväksikäyttöä.</li>
+            <li>Rikkoo immateriaalioikeuksia (tekijänoikeus, tavaramerkki) tai muita kolmannen osapuolen oikeuksia.</li>
+            <li>Sisältää muiden henkilökohtaisia tietoja ilman lupaa (esimerkiksi doxxing).</li>
+            <li>Onko roskapostia, harhaanjohtavaa tai tarkoitettu manipuloimaan sitoutumista (esimerkiksi toistuvia kommentteja, huijauksia).</li>
+            <li>Toisena henkilönä esiintyy tai johtaa muita harhaan henkilöllisyytesi suhteen.</li>
+        </ul>
+
+        <h2>5) Raportointi, estäminen ja valvonta</h2>
+        <ul>
+            <li><strong>Raportointi:</strong> Sovellus tarjoaa sovelluksen sisäisiä työkaluja, joilla voit ilmoittaa viesteistä, kommenteista ja käyttäjistä. Raportit voidaan tarkistaa ja käyttää toimenpiteisiin.</li>
+            <li><strong>Estäminen:</strong> sovellus tarjoaa mahdollisuuden estää muita käyttäjiä, mikä auttaa sinua välttämään ei-toivotun vuorovaikutuksen ja sisällön.</li>
+            <li><strong>Suodatus:</strong> Saatamme soveltaa kohtuullisia suojatoimia ja tarkistuksia vähentääksemme sopimatonta sisältöä ja väärinkäyttöä.</li>
+            <li><strong>Täytäntöönpano:</strong> Voimme poistaa tai rajoittaa pääsyä sisältöön, piilottaa sisältöä, rajoittaa ominaisuuksia, jäädyttää tilejä tai estää tilejä, jos uskomme, että näitä ehtoja rikotaan tai suojellaksemme käyttäjiä ja Palvelua.</li>
+        </ul>
+
+        <h2>6) AiCassolle myöntämäsi lisenssi</h2>
+        <p>
+            Säilytät käyttäjäsisältösi omistusoikeuden sinun ja AiCasson välillä.
+            Palvelun käyttämiseksi myönnät AiCassolle maailmanlaajuisen, ei-yksinomaisen, rojaltivapaan lisenssin isännöidä, tallentaa, jäljentää, käsitellä, näyttää ja jakaa Käyttäjäsisältöäsi:
+            (a) tarjota Palvelua sinulle, ja (b) jos päätät julkaista syötteen tai kommentin, saattaa tämä sisältö muiden palvelun käyttäjien saataville.
+            Tämä käyttöoikeus päättyy, kun poistat käyttäjäsisällön tai tilisi, paitsi siltä osin kuin sisältö on jaettu muiden kanssa ja se on säilytettävä turvallisuus-, oikeudellisista tai toiminnallisista syistä.
+        </p>
+
+        <h2>7) Kolmannen osapuolen palvelut</h2>
+        <p>
+            Palvelu voidaan integroida kolmannen osapuolen palveluihin (esimerkiksi kirjautumispalveluntarjoajien, push-ilmoitusten, mainonnan ja tekoälynkäsittelypalvelujen tarjoajien kanssa).
+            Näillä kolmansilla osapuolilla voi olla omat ehdot ja tietosuojakäytäntönsä.
+        </p>
+
+        <h2>8) Vastuuvapauslausekkeet</h2>
+        <ul>
+            <li>Palvelu tarjotaan "sellaisenaan" ja "sellaisena kuin se on saatavilla".</li>
+            <li>Tekoälyn luomat lähdöt voivat olla odottamattomia, epätarkkoja tai samanlaisia kuin muille käyttäjille luodut lähdöt.</li>
+            <li>Emme takaa keskeytymätöntä tai virheetöntä toimintaa.</li>
+        </ul>
+
+        <h2>9) Vastuun rajoitus</h2>
+        <p>
+            Lain sallimissa rajoissa AiCasso ei ole vastuussa välillisistä, satunnaisista, erityisistä, välillisistä tai rankaisevista vahingoista, jotka johtuvat Palvelun käytöstä tai liittyvät siihen.
+        </p>
+
+        <h2>10) Muutokset näihin ehtoihin</h2>
+        <p>
+            Saatamme päivittää näitä ehtoja ajoittain. Jos teemme olennaisia ​​muutoksia, päivitämme voimaantulopäivämäärän ja voimme antaa lisäilmoituksen sovelluksessa.
+            Palvelun käytön jatkaminen muutosten voimaantulon jälkeen tarkoittaa, että hyväksyt päivitetyt ehdot.
+        </p>
+
+        <h2>11) Ota yhteyttä</h2>
+        <p>Jos sinulla on kysyttävää näistä ehdoista tai haluat ilmoittaa tukea vaativista ongelmista, ota yhteyttä:</p>
+        <p>
+            Sähköposti: <a href="mailto:support@aicassoapp.com">support@aicassoapp.com</a><br>
+            Verkkosivusto: <a href="https://www.aicassoapp.com">https://www.aicassoapp.com</a>
+        </p>
+
         <hr>
-        <p>Käyttämällä AiCassoa vahvistat, että olet lukenut, ymmärtänyt ja hyväksyt sitoutuvasi näihin käyttöehtoihin.</p>
-    </main>
-    <footer>
-        &copy; 2024 AiCasso. Kaikki oikeudet pidätetään.
-    </footer>
+        <p>Käyttämällä AiCassoa vahvistat, että olet lukenut ja ymmärtänyt nämä ehdot ja sitoudut noudattamaan niitä.</p></main>
+
+    <footer>© 2025 AiCasso. Kaikki oikeudet pidätetään.</footer>
 </body>
 </html>
